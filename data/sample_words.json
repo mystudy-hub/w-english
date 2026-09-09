@@ -1,0 +1,126 @@
+[
+  {
+    "wordId": "w_apple_001",
+    "word": "apple",
+    "phonics": {
+      "ipa": "/ˈæp.əl/",
+      "segments": [
+        { "letter": "a", "sound": "æ" },
+        { "letter": "pp", "sound": "p" },
+        { "letter": "le", "sound": "əl" }
+      ]
+    },
+    "syllables": ["ap", "ple"],
+    "kidDefinition": {
+      "en": "A round, crunchy fruit that can be red, green, or yellow.",
+      "zh": "一种又圆又脆的水果，有红色的、绿色的或黄色的。"
+    },
+    "exampleSentence": {
+      "en": "I love eating a crunchy red apple!",
+      "zh": "我喜欢吃脆生生的红苹果！"
+    },
+    "theme": "food",
+    "gradeLevel": "K-1",
+    "sightWord": true,
+    "emoji": "🍎"
+  },
+  {
+    "wordId": "w_cat_002",
+    "word": "cat",
+    "phonics": {
+      "ipa": "/kæt/",
+      "segments": [
+        { "letter": "c", "sound": "k" },
+        { "letter": "a", "sound": "æ" },
+        { "letter": "t", "sound": "t" }
+      ]
+    },
+    "syllables": ["cat"],
+    "kidDefinition": {
+      "en": "A small, furry pet with whiskers that likes to say meow.",
+      "zh": "一只长着胡须、喜欢喵喵叫的毛茸茸小宠物。"
+    },
+    "exampleSentence": {
+      "en": "The soft cat is sleeping in the sun.",
+      "zh": "柔软的小猫正睡在太阳底下。"
+    },
+    "theme": "animals",
+    "gradeLevel": "K-1",
+    "sightWord": true,
+    "emoji": "🐱"
+  },
+  {
+    "wordId": "w_sun_003",
+    "word": "sun",
+    "phonics": {
+      "ipa": "/sʌn/",
+      "segments": [
+        { "letter": "s", "sound": "s" },
+        { "letter": "u", "sound": "ʌ" },
+        { "letter": "n", "sound": "n" }
+      ]
+    },
+    "syllables": ["sun"],
+    "kidDefinition": {
+      "en": "The big, bright yellow star in the sky that keeps us warm.",
+      "zh": "天空中又大又亮、给我们温暖的黄色大恒星。"
+    },
+    "exampleSentence": {
+      "en": "The sun is shining brightly today!",
+      "zh": "今天阳光非常明媚！"
+    },
+    "theme": "nature",
+    "gradeLevel": "K-1",
+    "sightWord": true,
+    "emoji": "☀️"
+  },
+  {
+    "wordId": "w_book_004",
+    "word": "book",
+    "phonics": {
+      "ipa": "/bʊk/",
+      "segments": [
+        { "letter": "b", "sound": "b" },
+        { "letter": "oo", "sound": "ʊ" },
+        { "letter": "k", "sound": "k" }
+      ]
+    },
+    "syllables": ["book"],
+    "kidDefinition": {
+      "en": "Pages with words and colorful pictures that tell a story.",
+      "zh": "有文字和彩色图画、能讲故事的一页页书本。"
+    },
+    "exampleSentence": {
+      "en": "Open your storybook and read with me!",
+      "zh": "打开你的故事书，和我一起读吧！"
+    },
+    "theme": "school",
+    "gradeLevel": "Grade 1",
+    "sightWord": true,
+    "emoji": "📖"
+  },
+  {
+    "wordId": "w_blue_005",
+    "word": "blue",
+    "phonics": {
+      "ipa": "/bluː/",
+      "segments": [
+        { "letter": "bl", "sound": "bl" },
+        { "letter": "ue", "sound": "uː" }
+      ]
+    },
+    "syllables": ["blue"],
+    "kidDefinition": {
+      "en": "The pretty color of the ocean and the clear sky.",
+      "zh": "大海和晴朗天空的漂亮颜色。"
+    },
+    "exampleSentence": {
+      "en": "Look at the little blue bird in the tree.",
+      "zh": "看树上那只蓝色的小鸟。"
+    },
+    "theme": "colors",
+    "gradeLevel": "K-1",
+    "sightWord": true,
+    "emoji": "💙"
+  }
+]

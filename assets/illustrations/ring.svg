@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="戒指"><metadata><![CDATA[MIT License
+
+Copyright (c) 2026 W-English contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+]]></metadata><rect x="22" y="22" width="276" height="276" rx="76" fill="#f6e9db"/><ellipse cx="160" cy="276" rx="83" ry="10" fill="#987351" opacity=".09"/><circle cx="159" cy="193" r="70" fill="none" stroke="#cfb06a" stroke-width="24"/><path d="m126 73 66 0 19 27-52 49-52-49Z" fill="#a2c7d3" stroke="#6e9eac" stroke-width="7" stroke-linejoin="round"/><path d="m126 73 12 28 21 48 23-48 10-28m-85 27h104" fill="none" stroke="#79a8b7" stroke-width="4"/></svg>

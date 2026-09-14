@@ -1,126 +1,186 @@
 [
   {
-    "wordId": "w_apple_001",
-    "word": "apple",
-    "phonics": {
-      "ipa": "/ˈæp.əl/",
-      "segments": [
-        { "letter": "a", "sound": "æ" },
-        { "letter": "pp", "sound": "p" },
-        { "letter": "le", "sound": "əl" }
-      ]
-    },
-    "syllables": ["ap", "ple"],
-    "kidDefinition": {
-      "en": "A round, crunchy fruit that can be red, green, or yellow.",
-      "zh": "一种又圆又脆的水果，有红色的、绿色的或黄色的。"
-    },
-    "exampleSentence": {
-      "en": "I love eating a crunchy red apple!",
-      "zh": "我喜欢吃脆生生的红苹果！"
-    },
-    "theme": "food",
-    "gradeLevel": "K-1",
-    "sightWord": true,
-    "emoji": "🍎"
-  },
-  {
-    "wordId": "w_cat_002",
+    "schemaVersion": 3,
+    "wordId": "w_cat_001",
     "word": "cat",
-    "phonics": {
-      "ipa": "/kæt/",
-      "segments": [
-        { "letter": "c", "sound": "k" },
-        { "letter": "a", "sound": "æ" },
-        { "letter": "t", "sound": "t" }
-      ]
-    },
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "sightWordList": "dolch_nouns",
+    "spelling": ["c", "a", "t"],
+    "graphemes": [
+      { "letters": "c", "phonemes": ["k"], "audio": "phonics#k" },
+      { "letters": "a", "phonemes": ["æ"], "audio": "phonics#a_short" },
+      { "letters": "t", "phonemes": ["t"], "audio": "phonics#t" }
+    ],
+    "phonemes": ["k", "æ", "t"],
     "syllables": ["cat"],
-    "kidDefinition": {
-      "en": "A small, furry pet with whiskers that likes to say meow.",
+    "ipa": "/kæt/",
+    "definition": {
+      "en_young": "A soft pet that meows.",
+      "en_older": "A small furry pet with whiskers that says meow.",
       "zh": "一只长着胡须、喜欢喵喵叫的毛茸茸小宠物。"
     },
-    "exampleSentence": {
-      "en": "The soft cat is sleeping in the sun.",
-      "zh": "柔软的小猫正睡在太阳底下。"
+    "example": {
+      "en": "The cat sleeps in the sun.",
+      "zh": "小猫在太阳底下睡觉。",
+      "audio": "animals#cat_sentence"
     },
-    "theme": "animals",
-    "gradeLevel": "K-1",
-    "sightWord": true,
-    "emoji": "🐱"
+    "audio": { "word": "animals#cat", "wordSlow": "animals#cat_slow" },
+    "illustration": { "type": "emoji", "value": "🐱" },
+    "sfx": "sfx#meow",
+    "parentTip": {
+      "en": "Ask your child: What sound does a cat make? Can you say the first sound in cat?",
+      "zh": "问问孩子：小猫怎么叫？cat 的第一个音是什么？"
+    },
+    "review": { "status": "draft" },
+    "contentVersion": "2026.09.0"
   },
   {
-    "wordId": "w_sun_003",
+    "schemaVersion": 3,
+    "wordId": "w_sun_002",
     "word": "sun",
-    "phonics": {
-      "ipa": "/sʌn/",
-      "segments": [
-        { "letter": "s", "sound": "s" },
-        { "letter": "u", "sound": "ʌ" },
-        { "letter": "n", "sound": "n" }
-      ]
-    },
-    "syllables": ["sun"],
-    "kidDefinition": {
-      "en": "The big, bright yellow star in the sky that keeps us warm.",
-      "zh": "天空中又大又亮、给我们温暖的黄色大恒星。"
-    },
-    "exampleSentence": {
-      "en": "The sun is shining brightly today!",
-      "zh": "今天阳光非常明媚！"
-    },
+    "track": "phonics",
+    "phonicsStage": 1,
     "theme": "nature",
-    "gradeLevel": "K-1",
-    "sightWord": true,
-    "emoji": "☀️"
+    "sightWordList": "dolch_nouns",
+    "spelling": ["s", "u", "n"],
+    "graphemes": [
+      { "letters": "s", "phonemes": ["s"], "audio": "phonics#s" },
+      { "letters": "u", "phonemes": ["ʌ"], "audio": "phonics#u_short" },
+      { "letters": "n", "phonemes": ["n"], "audio": "phonics#n" }
+    ],
+    "phonemes": ["s", "ʌ", "n"],
+    "syllables": ["sun"],
+    "ipa": "/sʌn/",
+    "definition": {
+      "en_young": "Big, hot, and so bright!",
+      "en_older": "The big bright star that warms the Earth.",
+      "zh": "天空中又大又亮、给我们温暖的恒星。"
+    },
+    "example": {
+      "en": "The sun is hot today.",
+      "zh": "今天的太阳很热。",
+      "audio": "nature#sun_sentence"
+    },
+    "audio": { "word": "nature#sun", "wordSlow": "nature#sun_slow" },
+    "illustration": { "type": "emoji", "value": "☀️" },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the window. Ask: Is the sun out today? Is it hot or cold?",
+      "zh": "指指窗外，问问孩子：今天有太阳吗？热还是冷？"
+    },
+    "review": { "status": "draft" },
+    "contentVersion": "2026.09.0"
   },
   {
-    "wordId": "w_book_004",
+    "schemaVersion": 3,
+    "wordId": "w_book_003",
     "word": "book",
-    "phonics": {
-      "ipa": "/bʊk/",
-      "segments": [
-        { "letter": "b", "sound": "b" },
-        { "letter": "oo", "sound": "ʊ" },
-        { "letter": "k", "sound": "k" }
-      ]
-    },
-    "syllables": ["book"],
-    "kidDefinition": {
-      "en": "Pages with words and colorful pictures that tell a story.",
-      "zh": "有文字和彩色图画、能讲故事的一页页书本。"
-    },
-    "exampleSentence": {
-      "en": "Open your storybook and read with me!",
-      "zh": "打开你的故事书，和我一起读吧！"
-    },
+    "track": "phonics",
+    "phonicsStage": 3,
     "theme": "school",
-    "gradeLevel": "Grade 1",
-    "sightWord": true,
-    "emoji": "📖"
+    "spelling": ["b", "o", "o", "k"],
+    "graphemes": [
+      { "letters": "b", "phonemes": ["b"], "audio": "phonics#b" },
+      { "letters": "oo", "phonemes": ["ʊ"], "audio": "phonics#oo_short", "note": "元音组合 oo 短音，整体教学" },
+      { "letters": "k", "phonemes": ["k"], "audio": "phonics#k" }
+    ],
+    "phonemes": ["b", "ʊ", "k"],
+    "syllables": ["book"],
+    "ipa": "/bʊk/",
+    "definition": {
+      "en_young": "Pages with pictures to read.",
+      "en_older": "Pages with words and pictures that tell a story.",
+      "zh": "有文字和图画、能讲故事的一页页书本。"
+    },
+    "example": {
+      "en": "Read a book with me!",
+      "zh": "和我一起读一本书吧！",
+      "audio": "school#book_sentence"
+    },
+    "audio": { "word": "school#book", "wordSlow": "school#book_slow" },
+    "illustration": { "type": "emoji", "value": "📖" },
+    "sfx": "sfx#page_flip",
+    "parentTip": {
+      "en": "Hold up a real book. Ask: What is this? Let's open the book together.",
+      "zh": "拿一本真的书举起来，问问孩子：这是什么？我们一起打开书。"
+    },
+    "review": { "status": "draft" },
+    "contentVersion": "2026.09.0"
   },
   {
-    "wordId": "w_blue_005",
+    "schemaVersion": 3,
+    "wordId": "w_blue_004",
     "word": "blue",
-    "phonics": {
-      "ipa": "/bluː/",
-      "segments": [
-        { "letter": "bl", "sound": "bl" },
-        { "letter": "ue", "sound": "uː" }
-      ]
-    },
-    "syllables": ["blue"],
-    "kidDefinition": {
-      "en": "The pretty color of the ocean and the clear sky.",
-      "zh": "大海和晴朗天空的漂亮颜色。"
-    },
-    "exampleSentence": {
-      "en": "Look at the little blue bird in the tree.",
-      "zh": "看树上那只蓝色的小鸟。"
-    },
+    "track": "phonics",
+    "phonicsStage": 3,
     "theme": "colors",
-    "gradeLevel": "K-1",
-    "sightWord": true,
-    "emoji": "💙"
+    "sightWordList": "dolch_pre_primer",
+    "spelling": ["b", "l", "u", "e"],
+    "graphemes": [
+      { "letters": "b", "phonemes": ["b"], "audio": "phonics#b" },
+      { "letters": "l", "phonemes": ["l"], "audio": "phonics#l" },
+      { "letters": "ue", "phonemes": ["uː"], "audio": "phonics#oo_long", "note": "bl 是辅音连缀，拆为 b + l 两个气球；ue 元音组合整体教学" }
+    ],
+    "phonemes": ["b", "l", "uː"],
+    "syllables": ["blue"],
+    "ipa": "/bluː/",
+    "definition": {
+      "en_young": "The color of the sky.",
+      "en_older": "The color of the sky and the sea.",
+      "zh": "天空和大海的颜色。"
+    },
+    "example": {
+      "en": "Look at the blue bird.",
+      "zh": "看那只蓝色的小鸟。",
+      "audio": "colors#blue_sentence"
+    },
+    "audio": { "word": "colors#blue", "wordSlow": "colors#blue_slow" },
+    "illustration": { "type": "emoji", "value": "💙" },
+    "sfx": null,
+    "parentTip": {
+      "en": "Ask: Can you find something blue in this room? Point to it and say blue!",
+      "zh": "问问孩子：房间里能找到蓝色的东西吗？指一指，说 blue！"
+    },
+    "review": { "status": "draft" },
+    "contentVersion": "2026.09.0"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_apple_005",
+    "word": "apple",
+    "track": "phonics",
+    "phonicsStage": 4,
+    "theme": "food",
+    "sightWordList": "dolch_nouns",
+    "spelling": ["a", "p", "p", "l", "e"],
+    "graphemes": [
+      { "letters": "a", "phonemes": ["æ"], "audio": "phonics#a_short" },
+      { "letters": "pp", "phonemes": ["p"], "audio": "phonics#p", "note": "双写辅音只发一次音" },
+      { "letters": "le", "phonemes": ["ə", "l"], "audio": "phonics#el", "note": "consonant-le 整体教学，不拆成 l + e" }
+    ],
+    "phonemes": ["æ", "p", "ə", "l"],
+    "syllables": ["ap", "ple"],
+    "ipa": "/ˈæp.əl/",
+    "definition": {
+      "en_young": "A round fruit you eat.",
+      "en_older": "A round, crunchy fruit that can be red or green.",
+      "zh": "一种又圆又脆的水果，有红色的或绿色的。"
+    },
+    "example": {
+      "en": "I eat a red apple.",
+      "zh": "我吃一个红苹果。",
+      "audio": "food#apple_sentence"
+    },
+    "audio": { "word": "food#apple", "wordSlow": "food#apple_slow" },
+    "illustration": { "type": "emoji", "value": "🍎" },
+    "sfx": "sfx#crunch",
+    "parentTip": {
+      "en": "Ask your child: What color is the apple? Can you find something red in the room?",
+      "zh": "问问孩子：苹果是什么颜色的？房间里能找到红色的东西吗？"
+    },
+    "review": { "status": "draft" },
+    "contentVersion": "2026.09.0"
   }
 ]

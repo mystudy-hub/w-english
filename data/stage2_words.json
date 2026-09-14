@@ -1,0 +1,7674 @@
+[
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cat_001",
+    "word": "cat",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "c",
+      "a",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "æ",
+      "t"
+    ],
+    "syllables": [
+      "cat"
+    ],
+    "ipa": "/kæt/",
+    "definition": {
+      "en_young": "A soft pet that meows.",
+      "en_older": "A small furry pet with whiskers that says meow.",
+      "zh": "猫是一种会喵喵叫、长着胡须的小宠物。"
+    },
+    "example": {
+      "en": "The cat sleeps in the sun.",
+      "zh": "小猫在太阳底下睡觉。",
+      "audio": "animal_home#cat_sentence"
+    },
+    "audio": {
+      "word": "animal_home#cat",
+      "wordSlow": "animal_home#cat_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cat.svg",
+      "alt": "猫"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Ask: What sound does a cat make? Say the first sound in cat.",
+      "zh": "问孩子小猫怎么叫，再示范 cat 的第一个音 /k/，注意不是字母名称。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_dog_006",
+    "word": "dog",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "d",
+      "o",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "ɑ",
+      "g"
+    ],
+    "syllables": [
+      "dog"
+    ],
+    "ipa": "/dɑg/",
+    "definition": {
+      "en_young": "A friendly pet that barks.",
+      "en_older": "A furry pet that likes walks and can bark.",
+      "zh": "狗是一种会汪汪叫、喜欢散步的宠物。"
+    },
+    "example": {
+      "en": "The dog runs to me.",
+      "zh": "小狗向我跑来。",
+      "audio": "animal_home#dog_sentence"
+    },
+    "audio": {
+      "word": "animal_home#dog",
+      "wordSlow": "animal_home#dog_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/dog.svg",
+      "alt": "狗"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the dog. Say dog, then slowly blend its three sounds.",
+      "zh": "指着小狗说 dog，再慢慢拼合三个音。具体美音变体须与最终录音一致。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pig_007",
+    "word": "pig",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "p",
+      "i",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɪ",
+      "g"
+    ],
+    "syllables": [
+      "pig"
+    ],
+    "ipa": "/pɪg/",
+    "definition": {
+      "en_young": "A farm animal that oinks.",
+      "en_older": "A farm animal with a snout and curly tail.",
+      "zh": "猪是有圆鼻子和卷尾巴的农场动物。"
+    },
+    "example": {
+      "en": "The pig is on the farm.",
+      "zh": "小猪在农场里。",
+      "audio": "animal_home#pig_sentence"
+    },
+    "audio": {
+      "word": "animal_home#pig",
+      "wordSlow": "animal_home#pig_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pig.svg",
+      "alt": "猪"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the pig's nose. Say pig and listen for the first sound.",
+      "zh": "指指小猪的鼻子，一起说 pig。示范短促的 /p/，不要加上额外的元音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_hen_008",
+    "word": "hen",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "h",
+      "e",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "phonics#h"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "ɛ",
+      "n"
+    ],
+    "syllables": [
+      "hen"
+    ],
+    "ipa": "/hɛn/",
+    "definition": {
+      "en_young": "A bird that lays eggs.",
+      "en_older": "A grown female chicken that can lay eggs.",
+      "zh": "母鸡是一种会下蛋的成年雌性鸡。"
+    },
+    "example": {
+      "en": "The hen has an egg.",
+      "zh": "母鸡身边有一个蛋。",
+      "audio": "animal_home#hen_sentence"
+    },
+    "audio": {
+      "word": "animal_home#hen",
+      "wordSlow": "animal_home#hen_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/hen.svg",
+      "alt": "母鸡"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Explain that a hen is a female chicken. Blend h, e, n.",
+      "zh": "告诉孩子 hen 指母鸡，再一起听三个音。配图需由老师确认能表达母鸡。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_sun_002",
+    "word": "sun",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "nature",
+    "spelling": [
+      "s",
+      "u",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "ʌ",
+      "n"
+    ],
+    "syllables": [
+      "sun"
+    ],
+    "ipa": "/sʌn/",
+    "definition": {
+      "en_young": "Big, hot, and so bright!",
+      "en_older": "The bright star that gives us light and warmth.",
+      "zh": "太阳是给我们光和温暖的恒星。"
+    },
+    "example": {
+      "en": "The sun is hot today.",
+      "zh": "今天的太阳很热。",
+      "audio": "animal_home#sun_sentence"
+    },
+    "audio": {
+      "word": "animal_home#sun",
+      "wordSlow": "animal_home#sun_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/sun.svg",
+      "alt": "太阳"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture together. Say sun and stretch the first sound.",
+      "zh": "一起看图说 sun，再拉长开头的 /s/，随后连到另外两个音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bed_009",
+    "word": "bed",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "b",
+      "e",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɛ",
+      "d"
+    ],
+    "syllables": [
+      "bed"
+    ],
+    "ipa": "/bɛd/",
+    "definition": {
+      "en_young": "A soft place to sleep.",
+      "en_older": "A soft place where you lie down and sleep.",
+      "zh": "床是让人躺下睡觉的家具。"
+    },
+    "example": {
+      "en": "The cat is on the bed.",
+      "zh": "小猫在床上。",
+      "audio": "animal_home#bed_sentence"
+    },
+    "audio": {
+      "word": "animal_home#bed",
+      "wordSlow": "animal_home#bed_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bed.svg",
+      "alt": "床"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to a bed or its picture. Say bed and blend the three sounds.",
+      "zh": "指一指家里的床或图片，说 bed，再一起拼合三个音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bag_010",
+    "word": "bag",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "school",
+    "spelling": [
+      "b",
+      "a",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "æ",
+      "g"
+    ],
+    "syllables": [
+      "bag"
+    ],
+    "ipa": "/bæg/",
+    "definition": {
+      "en_young": "It holds things you carry.",
+      "en_older": "A container you use to carry your things.",
+      "zh": "包可以装东西，方便我们携带。"
+    },
+    "example": {
+      "en": "Put the pen in the bag.",
+      "zh": "把笔放进包里。",
+      "audio": "animal_home#bag_sentence"
+    },
+    "audio": {
+      "word": "animal_home#bag",
+      "wordSlow": "animal_home#bag_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bag.svg",
+      "alt": "背包"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Show a bag and place an object inside. Say bag together.",
+      "zh": "拿一个包，把东西放进去，一起说 bag。背包可以作草稿图，最终图义需审核。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cup_011",
+    "word": "cup",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "c",
+      "u",
+      "p"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "ʌ",
+      "p"
+    ],
+    "syllables": [
+      "cup"
+    ],
+    "ipa": "/kʌp/",
+    "definition": {
+      "en_young": "You drink from this.",
+      "en_older": "A small container you use for drinking.",
+      "zh": "杯子是用来喝水等饮品的小容器。"
+    },
+    "example": {
+      "en": "I drink from a cup.",
+      "zh": "我用杯子喝水。",
+      "audio": "animal_home#cup_sentence"
+    },
+    "audio": {
+      "word": "animal_home#cup",
+      "wordSlow": "animal_home#cup_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cup.svg",
+      "alt": "杯子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to an empty cup. Say cup and notice the final sound.",
+      "zh": "指着空杯子说 cup，留意末尾的 /p/。草稿图中应识别容器，不把咖啡作为学习对象。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_hat_012",
+    "word": "hat",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "h",
+      "a",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "phonics#h"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "æ",
+      "t"
+    ],
+    "syllables": [
+      "hat"
+    ],
+    "ipa": "/hæt/",
+    "definition": {
+      "en_young": "The thing on your head.",
+      "en_older": "Something you wear on your head.",
+      "zh": "帽子是戴在头上的物品。"
+    },
+    "example": {
+      "en": "The hat is in the bag.",
+      "zh": "帽子在包里。",
+      "audio": "animal_home#hat_sentence"
+    },
+    "audio": {
+      "word": "animal_home#hat",
+      "wordSlow": "animal_home#hat_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/hat.svg",
+      "alt": "帽子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Pretend to put on a hat. Say hat and blend its three sounds.",
+      "zh": "做戴帽子的动作，说 hat，再拼合三个音。与 cap 同题出现前须审核图片区别。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pen_013",
+    "word": "pen",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "school",
+    "spelling": [
+      "p",
+      "e",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɛ",
+      "n"
+    ],
+    "syllables": [
+      "pen"
+    ],
+    "ipa": "/pɛn/",
+    "definition": {
+      "en_young": "It makes marks with ink.",
+      "en_older": "A tool with ink that you use to write.",
+      "zh": "笔是使用墨水书写的工具。"
+    },
+    "example": {
+      "en": "The pen is in the bag.",
+      "zh": "笔在包里。",
+      "audio": "animal_home#pen_sentence"
+    },
+    "audio": {
+      "word": "animal_home#pen",
+      "wordSlow": "animal_home#pen_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pen.svg",
+      "alt": "钢笔"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Show a pen and a pencil. Point to the pen and say its name.",
+      "zh": "在成人陪同下看钢笔或圆珠笔，指出 pen。不要把铅笔图片标成 pen。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_rat_014",
+    "word": "rat",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "r",
+      "a",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "æ",
+      "t"
+    ],
+    "syllables": [
+      "rat"
+    ],
+    "ipa": "/ræt/",
+    "definition": {
+      "en_young": "A small animal with whiskers.",
+      "en_older": "A small animal with whiskers and a long tail.",
+      "zh": "老鼠是一种长着胡须和长尾巴的小动物。"
+    },
+    "example": {
+      "en": "The rat is by the log.",
+      "zh": "老鼠在木头旁边。",
+      "audio": "animal_home#rat_sentence"
+    },
+    "audio": {
+      "word": "animal_home#rat",
+      "wordSlow": "animal_home#rat_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/rat.svg",
+      "alt": "老鼠"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the long tail. Say rat and blend its three sounds.",
+      "zh": "指一指长尾巴，说 rat，再拼合三个音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bat_015",
+    "word": "bat",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "b",
+      "a",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "æ",
+      "t"
+    ],
+    "syllables": [
+      "bat"
+    ],
+    "ipa": "/bæt/",
+    "definition": {
+      "en_young": "An animal that flies.",
+      "en_older": "A small animal with wings that flies at night.",
+      "zh": "蝙蝠是一种长着翅膀、通常在夜间飞行的小动物。"
+    },
+    "example": {
+      "en": "Look at the bat.",
+      "zh": "看看这只蝙蝠。",
+      "audio": "animal_home#bat_sentence"
+    },
+    "audio": {
+      "word": "animal_home#bat",
+      "wordSlow": "animal_home#bat_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bat.svg",
+      "alt": "蝙蝠"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Spread your arms like wings. Say bat together.",
+      "zh": "像翅膀一样展开双臂，一起说 bat；这里学习的是动物，不是球棒。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_ram_016",
+    "word": "ram",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "r",
+      "a",
+      "m"
+    ],
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "phonics#m"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "æ",
+      "m"
+    ],
+    "syllables": [
+      "ram"
+    ],
+    "ipa": "/ræm/",
+    "definition": {
+      "en_young": "A sheep with curved horns.",
+      "en_older": "A grown male sheep that has curved horns.",
+      "zh": "公绵羊是长着弯角的成年雄性绵羊。"
+    },
+    "example": {
+      "en": "The ram is on the farm.",
+      "zh": "公绵羊在农场里。",
+      "audio": "animal_home#ram_sentence"
+    },
+    "audio": {
+      "word": "animal_home#ram",
+      "wordSlow": "animal_home#ram_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/ram.svg",
+      "alt": "公绵羊"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the curved horns. Blend the sounds in ram.",
+      "zh": "指一指弯弯的角，一起拼合 ram 的三个音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bug_017",
+    "word": "bug",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "b",
+      "u",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ʌ",
+      "g"
+    ],
+    "syllables": [
+      "bug"
+    ],
+    "ipa": "/bʌg/",
+    "definition": {
+      "en_young": "A tiny crawling animal.",
+      "en_older": "A very small animal with legs and a hard body.",
+      "zh": "bug 在这里指有腿、身体小小的虫子。"
+    },
+    "example": {
+      "en": "The bug is on the log.",
+      "zh": "小虫子在木头上。",
+      "audio": "animal_home#bug_sentence"
+    },
+    "audio": {
+      "word": "animal_home#bug",
+      "wordSlow": "animal_home#bug_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bug.svg",
+      "alt": "小虫子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the tiny legs in the picture. Say bug.",
+      "zh": "看看图片里小小的腿，一起说 bug。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_map_018",
+    "word": "map",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "school",
+    "spelling": [
+      "m",
+      "a",
+      "p"
+    ],
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "phonics#m"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "æ",
+      "p"
+    ],
+    "syllables": [
+      "map"
+    ],
+    "ipa": "/mæp/",
+    "definition": {
+      "en_young": "A picture of places.",
+      "en_older": "A picture that helps you find places and roads.",
+      "zh": "地图用图画和符号表示地点与道路。"
+    },
+    "example": {
+      "en": "The map is in the bag.",
+      "zh": "地图在包里。",
+      "audio": "animal_home#map_sentence"
+    },
+    "audio": {
+      "word": "animal_home#map",
+      "wordSlow": "animal_home#map_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/map.svg",
+      "alt": "地图"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Trace a path on the map with a finger. Say map.",
+      "zh": "用手指沿着地图上的路线走一走，一起说 map。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cap_019",
+    "word": "cap",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "c",
+      "a",
+      "p"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "æ",
+      "p"
+    ],
+    "syllables": [
+      "cap"
+    ],
+    "ipa": "/kæp/",
+    "definition": {
+      "en_young": "A hat with a brim.",
+      "en_older": "A soft hat with a short brim in front.",
+      "zh": "cap 在这里指前面有短帽檐的便帽。"
+    },
+    "example": {
+      "en": "The cap is in the bag.",
+      "zh": "便帽在包里。",
+      "audio": "animal_home#cap_sentence"
+    },
+    "audio": {
+      "word": "animal_home#cap",
+      "wordSlow": "animal_home#cap_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cap.svg",
+      "alt": "便帽"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the brim in front. Explain that a cap is a kind of hat.",
+      "zh": "指一指前面的帽檐，说明 cap 是 hat 的一种；两者不同时作为同题选项。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pan_020",
+    "word": "pan",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "p",
+      "a",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "æ",
+      "n"
+    ],
+    "syllables": [
+      "pan"
+    ],
+    "ipa": "/pæn/",
+    "definition": {
+      "en_young": "A dish for cooking.",
+      "en_older": "A shallow metal dish you use to cook food.",
+      "zh": "平底锅是一种比较浅、用来烹调食物的金属容器。"
+    },
+    "example": {
+      "en": "This is a pan.",
+      "zh": "这是一个平底锅。",
+      "audio": "animal_home#pan_sentence"
+    },
+    "audio": {
+      "word": "animal_home#pan",
+      "wordSlow": "animal_home#pan_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pan.svg",
+      "alt": "平底锅"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the pan in the picture. Notice its long handle.",
+      "zh": "看看图里的平底锅，留意长柄；与深锅 pot 的图片区分须经审校。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_net_021",
+    "word": "net",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "n",
+      "e",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "n",
+      "ɛ",
+      "t"
+    ],
+    "syllables": [
+      "net"
+    ],
+    "ipa": "/nɛt/",
+    "definition": {
+      "en_young": "It catches or holds things.",
+      "en_older": "A mesh of string used to catch or hold things.",
+      "zh": "网由绳线编成网格，可以用来兜住或装东西。"
+    },
+    "example": {
+      "en": "The net is in the bag.",
+      "zh": "网在包里。",
+      "audio": "animal_home#net_sentence"
+    },
+    "audio": {
+      "word": "animal_home#net",
+      "wordSlow": "animal_home#net_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/net.svg",
+      "alt": "网"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the little holes in the net. Blend n, e, t.",
+      "zh": "指一指网上的小网格，一起拼合三个音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_log_022",
+    "word": "log",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "nature",
+    "spelling": [
+      "l",
+      "o",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "l",
+      "ɑ",
+      "g"
+    ],
+    "syllables": [
+      "log"
+    ],
+    "ipa": "/lɑg/",
+    "definition": {
+      "en_young": "A thick piece of wood.",
+      "en_older": "A thick piece cut from a tree.",
+      "zh": "木段是从树木上截下的一段较粗的木头。"
+    },
+    "example": {
+      "en": "The log is in the sun.",
+      "zh": "木段在太阳底下。",
+      "audio": "animal_home#log_sentence"
+    },
+    "audio": {
+      "word": "animal_home#log",
+      "wordSlow": "animal_home#log_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/log.svg",
+      "alt": "木段"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the rings at the end of the log. Say log.",
+      "zh": "指一指木段切面上的圈圈，一起说 log，元音须与最终美音录音一致。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pot_023",
+    "word": "pot",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "p",
+      "o",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɑ",
+      "t"
+    ],
+    "syllables": [
+      "pot"
+    ],
+    "ipa": "/pɑt/",
+    "definition": {
+      "en_young": "A deep dish for cooking.",
+      "en_older": "A deep round container you use to cook food.",
+      "zh": "锅是比较深、通常用来烹调食物的圆形容器。"
+    },
+    "example": {
+      "en": "This is a pot.",
+      "zh": "这是一个锅。",
+      "audio": "animal_home#pot_sentence"
+    },
+    "audio": {
+      "word": "animal_home#pot",
+      "wordSlow": "animal_home#pot_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pot.svg",
+      "alt": "深锅"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Notice that the pot is deep. Say pot and listen to the final sound.",
+      "zh": "留意深深的锅身，一起说 pot，听听结尾的声音；不与 pan 或 cup 同题配图。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_fish_024",
+    "word": "fish",
+    "theme": "animals",
+    "spelling": [
+      "f",
+      "i",
+      "s",
+      "h"
+    ],
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "phonics#f"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "sh",
+        "phonemes": [
+          "ʃ"
+        ],
+        "audio": "phonics#sh",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "ɪ",
+      "ʃ"
+    ],
+    "syllables": [
+      "fish"
+    ],
+    "ipa": "/fɪʃ/",
+    "definition": {
+      "en_young": "An animal that swims.",
+      "en_older": "A water animal that swims with fins.",
+      "zh": "鱼"
+    },
+    "example": {
+      "en": "The fish can swim.",
+      "zh": "鱼会游泳。",
+      "audio": "animal_home_extra#fish_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#fish",
+      "wordSlow": "animal_home_extra#fish_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/fish.svg",
+      "alt": "鱼"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say fish. Listen to each letter group together.",
+      "zh": "指着图片认识「鱼」，先听完整的 fish，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bird_025",
+    "word": "bird",
+    "theme": "animals",
+    "spelling": [
+      "b",
+      "i",
+      "r",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "ir",
+        "phonemes": [
+          "ɝ"
+        ],
+        "audio": "phonics#er",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɝ",
+      "d"
+    ],
+    "syllables": [
+      "bird"
+    ],
+    "ipa": "/bɝd/",
+    "definition": {
+      "en_young": "An animal with feathers.",
+      "en_older": "An animal with feathers, wings, and a beak.",
+      "zh": "鸟"
+    },
+    "example": {
+      "en": "The bird is in the tree.",
+      "zh": "鸟在树上。",
+      "audio": "animal_home_extra#bird_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#bird",
+      "wordSlow": "animal_home_extra#bird_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bird.svg",
+      "alt": "鸟"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say bird. Listen to each letter group together.",
+      "zh": "指着图片认识「鸟」，先听完整的 bird，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_rabbit_026",
+    "word": "rabbit",
+    "theme": "animals",
+    "spelling": [
+      "r",
+      "a",
+      "b",
+      "b",
+      "i",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "bb",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b",
+        "note": "双写辅音合并，只发一次音"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "æ",
+      "b",
+      "ɪ",
+      "t"
+    ],
+    "syllables": [
+      "rab",
+      "bit"
+    ],
+    "ipa": "/ˈræbɪt/",
+    "definition": {
+      "en_young": "An animal with long ears.",
+      "en_older": "A small animal with long ears that can hop.",
+      "zh": "兔子"
+    },
+    "example": {
+      "en": "The rabbit can hop.",
+      "zh": "兔子会蹦跳。",
+      "audio": "animal_home_extra#rabbit_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#rabbit",
+      "wordSlow": "animal_home_extra#rabbit_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/rabbit.svg",
+      "alt": "兔子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say rabbit. Listen to each letter group together.",
+      "zh": "指着图片认识「兔子」，先听完整的 rabbit，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_turtle_027",
+    "word": "turtle",
+    "theme": "animals",
+    "spelling": [
+      "t",
+      "u",
+      "r",
+      "t",
+      "l",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "ur",
+        "phonemes": [
+          "ɝ"
+        ],
+        "audio": "phonics#er",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "le",
+        "phonemes": [
+          "ə",
+          "l"
+        ],
+        "audio": "phonics#el",
+        "note": "consonant-le 整体教学，不拆成 l + e"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "ɝ",
+      "t",
+      "ə",
+      "l"
+    ],
+    "syllables": [
+      "tur",
+      "tle"
+    ],
+    "ipa": "/ˈtɝtəl/",
+    "definition": {
+      "en_young": "An animal with a shell.",
+      "en_older": "An animal with a hard shell on its back.",
+      "zh": "乌龟"
+    },
+    "example": {
+      "en": "The turtle walks slowly.",
+      "zh": "乌龟慢慢地走。",
+      "audio": "animal_home_extra#turtle_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#turtle",
+      "wordSlow": "animal_home_extra#turtle_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/turtle.svg",
+      "alt": "乌龟"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say turtle. Listen to each letter group together.",
+      "zh": "指着图片认识「乌龟」，先听完整的 turtle，再按字母组合听声音。le 保持为一个声音组合。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_snail_028",
+    "word": "snail",
+    "theme": "animals",
+    "spelling": [
+      "s",
+      "n",
+      "a",
+      "i",
+      "l"
+    ],
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "ai",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "phonics#a_long",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "n",
+      "eɪ",
+      "l"
+    ],
+    "syllables": [
+      "snail"
+    ],
+    "ipa": "/sneɪl/",
+    "definition": {
+      "en_young": "An animal that slides slowly.",
+      "en_older": "A small slow animal with a round shell.",
+      "zh": "蜗牛"
+    },
+    "example": {
+      "en": "The snail is on a leaf.",
+      "zh": "蜗牛在一片叶子上。",
+      "audio": "animal_home_extra#snail_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#snail",
+      "wordSlow": "animal_home_extra#snail_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/snail.svg",
+      "alt": "蜗牛"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say snail. Listen to each letter group together.",
+      "zh": "指着图片认识「蜗牛」，先听完整的 snail，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_worm_029",
+    "word": "worm",
+    "theme": "animals",
+    "spelling": [
+      "w",
+      "o",
+      "r",
+      "m"
+    ],
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "phonics#w"
+      },
+      {
+        "letters": "or",
+        "phonemes": [
+          "ɝ"
+        ],
+        "audio": "phonics#er",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "phonics#m"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɝ",
+      "m"
+    ],
+    "syllables": [
+      "worm"
+    ],
+    "ipa": "/wɝm/",
+    "definition": {
+      "en_young": "A long animal without legs.",
+      "en_older": "A small long animal that has no legs.",
+      "zh": "蠕虫"
+    },
+    "example": {
+      "en": "The worm lives in the soil.",
+      "zh": "蠕虫住在土里。",
+      "audio": "animal_home_extra#worm_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#worm",
+      "wordSlow": "animal_home_extra#worm_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/worm.svg",
+      "alt": "蠕虫"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say worm. Listen to each letter group together.",
+      "zh": "指着图片认识「蠕虫」，先听完整的 worm，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_egg_030",
+    "word": "egg",
+    "theme": "food",
+    "spelling": [
+      "e",
+      "g",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "gg",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g",
+        "note": "双写辅音合并，只发一次音"
+      }
+    ],
+    "phonemes": [
+      "ɛ",
+      "g"
+    ],
+    "syllables": [
+      "egg"
+    ],
+    "ipa": "/ɛg/",
+    "definition": {
+      "en_young": "A food with a shell.",
+      "en_older": "A food from a hen, covered by a shell.",
+      "zh": "鸡蛋"
+    },
+    "example": {
+      "en": "The egg is in the cup.",
+      "zh": "鸡蛋在杯子里。",
+      "audio": "animal_home_extra#egg_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#egg",
+      "wordSlow": "animal_home_extra#egg_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/egg.svg",
+      "alt": "鸡蛋"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say egg. Listen to each letter group together.",
+      "zh": "指着图片认识「鸡蛋」，先听完整的 egg，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bone_031",
+    "word": "bone",
+    "theme": "body",
+    "spelling": [
+      "b",
+      "o",
+      "n",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "oʊ"
+        ],
+        "audio": "phonics#o_long"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null,
+        "note": "这个字母在本词中不发音"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "oʊ",
+      "n"
+    ],
+    "syllables": [
+      "bone"
+    ],
+    "ipa": "/boʊn/",
+    "definition": {
+      "en_young": "A hard part inside you.",
+      "en_older": "A hard part inside a body that gives support.",
+      "zh": "骨头"
+    },
+    "example": {
+      "en": "The dog has a bone.",
+      "zh": "狗有一根骨头。",
+      "audio": "animal_home_extra#bone_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#bone",
+      "wordSlow": "animal_home_extra#bone_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bone.svg",
+      "alt": "骨头"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say bone. Listen to each letter group together.",
+      "zh": "指着图片认识「骨头」，先听完整的 bone，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_box_032",
+    "word": "box",
+    "theme": "school",
+    "spelling": [
+      "b",
+      "o",
+      "x"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "x",
+        "phonemes": [
+          "k",
+          "s"
+        ],
+        "audio": "phonics#ks"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɑ",
+      "k",
+      "s"
+    ],
+    "syllables": [
+      "box"
+    ],
+    "ipa": "/bɑks/",
+    "definition": {
+      "en_young": "A thing to keep toys.",
+      "en_older": "A container that keeps things together.",
+      "zh": "盒子"
+    },
+    "example": {
+      "en": "The ball is in the box.",
+      "zh": "球在盒子里。",
+      "audio": "animal_home_extra#box_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#box",
+      "wordSlow": "animal_home_extra#box_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/box.svg",
+      "alt": "盒子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say box. Listen to each letter group together.",
+      "zh": "指着图片认识「盒子」，先听完整的 box，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_key_033",
+    "word": "key",
+    "theme": "family",
+    "spelling": [
+      "k",
+      "e",
+      "y"
+    ],
+    "graphemes": [
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "ey",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "phonics#ee",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "iː"
+    ],
+    "syllables": [
+      "key"
+    ],
+    "ipa": "/kiː/",
+    "definition": {
+      "en_young": "It can open a lock.",
+      "en_older": "A small object used to open a lock.",
+      "zh": "钥匙"
+    },
+    "example": {
+      "en": "This key opens the door.",
+      "zh": "这把钥匙能打开门。",
+      "audio": "animal_home_extra#key_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#key",
+      "wordSlow": "animal_home_extra#key_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/key.svg",
+      "alt": "钥匙"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say key. Listen to each letter group together.",
+      "zh": "指着图片认识「钥匙」，先听完整的 key，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_lock_034",
+    "word": "lock",
+    "theme": "family",
+    "spelling": [
+      "l",
+      "o",
+      "c",
+      "k"
+    ],
+    "graphemes": [
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "ck",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "l",
+      "ɑ",
+      "k"
+    ],
+    "syllables": [
+      "lock"
+    ],
+    "ipa": "/lɑk/",
+    "definition": {
+      "en_young": "It keeps a door shut.",
+      "en_older": "A thing that keeps something closed until you unlock it.",
+      "zh": "锁"
+    },
+    "example": {
+      "en": "The lock is on the box.",
+      "zh": "锁在盒子上。",
+      "audio": "animal_home_extra#lock_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#lock",
+      "wordSlow": "animal_home_extra#lock_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/lock.svg",
+      "alt": "锁"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say lock. Listen to each letter group together.",
+      "zh": "指着图片认识「锁」，先听完整的 lock，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_gift_035",
+    "word": "gift",
+    "theme": "family",
+    "spelling": [
+      "g",
+      "i",
+      "f",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "phonics#f"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "g",
+      "ɪ",
+      "f",
+      "t"
+    ],
+    "syllables": [
+      "gift"
+    ],
+    "ipa": "/gɪft/",
+    "definition": {
+      "en_young": "Something you give someone.",
+      "en_older": "Something you give to another person to make them happy.",
+      "zh": "礼物"
+    },
+    "example": {
+      "en": "This gift is for you.",
+      "zh": "这份礼物是给你的。",
+      "audio": "animal_home_extra#gift_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#gift",
+      "wordSlow": "animal_home_extra#gift_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/gift.svg",
+      "alt": "礼物"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say gift. Listen to each letter group together.",
+      "zh": "指着图片认识「礼物」，先听完整的 gift，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_house_036",
+    "word": "house",
+    "theme": "family",
+    "spelling": [
+      "h",
+      "o",
+      "u",
+      "s",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "phonics#h"
+      },
+      {
+        "letters": "ou",
+        "phonemes": [
+          "aʊ"
+        ],
+        "audio": "phonics#ow",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null,
+        "note": "这个字母在本词中不发音"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "aʊ",
+      "s"
+    ],
+    "syllables": [
+      "house"
+    ],
+    "ipa": "/haʊs/",
+    "definition": {
+      "en_young": "A place where people live.",
+      "en_older": "A building where a person or family lives.",
+      "zh": "房子"
+    },
+    "example": {
+      "en": "This house has a red door.",
+      "zh": "这所房子有一扇红色的门。",
+      "audio": "animal_home_extra#house_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#house",
+      "wordSlow": "animal_home_extra#house_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/house.svg",
+      "alt": "房子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say house. Listen to each letter group together.",
+      "zh": "指着图片认识「房子」，先听完整的 house，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_door_037",
+    "word": "door",
+    "theme": "family",
+    "spelling": [
+      "d",
+      "o",
+      "o",
+      "r"
+    ],
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      },
+      {
+        "letters": "oor",
+        "phonemes": [
+          "ɔː",
+          "r"
+        ],
+        "audio": "phonics#or",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "ɔː",
+      "r"
+    ],
+    "syllables": [
+      "door"
+    ],
+    "ipa": "/dɔːr/",
+    "definition": {
+      "en_young": "You open it to enter.",
+      "en_older": "A part you open to go into a room.",
+      "zh": "门"
+    },
+    "example": {
+      "en": "Please open the door.",
+      "zh": "请打开门。",
+      "audio": "animal_home_extra#door_sentence"
+    },
+    "audio": {
+      "word": "animal_home_extra#door",
+      "wordSlow": "animal_home_extra#door_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/door.svg",
+      "alt": "门"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say door. Listen to each letter group together.",
+      "zh": "指着图片认识「门」，先听完整的 door，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_apple_005",
+    "word": "apple",
+    "theme": "food",
+    "spelling": [
+      "a",
+      "p",
+      "p",
+      "l",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "pp",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p",
+        "note": "双写辅音合并，只发一次音"
+      },
+      {
+        "letters": "le",
+        "phonemes": [
+          "ə",
+          "l"
+        ],
+        "audio": "phonics#el",
+        "note": "consonant-le 整体教学，不拆成 l + e"
+      }
+    ],
+    "phonemes": [
+      "æ",
+      "p",
+      "ə",
+      "l"
+    ],
+    "syllables": [
+      "ap",
+      "ple"
+    ],
+    "ipa": "/ˈæpəl/",
+    "definition": {
+      "en_young": "A round, crunchy fruit.",
+      "en_older": "A round fruit that can be red, green, or yellow.",
+      "zh": "苹果"
+    },
+    "example": {
+      "en": "I eat an apple.",
+      "zh": "我吃一个苹果。",
+      "audio": "sunny_garden_a#apple_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#apple",
+      "wordSlow": "sunny_garden_a#apple_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/apple.svg",
+      "alt": "苹果"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say apple. Listen to each letter group together.",
+      "zh": "指着图片认识「苹果」，先听完整的 apple，再按字母组合听声音。le 保持为一个声音组合。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_banana_039",
+    "word": "banana",
+    "theme": "food",
+    "spelling": [
+      "b",
+      "a",
+      "n",
+      "a",
+      "n",
+      "a"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "phonics#schwa"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "phonics#schwa"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ə",
+      "n",
+      "æ",
+      "n",
+      "ə"
+    ],
+    "syllables": [
+      "ba",
+      "na",
+      "na"
+    ],
+    "ipa": "/bəˈnænə/",
+    "definition": {
+      "en_young": "A long yellow fruit.",
+      "en_older": "A long fruit with a yellow skin you peel.",
+      "zh": "香蕉"
+    },
+    "example": {
+      "en": "The banana is yellow.",
+      "zh": "香蕉是黄色的。",
+      "audio": "sunny_garden_a#banana_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#banana",
+      "wordSlow": "sunny_garden_a#banana_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/banana.svg",
+      "alt": "香蕉"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say banana. Listen to each letter group together.",
+      "zh": "指着图片认识「香蕉」，先听完整的 banana，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cherry_040",
+    "word": "cherry",
+    "theme": "food",
+    "spelling": [
+      "c",
+      "h",
+      "e",
+      "r",
+      "r",
+      "y"
+    ],
+    "graphemes": [
+      {
+        "letters": "ch",
+        "phonemes": [
+          "tʃ"
+        ],
+        "audio": "phonics#ch",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "rr",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r",
+        "note": "双写辅音合并，只发一次音"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "phonics#i_unstressed"
+      }
+    ],
+    "phonemes": [
+      "tʃ",
+      "ɛ",
+      "r",
+      "i"
+    ],
+    "syllables": [
+      "cher",
+      "ry"
+    ],
+    "ipa": "/ˈtʃɛri/",
+    "definition": {
+      "en_young": "A small round red fruit.",
+      "en_older": "A small round fruit with a stone inside.",
+      "zh": "樱桃"
+    },
+    "example": {
+      "en": "The cherry is red.",
+      "zh": "樱桃是红色的。",
+      "audio": "sunny_garden_a#cherry_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#cherry",
+      "wordSlow": "sunny_garden_a#cherry_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cherry.svg",
+      "alt": "樱桃"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say cherry. Listen to each letter group together.",
+      "zh": "指着图片认识「樱桃」，先听完整的 cherry，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_grape_041",
+    "word": "grape",
+    "theme": "food",
+    "spelling": [
+      "g",
+      "r",
+      "a",
+      "p",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "phonics#a_long"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null,
+        "note": "这个字母在本词中不发音"
+      }
+    ],
+    "phonemes": [
+      "g",
+      "r",
+      "eɪ",
+      "p"
+    ],
+    "syllables": [
+      "grape"
+    ],
+    "ipa": "/greɪp/",
+    "definition": {
+      "en_young": "A small, juicy fruit.",
+      "en_older": "A small fruit that grows in a bunch.",
+      "zh": "葡萄"
+    },
+    "example": {
+      "en": "I have a green grape.",
+      "zh": "我有一颗绿色的葡萄。",
+      "audio": "sunny_garden_a#grape_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#grape",
+      "wordSlow": "sunny_garden_a#grape_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/grape.svg",
+      "alt": "葡萄"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say grape. Listen to each letter group together.",
+      "zh": "指着图片认识「葡萄」，先听完整的 grape，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_carrot_042",
+    "word": "carrot",
+    "theme": "food",
+    "spelling": [
+      "c",
+      "a",
+      "r",
+      "r",
+      "o",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "rr",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r",
+        "note": "双写辅音合并，只发一次音"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "phonics#schwa"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "æ",
+      "r",
+      "ə",
+      "t"
+    ],
+    "syllables": [
+      "car",
+      "rot"
+    ],
+    "ipa": "/ˈkærət/",
+    "definition": {
+      "en_young": "A long orange vegetable.",
+      "en_older": "An orange root vegetable that grows under the ground.",
+      "zh": "胡萝卜"
+    },
+    "example": {
+      "en": "The rabbit eats a carrot.",
+      "zh": "兔子吃一根胡萝卜。",
+      "audio": "sunny_garden_a#carrot_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#carrot",
+      "wordSlow": "sunny_garden_a#carrot_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/carrot.svg",
+      "alt": "胡萝卜"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say carrot. Listen to each letter group together.",
+      "zh": "指着图片认识「胡萝卜」，先听完整的 carrot，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_nut_043",
+    "word": "nut",
+    "theme": "food",
+    "spelling": [
+      "n",
+      "u",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "n",
+      "ʌ",
+      "t"
+    ],
+    "syllables": [
+      "nut"
+    ],
+    "ipa": "/nʌt/",
+    "definition": {
+      "en_young": "Food in a hard shell.",
+      "en_older": "A small food that grows inside a hard shell.",
+      "zh": "坚果"
+    },
+    "example": {
+      "en": "The nut has a hard shell.",
+      "zh": "坚果有一层硬壳。",
+      "audio": "sunny_garden_a#nut_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#nut",
+      "wordSlow": "sunny_garden_a#nut_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/nut.svg",
+      "alt": "坚果"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say nut. Listen to each letter group together.",
+      "zh": "指着图片认识「坚果」，先听完整的 nut，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bean_044",
+    "word": "bean",
+    "theme": "food",
+    "spelling": [
+      "b",
+      "e",
+      "a",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "ea",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "phonics#ee",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "iː",
+      "n"
+    ],
+    "syllables": [
+      "bean"
+    ],
+    "ipa": "/biːn/",
+    "definition": {
+      "en_young": "A seed you can eat.",
+      "en_older": "A seed used as food, often cooked until soft.",
+      "zh": "豆子"
+    },
+    "example": {
+      "en": "This bean is green.",
+      "zh": "这颗豆子是绿色的。",
+      "audio": "sunny_garden_a#bean_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#bean",
+      "wordSlow": "sunny_garden_a#bean_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bean.svg",
+      "alt": "豆子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say bean. Listen to each letter group together.",
+      "zh": "指着图片认识「豆子」，先听完整的 bean，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_milk_045",
+    "word": "milk",
+    "theme": "food",
+    "spelling": [
+      "m",
+      "i",
+      "l",
+      "k"
+    ],
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "phonics#m"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "ɪ",
+      "l",
+      "k"
+    ],
+    "syllables": [
+      "milk"
+    ],
+    "ipa": "/mɪlk/",
+    "definition": {
+      "en_young": "A white drink.",
+      "en_older": "A white drink that can come from a cow.",
+      "zh": "牛奶"
+    },
+    "example": {
+      "en": "The milk is in the cup.",
+      "zh": "牛奶在杯子里。",
+      "audio": "sunny_garden_a#milk_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#milk",
+      "wordSlow": "sunny_garden_a#milk_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/milk.svg",
+      "alt": "牛奶"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say milk. Listen to each letter group together.",
+      "zh": "指着图片认识「牛奶」，先听完整的 milk，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_soup_046",
+    "word": "soup",
+    "theme": "food",
+    "spelling": [
+      "s",
+      "o",
+      "u",
+      "p"
+    ],
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "ou",
+        "phonemes": [
+          "uː"
+        ],
+        "audio": "phonics#oo_long",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "uː",
+      "p"
+    ],
+    "syllables": [
+      "soup"
+    ],
+    "ipa": "/suːp/",
+    "definition": {
+      "en_young": "A warm food you sip.",
+      "en_older": "A liquid food made by cooking vegetables or other ingredients.",
+      "zh": "汤"
+    },
+    "example": {
+      "en": "The soup is in the pot.",
+      "zh": "汤在锅里。",
+      "audio": "sunny_garden_a#soup_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#soup",
+      "wordSlow": "sunny_garden_a#soup_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/soup.svg",
+      "alt": "汤"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say soup. Listen to each letter group together.",
+      "zh": "指着图片认识「汤」，先听完整的 soup，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bread_047",
+    "word": "bread",
+    "theme": "food",
+    "sightWordList": "dolch_nouns",
+    "spelling": [
+      "b",
+      "r",
+      "e",
+      "a",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "ea",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "r",
+      "ɛ",
+      "d"
+    ],
+    "syllables": [
+      "bread"
+    ],
+    "ipa": "/brɛd/",
+    "definition": {
+      "en_young": "Food baked from flour.",
+      "en_older": "A food made from flour and baked.",
+      "zh": "面包"
+    },
+    "example": {
+      "en": "I eat some bread.",
+      "zh": "我吃一些面包。",
+      "audio": "sunny_garden_a#bread_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#bread",
+      "wordSlow": "sunny_garden_a#bread_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bread.svg",
+      "alt": "面包"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to bread as one whole word, then read the sentence together.",
+      "zh": "把 bread 作为整词听读，再一起读例句，指出句子里高亮的 bread；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cake_048",
+    "word": "cake",
+    "theme": "food",
+    "spelling": [
+      "c",
+      "a",
+      "k",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "phonics#a_long"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null,
+        "note": "这个字母在本词中不发音"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "eɪ",
+      "k"
+    ],
+    "syllables": [
+      "cake"
+    ],
+    "ipa": "/keɪk/",
+    "definition": {
+      "en_young": "A sweet baked food.",
+      "en_older": "A sweet food that is baked and shared in slices.",
+      "zh": "蛋糕"
+    },
+    "example": {
+      "en": "We share a little cake.",
+      "zh": "我们分享一个小蛋糕。",
+      "audio": "sunny_garden_a#cake_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#cake",
+      "wordSlow": "sunny_garden_a#cake_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cake.svg",
+      "alt": "蛋糕"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say cake. Listen to each letter group together.",
+      "zh": "指着图片认识「蛋糕」，先听完整的 cake，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cookie_049",
+    "word": "cookie",
+    "theme": "food",
+    "spelling": [
+      "c",
+      "o",
+      "o",
+      "k",
+      "i",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "oo",
+        "phonemes": [
+          "ʊ"
+        ],
+        "audio": "phonics#oo_short",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "ie",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "phonics#i_unstressed",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "ʊ",
+      "k",
+      "i"
+    ],
+    "syllables": [
+      "cook",
+      "ie"
+    ],
+    "ipa": "/ˈkʊki/",
+    "definition": {
+      "en_young": "A small sweet baked treat.",
+      "en_older": "A small flat sweet food that is baked.",
+      "zh": "曲奇饼干"
+    },
+    "example": {
+      "en": "I have one cookie.",
+      "zh": "我有一块曲奇饼干。",
+      "audio": "sunny_garden_a#cookie_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#cookie",
+      "wordSlow": "sunny_garden_a#cookie_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cookie.svg",
+      "alt": "曲奇饼干"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say cookie. Listen to each letter group together.",
+      "zh": "指着图片认识「曲奇饼干」，先听完整的 cookie，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_candy_050",
+    "word": "candy",
+    "theme": "food",
+    "spelling": [
+      "c",
+      "a",
+      "n",
+      "d",
+      "y"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "phonics#i_unstressed"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "æ",
+      "n",
+      "d",
+      "i"
+    ],
+    "syllables": [
+      "can",
+      "dy"
+    ],
+    "ipa": "/ˈkændi/",
+    "definition": {
+      "en_young": "A little sweet treat.",
+      "en_older": "A sweet food made with sugar.",
+      "zh": "糖果"
+    },
+    "example": {
+      "en": "The candy is in the bag.",
+      "zh": "糖果在包里。",
+      "audio": "sunny_garden_a#candy_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#candy",
+      "wordSlow": "sunny_garden_a#candy_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/candy.svg",
+      "alt": "糖果"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say candy. Listen to each letter group together.",
+      "zh": "指着图片认识「糖果」，先听完整的 candy，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_corn_051",
+    "word": "corn",
+    "theme": "food",
+    "spelling": [
+      "c",
+      "o",
+      "r",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "or",
+        "phonemes": [
+          "ɔː",
+          "r"
+        ],
+        "audio": "phonics#or",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "ɔː",
+      "r",
+      "n"
+    ],
+    "syllables": [
+      "corn"
+    ],
+    "ipa": "/kɔːrn/",
+    "definition": {
+      "en_young": "A food with yellow kernels.",
+      "en_older": "A tall plant with rows of seeds we can eat.",
+      "zh": "玉米"
+    },
+    "example": {
+      "en": "The corn is yellow.",
+      "zh": "玉米是黄色的。",
+      "audio": "sunny_garden_a#corn_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#corn",
+      "wordSlow": "sunny_garden_a#corn_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/corn.svg",
+      "alt": "玉米"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say corn. Listen to each letter group together.",
+      "zh": "指着图片认识「玉米」，先听完整的 corn，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_leaf_052",
+    "word": "leaf",
+    "theme": "nature",
+    "spelling": [
+      "l",
+      "e",
+      "a",
+      "f"
+    ],
+    "graphemes": [
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "ea",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "phonics#ee",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "phonics#f"
+      }
+    ],
+    "phonemes": [
+      "l",
+      "iː",
+      "f"
+    ],
+    "syllables": [
+      "leaf"
+    ],
+    "ipa": "/liːf/",
+    "definition": {
+      "en_young": "A flat, green plant part.",
+      "en_older": "A flat plant part that is often green.",
+      "zh": "叶子"
+    },
+    "example": {
+      "en": "The leaf is on the tree.",
+      "zh": "叶子长在树上。",
+      "audio": "sunny_garden_a#leaf_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#leaf",
+      "wordSlow": "sunny_garden_a#leaf_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/leaf.svg",
+      "alt": "叶子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say leaf. Listen to each letter group together.",
+      "zh": "指着图片认识「叶子」，先听完整的 leaf，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_tree_053",
+    "word": "tree",
+    "theme": "nature",
+    "spelling": [
+      "t",
+      "r",
+      "e",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "ee",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "phonics#ee",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "r",
+      "iː"
+    ],
+    "syllables": [
+      "tree"
+    ],
+    "ipa": "/triː/",
+    "definition": {
+      "en_young": "A tall plant with branches.",
+      "en_older": "A tall plant with a trunk, branches, and leaves.",
+      "zh": "树"
+    },
+    "example": {
+      "en": "The bird sits in the tree.",
+      "zh": "鸟停在树上。",
+      "audio": "sunny_garden_a#tree_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#tree",
+      "wordSlow": "sunny_garden_a#tree_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/tree.svg",
+      "alt": "树"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say tree. Listen to each letter group together.",
+      "zh": "指着图片认识「树」，先听完整的 tree，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_flower_054",
+    "word": "flower",
+    "theme": "nature",
+    "spelling": [
+      "f",
+      "l",
+      "o",
+      "w",
+      "e",
+      "r"
+    ],
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "phonics#f"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "ow",
+        "phonemes": [
+          "aʊ"
+        ],
+        "audio": "phonics#ow",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "er",
+        "phonemes": [
+          "ɚ"
+        ],
+        "audio": "phonics#er_unstressed",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "l",
+      "aʊ",
+      "ɚ"
+    ],
+    "syllables": [
+      "flow",
+      "er"
+    ],
+    "ipa": "/ˈflaʊɚ/",
+    "definition": {
+      "en_young": "A plant part with petals.",
+      "en_older": "The part of a plant that often has colorful petals.",
+      "zh": "花"
+    },
+    "example": {
+      "en": "The flower is red.",
+      "zh": "这朵花是红色的。",
+      "audio": "sunny_garden_a#flower_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_a#flower",
+      "wordSlow": "sunny_garden_a#flower_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/flower.svg",
+      "alt": "花"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say flower. Listen to each letter group together.",
+      "zh": "指着图片认识「花」，先听完整的 flower，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_grass_055",
+    "word": "grass",
+    "theme": "nature",
+    "spelling": [
+      "g",
+      "r",
+      "a",
+      "s",
+      "s"
+    ],
+    "graphemes": [
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "ss",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s",
+        "note": "双写辅音合并，只发一次音"
+      }
+    ],
+    "phonemes": [
+      "g",
+      "r",
+      "æ",
+      "s"
+    ],
+    "syllables": [
+      "grass"
+    ],
+    "ipa": "/græs/",
+    "definition": {
+      "en_young": "Short green plants.",
+      "en_older": "Green plants with thin leaves that cover the ground.",
+      "zh": "草"
+    },
+    "example": {
+      "en": "The grass is green.",
+      "zh": "草是绿色的。",
+      "audio": "sunny_garden_b#grass_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#grass",
+      "wordSlow": "sunny_garden_b#grass_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/grass.svg",
+      "alt": "草"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say grass. Listen to each letter group together.",
+      "zh": "指着图片认识「草」，先听完整的 grass，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_rain_056",
+    "word": "rain",
+    "theme": "nature",
+    "spelling": [
+      "r",
+      "a",
+      "i",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "ai",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "phonics#a_long",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "eɪ",
+      "n"
+    ],
+    "syllables": [
+      "rain"
+    ],
+    "ipa": "/reɪn/",
+    "definition": {
+      "en_young": "Water falling from clouds.",
+      "en_older": "Drops of water that fall from clouds in the sky.",
+      "zh": "雨"
+    },
+    "example": {
+      "en": "The rain falls on the grass.",
+      "zh": "雨落在草地上。",
+      "audio": "sunny_garden_b#rain_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#rain",
+      "wordSlow": "sunny_garden_b#rain_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/rain.svg",
+      "alt": "雨"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say rain. Listen to each letter group together.",
+      "zh": "指着图片认识「雨」，先听完整的 rain，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cloud_057",
+    "word": "cloud",
+    "theme": "nature",
+    "spelling": [
+      "c",
+      "l",
+      "o",
+      "u",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "ou",
+        "phonemes": [
+          "aʊ"
+        ],
+        "audio": "phonics#ow",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "l",
+      "aʊ",
+      "d"
+    ],
+    "syllables": [
+      "cloud"
+    ],
+    "ipa": "/klaʊd/",
+    "definition": {
+      "en_young": "Tiny water drops floating together.",
+      "en_older": "Tiny drops of water floating together in the sky.",
+      "zh": "云"
+    },
+    "example": {
+      "en": "The cloud is in the sky.",
+      "zh": "云在天上。",
+      "audio": "sunny_garden_b#cloud_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#cloud",
+      "wordSlow": "sunny_garden_b#cloud_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cloud.svg",
+      "alt": "云"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say cloud. Listen to each letter group together.",
+      "zh": "指着图片认识「云」，先听完整的 cloud，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_snow_058",
+    "word": "snow",
+    "theme": "nature",
+    "spelling": [
+      "s",
+      "n",
+      "o",
+      "w"
+    ],
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "ow",
+        "phonemes": [
+          "oʊ"
+        ],
+        "audio": "phonics#o_long",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "n",
+      "oʊ"
+    ],
+    "syllables": [
+      "snow"
+    ],
+    "ipa": "/snoʊ/",
+    "definition": {
+      "en_young": "Soft white flakes from clouds.",
+      "en_older": "Small white ice flakes that fall from clouds.",
+      "zh": "雪"
+    },
+    "example": {
+      "en": "The snow is soft and white.",
+      "zh": "雪又软又白。",
+      "audio": "sunny_garden_b#snow_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#snow",
+      "wordSlow": "sunny_garden_b#snow_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/snow.svg",
+      "alt": "雪"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say snow. Listen to each letter group together.",
+      "zh": "指着图片认识「雪」，先听完整的 snow，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_moon_059",
+    "word": "moon",
+    "theme": "nature",
+    "spelling": [
+      "m",
+      "o",
+      "o",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "phonics#m"
+      },
+      {
+        "letters": "oo",
+        "phonemes": [
+          "uː"
+        ],
+        "audio": "phonics#oo_long",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "uː",
+      "n"
+    ],
+    "syllables": [
+      "moon"
+    ],
+    "ipa": "/muːn/",
+    "definition": {
+      "en_young": "A bright shape at night.",
+      "en_older": "The round object that goes around Earth and reflects sunlight.",
+      "zh": "月亮"
+    },
+    "example": {
+      "en": "I can see the moon.",
+      "zh": "我能看见月亮。",
+      "audio": "sunny_garden_b#moon_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#moon",
+      "wordSlow": "sunny_garden_b#moon_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/moon.svg",
+      "alt": "月亮"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say moon. Listen to each letter group together.",
+      "zh": "指着图片认识「月亮」，先听完整的 moon，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_star_060",
+    "word": "star",
+    "theme": "nature",
+    "spelling": [
+      "s",
+      "t",
+      "a",
+      "r"
+    ],
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "ar",
+        "phonemes": [
+          "ɑ",
+          "r"
+        ],
+        "audio": "phonics#ar",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "t",
+      "ɑ",
+      "r"
+    ],
+    "syllables": [
+      "star"
+    ],
+    "ipa": "/stɑr/",
+    "definition": {
+      "en_young": "A bright, faraway sky light.",
+      "en_older": "A huge faraway ball of gas that gives off light.",
+      "zh": "星星"
+    },
+    "example": {
+      "en": "The star shines at night.",
+      "zh": "星星在夜晚发光。",
+      "audio": "sunny_garden_b#star_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#star",
+      "wordSlow": "sunny_garden_b#star_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/star.svg",
+      "alt": "星星"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say star. Listen to each letter group together.",
+      "zh": "指着图片认识「星星」，先听完整的 star，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_wind_061",
+    "word": "wind",
+    "theme": "nature",
+    "spelling": [
+      "w",
+      "i",
+      "n",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "phonics#w"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɪ",
+      "n",
+      "d"
+    ],
+    "syllables": [
+      "wind"
+    ],
+    "ipa": "/wɪnd/",
+    "definition": {
+      "en_young": "Air that moves.",
+      "en_older": "Air moving around us, sometimes gently and sometimes quickly.",
+      "zh": "风"
+    },
+    "example": {
+      "en": "The wind moves the leaf.",
+      "zh": "风吹动了叶子。",
+      "audio": "sunny_garden_b#wind_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#wind",
+      "wordSlow": "sunny_garden_b#wind_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/wind.svg",
+      "alt": "风"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say wind. Listen to each letter group together.",
+      "zh": "指着图片认识「风」，先听完整的 wind，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pond_062",
+    "word": "pond",
+    "theme": "nature",
+    "spelling": [
+      "p",
+      "o",
+      "n",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɑ",
+      "n",
+      "d"
+    ],
+    "syllables": [
+      "pond"
+    ],
+    "ipa": "/pɑnd/",
+    "definition": {
+      "en_young": "A small body of water.",
+      "en_older": "A small area of water surrounded by land.",
+      "zh": "池塘"
+    },
+    "example": {
+      "en": "The fish is in the pond.",
+      "zh": "鱼在池塘里。",
+      "audio": "sunny_garden_b#pond_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#pond",
+      "wordSlow": "sunny_garden_b#pond_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pond.svg",
+      "alt": "池塘"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say pond. Listen to each letter group together.",
+      "zh": "指着图片认识「池塘」，先听完整的 pond，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_rock_063",
+    "word": "rock",
+    "theme": "nature",
+    "spelling": [
+      "r",
+      "o",
+      "c",
+      "k"
+    ],
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "ck",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "ɑ",
+      "k"
+    ],
+    "syllables": [
+      "rock"
+    ],
+    "ipa": "/rɑk/",
+    "definition": {
+      "en_young": "A hard piece of earth.",
+      "en_older": "A hard piece of natural material from the ground.",
+      "zh": "石头"
+    },
+    "example": {
+      "en": "The rock is by the tree.",
+      "zh": "石头在树旁边。",
+      "audio": "sunny_garden_b#rock_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#rock",
+      "wordSlow": "sunny_garden_b#rock_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/rock.svg",
+      "alt": "石头"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say rock. Listen to each letter group together.",
+      "zh": "指着图片认识「石头」，先听完整的 rock，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_seed_064",
+    "word": "seed",
+    "theme": "nature",
+    "spelling": [
+      "s",
+      "e",
+      "e",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "ee",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "phonics#ee",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "iː",
+      "d"
+    ],
+    "syllables": [
+      "seed"
+    ],
+    "ipa": "/siːd/",
+    "definition": {
+      "en_young": "It grows into a plant.",
+      "en_older": "A small plant part that can grow into a plant.",
+      "zh": "种子"
+    },
+    "example": {
+      "en": "We put the seed in soil.",
+      "zh": "我们把种子放进土里。",
+      "audio": "sunny_garden_b#seed_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#seed",
+      "wordSlow": "sunny_garden_b#seed_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/seed.svg",
+      "alt": "种子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say seed. Listen to each letter group together.",
+      "zh": "指着图片认识「种子」，先听完整的 seed，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_red_065",
+    "word": "red",
+    "theme": "colors",
+    "spelling": [
+      "r",
+      "e",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "ɛ",
+      "d"
+    ],
+    "syllables": [
+      "red"
+    ],
+    "ipa": "/rɛd/",
+    "definition": {
+      "en_young": "The color of some apples.",
+      "en_older": "A bright color, like a ripe tomato.",
+      "zh": "红色"
+    },
+    "example": {
+      "en": "The flower is red.",
+      "zh": "这朵花是红色的。",
+      "audio": "sunny_garden_b#red_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#red",
+      "wordSlow": "sunny_garden_b#red_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/red.svg",
+      "alt": "红色"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say red. Listen to each letter group together.",
+      "zh": "指着图片认识「红色」，先听完整的 red，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_green_066",
+    "word": "green",
+    "theme": "colors",
+    "spelling": [
+      "g",
+      "r",
+      "e",
+      "e",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "ee",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "phonics#ee",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "g",
+      "r",
+      "iː",
+      "n"
+    ],
+    "syllables": [
+      "green"
+    ],
+    "ipa": "/griːn/",
+    "definition": {
+      "en_young": "The color of grass.",
+      "en_older": "The color of many leaves and plants.",
+      "zh": "绿色"
+    },
+    "example": {
+      "en": "The leaf is green.",
+      "zh": "这片叶子是绿色的。",
+      "audio": "sunny_garden_b#green_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#green",
+      "wordSlow": "sunny_garden_b#green_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/green.svg",
+      "alt": "绿色"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say green. Listen to each letter group together.",
+      "zh": "指着图片认识「绿色」，先听完整的 green，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_blue_004",
+    "word": "blue",
+    "theme": "colors",
+    "spelling": [
+      "b",
+      "l",
+      "u",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "ue",
+        "phonemes": [
+          "uː"
+        ],
+        "audio": "phonics#oo_long",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "l",
+      "uː"
+    ],
+    "syllables": [
+      "blue"
+    ],
+    "ipa": "/bluː/",
+    "definition": {
+      "en_young": "The color of clear skies.",
+      "en_older": "A color like the sky on a clear day.",
+      "zh": "蓝色"
+    },
+    "example": {
+      "en": "The sky is blue.",
+      "zh": "天空是蓝色的。",
+      "audio": "sunny_garden_b#blue_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#blue",
+      "wordSlow": "sunny_garden_b#blue_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/blue.svg",
+      "alt": "蓝色"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say blue. Listen to each letter group together.",
+      "zh": "指着图片认识「蓝色」，先听完整的 blue，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_the_068",
+    "word": "the",
+    "theme": "school",
+    "sightWordList": "dolch_pre_primer",
+    "spelling": [
+      "t",
+      "h",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "th",
+        "phonemes": [
+          "ð"
+        ],
+        "audio": "phonics#th_voiced",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "phonics#schwa"
+      }
+    ],
+    "phonemes": [
+      "ð",
+      "ə"
+    ],
+    "syllables": [
+      "the"
+    ],
+    "ipa": "/ðə/",
+    "definition": {
+      "en_young": "A thing we both know.",
+      "en_older": "A word for something we already know.",
+      "zh": "这个或那个"
+    },
+    "example": {
+      "en": "Look at the big tree.",
+      "zh": "看看那棵大树。",
+      "audio": "sunny_garden_b#the_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#the",
+      "wordSlow": "sunny_garden_b#the_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/the.svg",
+      "alt": "这个或那个"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to the as one whole word, then read the sentence together.",
+      "zh": "把 the 作为整词听读，再一起读例句，指出句子里高亮的 the；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_a_069",
+    "word": "a",
+    "theme": "school",
+    "sightWordList": "dolch_pre_primer",
+    "spelling": [
+      "a"
+    ],
+    "graphemes": [
+      {
+        "letters": "a",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "phonics#a_long"
+      }
+    ],
+    "phonemes": [
+      "eɪ"
+    ],
+    "syllables": [
+      "a"
+    ],
+    "ipa": "/eɪ/",
+    "definition": {
+      "en_young": "One thing, any one.",
+      "en_older": "A word for one thing of a kind.",
+      "zh": "一个"
+    },
+    "example": {
+      "en": "I see a red leaf.",
+      "zh": "我看见一片红叶。",
+      "audio": "sunny_garden_b#a_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#a",
+      "wordSlow": "sunny_garden_b#a_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/a.svg",
+      "alt": "一个"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to a as one whole word, then read the sentence together.",
+      "zh": "把 a 作为整词听读，再一起读例句，指出句子里高亮的 a；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_you_070",
+    "word": "you",
+    "theme": "family",
+    "sightWordList": "dolch_pre_primer",
+    "spelling": [
+      "y",
+      "o",
+      "u"
+    ],
+    "graphemes": [
+      {
+        "letters": "y",
+        "phonemes": [
+          "j"
+        ],
+        "audio": "phonics#y"
+      },
+      {
+        "letters": "ou",
+        "phonemes": [
+          "uː"
+        ],
+        "audio": "phonics#oo_long",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "j",
+      "uː"
+    ],
+    "syllables": [
+      "you"
+    ],
+    "ipa": "/juː/",
+    "definition": {
+      "en_young": "The person you speak to.",
+      "en_older": "A word for the person you are speaking to.",
+      "zh": "你或你们"
+    },
+    "example": {
+      "en": "You can play with me.",
+      "zh": "你可以和我一起玩。",
+      "audio": "sunny_garden_b#you_sentence"
+    },
+    "audio": {
+      "word": "sunny_garden_b#you",
+      "wordSlow": "sunny_garden_b#you_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/you.svg",
+      "alt": "你或你们"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to you as one whole word, then read the sentence together.",
+      "zh": "把 you 作为整词听读，再一起读例句，指出句子里高亮的 you；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_book_003",
+    "word": "book",
+    "theme": "school",
+    "spelling": [
+      "b",
+      "o",
+      "o",
+      "k"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "oo",
+        "phonemes": [
+          "ʊ"
+        ],
+        "audio": "phonics#oo_short",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ʊ",
+      "k"
+    ],
+    "syllables": [
+      "book"
+    ],
+    "ipa": "/bʊk/",
+    "definition": {
+      "en_young": "Pages you can read.",
+      "en_older": "Pages joined together with words or pictures.",
+      "zh": "书"
+    },
+    "example": {
+      "en": "I read a book.",
+      "zh": "我读一本书。",
+      "audio": "happy_school_a#book_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#book",
+      "wordSlow": "happy_school_a#book_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/book.svg",
+      "alt": "书"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say book. Listen to each letter group together.",
+      "zh": "指着图片认识「书」，先听完整的 book，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pencil_072",
+    "word": "pencil",
+    "theme": "school",
+    "spelling": [
+      "p",
+      "e",
+      "n",
+      "c",
+      "i",
+      "l"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "c",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "phonics#schwa"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɛ",
+      "n",
+      "s",
+      "ə",
+      "l"
+    ],
+    "syllables": [
+      "pen",
+      "cil"
+    ],
+    "ipa": "/ˈpɛnsəl/",
+    "definition": {
+      "en_young": "A tool for writing.",
+      "en_older": "A thin tool for writing that can be erased.",
+      "zh": "铅笔"
+    },
+    "example": {
+      "en": "I draw with a pencil.",
+      "zh": "我用铅笔画画。",
+      "audio": "happy_school_a#pencil_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#pencil",
+      "wordSlow": "happy_school_a#pencil_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pencil.svg",
+      "alt": "铅笔"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say pencil. Listen to each letter group together.",
+      "zh": "指着图片认识「铅笔」，先听完整的 pencil，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_ruler_073",
+    "word": "ruler",
+    "theme": "school",
+    "spelling": [
+      "r",
+      "u",
+      "l",
+      "e",
+      "r"
+    ],
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "uː"
+        ],
+        "audio": "phonics#oo_long"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "er",
+        "phonemes": [
+          "ɚ"
+        ],
+        "audio": "phonics#er_unstressed",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "uː",
+      "l",
+      "ɚ"
+    ],
+    "syllables": [
+      "ru",
+      "ler"
+    ],
+    "ipa": "/ˈruːlɚ/",
+    "definition": {
+      "en_young": "Use it to measure.",
+      "en_older": "A straight tool for measuring and drawing lines.",
+      "zh": "尺子"
+    },
+    "example": {
+      "en": "I draw with a ruler.",
+      "zh": "我用尺子画线。",
+      "audio": "happy_school_a#ruler_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#ruler",
+      "wordSlow": "happy_school_a#ruler_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/ruler.svg",
+      "alt": "尺子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say ruler. Listen to each letter group together.",
+      "zh": "指着图片认识「尺子」，先听完整的 ruler，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 4
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_brush_074",
+    "word": "brush",
+    "theme": "school",
+    "spelling": [
+      "b",
+      "r",
+      "u",
+      "s",
+      "h"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "sh",
+        "phonemes": [
+          "ʃ"
+        ],
+        "audio": "phonics#sh",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "r",
+      "ʌ",
+      "ʃ"
+    ],
+    "syllables": [
+      "brush"
+    ],
+    "ipa": "/brʌʃ/",
+    "definition": {
+      "en_young": "Use it to paint.",
+      "en_older": "A tool with short hairs used for painting.",
+      "zh": "画笔"
+    },
+    "example": {
+      "en": "We paint with a brush.",
+      "zh": "我们用画笔画画。",
+      "audio": "happy_school_a#brush_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#brush",
+      "wordSlow": "happy_school_a#brush_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/brush.svg",
+      "alt": "画笔"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say brush. Listen to each letter group together.",
+      "zh": "指着图片认识「画笔」，先听完整的 brush，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bell_075",
+    "word": "bell",
+    "theme": "school",
+    "spelling": [
+      "b",
+      "e",
+      "l",
+      "l"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "ll",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l",
+        "note": "双写辅音合并，只发一次音"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɛ",
+      "l"
+    ],
+    "syllables": [
+      "bell"
+    ],
+    "ipa": "/bɛl/",
+    "definition": {
+      "en_young": "A thing that rings.",
+      "en_older": "A thing that makes a clear ringing sound.",
+      "zh": "铃铛"
+    },
+    "example": {
+      "en": "The bell rings at school.",
+      "zh": "学校里的铃响了。",
+      "audio": "happy_school_a#bell_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#bell",
+      "wordSlow": "happy_school_a#bell_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bell.svg",
+      "alt": "铃铛"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say bell. Listen to each letter group together.",
+      "zh": "指着图片认识「铃铛」，先听完整的 bell，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_clock_076",
+    "word": "clock",
+    "theme": "school",
+    "spelling": [
+      "c",
+      "l",
+      "o",
+      "c",
+      "k"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "ck",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "l",
+      "ɑ",
+      "k"
+    ],
+    "syllables": [
+      "clock"
+    ],
+    "ipa": "/klɑk/",
+    "definition": {
+      "en_young": "A thing that shows time.",
+      "en_older": "A thing with hands that shows the time.",
+      "zh": "时钟"
+    },
+    "example": {
+      "en": "The clock is on the wall.",
+      "zh": "时钟挂在墙上。",
+      "audio": "happy_school_a#clock_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#clock",
+      "wordSlow": "happy_school_a#clock_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/clock.svg",
+      "alt": "时钟"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say clock. Listen to each letter group together.",
+      "zh": "指着图片认识「时钟」，先听完整的 clock，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_desk_077",
+    "word": "desk",
+    "theme": "school",
+    "spelling": [
+      "d",
+      "e",
+      "s",
+      "k"
+    ],
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "ɛ",
+      "s",
+      "k"
+    ],
+    "syllables": [
+      "desk"
+    ],
+    "ipa": "/dɛsk/",
+    "definition": {
+      "en_young": "A table for your work.",
+      "en_older": "A table used for writing, reading, or other work.",
+      "zh": "书桌"
+    },
+    "example": {
+      "en": "My book is on the desk.",
+      "zh": "我的书在书桌上。",
+      "audio": "happy_school_a#desk_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#desk",
+      "wordSlow": "happy_school_a#desk_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/desk.svg",
+      "alt": "书桌"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say desk. Listen to each letter group together.",
+      "zh": "指着图片认识「书桌」，先听完整的 desk，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_chair_078",
+    "word": "chair",
+    "theme": "school",
+    "spelling": [
+      "c",
+      "h",
+      "a",
+      "i",
+      "r"
+    ],
+    "graphemes": [
+      {
+        "letters": "ch",
+        "phonemes": [
+          "tʃ"
+        ],
+        "audio": "phonics#ch",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "air",
+        "phonemes": [
+          "ɛ",
+          "r"
+        ],
+        "audio": "phonics#air",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "tʃ",
+      "ɛ",
+      "r"
+    ],
+    "syllables": [
+      "chair"
+    ],
+    "ipa": "/tʃɛr/",
+    "definition": {
+      "en_young": "A seat for one person.",
+      "en_older": "A seat for one person, often with a back.",
+      "zh": "椅子"
+    },
+    "example": {
+      "en": "I sit on the chair.",
+      "zh": "我坐在椅子上。",
+      "audio": "happy_school_a#chair_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#chair",
+      "wordSlow": "happy_school_a#chair_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/chair.svg",
+      "alt": "椅子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say chair. Listen to each letter group together.",
+      "zh": "指着图片认识「椅子」，先听完整的 chair，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_hand_079",
+    "word": "hand",
+    "theme": "body",
+    "spelling": [
+      "h",
+      "a",
+      "n",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "phonics#h"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "æ",
+      "n",
+      "d"
+    ],
+    "syllables": [
+      "hand"
+    ],
+    "ipa": "/hænd/",
+    "definition": {
+      "en_young": "You hold things with it.",
+      "en_older": "The body part with fingers that holds things.",
+      "zh": "手"
+    },
+    "example": {
+      "en": "My hand is on the desk.",
+      "zh": "我的手放在书桌上。",
+      "audio": "happy_school_a#hand_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#hand",
+      "wordSlow": "happy_school_a#hand_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/hand.svg",
+      "alt": "手"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say hand. Listen to each letter group together.",
+      "zh": "指着图片认识「手」，先听完整的 hand，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_ear_080",
+    "word": "ear",
+    "theme": "body",
+    "spelling": [
+      "e",
+      "a",
+      "r"
+    ],
+    "graphemes": [
+      {
+        "letters": "ear",
+        "phonemes": [
+          "ɪ",
+          "r"
+        ],
+        "audio": "phonics#ear",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "ɪ",
+      "r"
+    ],
+    "syllables": [
+      "ear"
+    ],
+    "ipa": "/ɪr/",
+    "definition": {
+      "en_young": "You hear with it.",
+      "en_older": "One of the parts that let you hear sounds.",
+      "zh": "耳朵"
+    },
+    "example": {
+      "en": "I can touch my ear.",
+      "zh": "我能摸到自己的耳朵。",
+      "audio": "happy_school_a#ear_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#ear",
+      "wordSlow": "happy_school_a#ear_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/ear.svg",
+      "alt": "耳朵"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say ear. Listen to each letter group together.",
+      "zh": "指着图片认识「耳朵」，先听完整的 ear，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_eye_081",
+    "word": "eye",
+    "theme": "body",
+    "sightWordList": "dolch_nouns",
+    "spelling": [
+      "e",
+      "y",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "eye",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "phonics#i_long",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "aɪ"
+    ],
+    "syllables": [
+      "eye"
+    ],
+    "ipa": "/aɪ/",
+    "definition": {
+      "en_young": "You see with it.",
+      "en_older": "One of the two parts you use to see.",
+      "zh": "眼睛"
+    },
+    "example": {
+      "en": "I can close one eye.",
+      "zh": "我能闭上一只眼睛。",
+      "audio": "happy_school_a#eye_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#eye",
+      "wordSlow": "happy_school_a#eye_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/eye.svg",
+      "alt": "眼睛"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to eye as one whole word, then read the sentence together.",
+      "zh": "把 eye 作为整词听读，再一起读例句，指出句子里高亮的 eye；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_foot_082",
+    "word": "foot",
+    "theme": "body",
+    "spelling": [
+      "f",
+      "o",
+      "o",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "phonics#f"
+      },
+      {
+        "letters": "oo",
+        "phonemes": [
+          "ʊ"
+        ],
+        "audio": "phonics#oo_short",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "ʊ",
+      "t"
+    ],
+    "syllables": [
+      "foot"
+    ],
+    "ipa": "/fʊt/",
+    "definition": {
+      "en_young": "You stand on this.",
+      "en_older": "A body part that helps you stand and walk.",
+      "zh": "脚"
+    },
+    "example": {
+      "en": "My foot is in my shoe.",
+      "zh": "我的脚在鞋子里。",
+      "audio": "happy_school_a#foot_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#foot",
+      "wordSlow": "happy_school_a#foot_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/foot.svg",
+      "alt": "脚"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say foot. Listen to each letter group together.",
+      "zh": "指着图片认识「脚」，先听完整的 foot，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_ball_083",
+    "word": "ball",
+    "theme": "school",
+    "spelling": [
+      "b",
+      "a",
+      "l",
+      "l"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɔː"
+        ],
+        "audio": "phonics#aw"
+      },
+      {
+        "letters": "ll",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l",
+        "note": "双写辅音合并，只发一次音"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɔː",
+      "l"
+    ],
+    "syllables": [
+      "ball"
+    ],
+    "ipa": "/bɔːl/",
+    "definition": {
+      "en_young": "A round toy that rolls.",
+      "en_older": "A round object used in many games.",
+      "zh": "球"
+    },
+    "example": {
+      "en": "I can roll the ball.",
+      "zh": "我会滚球。",
+      "audio": "happy_school_a#ball_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#ball",
+      "wordSlow": "happy_school_a#ball_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/ball.svg",
+      "alt": "球"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say ball. Listen to each letter group together.",
+      "zh": "指着图片认识「球」，先听完整的 ball，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_doll_084",
+    "word": "doll",
+    "theme": "school",
+    "spelling": [
+      "d",
+      "o",
+      "l",
+      "l"
+    ],
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "ll",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l",
+        "note": "双写辅音合并，只发一次音"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "ɑ",
+      "l"
+    ],
+    "syllables": [
+      "doll"
+    ],
+    "ipa": "/dɑl/",
+    "definition": {
+      "en_young": "A toy like a person.",
+      "en_older": "A toy person that you can play with.",
+      "zh": "玩偶"
+    },
+    "example": {
+      "en": "The doll has a hat.",
+      "zh": "玩偶戴着一顶帽子。",
+      "audio": "happy_school_a#doll_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#doll",
+      "wordSlow": "happy_school_a#doll_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/doll.svg",
+      "alt": "玩偶"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say doll. Listen to each letter group together.",
+      "zh": "指着图片认识「玩偶」，先听完整的 doll，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_kite_085",
+    "word": "kite",
+    "theme": "school",
+    "spelling": [
+      "k",
+      "i",
+      "t",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "phonics#i_long"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null,
+        "note": "这个字母在本词中不发音"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "aɪ",
+      "t"
+    ],
+    "syllables": [
+      "kite"
+    ],
+    "ipa": "/kaɪt/",
+    "definition": {
+      "en_young": "A toy that flies.",
+      "en_older": "A light toy that flies while held by a string.",
+      "zh": "风筝"
+    },
+    "example": {
+      "en": "My kite is in the sky.",
+      "zh": "我的风筝飞在天上。",
+      "audio": "happy_school_a#kite_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#kite",
+      "wordSlow": "happy_school_a#kite_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/kite.svg",
+      "alt": "风筝"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say kite. Listen to each letter group together.",
+      "zh": "指着图片认识「风筝」，先听完整的 kite，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bike_086",
+    "word": "bike",
+    "theme": "school",
+    "spelling": [
+      "b",
+      "i",
+      "k",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "phonics#i_long"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null,
+        "note": "这个字母在本词中不发音"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "aɪ",
+      "k"
+    ],
+    "syllables": [
+      "bike"
+    ],
+    "ipa": "/baɪk/",
+    "definition": {
+      "en_young": "A ride with two wheels.",
+      "en_older": "A vehicle with two wheels that you move by pedaling.",
+      "zh": "自行车"
+    },
+    "example": {
+      "en": "I can ride my bike.",
+      "zh": "我会骑自行车。",
+      "audio": "happy_school_a#bike_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#bike",
+      "wordSlow": "happy_school_a#bike_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bike.svg",
+      "alt": "自行车"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say bike. Listen to each letter group together.",
+      "zh": "指着图片认识「自行车」，先听完整的 bike，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_car_087",
+    "word": "car",
+    "theme": "school",
+    "spelling": [
+      "c",
+      "a",
+      "r"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "ar",
+        "phonemes": [
+          "ɑ",
+          "r"
+        ],
+        "audio": "phonics#ar",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "ɑ",
+      "r"
+    ],
+    "syllables": [
+      "car"
+    ],
+    "ipa": "/kɑr/",
+    "definition": {
+      "en_young": "A ride with four wheels.",
+      "en_older": "A road vehicle that carries a few people.",
+      "zh": "小汽车"
+    },
+    "example": {
+      "en": "The car is by the house.",
+      "zh": "小汽车停在房子旁边。",
+      "audio": "happy_school_a#car_sentence"
+    },
+    "audio": {
+      "word": "happy_school_a#car",
+      "wordSlow": "happy_school_a#car_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/car.svg",
+      "alt": "小汽车"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say car. Listen to each letter group together.",
+      "zh": "指着图片认识「小汽车」，先听完整的 car，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bus_088",
+    "word": "bus",
+    "theme": "school",
+    "spelling": [
+      "b",
+      "u",
+      "s"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ʌ",
+      "s"
+    ],
+    "syllables": [
+      "bus"
+    ],
+    "ipa": "/bʌs/",
+    "definition": {
+      "en_young": "A ride for many people.",
+      "en_older": "A large vehicle that carries many people together.",
+      "zh": "公交车"
+    },
+    "example": {
+      "en": "We go on the bus.",
+      "zh": "我们乘公交车。",
+      "audio": "happy_school_b#bus_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#bus",
+      "wordSlow": "happy_school_b#bus_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bus.svg",
+      "alt": "公交车"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say bus. Listen to each letter group together.",
+      "zh": "指着图片认识「公交车」，先听完整的 bus，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_truck_089",
+    "word": "truck",
+    "theme": "school",
+    "spelling": [
+      "t",
+      "r",
+      "u",
+      "c",
+      "k"
+    ],
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "ck",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "r",
+      "ʌ",
+      "k"
+    ],
+    "syllables": [
+      "truck"
+    ],
+    "ipa": "/trʌk/",
+    "definition": {
+      "en_young": "A big vehicle for carrying.",
+      "en_older": "A road vehicle that carries heavy or large things.",
+      "zh": "卡车"
+    },
+    "example": {
+      "en": "The truck carries a big box.",
+      "zh": "卡车运着一个大盒子。",
+      "audio": "happy_school_b#truck_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#truck",
+      "wordSlow": "happy_school_b#truck_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/truck.svg",
+      "alt": "卡车"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say truck. Listen to each letter group together.",
+      "zh": "指着图片认识「卡车」，先听完整的 truck，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_train_090",
+    "word": "train",
+    "theme": "school",
+    "spelling": [
+      "t",
+      "r",
+      "a",
+      "i",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "ai",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "phonics#a_long",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "r",
+      "eɪ",
+      "n"
+    ],
+    "syllables": [
+      "train"
+    ],
+    "ipa": "/treɪn/",
+    "definition": {
+      "en_young": "A ride that uses tracks.",
+      "en_older": "A connected line of vehicles that runs on tracks.",
+      "zh": "火车"
+    },
+    "example": {
+      "en": "The train is long.",
+      "zh": "火车很长。",
+      "audio": "happy_school_b#train_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#train",
+      "wordSlow": "happy_school_b#train_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/train.svg",
+      "alt": "火车"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say train. Listen to each letter group together.",
+      "zh": "指着图片认识「火车」，先听完整的 train，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_ship_091",
+    "word": "ship",
+    "theme": "school",
+    "spelling": [
+      "s",
+      "h",
+      "i",
+      "p"
+    ],
+    "graphemes": [
+      {
+        "letters": "sh",
+        "phonemes": [
+          "ʃ"
+        ],
+        "audio": "phonics#sh",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      }
+    ],
+    "phonemes": [
+      "ʃ",
+      "ɪ",
+      "p"
+    ],
+    "syllables": [
+      "ship"
+    ],
+    "ipa": "/ʃɪp/",
+    "definition": {
+      "en_young": "A big boat.",
+      "en_older": "A large boat that carries people or things over water.",
+      "zh": "轮船"
+    },
+    "example": {
+      "en": "The ship is on the sea.",
+      "zh": "轮船在海上。",
+      "audio": "happy_school_b#ship_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#ship",
+      "wordSlow": "happy_school_b#ship_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/ship.svg",
+      "alt": "轮船"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say ship. Listen to each letter group together.",
+      "zh": "指着图片认识「轮船」，先听完整的 ship，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_flag_092",
+    "word": "flag",
+    "theme": "school",
+    "spelling": [
+      "f",
+      "l",
+      "a",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "phonics#f"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "l",
+      "æ",
+      "g"
+    ],
+    "syllables": [
+      "flag"
+    ],
+    "ipa": "/flæg/",
+    "definition": {
+      "en_young": "Cloth that can wave.",
+      "en_older": "A piece of cloth used as a sign or symbol.",
+      "zh": "旗子"
+    },
+    "example": {
+      "en": "The flag moves in the wind.",
+      "zh": "旗子在风中飘动。",
+      "audio": "happy_school_b#flag_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#flag",
+      "wordSlow": "happy_school_b#flag_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/flag.svg",
+      "alt": "旗子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say flag. Listen to each letter group together.",
+      "zh": "指着图片认识「旗子」，先听完整的 flag，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_tent_093",
+    "word": "tent",
+    "theme": "school",
+    "spelling": [
+      "t",
+      "e",
+      "n",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "ɛ",
+      "n",
+      "t"
+    ],
+    "syllables": [
+      "tent"
+    ],
+    "ipa": "/tɛnt/",
+    "definition": {
+      "en_young": "A little home for camping.",
+      "en_older": "A shelter made of cloth that you can carry.",
+      "zh": "帐篷"
+    },
+    "example": {
+      "en": "We sleep in a tent.",
+      "zh": "我们睡在帐篷里。",
+      "audio": "happy_school_b#tent_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#tent",
+      "wordSlow": "happy_school_b#tent_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/tent.svg",
+      "alt": "帐篷"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say tent. Listen to each letter group together.",
+      "zh": "指着图片认识「帐篷」，先听完整的 tent，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_drum_094",
+    "word": "drum",
+    "theme": "school",
+    "spelling": [
+      "d",
+      "r",
+      "u",
+      "m"
+    ],
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "phonics#m"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "r",
+      "ʌ",
+      "m"
+    ],
+    "syllables": [
+      "drum"
+    ],
+    "ipa": "/drʌm/",
+    "definition": {
+      "en_young": "Tap it to make music.",
+      "en_older": "A musical instrument that makes sound when you hit it.",
+      "zh": "鼓"
+    },
+    "example": {
+      "en": "I tap the drum.",
+      "zh": "我轻轻敲鼓。",
+      "audio": "happy_school_b#drum_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#drum",
+      "wordSlow": "happy_school_b#drum_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/drum.svg",
+      "alt": "鼓"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say drum. Listen to each letter group together.",
+      "zh": "指着图片认识「鼓」，先听完整的 drum，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_ring_095",
+    "word": "ring",
+    "theme": "family",
+    "spelling": [
+      "r",
+      "i",
+      "n",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "phonics#r"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "ng",
+        "phonemes": [
+          "ŋ"
+        ],
+        "audio": "phonics#ng",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "ɪ",
+      "ŋ"
+    ],
+    "syllables": [
+      "ring"
+    ],
+    "ipa": "/rɪŋ/",
+    "definition": {
+      "en_young": "A circle for your finger.",
+      "en_older": "A small circle worn around a finger.",
+      "zh": "戒指"
+    },
+    "example": {
+      "en": "The ring is in the box.",
+      "zh": "戒指在盒子里。",
+      "audio": "happy_school_b#ring_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#ring",
+      "wordSlow": "happy_school_b#ring_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/ring.svg",
+      "alt": "戒指"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say ring. Listen to each letter group together.",
+      "zh": "指着图片认识「戒指」，先听完整的 ring，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 2
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_glue_096",
+    "word": "glue",
+    "theme": "school",
+    "spelling": [
+      "g",
+      "l",
+      "u",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "phonics#l"
+      },
+      {
+        "letters": "ue",
+        "phonemes": [
+          "uː"
+        ],
+        "audio": "phonics#oo_long",
+        "note": "按此字母组合的实际声音整体教学"
+      }
+    ],
+    "phonemes": [
+      "g",
+      "l",
+      "uː"
+    ],
+    "syllables": [
+      "glue"
+    ],
+    "ipa": "/gluː/",
+    "definition": {
+      "en_young": "It sticks things together.",
+      "en_older": "A sticky substance used to join things together.",
+      "zh": "胶水"
+    },
+    "example": {
+      "en": "We use glue on the paper.",
+      "zh": "我们在纸上涂胶水。",
+      "audio": "happy_school_b#glue_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#glue",
+      "wordSlow": "happy_school_b#glue_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/glue.svg",
+      "alt": "胶水"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say glue. Listen to each letter group together.",
+      "zh": "指着图片认识「胶水」，先听完整的 glue，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 3
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pin_097",
+    "word": "pin",
+    "theme": "school",
+    "spelling": [
+      "p",
+      "i",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɪ",
+      "n"
+    ],
+    "syllables": [
+      "pin"
+    ],
+    "ipa": "/pɪn/",
+    "definition": {
+      "en_young": "A small thing for fastening.",
+      "en_older": "A small sharp object that holds things in place.",
+      "zh": "图钉"
+    },
+    "example": {
+      "en": "The pin holds the paper.",
+      "zh": "图钉固定着纸张。",
+      "audio": "happy_school_b#pin_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#pin",
+      "wordSlow": "happy_school_b#pin_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pin.svg",
+      "alt": "图钉"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture and say pin. Listen to each letter group together.",
+      "zh": "指着图片认识「图钉」，先听完整的 pin，再按字母组合听声音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_we_098",
+    "word": "we",
+    "theme": "family",
+    "sightWordList": "dolch_pre_primer",
+    "spelling": [
+      "w",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "phonics#w"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "phonics#ee"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "iː"
+    ],
+    "syllables": [
+      "we"
+    ],
+    "ipa": "/wiː/",
+    "definition": {
+      "en_young": "You and I together.",
+      "en_older": "A word for you, me, and our group.",
+      "zh": "我们"
+    },
+    "example": {
+      "en": "We read a book.",
+      "zh": "我们读一本书。",
+      "audio": "happy_school_b#we_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#we",
+      "wordSlow": "happy_school_b#we_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/we.svg",
+      "alt": "我们"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to we as one whole word, then read the sentence together.",
+      "zh": "把 we 作为整词听读，再一起读例句，指出句子里高亮的 we；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_is_099",
+    "word": "is",
+    "theme": "school",
+    "sightWordList": "dolch_pre_primer",
+    "spelling": [
+      "i",
+      "s"
+    ],
+    "graphemes": [
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "z"
+        ],
+        "audio": "phonics#z"
+      }
+    ],
+    "phonemes": [
+      "ɪ",
+      "z"
+    ],
+    "syllables": [
+      "is"
+    ],
+    "ipa": "/ɪz/",
+    "definition": {
+      "en_young": "A word about now.",
+      "en_older": "A word that tells what someone or something is.",
+      "zh": "是或处于"
+    },
+    "example": {
+      "en": "The book is red.",
+      "zh": "这本书是红色的。",
+      "audio": "happy_school_b#is_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#is",
+      "wordSlow": "happy_school_b#is_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/is.svg",
+      "alt": "是或处于"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to is as one whole word, then read the sentence together.",
+      "zh": "把 is 作为整词听读，再一起读例句，指出句子里高亮的 is；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_was_100",
+    "word": "was",
+    "theme": "school",
+    "sightWordList": "dolch_primer",
+    "spelling": [
+      "w",
+      "a",
+      "s"
+    ],
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "phonics#w"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "z"
+        ],
+        "audio": "phonics#z"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ʌ",
+      "z"
+    ],
+    "syllables": [
+      "was"
+    ],
+    "ipa": "/wʌz/",
+    "definition": {
+      "en_young": "Tells about the past.",
+      "en_older": "A word for being in the past.",
+      "zh": "过去是或处于"
+    },
+    "example": {
+      "en": "It was a sunny day.",
+      "zh": "那是一个晴天。",
+      "audio": "happy_school_b#was_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#was",
+      "wordSlow": "happy_school_b#was_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/was.svg",
+      "alt": "过去是或处于"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to was as one whole word, then read the sentence together.",
+      "zh": "把 was 作为整词听读，再一起读例句，指出句子里高亮的 was；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_said_101",
+    "word": "said",
+    "theme": "school",
+    "sightWordList": "dolch_pre_primer",
+    "spelling": [
+      "s",
+      "a",
+      "i",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "ai",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short",
+        "note": "按此字母组合的实际声音整体教学"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "ɛ",
+      "d"
+    ],
+    "syllables": [
+      "said"
+    ],
+    "ipa": "/sɛd/",
+    "definition": {
+      "en_young": "Spoke some words.",
+      "en_older": "Used when someone spoke words in the past.",
+      "zh": "说过"
+    },
+    "example": {
+      "en": "She said hello to me.",
+      "zh": "她向我打了招呼。",
+      "audio": "happy_school_b#said_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#said",
+      "wordSlow": "happy_school_b#said_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/said.svg",
+      "alt": "说过"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to said as one whole word, then read the sentence together.",
+      "zh": "把 said 作为整词听读，再一起读例句，指出句子里高亮的 said；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_one_102",
+    "word": "one",
+    "theme": "school",
+    "sightWordList": "dolch_pre_primer",
+    "spelling": [
+      "o",
+      "n",
+      "e"
+    ],
+    "graphemes": [
+      {
+        "letters": "o",
+        "phonemes": [
+          "w",
+          "ʌ"
+        ],
+        "audio": "phonics#one_onset"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null,
+        "note": "这个字母在本词中不发音"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ʌ",
+      "n"
+    ],
+    "syllables": [
+      "one"
+    ],
+    "ipa": "/wʌn/",
+    "definition": {
+      "en_young": "Just a single thing.",
+      "en_older": "The number before two.",
+      "zh": "一"
+    },
+    "example": {
+      "en": "I have one book.",
+      "zh": "我有一本书。",
+      "audio": "happy_school_b#one_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#one",
+      "wordSlow": "happy_school_b#one_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/one.svg",
+      "alt": "一"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to one as one whole word, then read the sentence together.",
+      "zh": "把 one 作为整词听读，再一起读例句，指出句子里高亮的 one；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_to_103",
+    "word": "to",
+    "theme": "school",
+    "sightWordList": "dolch_pre_primer",
+    "spelling": [
+      "t",
+      "o"
+    ],
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "uː"
+        ],
+        "audio": "phonics#oo_long"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "uː"
+    ],
+    "syllables": [
+      "to"
+    ],
+    "ipa": "/tuː/",
+    "definition": {
+      "en_young": "Tells where you go.",
+      "en_older": "A word that can show where something goes.",
+      "zh": "到或向"
+    },
+    "example": {
+      "en": "I go to school.",
+      "zh": "我去学校。",
+      "audio": "happy_school_b#to_sentence"
+    },
+    "audio": {
+      "word": "happy_school_b#to",
+      "wordSlow": "happy_school_b#to_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/to.svg",
+      "alt": "到或向"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Listen to to as one whole word, then read the sentence together.",
+      "zh": "把 to 作为整词听读，再一起读例句，指出句子里高亮的 to；不要求按字母拼音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.3",
+    "track": "sight"
+  }
+]

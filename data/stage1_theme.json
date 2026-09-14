@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.09.2",
+  "themeId": "animal_home",
+  "title": {
+    "zh": "动物之家",
+    "en": "Animal Home"
+  },
+  "wordIds": [
+    "w_cat_001",
+    "w_dog_006",
+    "w_pig_007",
+    "w_hen_008",
+    "w_sun_002",
+    "w_bed_009",
+    "w_bag_010",
+    "w_cup_011",
+    "w_hat_012",
+    "w_pen_013",
+    "w_rat_014",
+    "w_bat_015",
+    "w_ram_016",
+    "w_bug_017",
+    "w_map_018",
+    "w_cap_019",
+    "w_pan_020",
+    "w_net_021",
+    "w_log_022",
+    "w_pot_023"
+  ],
+  "pages": [
+    [
+      "w_cat_001",
+      "w_dog_006",
+      "w_pig_007",
+      "w_hen_008",
+      "w_sun_002"
+    ],
+    [
+      "w_bed_009",
+      "w_bag_010",
+      "w_cup_011",
+      "w_hat_012",
+      "w_pen_013"
+    ],
+    [
+      "w_rat_014",
+      "w_bat_015",
+      "w_ram_016",
+      "w_bug_017",
+      "w_map_018"
+    ],
+    [
+      "w_cap_019",
+      "w_pan_020",
+      "w_net_021",
+      "w_log_022",
+      "w_pot_023"
+    ]
+  ],
+  "listenTapWordIds": [
+    "w_cat_001",
+    "w_dog_006",
+    "w_pig_007",
+    "w_hen_008",
+    "w_sun_002",
+    "w_bed_009",
+    "w_bag_010",
+    "w_cup_011",
+    "w_hat_012",
+    "w_pen_013",
+    "w_rat_014",
+    "w_bat_015",
+    "w_ram_016",
+    "w_bug_017",
+    "w_map_018",
+    "w_cap_019",
+    "w_pan_020",
+    "w_net_021",
+    "w_log_022",
+    "w_pot_023"
+  ],
+  "confusablePairs": [
+    [
+      "w_hat_012",
+      "w_cap_019"
+    ],
+    [
+      "w_cup_011",
+      "w_pot_023"
+    ],
+    [
+      "w_pan_020",
+      "w_pot_023"
+    ]
+  ],
+  "spriteIds": [
+    "animal_home",
+    "phonics",
+    "guide",
+    "sfx"
+  ],
+  "unlock": {
+    "prerequisiteThemeId": null,
+    "requiredFirstCorrect": 0
+  }
+}

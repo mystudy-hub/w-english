@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.09.1",
+  "themeId": "animal_home",
+  "title": {
+    "zh": "动物之家",
+    "en": "Animal Home"
+  },
+  "wordIds": [
+    "w_cat_001",
+    "w_dog_006",
+    "w_pig_007",
+    "w_hen_008",
+    "w_sun_002",
+    "w_bed_009",
+    "w_bag_010",
+    "w_cup_011",
+    "w_hat_012",
+    "w_pen_013"
+  ],
+  "pages": [
+    [
+      "w_cat_001",
+      "w_dog_006",
+      "w_pig_007",
+      "w_hen_008",
+      "w_sun_002"
+    ],
+    [
+      "w_bed_009",
+      "w_bag_010",
+      "w_cup_011",
+      "w_hat_012",
+      "w_pen_013"
+    ]
+  ],
+  "listenTapWordIds": [
+    "w_cat_001",
+    "w_dog_006",
+    "w_pig_007",
+    "w_hen_008",
+    "w_sun_002",
+    "w_bed_009",
+    "w_bag_010",
+    "w_cup_011",
+    "w_hat_012",
+    "w_pen_013"
+  ],
+  "confusablePairs": [],
+  "spriteIds": [
+    "animal_home",
+    "phonics",
+    "guide",
+    "sfx"
+  ],
+  "unlock": {
+    "prerequisiteThemeId": null,
+    "requiredFirstCorrect": 0
+  }
+}

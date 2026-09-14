@@ -1,0 +1,732 @@
+[
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cat_001",
+    "word": "cat",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "c",
+      "a",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "æ",
+      "t"
+    ],
+    "syllables": [
+      "cat"
+    ],
+    "ipa": "/kæt/",
+    "definition": {
+      "en_young": "A soft pet that meows.",
+      "en_older": "A small furry pet with whiskers that says meow.",
+      "zh": "猫是一种会喵喵叫、长着胡须的小宠物。"
+    },
+    "example": {
+      "en": "The cat sleeps in the sun.",
+      "zh": "小猫在太阳底下睡觉。",
+      "audio": "animal_home#cat_sentence"
+    },
+    "audio": {
+      "word": "animal_home#cat",
+      "wordSlow": "animal_home#cat_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cat.svg",
+      "alt": "猫"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Ask: What sound does a cat make? Say the first sound in cat.",
+      "zh": "问孩子小猫怎么叫，再示范 cat 的第一个音 /k/，注意不是字母名称。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_dog_006",
+    "word": "dog",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "d",
+      "o",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɑ"
+        ],
+        "audio": "phonics#o_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "ɑ",
+      "g"
+    ],
+    "syllables": [
+      "dog"
+    ],
+    "ipa": "/dɑg/",
+    "definition": {
+      "en_young": "A friendly pet that barks.",
+      "en_older": "A furry pet that likes walks and can bark.",
+      "zh": "狗是一种会汪汪叫、喜欢散步的宠物。"
+    },
+    "example": {
+      "en": "The dog runs to me.",
+      "zh": "小狗向我跑来。",
+      "audio": "animal_home#dog_sentence"
+    },
+    "audio": {
+      "word": "animal_home#dog",
+      "wordSlow": "animal_home#dog_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/dog.svg",
+      "alt": "狗"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the dog. Say dog, then slowly blend its three sounds.",
+      "zh": "指着小狗说 dog，再慢慢拼合三个音。具体美音变体须与最终录音一致。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pig_007",
+    "word": "pig",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "p",
+      "i",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "phonics#i_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɪ",
+      "g"
+    ],
+    "syllables": [
+      "pig"
+    ],
+    "ipa": "/pɪg/",
+    "definition": {
+      "en_young": "A farm animal that oinks.",
+      "en_older": "A farm animal with a snout and curly tail.",
+      "zh": "猪是有圆鼻子和卷尾巴的农场动物。"
+    },
+    "example": {
+      "en": "The pig is on the farm.",
+      "zh": "小猪在农场里。",
+      "audio": "animal_home#pig_sentence"
+    },
+    "audio": {
+      "word": "animal_home#pig",
+      "wordSlow": "animal_home#pig_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pig.svg",
+      "alt": "猪"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to the pig's nose. Say pig and listen for the first sound.",
+      "zh": "指指小猪的鼻子，一起说 pig。示范短促的 /p/，不要加上额外的元音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_hen_008",
+    "word": "hen",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "animals",
+    "spelling": [
+      "h",
+      "e",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "phonics#h"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "ɛ",
+      "n"
+    ],
+    "syllables": [
+      "hen"
+    ],
+    "ipa": "/hɛn/",
+    "definition": {
+      "en_young": "A bird that lays eggs.",
+      "en_older": "A grown female chicken that can lay eggs.",
+      "zh": "母鸡是一种会下蛋的成年雌性鸡。"
+    },
+    "example": {
+      "en": "The hen has an egg.",
+      "zh": "母鸡身边有一个蛋。",
+      "audio": "animal_home#hen_sentence"
+    },
+    "audio": {
+      "word": "animal_home#hen",
+      "wordSlow": "animal_home#hen_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/hen.svg",
+      "alt": "母鸡"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Explain that a hen is a female chicken. Blend h, e, n.",
+      "zh": "告诉孩子 hen 指母鸡，再一起听三个音。配图需由老师确认能表达母鸡。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_sun_002",
+    "word": "sun",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "nature",
+    "spelling": [
+      "s",
+      "u",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "phonics#s"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "ʌ",
+      "n"
+    ],
+    "syllables": [
+      "sun"
+    ],
+    "ipa": "/sʌn/",
+    "definition": {
+      "en_young": "Big, hot, and so bright!",
+      "en_older": "The bright star that gives us light and warmth.",
+      "zh": "太阳是给我们光和温暖的恒星。"
+    },
+    "example": {
+      "en": "The sun is hot today.",
+      "zh": "今天的太阳很热。",
+      "audio": "animal_home#sun_sentence"
+    },
+    "audio": {
+      "word": "animal_home#sun",
+      "wordSlow": "animal_home#sun_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/sun.svg",
+      "alt": "太阳"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Look at the picture together. Say sun and stretch the first sound.",
+      "zh": "一起看图说 sun，再拉长开头的 /s/，随后连到另外两个音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bed_009",
+    "word": "bed",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "b",
+      "e",
+      "d"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "phonics#d"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɛ",
+      "d"
+    ],
+    "syllables": [
+      "bed"
+    ],
+    "ipa": "/bɛd/",
+    "definition": {
+      "en_young": "A soft place to sleep.",
+      "en_older": "A soft place where you lie down and sleep.",
+      "zh": "床是让人躺下睡觉的家具。"
+    },
+    "example": {
+      "en": "The cat is on the bed.",
+      "zh": "小猫在床上。",
+      "audio": "animal_home#bed_sentence"
+    },
+    "audio": {
+      "word": "animal_home#bed",
+      "wordSlow": "animal_home#bed_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bed.svg",
+      "alt": "床"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to a bed or its picture. Say bed and blend the three sounds.",
+      "zh": "指一指家里的床或图片，说 bed，再一起拼合三个音。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_bag_010",
+    "word": "bag",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "school",
+    "spelling": [
+      "b",
+      "a",
+      "g"
+    ],
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "phonics#b"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "phonics#g"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "æ",
+      "g"
+    ],
+    "syllables": [
+      "bag"
+    ],
+    "ipa": "/bæg/",
+    "definition": {
+      "en_young": "It holds things you carry.",
+      "en_older": "A container you use to carry your things.",
+      "zh": "包可以装东西，方便我们携带。"
+    },
+    "example": {
+      "en": "Put the pen in the bag.",
+      "zh": "把笔放进包里。",
+      "audio": "animal_home#bag_sentence"
+    },
+    "audio": {
+      "word": "animal_home#bag",
+      "wordSlow": "animal_home#bag_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/bag.svg",
+      "alt": "背包"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Show a bag and place an object inside. Say bag together.",
+      "zh": "拿一个包，把东西放进去，一起说 bag。背包可以作草稿图，最终图义需审核。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_cup_011",
+    "word": "cup",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "c",
+      "u",
+      "p"
+    ],
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "phonics#k"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "phonics#u_short"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "ʌ",
+      "p"
+    ],
+    "syllables": [
+      "cup"
+    ],
+    "ipa": "/kʌp/",
+    "definition": {
+      "en_young": "You drink from this.",
+      "en_older": "A small container you use for drinking.",
+      "zh": "杯子是用来喝水等饮品的小容器。"
+    },
+    "example": {
+      "en": "I drink from a cup.",
+      "zh": "我用杯子喝水。",
+      "audio": "animal_home#cup_sentence"
+    },
+    "audio": {
+      "word": "animal_home#cup",
+      "wordSlow": "animal_home#cup_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/cup.svg",
+      "alt": "杯子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Point to an empty cup. Say cup and notice the final sound.",
+      "zh": "指着空杯子说 cup，留意末尾的 /p/。草稿图中应识别容器，不把咖啡作为学习对象。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_hat_012",
+    "word": "hat",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "family",
+    "spelling": [
+      "h",
+      "a",
+      "t"
+    ],
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "phonics#h"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "phonics#a_short"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "phonics#t"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "æ",
+      "t"
+    ],
+    "syllables": [
+      "hat"
+    ],
+    "ipa": "/hæt/",
+    "definition": {
+      "en_young": "The thing on your head.",
+      "en_older": "Something you wear on your head.",
+      "zh": "帽子是戴在头上的物品。"
+    },
+    "example": {
+      "en": "The hat is in the bag.",
+      "zh": "帽子在包里。",
+      "audio": "animal_home#hat_sentence"
+    },
+    "audio": {
+      "word": "animal_home#hat",
+      "wordSlow": "animal_home#hat_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/hat.svg",
+      "alt": "帽子"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Pretend to put on a hat. Say hat and blend its three sounds.",
+      "zh": "做戴帽子的动作，说 hat，再拼合三个音。与 cap 同题出现前须审核图片区别。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  },
+  {
+    "schemaVersion": 3,
+    "wordId": "w_pen_013",
+    "word": "pen",
+    "track": "phonics",
+    "phonicsStage": 1,
+    "theme": "school",
+    "spelling": [
+      "p",
+      "e",
+      "n"
+    ],
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "phonics#p"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "phonics#e_short"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "phonics#n"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɛ",
+      "n"
+    ],
+    "syllables": [
+      "pen"
+    ],
+    "ipa": "/pɛn/",
+    "definition": {
+      "en_young": "It makes marks with ink.",
+      "en_older": "A tool with ink that you use to write.",
+      "zh": "笔是使用墨水书写的工具。"
+    },
+    "example": {
+      "en": "The pen is in the bag.",
+      "zh": "笔在包里。",
+      "audio": "animal_home#pen_sentence"
+    },
+    "audio": {
+      "word": "animal_home#pen",
+      "wordSlow": "animal_home#pen_slow"
+    },
+    "illustration": {
+      "type": "image",
+      "src": "/images/words/pen.svg",
+      "alt": "钢笔"
+    },
+    "sfx": null,
+    "parentTip": {
+      "en": "Show a pen and a pencil. Point to the pen and say its name.",
+      "zh": "在成人陪同下看钢笔或圆珠笔，指出 pen。不要把铅笔图片标成 pen。"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.09.1"
+  }
+]

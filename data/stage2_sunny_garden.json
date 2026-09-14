@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.09.3",
+  "themeId": "sunny_garden",
+  "title": {
+    "zh": "阳光花园",
+    "en": "Sunny Garden"
+  },
+  "wordIds": [
+    "w_apple_005",
+    "w_banana_039",
+    "w_cherry_040",
+    "w_grape_041",
+    "w_carrot_042",
+    "w_nut_043",
+    "w_bean_044",
+    "w_milk_045",
+    "w_soup_046",
+    "w_bread_047",
+    "w_cake_048",
+    "w_cookie_049",
+    "w_candy_050",
+    "w_corn_051",
+    "w_leaf_052",
+    "w_tree_053",
+    "w_flower_054",
+    "w_grass_055",
+    "w_rain_056",
+    "w_cloud_057",
+    "w_snow_058",
+    "w_moon_059",
+    "w_star_060",
+    "w_wind_061",
+    "w_pond_062",
+    "w_rock_063",
+    "w_seed_064",
+    "w_red_065",
+    "w_green_066",
+    "w_blue_004",
+    "w_the_068",
+    "w_a_069",
+    "w_you_070"
+  ],
+  "pages": [
+    [
+      "w_apple_005",
+      "w_banana_039",
+      "w_cherry_040",
+      "w_grape_041",
+      "w_carrot_042"
+    ],
+    [
+      "w_nut_043",
+      "w_bean_044",
+      "w_milk_045",
+      "w_soup_046",
+      "w_bread_047"
+    ],
+    [
+      "w_cake_048",
+      "w_cookie_049",
+      "w_candy_050",
+      "w_corn_051",
+      "w_leaf_052"
+    ],
+    [
+      "w_tree_053",
+      "w_flower_054",
+      "w_grass_055",
+      "w_rain_056",
+      "w_cloud_057"
+    ],
+    [
+      "w_snow_058",
+      "w_moon_059",
+      "w_star_060",
+      "w_wind_061",
+      "w_pond_062"
+    ],
+    [
+      "w_rock_063",
+      "w_seed_064",
+      "w_red_065",
+      "w_green_066",
+      "w_blue_004"
+    ],
+    [
+      "w_the_068",
+      "w_a_069",
+      "w_you_070"
+    ]
+  ],
+  "listenTapWordIds": [
+    "w_apple_005",
+    "w_banana_039",
+    "w_cherry_040",
+    "w_grape_041",
+    "w_carrot_042",
+    "w_nut_043",
+    "w_bean_044",
+    "w_milk_045",
+    "w_soup_046",
+    "w_cake_048",
+    "w_cookie_049",
+    "w_candy_050",
+    "w_corn_051",
+    "w_leaf_052",
+    "w_tree_053",
+    "w_flower_054",
+    "w_grass_055",
+    "w_rain_056",
+    "w_cloud_057",
+    "w_snow_058",
+    "w_moon_059",
+    "w_star_060",
+    "w_wind_061",
+    "w_pond_062",
+    "w_rock_063",
+    "w_seed_064",
+    "w_red_065",
+    "w_green_066",
+    "w_blue_004"
+  ],
+  "confusablePairs": [
+    [
+      "w_rain_056",
+      "w_cloud_057"
+    ],
+    [
+      "w_seed_064",
+      "w_bean_044"
+    ],
+    [
+      "w_seed_064",
+      "w_nut_043"
+    ]
+  ],
+  "spriteIds": [
+    "sunny_garden_a",
+    "phonics",
+    "sunny_garden_b",
+    "guide",
+    "sfx"
+  ],
+  "unlock": {
+    "prerequisiteThemeId": "animal_home",
+    "requiredFirstCorrect": 5
+  }
+}

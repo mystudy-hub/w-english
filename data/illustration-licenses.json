@@ -1,0 +1,1269 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "/images/words/cat.svg": {
+      "source": "assets/illustrations/cat.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "ad63cc7c2b14c094b54eb7e08884b9d6b17096c4b0b686753e89194e83bc2569",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/dog.svg": {
+      "source": "assets/illustrations/dog.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "fdaa8362fe716280e78a946e89e41da1a411d9456d33aa8e2aae48359119ed07",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/pig.svg": {
+      "source": "assets/illustrations/pig.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "f202937e605e41da3e87a4d4ef3a8b6cbbcba59760ebd81e586ece9a9b854277",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/hen.svg": {
+      "source": "assets/illustrations/hen.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "84039869feff93195fc7eb03d571a386d0dc5e97e7171e5211b8be76687fced2",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/sun.svg": {
+      "source": "assets/illustrations/sun.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "7d6ec0ed7557dc00fa11b6c9b0ef0407b7a8863eeb04176afb8633c32e20c55e",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bed.svg": {
+      "source": "assets/illustrations/bed.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "abdfb74f226c62d3bdb807368a77cdd5bec3a59df894d3ac921731f7121ebfa8",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bag.svg": {
+      "source": "assets/illustrations/bag.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "bf73f80a7c8b7172f9a025a43b6ff85818035427d5f1c4d64f057336f4506859",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/cup.svg": {
+      "source": "assets/illustrations/cup.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "ffb861c1b1857ac2c45814bc8188d82a7c28dd92a56783900561df1dba3a9433",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/hat.svg": {
+      "source": "assets/illustrations/hat.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "9497bfd14b485f66e7288160502f1072749b15667d894f23b392e34ef7987e35",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/pen.svg": {
+      "source": "assets/illustrations/pen.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "77cefec0ed824e7a66a24b26ce05a8e5b69bdd4abb5ec570437c73181a44a7f1",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/rat.svg": {
+      "source": "assets/illustrations/rat.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "3cbd25553940e7031be0419def33fa4d7b1d6ffc59279347c8321cd9a0dee61f",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bat.svg": {
+      "source": "assets/illustrations/bat.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "3a95077b05fd36f36b25cc651f720ad88fcc12188c32b10e78edf479f4e6c8c4",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/ram.svg": {
+      "source": "assets/illustrations/ram.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d0472555a066d181480fbcafd3eade91a63a67ee510c3f543c6dd3c487b1f7a0",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bug.svg": {
+      "source": "assets/illustrations/bug.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "9fa0c89105b05361dd695ec1843074456b8476072c78fc6a1fe8df129a29f1db",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/map.svg": {
+      "source": "assets/illustrations/map.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d910ebe3ab96d051d90a86a7bd860dfd9ef1f8f70775c6ececf3ccaffc83dec5",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/cap.svg": {
+      "source": "assets/illustrations/cap.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "c0c292955f1ab77ef328b60d01eb3c7763c7a3e0c0ae93db962b0029a4a27952",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/pan.svg": {
+      "source": "assets/illustrations/pan.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "66141726680cbc77e9496ca98f692d70747f43f0f1cc549834c01fb327368d0d",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/net.svg": {
+      "source": "assets/illustrations/net.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "2ce51cebd86212b716e34ac1b6a46840933d7c5f0abb1ec117d062f1054248c8",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/log.svg": {
+      "source": "assets/illustrations/log.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e3a343adb943655f4c31a45e92849b7b7033b10daab2a1c30b3035be2f920fab",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/pot.svg": {
+      "source": "assets/illustrations/pot.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d6a6ffbe86b6718abd58f25d0fbab6bed2dcb4e4231cc5f7febf9ef81675e317",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/fish.svg": {
+      "source": "lucide-react@1.43.0:Fish; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "4042b312412c7b3146f67079ba70653d3202ea80f6c44e9ee4ad4698b8524cd1",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bird.svg": {
+      "source": "lucide-react@1.43.0:Bird; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "d5b889f5f9d662d04e9e2251cfd301c9f4a5512216061a72aa03030fba52346c",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/rabbit.svg": {
+      "source": "lucide-react@1.43.0:Rabbit; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "9722cf763e8a690353f53d94ae444caca5984b8865387761743b3d512e1a909e",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/turtle.svg": {
+      "source": "lucide-react@1.43.0:Turtle; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "d2e6b749d1c21d5a1c078058fa946d370ff3be27a6a8add1195346a68418856a",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/snail.svg": {
+      "source": "lucide-react@1.43.0:Snail; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "0872d16176776ce629cfe51ecdeab1ca0b29b4c0280f89008fbfc8133d4b9a93",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/worm.svg": {
+      "source": "lucide-react@1.43.0:Worm; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "fbae212594e3d3947c2c2b9889683105cc2676b38717e658fbce848da2ade04e",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/egg.svg": {
+      "source": "lucide-react@1.43.0:Egg; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "3b21f232098a89e92770e3bbb223a1e16af9320e4ce44685e198d402f96e05e7",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bone.svg": {
+      "source": "lucide-react@1.43.0:Bone; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "7614dfbc00294013ab64f0cb355983778e3ce20d28f0886487bda0e711554e36",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/box.svg": {
+      "source": "lucide-react@1.43.0:Box; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "d28b5f9b1d6f4e9135bf28494115b4095d24acd16308659ee4776897c364477d",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/key.svg": {
+      "source": "lucide-react@1.43.0:KeyRound; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "8650532397fc4798112007a09566d6566dfe751b5afe1ce694776769b43ab1e1",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/lock.svg": {
+      "source": "lucide-react@1.43.0:LockKeyhole; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "1b9d9b12327878169027d56668fb75e9724557aece8b83dfae307372bc3163b3",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/gift.svg": {
+      "source": "lucide-react@1.43.0:Gift; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "a30d44bde2b4c5f107c3a8396bbc8667b2717913dcccf6fef784f874c6282efc",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/house.svg": {
+      "source": "lucide-react@1.43.0:House; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "015c265b8986de7b95289f6c38709dbd539c00f1606ab504175a16a6966fc1af",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/door.svg": {
+      "source": "lucide-react@1.43.0:DoorOpen; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "8f8f4d61a1e655b0b18277b3c7cc733253cf4eebccd61abce1e90e8bfc9d0f70",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/apple.svg": {
+      "source": "lucide-react@1.43.0:Apple; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "3c37cd09368008b3e1c12fe1927e6800648cd7a022f8c9f4cf35ef3062c99e68",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/banana.svg": {
+      "source": "lucide-react@1.43.0:Banana; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "0f2da023ff53abc1a411d71b5ff4f64198c0267970a560a95a8a32fa959bd171",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/cherry.svg": {
+      "source": "lucide-react@1.43.0:Cherry; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "485379ad8549de2e5fbe1fcd294922d8e048ed68001dc1efd1221d3e9a20d9a0",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/grape.svg": {
+      "source": "lucide-react@1.43.0:Grape; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "d4cfa6eb8fdd61c2fe7986e07cca2346905f2a963c9d9af1dd8ed57dd8579174",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/carrot.svg": {
+      "source": "lucide-react@1.43.0:Carrot; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "6b663db5947f8f721e2ed5a1b0d1d666a9a20e6764bcae8d2dea27f279803e82",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/nut.svg": {
+      "source": "lucide-react@1.43.0:Nut; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "1409b6b0699ff49408a4e6a9cf984e1f51707121a4bbd113b60861a37cb38e75",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bean.svg": {
+      "source": "lucide-react@1.43.0:Bean; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "5c017b79835381335931758f51f0da85119cd83448f1efa9abd1cef60db6a41f",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/milk.svg": {
+      "source": "lucide-react@1.43.0:Milk; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "df707d239e6bccf400bb6e0a48de9670dba6bfa68f6be5e86a8e42cc33ab9637",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/soup.svg": {
+      "source": "lucide-react@1.43.0:Soup; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "b5f1aa9523b6f3298b442431ded79ae441ba2727026226bbfbd06d8c8985f03e",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bread.svg": {
+      "source": "assets/illustrations/bread.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "b130c887d86e6984692f944fc408e8272bb1623e37067e4258464e59a40ce451",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/cake.svg": {
+      "source": "lucide-react@1.43.0:CakeSlice; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "d2ce4ba9fa059679c77fa14fdf3e08230440a3f8265d90bea8af00d85469791b",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/cookie.svg": {
+      "source": "lucide-react@1.43.0:Cookie; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "5ec056a6218c0a59457970f334903683cbf94d19b7f99d19429dbf5967bd32ae",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/candy.svg": {
+      "source": "lucide-react@1.43.0:Candy; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "0651c592c6fc5a6089dd43975e59ea8dd359641f5d8a030276cab6e303efd66f",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/corn.svg": {
+      "source": "assets/illustrations/corn.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "1a9c455fffc0265e70eb178973df299bb4f8a8f71bfc14d179abd4ad85830b0a",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/leaf.svg": {
+      "source": "lucide-react@1.43.0:Leaf; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "f06414c38e5bba6542c0fd57afdb4fb0d7824eae712499ae30c5307099d2f588",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/tree.svg": {
+      "source": "lucide-react@1.43.0:TreeDeciduous; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "85373f5dfca070bafadfc56443ebb109fb4f045f5c26ce4698c946d53d1fb00c",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/flower.svg": {
+      "source": "lucide-react@1.43.0:Flower; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "20804e53d89429e95092d4dd19483071a2c7d4b8cbc1cfdcfb63e549df5c37dc",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/grass.svg": {
+      "source": "assets/illustrations/grass.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "32f6232323bef3854178a6a9ec3549d5da2acce51c583d54f9bd9c13c59fda89",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/rain.svg": {
+      "source": "lucide-react@1.43.0:CloudRain; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "886bae26439382f4fd269e72c0984d296f68ffd70ac3563308dbabc5cc542576",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/cloud.svg": {
+      "source": "lucide-react@1.43.0:Cloud; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "be5a8d2a41727ab65ad14b7dbefefa1c6d360d9d2c1f488092ca186e1ab6d75c",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/snow.svg": {
+      "source": "lucide-react@1.43.0:Snowflake; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "fd236ebd868686c9b6f99e0d55ae6174748eff20d9f6bbe308035fd0fa53224e",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/moon.svg": {
+      "source": "lucide-react@1.43.0:Moon; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "66464d4876d894d30dfc5eb88692d2bf5d09596268608c824cabcc2499808652",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/star.svg": {
+      "source": "lucide-react@1.43.0:Star; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "f9c45149a1fc7447f91ea580d72796c7d67b53d3ab739f953f2c85a3fde5c721",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/wind.svg": {
+      "source": "lucide-react@1.43.0:Wind; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "90c3395f64c5cdc19800d25bf307bf56c1222f27a9e242f354a07f67cb63cd84",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/pond.svg": {
+      "source": "assets/illustrations/pond.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "65b328bdfa4c00b780b30a8eef78d4f40fdba1bf5f7fb38c6a2060e071b67831",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/rock.svg": {
+      "source": "assets/illustrations/rock.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e05e13bff49dbe10d3e01030fb899cc3d216f168a4feae20245978450948049f",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/seed.svg": {
+      "source": "assets/illustrations/seed.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "93d089f3b09c118b37bb866b7ee7f1fd57811b094871eb684d7eb15c69ccfbc6",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/red.svg": {
+      "source": "assets/illustrations/red.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "25983bcb7cf3f512432093bbfefad764979c1708ab62c97a08a07e62dde77f7a",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/green.svg": {
+      "source": "assets/illustrations/green.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e98eed3f4249f5f5a724c2de0c6bd797dc27e9aa1cb41180f3a412d41f72aeb4",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/blue.svg": {
+      "source": "assets/illustrations/blue.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "90d098a43b86af6ec7a5650d45e8b47e743e6c2f9e9198bbd35c641e05c1387e",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/the.svg": {
+      "source": "assets/illustrations/the.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "153fb1ca3c646ec836fd07d7e1a7e6fa951d05b6a94cdad3c8867c8b8f6e7bbd",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/a.svg": {
+      "source": "assets/illustrations/a.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "158e1ca92cfa9950acb17ec5107391d214cc4286cb9c70944655c6405a2654a0",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/you.svg": {
+      "source": "assets/illustrations/you.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "2eba21805bbd17fa6fe876f8a01c9cec8838b90702fbcc1f33bef954c35dcb68",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/book.svg": {
+      "source": "lucide-react@1.43.0:Book; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "193494d0fc4993cc5976e61c5e621ec6a8b3f979d31e562a11b160088be3f116",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/pencil.svg": {
+      "source": "lucide-react@1.43.0:Pencil; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "d21e1ca14341cbefff42962d7128d4821547140878d8d28433e00115470ed4de",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/ruler.svg": {
+      "source": "lucide-react@1.43.0:Ruler; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "c0167b656390dbf8f52a01ffb7e609032cf9c3b259bc865fb60b2da03ff72a16",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/brush.svg": {
+      "source": "lucide-react@1.43.0:Brush; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "9c343918a383b63c7f4da9d6d821db9f5b553a097964c2075231093265292548",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bell.svg": {
+      "source": "lucide-react@1.43.0:Bell; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "ee927ae603bca29835ba088518a968a8128e48edf5b5821c79994b7052bb326e",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/clock.svg": {
+      "source": "lucide-react@1.43.0:Clock; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "dcc5129bbe2c75078933c9c0f376b2be4706610da55e393bf5dba04a40e6a48d",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/desk.svg": {
+      "source": "assets/illustrations/desk.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "4f2f8c09fd782838f9bbfb522ead001eeb8a4e5601b1fd5d60b83f26ddff1153",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/chair.svg": {
+      "source": "lucide-react@1.43.0:Armchair; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "acb1ed26c76d0730f010e115afbdf3f691d1ddf30a917ddd4aa9cd26e4446cb8",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/hand.svg": {
+      "source": "lucide-react@1.43.0:Hand; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "faec4b295169e38dd08d984caf4eec4f8c892894bd4ec41128f7ae6cfdd05015",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/ear.svg": {
+      "source": "lucide-react@1.43.0:Ear; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "72744bd98a1f0a33c8c8e3a56cdcbec8d1d5f4996e0c115f46d91352eed144ec",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/eye.svg": {
+      "source": "lucide-react@1.43.0:Eye; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "7fabcad3eb96ffc42b01009d52930bf5a1abb41224cd9a0e772a4d2f2f3a841b",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/foot.svg": {
+      "source": "assets/illustrations/foot.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "14f3d1a1682d4cd2d4c9fa4f04dfef148a457081d2c059935cfb6ba04b388981",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/ball.svg": {
+      "source": "assets/illustrations/ball.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d45d23f43f15a31e75322c9c2c26d75b236a9b1ef28e94f2df57f2db8461bb84",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/doll.svg": {
+      "source": "assets/illustrations/doll.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "4ddb19d974c1a21bc6d6369af2b6e5b6cfe52145dd2fd700f9d3593b1636bacc",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/kite.svg": {
+      "source": "assets/illustrations/kite.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "cdbdce84783235a14f7efac097fb4ee6f3de73695fb9b1535b1cca6f17fe06fb",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bike.svg": {
+      "source": "lucide-react@1.43.0:Bike; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "dc06d452e669d116cbf65c2d39d79b795df726fe50938581bb0081f016887de8",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/car.svg": {
+      "source": "lucide-react@1.43.0:Car; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "1c21c4a967656870fb632fefbd41b0f6191ef2d06d925664bd90d9b6cdf5e75b",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/bus.svg": {
+      "source": "lucide-react@1.43.0:Bus; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "94d067841474112d9f74513a6634d2738aed5d24723ba096e7c3a8cabedcd0af",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/truck.svg": {
+      "source": "lucide-react@1.43.0:Truck; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "1fdc691fec9063f6913287997286a4dd38247774ddb13149734124e00f5f4bd5",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/train.svg": {
+      "source": "lucide-react@1.43.0:TrainFront; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "aa316f51879023c0662e41e93a65208b00daca9a357c6453cc385e650b1f0eb5",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/ship.svg": {
+      "source": "lucide-react@1.43.0:Ship; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "e68352961aef0115643e532ecc918c0c243c3fab9f43f91113353143a0184c9e",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/flag.svg": {
+      "source": "lucide-react@1.43.0:Flag; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "4fb1b9621ed92c4760180ece73446082b95eae3d50d04b221fc6cc6353e6692c",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/tent.svg": {
+      "source": "lucide-react@1.43.0:Tent; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "5e80b11a9489ad2e9b06790554bfeaa056215cc6e11da19be340f1a8dde0c955",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/drum.svg": {
+      "source": "lucide-react@1.43.0:Drum; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "e4f03e7fed6d21edae61cdad0eb2aa8d50c188fa1f5a6557c130be2f616052e9",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/ring.svg": {
+      "source": "assets/illustrations/ring.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "66d11bc6656cb8b8feae9d346ced34141584e4f20452bf151be365fea3b9cea8",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/glue.svg": {
+      "source": "assets/illustrations/glue.svg",
+      "creator": "W-English contributors",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "fdc3a51cd9c76fafd55a8cc1441955282231857c4997a3a2b56dd94f89c48935",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/pin.svg": {
+      "source": "lucide-react@1.43.0:Pin; layout: scripts/seed-stage2.mjs",
+      "creator": "Lucide and Feather contributors; W-English layout",
+      "license": "ISC / MIT (Lucide and Feather); MIT (layout)",
+      "permissionEvidence": "LICENSE; assets/licenses/lucide.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/lucide.txt"
+      ],
+      "sha256": "f997e6f92a572117649b16b26cfafc6ca24742829ab8a0b8e73ad19e5e60c326",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/we.svg": {
+      "source": "assets/illustrations/we.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "da3e0fc9d1e73ca853513adcc7f9f7aa237824f59d2767d640434f25e5d68114",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/is.svg": {
+      "source": "assets/illustrations/is.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "b26c9ed21b71a16e0091965226d0a7d9b3a9a89d9afc1acda5b56ede83559b9a",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/was.svg": {
+      "source": "assets/illustrations/was.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "27b0fbeeb0d0f579963bcf7042e4b6f255800edbdfa5b7a831d2f72d2a495186",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/said.svg": {
+      "source": "assets/illustrations/said.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "b8433704cd37abaa3db7039519177baefa35d311e2851e29c35fefe209ea6d37",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/one.svg": {
+      "source": "assets/illustrations/one.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "a27426fb04b27b68c3be76a930b82106f4caab8b7b99fa58d4313444f2fdda25",
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    "/images/words/to.svg": {
+      "source": "assets/illustrations/to.svg",
+      "creator": "W-English contributors; Nunito font authors",
+      "license": "MIT (layout); OFL-1.1 (embedded Nunito)",
+      "permissionEvidence": "LICENSE; assets/licenses/nunito.txt",
+      "evidenceFiles": [
+        "LICENSE",
+        "assets/licenses/nunito.txt"
+      ],
+      "sha256": "7c4849af22484e47852ea0a8fd007c49558ee2875c3d77d658e9c2a48608efd8",
+      "reviewer": null,
+      "reviewedAt": null
+    }
+  }
+}

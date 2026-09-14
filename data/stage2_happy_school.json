@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.09.3",
+  "themeId": "happy_school",
+  "title": {
+    "zh": "快乐学校",
+    "en": "Happy School"
+  },
+  "wordIds": [
+    "w_book_003",
+    "w_pencil_072",
+    "w_ruler_073",
+    "w_brush_074",
+    "w_bell_075",
+    "w_clock_076",
+    "w_desk_077",
+    "w_chair_078",
+    "w_hand_079",
+    "w_ear_080",
+    "w_eye_081",
+    "w_foot_082",
+    "w_ball_083",
+    "w_doll_084",
+    "w_kite_085",
+    "w_bike_086",
+    "w_car_087",
+    "w_bus_088",
+    "w_truck_089",
+    "w_train_090",
+    "w_ship_091",
+    "w_flag_092",
+    "w_tent_093",
+    "w_drum_094",
+    "w_ring_095",
+    "w_glue_096",
+    "w_pin_097",
+    "w_we_098",
+    "w_is_099",
+    "w_was_100",
+    "w_said_101",
+    "w_one_102",
+    "w_to_103"
+  ],
+  "pages": [
+    [
+      "w_book_003",
+      "w_pencil_072",
+      "w_ruler_073",
+      "w_brush_074",
+      "w_bell_075"
+    ],
+    [
+      "w_clock_076",
+      "w_desk_077",
+      "w_chair_078",
+      "w_hand_079",
+      "w_ear_080"
+    ],
+    [
+      "w_eye_081",
+      "w_foot_082",
+      "w_ball_083",
+      "w_doll_084",
+      "w_kite_085"
+    ],
+    [
+      "w_bike_086",
+      "w_car_087",
+      "w_bus_088",
+      "w_truck_089",
+      "w_train_090"
+    ],
+    [
+      "w_ship_091",
+      "w_flag_092",
+      "w_tent_093",
+      "w_drum_094",
+      "w_ring_095"
+    ],
+    [
+      "w_glue_096",
+      "w_pin_097",
+      "w_we_098",
+      "w_is_099",
+      "w_was_100"
+    ],
+    [
+      "w_said_101",
+      "w_one_102",
+      "w_to_103"
+    ]
+  ],
+  "listenTapWordIds": [
+    "w_book_003",
+    "w_pencil_072",
+    "w_ruler_073",
+    "w_brush_074",
+    "w_bell_075",
+    "w_clock_076",
+    "w_desk_077",
+    "w_chair_078",
+    "w_hand_079",
+    "w_ear_080",
+    "w_foot_082",
+    "w_ball_083",
+    "w_doll_084",
+    "w_kite_085",
+    "w_bike_086",
+    "w_car_087",
+    "w_bus_088",
+    "w_truck_089",
+    "w_train_090",
+    "w_ship_091",
+    "w_flag_092",
+    "w_tent_093",
+    "w_drum_094",
+    "w_ring_095",
+    "w_glue_096",
+    "w_pin_097"
+  ],
+  "confusablePairs": [
+    [
+      "w_car_087",
+      "w_truck_089"
+    ],
+    [
+      "w_bus_088",
+      "w_truck_089"
+    ]
+  ],
+  "spriteIds": [
+    "happy_school_a",
+    "phonics",
+    "happy_school_b",
+    "guide",
+    "sfx"
+  ],
+  "unlock": {
+    "prerequisiteThemeId": "sunny_garden",
+    "requiredFirstCorrect": 5
+  }
+}

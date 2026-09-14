@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "stage": 2,
+  "expectedWords": 100,
+  "words": "data/stage2_words.json",
+  "themes": [
+    "data/stage2_animal_home.json",
+    "data/stage2_sunny_garden.json",
+    "data/stage2_happy_school.json"
+  ]
+}

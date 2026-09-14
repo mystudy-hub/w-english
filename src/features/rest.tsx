@@ -1,4 +1,4 @@
-import { Coffee, Leaf, Play, RotateCcw } from 'lucide-react';
+import { Coffee, Heart, Leaf, Play, RotateCcw, Sparkles } from 'lucide-react';
 import { useEffect, useId, useRef, useState } from 'react';
 import { audio, changeLearningRest, playGuide, recordLearningTime } from '../app/runtime.ts';
 import { useAppStore } from '../app/store.ts';
@@ -70,6 +70,20 @@ export function RestDialog() {
   return <dialog ref={dialog} className="rest-dialog" aria-labelledby={titleId} onCancel={(event) => event.preventDefault()}>
     <div className="rest-parent"><ParentGate /></div><Ollie className="rest-owl" /><h1 id={titleId}>让小眼睛休息一下</h1><p>看看远处的风景，伸伸小手。<br />小伙伴们会在这里等你。</p>
     {resting && left > 0 && <div className="rest-countdown" role="timer" aria-label="休息剩余时间" aria-live="off">{String(Math.floor(seconds / 60)).padStart(2, '0')}:{String(seconds % 60).padStart(2, '0')}</div>}
+    {resting && left > 0 && (() => {
+      const activityIndex = Math.floor(seconds / 60) % 3;
+      const Icon = [Sparkles, Leaf, Heart][activityIndex]!;
+      const titles = ['伸展小动作：学小猫伸个懒腰', '远眺小发现：找一找窗外的绿色', '温馨小互动：给家人一个温暖拥抱'];
+      const texts = [
+        '把小手高高举过头顶，像小猫咪一样伸展一下身体吧！',
+        '转转小脑袋，看看窗外有没有绿树、花草或飞过的小鸟？',
+        '去抱一抱身边的爸爸妈妈，眨眨小眼睛，放松一下。',
+      ];
+      return <div className="rest-activity-card" role="note" aria-label={titles[activityIndex]}>
+        <div className="rest-activity-icon"><Icon size={24} /></div>
+        <div className="rest-activity-body"><strong>{titles[activityIndex]}</strong><p>{texts[activityIndex]}</p></div>
+      </div>;
+    })()}
     <div className="button-row">{usage.phase === 'reminder' && <>
       <Button className="primary" aria-label="先休息一会儿" disabled={busy} onClick={() => void change('rest')}><Coffee /><span data-mode-label>先休息一会儿</span></Button>
       {usage.limitMinutes === 8 && <Button aria-label="继续探索" disabled={busy} onClick={() => void change('continue')}><Play /><span data-mode-label>继续探索</span></Button>}

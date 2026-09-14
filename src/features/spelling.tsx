@@ -22,8 +22,9 @@ export function Spelling({ viewportReady }: { viewportReady: boolean }) {
   const [busy, setBusy] = useState(false); const [message, setMessage] = useState('');
   const operation = useRef(false); const generation = useRef(0);
   const nextSlot = useRef<HTMLDivElement>(null);
-  const pointer = useRef<{ tile: number; x: number; y: number; moved: boolean }>();
+  const pointer = useRef<{ tile: number; x: number; y: number; moved: boolean; isTouch: boolean }>();
   const [drag, setDrag] = useState<{ tile: number; x: number; y: number }>(); const suppressClick = useRef(false);
+  const [nearSlot, setNearSlot] = useState(false);
   const isSpelling = session?.activity === 'tapSpell';
   const canPlay = Boolean(isSpelling && word && audio.has(word.audio.word) && !state.muted);
   const valid = useCallback((run: number) => {
@@ -154,7 +155,7 @@ export function Spelling({ viewportReady }: { viewportReady: boolean }) {
   return <><Header back={() => void exit()}><div className="lesson-dots">{session.questions.map((entry, index) => <span key={entry.id} className={index < session.currentQuestionIndex ? 'done' : index === session.currentQuestionIndex ? 'current' : ''}>{index < session.currentQuestionIndex ? <Check size={14} /> : ''}</span>)}</div></Header>
     <main className="spelling-page"><div className="spelling-heading"><div><div className="eyebrow">ONE LETTER AT A TIME</div><h1>把字母小火车接起来</h1></div><Button className="soft-blue" aria-label="重播拼字单词" disabled={!canPlay || busy} onClick={() => void playPrompt()}><Volume2 /><span data-mode-label>再听一遍</span></Button></div>
       <section className="spelling-workspace"><WordImage word={word} className="spelling-image" /><div className="spelling-track" role="group" aria-label="单词车厢">
-        {word.spelling.map((letter, index) => <div key={index} ref={index === spelling.placed.length ? nextSlot : undefined} data-spelling-slot={index} className={`letter-slot ${index === spelling.placed.length && !spelling.skipped ? 'next-slot' : ''} ${spelling.skipped ? 'revealed' : ''}`} aria-label={`第 ${index + 1} 个字母${index < spelling.placed.length || spelling.skipped ? ` ${letter}` : ''}`}>
+        {word.spelling.map((letter, index) => <div key={index} ref={index === spelling.placed.length ? nextSlot : undefined} data-spelling-slot={index} className={`letter-slot ${index === spelling.placed.length && !spelling.skipped ? 'next-slot' : ''} ${nearSlot && index === spelling.placed.length ? 'snap-target' : ''} ${spelling.skipped ? 'revealed' : ''}`} aria-label={`第 ${index + 1} 个字母${index < spelling.placed.length || spelling.skipped ? ` ${letter}` : ''}`}>
           {index < spelling.placed.length || spelling.skipped ? letter : <span aria-hidden="true">·</span>}</div>)}
       </div></section>
       {!spelling.skipped && <div className={`spelling-bank ${mode === 'drag' ? 'allows-drag' : ''}`} role="group" aria-label="可用字母">{spelling.tiles.map((tile) => <button key={tile} data-letter-tile={tile} className={`letter-tile ${spelling.placed.includes(tile) ? 'placed' : ''} ${drag?.tile === tile ? 'dragging' : ''}`}
@@ -166,22 +167,32 @@ export function Spelling({ viewportReady }: { viewportReady: boolean }) {
           suppressClick.current = false;
           if (mode !== 'drag' || event.button !== 0) return;
           void audio.unlock(); event.currentTarget.setPointerCapture(event.pointerId);
-          pointer.current = { tile, x: event.clientX, y: event.clientY, moved: false };
+          pointer.current = { tile, x: event.clientX, y: event.clientY, moved: false, isTouch: event.pointerType === 'touch' };
         }}
         onPointerMove={(event) => {
           const start = pointer.current; if (!start || start.tile !== tile) return;
           const x = event.clientX - start.x; const y = event.clientY - start.y;
           start.moved ||= Math.hypot(x, y) > 8;
-          if (start.moved) setDrag({ tile, x, y });
+          if (start.moved) {
+            const offsetY = start.isTouch ? -35 : 0;
+            setDrag({ tile, x, y: y + offsetY });
+            const bounds = nextSlot.current?.getBoundingClientRect();
+            const MARGIN = 36;
+            const isNear = Boolean(bounds &&
+              event.clientX >= bounds.left - MARGIN && event.clientX <= bounds.right + MARGIN &&
+              event.clientY >= bounds.top - MARGIN && event.clientY <= bounds.bottom + MARGIN);
+            setNearSlot(isNear);
+          }
         }}
         onPointerUp={(event) => {
-          const start = pointer.current; pointer.current = undefined; setDrag(undefined);
+          const start = pointer.current; pointer.current = undefined; setDrag(undefined); setNearSlot(false);
           if (!start?.moved) return;
           suppressClick.current = true;
           const bounds = nextSlot.current?.getBoundingClientRect();
-          if (bounds && event.clientX >= bounds.left && event.clientX <= bounds.right && event.clientY >= bounds.top && event.clientY <= bounds.bottom) void place(tile);
+          const MARGIN = 36;
+          if (bounds && event.clientX >= bounds.left - MARGIN && event.clientX <= bounds.right + MARGIN && event.clientY >= bounds.top - MARGIN && event.clientY <= bounds.bottom + MARGIN) void place(tile);
         }}
-        onPointerCancel={() => { pointer.current = undefined; suppressClick.current = false; setDrag(undefined); }}>
+        onPointerCancel={() => { pointer.current = undefined; suppressClick.current = false; setDrag(undefined); setNearSlot(false); }}>
         {word.spelling[tile]}
       </button>)}</div>}
       <div className="spelling-footer"><GuideBubble essential={Boolean(message)} mode={mode}>{message || (busy ? '竖起小耳朵，听听这节小车厢。' : mode === 'drag' ? '可以把字母拖到下一节车厢，也可以点一点。' : '按顺序点一点，把小车厢接起来。')}</GuideBubble>

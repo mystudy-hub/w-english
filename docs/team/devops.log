@@ -1,0 +1,2 @@
+2026-09-10T07:32:30Z | DEVOPS-INIT | START | docs/runbook.md; docs/team/devops.log | baseline inspection | 已确认仓库当前尚无 package.json、Vite 脚手架或团队产物，开始等待并行契约与实现输入。
+2026-09-10T07:33:00Z | DEVOPS-INIT | BLOCKED | docs/runbook.md | waiting for scaffold | 集成与真实冒烟需等待 leader 冻结契约及前后端脚手架；条件满足后继续并回写可执行启动/验证记录。

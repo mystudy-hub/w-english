@@ -1,0 +1,3 @@
+2026-09-10T07:34:00Z | UX-0 | START | docs/design-spec/ | 规范预研 | 已预研 PROJECT_PLAN 第五节与 IMPLEMENTATION_SPEC，准备产出设计规范
+2026-09-10T07:34:30Z | UX-0 | BLOCKED | docs/design-spec/ | 等待 docs/PRD.md | 上游 docs/PRD.md 尚未产出，等待 product_owner 冻结需求后启动全量设计规范编写
+2026-09-10T07:35:00Z | UX-0 | BLOCKED | docs/design-spec/ | 等待 docs/PRD.md | 已确认 leader 任务下发，等待 product_owner 产出 docs/PRD.md 后立即开工并与 PRD 对齐

@@ -1,0 +1,43 @@
+name: Engineering checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm install --global npm@11.17.0
+      - run: npm ci
+      - run: npm run validate:content
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build:preview
+      - run: npm run validate:assets -- --preview
+      - run: npm run browsers:install -- --with-deps
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: |
+            playwright-report/
+            test-results/
+            artifacts/screenshots/
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: internal-preview
+          path: dist/
+
+# Release remains an explicit local build with real media and approval gates.
+# This workflow does not publish the unreviewed preview as a production site.

@@ -1,5 +1,21 @@
 # dependencies
 /node_modules
+/.npm-cache/
+/.cache/
+/dist/
+/test-results/
+/playwright-report/
+/public/content/
+/public/core/
+/public/icons/app-*.png
+/public/licenses/
+/artifacts/
+/audio-source/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
 /.pnp
 .pnp.js
 

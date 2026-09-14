@@ -1,0 +1,67 @@
+/content/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/content/audio/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/core/sfx.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/core/sfx-sprite.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/core/guide.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/core/guide-sprite.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/core/ui_guide.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/core/ui_guide-sprite.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/content/manifest.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/content/catalog.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/content/licenses.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/content/licenses/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/content/audio-audit.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/content/content-audit.*
+  Cache-Control: public, max-age=31536000, immutable
+
+/
+  Cache-Control: no-cache
+
+/index.html
+  Cache-Control: no-cache
+
+/manifest.webmanifest
+  Cache-Control: no-cache
+
+/core/index.json
+  Cache-Control: no-cache
+
+/content/index.json
+  Cache-Control: no-cache
+
+/sw.js
+  Cache-Control: no-cache
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=()

@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.09.4",
+  "status": "research_candidates",
+  "notInActiveCatalog": true,
+  "purpose": "Stage 3 选词候选。只收录可配图、能落入现有 theme、且可用本项目释义/例句重写的常用词。典范英语/牛津阅读树仅作出现确认，不复制教材词表、故事、释义、例句、音频或插图。",
+  "retrievedAt": "2026-09-14",
+  "legal": {
+    "allowed": [
+      "公开教学笔记中的可解码/高频词名单",
+      "与 Dolch/Fry 重叠的常用词",
+      "GitHub 词卡仓库中的英文词形清单"
+    ],
+    "forbidden": [
+      "盗版 PDF/MP3/网盘全套",
+      "Biff/Chip/Kipper/Floppy 等授权角色名",
+      "课文原句、官方释义、原版插图和录音"
+    ]
+  },
+  "sources": [
+    {
+      "id": "oup-tns",
+      "title": "Oxford Reading Tree Biff, Chip and Kipper teaching notes (OUP Japan)",
+      "urls": [
+        "https://www.oupjapan.co.jp/sites/default/files/contents/eduk/ort/media/ort/ort_bck_getdad_tns.pdf",
+        "https://www.oupjapan.co.jp/sites/default/files/contents/eduk/ort/media/ort/ort_bck_lookatme_tns.pdf",
+        "https://www.oupjapan.co.jp/sites/default/files/contents/eduk/ort/media/ort/ort_bck_geton_tns.pdf",
+        "https://www.oupjapan.co.jp/sites/default/files/contents/eduk/ort/media/ort/ort_bck_goonmum_tns.pdf",
+        "https://www.oupjapan.co.jp/sites/default/files/contents/eduk/ort/media/ort/ort_bck_floppydid_tns.pdf"
+      ],
+      "note": "官方教学笔记中的 Decodable words / Tricky words，不是课文正文。"
+    },
+    {
+      "id": "github-ort-words-l1",
+      "title": "urigo-creator/oxford-reading-tree-words Level 1 First Sentences",
+      "urls": [
+        "https://github.com/urigo-creator/oxford-reading-tree-words"
+      ],
+      "note": "仅使用 js/data.js 中的英文词形。未拷贝封面图、音频或韩语例句。"
+    },
+    {
+      "id": "netmums-ort-keywords",
+      "title": "Netmums community ORT key words thread",
+      "urls": [
+        "https://www.netmums.com/coffeehouse/being-mum-794/children-4-11-years-60/391826-oxford-reading-tree-key-words.html"
+      ],
+      "note": "家长整理的 Stage 1 常见词，与 Dolch Pre-primer 大量重叠。"
+    },
+    {
+      "id": "tes-ort-sight",
+      "title": "TES: Oxford Reading Tree Sight Words / Key Word Flashcards",
+      "urls": [
+        "https://www.tes.com/teaching-resource/oxford-reading-tree-sight-words-7530700",
+        "https://www.tes.com/teaching-resource/oxford-reading-tree-key-word-flashcards-ort-13195652"
+      ],
+      "note": "教师分享的 Stage 1–5 高频词卡说明；正文需登录，未下载文档。"
+    },
+    {
+      "id": "quizlet-dianfan",
+      "title": "Quizlet user sets titled 典范英语",
+      "urls": [
+        "https://quizlet.com/cn/778522521/",
+        "https://quizlet.com/154940990/"
+      ],
+      "note": "存在 2b、5a 用户词卡；页面 403，未导入正文。5a 超出 4–9 岁首批范围。"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "reason": "盗版全套教材/音频",
+      "examples": [
+        "https://www.wuxueguan.cn/zhonghe/9779.html",
+        "https://www.huix8.com/xiaoxue/xxyy/16711.html",
+        "https://www.fzbw.cn/archives/2998.html"
+      ]
+    },
+    {
+      "reason": "GitHub 仓库以扫描/转图方式组织牛津树书页，不用于取词",
+      "examples": [
+        "https://github.com/ZhaoChaoqun/Oxford-Reading-Tree",
+        "https://github.com/raymondnuaa/oxfordreadingtree"
+      ]
+    }
+  ],
+  "searchGaps": [
+    "X/Twitter：Monid tweet scraper 与 XCrawl 均无可用密钥，未检索到帖文。公开网页上的“典范英语资源”多为网盘盗版，不采用。",
+    "GitHub 无“典范英语”专用词库仓库；最接近的是 oxford-reading-tree-words（仅 Level 1 两套 First Sentences）。",
+    "AnkiWeb 无典范英语共享牌组。"
+  ],
+  "alreadyInStage2": [
+    "a",
+    "bike",
+    "blue",
+    "box",
+    "cat",
+    "dog",
+    "flower",
+    "grape",
+    "is",
+    "net",
+    "red",
+    "to",
+    "we",
+    "you"
+  ],
+  "skipped": [
+    { "word": "biff", "reason": "授权角色名" },
+    { "word": "chip", "reason": "授权角色名；且与食物义冲突" },
+    { "word": "kipper", "reason": "授权角色名" },
+    { "word": "floppy", "reason": "授权角色名" },
+    { "word": "dinosaur", "reason": "过长，且非首批听音选图目标" },
+    { "word": "monster", "reason": "易惊吓，图义难审" },
+    { "word": "chocolate", "reason": "超出现有拼读阶段" },
+    { "word": "can", "reason": "情态与金属罐双义，听音选图易混" }
+  ],
+  "candidates": [
+    {
+      "word": "mum",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 1,
+      "theme": "family",
+      "listenTap": true,
+      "zhHint": "妈妈",
+      "sources": ["oup-tns", "github-ort-words-l1", "netmums-ort-keywords"],
+      "note": "当前 family 主题几乎都是物品，缺家庭人物。"
+    },
+    {
+      "word": "dad",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 1,
+      "theme": "family",
+      "listenTap": true,
+      "zhHint": "爸爸",
+      "sources": ["oup-tns", "github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "big",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 1,
+      "theme": "school",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "大的",
+      "sources": ["github-ort-words-l1", "netmums-ort-keywords"],
+      "note": "配图须与 little 成对可区分。"
+    },
+    {
+      "word": "hot",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 1,
+      "theme": "nature",
+      "listenTap": true,
+      "zhHint": "热的",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "wet",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 1,
+      "theme": "nature",
+      "listenTap": true,
+      "zhHint": "湿的",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "run",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 1,
+      "theme": "family",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "跑",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "top",
+      "priority": "medium",
+      "track": "phonics",
+      "phonicsStage": 1,
+      "theme": "school",
+      "listenTap": true,
+      "zhHint": "顶部",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "look",
+      "priority": "high",
+      "track": "sight",
+      "theme": "school",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "看",
+      "sources": ["oup-tns", "github-ort-words-l1", "netmums-ort-keywords", "tes-ort-sight"]
+    },
+    {
+      "word": "go",
+      "priority": "high",
+      "track": "sight",
+      "theme": "family",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "去",
+      "sources": ["oup-tns", "github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "come",
+      "priority": "high",
+      "track": "sight",
+      "theme": "family",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "来",
+      "sources": ["github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "play",
+      "priority": "high",
+      "track": "sight",
+      "theme": "school",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "玩",
+      "sources": ["github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "see",
+      "priority": "high",
+      "track": "sight",
+      "theme": "school",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "看见",
+      "sources": ["github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "little",
+      "priority": "high",
+      "track": "sight",
+      "theme": "family",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "小的",
+      "sources": ["github-ort-words-l1"],
+      "note": "配图须与 big 成对可区分。"
+    },
+    {
+      "word": "my",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "family",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": false,
+      "zhHint": "我的",
+      "sources": ["oup-tns", "netmums-ort-keywords"],
+      "note": "整词识别可以，听音选图难配独立图义。"
+    },
+    {
+      "word": "me",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "body",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": false,
+      "zhHint": "我",
+      "sources": ["oup-tns", "netmums-ort-keywords"]
+    },
+    {
+      "word": "she",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "family",
+      "sightWordList": "dolch_primer",
+      "listenTap": false,
+      "zhHint": "她",
+      "sources": ["oup-tns", "netmums-ort-keywords"]
+    },
+    {
+      "word": "no",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "school",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": false,
+      "zhHint": "不",
+      "sources": ["oup-tns", "netmums-ort-keywords"]
+    },
+    {
+      "word": "yes",
+      "priority": "medium",
+      "track": "phonics",
+      "phonicsStage": 1,
+      "theme": "school",
+      "listenTap": false,
+      "zhHint": "是",
+      "sources": ["github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "up",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "school",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "向上",
+      "sources": ["netmums-ort-keywords"]
+    },
+    {
+      "word": "in",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "school",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": true,
+      "zhHint": "在里面",
+      "sources": ["github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "on",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "school",
+      "listenTap": true,
+      "zhHint": "在上面",
+      "sources": ["oup-tns", "github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "for",
+      "priority": "low",
+      "track": "sight",
+      "theme": "family",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": false,
+      "zhHint": "为了",
+      "sources": ["github-ort-words-l1", "netmums-ort-keywords"]
+    },
+    {
+      "word": "not",
+      "priority": "low",
+      "track": "sight",
+      "theme": "school",
+      "sightWordList": "dolch_pre_primer",
+      "listenTap": false,
+      "zhHint": "不",
+      "sources": ["oup-tns", "github-ort-words-l1"]
+    },
+    {
+      "word": "shop",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 2,
+      "theme": "family",
+      "listenTap": true,
+      "zhHint": "商店",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "park",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 3,
+      "theme": "nature",
+      "listenTap": true,
+      "zhHint": "公园",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "pool",
+      "priority": "medium",
+      "track": "phonics",
+      "phonicsStage": 2,
+      "theme": "nature",
+      "listenTap": true,
+      "zhHint": "水池",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "feet",
+      "priority": "high",
+      "track": "phonics",
+      "phonicsStage": 2,
+      "theme": "body",
+      "listenTap": true,
+      "zhHint": "脚（复数）",
+      "sources": ["github-ort-words-l1"],
+      "note": "已有 foot；复数须单独审图义，不能复用单数图。"
+    },
+    {
+      "word": "slide",
+      "priority": "medium",
+      "track": "phonics",
+      "phonicsStage": 4,
+      "theme": "school",
+      "listenTap": true,
+      "zhHint": "滑梯",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "ladder",
+      "priority": "medium",
+      "track": "phonics",
+      "phonicsStage": 4,
+      "theme": "school",
+      "listenTap": true,
+      "zhHint": "梯子",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "paint",
+      "priority": "medium",
+      "track": "phonics",
+      "phonicsStage": 3,
+      "theme": "school",
+      "listenTap": true,
+      "zhHint": "画画/颜料",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "present",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "family",
+      "listenTap": true,
+      "zhHint": "礼物",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "sleep",
+      "priority": "medium",
+      "track": "phonics",
+      "phonicsStage": 2,
+      "theme": "family",
+      "listenTap": true,
+      "zhHint": "睡觉",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "walk",
+      "priority": "medium",
+      "track": "sight",
+      "theme": "family",
+      "listenTap": true,
+      "zhHint": "走路",
+      "sources": ["github-ort-words-l1"]
+    },
+    {
+      "word": "day",
+      "priority": "low",
+      "track": "phonics",
+      "phonicsStage": 3,
+      "theme": "nature",
+      "listenTap": false,
+      "zhHint": "白天/一天",
+      "sources": ["github-ort-words-l1", "netmums-ort-keywords"]
+    }
+  ]
+}

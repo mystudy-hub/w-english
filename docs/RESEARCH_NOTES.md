@@ -20,6 +20,7 @@
 | R12 | [Oxford Owl phonics](https://home.oxfordowl.co.uk/reading/learn-to-read-phonics/) | 明确区分字母/字母组合（grapheme）和声音（phoneme），介绍分解与拼合，并建议学习 pure sounds | 教学设计依据；不复制其音频、词表或插图，不把英式示例直接当作本项目美音标准 |
 | R13 | [Tailwind CSS compatibility](https://tailwindcss.com/docs/compatibility) | 当前框架核心浏览器基线为 Chrome 111、Safari 16.4、Firefox 128；部分新 CSS 功能还需另行判断 | 固定目标 Safari/Chrome 下限；不以 Vite 转译设置掩盖 CSS 兼容性 |
 | R14 | [Node.js releases](https://nodejs.org/en/about/previous-releases) | 查阅时 Node 24 为 LTS，官网显示最新 LTS 24.21.0；Node 26 为 Current；官网建议生产使用 Active/Maintenance LTS | 选择 Node 24 LTS；当前工作区 24.19.0，S0-01 再统一本地/CI 精确补丁 |
+| R15 | 典范英语/ORT 公开词表：OUP Japan teaching notes；[oxford-reading-tree-words](https://github.com/urigo-creator/oxford-reading-tree-words)；Netmums ORT key words；TES Stage 1–5 sight-word 说明 | 典范英语是牛津阅读树引进版，无官方开放电子词表。GitHub 无“典范英语”专用词库；最接近的公开词形清单是 ORT Level 1 First Sentences。网盘“1–10 级 PDF+MP3”为盗版，不采用。X/Twitter 本次无可用检索接口 | 只把可配图、能落入现有 theme 的常用词写入 [候选表](../data/candidates/dianfan-ort-words.json)，自写释义/例句；不复制教材、音频、插图或角色名。不并入当前 Stage 2 的 100 词活动目录 |
 
 网页版本会变化；上述版本只记录本次查阅结果。依赖安装还要读取实际包的 engines/peerDependencies，并提交经过构建验证的 lockfile。
 

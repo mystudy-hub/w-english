@@ -1,0 +1,3803 @@
+[
+  {
+    "word": "a",
+    "count": 62,
+    "lessons": [
+      "1A-01",
+      "1A-02",
+      "1A-05",
+      "1A-14",
+      "1A-15",
+      "1A-16",
+      "1A-17",
+      "1A-20",
+      "1A-22",
+      "1A-24",
+      "1A-27",
+      "1A-30",
+      "1A-32",
+      "1A-35",
+      "1A-36",
+      "1A-38",
+      "1A-39",
+      "1A-40",
+      "1A-42"
+    ],
+    "example": "and a spaceman.",
+    "zh": "一个",
+    "ipa": "/eɪ/",
+    "emoji": "🔤",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "the",
+    "count": 42,
+    "lessons": [
+      "1A-03",
+      "1A-06",
+      "1A-13",
+      "1A-16",
+      "1A-17",
+      "1A-18",
+      "1A-21",
+      "1A-22",
+      "1A-26",
+      "1A-30",
+      "1A-34",
+      "1A-35",
+      "1A-36",
+      "1A-37",
+      "1A-38",
+      "1A-39",
+      "1A-41",
+      "1A-42"
+    ],
+    "example": "Fun at the Beach",
+    "zh": "这/那(定冠词)",
+    "ipa": "/ðə/",
+    "emoji": "🎯",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "it",
+    "count": 40,
+    "lessons": [
+      "1A-01",
+      "1A-07",
+      "1A-09",
+      "1A-18",
+      "1A-20",
+      "1A-23",
+      "1A-27",
+      "1A-30",
+      "1A-35",
+      "1A-39",
+      "1A-42"
+    ],
+    "example": "Who Is It?",
+    "zh": "它",
+    "ipa": "/ɪt/",
+    "emoji": "👉",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "is",
+    "count": 38,
+    "lessons": [
+      "1A-01",
+      "1A-07",
+      "1A-09",
+      "1A-26",
+      "1A-27",
+      "1A-32",
+      "1A-34",
+      "1A-35",
+      "1A-36",
+      "1A-41",
+      "1A-42"
+    ],
+    "example": "Who Is It?",
+    "zh": "是",
+    "ipa": "/ɪz/",
+    "emoji": "✨",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "mum",
+    "count": 38,
+    "lessons": [
+      "1A-01",
+      "1A-02",
+      "1A-03",
+      "1A-09",
+      "1A-10",
+      "1A-12",
+      "1A-13",
+      "1A-14",
+      "1A-15",
+      "1A-16",
+      "1A-18",
+      "1A-19",
+      "1A-20",
+      "1A-21",
+      "1A-23",
+      "1A-24",
+      "1A-28",
+      "1A-33"
+    ],
+    "example": "Mum",
+    "zh": "妈妈",
+    "ipa": "/mʌm/",
+    "emoji": "👩",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "floppy",
+    "count": 36,
+    "lessons": [
+      "1A-01",
+      "1A-02",
+      "1A-03",
+      "1A-04",
+      "1A-07",
+      "1A-09",
+      "1A-12",
+      "1A-13",
+      "1A-20",
+      "1A-23",
+      "1A-29",
+      "1A-31",
+      "1A-32",
+      "1A-36"
+    ],
+    "example": "Floppy",
+    "zh": "弗洛皮 (小狗主角)",
+    "ipa": "/ˈflɒpi/",
+    "emoji": "🐶",
+    "track": "sight",
+    "phonicsType": "name",
+    "isRole": true
+  },
+  {
+    "word": "dad",
+    "count": 36,
+    "lessons": [
+      "1A-01",
+      "1A-02",
+      "1A-03",
+      "1A-10",
+      "1A-11",
+      "1A-12",
+      "1A-14",
+      "1A-16",
+      "1A-19",
+      "1A-20",
+      "1A-21",
+      "1A-23",
+      "1A-24",
+      "1A-25",
+      "1A-27",
+      "1A-33",
+      "1A-35",
+      "1A-40",
+      "1A-41"
+    ],
+    "example": "No, it's Dad.",
+    "zh": "爸爸",
+    "ipa": "/dæd/",
+    "emoji": "👨",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "on",
+    "count": 34,
+    "lessons": [
+      "1A-08",
+      "1A-10",
+      "1A-13",
+      "1A-15",
+      "1A-26",
+      "1A-28",
+      "1A-33",
+      "1A-34",
+      "1A-37",
+      "1A-41"
+    ],
+    "example": "Get On",
+    "zh": "在...上面",
+    "ipa": "/ɒn/",
+    "emoji": "🔛",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "kipper",
+    "count": 32,
+    "lessons": [
+      "1A-01",
+      "1A-02",
+      "1A-03",
+      "1A-05",
+      "1A-07",
+      "1A-08",
+      "1A-09",
+      "1A-10",
+      "1A-11",
+      "1A-12",
+      "1A-13",
+      "1A-14",
+      "1A-16",
+      "1A-17",
+      "1A-19",
+      "1A-20",
+      "1A-21",
+      "1A-23",
+      "1A-24",
+      "1A-33",
+      "1A-37",
+      "1A-40"
+    ],
+    "example": "and Kipper.",
+    "zh": "基珀 (弟弟主角)",
+    "ipa": "/ˈkɪpər/",
+    "emoji": "👶",
+    "track": "sight",
+    "phonicsType": "name",
+    "isRole": true
+  },
+  {
+    "word": "biff",
+    "count": 30,
+    "lessons": [
+      "1A-01",
+      "1A-02",
+      "1A-03",
+      "1A-07",
+      "1A-08",
+      "1A-09",
+      "1A-10",
+      "1A-11",
+      "1A-12",
+      "1A-13",
+      "1A-14",
+      "1A-16",
+      "1A-17",
+      "1A-18",
+      "1A-19",
+      "1A-21",
+      "1A-23",
+      "1A-24",
+      "1A-33",
+      "1A-34",
+      "1A-40"
+    ],
+    "example": "Biff",
+    "zh": "比夫 (主角)",
+    "ipa": "/bɪf/",
+    "emoji": "👧",
+    "track": "sight",
+    "phonicsType": "name",
+    "isRole": true
+  },
+  {
+    "word": "chip",
+    "count": 30,
+    "lessons": [
+      "1A-01",
+      "1A-02",
+      "1A-03",
+      "1A-07",
+      "1A-08",
+      "1A-09",
+      "1A-10",
+      "1A-11",
+      "1A-12",
+      "1A-13",
+      "1A-14",
+      "1A-16",
+      "1A-17",
+      "1A-18",
+      "1A-19",
+      "1A-21",
+      "1A-22",
+      "1A-23",
+      "1A-24",
+      "1A-33",
+      "1A-40"
+    ],
+    "example": "and Chip.",
+    "zh": "奇普 (主角)",
+    "ipa": "/tʃɪp/",
+    "emoji": "👦",
+    "track": "sight",
+    "phonicsType": "name",
+    "isRole": true
+  },
+  {
+    "word": "this",
+    "count": 30,
+    "lessons": [
+      "1A-09",
+      "1A-27",
+      "1A-31",
+      "1A-34",
+      "1A-35",
+      "1A-36",
+      "1A-41",
+      "1A-42"
+    ],
+    "example": "Floppy Did This",
+    "zh": "这个",
+    "ipa": "/ðɪs/",
+    "emoji": "👇",
+    "track": "sight",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "go",
+    "count": 30,
+    "lessons": [
+      "1A-10",
+      "1A-11",
+      "1A-29",
+      "1A-32",
+      "1A-33",
+      "1A-41"
+    ],
+    "example": "Go on, Dad!",
+    "zh": "去，走",
+    "ipa": "/ɡoʊ/",
+    "emoji": "🚀",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "you",
+    "count": 28,
+    "lessons": [
+      "1A-11",
+      "1A-25",
+      "1A-35",
+      "1A-38",
+      "1A-39",
+      "1A-41"
+    ],
+    "example": "Up You Go",
+    "zh": "你，你们",
+    "ipa": "/juː/",
+    "emoji": "🫵",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "i",
+    "count": 27,
+    "lessons": [
+      "1A-12",
+      "1A-25",
+      "1A-30",
+      "1A-33",
+      "1A-34",
+      "1A-37",
+      "1A-39",
+      "1A-41"
+    ],
+    "example": "I See",
+    "zh": "我",
+    "ipa": "/aɪ/",
+    "emoji": "🙋‍♂️",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "see",
+    "count": 27,
+    "lessons": [
+      "1A-12",
+      "1A-13",
+      "1A-25",
+      "1A-38",
+      "1A-39",
+      "1A-41"
+    ],
+    "example": "I See",
+    "zh": "看见",
+    "ipa": "/siː/",
+    "emoji": "👀",
+    "track": "sight",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "said",
+    "count": 27,
+    "lessons": [
+      "1A-15",
+      "1A-17",
+      "1A-21",
+      "1A-23",
+      "1A-33",
+      "1A-34"
+    ],
+    "example": "\" Ho! Ho! Ho! \" said Mum.",
+    "zh": "说(过去式)",
+    "ipa": "/sɛd/",
+    "emoji": "💬",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "and",
+    "count": 26,
+    "lessons": [
+      "1A-01",
+      "1A-02",
+      "1A-03",
+      "1A-12",
+      "1A-18",
+      "1A-25",
+      "1A-26",
+      "1A-27",
+      "1A-40"
+    ],
+    "example": "and Chip.",
+    "zh": "和，而且",
+    "ipa": "/ænd/",
+    "emoji": "➕",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "was",
+    "count": 24,
+    "lessons": [
+      "1A-14",
+      "1A-18",
+      "1A-19",
+      "1A-20",
+      "1A-23",
+      "1A-30"
+    ],
+    "example": "Mum was a scarecrow.",
+    "zh": "是(过去式)",
+    "ipa": "/wɒz/",
+    "emoji": "🕰️",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "me",
+    "count": 21,
+    "lessons": [
+      "1A-12",
+      "1A-23",
+      "1A-25",
+      "1A-28",
+      "1A-34",
+      "1A-38",
+      "1A-39",
+      "1A-41"
+    ],
+    "example": "I see me.",
+    "zh": "我(宾格)",
+    "ipa": "/miː/",
+    "emoji": "🙋",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "can",
+    "count": 21,
+    "lessons": [
+      "1A-25",
+      "1A-37",
+      "1A-38",
+      "1A-39",
+      "1A-40",
+      "1A-41"
+    ],
+    "example": "Can you see us?",
+    "zh": "能，可以",
+    "ipa": "/kæn/",
+    "emoji": "💪",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "look",
+    "count": 21,
+    "lessons": [
+      "1A-27",
+      "1A-28",
+      "1A-34",
+      "1A-36",
+      "1A-37",
+      "1A-38",
+      "1A-39",
+      "1A-41"
+    ],
+    "example": "Come and look at this.",
+    "zh": "看",
+    "ipa": "/lʊk/",
+    "emoji": "👀",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "no",
+    "count": 19,
+    "lessons": [
+      "1A-01",
+      "1A-04",
+      "1A-08",
+      "1A-09",
+      "1A-11",
+      "1A-17",
+      "1A-18",
+      "1A-27",
+      "1A-28",
+      "1A-32",
+      "1A-37",
+      "1A-41"
+    ],
+    "example": "No, it's Dad.",
+    "zh": "不",
+    "ipa": "/noʊ/",
+    "emoji": "❌",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "at",
+    "count": 19,
+    "lessons": [
+      "1A-03",
+      "1A-13",
+      "1A-27",
+      "1A-28",
+      "1A-36",
+      "1A-37",
+      "1A-39",
+      "1A-41"
+    ],
+    "example": "Fun at the Beach",
+    "zh": "在...",
+    "ipa": "/æt/",
+    "emoji": "📍",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "to",
+    "count": 17,
+    "lessons": [
+      "1A-13",
+      "1A-22",
+      "1A-30",
+      "1A-31",
+      "1A-37",
+      "1A-41"
+    ],
+    "example": "Everyone went to the park.",
+    "zh": "到，向",
+    "ipa": "/tuː/",
+    "emoji": "➡️",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "we",
+    "count": 16,
+    "lessons": [
+      "1A-12",
+      "1A-25",
+      "1A-26",
+      "1A-29",
+      "1A-34",
+      "1A-36"
+    ],
+    "example": "We see Kipper.",
+    "zh": "我们",
+    "ipa": "/wiː/",
+    "emoji": "👫",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "big",
+    "count": 15,
+    "lessons": [
+      "1A-05",
+      "1A-15",
+      "1A-27",
+      "1A-32",
+      "1A-36",
+      "1A-37",
+      "1A-38",
+      "1A-40"
+    ],
+    "example": "a big box,",
+    "zh": "大的",
+    "ipa": "/bɪɡ/",
+    "emoji": "🐘",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "went",
+    "count": 15,
+    "lessons": [
+      "1A-13",
+      "1A-22",
+      "1A-30",
+      "1A-34"
+    ],
+    "example": "Everyone went to the park.",
+    "zh": "去了(过去式)",
+    "ipa": "/wɛnt/",
+    "emoji": "👣",
+    "track": "sight",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "like",
+    "count": 15,
+    "lessons": [
+      "1A-31",
+      "1A-34",
+      "1A-36",
+      "1A-41"
+    ],
+    "example": "What Dogs Like",
+    "zh": "喜欢，像",
+    "ipa": "/laɪk/",
+    "emoji": "❤️",
+    "track": "sight",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "oh",
+    "count": 14,
+    "lessons": [
+      "1A-03",
+      "1A-04",
+      "1A-08",
+      "1A-09",
+      "1A-17",
+      "1A-18",
+      "1A-28",
+      "1A-32",
+      "1A-37",
+      "1A-41"
+    ],
+    "example": "Oh Floppy",
+    "zh": "哦！",
+    "ipa": "/oʊ/",
+    "emoji": "😲",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "got",
+    "count": 13,
+    "lessons": [
+      "1A-08",
+      "1A-20",
+      "1A-22",
+      "1A-40"
+    ],
+    "example": "Biff got on.",
+    "zh": "得到了",
+    "ipa": "/ɡɒt/",
+    "emoji": "🎁",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "get",
+    "count": 12,
+    "lessons": [
+      "1A-08",
+      "1A-10",
+      "1A-37",
+      "1A-39"
+    ],
+    "example": "Get On",
+    "zh": "得到，到达",
+    "ipa": "/ɡɛt/",
+    "emoji": "✊",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "dog",
+    "count": 12,
+    "lessons": [
+      "1A-32",
+      "1A-36",
+      "1A-38",
+      "1A-39"
+    ],
+    "example": "A dog is coming.",
+    "zh": "狗",
+    "ipa": "/dɒɡ/",
+    "emoji": "🐶",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "everyone",
+    "count": 11,
+    "lessons": [
+      "1A-13",
+      "1A-14",
+      "1A-17",
+      "1A-20",
+      "1A-21",
+      "1A-24"
+    ],
+    "example": "Everyone went to the park.",
+    "zh": "大家，每个人",
+    "ipa": "/ˈɛvriwʌn/",
+    "emoji": "👨‍👩‍👧‍👦",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "come",
+    "count": 10,
+    "lessons": [
+      "1A-26",
+      "1A-27",
+      "1A-29",
+      "1A-37",
+      "1A-41"
+    ],
+    "example": "Come on the reds!",
+    "zh": "来",
+    "ipa": "/kʌm/",
+    "emoji": "👋",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "in",
+    "count": 9,
+    "lessons": [
+      "1A-02",
+      "1A-26",
+      "1A-38",
+      "1A-42"
+    ],
+    "example": "Six in a Bed",
+    "zh": "在...里面",
+    "ipa": "/ɪn/",
+    "emoji": "📥",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "she",
+    "count": 9,
+    "lessons": [
+      "1A-15",
+      "1A-23",
+      "1A-33",
+      "1A-34"
+    ],
+    "example": "She put on a big beard.",
+    "zh": "她",
+    "ipa": "/ʃiː/",
+    "emoji": "👧",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "away",
+    "count": 9,
+    "lessons": [
+      "1A-29",
+      "1A-32"
+    ],
+    "example": "Go Away, Floppy",
+    "zh": "离开",
+    "ipa": "/əˈweɪ/",
+    "emoji": "💨",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "all",
+    "count": 8,
+    "lessons": [
+      "1A-25",
+      "1A-26",
+      "1A-35",
+      "1A-36"
+    ],
+    "example": "We can all see Dad.",
+    "zh": "全部",
+    "ipa": "/ɔːl/",
+    "emoji": "🌐",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "did",
+    "count": 7,
+    "lessons": [
+      "1A-09",
+      "1A-23"
+    ],
+    "example": "Floppy Did This",
+    "zh": "做了",
+    "ipa": "/dɪd/",
+    "emoji": "✔️",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "day",
+    "count": 7,
+    "lessons": [
+      "1A-20",
+      "1A-30",
+      "1A-41"
+    ],
+    "example": "It was a cold day.",
+    "zh": "一天，白昼",
+    "ipa": "/deɪ/",
+    "emoji": "☀️",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "i'm",
+    "count": 7,
+    "lessons": [
+      "1A-21",
+      "1A-39"
+    ],
+    "example": "\" I'm bored, \" said Kipper.",
+    "zh": "我是",
+    "ipa": "/aɪm/",
+    "emoji": "🙋",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "he",
+    "count": 7,
+    "lessons": [
+      "1A-22"
+    ],
+    "example": "He went to the supermarket.",
+    "zh": "他",
+    "ipa": "/hiː/",
+    "emoji": "👦",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "are",
+    "count": 7,
+    "lessons": [
+      "1A-26",
+      "1A-29",
+      "1A-38"
+    ],
+    "example": "We are all in red.",
+    "zh": "是",
+    "ipa": "/ɑːr/",
+    "emoji": "👥",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "my",
+    "count": 7,
+    "lessons": [
+      "1A-28",
+      "1A-38",
+      "1A-42"
+    ],
+    "example": "Look at me on my bike.",
+    "zh": "我的",
+    "ipa": "/maɪ/",
+    "emoji": "🏷️",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "who",
+    "count": 6,
+    "lessons": [
+      "1A-01",
+      "1A-23",
+      "1A-26"
+    ],
+    "example": "Who Is It?",
+    "zh": "谁",
+    "ipa": "/huː/",
+    "emoji": "👤",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "good",
+    "count": 6,
+    "lessons": [
+      "1A-05",
+      "1A-15",
+      "1A-19",
+      "1A-39"
+    ],
+    "example": "A Good Trick",
+    "zh": "好的",
+    "ipa": "/ɡʊd/",
+    "emoji": "👍",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "little",
+    "count": 6,
+    "lessons": [
+      "1A-05",
+      "1A-32",
+      "1A-36"
+    ],
+    "example": "a little box,",
+    "zh": "小的",
+    "ipa": "/ˈlɪtəl/",
+    "emoji": "🐣",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "yes",
+    "count": 6,
+    "lessons": [
+      "1A-07",
+      "1A-25",
+      "1A-37",
+      "1A-41"
+    ],
+    "example": "Yes. It is Floppy.",
+    "zh": "是的",
+    "ipa": "/jɛs/",
+    "emoji": "✅",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "up",
+    "count": 6,
+    "lessons": [
+      "1A-11",
+      "1A-34"
+    ],
+    "example": "Up You Go",
+    "zh": "向上",
+    "ipa": "/ʌp/",
+    "emoji": "⬆️",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "put",
+    "count": 6,
+    "lessons": [
+      "1A-15",
+      "1A-42"
+    ],
+    "example": "Mum put on a big red nose.",
+    "zh": "放",
+    "ipa": "/pʊt/",
+    "emoji": "📥",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "wanted",
+    "count": 6,
+    "lessons": [
+      "1A-17",
+      "1A-22"
+    ],
+    "example": "Everyone wanted a pet.",
+    "zh": "想要(过去式)",
+    "ipa": "/ˈwɒntɪd/",
+    "emoji": "💭",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "what",
+    "count": 6,
+    "lessons": [
+      "1A-24",
+      "1A-31",
+      "1A-40"
+    ],
+    "example": "What a Mess!",
+    "zh": "什么",
+    "ipa": "/wɒt/",
+    "emoji": "❓",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "made",
+    "count": 6,
+    "lessons": [
+      "1A-24"
+    ],
+    "example": "Mum made a dress.",
+    "zh": "制作(过去式)",
+    "ipa": "/meɪd/",
+    "emoji": "🛠️",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "cat",
+    "count": 6,
+    "lessons": [
+      "1A-32",
+      "1A-39"
+    ],
+    "example": "Go Away, Cat",
+    "zh": "猫",
+    "ipa": "/kæt/",
+    "emoji": "🐱",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "for",
+    "count": 6,
+    "lessons": [
+      "1A-35"
+    ],
+    "example": "Presents for Dad",
+    "zh": "为了，给",
+    "ipa": "/fɔːr/",
+    "emoji": "🎁",
+    "track": "sight",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "of",
+    "count": 6,
+    "lessons": [
+      "1A-35",
+      "1A-36",
+      "1A-38"
+    ],
+    "example": "It is a bunch of flowers.",
+    "zh": "...的",
+    "ipa": "/əv/",
+    "emoji": "🔗",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "red",
+    "count": 5,
+    "lessons": [
+      "1A-15",
+      "1A-26",
+      "1A-38",
+      "1A-40"
+    ],
+    "example": "Mum put on a big red nose.",
+    "zh": "红色的",
+    "ipa": "/rɛd/",
+    "emoji": "🔴",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "had",
+    "count": 5,
+    "lessons": [
+      "1A-16"
+    ],
+    "example": "Dad had a trumpet.",
+    "zh": "有(过去式)",
+    "ipa": "/hæd/",
+    "emoji": "🎒",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "has",
+    "count": 5,
+    "lessons": [
+      "1A-40"
+    ],
+    "example": "Biff has a pan and a big, red pot.",
+    "zh": "有",
+    "ipa": "/hæz/",
+    "emoji": "👜",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "that",
+    "count": 4,
+    "lessons": [
+      "1A-23",
+      "1A-37",
+      "1A-39"
+    ],
+    "example": "Who Did That?",
+    "zh": "那个",
+    "ipa": "/ðæt/",
+    "emoji": "👉",
+    "track": "sight",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "am",
+    "count": 4,
+    "lessons": [
+      "1A-33"
+    ],
+    "example": "\" I am going, \" said Mum.",
+    "zh": "是",
+    "ipa": "/æm/",
+    "emoji": "🙋",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "going",
+    "count": 4,
+    "lessons": [
+      "1A-33"
+    ],
+    "example": "\" I am going, \" said Mum.",
+    "zh": "正要去",
+    "ipa": "/ˈɡoʊɪŋ/",
+    "emoji": "🚶",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "skip",
+    "count": 4,
+    "lessons": [
+      "1A-41"
+    ],
+    "example": "See Me Skip",
+    "zh": "跳跃，跳绳",
+    "ipa": "/skɪp/",
+    "emoji": "🦘",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "box",
+    "count": 3,
+    "lessons": [
+      "1A-05",
+      "1A-35"
+    ],
+    "example": "a big box,",
+    "zh": "盒子",
+    "ipa": "/bɒks/",
+    "emoji": "📦",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "pancake",
+    "count": 3,
+    "lessons": [
+      "1A-06"
+    ],
+    "example": "The Pancake",
+    "zh": "薄煎饼",
+    "ipa": "/ˈpænkeɪk/",
+    "emoji": "🥞",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "park",
+    "count": 3,
+    "lessons": [
+      "1A-13",
+      "1A-30"
+    ],
+    "example": "At the Park",
+    "zh": "公园",
+    "ipa": "/pɑːrk/",
+    "emoji": "🏞️",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "sleep",
+    "count": 3,
+    "lessons": [
+      "1A-13",
+      "1A-31"
+    ],
+    "example": "Floppy went to sleep.",
+    "zh": "睡觉",
+    "ipa": "/sliːp/",
+    "emoji": "😴",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "ho",
+    "count": 3,
+    "lessons": [
+      "1A-15"
+    ],
+    "example": "\" Ho! Ho! Ho! \" said Mum.",
+    "zh": "呵！(感叹词)",
+    "ipa": "/hoʊ/",
+    "emoji": "😮",
+    "track": "sight",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "cross",
+    "count": 3,
+    "lessons": [
+      "1A-20",
+      "1A-21",
+      "1A-23"
+    ],
+    "example": "Mum got cross.",
+    "zh": "生气的",
+    "ipa": "/krɒs/",
+    "emoji": "😠",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "some",
+    "count": 3,
+    "lessons": [
+      "1A-22",
+      "1A-24"
+    ],
+    "example": "Chip wanted some sugar.",
+    "zh": "一些",
+    "ipa": "/sʌm/",
+    "emoji": "✨",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "dogs",
+    "count": 3,
+    "lessons": [
+      "1A-31",
+      "1A-36"
+    ],
+    "example": "What Dogs Like",
+    "zh": "小狗们",
+    "ipa": "/dɒɡz/",
+    "emoji": "🐕",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "they",
+    "count": 3,
+    "lessons": [
+      "1A-31"
+    ],
+    "example": "They like to walk.",
+    "zh": "他们",
+    "ipa": "/ðeɪ/",
+    "emoji": "👥",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "likes",
+    "count": 3,
+    "lessons": [
+      "1A-31"
+    ],
+    "example": "Floppy likes to walk.",
+    "zh": "喜欢",
+    "ipa": "/laɪks/",
+    "emoji": "❤️",
+    "track": "sight",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "run",
+    "count": 3,
+    "lessons": [
+      "1A-31",
+      "1A-37"
+    ],
+    "example": "They like to run.",
+    "zh": "跑",
+    "ipa": "/rʌn/",
+    "emoji": "🏃",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "coming",
+    "count": 3,
+    "lessons": [
+      "1A-32"
+    ],
+    "example": "A dog is coming.",
+    "zh": "正在来",
+    "ipa": "/ˈkʌmɪŋ/",
+    "emoji": "🚶",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "not",
+    "count": 3,
+    "lessons": [
+      "1A-33",
+      "1A-39",
+      "1A-42"
+    ],
+    "example": "\" I am not going again. \"",
+    "zh": "不是",
+    "ipa": "/nɒt/",
+    "emoji": "🚫",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "ice",
+    "count": 3,
+    "lessons": [
+      "1A-37"
+    ],
+    "example": "The Ice Cream",
+    "zh": "冰",
+    "ipa": "/aɪs/",
+    "emoji": "🧊",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "cream",
+    "count": 3,
+    "lessons": [
+      "1A-37"
+    ],
+    "example": "The Ice Cream",
+    "zh": "奶油",
+    "ipa": "/kriːm/",
+    "emoji": "🍦",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "out",
+    "count": 3,
+    "lessons": [
+      "1A-37",
+      "1A-41",
+      "1A-42"
+    ],
+    "example": "Look out, Kipper!",
+    "zh": "出来，在外面",
+    "ipa": "/aʊt/",
+    "emoji": "🚪",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "if",
+    "count": 3,
+    "lessons": [
+      "1A-38",
+      "1A-39"
+    ],
+    "example": "You can see my tiger, if you look in the tree.",
+    "zh": "如果",
+    "ipa": "/ɪf/",
+    "emoji": "💡",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "din",
+    "count": 3,
+    "lessons": [
+      "1A-40"
+    ],
+    "example": "What a DIN!",
+    "zh": "喧闹声",
+    "ipa": "/dɪn/",
+    "emoji": "📢",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "mud",
+    "count": 3,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "The Mud Pie",
+    "zh": "泥巴",
+    "ipa": "/mʌd/",
+    "emoji": "🪵",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "fun",
+    "count": 2,
+    "lessons": [
+      "1A-03",
+      "1A-30"
+    ],
+    "example": "Fun at the Beach",
+    "zh": "有趣的，乐趣",
+    "ipa": "/fʌn/",
+    "emoji": "🎉",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "pan",
+    "count": 2,
+    "lessons": [
+      "1A-06",
+      "1A-40"
+    ],
+    "example": "The frying pan,",
+    "zh": "平底锅",
+    "ipa": "/pæn/",
+    "emoji": "🍳",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "slide",
+    "count": 2,
+    "lessons": [
+      "1A-13",
+      "1A-34"
+    ],
+    "example": "Chip went on the slide.",
+    "zh": "滑梯",
+    "ipa": "/slaɪd/",
+    "emoji": "🛝",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "dress",
+    "count": 2,
+    "lessons": [
+      "1A-14",
+      "1A-24"
+    ],
+    "example": "Fancy Dress",
+    "zh": "连衣裙，装扮",
+    "ipa": "/drɛs/",
+    "emoji": "👗",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "pirate",
+    "count": 2,
+    "lessons": [
+      "1A-14"
+    ],
+    "example": "Biff was a pirate.",
+    "zh": "海盗",
+    "ipa": "/ˈpaɪrət/",
+    "emoji": "🏴‍☠️",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "an",
+    "count": 2,
+    "lessons": [
+      "1A-14",
+      "1A-37"
+    ],
+    "example": "Kipper was an angle.",
+    "zh": "一个",
+    "ipa": "/æn/",
+    "emoji": "🔤",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "headache",
+    "count": 2,
+    "lessons": [
+      "1A-16"
+    ],
+    "example": "The Headache",
+    "zh": "头疼",
+    "ipa": "/ˈhɛdeɪk/",
+    "emoji": "🤕",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "pet",
+    "count": 2,
+    "lessons": [
+      "1A-17"
+    ],
+    "example": "The Pet Shop",
+    "zh": "宠物",
+    "ipa": "/pɛt/",
+    "emoji": "🐾",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "shop",
+    "count": 2,
+    "lessons": [
+      "1A-17",
+      "1A-22"
+    ],
+    "example": "The Pet Shop",
+    "zh": "商店",
+    "ipa": "/ʃɒp/",
+    "emoji": "🏪",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "pushed",
+    "count": 2,
+    "lessons": [
+      "1A-18"
+    ],
+    "example": "Mum pushed it.",
+    "zh": "推了",
+    "ipa": "/pʊʃt/",
+    "emoji": "🫸",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "pulled",
+    "count": 2,
+    "lessons": [
+      "1A-18"
+    ],
+    "example": "Mum pulled it.",
+    "zh": "拉，拔",
+    "ipa": "/pʊld/",
+    "emoji": "🧗",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "hungry",
+    "count": 2,
+    "lessons": [
+      "1A-19",
+      "1A-21"
+    ],
+    "example": "Kipper was hungry.",
+    "zh": "饥饿的",
+    "ipa": "/ˈhʌŋɡri/",
+    "emoji": "🤤",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "goal",
+    "count": 2,
+    "lessons": [
+      "1A-20"
+    ],
+    "example": "Goal!",
+    "zh": "球门，进球",
+    "ipa": "/ɡoʊl/",
+    "emoji": "🥅",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "cold",
+    "count": 2,
+    "lessons": [
+      "1A-20"
+    ],
+    "example": "It was a cold day.",
+    "zh": "寒冷的",
+    "ipa": "/koʊld/",
+    "emoji": "🥶",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "wet",
+    "count": 2,
+    "lessons": [
+      "1A-20",
+      "1A-30"
+    ],
+    "example": "Everyone got wet.",
+    "zh": "湿的",
+    "ipa": "/wɛt/",
+    "emoji": "💦",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "sugar",
+    "count": 2,
+    "lessons": [
+      "1A-22"
+    ],
+    "example": "Chip wanted some sugar.",
+    "zh": "糖",
+    "ipa": "/ˈʃʊɡər/",
+    "emoji": "🍬",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "ball",
+    "count": 2,
+    "lessons": [
+      "1A-22",
+      "1A-39"
+    ],
+    "example": "He got a ball.",
+    "zh": "球",
+    "ipa": "/bɔːl/",
+    "emoji": "⚽",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "mess",
+    "count": 2,
+    "lessons": [
+      "1A-24"
+    ],
+    "example": "What a Mess!",
+    "zh": "脏乱，混乱",
+    "ipa": "/mɛs/",
+    "emoji": "🧹",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "reds",
+    "count": 2,
+    "lessons": [
+      "1A-26"
+    ],
+    "example": "Reds and Blues",
+    "zh": "红队，红色",
+    "ipa": "/rɛdz/",
+    "emoji": "🟥",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "blues",
+    "count": 2,
+    "lessons": [
+      "1A-26"
+    ],
+    "example": "Reds and Blues",
+    "zh": "蓝队，蓝色",
+    "ipa": "/bluːz/",
+    "emoji": "👕",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "blue",
+    "count": 2,
+    "lessons": [
+      "1A-26"
+    ],
+    "example": "We are all in blue.",
+    "zh": "蓝色的",
+    "ipa": "/bluː/",
+    "emoji": "🔵",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "bike",
+    "count": 2,
+    "lessons": [
+      "1A-28"
+    ],
+    "example": "Look at me on my bike.",
+    "zh": "自行车",
+    "ipa": "/baɪk/",
+    "emoji": "🚲",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "back",
+    "count": 2,
+    "lessons": [
+      "1A-29"
+    ],
+    "example": "Come back, Floppy.",
+    "zh": "回来，后面",
+    "ipa": "/bæk/",
+    "emoji": "🔙",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "walk",
+    "count": 2,
+    "lessons": [
+      "1A-31"
+    ],
+    "example": "They like to walk.",
+    "zh": "步行，散步",
+    "ipa": "/wɔːk/",
+    "emoji": "🚶",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "bunch",
+    "count": 2,
+    "lessons": [
+      "1A-35"
+    ],
+    "example": "It is a bunch of flowers.",
+    "zh": "一束，一串",
+    "ipa": "/bʌntʃ/",
+    "emoji": "💐",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "best",
+    "count": 2,
+    "lessons": [
+      "1A-35",
+      "1A-36"
+    ],
+    "example": "This is for the best Dad of all.",
+    "zh": "最好的",
+    "ipa": "/bɛst/",
+    "emoji": "🥇",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "top",
+    "count": 2,
+    "lessons": [
+      "1A-36"
+    ],
+    "example": "Top Dog",
+    "zh": "顶部，顶尖",
+    "ipa": "/tɒp/",
+    "emoji": "🔝",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "say",
+    "count": 2,
+    "lessons": [
+      "1A-39"
+    ],
+    "example": "You say \" sit, \" I sit.",
+    "zh": "说",
+    "ipa": "/seɪ/",
+    "emoji": "🗣️",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "sit",
+    "count": 2,
+    "lessons": [
+      "1A-39"
+    ],
+    "example": "You say \" sit, \" I sit.",
+    "zh": "坐",
+    "ipa": "/sɪt/",
+    "emoji": "🪑",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "that's",
+    "count": 2,
+    "lessons": [
+      "1A-39"
+    ],
+    "example": "That's it.",
+    "zh": "那是",
+    "ipa": "/ðæts/",
+    "emoji": "👉",
+    "track": "sight",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "stay",
+    "count": 2,
+    "lessons": [
+      "1A-39"
+    ],
+    "example": "You say \" stay, \" I stay.",
+    "zh": "留下，待着",
+    "ipa": "/steɪ/",
+    "emoji": "🛑",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "bang",
+    "count": 2,
+    "lessons": [
+      "1A-40"
+    ],
+    "example": "Bang, crash, bang!",
+    "zh": "砰地一声",
+    "ipa": "/bæŋ/",
+    "emoji": "💥",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "pie",
+    "count": 2,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "The Mud Pie",
+    "zh": "派，馅饼",
+    "ipa": "/paɪ/",
+    "emoji": "🥧",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "spaceman",
+    "count": 1,
+    "lessons": [
+      "1A-01"
+    ],
+    "example": "and a spaceman.",
+    "zh": "宇航员，太空人",
+    "ipa": "/ˈspeɪsmæn/",
+    "emoji": "👨‍🚀",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "it's",
+    "count": 1,
+    "lessons": [
+      "1A-01"
+    ],
+    "example": "No, it's Dad.",
+    "zh": "它是",
+    "ipa": "/ɪts/",
+    "emoji": "👉",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "six",
+    "count": 1,
+    "lessons": [
+      "1A-02"
+    ],
+    "example": "Six in a Bed",
+    "zh": "六",
+    "ipa": "/sɪks/",
+    "emoji": "6️⃣",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "bed",
+    "count": 1,
+    "lessons": [
+      "1A-02"
+    ],
+    "example": "Six in a Bed",
+    "zh": "床",
+    "ipa": "/bɛd/",
+    "emoji": "🛏️",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "beach",
+    "count": 1,
+    "lessons": [
+      "1A-03"
+    ],
+    "example": "Fun at the Beach",
+    "zh": "海滩",
+    "ipa": "/biːtʃ/",
+    "emoji": "🏖️",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "trick",
+    "count": 1,
+    "lessons": [
+      "1A-05"
+    ],
+    "example": "A Good Trick",
+    "zh": "把戏，恶作剧",
+    "ipa": "/trɪk/",
+    "emoji": "🪄",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "rug",
+    "count": 1,
+    "lessons": [
+      "1A-05"
+    ],
+    "example": "A rug,",
+    "zh": "小地毯",
+    "ipa": "/rʌɡ/",
+    "emoji": "🧶",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "sheet",
+    "count": 1,
+    "lessons": [
+      "1A-05"
+    ],
+    "example": "a sheet,",
+    "zh": "床单，被单",
+    "ipa": "/ʃiːt/",
+    "emoji": "🛏️",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "frying",
+    "count": 1,
+    "lessons": [
+      "1A-06"
+    ],
+    "example": "The frying pan,",
+    "zh": "油煎",
+    "ipa": "/ˈfraɪɪŋ/",
+    "emoji": "🍳",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "flour",
+    "count": 1,
+    "lessons": [
+      "1A-06"
+    ],
+    "example": "the flour,",
+    "zh": "面粉",
+    "ipa": "/flaʊər/",
+    "emoji": "🌾",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "eggs",
+    "count": 1,
+    "lessons": [
+      "1A-06"
+    ],
+    "example": "the eggs,",
+    "zh": "鸡蛋",
+    "ipa": "/ɛɡz/",
+    "emoji": "🥚",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "milk",
+    "count": 1,
+    "lessons": [
+      "1A-06"
+    ],
+    "example": "the milk,",
+    "zh": "牛奶",
+    "ipa": "/mɪlk/",
+    "emoji": "🥛",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "butter",
+    "count": 1,
+    "lessons": [
+      "1A-06"
+    ],
+    "example": "the butter,",
+    "zh": "黄油",
+    "ipa": "/ˈbʌtər/",
+    "emoji": "🧈",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "race",
+    "count": 1,
+    "lessons": [
+      "1A-06"
+    ],
+    "example": "the pancake race.",
+    "zh": "比赛",
+    "ipa": "/reɪs/",
+    "emoji": "🏁",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "horse",
+    "count": 1,
+    "lessons": [
+      "1A-13"
+    ],
+    "example": "Biff went on the horse.",
+    "zh": "马",
+    "ipa": "/hɔːrs/",
+    "emoji": "🐴",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "swing",
+    "count": 1,
+    "lessons": [
+      "1A-13"
+    ],
+    "example": "Kipper went on the swing.",
+    "zh": "秋千",
+    "ipa": "/swɪŋ/",
+    "emoji": "🎠",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "saw",
+    "count": 1,
+    "lessons": [
+      "1A-13"
+    ],
+    "example": "Mum went on the see-saw.",
+    "zh": "看见(过去式)",
+    "ipa": "/sɔː/",
+    "emoji": "👁️",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "fancy",
+    "count": 1,
+    "lessons": [
+      "1A-14"
+    ],
+    "example": "Fancy Dress",
+    "zh": "奇特的，化装",
+    "ipa": "/ˈfænsi/",
+    "emoji": "🎭",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "scarecrow",
+    "count": 1,
+    "lessons": [
+      "1A-14"
+    ],
+    "example": "Mum was a scarecrow.",
+    "zh": "稻草人",
+    "ipa": "/ˈskɛərkroʊ/",
+    "emoji": "🌾",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "angle",
+    "count": 1,
+    "lessons": [
+      "1A-14"
+    ],
+    "example": "Kipper was an angle.",
+    "zh": "角，角度",
+    "ipa": "/ˈæŋɡəl/",
+    "emoji": "📐",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "chicken",
+    "count": 1,
+    "lessons": [
+      "1A-14"
+    ],
+    "example": "Dad was a chicken.",
+    "zh": "小鸡，鸡肉",
+    "ipa": "/ˈtʃɪkɪn/",
+    "emoji": "🍗",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "happy",
+    "count": 1,
+    "lessons": [
+      "1A-14"
+    ],
+    "example": "Everyone was happy.",
+    "zh": "快乐的",
+    "ipa": "/ˈhæpi/",
+    "emoji": "😊",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "old",
+    "count": 1,
+    "lessons": [
+      "1A-15"
+    ],
+    "example": "Good Old Mum",
+    "zh": "年老的，旧的",
+    "ipa": "/oʊld/",
+    "emoji": "👴",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "nose",
+    "count": 1,
+    "lessons": [
+      "1A-15"
+    ],
+    "example": "Mum put on a big red nose.",
+    "zh": "鼻子",
+    "ipa": "/noʊz/",
+    "emoji": "👃",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "pillow",
+    "count": 1,
+    "lessons": [
+      "1A-15"
+    ],
+    "example": "Mum put on a big pillow.",
+    "zh": "枕头",
+    "ipa": "/ˈpɪloʊ/",
+    "emoji": "🛏️",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "boots",
+    "count": 1,
+    "lessons": [
+      "1A-15"
+    ],
+    "example": "Mum put on big boots.",
+    "zh": "靴子",
+    "ipa": "/buːts/",
+    "emoji": "🥾",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "eyebrows",
+    "count": 1,
+    "lessons": [
+      "1A-15"
+    ],
+    "example": "Mum put on big eyebrows.",
+    "zh": "眉毛",
+    "ipa": "/ˈaɪbraʊz/",
+    "emoji": "🤨",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "beard",
+    "count": 1,
+    "lessons": [
+      "1A-15"
+    ],
+    "example": "She put on a big beard.",
+    "zh": "胡须",
+    "ipa": "/bɪərd/",
+    "emoji": "🧔",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "trumpet",
+    "count": 1,
+    "lessons": [
+      "1A-16"
+    ],
+    "example": "Dad had a trumpet.",
+    "zh": "小号，喇叭",
+    "ipa": "/ˈtrʌmpɪt/",
+    "emoji": "🎺",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "drum",
+    "count": 1,
+    "lessons": [
+      "1A-16"
+    ],
+    "example": "Chip had a drum.",
+    "zh": "鼓",
+    "ipa": "/drʌm/",
+    "emoji": "🥁",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "recorder",
+    "count": 1,
+    "lessons": [
+      "1A-16"
+    ],
+    "example": "Biff had a recorder.",
+    "zh": "竖笛，录音机",
+    "ipa": "/rɪˈkɔːrdər/",
+    "emoji": "🪈",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "guitar",
+    "count": 1,
+    "lessons": [
+      "1A-16"
+    ],
+    "example": "Kipper had a guitar.",
+    "zh": "吉他",
+    "ipa": "/ɡɪˈtɑːr/",
+    "emoji": "🎸",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "rat",
+    "count": 1,
+    "lessons": [
+      "1A-17"
+    ],
+    "example": "Chip wanted a rat.",
+    "zh": "老鼠",
+    "ipa": "/ræt/",
+    "emoji": "🐀",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "spider",
+    "count": 1,
+    "lessons": [
+      "1A-17"
+    ],
+    "example": "Biff wanted a spider.",
+    "zh": "蜘蛛",
+    "ipa": "/ˈspaɪdər/",
+    "emoji": "🕷️",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "snake",
+    "count": 1,
+    "lessons": [
+      "1A-17"
+    ],
+    "example": "Kipper wanted a snake.",
+    "zh": "蛇",
+    "ipa": "/sneɪk/",
+    "emoji": "🐍",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "goldfish",
+    "count": 1,
+    "lessons": [
+      "1A-17"
+    ],
+    "example": "Everyone wanted a goldfish.",
+    "zh": "金鱼",
+    "ipa": "/ˈɡoʊldfɪʃ/",
+    "emoji": "🐠",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "push",
+    "count": 1,
+    "lessons": [
+      "1A-18"
+    ],
+    "example": "Push!",
+    "zh": "推",
+    "ipa": "/pʊʃ/",
+    "emoji": "🫸",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "car",
+    "count": 1,
+    "lessons": [
+      "1A-18"
+    ],
+    "example": "The car was stuck.",
+    "zh": "小汽车",
+    "ipa": "/kɑːr/",
+    "emoji": "🚗",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "stuck",
+    "count": 1,
+    "lessons": [
+      "1A-18"
+    ],
+    "example": "The car was stuck.",
+    "zh": "卡住了",
+    "ipa": "/stʌk/",
+    "emoji": "🪤",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "tractor",
+    "count": 1,
+    "lessons": [
+      "1A-18"
+    ],
+    "example": "The tractor pulled it.",
+    "zh": "拖拉机",
+    "ipa": "/ˈtræktər/",
+    "emoji": "🚜",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "making",
+    "count": 1,
+    "lessons": [
+      "1A-19"
+    ],
+    "example": "Making Faces",
+    "zh": "正在制作",
+    "ipa": "/ˈmeɪkɪŋ/",
+    "emoji": "✂️",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "faces",
+    "count": 1,
+    "lessons": [
+      "1A-19"
+    ],
+    "example": "Making Faces",
+    "zh": "脸，鬼脸",
+    "ipa": "/ˈfeɪsɪz/",
+    "emoji": "😀",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "fierce",
+    "count": 1,
+    "lessons": [
+      "1A-19"
+    ],
+    "example": "Dad was fierce.",
+    "zh": "凶猛的",
+    "ipa": "/fɪərs/",
+    "emoji": "🐯",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "sad",
+    "count": 1,
+    "lessons": [
+      "1A-19"
+    ],
+    "example": "Chip was sad.",
+    "zh": "伤心的",
+    "ipa": "/sæd/",
+    "emoji": "😢",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "frightened",
+    "count": 1,
+    "lessons": [
+      "1A-19"
+    ],
+    "example": "Mum was frightened.",
+    "zh": "害怕的",
+    "ipa": "/ˈfraɪtənd/",
+    "emoji": "😨",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "tired",
+    "count": 1,
+    "lessons": [
+      "1A-20"
+    ],
+    "example": "Floppy got tired.",
+    "zh": "疲倦的",
+    "ipa": "/ˈtaɪərd/",
+    "emoji": "😫",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "miserable",
+    "count": 1,
+    "lessons": [
+      "1A-20"
+    ],
+    "example": "Kipper got miserable.",
+    "zh": "痛苦的，沮丧的",
+    "ipa": "/ˈmɪzərəbəl/",
+    "emoji": "😢",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "journey",
+    "count": 1,
+    "lessons": [
+      "1A-21"
+    ],
+    "example": "The Journey",
+    "zh": "旅途，旅行",
+    "ipa": "/ˈdʒɜːrni/",
+    "emoji": "🚗",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "bored",
+    "count": 1,
+    "lessons": [
+      "1A-21"
+    ],
+    "example": "\" I'm bored, \" said Kipper.",
+    "zh": "无聊的",
+    "ipa": "/bɔːrd/",
+    "emoji": "🥱",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "thirsty",
+    "count": 1,
+    "lessons": [
+      "1A-21"
+    ],
+    "example": "\" I'm thirsty, \" said Chip.",
+    "zh": "口渴的",
+    "ipa": "/ˈθɜːrsti/",
+    "emoji": "🥤",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "lost",
+    "count": 1,
+    "lessons": [
+      "1A-21"
+    ],
+    "example": "\" I'm lost, \" said Mum.",
+    "zh": "迷路了，丢失",
+    "ipa": "/lɒst/",
+    "emoji": "🧭",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "hooray",
+    "count": 1,
+    "lessons": [
+      "1A-21"
+    ],
+    "example": "\" Hooray! \" said everyone.",
+    "zh": "好哇！万岁！",
+    "ipa": "/hʊˈreɪ/",
+    "emoji": "🙌",
+    "track": "sight",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "shopping",
+    "count": 1,
+    "lessons": [
+      "1A-22"
+    ],
+    "example": "Shopping",
+    "zh": "购物",
+    "ipa": "/ˈʃɒpɪŋ/",
+    "emoji": "🛍️",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "supermarket",
+    "count": 1,
+    "lessons": [
+      "1A-22"
+    ],
+    "example": "He went to the supermarket.",
+    "zh": "超级市场",
+    "ipa": "/ˈsuːpərmɑːrkɪt/",
+    "emoji": "🏬",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "crisps",
+    "count": 1,
+    "lessons": [
+      "1A-22"
+    ],
+    "example": "He got some crisps.",
+    "zh": "薯片",
+    "ipa": "/krɪsps/",
+    "emoji": "🥔",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "comic",
+    "count": 1,
+    "lessons": [
+      "1A-22"
+    ],
+    "example": "He got a comic.",
+    "zh": "连环画，漫画",
+    "ipa": "/ˈkɒmɪk/",
+    "emoji": "📖",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "market",
+    "count": 1,
+    "lessons": [
+      "1A-22"
+    ],
+    "example": "He went to the market.",
+    "zh": "集市，市场",
+    "ipa": "/ˈmɑːrkɪt/",
+    "emoji": "🛒",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "forgot",
+    "count": 1,
+    "lessons": [
+      "1A-22"
+    ],
+    "example": "He forgot the sugar.",
+    "zh": "忘记了",
+    "ipa": "/fərˈɡɒt/",
+    "emoji": "❓",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "wasn't",
+    "count": 1,
+    "lessons": [
+      "1A-23"
+    ],
+    "example": "\" It wasn't Floppy, \" said Dad.",
+    "zh": "不是(过去式)",
+    "ipa": "/ˈwɒzənt/",
+    "emoji": "🙅",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "jam",
+    "count": 1,
+    "lessons": [
+      "1A-24"
+    ],
+    "example": "Dad made some jam.",
+    "zh": "果酱",
+    "ipa": "/dʒæm/",
+    "emoji": "🍓",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "scarf",
+    "count": 1,
+    "lessons": [
+      "1A-24"
+    ],
+    "example": "Chip made a scarf.",
+    "zh": "围巾",
+    "ipa": "/skɑːrf/",
+    "emoji": "🧣",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "lorry",
+    "count": 1,
+    "lessons": [
+      "1A-24"
+    ],
+    "example": "Biff made a lorry.",
+    "zh": "大卡车",
+    "ipa": "/ˈlɒri/",
+    "emoji": "🚛",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "birthday",
+    "count": 1,
+    "lessons": [
+      "1A-24"
+    ],
+    "example": "Kipper made a birthday card.",
+    "zh": "生日",
+    "ipa": "/ˈbɜːrθdeɪ/",
+    "emoji": "🎂",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "card",
+    "count": 1,
+    "lessons": [
+      "1A-24"
+    ],
+    "example": "Kipper made a birthday card.",
+    "zh": "卡片",
+    "ipa": "/kɑːrd/",
+    "emoji": "🃏",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "hide",
+    "count": 1,
+    "lessons": [
+      "1A-25"
+    ],
+    "example": "Hide and Seek",
+    "zh": "躲藏",
+    "ipa": "/haɪd/",
+    "emoji": "🙈",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "seek",
+    "count": 1,
+    "lessons": [
+      "1A-25"
+    ],
+    "example": "Hide and Seek",
+    "zh": "寻找",
+    "ipa": "/siːk/",
+    "emoji": "🔍",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "us",
+    "count": 1,
+    "lessons": [
+      "1A-25"
+    ],
+    "example": "Can you see us?",
+    "zh": "我们(宾格)",
+    "ipa": "/ʌs/",
+    "emoji": "🫂",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "muddy",
+    "count": 1,
+    "lessons": [
+      "1A-26"
+    ],
+    "example": "We are all muddy.",
+    "zh": "沾满泥巴的",
+    "ipa": "/ˈmʌdi/",
+    "emoji": "🐾",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "feet",
+    "count": 1,
+    "lessons": [
+      "1A-27"
+    ],
+    "example": "Big Feet",
+    "zh": "脚(复数)",
+    "ipa": "/fiːt/",
+    "emoji": "🦶",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "monster",
+    "count": 1,
+    "lessons": [
+      "1A-27"
+    ],
+    "example": "Is it a big monster?",
+    "zh": "怪物",
+    "ipa": "/ˈmɒnstər/",
+    "emoji": "👾",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "dinosaur",
+    "count": 1,
+    "lessons": [
+      "1A-27"
+    ],
+    "example": "Is it a big dinosaur?",
+    "zh": "恐龙",
+    "ipa": "/ˈdaɪnəsɔːr/",
+    "emoji": "🦖",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "giant",
+    "count": 1,
+    "lessons": [
+      "1A-27"
+    ],
+    "example": "Is it a big giant?",
+    "zh": "巨人",
+    "ipa": "/ˈdʒaɪənt/",
+    "emoji": "🧌",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "skipping",
+    "count": 1,
+    "lessons": [
+      "1A-29"
+    ],
+    "example": "We are skipping.",
+    "zh": "正在跳绳",
+    "ipa": "/ˈskɪpɪŋ/",
+    "emoji": "🏃‍♀️",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "painting",
+    "count": 1,
+    "lessons": [
+      "1A-29"
+    ],
+    "example": "We are painting.",
+    "zh": "画画，绘画",
+    "ipa": "/ˈpeɪntɪŋ/",
+    "emoji": "🎨",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "sorry",
+    "count": 1,
+    "lessons": [
+      "1A-29"
+    ],
+    "example": "We are sorry.",
+    "zh": "抱歉",
+    "ipa": "/ˈsɒri/",
+    "emoji": "🙇",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "kipper's",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "Kipper's Diary",
+    "zh": "基珀的",
+    "ipa": "/ˈkɪpərz/",
+    "emoji": "👶",
+    "track": "sight",
+    "phonicsType": "name",
+    "isRole": true
+  },
+  {
+    "word": "diary",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "Kipper's Diary",
+    "zh": "日记",
+    "ipa": "/ˈdaɪəri/",
+    "emoji": "📔",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "monday",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "Monday",
+    "zh": "星期一",
+    "ipa": "/ˈmʌndeɪ/",
+    "emoji": "📅",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "tuesday",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "Tuesday",
+    "zh": "星期二",
+    "ipa": "/ˈtjuːzdeɪ/",
+    "emoji": "📅",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "windy",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "It was a windy day.",
+    "zh": "刮风的",
+    "ipa": "/ˈwɪndi/",
+    "emoji": "💨",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "shops",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "I went to the shops.",
+    "zh": "商店(复数)",
+    "ipa": "/ʃɒps/",
+    "emoji": "🏬",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "wednesday",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "Wednesday",
+    "zh": "星期三",
+    "ipa": "/ˈwɛnzdeɪ/",
+    "emoji": "📅",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "sunny",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "It was a sunny day.",
+    "zh": "阳光明媚的",
+    "ipa": "/ˈsʌni/",
+    "emoji": "☀️",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "pool",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "I went to the pool.",
+    "zh": "水池，游泳池",
+    "ipa": "/puːl/",
+    "emoji": "🏊",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "thursday",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "Thursday",
+    "zh": "星期四",
+    "ipa": "/ˈθɜːrzdeɪ/",
+    "emoji": "📅",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "hot",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "It was a hot day.",
+    "zh": "热的",
+    "ipa": "/hɒt/",
+    "emoji": "🔥",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "friday",
+    "count": 1,
+    "lessons": [
+      "1A-30"
+    ],
+    "example": "Friday",
+    "zh": "星期五",
+    "ipa": "/ˈfraɪdeɪ/",
+    "emoji": "📅",
+    "track": "phonics",
+    "phonicsType": "compound",
+    "isRole": false
+  },
+  {
+    "word": "play",
+    "count": 1,
+    "lessons": [
+      "1A-31"
+    ],
+    "example": "Dogs like to play.",
+    "zh": "玩耍",
+    "ipa": "/pleɪ/",
+    "emoji": "🎮",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "hates",
+    "count": 1,
+    "lessons": [
+      "1A-31"
+    ],
+    "example": "Floppy hates this.",
+    "zh": "讨厌",
+    "ipa": "/heɪts/",
+    "emoji": "😣",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "again",
+    "count": 1,
+    "lessons": [
+      "1A-33"
+    ],
+    "example": "\" I am not going again. \"",
+    "zh": "又，再次",
+    "ipa": "/əˈɡɛn/",
+    "emoji": "🔄",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "after",
+    "count": 1,
+    "lessons": [
+      "1A-34"
+    ],
+    "example": "Look After Me",
+    "zh": "在...之后",
+    "ipa": "/ˈæftər/",
+    "emoji": "⏳",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "kate",
+    "count": 1,
+    "lessons": [
+      "1A-34"
+    ],
+    "example": "This is Kate.",
+    "zh": "凯特 (人物名)",
+    "ipa": "/keɪt/",
+    "emoji": "👧",
+    "track": "sight",
+    "phonicsType": "name",
+    "isRole": true
+  },
+  {
+    "word": "net",
+    "count": 1,
+    "lessons": [
+      "1A-34"
+    ],
+    "example": "She went up the net.",
+    "zh": "网",
+    "ipa": "/nɛt/",
+    "emoji": "🥅",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "ladder",
+    "count": 1,
+    "lessons": [
+      "1A-34"
+    ],
+    "example": "She went up the ladder.",
+    "zh": "梯子",
+    "ipa": "/ˈlædər/",
+    "emoji": "🪜",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "presents",
+    "count": 1,
+    "lessons": [
+      "1A-35"
+    ],
+    "example": "Presents for Dad",
+    "zh": "礼物",
+    "ipa": "/ˈprɛzənts/",
+    "emoji": "🎁",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "flowers",
+    "count": 1,
+    "lessons": [
+      "1A-35"
+    ],
+    "example": "It is a bunch of flowers.",
+    "zh": "花儿",
+    "ipa": "/ˈflaʊərz/",
+    "emoji": "💐",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "chocolates",
+    "count": 1,
+    "lessons": [
+      "1A-35"
+    ],
+    "example": "It is a box of chocolates.",
+    "zh": "巧克力",
+    "ipa": "/ˈtʃɒklɪts/",
+    "emoji": "🍫",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "grapes",
+    "count": 1,
+    "lessons": [
+      "1A-35"
+    ],
+    "example": "It is a bunch of grapes.",
+    "zh": "葡萄",
+    "ipa": "/ɡreɪps/",
+    "emoji": "🍇",
+    "track": "phonics",
+    "phonicsType": "magic_e",
+    "isRole": false
+  },
+  {
+    "word": "van",
+    "count": 1,
+    "lessons": [
+      "1A-37"
+    ],
+    "example": "Come on, run to the ice cream van.",
+    "zh": "厢式货车",
+    "ipa": "/væn/",
+    "emoji": "🚐",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "want",
+    "count": 1,
+    "lessons": [
+      "1A-37"
+    ],
+    "example": "I want the big one.",
+    "zh": "想要",
+    "ipa": "/wɒnt/",
+    "emoji": "🤲",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "one",
+    "count": 1,
+    "lessons": [
+      "1A-37"
+    ],
+    "example": "I want the big one.",
+    "zh": "一",
+    "ipa": "/wʌn/",
+    "emoji": "1️⃣",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "splat",
+    "count": 1,
+    "lessons": [
+      "1A-37"
+    ],
+    "example": "Splat!",
+    "zh": "啪嗒一声",
+    "ipa": "/splæt/",
+    "emoji": "💥",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "teddy",
+    "count": 1,
+    "lessons": [
+      "1A-38"
+    ],
+    "example": "Can you see my teddy bear?",
+    "zh": "泰迪熊",
+    "ipa": "/ˈtɛdi/",
+    "emoji": "🧸",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "bear",
+    "count": 1,
+    "lessons": [
+      "1A-38"
+    ],
+    "example": "Can you see my teddy bear?",
+    "zh": "熊",
+    "ipa": "/bɛər/",
+    "emoji": "🐻",
+    "track": "phonics",
+    "phonicsType": "r_controlled",
+    "isRole": false
+  },
+  {
+    "word": "picture",
+    "count": 1,
+    "lessons": [
+      "1A-38"
+    ],
+    "example": "Can you see my picture of a big, red frog?",
+    "zh": "图片，画",
+    "ipa": "/ˈpɪktʃər/",
+    "emoji": "🖼️",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "frog",
+    "count": 1,
+    "lessons": [
+      "1A-38"
+    ],
+    "example": "Can you see my picture of a big, red frog?",
+    "zh": "青蛙",
+    "ipa": "/frɒɡ/",
+    "emoji": "🐸",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "tiger",
+    "count": 1,
+    "lessons": [
+      "1A-38"
+    ],
+    "example": "You can see my tiger, if you look in the tree.",
+    "zh": "老虎",
+    "ipa": "/ˈtaɪɡər/",
+    "emoji": "🐯",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "tree",
+    "count": 1,
+    "lessons": [
+      "1A-38"
+    ],
+    "example": "You can see my tiger, if you look in the tree.",
+    "zh": "树",
+    "ipa": "/triː/",
+    "emoji": "🌳",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "looking",
+    "count": 1,
+    "lessons": [
+      "1A-38"
+    ],
+    "example": "Are you looking?",
+    "zh": "正在看",
+    "ipa": "/ˈlʊkɪŋ/",
+    "emoji": "🔎",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "very",
+    "count": 1,
+    "lessons": [
+      "1A-39"
+    ],
+    "example": "I'm very good, as you can see.",
+    "zh": "非常",
+    "ipa": "/ˈvɛri/",
+    "emoji": "⭐",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "as",
+    "count": 1,
+    "lessons": [
+      "1A-39"
+    ],
+    "example": "I'm very good, as you can see.",
+    "zh": "像...一样",
+    "ipa": "/æz/",
+    "emoji": "🟰",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "call",
+    "count": 1,
+    "lessons": [
+      "1A-39"
+    ],
+    "example": "If you call, I get the ball.",
+    "zh": "呼喊，打电话",
+    "ipa": "/kɔːl/",
+    "emoji": "📞",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "but",
+    "count": 1,
+    "lessons": [
+      "1A-39"
+    ],
+    "example": "But not if I can see a cat.",
+    "zh": "但是",
+    "ipa": "/bʌt/",
+    "emoji": "⚠️",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "pot",
+    "count": 1,
+    "lessons": [
+      "1A-40"
+    ],
+    "example": "Biff has a pan and a big, red pot.",
+    "zh": "锅",
+    "ipa": "/pɒt/",
+    "emoji": "🍲",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "tin",
+    "count": 1,
+    "lessons": [
+      "1A-40"
+    ],
+    "example": "Chip has a tin.",
+    "zh": "罐头，铁罐",
+    "ipa": "/tɪn/",
+    "emoji": "🥫",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "bin",
+    "count": 1,
+    "lessons": [
+      "1A-40"
+    ],
+    "example": "Dad has a bin.",
+    "zh": "垃圾桶",
+    "ipa": "/bɪn/",
+    "emoji": "🗑️",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "crash",
+    "count": 1,
+    "lessons": [
+      "1A-40"
+    ],
+    "example": "Bang, crash, bang!",
+    "zh": "撞击，哗啦声",
+    "ipa": "/kræʃ/",
+    "emoji": "💥",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "way",
+    "count": 1,
+    "lessons": [
+      "1A-41"
+    ],
+    "example": "This is the way.",
+    "zh": "道路，方式",
+    "ipa": "/weɪ/",
+    "emoji": "🛤️",
+    "track": "phonics",
+    "phonicsType": "vowel_digraph",
+    "isRole": false
+  },
+  {
+    "word": "do",
+    "count": 1,
+    "lessons": [
+      "1A-41"
+    ],
+    "example": "I like to do this every day.",
+    "zh": "做",
+    "ipa": "/duː/",
+    "emoji": "🎯",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "every",
+    "count": 1,
+    "lessons": [
+      "1A-41"
+    ],
+    "example": "I like to do this every day.",
+    "zh": "每一个",
+    "ipa": "/ˈɛvri/",
+    "emoji": "👥",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "too",
+    "count": 1,
+    "lessons": [
+      "1A-41"
+    ],
+    "example": "Can you skip too? \"",
+    "zh": "也，太",
+    "ipa": "/tuː/",
+    "emoji": "➕",
+    "track": "sight",
+    "phonicsType": "high_frequency",
+    "isRole": false
+  },
+  {
+    "word": "hand",
+    "count": 1,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "This is mud in my hand.",
+    "zh": "手",
+    "ipa": "/hænd/",
+    "emoji": "✋",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "water",
+    "count": 1,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "Put in water.",
+    "zh": "水",
+    "ipa": "/ˈwɔːtər/",
+    "emoji": "💧",
+    "track": "phonics",
+    "phonicsType": "other",
+    "isRole": false
+  },
+  {
+    "word": "mix",
+    "count": 1,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "Mix in sand.",
+    "zh": "搅拌，混合",
+    "ipa": "/mɪks/",
+    "emoji": "🥣",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "sand",
+    "count": 1,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "Mix in sand.",
+    "zh": "沙子",
+    "ipa": "/sænd/",
+    "emoji": "🏖️",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "tip",
+    "count": 1,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "Tip it out.",
+    "zh": "倒掉，顶端",
+    "ipa": "/tɪp/",
+    "emoji": "🫗",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "pat",
+    "count": 1,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "Pat it flat.",
+    "zh": "轻拍",
+    "ipa": "/pæt/",
+    "emoji": "✋",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  },
+  {
+    "word": "flat",
+    "count": 1,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "Pat it flat.",
+    "zh": "平的",
+    "ipa": "/flæt/",
+    "emoji": "🥞",
+    "track": "phonics",
+    "phonicsType": "blend",
+    "isRole": false
+  },
+  {
+    "word": "hat",
+    "count": 1,
+    "lessons": [
+      "1A-42"
+    ],
+    "example": "...not a hat.",
+    "zh": "帽子",
+    "ipa": "/hæt/",
+    "emoji": "🧢",
+    "track": "phonics",
+    "phonicsType": "cvc",
+    "isRole": false
+  }
+]

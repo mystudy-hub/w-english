@@ -111,6 +111,8 @@ async def synthesize_one(
     skip_existing: bool,
     counter: dict,
     total: int,
+    word_voice: str = "en-US-JennyNeural",
+    guide_voice: str = "zh-CN-XiaoxiaoNeural",
 ):
     rel_path = item["input"]
     out_path = audio_source_dir / rel_path
@@ -125,20 +127,20 @@ async def synthesize_one(
 
     kind = item.get("kind")
     text = item.get("text")
-    voice = "en-US-AnaNeural"
+    voice = word_voice or "en-US-JennyNeural"
     rate = "+0%"
 
     if kind == "guide":
-        voice = "zh-CN-XiaoxiaoNeural"
+        voice = guide_voice or "zh-CN-XiaoxiaoNeural"
         rate = "+0%"
     elif kind == "word":
-        voice = "en-US-AnaNeural"
+        voice = word_voice or "en-US-JennyNeural"
         rate = "-5%"
     elif kind == "sentence":
-        voice = "en-US-AnaNeural"
+        voice = word_voice or "en-US-JennyNeural"
         rate = "+0%"
     elif kind == "phoneme":
-        voice = "en-US-AnaNeural"
+        voice = word_voice or "en-US-JennyNeural"
         rate = "-10%"
         clip_name = Path(rel_path).stem
         text = PHONICS_TTS_MAP.get(clip_name, clip_name)
@@ -195,6 +197,8 @@ async def main():
     parser.add_argument("--concurrency", type=int, default=4, help="并发数量 (默认: 4)")
     parser.add_argument("--skip-existing", action="store_true", default=True, help="跳过已存在的文件 (默认开启)")
     parser.add_argument("--force", action="store_true", help="强制重新生成全部文件")
+    parser.add_argument("--word-voice", type=str, default="en-US-JennyNeural", help="英文发音音色 (默认: en-US-JennyNeural，辅音爆破清晰)")
+    parser.add_argument("--guide-voice", type=str, default="zh-CN-XiaoxiaoNeural", help="中文向导音色 (默认: zh-CN-XiaoxiaoNeural)")
     parser.add_argument("--only", choices=["words", "sentences", "guide", "phonics"], help="仅生成特定分类")
     parser.add_argument("--theme", choices=["animal_home", "sunny_garden", "happy_school"], help="仅生成特定场景依赖")
     args = parser.parse_args()
@@ -255,6 +259,8 @@ async def main():
             skip_existing,
             counter,
             total,
+            word_voice=args.word_voice,
+            guide_voice=args.guide_voice,
         )
         for item in items_to_generate
     ]

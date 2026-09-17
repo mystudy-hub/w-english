@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Headphones, Leaf, RotateCcw, Star, TrainFront, Volume2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, Headphones, Leaf, RotateCcw, Star, TrainFront, Volume2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { navigate } from '../app/router.ts';
 import { audio, beginSession, playGuide, prepareContent, readySpellingWordIds, readyThemeIds, readyWordIds, selectScene, sessionRoute } from '../app/runtime.ts';
@@ -18,7 +18,8 @@ export function Scene({ themeId }: { themeId: string }) {
     && (!theme.unlock.prerequisiteThemeId || readyThemeIds().has(themeId)));
   useEffect(() => {
     if (permitted && useAppStore.getState().sceneThemeId !== themeId) { selectScene(themeId); void prepareContent(themeId); }
-  }, [themeId, permitted]);
+    if (permitted && theme?.spriteIds?.length) { void audio.preload(theme.spriteIds); }
+  }, [themeId, permitted, theme]);
   useIdleGuide(`scene:${themeId}`, { enabled: permitted, ref: 'guide#explore', onPrompt: () => playGuide('guide#explore', `scene:${themeId}`) });
   if (!content) return null;
   if (!theme || !permitted) return <ThemeHub />;
@@ -36,7 +37,12 @@ export function Scene({ themeId }: { themeId: string }) {
     catch { useAppStore.setState({ notice: '这一轮还没准备好，先认识一位朋友吧。' }); }
     finally { setStarting(false); }
   };
-  return <><Header back={content.catalog.themes.length > 1 ? () => navigate('/themes') : undefined}><span className="header-chip"><Leaf size={16} /> 我的探索时光</span></Header><main className="scene-page">
+  return <><Header back={content.catalog.themes.length > 1 ? () => navigate('/themes') : undefined}>
+    <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+      <Button className="quiet" aria-label="典范英语1A" onClick={() => navigate('/dianfan')}><BookOpen size={16} /><span data-mode-label>典范英语1A</span></Button>
+      <span className="header-chip"><Leaf size={16} /> 我的探索时光</span>
+    </div>
+  </Header><main className="scene-page">
     <div className="scene-title"><div><div className="eyebrow">OUR LITTLE WORLD</div><h1>{theme.title.zh}<span className="tiny-flower">✿</span></h1><p>这里住着好多有趣的小伙伴，点一点，打个招呼吧。</p></div><div className="discovery-count"><Star /><strong>{state.progress.filter((entry) => theme.wordIds.includes(entry.wordId) && entry.exploredAt !== undefined).length}</strong><span>个小发现</span></div></div>
     <div className="scene-board"><div className="board-cloud cloud-a" /><div className="board-cloud cloud-b" /><div className="board-hill" />
       <div className="word-grid">{words.map((word, index) => {

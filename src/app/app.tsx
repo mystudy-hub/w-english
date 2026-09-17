@@ -20,6 +20,7 @@ import { RestDialog, UsageLifecycle } from '../features/rest.tsx';
 import { shouldShowRest } from '../domain/usage.ts';
 import { Button } from '../components/ui.tsx';
 import { OrientationDialog } from '../features/orientation.tsx';
+import { DianfanPage } from '../features/dianfan.tsx';
 
 function App() {
   const route = useRoute(); const state = useAppStore(); const settings = useSettings();
@@ -83,6 +84,7 @@ function App() {
   else if (route === '/parent' && state.parentAuthorized) page = state.storage === 'pending' ? <StorageRecovery /> : <ParentPage />;
   else if (!state.onboardingComplete || route === '/setup') page = <Setup />;
   else if (route === '/stickers' && (state.content?.manifest.stage ?? 0) >= 2) page = <StickerBook />;
+  else if (route.startsWith('/dianfan')) page = <DianfanPage />;
   else if (route.startsWith('/word/')) page = <WordCard key={route} wordId={route.slice('/word/'.length)} />;
   else if (route.startsWith('/phonics/')) page = <Phonics key={route} wordId={route.slice('/phonics/'.length)} />;
   else if (route.startsWith('/play/spell/')) page = <Spelling viewportReady={viewportReady && !restVisible} />;

@@ -112,6 +112,7 @@ export function boot(temporary = false, force = false): Promise<void> {
         ...(!persistent ? { usage: defaultUsage(settings.parentSettings.screenTimeMinutes), progress: [], stickers: [], session: undefined } : {}) });
       const content = await contentManager.load();
       if (run !== generation) return;
+      audio.register(content.manifest, content.sprites);
       useAppStore.setState({ phase: 'ready', storage: persistent ? 'persistent' : 'temporary', content, contentRecovery: contentManager.recovery,
         sceneThemeId: firstTheme(content.catalog.themes).themeId,
         ...(temporary ? { notice: '本次使用临时体验，学习记录不会保存。' } : {}) });
@@ -171,6 +172,7 @@ export function enterExperience(parent = false): Promise<boolean> {
         if (visit !== visitGeneration) return false;
         applySettings(settings); audio.setVolume(settings.parentSettings.volumeCap);
         usageRevision += 1;
+        if (content) audio.register(content.manifest, content.sprites);
         useAppStore.setState({ content, contentRecovery: manager?.recovery, themeProgress: {}, progress, stickers, usage, ...(guide ? { guide } : {}), session: writable ? session : undefined,
           ...(content ? { sceneThemeId: session?.themeId ?? firstTheme(content.catalog.themes).themeId } : {}),
         });

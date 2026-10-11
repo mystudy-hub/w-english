@@ -1,0 +1,47 @@
+[
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_001",
+    "kind": "word",
+    "word": "day",
+    "track": "textbook",
+    "textbook": { "bookId": "yilin-4a-2024", "unit": 2, "pos": "n.", "core": true },
+    "spelling": ["d", "a", "y"],
+    "syllables": ["day"],
+    "ipa": "/deɪ/",
+    "graphemes": [
+      { "letters": "d", "phonemes": ["d"], "audio": "tb4a_u2#p_d" },
+      { "letters": "ay", "phonemes": ["eɪ"], "audio": "tb4a_u2#p_ay" }
+    ],
+    "phonemes": ["d", "eɪ"],
+    "definition": { "zh": "一天，一日" },
+    "example": { "en": "Have a nice day.", "zh": "祝你有愉快的一天！", "audio": "tb4a_u2#day_example" },
+    "audio": { "word": "tb4a_u2#day", "wordSlow": "tb4a_u2#day_slow" },
+    "illustration": { "type": "emoji", "value": "📅" },
+    "review": { "status": "draft" },
+    "contentVersion": "2026.10.1"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_002",
+    "kind": "phrase",
+    "word": "get up",
+    "track": "textbook",
+    "textbook": { "bookId": "yilin-4a-2024", "unit": 2, "pos": "phr.", "core": true },
+    "spelling": ["get", "up"],
+    "syllables": ["get", "up"],
+    "ipa": "/ɡet ʌp/",
+    "graphemes": [
+      { "letters": "g", "phonemes": [], "audio": null },
+      { "letters": "et", "phonemes": [], "audio": null },
+      { "letters": "up", "phonemes": [], "audio": null }
+    ],
+    "phonemes": [],
+    "definition": { "zh": "起床" },
+    "example": { "en": "I get up at six.", "zh": "我六点起床。", "audio": "tb4a_u2#get_up_example" },
+    "audio": { "word": "tb4a_u2#get_up", "wordSlow": "tb4a_u2#get_up_slow" },
+    "illustration": { "type": "emoji", "value": "🛏️" },
+    "review": { "status": "draft" },
+    "contentVersion": "2026.10.1"
+  }
+]

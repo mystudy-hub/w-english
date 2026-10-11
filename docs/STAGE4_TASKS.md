@@ -146,7 +146,17 @@ Plan-Time Complexity Check:
 | S4-12 内容包与构建 | ✅ 2026-10-11 | commit `91a092d`；manifest `schemaVersion=4`、`appContract.max=3`、包含 `tb4a_u2`；`validate:assets -- --preview` 通过；release 仍拒绝草稿 |
 | S4-13 Dexie schema 3 + 多档案 + 迁移 | ✅ 2026-10-11 | commit `9b41ed0`；新增 `tests/database-migration.test.ts` 3 项（新库建默认档案、v2→v3 不重写旧记录、未知 v20 布局中止）；浏览器实测旧 v20 库升到 30 并出现三张新表与默认档案，欢迎页无控制台错误 |
 | S4-14 drill 仓储与 SRS 接线 | ✅ 2026-10-11 | commit `efce1ba`；`tests/drill-repository.test.ts` 9 项通过；全库 211 项通过 |
-| S4-15… | 未开始 | — |
+| S4-15 drill UI 与路由 | ✅ 2026-10-11 | commit `ca1cdf9`；`tests/drill-quiz.test.ts` 10 项通过（全库 221 项）；浏览器实测：欢迎页“课本复习”→首次设置→`/drill`→开始→答错重排（1/2 变 2/3），写入 `srsProgress{lapses:1,ease:2.3}` 与 `dailyLogs{newLearned:1,reviews:1,correct:0}`，无控制台错误 |
+| S4-16 U2 试点 20 条 | 未开始 | 目前只有 2 条样例，drill 靠 Web Speech 兜底发音 |
+
+#### S4-15 实现定稿（需在复核时确认）
+
+1. **题型只做规格 §13.4 列的五种**：memoryApp 的句子完形与“模板例句兜底”没有移植——v4 里 `example` 必填，兜底永远不会触发；句子完形还需要在例句里写占位符，属于新增契约，本阶段不做。
+2. **`words.tsx` / `report.tsx` 折进首页**：错词本作为首页的“只练错词（n）”按钮（把 `lapses > 0` 的词交给同一轮会话），今天的新学/复习/答对数直接显示在首页顶部。少两个只读页面，但信息都在。
+3. **`src/drill/ui.tsx` 一个文件装下所有卡片**，与 `src/components/ui.tsx` 的现有风格一致，而不是 `ui/` 目录下 5 个文件。
+4. **首次设置后回到 drill**：用 `sessionStorage` 里的 `w-english:entry` 标记（同一会话有效），而不是给 store 加一个持久字段。
+5. **自动朗读只出现在 listening 与 spelling**，听音题先给声音、1.5 秒后再显示选项；选择题与翻卡不自动播报。
+6. **答题写库失败不阻断学习**：`review()` 抛错时提示“这次练习的记录暂时没能保存”，仍继续下一题。
 
 #### P1-a 浏览器回归证据（2026-10-11）
 

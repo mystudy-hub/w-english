@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from 'vitest';
-import { wordSchema, type WordEntry } from '../src/data/content-schema.ts';
+import { exploreWordSchema, type WordEntry } from '../src/data/content-schema.ts';
 import { configSnapshot, defaultSettings } from '../src/domain/config.ts';
 import { createSpellingSession, graphemeKind, placeSpellingTile, spellingPartHeard, spellingReadyToFinish } from '../src/domain/spelling.ts';
 import { applyLearningEvidence, REVIEW_DELAY_MS } from '../src/domain/learning.ts';
@@ -10,7 +10,7 @@ import { theme, words } from './fixtures.ts';
 
 // Structural fixtures only; these are never published as teaching entries.
 function sample(word: string, stage: number, graphemes: WordEntry['graphemes']) {
-  return wordSchema.parse({ ...words[0], word, wordId: `w_${word}_099`, phonicsStage: stage, spelling: [...word], syllables: [word],
+  return exploreWordSchema.parse({ ...words[0], word, wordId: `w_${word}_099`, phonicsStage: stage, spelling: [...word], syllables: [word],
     graphemes, phonemes: graphemes.flatMap((part) => part.phonemes) });
 }
 const bell = sample('bell', 2, [{ letters: 'b', phonemes: ['b'], audio: 'phonics#b' }, { letters: 'e', phonemes: ['ɛ'], audio: 'phonics#e_short' }, { letters: 'll', phonemes: ['l'], audio: 'phonics#l' }]);
@@ -23,7 +23,7 @@ function question(word: WordEntry): Question {
 describe('spelling rules', () => {
   it('filters by phonics track, level and readiness, preserves mode, and has no answer timer', () => {
     const sightInput: Record<string, unknown> = { ...words[0], wordId: 'w_cat_098', track: 'sight' }; delete sightInput.phonicsStage;
-    const sight = wordSchema.parse(sightInput); const pool = [words[0]!, bell, cake, sight];
+    const sight = exploreWordSchema.parse(sightInput); const pool = [words[0]!, bell, cake, sight];
     const input = { id: 'spell', now: 100, theme: { ...theme, wordIds: pool.map((word) => word.wordId) }, words: pool, progress: [],
       readyIds: new Set(pool.map((word) => word.wordId)), random: () => 0, config: configSnapshot('tap', 'L1') };
     const tap = createSpellingSession(input)!;

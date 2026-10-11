@@ -3,7 +3,7 @@ import { dirname, resolve } from 'node:path';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import * as icons from 'lucide-react';
-import { audioReferences, validateCatalog, wordSchema } from '../src/data/content-schema.ts';
+import { audioReferences, exploreWordSchema, validateCatalog } from '../src/data/content-schema.ts';
 import { readJson, sha256, within } from './lib/files.mjs';
 import { STAGE2_DRAFTS } from './lib/stage2-drafts.mjs';
 
@@ -38,7 +38,7 @@ for (const [room, rows] of Object.entries(STAGE2_DRAFTS)) {
         zh: sight ? `把 ${word} 作为整词听读，再一起读例句，指出句子里高亮的 ${word}；不要求按字母拼音。`
           : `指着图片认识「${zh}」，先听完整的 ${word}，再按字母组合听声音。${graphemes.some((part) => part.letters === 'le') ? 'le 保持为一个声音组合。' : graphemes.some((part) => part.audio === null) ? '灰色的不发音字母只看形状，不单独配音。' : ''}` },
       review: { status: 'draft' }, contentVersion: version };
-    const parsed = wordSchema.safeParse(entry);
+    const parsed = exploreWordSchema.safeParse(entry);
     if (!parsed.success) { errors.push(`${word}: ${parsed.error.issues.map((issue) => `${issue.path.join('.')} ${issue.message}`).join('; ')}`); continue; }
     words.push(parsed.data); ids.push(wordId); illustrationKinds.set(word, illustration);
   }

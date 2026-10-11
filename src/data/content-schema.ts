@@ -2,8 +2,8 @@ import { z } from 'zod';
 import { chooseOptions } from '../domain/questions.ts';
 
 const text = z.string().trim().min(1, '不能为空');
-const wordId = z.string().regex(/^w_[a-z]+_\d{3}$/, '词条 ID 格式不正确');
-export const audioRefSchema = z.string().regex(/^[a-z_]+#[a-z0-9_]+$/, '音频必须使用 sprite#clip 引用');
+const wordId = z.string().regex(/^w_[a-z0-9]+_\d{3}$/, '词条 ID 格式不正确');
+export const audioRefSchema = z.string().regex(/^[a-z0-9_]+#[a-z0-9_]+$/, '音频必须使用 sprite#clip 引用');
 export const contentVersionSchema = z.string().regex(/^\d{4}\.(0[1-9]|1[0-2])\.\d+$/, '内容版本须为 YYYY.MM.N');
 const isoDate = z.union([z.iso.date(), z.iso.datetime({ offset: true })]);
 export const PHONEMES = new Set([
@@ -40,18 +40,41 @@ const reviewSchema = z.strictObject({
   }
 });
 
+// 课本单元与句子的比对、拼接只按字母，忽略大小写、空格与句末标点。
+const lettersOf = (value: string) => value.toLowerCase().replace(/[^a-z]/g, '');
+
+// 课本轨道的分组信息：一本书、一个单元、一个词性与是否核心词。
+export const textbookSchema = z.strictObject({
+  bookId: z.literal('yilin-4a-2024'),
+  unit: z.number().int().min(1).max(8),
+  pos: z.enum(['n.', 'v.', 'adj.', 'adv.', 'prep.', 'pron.', 'num.', 'conj.', 'int.', 'phr.', 'proper']),
+  core: z.boolean(),
+});
+
+export const textbookUnitSchema = z.strictObject({
+  schemaVersion: z.literal(1),
+  bookId: z.literal('yilin-4a-2024'),
+  unitId: z.string().regex(/^tb4a_u[1-8]$/),
+  title: text,
+  wordIds: z.array(wordId).min(1),
+  spriteIds: z.array(z.string().regex(/^[a-z0-9_]+$/)).min(1),
+});
+export type TextbookUnit = z.infer<typeof textbookUnitSchema>;
+
 const wordBase = z.strictObject({
-  schemaVersion: z.literal(3),
+  schemaVersion: z.union([z.literal(3), z.literal(4)]),
   wordId,
-  word: z.string().regex(/^[a-z]+$/),
-  theme: z.enum(['animals', 'food', 'nature', 'colors', 'school', 'family', 'body']),
+  kind: z.enum(['word', 'phrase']).default('word'),
+  word: z.string().regex(/^[A-Za-z][A-Za-z'’ .-]*$/),
+  theme: z.enum(['animals', 'food', 'nature', 'colors', 'school', 'family', 'body']).optional(),
+  textbook: textbookSchema.optional(),
   sightWordList: z.enum(['dolch_pre_primer', 'dolch_primer', 'dolch_first', 'dolch_nouns', 'fry_100', 'fry_300']).optional(),
-  spelling: z.array(z.string().regex(/^[a-z]$/, 'spelling 必须逐字母')).min(1),
+  spelling: z.array(z.string().regex(/^[A-Za-z][A-Za-z'’-]*$/)).min(1),
   graphemes: z.array(graphemeSchema).min(1),
-  phonemes: z.array(phoneme).min(1),
-  syllables: z.array(z.string().regex(/^[a-z]+$/)).min(1),
-  ipa: z.string().regex(/^\/[^/\s]+\/$/, 'IPA 须有完整的 /.../ 边界'),
-  definition: z.strictObject({ en_young: limitedText(5), en_older: limitedText(10), zh: text }),
+  phonemes: z.array(phoneme),
+  syllables: z.array(z.string().regex(/^[A-Za-z'’-]+$/)).min(1),
+  ipa: z.string().regex(/^\/[^/]+\/$/, 'IPA 须有完整的 /.../ 边界'),
+  definition: z.strictObject({ en_young: limitedText(8).optional(), en_older: limitedText(10).optional(), zh: text }),
   example: z.strictObject({ en: limitedText(8), zh: text, audio: audioRefSchema }),
   audio: z.strictObject({ word: audioRefSchema, wordSlow: audioRefSchema }),
   illustration: z.discriminatedUnion('type', [
@@ -59,20 +82,40 @@ const wordBase = z.strictObject({
     z.strictObject({ type: z.literal('image'), src: z.string().regex(/^\/images\/words\/[a-z0-9_-]+\.(svg|png|webp)$/), alt: text }),
   ]),
   sfx: audioRefSchema.nullable().optional(),
-  parentTip: z.strictObject({ en: text, zh: text }),
+  parentTip: z.strictObject({ en: text, zh: text }).optional(),
   review: reviewSchema,
   contentVersion: contentVersionSchema,
 });
+type WordShape = z.infer<typeof wordBase> & { track: 'phonics' | 'sight' | 'textbook'; phonicsStage?: 1 | 2 | 3 | 4 };
 
-export const wordSchema = z.discriminatedUnion('track', [
-  wordBase.extend({ track: z.literal('phonics'), phonicsStage: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]) }),
-  wordBase.extend({ track: z.literal('sight') }),
-]).superRefine((word, ctx) => {
+// 探索词条与课本词条共用同一套跨字段规则；差别只在字段是否必填（见下）。
+function refineWord(word: WordShape, ctx: z.RefinementCtx) {
   const issue = (path: string, message: string) => ctx.addIssue({ code: 'custom', path: [path], message });
-  if (word.spelling.join('') !== word.word) issue('spelling', '逐字母拼接必须等于单词');
-  if (word.syllables.join('') !== word.word) issue('syllables', '音节拼接必须等于单词');
-  if (word.graphemes.map((part) => part.letters).join('') !== word.word) issue('graphemes', '字母组合拼接必须等于单词');
-  if (JSON.stringify(word.graphemes.flatMap((part) => part.phonemes)) !== JSON.stringify(word.phonemes)) issue('phonemes', '音素顺序必须与字母组合一致');
+  const textbook = word.track === 'textbook';
+  // 轨道与分组字段互相排斥：探索词条属于场景，课本词条属于单元
+  if (textbook && !word.textbook) issue('textbook', '课本词条必须声明 textbook');
+  if (!textbook && word.textbook) issue('textbook', '只有课本轨道可以使用 textbook');
+  if (textbook && word.theme !== undefined) issue('theme', '课本词条不使用场景');
+  if (!textbook && word.theme === undefined) issue('theme', '探索词条必须归属一个场景');
+  if (!textbook && !word.parentTip) issue('parentTip', '探索词条必须提供亲子提示');
+  if (!textbook) {
+    if (!word.definition.en_young) issue('definition', '探索词条必须提供 en_young');
+    if (!word.definition.en_older) issue('definition', '探索词条必须提供 en_older');
+  }
+  if (word.kind === 'word') {
+    if (word.spelling.some((part) => !/^[a-z]$/.test(part))) issue('spelling', 'spelling 必须逐字母');
+    if (word.spelling.join('') !== word.word) issue('spelling', '逐字母拼接必须等于单词');
+    if (word.syllables.join('') !== word.word) issue('syllables', '音节拼接必须等于单词');
+    if (word.graphemes.map((part) => part.letters).join('') !== word.word) issue('graphemes', '字母组合拼接必须等于单词');
+    if (!word.phonemes.length) issue('phonemes', '单词必须提供音素');
+    if (word.definition.en_young && countWords(word.definition.en_young) > 5) issue('definition', '单词的 en_young 不能超过 5 个英文词');
+    if (JSON.stringify(word.graphemes.flatMap((part) => part.phonemes)) !== JSON.stringify(word.phonemes)) issue('phonemes', '音素顺序必须与字母组合一致');
+  } else {
+    // 短语、句子和专有名词按字母比对，忽略大小写、空格与句末标点
+    if (lettersOf(word.spelling.join('')) !== lettersOf(word.word)) issue('spelling', '短语词元拼接必须等于短语');
+    if (lettersOf(word.syllables.join('')) !== lettersOf(word.word)) issue('syllables', '短语音节拼接必须等于短语');
+    if (lettersOf(word.graphemes.map((part) => part.letters).join('')) !== lettersOf(word.word)) issue('graphemes', '字母组合拼接必须等于短语');
+  }
   word.graphemes.forEach((part, index) => {
     if (/^[bcdfghjklmnpqrstvwxyz]$/.test(part.letters) && word.graphemes[index - 1]?.letters === part.letters) {
       issue('graphemes', '相邻双写辅音必须合并');
@@ -84,16 +127,34 @@ export const wordSchema = z.discriminatedUnion('track', [
     || !shortVowels.has(word.phonemes[1] ?? '')
     || word.graphemes.some((part) => part.letters.length !== 1 || part.phonemes.length !== 1)
   )) issue('phonicsStage', '阶段 1 必须是三字母、三个音素、短元音的 CVC 词');
-});
+}
 
-export const wordsSchema = z.array(wordSchema).min(1, '词库不能为空').superRefine((words, ctx) => {
+// 探索词条：释义、亲子提示与场景必填，保持 Stage 0~2 的既有契约不变。
+const exploreBase = wordBase.extend({
+  theme: z.enum(['animals', 'food', 'nature', 'colors', 'school', 'family', 'body']),
+  parentTip: z.strictObject({ en: text, zh: text }),
+  definition: z.strictObject({ en_young: limitedText(5), en_older: limitedText(10), zh: text }),
+});
+export const exploreWordSchema = z.discriminatedUnion('track', [
+  exploreBase.extend({ track: z.literal('phonics'), phonicsStage: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]) }),
+  exploreBase.extend({ track: z.literal('sight') }),
+]).superRefine(refineWord);
+
+// 课本词条：只用中文释义与单元分组，其余（拼读拆分、插图、音频、审批）与探索词条同规。
+export const textbookWordSchema = wordBase.extend({ track: z.literal('textbook'), textbook: textbookSchema }).superRefine(refineWord);
+
+function uniqueWordIds(words: { wordId: string }[], ctx: z.RefinementCtx) {
   const seen = new Set<string>();
   words.forEach((word, index) => {
     if (seen.has(word.wordId)) ctx.addIssue({ code: 'custom', path: [index, 'wordId'], message: '词条 ID 重复' });
     seen.add(word.wordId);
   });
-});
-export type WordEntry = z.infer<typeof wordSchema>;
+}
+
+export const wordsSchema = z.array(exploreWordSchema).min(1, '词库不能为空').superRefine(uniqueWordIds);
+export const textbookWordsSchema = z.array(textbookWordSchema).min(1, '课本词库不能为空').superRefine(uniqueWordIds);
+export type WordEntry = z.infer<typeof exploreWordSchema>;
+export type TextbookWordEntry = z.infer<typeof textbookWordSchema>;
 
 export const themeSchema = z.strictObject({
   schemaVersion: z.literal(1), contentVersion: contentVersionSchema,
@@ -114,9 +175,10 @@ export const themeSchema = z.strictObject({
 });
 export type ThemeConfig = z.infer<typeof themeSchema>;
 
-export function audioReferences(word: WordEntry): string[] {
-  return [word.audio.word, word.audio.wordSlow, word.example.audio,
-    ...(word.track === 'phonics' ? word.graphemes.flatMap((part) => part.audio === null ? [] : [part.audio]) : []), ...(word.sfx ? [word.sfx] : [])];
+export function audioReferences(word: WordEntry | TextbookWordEntry): string[] {
+  const graphemeAudio = word.track === 'phonics' || word.track === 'textbook'
+    ? word.graphemes.flatMap((part) => part.audio === null ? [] : [part.audio]) : [];
+  return [word.audio.word, word.audio.wordSlow, word.example.audio, ...graphemeAudio, ...(word.sfx ? [word.sfx] : [])];
 }
 
 export function validateCatalog(wordsInput: unknown, themesInput: unknown, release = false) {
@@ -152,16 +214,69 @@ export function validateCatalog(wordsInput: unknown, themesInput: unknown, relea
   return { words, themes };
 }
 
+const sourcePath = z.string().regex(/^data\/textbook\/[a-z0-9_-]+\.json$/).refine((value) => !value.includes('..'));
+
+export const textbookCatalogSchema = z.strictObject({
+  schemaVersion: z.literal(1),
+  bookId: z.literal('yilin-4a-2024'),
+  units: z.array(z.strictObject({ unitId: z.string().regex(/^tb4a_u[1-8]$/), config: sourcePath, words: sourcePath })).min(1),
+});
+export type TextbookCatalogSource = z.infer<typeof textbookCatalogSchema>;
+
+// 构建产物里随包发布的课本块；运行时加载词库时按这份契约校验。
+export const textbookAssetSchema = z.strictObject({
+  bookId: z.literal('yilin-4a-2024'),
+  units: z.array(textbookUnitSchema).min(1),
+  words: textbookWordsSchema,
+});
+export type TextbookCatalog = z.infer<typeof textbookAssetSchema>;
+
+export function validateTextbook(wordsInput: unknown, unitsInput: unknown, options: { themeWordIds?: readonly string[]; release?: boolean } = {}) {
+  // 课本词库与探索词库共用同一个跨字段规则集（refineWord），但各自单独校验。
+  const words = textbookWordsSchema.parse(wordsInput);
+  const units = z.array(textbookUnitSchema).min(1).parse(unitsInput);
+  const errors: string[] = [];
+  const byId = new Map(words.map((word) => [word.wordId, word]));
+  const reserved = new Set(options.themeWordIds ?? []);
+  if (new Set(units.map((unit) => unit.unitId)).size !== units.length) errors.push('课本单元 ID 重复');
+  if (new Set(units.map((unit) => unit.bookId)).size !== 1) errors.push('课本单元不属于同一本书');
+  if (new Set(words.map((word) => word.contentVersion)).size > 1) errors.push('课本词条的内容版本不一致');
+  const covered = new Set<string>();
+  for (const unit of units) {
+    const unitNumber = Number(unit.unitId.slice('tb4a_u'.length));
+    for (const id of unit.wordIds) {
+      const word = byId.get(id);
+      if (!word) { errors.push(`${unit.unitId}: 缺少词 ${id}`); continue; }
+      if (reserved.has(id)) errors.push(`${id}: 与探索词库的 ID 冲突`);
+      if (covered.has(id)) errors.push(`${id}: 被多个单元重复收录`);
+      covered.add(id);
+      if (word.textbook.unit !== unitNumber) errors.push(`${id}: 所属单元与 textbook.unit 不一致`);
+      for (const ref of audioReferences(word)) {
+        const spriteId = ref.split('#')[0] ?? '';
+        if (!unit.spriteIds.includes(spriteId)) errors.push(`${id}: 未声明精灵 ${ref}`);
+      }
+    }
+  }
+  for (const word of words) if (!covered.has(word.wordId)) errors.push(`${word.wordId}: 未进入任何课本单元`);
+  // 探索词库的发布门禁在 validateCatalog；课本词库单独校验，所以同一规则在这里再执行一次。
+  if (options.release) for (const word of words) {
+    if (word.review.status !== 'audio_approved') errors.push(`${word.wordId}: 正式包只允许 audio_approved`);
+    if (word.illustration.type !== 'image') errors.push(`${word.wordId}: 正式包不允许 emoji 占位图`);
+  }
+  if (errors.length) throw new Error(errors.join('\n'));
+  return { words, units };
+}
+
 const assetUrl = z.string().regex(/^(content|core|images|icons|fonts)\/[a-zA-Z0-9/_\-.]+$/)
   .refine((value) => !value.includes('..') && !value.includes('//'), '资源必须为安全的同源相对路径');
 export const assetSchema = z.strictObject({ url: assetUrl, bytes: z.number().int().positive(), sha256: z.string().regex(/^[a-f0-9]{64}$/), mime: text });
 export type AssetRecord = z.infer<typeof assetSchema>;
 export const manifestSchema = z.strictObject({
-  manifestVersion: z.literal(1), schemaVersion: z.literal(3), contentVersion: contentVersionSchema,
+  manifestVersion: z.literal(1), schemaVersion: z.union([z.literal(3), z.literal(4)]), contentVersion: contentVersionSchema,
   stage: z.union([z.literal(0), z.literal(1), z.literal(2)]).optional(),
   appContract: z.strictObject({ min: z.number().int().positive(), max: z.number().int().positive() }),
   assets: z.record(z.string(), assetSchema), sprites: z.record(z.string(), text),
-  packs: z.array(z.strictObject({ id: text, themeId: text.nullable(), dependsOn: z.array(text), assetIds: z.array(text).min(1) })).min(1),
+  packs: z.array(z.strictObject({ id: text, themeId: text.nullable(), dependsOn: z.array(text), assetIds: z.array(text) })).min(1),
   catalogAssetId: text,
   // Preview must declare missing recordings; these may never become a ready learning pack.
   missingAudio: z.array(audioRefSchema).default([]),

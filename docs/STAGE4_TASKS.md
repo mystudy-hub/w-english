@@ -147,7 +147,18 @@ Plan-Time Complexity Check:
 | S4-13 Dexie schema 3 + 多档案 + 迁移 | ✅ 2026-10-11 | commit `9b41ed0`；新增 `tests/database-migration.test.ts` 3 项（新库建默认档案、v2→v3 不重写旧记录、未知 v20 布局中止）；浏览器实测旧 v20 库升到 30 并出现三张新表与默认档案，欢迎页无控制台错误 |
 | S4-14 drill 仓储与 SRS 接线 | ✅ 2026-10-11 | commit `efce1ba`；`tests/drill-repository.test.ts` 9 项通过；全库 211 项通过 |
 | S4-15 drill UI 与路由 | ✅ 2026-10-11 | commit `ca1cdf9`；`tests/drill-quiz.test.ts` 10 项通过（全库 221 项）；浏览器实测：欢迎页“课本复习”→首次设置→`/drill`→开始→答错重排（1/2 变 2/3），写入 `srsProgress{lapses:1,ease:2.3}` 与 `dailyLogs{newLearned:1,reviews:1,correct:0}`，无控制台错误 |
-| S4-16 U2 试点 20 条 | 未开始 | 目前只有 2 条样例，drill 靠 Web Speech 兜底发音 |
+| S4-16 U2 试点 26 条 | ✅ 2026-10-11 | commit `42f17b9`；`validate:content` 报 100 个探索词 + 26 个课本词（17 个单词 + 9 个短语）；`validate:assets -- --preview` 通过（112 个音频待提供）；浏览器实测首页显示 26 个词、一轮从 1/10 开始、答错重排 2/11、拼写题字母块可点 |
+| P2 U1~U8 逐单元合规 | 未开始 | 需要插图（172 张 SVG）、音素录音与老师逐词审校（附录 B #9） |
+
+#### S4-16 实现定稿（需在复核时确认）
+
+1. **插图先用 `emoji`**：26 条都是占位表情。`validate:assets -- --preview` 允许，`release` 仍拒绝（规格未变）。
+2. **短语不给音素**：9 个短语的 `graphemes` 有字母但 `phonemes` 为空且 `audio: null`（契约允许），只填了 `ipa`。给短语编音素拆分应该由老师做，不在本轮编造。
+3. **IPA 与字母组合拆分由本轮新写**，memoryApp 里 34 条无音标；这些是待审草稿（`review.status = 'draft'`），P2 需要老师逐词核对。
+4. **例句去掉了 `_` 完形标记**：v4 的 `example.en` 是整句（用于朗读与展示），所以把占位符换成了真实词形。
+5. **契约的两处放宽**：`word` 允许句末标点（`! ? …`），`kind='word'` 的拼接比对改为只比字母（`o'clock` 能过，但 `spelling` 仍必须是逐字母，原有反例测试不变）。
+6. **每日新词上限恢复生效**：会话不再把 unit 当分组传给 `buildSession`（那会触发“整单元不限量”的分支），26 个新词变成每天 10 个；错词本仍绕过上限。
+7. **legacy id 未映射**：memoryApp 的 `u2-*` 与 `w_tb4a_*` 的对应关系目前只能从词形推；`data/textbook/legacy-id-map.json` 等 P3 导入旧库时再落。
 
 #### S4-15 实现定稿（需在复核时确认）
 

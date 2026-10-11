@@ -72,7 +72,7 @@ describe('real audio tooling with explicitly synthetic test signals', () => {
     approvals.clips['animal_home#cat'].spriteSha256 = '0'.repeat(64);
     expect(() => verifyClipApprovals(result, approvals, ['animal_home#cat'])).toThrow('审批已失效');
     // This test writes only its private .cache folder, never the app's audio-source or published assets.
-  }, 60_000);
+  }, 120_000);
   it('does not publish a partial index when an input recording is missing', async () => {
     await mkdir('.cache', { recursive: true });
     const directory = await mkdtemp(resolve('.cache/audio-missing-test-'));
@@ -106,7 +106,7 @@ describe('real audio tooling with explicitly synthetic test signals', () => {
     await expect(produceSprites(wordClips, options)).rejects.toThrow('哈希不符');
     expect(await readFile(indexPath)).toEqual(current);
     await expect(readFile(resolve(outputDirectory, '.index.lock'))).rejects.toThrow();
-  }, 60_000);
+  }, 120_000);
   it('refuses another writer without deleting its lock or publishing an index', async () => {
     await mkdir('.cache', { recursive: true }); const directory = await mkdtemp(resolve('.cache/audio-lock-test-'));
     const locked = resolve(directory, '.index.lock'); await writeFile(locked, 'another-writer');

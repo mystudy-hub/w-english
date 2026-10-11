@@ -133,6 +133,22 @@ Plan-Time Complexity Check:
 
 ## 3. 任务
 
+### 进度
+
+| 任务 | 状态 | 证据 |
+|---|---|---|
+| S4-00 收敛工作区并切到 Node 24 | ✅ 2026-10-11 | commit `993eb83`；Node 24.19.0 / npm 11.17.0；validate:content、typecheck、lint、188 测试、build:preview 全绿 |
+| S4-01 memoryApp 回滚快照 | ✅ 2026-10-11 | memoryApp@`b43afb31c9485256d2461948c8734b881d799537`（42 个文件，工作区干净） |
+| S4-02 抽出 `src/core/srs` | ✅ 2026-10-11 | commit `df48ee5`；`tests/core-srs.test.ts` 13 项通过 |
+| S4-03 Web Audio 音效合成 | ✅ 2026-10-11 | commit `a521afa`；`tests/core-sfx.test.ts` 7 项通过 |
+| S4-10… | 未开始 | — |
+
+S4-00 的两处必要修复（属于收敛范围）：
+
+- `src/domain/config.ts`：`defaultSettings()` 补齐 `freePlayMode` / `favoriteWords`，否则 `settingsSchema` 的 Zod 默认值会让「默认设置保存后读回」不相等（`tests/history-management.test.ts`）。
+- `tests/audio-production.test.mjs`、`tests/review-workflow.test.mjs`：三个真实子进程用例显式给 60 秒预算；全局 10 秒在双 worker 下不够（单跑均通过，属环境竞争而非逻辑错误）。
+- 工具链：本机无 nvm/fnm，Node 24.19.0 以绿色包放在 `C:/Users/maoju/.local/node-v24.19.0-win-x64`，用 `export PATH="/c/Users/maoju/.local/node-v24.19.0-win-x64:$PATH"` 生效；全局 Node 22.20.0 未动。
+
 ### P0：回滚点与共享内核
 
 #### S4-00 收敛工作区并切到 Node 24

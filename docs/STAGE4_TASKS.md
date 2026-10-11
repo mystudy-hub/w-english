@@ -148,7 +148,15 @@ Plan-Time Complexity Check:
 | S4-14 drill 仓储与 SRS 接线 | ✅ 2026-10-11 | commit `efce1ba`；`tests/drill-repository.test.ts` 9 项通过；全库 211 项通过 |
 | S4-15 drill UI 与路由 | ✅ 2026-10-11 | commit `ca1cdf9`；`tests/drill-quiz.test.ts` 10 项通过（全库 221 项）；浏览器实测：欢迎页“课本复习”→首次设置→`/drill`→开始→答错重排（1/2 变 2/3），写入 `srsProgress{lapses:1,ease:2.3}` 与 `dailyLogs{newLearned:1,reviews:1,correct:0}`，无控制台错误 |
 | S4-16 U2 试点 26 条 | ✅ 2026-10-11 | commit `42f17b9`；`validate:content` 报 100 个探索词 + 26 个课本词（17 个单词 + 9 个短语）；`validate:assets -- --preview` 通过（112 个音频待提供）；浏览器实测首页显示 26 个词、一轮从 1/10 开始、答错重排 2/11、拼写题字母块可点 |
-| P2 U1~U8 逐单元合规 | 未开始 | 需要插图（172 张 SVG）、音素录音与老师逐词审校（附录 B #9） |
+| P2 U1~U8 词条与拆分 | ✅ 2026-10-11 | commits `99b2927`、`ee59917`、`e039204`；8 个单元共 172 条（与 memoryApp 快照逐条对应）：U1 29 / U2 26 / U3 25 / U4 14 / U5 21 / U6 19 / U7 19 / U8 19；`validate:content` 100 探索词 + 172 课本词 |
+| P2 插图、音频与老师审校 | 未开始（卡在素材与人工） | 172 张 SVG（现为 emoji 占位）、771 个音频片段、逐词听审；`release` 仍拒绝 |
+
+#### P2 词条层的完成标准与遗留
+
+- 完成的是**数据层**：每个词条都有 `ipa`、`graphemes`、`phonemes`、`syllables`、整句例句、`textbook{bookId,unit,pos,core}`、稳定 `wordId`（`w_tb4a_<unit><nn>`）和 `audio` 引用位。
+- 未完成的是**素材层**：插图还是 `emoji`（`release` 会拒），音频尚未生产（`missingAudio` 771 条，预览允许），老师逐词审校尚未做。三项都完成后才能在 `release` 模式下构建。
+- 单词的字母组合拆分与音素由本轮新写（memoryApp 缺 34 条音标），属待审草稿；其中双写辅音合并、不发音字母置空、`o'clock`/大写专有名词等边界已由 `validate:content` 反例覆盖。
+- 一个可重复的教训：给课本短语编音素拆分时，UK 的 `əʊ` 不在允许音素表内（表里是 US 的 `oʊ`），`e`/`o`/`a` 也不作为单独音素；新单元用同样的脚本方法生成时先跑一次音素检查。
 
 #### S4-16 实现定稿（需在复核时确认）
 

@@ -555,9 +555,9 @@ Dexie `DATABASE_SCHEMA_VERSION` 2 → 3（原生 IndexedDB version 30），新�
 | srsProgress | `[profileId+wordId]`；索引 `[profileId+due]` | SM-2 卡片状态（repetitions、ease、interval、due、lastReviewed、reviewCount、lapses、learned） |
 | dailyLogs | `[profileId+day]` | 当日新学、复习次数、答对次数 |
 
-- `settings` 增加 `activeProfileId`；`wordProgress`、`rewards`、`activityState` 增加 `profileId`。既有记录一律归入 `p_default`，不丢进度。
-- 休息与使用时间按档案独立计（每个孩子各自的 `screenTimeMinutes`），两人不互相扣时。
-- 迁移顺序为 v10 → v20（现有）→ v30（新增三表并回写 `profileId='p_default'`）。`guardedFactory` 的放行集合由 `{10}` 扩为 `{10,20}`，对每个旧版本逐表核对已知结构；未知结构仍中止并停留家长恢复页。
+- `settings` 增加 `activeProfileId`（缺省 `p_default`）。探索轨道的 `wordProgress`、`rewards`、`activityState` 在本阶段**不改主键也不加 `profileId`**：它们只服务一个孩子，而重写主键（`activityState.key='local'`）是破坏性迁移。多档案当前只作用于 drill 的 `srsProgress` / `dailyLogs`；第二个孩子开始用探索轨道时，再按新 schema 版本给这三张表加 `profileId`（触发条件）—— 该边界与 `implementation_spec §13.3` 同步。
+- drill 的休息与使用时间按档案独立计；探索轨道的使用计时仍为单份（同上触发条件）。
+- 迁移顺序为 v10 → v20 → v30（新增三表，并创建默认档案）。`guardedFactory` 的放行集合由 `{10}` 扩为 `{10,20}`，对每个旧版本逐表核对已知结构；未知结构仍中止并停留家长恢复页。旧记录一字不改，`activeProfileId` 由 `settingsSchema` 的默认值补齐。
 - 旧应用数据（`yilin-memory` 库）只读导入一次：`profiles`→`profiles`、`progress`→`srsProgress`、`dailyLogs`→`dailyLogs`；词 ID 经 `data/textbook/legacy-id-map.json` 映射（例如 `u2-get-up` → `w_tb4a_0xx`）。同一 `[profileId+wordId]` 冲突时保留 `lastReviewed` 较新的记录；导入后不删除旧库，便于回滚。
 
 ### 13.4 drill 学习闭环

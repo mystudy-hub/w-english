@@ -3,13 +3,14 @@ import type { UsageState } from './models.ts';
 export const REST_MS = 3 * 60_000;
 export interface UsageCheckpoint {
   cycle: number; writerId: string; sequence: number; cumulativeMs: number; now: number;
-  limitMinutes: 8 | 12 | 18; questionId?: string;
+  limitMinutes: 0 | 8 | 12 | 18; questionId?: string;
 }
 export type UsageAction = 'show' | 'extend' | 'rest' | 'continue';
-export function defaultUsage(limitMinutes: 8 | 12 | 18 = 8): UsageState {
+export function defaultUsage(limitMinutes: 0 | 8 | 12 | 18 = 8): UsageState {
   return { key: 'local', usageVersion: 1, cycle: 0, elapsedMs: 0, limitMinutes, phase: 'learning', pending: false, extensionUsed: false, updatedAt: 0 };
 }
 export function usageLimit(state: UsageState) {
+  if (state.limitMinutes === 0) return Infinity;
   return state.limitMinutes === 12 && state.extensionUsed ? state.extensionLimitMs ?? 15 * 60_000 : state.limitMinutes * 60_000;
 }
 export function accumulateUsage(state: UsageState, input: UsageCheckpoint): UsageState {
@@ -32,6 +33,7 @@ export function accumulateUsage(state: UsageState, input: UsageCheckpoint): Usag
   return next;
 }
 export function shouldShowRest(state: UsageState, answering: boolean, questionId?: string) {
+  if (state.limitMinutes === 0) return false;
   return state.phase !== 'learning' || (state.pending && (!answering || !state.pendingQuestionId || state.pendingQuestionId !== questionId));
 }
 export function changeUsage(state: UsageState, action: UsageAction, now: number): UsageState {

@@ -27,11 +27,22 @@ export function WordImage({ word, className = '' }: { word: WordEntry; className
 }
 export function ParentGate() {
   const descriptionId = useId();
+  const settings = useSettings();
+  const isFreePlay = Boolean(settings.parentSettings.freePlayMode);
   const started = useRef<number | null>(null);
   const frame = useRef<number>(0);
   const [progress, setProgress] = useState(0);
   const cancel = () => { started.current = null; cancelAnimationFrame(frame.current); setProgress(0); };
+  const triggerEnter = () => {
+    void enterExperience(true).then((entered) => {
+      if (entered) { useAppStore.setState({ parentAuthorized: true }); navigate('/parent'); }
+    });
+  };
   const start = () => {
+    if (isFreePlay) {
+      triggerEnter();
+      return;
+    }
     if (started.current !== null) return;
     started.current = performance.now();
     const tick = () => {
@@ -40,9 +51,7 @@ export function ParentGate() {
       setProgress(value);
       if (value >= 1) {
         started.current = null;
-        void enterExperience(true).then((entered) => {
-          if (entered) { useAppStore.setState({ parentAuthorized: true }); navigate('/parent'); }
-        });
+        triggerEnter();
         setProgress(0);
       } else frame.current = requestAnimationFrame(tick);
     };
@@ -50,20 +59,22 @@ export function ParentGate() {
   };
   useEffect(() => () => cancelAnimationFrame(frame.current), []);
   return <div className="parent-gate-wrap">
-    <button type="button" className="parent-gate" data-sfx="none" aria-label="家长设置，按住三秒" aria-describedby={descriptionId}
-      onPointerDown={(event) => { if (event.button === 0) { event.currentTarget.setPointerCapture(event.pointerId); start(); } }}
+    <button type="button" className="parent-gate" data-sfx="none" aria-label={isFreePlay ? '设置专区，点击进入' : '家长设置，按住三秒'} aria-describedby={descriptionId}
+      onClick={() => { if (isFreePlay) triggerEnter(); }}
+      onPointerDown={(event) => { if (!isFreePlay && event.button === 0) { event.currentTarget.setPointerCapture(event.pointerId); start(); } }}
       onPointerUp={cancel} onPointerCancel={cancel} onPointerLeave={cancel} onBlur={cancel}
       onPointerMove={(event) => {
+        if (isFreePlay) return;
         const bounds = event.currentTarget.getBoundingClientRect();
         if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) cancel();
       }}
-      onKeyDown={(event) => { if (event.key === ' ' || event.key === 'Enter') { event.preventDefault(); if (!event.repeat) start(); } }}
+      onKeyDown={(event) => { if (event.key === ' ' || event.key === 'Enter') { event.preventDefault(); if (isFreePlay) triggerEnter(); else if (!event.repeat) start(); } }}
       onKeyUp={(event) => { if (event.key === ' ' || event.key === 'Enter') { event.preventDefault(); cancel(); } }}
       onContextMenu={(event) => event.preventDefault()}>
       <svg viewBox="0 0 44 44" className="gate-progress" aria-hidden="true"><circle cx="22" cy="22" r="19" pathLength="1" strokeDasharray={`${progress} 1`} /></svg>
-      <LockKeyhole size={19} aria-hidden="true" /><span>家长专区</span>
+      <LockKeyhole size={19} aria-hidden="true" /><span>{isFreePlay ? '设置专区' : '家长专区'}</span>
     </button>
-    <span className="gate-hint" id={descriptionId}>{progress > 0 ? '继续按住…' : '长按 3 秒'}</span>
+    <span className="gate-hint" id={descriptionId}>{isFreePlay ? '点击进入' : progress > 0 ? '继续按住…' : '长按 3 秒'}</span>
   </div>;
 }
 export function Header({ back, children }: { back?: () => void; children?: ReactNode }) {

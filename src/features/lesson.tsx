@@ -6,6 +6,7 @@ import { useAppStore } from '../app/store.ts';
 import { ActiveTimer } from '../domain/active-timer.ts';
 import { Button, GuideBubble, Header, WordImage } from '../components/ui.tsx';
 import { useIdleGuide } from './use-idle-guide.ts';
+import { speakWithWebSpeech, isSpeechSynthesisAvailable } from '../services/speech-fallback.ts';
 
 export function Lesson({ viewportReady }: { viewportReady: boolean }) {
   const state = useAppStore(); const session = state.session;
@@ -17,7 +18,8 @@ export function Lesson({ viewportReady }: { viewportReady: boolean }) {
   const timer = useRef<ActiveTimer>(); const questionRef = useRef(question);
   const promptGeneration = useRef(0);
   useEffect(() => { questionRef.current = question; }, [question]);
-  const canPlay = Boolean(word && audio.has(word.audio.word) && !state.muted);
+  const speechOk = isSpeechSynthesisAvailable();
+  const canPlay = Boolean(word && (audio.has(word.audio.word) || speechOk) && !state.muted);
 
   const playPrompt = useCallback(async (cue?: string) => {
     if (!sessionId || !questionId || !word || !sessionLock.held || learningPaused() || document.hidden) return;
@@ -39,7 +41,12 @@ export function Lesson({ viewportReady }: { viewportReady: boolean }) {
         if (cue === 'guide#listen_choose' && narration?.status === 'ended') await repository.markSessionNarration(sessionId, 'intro');
       }
       if (learningPaused() || document.hidden) return;
-      const played = await audio.play(word.audio.word, questionId);
+      let played: { status: 'ended' | 'failed' | 'cancelled'; playbackId: string };
+      if (audio.has(word.audio.word)) {
+        played = await audio.play(word.audio.word, questionId);
+      } else {
+        played = await speakWithWebSpeech(word.word);
+      }
       if (generation !== promptGeneration.current || learningPaused() || document.hidden) return;
       if (played.status === 'cancelled') return;
       if (played.status !== 'ended') throw new Error('再点一次小喇叭试试吧。');

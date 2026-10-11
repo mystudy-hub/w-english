@@ -66,6 +66,8 @@ function App() {
     return () => document.removeEventListener('click', clicked, true);
   }, []);
   const motion = reducedMotion(settings, systemMotion);
+  const isFreePlay = Boolean(settings.parentSettings.freePlayMode);
+  const effectiveViewportReady = isFreePlay || state.viewportBypass || viewportReady;
   const mode = route.startsWith('/play/') && state.session?.status === 'active'
     ? state.session.configSnapshot.interactionMode : settings.interactionMode;
   const childPage = state.entered && state.phase === 'ready' && state.onboardingComplete && route !== '/setup' && !(route === '/parent' && state.parentAuthorized);
@@ -73,12 +75,12 @@ function App() {
   const stage2 = (state.content?.manifest.stage ?? 0) >= 2;
   const answering = route.startsWith('/play/') && state.session?.status === 'active';
   const questionId = answering ? state.session?.questions[state.session.currentQuestionIndex]?.id : undefined;
-  const restVisible = stage2 && childPage && shouldShowRest(state.usage, answering, questionId);
+  const restVisible = !isFreePlay && settings.parentSettings.screenTimeMinutes !== 0 && stage2 && childPage && shouldShowRest(state.usage, answering, questionId);
   useLayoutEffect(() => {
-    const paused = restVisible || !viewportReady;
+    const paused = restVisible || !effectiveViewportReady;
     useAppStore.setState({ interactionPaused: paused });
     if (paused) audio.cancel();
-  }, [restVisible, viewportReady]);
+  }, [restVisible, effectiveViewportReady]);
   let page: ReactNode;
   if (!state.entered || (state.phase !== 'ready' && route !== '/parent')) page = <Welcome requestedRoute={route} />;
   else if (route === '/parent' && state.parentAuthorized) page = state.storage === 'pending' ? <StorageRecovery /> : <ParentPage />;
@@ -87,18 +89,21 @@ function App() {
   else if (route.startsWith('/dianfan')) page = <DianfanPage />;
   else if (route.startsWith('/word/')) page = <WordCard key={route} wordId={route.slice('/word/'.length)} />;
   else if (route.startsWith('/phonics/')) page = <Phonics key={route} wordId={route.slice('/phonics/'.length)} />;
-  else if (route.startsWith('/play/spell/')) page = <Spelling viewportReady={viewportReady && !restVisible} />;
-  else if (route.startsWith('/play/listen/')) page = <Lesson viewportReady={viewportReady && !restVisible} />;
-  else if (/^\/session\/.+\/end$/.test(route)) page = <RoundEnd sessionId={route.split('/')[2]!} paused={restVisible || !viewportReady} />;
+  else if (route.startsWith('/play/spell/')) page = <Spelling viewportReady={effectiveViewportReady && !restVisible} />;
+  else if (route.startsWith('/play/listen/')) page = <Lesson viewportReady={effectiveViewportReady && !restVisible} />;
+  else if (/^\/session\/.+\/end$/.test(route)) page = <RoundEnd sessionId={route.split('/')[2]!} paused={restVisible || !effectiveViewportReady} />;
   else if (route === '/themes' || (!route.startsWith('/scene/') && (state.content?.catalog.themes.length ?? 0) > 1)) page = <ThemeHub />;
   else page = <Scene key={route} themeId={route.startsWith('/scene/') ? route.split('/')[2]! : state.sceneThemeId} />;
   return <div ref={surface} className={`app mode-${mode} ${motion ? 'motion-reduced' : ''}`} data-audience={parentPage ? 'parent' : 'child'}>
     {page}
-    <UsageLifecycle enabled={stage2 && state.entered} active={childPage && viewportReady && !restVisible} questionId={questionId} limitMinutes={settings.parentSettings.screenTimeMinutes} />
+    <UsageLifecycle enabled={!isFreePlay && settings.parentSettings.screenTimeMinutes !== 0 && stage2 && state.entered} active={childPage && effectiveViewportReady && !restVisible} questionId={questionId} limitMinutes={settings.parentSettings.screenTimeMinutes} />
     {restVisible && <RestDialog />}
     <GuideLifecycle route={route} />
     {state.notice && <div className="app-notice" role="status"><span>{state.notice}</span><button aria-label="关闭提示" onClick={() => useAppStore.setState({ notice: undefined })}><X size={18} /></button></div>}
-    {!viewportReady && route !== '/parent' && !restVisible && <OrientationDialog />}
+    {!effectiveViewportReady && route !== '/parent' && !restVisible && <OrientationDialog onBypass={() => {
+      useAppStore.setState({ viewportBypass: true });
+      if (typeof window !== 'undefined') localStorage.setItem('viewport_bypass', 'true');
+    }} />}
   </div>;
 }
 

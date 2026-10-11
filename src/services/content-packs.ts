@@ -3,6 +3,7 @@ import type { ContentPackRecord } from '../domain/models.ts';
 import { SUPPORTED_CONTENT_CONTRACTS, themeAssetIds, themeAudioRefs } from '../domain/content-scopes.ts';
 import { firstTheme } from '../domain/themes.ts';
 import { withRequestDeadline } from './request-deadline.ts';
+import { isSpeechSynthesisAvailable } from './speech-fallback.ts';
 
 export const CONTENT_CACHE = 'w-english-content-v1';
 export interface ContentCatalog { words: WordEntry[]; themes: ThemeConfig[] }
@@ -407,20 +408,25 @@ export class ContentPackManager {
     return { files, bytes, packs: obsolete.length };
   }
   readyWordIds(content: LoadedContent) {
+    const speechOk = isSpeechSynthesisAvailable();
     return new Set(content.catalog.words.filter((word) => {
-      if (word.illustration.type !== 'image' || !content.verifiedIds.has(word.illustration.src)) return false;
+      const hasImage = word.illustration.type === 'emoji' || (word.illustration.type === 'image' && content.verifiedIds.has(word.illustration.src));
+      if (!hasImage) return false;
       const [spriteId, clip] = word.audio.word.split('#');
       const sprite = content.sprites[spriteId!];
-      return Boolean(sprite?.sprite[clip!] && content.verifiedIds.has(sprite.audioAssetId));
+      const hasSprite = Boolean(sprite?.sprite[clip!] && content.verifiedIds.has(sprite.audioAssetId));
+      return hasSprite || speechOk;
     }).map((word) => word.wordId));
   }
   readySpellingWordIds(content: LoadedContent) {
+    const speechOk = isSpeechSynthesisAvailable();
     const ready = this.readyWordIds(content);
     return new Set(content.catalog.words.filter((word) => word.track === 'phonics' && ready.has(word.wordId)
       && word.graphemes.every((part) => {
         if (!part.audio) return true;
         const [id, clip] = part.audio.split('#'); const sprite = content.sprites[id!];
-        return sprite?.sprite[clip!] && content.verifiedIds.has(sprite.audioAssetId);
+        const hasSprite = Boolean(sprite?.sprite[clip!] && content.verifiedIds.has(sprite.audioAssetId));
+        return hasSprite || speechOk;
       })).map((word) => word.wordId));
   }
 }

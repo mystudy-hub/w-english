@@ -14,9 +14,14 @@ const settingsSchema = z.strictObject({
   key: z.literal('local'), settingsVersion: z.literal(1), onboardingComplete: z.boolean(),
   interactionMode: z.enum(['tap', 'drag']), learningLevel: z.enum(['L1', 'L2', 'L3']),
   parentSettings: z.strictObject({
-    volumeCap: z.number().min(0.4).max(1), reducedMotion: z.boolean(), guideEnabled: z.boolean().nullable(),
-    screenTimeMinutes: z.union([z.literal(8), z.literal(12), z.literal(18)]),
+    volumeCap: z.number().min(0.4).max(1),
+    playbackRate: z.number().min(0.4).max(1.5).default(0.85),
+    slowPlaybackRate: z.number().min(0.4).max(1.2).default(0.60),
+    reducedMotion: z.boolean(), guideEnabled: z.boolean().nullable(),
+    screenTimeMinutes: z.union([z.literal(0), z.literal(8), z.literal(12), z.literal(18)]).default(8),
     bedtimeMode: z.boolean(), lockLevel: z.boolean(), micEnabled: z.boolean(),
+    freePlayMode: z.boolean().optional().default(false),
+    favoriteWords: z.array(z.string()).optional().default([]),
   }),
 });
 

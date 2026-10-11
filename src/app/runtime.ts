@@ -8,6 +8,7 @@ import { AudioEngine } from '../services/audio-engine.ts';
 import { loadCoreAudio } from '../services/core-audio.ts';
 import { browserContentCache, ContentPackManager, memoryContentCache, type PackMetadata } from '../services/content-packs.ts';
 import { SessionLock } from '../services/session-lock.ts';
+import { speakWithWebSpeech, cancelWebSpeech, isSpeechSynthesisAvailable } from '../services/speech-fallback.ts';
 import { applySettings, readSettings, useAppStore } from './store.ts';
 
 export const APP_BASE = new URL(import.meta.env.BASE_URL, location.origin).href;
@@ -73,6 +74,12 @@ function metadata(persistent: boolean): PackMetadata {
   };
 }
 
+export function syncAudioSettings(parentSettings: Settings['parentSettings']) {
+  audio.setVolume(parentSettings.volumeCap);
+  if (parentSettings.playbackRate) audio.setPlaybackRate(parentSettings.playbackRate);
+  if (parentSettings.slowPlaybackRate) audio.setSlowPlaybackRate(parentSettings.slowPlaybackRate);
+}
+
 export function boot(temporary = false, force = false): Promise<void> {
   if (bootTask && !force) return bootTask;
   const run = ++generation;
@@ -95,7 +102,7 @@ export function boot(temporary = false, force = false): Promise<void> {
       }
       if (run !== generation) return;
       applySettings(settings);
-      audio.setVolume(settings.parentSettings.volumeCap);
+      syncAudioSettings(settings.parentSettings);
       void loadCoreAudio(audio, APP_BASE).then((loaded) => {
         if (loaded && run === generation) useAppStore.setState((state) => ({ audioRevision: state.audioRevision + 1 }));
       }).catch(() => {});
@@ -116,7 +123,7 @@ export function boot(temporary = false, force = false): Promise<void> {
       useAppStore.setState({ phase: 'ready', storage: persistent ? 'persistent' : 'temporary', content, contentRecovery: contentManager.recovery,
         sceneThemeId: firstTheme(content.catalog.themes).themeId,
         ...(temporary ? { notice: '本次使用临时体验，学习记录不会保存。' } : {}) });
-      audio.setVolume(settings.parentSettings.volumeCap);
+      syncAudioSettings(settings.parentSettings);
       if (persistent) await refreshRecords();
     } catch (error) {
       if (run === generation) useAppStore.setState({ phase: 'failed', error: error instanceof Error ? error.message : '内容还没有准备好，请再试一次。' });
@@ -170,7 +177,7 @@ export function enterExperience(parent = false): Promise<boolean> {
         }
         const stickers = await repository.stickers();
         if (visit !== visitGeneration) return false;
-        applySettings(settings); audio.setVolume(settings.parentSettings.volumeCap);
+        applySettings(settings); syncAudioSettings(settings.parentSettings);
         usageRevision += 1;
         if (content) audio.register(content.manifest, content.sprites);
         useAppStore.setState({ content, contentRecovery: manager?.recovery, themeProgress: {}, progress, stickers, usage, ...(guide ? { guide } : {}), session: writable ? session : undefined,
@@ -202,6 +209,7 @@ export function leaveExperience() {
   // The active timer checkpoints before release starts draining repository writes.
   dispatchEvent(new Event('w-english:leave'));
   audio.cancel();
+  cancelWebSpeech();
   useAppStore.setState({ entered: false, entering: false, parentAuthorized: false, learningAccess: 'inactive' });
   void sessionLock.release();
 }
@@ -299,8 +307,22 @@ export async function saveSettings(settings: Settings) {
   if (access === 'inactive') throw new Error('请先进入应用');
   const saved = access === 'writer';
   if (saved) await repository.saveSettings(settings);
-  applySettings(settings); audio.setVolume(settings.parentSettings.volumeCap);
+  applySettings(settings); syncAudioSettings(settings.parentSettings);
   return saved;
+}
+
+export async function toggleFavorite(wordKey: string): Promise<boolean> {
+  const current = readSettings();
+  const list = current.parentSettings.favoriteWords ?? [];
+  const normalized = wordKey.toLowerCase();
+  const exists = list.includes(normalized);
+  const nextList = exists ? list.filter((item) => item !== normalized) : [...list, normalized];
+  const nextSettings: Settings = {
+    ...current,
+    parentSettings: { ...current.parentSettings, favoriteWords: nextList },
+  };
+  await saveSettings(nextSettings);
+  return !exists;
 }
 export async function clearLearningRecords() {
   const state = useAppStore.getState();
@@ -318,18 +340,30 @@ export async function discover(wordId: string) {
   try { await repository.discover(wordId, Date.now()); await refreshRecords(); }
   catch { useAppStore.setState({ notice: '本次探索记录暂时无法保存。' }); }
 }
-export async function playWord(ref: string, wordId: string, owner: string, countHeard: boolean) {
+export async function playWord(ref: string, wordId: string, owner: string, countHeard: boolean, rate?: number) {
   const route = location.hash;
   if (learningPaused() || document.hidden) return { status: 'cancelled' as const, ref, playbackId: '' };
   const unlocked = await audio.unlock();
   if (route !== location.hash || learningPaused() || document.hidden) return { status: 'cancelled' as const, ref, playbackId: '' };
   if (!unlocked) return { status: 'failed' as const, ref, playbackId: '', error: '再点一次小喇叭试试。' };
-  const result = await audio.play(ref, owner);
+  
+  let result: { status: 'ended' | 'failed' | 'cancelled'; playbackId: string; error?: string };
+  if (audio.has(ref)) {
+    result = await audio.play(ref, owner, rate);
+  } else if (isSpeechSynthesisAvailable()) {
+    const targetWord = useAppStore.getState().content?.catalog.words.find((w) => w.wordId === wordId);
+    const textToSpeak = targetWord?.word ?? wordId;
+    const speechResult = await speakWithWebSpeech(textToSpeak, rate ?? audio.playbackRate);
+    result = { status: speechResult.status, playbackId: speechResult.playbackId };
+  } else {
+    result = { status: 'failed', playbackId: '', error: '语音素材尚未准备好' };
+  }
+
   if (result.status === 'ended' && countHeard && canSaveLearning()) {
     try { await repository.heard(wordId, result.playbackId); await refreshRecords(); }
     catch { useAppStore.setState({ notice: '听音记录暂时无法保存。' }); }
   }
-  return result;
+  return { status: result.status, ref, playbackId: result.playbackId, ...(result.error ? { error: result.error } : {}) };
 }
 export async function beginSession(reviewOnly = false, themeId = useAppStore.getState().sceneThemeId, activity: 'listenTap' | 'tapSpell' = 'listenTap', focusWordId?: string) {
   checkpointLearningTime();

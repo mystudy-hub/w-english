@@ -11,7 +11,7 @@ export const LEVELS = {
 } as const;
 export function defaultSettings(): Settings {
   return { key: 'local', settingsVersion: 1, onboardingComplete: false, interactionMode: 'tap', learningLevel: 'L1',
-    parentSettings: { volumeCap: 0.7, reducedMotion: false, guideEnabled: null, screenTimeMinutes: 8, bedtimeMode: false, lockLevel: false, micEnabled: false } };
+    parentSettings: { volumeCap: 0.7, playbackRate: 0.85, slowPlaybackRate: 0.60, reducedMotion: false, guideEnabled: null, screenTimeMinutes: 8, bedtimeMode: false, lockLevel: false, micEnabled: false, freePlayMode: false, favoriteWords: [] } };
 }
 export function configSnapshot(mode: InteractionMode, level: LearningLevel): ConfigSnapshot {
   return { interactionMode: mode, learningLevel: level, optionCount: LEVELS[level].optionCount, timeLimitMs: LEVELS[level].timeLimitMs };

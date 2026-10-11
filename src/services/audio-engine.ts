@@ -5,7 +5,7 @@ export type PlaybackStatus = 'ended' | 'cancelled' | 'failed';
 export interface PlaybackResult { status: PlaybackStatus; playbackId: string; ref: string; error?: string }
 export interface SoundHandle {
   ready: Promise<void>;
-  play(clip: string, ended: () => void, failed: () => void, gain?: number): () => void;
+  play(clip: string, ended: () => void, failed: () => void, gain?: number, rate?: number): () => void;
   unload(): void;
 }
 export interface AudioBackend {
@@ -13,6 +13,7 @@ export interface AudioBackend {
   create(url: string, sprite: SpriteManifest, mime: string): SoundHandle;
   setVolume(cap: number): void;
   setMuted(muted: boolean): void;
+  setRate?(rate: number): void;
   sampleRate(): number;
   generation?(): number;
 }
@@ -43,9 +44,12 @@ class HowlerBackend implements AudioBackend {
     });
     return {
       ready,
-      play(clip, ended, failed, gain = 1) {
+      play(clip, ended, failed, gain = 1, rate?: number) {
         const id = howl.play(clip);
         howl.volume(gain, id);
+        if (rate !== undefined && rate > 0) {
+          try { howl.rate(rate, id); } catch { /* ignore */ }
+        }
         const done = () => { detach(); ended(); };
         const error = () => { detach(); failed(); };
         const detach = () => { howl.off('end', done, id); howl.off('playerror', error, id); };
@@ -80,6 +84,8 @@ export class AudioEngine {
   private muted = false;
   private volumeCap = 0.7;
   private outputGain = 1;
+  private defaultPlaybackRate = 0.85; // 默认采用稍慢语速(0.85x)，儿童启蒙发音更清晰
+  private defaultSlowPlaybackRate = 0.60; // 慢速精听默认采用更慢语速(0.60x)
   private deviceFade?: ReturnType<typeof setInterval>;
   private contextGeneration = 0;
   constructor(assetUrl: (url: string) => string, backend: AudioBackend = new HowlerBackend(), clock = () => performance.now()) {
@@ -87,6 +93,10 @@ export class AudioEngine {
   }
   get playing() { return Boolean(this.current); }
   get isMuted() { return this.muted; }
+  get playbackRate() { return this.defaultPlaybackRate; }
+  get slowPlaybackRate() { return this.defaultSlowPlaybackRate; }
+  setPlaybackRate(rate: number) { this.defaultPlaybackRate = Math.max(0.4, Math.min(1.5, rate)); }
+  setSlowPlaybackRate(rate: number) { this.defaultSlowPlaybackRate = Math.max(0.4, Math.min(1.2, rate)); }
   unlock() {
     const resumed = this.backend.unlock();
     const generation = this.backend.generation?.() ?? 0;
@@ -176,11 +186,11 @@ export class AudioEngine {
       throw error;
     }
   }
-  play(ref: string, owner: string): Promise<PlaybackResult> {
+  play(ref: string, owner: string, rate?: number): Promise<PlaybackResult> {
     this.sequence += 1; this.discardGuide();
-    return this.perform(ref, owner);
+    return this.perform(ref, owner, rate);
   }
-  private perform(ref: string, owner: string): Promise<PlaybackResult> {
+  private perform(ref: string, owner: string, rate?: number): Promise<PlaybackResult> {
     this.current?.finish('cancelled');
     const playbackId = crypto.randomUUID();
     return new Promise((resolve) => {
@@ -200,7 +210,8 @@ export class AudioEngine {
       if (!id || !clip || !this.has(ref)) { finish('failed', '语音素材尚未准备好'); return; }
       void this.sound(id).then((sound) => {
         if (settled || this.current?.id !== playbackId) return;
-        const stop = sound.play(clip, () => finish('ended'), () => finish('failed', '请再点一次喇叭'));
+        const targetRate = rate ?? this.defaultPlaybackRate;
+        const stop = sound.play(clip, () => finish('ended'), () => finish('failed', '请再点一次喇叭'), 1, targetRate);
         if (this.current?.id === playbackId) this.current.stop = stop;
       }).catch((error: unknown) => finish('failed', error instanceof Error ? error.message : '语音无法播放'));
     });
@@ -247,7 +258,7 @@ export class AudioEngine {
       const [id, clip] = ref.split('#');
       void this.sound(id!).then((sound) => {
         if (settled || this.effectPlayback?.id !== playbackId) return;
-        const stop = sound.play(clip!, () => finish('ended'), () => finish('failed'), 0.3);
+        const stop = sound.play(clip!, () => finish('ended'), () => finish('failed'), 0.3, 1.0);
         if (this.effectPlayback?.id === playbackId) this.effectPlayback.stop = stop;
       }).catch(() => finish('failed'));
     });

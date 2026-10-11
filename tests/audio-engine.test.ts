@@ -3,7 +3,7 @@ import { AudioEngine, type AudioBackend, type SoundHandle } from '../src/service
 import type { ContentManifest, SpriteManifest } from '../src/data/content-schema.ts';
 
 class FakeBackend implements AudioBackend {
-  plays: Array<{ clip: string; end: () => void; fail: () => void; stopped: boolean; gain: number }> = [];
+  plays: Array<{ clip: string; end: () => void; fail: () => void; stopped: boolean; gain: number; rate?: number }> = [];
   volume = vi.fn(); muted = vi.fn(); unloaded = vi.fn(); ready: Promise<void> = Promise.resolve();
   created = 0; context = 0; generation = () => this.context;
   unlock = async () => true;
@@ -13,7 +13,7 @@ class FakeBackend implements AudioBackend {
   create(): SoundHandle {
     this.created += 1;
     return { ready: this.ready, unload: this.unloaded,
-      play: (clip, end, fail, gain = 1) => { const entry = { clip, end, fail, stopped: false, gain }; this.plays.push(entry); return () => { entry.stopped = true; }; },
+      play: (clip, end, fail, gain = 1, rate?: number) => { const entry = { clip, end, fail, stopped: false, gain, rate }; this.plays.push(entry); return () => { entry.stopped = true; }; },
     };
   }
 }
@@ -157,5 +157,21 @@ describe('audio scheduling lifecycle', () => {
     const voice = engine.play('animal_home#cat', 'card'); await waitPlays(backend, 1);
     engine.register(manifest, { animal_home: sprite, guide: sprite });
     expect(backend.plays[0]!.stopped).toBe(false); backend.plays[0]!.end(); expect((await voice).status).toBe('ended');
+  });
+  it('supports slower playback rate configuration and custom clip playback rates', async () => {
+    const backend = new FakeBackend(); const engine = new AudioEngine((url) => url, backend);
+    engine.configure(manifest, { animal_home: sprite });
+    engine.setPlaybackRate(0.8);
+    const playback = engine.play('animal_home#cat', 'card');
+    await waitPlays(backend, 1);
+    expect(backend.plays[0]!.rate).toBe(0.8);
+    backend.plays[0]!.end();
+    await playback;
+
+    const slowPlayback = engine.play('animal_home#dog', 'card', 0.72);
+    await waitPlays(backend, 2);
+    expect(backend.plays[1]!.rate).toBe(0.72);
+    backend.plays[1]!.end();
+    await slowPlayback;
   });
 });

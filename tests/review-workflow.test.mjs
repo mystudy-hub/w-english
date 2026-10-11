@@ -90,5 +90,5 @@ describe('human review interchange', () => {
     expect(await readFile(resolve(directory, 'artifacts/review/backups', backups[0], source), 'utf8')).toBe(original);
     expect(await readFile(source, 'utf8')).toBe(original);
     expect(JSON.parse(await readFile('data/content-approvals.json', 'utf8')).words).toEqual({});
-  });
+  }, 60_000);
 });

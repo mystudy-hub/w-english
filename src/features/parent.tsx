@@ -1,13 +1,13 @@
-import { Check, CloudDownload, Download, Eye, Headphones, Leaf, Pause, RefreshCw, ShieldCheck, Trash2, Volume2 } from 'lucide-react';
-import { useEffect, useId, useState } from 'react';
+import { Check, CloudDownload, Download, Eye, Headphones, Leaf, Pause, RefreshCw, ShieldCheck, Trash2, Volume2, Turtle, Upload } from 'lucide-react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { navigate } from '../app/router.ts';
-import { cleanContentCache, contentThemeProgress, explorationRoute, pauseContentDownload, prepareContent, repository, saveSettings, sceneRoute } from '../app/runtime.ts';
+import { cleanContentCache, contentThemeProgress, explorationRoute, pauseContentDownload, prepareContent, refreshRecords, repository, saveSettings, sceneRoute } from '../app/runtime.ts';
 import { useAppStore, useSettings } from '../app/store.ts';
 import { progressCounts } from '../domain/learning.ts';
 import type { Settings } from '../domain/models.ts';
 import { Button, Header } from '../components/ui.tsx';
 import { requestStoragePersistence, storageSize, storageStatus, type StorageStatus } from '../services/storage-status.ts';
-import { downloadJson } from '../services/local-backup.ts';
+import { downloadJson, exportLocalBackup, importLocalBackup, readJsonFile } from '../services/local-backup.ts';
 import { themeAccess } from '../domain/themes.ts';
 import { ClearRecordsDialog } from './clear-records.tsx';
 
@@ -17,10 +17,26 @@ export function ParentPage() {
   const [clearing, setClearing] = useState(false); const [recordMessage, setRecordMessage] = useState('');
   const [draft, setDraft] = useState<Settings>(original); const [saving, setSaving] = useState(false); const [message, setMessage] = useState('');
   const [space, setSpace] = useState<StorageStatus>(); const [cacheMessage, setCacheMessage] = useState(''); const [managing, setManaging] = useState(false);
+  const [importing, setImporting] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   useEffect(() => { let active = true; void storageStatus().then((value) => { if (active) setSpace(value); }); return () => { active = false; }; }, [state.pack.state]);
   const counts = progressCounts(state.progress);
   const downloading = state.pack.state === 'downloading' || Object.values(state.themeProgress).some((pack) => pack.state === 'downloading');
   const parent = draft.parentSettings;
+
+  const previewSpeech = (text: string, rate: number) => {
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      try {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = Math.max(0.4, Math.min(1.5, rate));
+        window.speechSynthesis.speak(utterance);
+      } catch {
+        /* ignore preview error */
+      }
+    }
+  };
   const save = async () => {
     setSaving(true); setMessage('');
     try {
@@ -32,9 +48,35 @@ export function ParentPage() {
   };
   const exportRecords = async () => {
     try {
-      const content = await repository.exportProgress();
-      downloadJson(content, `w-english-progress-${new Date().toISOString().slice(0, 10)}.json`);
-    } catch { setMessage('学习记录暂时无法导出，请稍后再试。'); }
+      const backup = await exportLocalBackup();
+      downloadJson(backup, `w-english-backup-${new Date().toISOString().slice(0, 10)}.json`);
+      setRecordMessage('完整学习与设置备份已成功导出。');
+    } catch {
+      try {
+        const content = await repository.exportProgress();
+        downloadJson(content, `w-english-progress-${new Date().toISOString().slice(0, 10)}.json`);
+        setRecordMessage('学习进度已导出。');
+      } catch {
+        setMessage('学习记录暂时无法导出，请稍后再试。');
+      }
+    }
+  };
+  const handleImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setImporting(true); setRecordMessage('');
+    try {
+      const parsed = await readJsonFile(file);
+      await importLocalBackup(parsed);
+      await refreshRecords();
+      setRecordMessage('学习记录已成功恢复！正在刷新…');
+      setTimeout(() => location.reload(), 900);
+    } catch (err: unknown) {
+      setRecordMessage(`导入失败：${err instanceof Error ? err.message : '未知错误'}`);
+    } finally {
+      setImporting(false);
+      if (e.target) e.target.value = '';
+    }
   };
   const retain = async () => {
     const retained = await requestStoragePersistence();
@@ -55,20 +97,79 @@ export function ParentPage() {
       <label className="setting-label">操作方式<select value={draft.interactionMode} onChange={(event) => setDraft({ ...draft, interactionMode: event.target.value as Settings['interactionMode'] })}><option value="tap">轻轻点一点 · 大按钮、语音陪伴</option><option value="drag">自己来探索 · 辅助文字、灵活操作</option></select></label>
       <label className="setting-label">学习等级<select value={draft.learningLevel} onChange={(event) => setDraft({ ...draft, learningLevel: event.target.value as Settings['learningLevel'] })}><option value="L1">L1 启蒙 · 3 张图片，无倒计时</option><option value="L2">L2 拼合 · 4 张图片，无倒计时</option><option value="L3">L3 进阶 · 4 张图片，15 秒有效时间</option></select></label>
       <label className="setting-label">向导陪伴<select value={parent.guideEnabled === null ? 'default' : String(parent.guideEnabled)} onChange={(event) => setDraft({ ...draft, parentSettings: { ...parent, guideEnabled: event.target.value === 'default' ? null : event.target.value === 'true' } })}><option value="default">跟随操作方式</option><option value="true">开启陪伴</option><option value="false">安静探索</option></select></label>
-      {(state.content?.manifest.stage ?? 0) >= 2 && <label className="setting-label">休息间隔<select aria-label="休息间隔" aria-describedby={screenTimeHelpId} value={parent.screenTimeMinutes} onChange={(event) => setDraft({ ...draft, parentSettings: { ...parent, screenTimeMinutes: Number(event.target.value) as 8 | 12 | 18 } })}>
-        <option value="8">8 分钟 · 建议 4～5 岁，温和提醒</option><option value="12">12 分钟 · 建议 6～7 岁，可延长一次 3 分钟</option><option value="18">18 分钟 · 建议 8～9 岁，休息 3 分钟</option>
-      </select><small id={screenTimeHelpId}>只累计前台儿童页面的使用时间，家长页和后台暂停计时。到时先完成当前题；刷新会保留累计时间和休息状态。</small></label>}
+      {(state.content?.manifest.stage ?? 0) >= 2 && <label className="setting-label">休息间隔<select aria-label="休息间隔" aria-describedby={screenTimeHelpId} value={parent.screenTimeMinutes} onChange={(event) => setDraft({ ...draft, parentSettings: { ...parent, screenTimeMinutes: Number(event.target.value) as 0 | 8 | 12 | 18 } })}>
+        <option value="0">不限时间 · 自用/成人模式，免休息弹窗打扰</option><option value="8">8 分钟 · 建议 4～5 岁，温和提醒</option><option value="12">12 分钟 · 建议 6～7 岁，可延长一次 3 分钟</option><option value="18">18 分钟 · 建议 8～9 岁，休息 3 分钟</option>
+      </select><small id={screenTimeHelpId}>只累计前台儿童页面的使用时间，家长页和后台暂停计时。选择“不限时间”适合成人自用学习。</small></label>}
       <div className="setting-divider" /><h2>声音与动效</h2>
       <label className="setting-label"><span><Volume2 size={17} /> 应用音量上限 <strong>{Math.round(parent.volumeCap * 100)}%</strong></span><input type="range" min="0.4" max="1" step="0.05" value={parent.volumeCap} onChange={(event) => setDraft({ ...draft, parentSettings: { ...parent, volumeCap: Number(event.target.value) } })} /><small>控制应用内音量；静音按钮可随时关闭声音。</small></label>
+      <label className="setting-label">
+        <span><Turtle size={17} /> 慢速精听语速 <strong>{(parent.slowPlaybackRate ?? 0.60).toFixed(2)}x</strong></span>
+        <input
+          type="range"
+          min="0.45"
+          max="0.85"
+          step="0.05"
+          value={parent.slowPlaybackRate ?? 0.60}
+          onChange={(event) => setDraft({ ...draft, parentSettings: { ...parent, slowPlaybackRate: Number(event.target.value) } })}
+        />
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '4px' }}>
+          <small>“慢慢听”与慢速精听播放速度（可调 0.x，推荐 0.55x ~ 0.65x）。</small>
+          <button
+            type="button"
+            style={{ fontSize: '12px', background: '#f0f5e9', border: '1px solid #dbe5d1', padding: '2px 8px', borderRadius: '8px', cursor: 'pointer', color: '#4a654d', whiteSpace: 'nowrap', marginLeft: '8px' }}
+            onClick={() => previewSpeech('butterfly', parent.slowPlaybackRate ?? 0.60)}
+          >
+            试听慢速
+          </button>
+        </div>
+      </label>
+      <label className="setting-label">
+        <span><Volume2 size={17} /> 常规朗读语速 <strong>{(parent.playbackRate ?? 0.85).toFixed(2)}x</strong></span>
+        <input
+          type="range"
+          min="0.50"
+          max="1.10"
+          step="0.05"
+          value={parent.playbackRate ?? 0.85}
+          onChange={(event) => setDraft({ ...draft, parentSettings: { ...parent, playbackRate: Number(event.target.value) } })}
+        />
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '4px' }}>
+          <small>单词卡片与故事句子的标准朗读速度（可调 0.x，推荐 0.75x ~ 0.90x）。</small>
+          <button
+            type="button"
+            style={{ fontSize: '12px', background: '#f0f5e9', border: '1px solid #dbe5d1', padding: '2px 8px', borderRadius: '8px', cursor: 'pointer', color: '#4a654d', whiteSpace: 'nowrap', marginLeft: '8px' }}
+            onClick={() => previewSpeech('butterfly', parent.playbackRate ?? 0.85)}
+          >
+            试听常规
+          </button>
+        </div>
+      </label>
       <label className="toggle-setting"><span><strong>减少动态效果</strong><small>关闭跳动和粒子，同时尊重设备系统设置。</small></span><input type="checkbox" checked={parent.reducedMotion} onChange={(event) => setDraft({ ...draft, parentSettings: { ...parent, reducedMotion: event.target.checked } })} /></label>
+      <div className="setting-divider" /><h2>自用与自由模式</h2>
+      <label className="toggle-setting">
+        <span>
+          <strong>自由自用模式 (Free-Play)</strong>
+          <small>解除视口横屏限制、关闭防沉迷强制锁屏，设置页面免长按 3 秒等待，随开即用。</small>
+        </span>
+        <input
+          type="checkbox"
+          checked={parent.freePlayMode ?? false}
+          onChange={(event) => setDraft({ ...draft, parentSettings: { ...parent, freePlayMode: event.target.checked } })}
+        />
+      </label>
       <Button className="primary save-settings" onClick={() => void save()} disabled={saving}>{saving ? <RefreshCw className="spinning" /> : <Check />}{saving ? '正在保存…' : '保存设置'}</Button>{message && <p className="setting-message" role="status">{message}</p>}
     </section><div className="parent-right"><section className="progress-panel"><h2>小小学习足迹</h2><p>参与星星与学习结果分别记录。</p><div className="progress-grid">{([
       ['探索过', counts.explored, Eye], ['完整听过', counts.heard, Headphones], ['首次答对', counts.firstCorrect, Check], ['复习答对', counts.reviewCorrect, Leaf],
     ] as const).map(([label, count, Icon]) => <div className="progress-stat" key={label}><Icon /><strong>{count}<small>词</small></strong><span>{label}</span></div>)}</div><small>复习答对：首次正确后至少 24 小时，在另一题中无提示、第一次选择答对。</small>{(state.content?.manifest.stage ?? 0) >= 2 && <small>已获得 {state.stickers.length} 枚贴纸。每 5 个不同词的有效首次答对获得一枚，与参与星分别记录。</small>}<Button className="quiet" onClick={() => void exportRecords()} disabled={state.storage !== 'persistent'}><Download size={18} />导出本机学习记录</Button></section>
-      {(state.content?.manifest.stage ?? 0) >= 2 && <section className="record-panel"><h2>本机记录管理</h2><p>保留最近 90 天的作答明细，以及当前题组和最近 20 道已结束听音题所需的记录。词汇进度与贴纸长期保留。</p>
+      <section className="record-panel"><h2>本机记录与备份</h2><p>支持一键导出和导入学习记录、设置与贴纸进度，便于多设备迁移与防止数据丢失。</p>
+        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '0.75rem' }}>
+          <Button className="primary" onClick={() => void exportRecords()}><Download size={18} />导出完整数据备份</Button>
+          <Button className="quiet" disabled={importing} onClick={() => fileInputRef.current?.click()}><Upload size={18} />{importing ? '正在恢复…' : '导入恢复数据'}</Button>
+          <input ref={fileInputRef} type="file" accept=".json" style={{ display: 'none' }} onChange={(e) => void handleImportFile(e)} />
+        </div>
         <Button className="quiet" disabled={state.learningAccess !== 'writer'} onClick={() => { setRecordMessage(''); setClearing(true); }}><Trash2 size={18} />清除本机学习记录</Button>
         {recordMessage && <p className="setting-message" role="status">{recordMessage}</p>}
-      </section>}
+      </section>
       <section className="offline-panel"><div className="offline-heading"><CloudDownload /><div><h2>把小小世界带在身边</h2><p>{packText}</p></div></div><div className="download-track"><span style={{ width: `${state.pack.percent}%` }} /></div>
         {state.pack.state === 'incomplete' && <p className="offline-detail">当前可以浏览图片和卡片。语音素材就绪后，将开放听音选图及完整离线学习。</p>}
         {state.pendingContent && <p className="offline-detail">新内容已准备好，将在下一轮开始时使用。</p>}

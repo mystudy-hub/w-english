@@ -5,7 +5,7 @@ import { useAppStore } from '../app/store.ts';
 import { ForegroundUsageClock, REST_MS, type UsageAction } from '../domain/usage.ts';
 import { Button, Ollie, ParentGate } from '../components/ui.tsx';
 
-export function UsageLifecycle({ enabled, active, questionId, limitMinutes }: { enabled: boolean; active: boolean; questionId?: string; limitMinutes: 8 | 12 | 18 }) {
+export function UsageLifecycle({ enabled, active, questionId, limitMinutes }: { enabled: boolean; active: boolean; questionId?: string; limitMinutes: 0 | 8 | 12 | 18 }) {
   const clock = useRef(new ForegroundUsageClock());
   const context = useRef({ enabled, active, questionId, limitMinutes });
   useEffect(() => {

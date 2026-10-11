@@ -4,19 +4,23 @@ export type InteractionMode = 'tap' | 'drag';
 export type LearningLevel = 'L1' | 'L2' | 'L3';
 export interface ParentSettings {
   volumeCap: number;
+  playbackRate?: number;
+  slowPlaybackRate?: number;
   reducedMotion: boolean;
   guideEnabled: boolean | null;
-  screenTimeMinutes: 8 | 12 | 18;
+  screenTimeMinutes: 0 | 8 | 12 | 18;
   bedtimeMode: boolean;
   lockLevel: boolean;
   micEnabled: boolean;
+  freePlayMode?: boolean;
+  favoriteWords?: string[];
 }
 export interface Settings {
   key: 'local'; settingsVersion: 1; onboardingComplete: boolean;
   interactionMode: InteractionMode; learningLevel: LearningLevel; parentSettings: ParentSettings;
 }
 export interface UsageState {
-  key: 'local'; usageVersion: 1; cycle: number; elapsedMs: number; limitMinutes: 8 | 12 | 18;
+  key: 'local'; usageVersion: 1; cycle: number; elapsedMs: number; limitMinutes: 0 | 8 | 12 | 18;
   phase: 'learning' | 'reminder' | 'resting'; pending: boolean; pendingQuestionId?: string;
   extensionUsed: boolean; extensionLimitMs?: number; restUntil?: number; updatedAt: number;
   writerId?: string; writerSequence?: number; writerCumulativeMs?: number;

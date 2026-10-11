@@ -1,10 +1,10 @@
-import { useState, useMemo, useEffect } from 'react';
-import { ArrowLeft, BookOpen, Volume2, Search, Sparkles, Award, Layers, Star } from 'lucide-react';
+import { useState, useMemo, useEffect, useRef } from 'react';
+import { ArrowLeft, BookOpen, Volume2, Search, Sparkles, Award, Layers, Star, Turtle, Play, Square, SlidersHorizontal } from 'lucide-react';
 import { DIANFAN_WORDS, DIANFAN_LESSONS, type DianfanWord } from '../data/dianfan-data.ts';
 import { IconButton } from '../components/ui.tsx';
 import { navigate } from '../app/router.ts';
-import { audio, playEffect } from '../app/runtime.ts';
-import { useAppStore } from '../app/store.ts';
+import { audio, playEffect, toggleFavorite } from '../app/runtime.ts';
+import { useAppStore, useParentStore } from '../app/store.ts';
 
 // Global reference pool to prevent Chromium SpeechSynthesisUtterance GC bug
 const activeUtterances = new Set<SpeechSynthesisUtterance>();
@@ -18,8 +18,37 @@ if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
   window.speechSynthesis.onvoiceschanged = updateVoices;
 }
 
+export type SpeedMode = 'slow' | 'medium' | 'normal' | 'custom';
+
+export const SPEED_CONFIG: Record<
+  'slow' | 'medium' | 'normal',
+  { label: string; icon: string; wordRate: number; sentenceRate: number; desc: string }
+> = {
+  slow: {
+    label: '慢速',
+    icon: '🐢',
+    wordRate: 0.58,     // 现在的慢速改成更慢的速度：0.58x，拉长音节充分辨音
+    sentenceRate: 0.62, // 句子 0.62x 从容慢读
+    desc: '超慢精听，音素充分舒展',
+  },
+  medium: {
+    label: '较慢',       // 优化文案为“较慢”
+    icon: '🍃',
+    wordRate: 0.70,     // 较慢改成现在慢速的速度：0.70x！
+    sentenceRate: 0.74, // 句子 0.74x
+    desc: '较慢舒适，字句清晰分明',
+  },
+  normal: {
+    label: '标准',
+    icon: '⚡',
+    wordRate: 0.85,     // 标准流畅语速
+    sentenceRate: 0.88, // 自然流利
+    desc: '日常流利朗读',
+  },
+};
+
 // Robust speech utterance helper with GC protection and auto-resume
-function speakText(text: string, rate = 0.85) {
+function speakText(text: string, rate = 0.70) {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
   try {
     if (window.speechSynthesis.paused) {
@@ -29,11 +58,15 @@ function speakText(text: string, rate = 0.85) {
 
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
-    utterance.rate = rate;
+    utterance.rate = Math.max(0.5, Math.min(1.5, rate));
+    utterance.pitch = 1.02; // 稍微增添亲和自然的音高
 
     const voices = voicesCache.length ? voicesCache : window.speechSynthesis.getVoices();
     const preferredVoice = voices.find((v) => 
-      v.lang.startsWith('en') && (v.name.includes('Jenny') || v.name.includes('Aria') || v.name.includes('Natural') || v.name.includes('Google US'))
+      v.lang.startsWith('en') && (
+        v.name.includes('Jenny') || v.name.includes('Natural') || v.name.includes('Aria') || 
+        v.name.includes('Google US') || v.name.includes('Guy') || v.name.includes('Samantha')
+      )
     ) || voices.find((v) => v.lang.startsWith('en-US')) || voices.find((v) => v.lang.startsWith('en'));
 
     if (preferredVoice) utterance.voice = preferredVoice;
@@ -53,12 +86,57 @@ function speakText(text: string, rate = 0.85) {
 }
 
 export function DianfanPage() {
-  const [activeTab, setActiveTab] = useState<'lessons' | 'words' | 'quiz'>('lessons');
+  const [activeTab, setActiveTab] = useState<'lessons' | 'words' | 'favorites' | 'quiz'>('lessons');
   const [selectedLessonId, setSelectedLessonId] = useState<string>(DIANFAN_LESSONS[0]?.id || '1A-01');
   const [searchTerm, setSearchTerm] = useState('');
   const [filterType, setFilterType] = useState<'all' | 'phonics' | 'sight' | 'role'>('all');
   const [playingWord, setPlayingWord] = useState<string | null>(null);
   const [playingSentence, setPlayingSentence] = useState<string | null>(null);
+  const [isReadingAll, setIsReadingAll] = useState(false);
+
+  // 重点生词本响应式数据
+  const favorites = useParentStore((s) => s.favoriteWords ?? []);
+  const favoriteWordsList = useMemo(() => {
+    const set = new Set(favorites.map((w) => w.toLowerCase()));
+    return DIANFAN_WORDS.filter((w) => set.has(w.word.toLowerCase()));
+  }, [favorites]);
+
+  const handleToggleFavorite = async (word: string, e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    await toggleFavorite(word);
+    void playEffect('sfx#pop');
+  };
+
+  // 播放速度档位控制，默认开启“慢速”，并持久化存储
+  const [speedMode, setSpeedMode] = useState<SpeedMode>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('dianfan_speed_mode') as SpeedMode;
+      if (saved === 'custom' || (saved && saved in SPEED_CONFIG)) return saved;
+    }
+    return 'slow';
+  });
+
+  // 0.x 自定义语速状态（支持 0.45x ~ 1.20x 自由调节）
+  const [customRate, setCustomRate] = useState<number>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = parseFloat(localStorage.getItem('dianfan_custom_rate') || '');
+      if (!isNaN(saved) && saved >= 0.45 && saved <= 1.2) return saved;
+    }
+    return 0.65;
+  });
+
+  const [showSpeedPopover, setShowSpeedPopover] = useState(false);
+
+  const stopReadingAllRef = useRef(false);
+
+  // 计算当前生效的单词与句子语速
+  const currentWordRate = speedMode === 'custom' ? customRate : SPEED_CONFIG[speedMode].wordRate;
+  const currentSentenceRate = speedMode === 'custom'
+    ? Math.min(1.2, Math.round(customRate * 1.05 * 100) / 100)
+    : SPEED_CONFIG[speedMode].sentenceRate;
+  const currentSpeedLabel = speedMode === 'custom'
+    ? `自定义 ${customRate.toFixed(2)}x`
+    : `${SPEED_CONFIG[speedMode].label} (${SPEED_CONFIG[speedMode].wordRate.toFixed(2)}x)`;
 
   // Quiz state
   const [quizQuestionIndex, setQuizQuestionIndex] = useState(0);
@@ -112,39 +190,104 @@ export function DianfanPage() {
     return () => clearInterval(interval);
   }, []);
 
+  // 切换课文时停止全课连读
+  useEffect(() => {
+    stopReadingAllRef.current = true;
+    setIsReadingAll(false);
+  }, [selectedLessonId]);
+
   const content = useAppStore((state) => state.content);
 
-  const handlePlayWord = async (wordObj: DianfanWord) => {
-    if (playingWord || playingSentence) return; // 播放完成前完全忽略后续连击
+  const handleSpeedChange = (mode: SpeedMode) => {
+    setSpeedMode(mode);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('dianfan_speed_mode', mode);
+    }
+    void playEffect('sfx#pop');
+  };
+
+  const handleCustomRateChange = (val: number) => {
+    const clamped = Math.max(0.45, Math.min(1.2, Math.round(val * 100) / 100));
+    setCustomRate(clamped);
+    setSpeedMode('custom');
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('dianfan_custom_rate', String(clamped));
+      localStorage.setItem('dianfan_speed_mode', 'custom');
+    }
+  };
+
+  const handlePlayWord = async (wordObj: DianfanWord, customOverrideRate?: number) => {
+    if (playingWord || playingSentence) return;
     setPlayingWord(wordObj.word);
 
+    const rate = customOverrideRate ?? currentWordRate;
     try {
-      // 1. Check if this word exists in pre-recorded high quality audio sprites
+      // 1. 检查是否存在预录制音频
       const matchedWord = content?.catalog.words.find((w) => w.word.toLowerCase() === wordObj.word.toLowerCase());
       if (matchedWord && audio.has(matchedWord.audio.word)) {
         await audio.unlock();
-        await audio.play(matchedWord.audio.word, `dianfan:${wordObj.word}`);
+        await audio.play(matchedWord.audio.word, `dianfan:${wordObj.word}`, rate);
         return;
       }
 
-      // 2. Fallback to robust Web Speech API
-      speakText(wordObj.word);
-      await new Promise((r) => setTimeout(r, 850));
+      // 2. Web Speech API 慢速朗读
+      speakText(wordObj.word, rate);
+      // 自适应等待时长：慢速发音需要更长的保护时长，避免快速连点或提前结束状态
+      const duration = Math.round(1100 / rate);
+      await new Promise((r) => setTimeout(r, duration));
     } finally {
       setPlayingWord(null);
     }
   };
 
-  const handlePlaySentence = async (sentence: string) => {
-    if (playingWord || playingSentence) return; // 播放完成前完全忽略后续连击
+  const handlePlaySentence = async (sentence: string, customOverrideRate?: number) => {
+    if (playingWord || playingSentence) return;
     setPlayingSentence(sentence);
+    const rate = customOverrideRate ?? currentSentenceRate;
     try {
-      speakText(sentence, 0.88);
+      speakText(sentence, rate);
       const wordCount = sentence.split(/\s+/).length;
-      await new Promise((r) => setTimeout(r, Math.max(1200, wordCount * 380)));
+      const duration = Math.max(1600, Math.round(wordCount * 520 / rate));
+      await new Promise((r) => setTimeout(r, duration));
     } finally {
       setPlayingSentence(null);
     }
+  };
+
+  // 连续慢速朗读整篇课文
+  const handleToggleReadEntireLesson = async () => {
+    if (isReadingAll) {
+      stopReadingAllRef.current = true;
+      setIsReadingAll(false);
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      setPlayingSentence(null);
+      return;
+    }
+
+    stopReadingAllRef.current = false;
+    setIsReadingAll(true);
+    const rate = currentSentenceRate;
+
+    for (let i = 0; i < selectedLesson.sentences.length; i++) {
+      if (stopReadingAllRef.current) break;
+      const sent = selectedLesson.sentences[i]!;
+      setPlayingSentence(sent);
+      speakText(sent, rate);
+
+      const wordCount = sent.split(/\s+/).length;
+      const duration = Math.max(1600, Math.round(wordCount * 520 / rate));
+      await new Promise((r) => setTimeout(r, duration));
+
+      setPlayingSentence(null);
+      if (stopReadingAllRef.current) break;
+      // 句子间留白停顿，给孩子跟读缓冲时间
+      await new Promise((r) => setTimeout(r, 900));
+    }
+
+    setIsReadingAll(false);
+    setPlayingSentence(null);
   };
 
   const handleQuizAnswer = (optionWord: string) => {
@@ -157,6 +300,10 @@ export function DianfanPage() {
       void playEffect('sfx#chime_success');
     } else {
       void playEffect('sfx#pop');
+      // 答错时自动以慢速温柔播放正确单词，强化记忆
+      setTimeout(() => {
+        speakText(currentQuizItem.word, currentWordRate);
+      }, 500);
     }
   };
 
@@ -169,7 +316,7 @@ export function DianfanPage() {
   return (
     <div className="dianfan-container min-h-screen bg-[#fdfbf7] text-[#2c3e50] flex flex-col font-sans select-none">
       {/* Top Navigation */}
-      <header className="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-amber-100 px-4 py-3 flex items-center justify-between shadow-sm">
+      <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-amber-100 px-4 py-3 flex flex-wrap items-center justify-between gap-3 shadow-sm">
         <div className="flex items-center gap-3">
           <IconButton label="返回主页" onClick={() => navigate('/themes')}>
             <ArrowLeft className="w-5 h-5" />
@@ -183,40 +330,163 @@ export function DianfanPage() {
               </span>
             </div>
             <p className="text-xs text-amber-700/70 hidden sm:block">
-              42 个经典趣味小故事 · 245 个核心词汇与例句朗读
+              42 个经典趣味小故事 · 245 个核心词汇与例句慢速朗读
             </p>
           </div>
         </div>
 
-        {/* Tab switcher */}
-        <div className="flex items-center bg-amber-50 p-1 rounded-xl border border-amber-200/60 text-sm font-medium">
-          <button
-            onClick={() => setActiveTab('lessons')}
-            className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
-              activeTab === 'lessons' ? 'bg-amber-500 text-white shadow-sm font-bold' : 'text-amber-900 hover:bg-amber-100'
-            }`}
-          >
-            <BookOpen className="w-4 h-4" />
-            <span>按课文分课</span>
-          </button>
-          <button
-            onClick={() => setActiveTab('words')}
-            className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
-              activeTab === 'words' ? 'bg-amber-500 text-white shadow-sm font-bold' : 'text-amber-900 hover:bg-amber-100'
-            }`}
-          >
-            <Layers className="w-4 h-4" />
-            <span>全部词汇 (245)</span>
-          </button>
-          <button
-            onClick={() => setActiveTab('quiz')}
-            className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
-              activeTab === 'quiz' ? 'bg-amber-500 text-white shadow-sm font-bold' : 'text-amber-900 hover:bg-amber-100'
-            }`}
-          >
-            <Award className="w-4 h-4" />
-            <span>闯关小练习</span>
-          </button>
+        {/* Speed Control & Tab Switcher */}
+        <div className="flex items-center gap-2.5 flex-wrap">
+          {/* 语速选择器 */}
+          <div className="relative flex items-center bg-amber-50 p-1 rounded-xl border border-amber-200/70 text-xs font-medium shadow-inner">
+            <span className="text-amber-900/70 px-2 flex items-center gap-1 font-semibold">
+              <Turtle className="w-3.5 h-3.5 text-amber-700" />
+              <span className="hidden sm:inline">语速</span>
+            </span>
+            {(['slow', 'medium', 'normal'] as const).map((mode) => {
+              const cfg = SPEED_CONFIG[mode];
+              const isSelected = speedMode === mode;
+              return (
+                <button
+                  key={mode}
+                  onClick={() => {
+                    setShowSpeedPopover(false);
+                    handleSpeedChange(mode);
+                  }}
+                  title={cfg.desc}
+                  className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 text-xs ${
+                    isSelected
+                      ? 'bg-amber-500 text-white font-bold shadow-sm scale-[1.02]'
+                      : 'text-amber-900 hover:bg-amber-100/70'
+                  }`}
+                >
+                  <span>{cfg.icon}</span>
+                  <span>{cfg.label}</span>
+                  <span className="text-[10px] opacity-80">({cfg.wordRate}x)</span>
+                </button>
+              );
+            })}
+
+            {/* 可调 0.x 自由调节按钮 */}
+            <button
+              onClick={() => setShowSpeedPopover(!showSpeedPopover)}
+              title="自由调节 0.x 倍速"
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 text-xs ml-0.5 ${
+                speedMode === 'custom' || showSpeedPopover
+                  ? 'bg-amber-600 text-white font-bold shadow-sm'
+                  : 'text-amber-900 hover:bg-amber-100/70'
+              }`}
+            >
+              <SlidersHorizontal className="w-3 h-3" />
+              <span>{speedMode === 'custom' ? `${customRate.toFixed(2)}x` : '可调 0.x'}</span>
+            </button>
+
+            {/* 0.x 自由调节浮层 */}
+            {showSpeedPopover && (
+              <div className="absolute right-0 top-full mt-2 z-50 bg-white rounded-2xl shadow-xl border border-amber-200 p-3.5 w-72 text-amber-950 font-sans animate-in fade-in zoom-in-95">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-bold text-xs flex items-center gap-1.5 text-amber-900">
+                    <SlidersHorizontal className="w-3.5 h-3.5 text-amber-600" />
+                    <span>自定义语速 (0.x)</span>
+                  </span>
+                  <span className="text-amber-700 font-extrabold bg-amber-100 px-2 py-0.5 rounded-full text-xs">
+                    {customRate.toFixed(2)}x
+                  </span>
+                </div>
+
+                {/* 快捷 0.x 点选 */}
+                <div className="grid grid-cols-6 gap-1 mb-2.5">
+                  {[0.5, 0.6, 0.7, 0.8, 0.9, 1.0].map((rateVal) => (
+                    <button
+                      key={rateVal}
+                      onClick={() => handleCustomRateChange(rateVal)}
+                      className={`py-1 text-[11px] rounded-lg font-medium transition-all ${
+                        speedMode === 'custom' && Math.abs(customRate - rateVal) < 0.02
+                          ? 'bg-amber-500 text-white font-bold'
+                          : 'bg-amber-50 hover:bg-amber-100 text-amber-900'
+                      }`}
+                    >
+                      {rateVal.toFixed(1)}x
+                    </button>
+                  ))}
+                </div>
+
+                {/* 滑块微调 */}
+                <div className="space-y-1 mb-2">
+                  <div className="flex justify-between text-[10px] text-gray-400">
+                    <span>极慢 0.45x</span>
+                    <span>舒适 0.70x</span>
+                    <span>原速 1.10x</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0.45"
+                    max="1.10"
+                    step="0.05"
+                    value={customRate}
+                    onChange={(e) => handleCustomRateChange(Number(e.target.value))}
+                    className="w-full accent-amber-500 cursor-pointer h-2 bg-amber-100 rounded-lg appearance-none"
+                  />
+                </div>
+
+                <div className="flex items-center justify-between pt-2 border-t border-amber-100">
+                  <button
+                    onClick={() => speakText('Hello, happy reading!', customRate)}
+                    className="text-[11px] text-amber-700 hover:text-amber-900 font-semibold flex items-center gap-1"
+                  >
+                    <Volume2 className="w-3 h-3" />
+                    <span>试听当前语速</span>
+                  </button>
+                  <button
+                    onClick={() => setShowSpeedPopover(false)}
+                    className="text-[11px] bg-amber-100 hover:bg-amber-200 text-amber-900 font-bold px-2.5 py-1 rounded-lg"
+                  >
+                    完成
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Tab Switcher */}
+          <div className="flex items-center bg-amber-50 p-1 rounded-xl border border-amber-200/60 text-sm font-medium">
+            <button
+              onClick={() => setActiveTab('lessons')}
+              className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+                activeTab === 'lessons' ? 'bg-amber-500 text-white shadow-sm font-bold' : 'text-amber-900 hover:bg-amber-100'
+              }`}
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>按课文分课</span>
+            </button>
+            <button
+              onClick={() => setActiveTab('words')}
+              className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+                activeTab === 'words' ? 'bg-amber-500 text-white shadow-sm font-bold' : 'text-amber-900 hover:bg-amber-100'
+              }`}
+            >
+              <Layers className="w-4 h-4" />
+              <span>全部词汇 (245)</span>
+            </button>
+            <button
+              onClick={() => setActiveTab('favorites')}
+              className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+                activeTab === 'favorites' ? 'bg-amber-500 text-white shadow-sm font-bold' : 'text-amber-900 hover:bg-amber-100'
+              }`}
+            >
+              <Star className={`w-4 h-4 ${favoriteWordsList.length > 0 ? 'fill-amber-400 text-amber-500' : ''}`} />
+              <span>重点生词本 ({favoriteWordsList.length})</span>
+            </button>
+            <button
+              onClick={() => setActiveTab('quiz')}
+              className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+                activeTab === 'quiz' ? 'bg-amber-500 text-white shadow-sm font-bold' : 'text-amber-900 hover:bg-amber-100'
+              }`}
+            >
+              <Award className="w-4 h-4" />
+              <span>闯关小练习</span>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -273,50 +543,95 @@ export function DianfanPage() {
                   <span>Lesson {selectedLesson.id.replace('1A-', '')}</span>
                   <span>•</span>
                   <span>{selectedLesson.wordCount} 个重点单词</span>
+                  <span>•</span>
+                  <span className="bg-white/20 px-2 py-0.5 rounded-full text-xs">
+                    当前语速: {currentSpeedLabel}
+                  </span>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight mb-2">
                   {selectedLesson.title}
                 </h2>
                 <p className="text-amber-100 text-xs sm:text-sm max-w-xl">
-                  点击下方故事句子或单词卡片，练习纯正美语朗读与自然拼读拆音。
+                  点击下方故事句子或单词卡片，练习纯正慢速美语朗读与清晰拆音。
                 </p>
               </div>
 
               {/* Story Sentences */}
               <div className="bg-white rounded-2xl p-5 shadow-sm border border-amber-100">
-                <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
                   <h3 className="font-bold text-amber-950 flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-amber-500" />
                     <span>故事原文句子</span>
                   </h3>
-                  <span className="text-xs text-gray-400">点击小喇叭朗读全句</span>
+                  <div className="flex items-center gap-2">
+                    {/* 一键全课连续慢读 */}
+                    <button
+                      onClick={handleToggleReadEntireLesson}
+                      className={`text-xs px-3 py-1.5 rounded-xl font-bold flex items-center gap-1.5 transition-all shadow-sm ${
+                        isReadingAll
+                          ? 'bg-rose-500 hover:bg-rose-600 text-white animate-pulse'
+                          : 'bg-amber-100 hover:bg-amber-200 text-amber-900'
+                      }`}
+                      title={isReadingAll ? '点击停止连续朗读' : '按顺序慢读整篇课文并留出跟读空隙'}
+                    >
+                      {isReadingAll ? <Square className="w-3.5 h-3.5 fill-current" /> : <Play className="w-3.5 h-3.5 fill-current" />}
+                      <span>{isReadingAll ? '停止朗读' : '连续慢读全文'}</span>
+                    </button>
+                    <span className="text-xs text-gray-400 hidden sm:inline">点击句子朗读</span>
+                  </div>
                 </div>
                 <div className="space-y-2">
                   {selectedLesson.sentences.map((sent, idx) => (
                     <div
                       key={idx}
                       data-sfx="none"
-                      onClick={() => void handlePlaySentence(sent)}
                       className={`group p-3 rounded-xl border transition-all flex items-center justify-between cursor-pointer ${
                         playingSentence === sent
-                          ? 'bg-amber-100/80 border-amber-400 ring-2 ring-amber-300'
+                          ? 'bg-amber-100/90 border-amber-400 ring-2 ring-amber-300 shadow-sm'
                           : 'hover:bg-amber-50/70 border-transparent hover:border-amber-200'
                       }`}
                     >
-                      <span className="text-base text-gray-800 font-medium group-hover:text-amber-950">
+                      <span
+                        onClick={() => void handlePlaySentence(sent)}
+                        className="text-base text-gray-800 font-medium group-hover:text-amber-950 flex-1 pr-2"
+                      >
                         {sent}
                       </span>
-                      <button
-                        data-sfx="none"
-                        className={`w-8 h-8 rounded-full flex items-center justify-center transition-all shadow-sm shrink-0 ml-3 ${
-                          playingSentence === sent
-                            ? 'bg-amber-500 text-white animate-pulse'
-                            : 'bg-amber-100 text-amber-700 opacity-70 group-hover:opacity-100 group-hover:bg-amber-500 group-hover:text-white'
-                        }`}
-                        title="朗读句子"
-                      >
-                        <Volume2 className="w-4 h-4" />
-                      </button>
+                      <div className="flex items-center gap-1.5 shrink-0 ml-2">
+                        {/* 极慢速重听按钮 (0.52x) */}
+                        <button
+                          data-sfx="none"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            void handlePlaySentence(sent, 0.52);
+                          }}
+                          className="w-8 h-8 rounded-full flex items-center justify-center transition-all bg-amber-50 text-amber-700 hover:bg-amber-200 hover:text-amber-900"
+                          title="超慢速精听 (0.52x)"
+                        >
+                          <Turtle className="w-4 h-4" />
+                        </button>
+                        {/* 随语速播放按钮 */}
+                        <button
+                          data-sfx="none"
+                          onClick={() => void handlePlaySentence(sent)}
+                          className={`w-8 h-8 rounded-full flex items-center justify-center transition-all shadow-sm ${
+                            playingSentence === sent
+                              ? 'bg-amber-500 text-white'
+                              : 'bg-amber-100 text-amber-700 group-hover:bg-amber-500 group-hover:text-white'
+                          }`}
+                          title="按当前速度朗读"
+                        >
+                          {playingSentence === sent ? (
+                            <div className="flex items-end gap-0.5 h-3.5 px-0.5" title="正在播放">
+                              <span className="w-0.5 bg-white rounded-full animate-[pulse_0.6s_infinite_ease-in-out]" style={{ height: '70%' }} />
+                              <span className="w-0.5 bg-white rounded-full animate-[pulse_0.6s_infinite_ease-in-out_0.2s]" style={{ height: '100%' }} />
+                              <span className="w-0.5 bg-white rounded-full animate-[pulse_0.6s_infinite_ease-in-out_0.4s]" style={{ height: '50%' }} />
+                            </div>
+                          ) : (
+                            <Volume2 className="w-4 h-4" />
+                          )}
+                        </button>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -329,8 +644,8 @@ export function DianfanPage() {
                     <BookOpen className="w-4 h-4 text-amber-500" />
                     <span>本课核心词汇 ({lessonWords.length})</span>
                   </h3>
-                  <span className="text-xs text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full font-medium">
-                    点击单词听清晰发音
+                  <span className="text-xs text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full font-medium">
+                    点击听清晰发音 · 右上角🐢极慢听
                   </span>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -339,7 +654,7 @@ export function DianfanPage() {
                       key={wordObj.word}
                       data-sfx="none"
                       onClick={() => void handlePlayWord(wordObj)}
-                      className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 ${
+                      className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 relative group ${
                         playingWord === wordObj.word
                           ? 'border-amber-500 bg-amber-50 shadow-md ring-2 ring-amber-400/50 scale-[1.02]'
                           : 'border-amber-100 bg-[#fefdfb] hover:border-amber-300'
@@ -347,11 +662,36 @@ export function DianfanPage() {
                     >
                       <div className="flex items-start justify-between mb-1.5">
                         <span className="text-2xl">{wordObj.emoji}</span>
-                        <span className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${
-                          wordObj.track === 'phonics' ? 'bg-emerald-50 text-emerald-700' : 'bg-blue-50 text-blue-700'
-                        }`}>
-                          {wordObj.track === 'phonics' ? '拼读' : '高频'}
-                        </span>
+                        <div className="flex items-center gap-1">
+                          <button
+                            data-sfx="none"
+                            onClick={(e) => void handleToggleFavorite(wordObj.word, e)}
+                            className={`p-1 rounded-md transition-all ${
+                              favorites.includes(wordObj.word.toLowerCase())
+                                ? 'text-amber-500'
+                                : 'text-gray-300 hover:text-amber-400 opacity-60 group-hover:opacity-100'
+                            }`}
+                            title={favorites.includes(wordObj.word.toLowerCase()) ? '从生词本移出' : '加入重点生词本'}
+                          >
+                            <Star className="w-3.5 h-3.5" fill={favorites.includes(wordObj.word.toLowerCase()) ? 'currentColor' : 'none'} />
+                          </button>
+                          <button
+                            data-sfx="none"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              void handlePlayWord(wordObj, 0.52);
+                            }}
+                            className="p-1 rounded-md text-amber-600 hover:bg-amber-100 opacity-60 group-hover:opacity-100 transition-opacity"
+                            title="超慢速精听 (0.52x)"
+                          >
+                            <Turtle className="w-3.5 h-3.5" />
+                          </button>
+                          <span className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${
+                            wordObj.track === 'phonics' ? 'bg-emerald-50 text-emerald-700' : 'bg-blue-50 text-blue-700'
+                          }`}>
+                            {wordObj.track === 'phonics' ? '拼读' : '高频'}
+                          </span>
+                        </div>
                       </div>
                       <div>
                         <div className="font-bold text-lg text-gray-900 leading-tight">
@@ -366,7 +706,11 @@ export function DianfanPage() {
                       </div>
                       <div className="mt-2 pt-2 border-t border-amber-50 flex items-center justify-between text-[11px] text-gray-400">
                         <span>全书 {wordObj.count} 次</span>
-                        <Volume2 className="w-3.5 h-3.5 text-amber-500" />
+                        {playingWord === wordObj.word ? (
+                          <span className="text-amber-600 font-bold text-[10px] animate-pulse">朗读中</span>
+                        ) : (
+                          <Volume2 className="w-3.5 h-3.5 text-amber-500" />
+                        )}
                       </div>
                     </div>
                   ))}
@@ -437,7 +781,7 @@ export function DianfanPage() {
                   key={wordObj.word}
                   data-sfx="none"
                   onClick={() => void handlePlayWord(wordObj)}
-                  className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 ${
+                  className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 relative group ${
                     playingWord === wordObj.word
                       ? 'border-amber-500 bg-amber-50 shadow-md ring-2 ring-amber-400/50 scale-[1.02]'
                       : 'border-amber-100 bg-white hover:border-amber-300'
@@ -445,11 +789,36 @@ export function DianfanPage() {
                 >
                   <div className="flex items-start justify-between">
                     <span className="text-2xl">{wordObj.emoji}</span>
-                    <span className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${
-                      wordObj.track === 'phonics' ? 'bg-emerald-50 text-emerald-700' : 'bg-blue-50 text-blue-700'
-                    }`}>
-                      {wordObj.track === 'phonics' ? '拼读' : '高频'}
-                    </span>
+                    <div className="flex items-center gap-1">
+                      <button
+                        data-sfx="none"
+                        onClick={(e) => void handleToggleFavorite(wordObj.word, e)}
+                        className={`p-1 rounded-md transition-all ${
+                          favorites.includes(wordObj.word.toLowerCase())
+                            ? 'text-amber-500'
+                            : 'text-gray-300 hover:text-amber-400 opacity-60 group-hover:opacity-100'
+                        }`}
+                        title={favorites.includes(wordObj.word.toLowerCase()) ? '从生词本移出' : '加入重点生词本'}
+                      >
+                        <Star className="w-3.5 h-3.5" fill={favorites.includes(wordObj.word.toLowerCase()) ? 'currentColor' : 'none'} />
+                      </button>
+                      <button
+                        data-sfx="none"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          void handlePlayWord(wordObj, 0.52);
+                        }}
+                        className="p-1 rounded-md text-amber-600 hover:bg-amber-100 opacity-60 group-hover:opacity-100 transition-opacity"
+                        title="超慢速精听 (0.52x)"
+                      >
+                        <Turtle className="w-3.5 h-3.5" />
+                      </button>
+                      <span className={`text-[10px] px-1.5 py-0.5 rounded font-medium ${
+                        wordObj.track === 'phonics' ? 'bg-emerald-50 text-emerald-700' : 'bg-blue-50 text-blue-700'
+                      }`}>
+                        {wordObj.track === 'phonics' ? '拼读' : '高频'}
+                      </span>
+                    </div>
                   </div>
 
                   <div className="my-2">
@@ -466,11 +835,124 @@ export function DianfanPage() {
 
                   <div className="pt-2 border-t border-amber-50 flex items-center justify-between text-[11px] text-gray-400">
                     <span>{wordObj.lessons.length} 课出现</span>
-                    <Volume2 className="w-3.5 h-3.5 text-amber-500" />
+                    {playingWord === wordObj.word ? (
+                      <span className="text-amber-600 font-bold text-[10px] animate-pulse">朗读中</span>
+                    ) : (
+                      <Volume2 className="w-3.5 h-3.5 text-amber-500" />
+                    )}
                   </div>
                 </div>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* Tab: 重点生词本 */}
+        {activeTab === 'favorites' && (
+          <div className="space-y-4">
+            <div className="bg-white rounded-2xl p-4 shadow-sm border border-amber-100 flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600">
+                  <Star className="w-5 h-5 fill-current" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-amber-950 text-base">重点生词本</h3>
+                  <p className="text-xs text-amber-800/70">
+                    共标记了 {favoriteWordsList.length} 个难记词汇 · 集中攻克慢速精听
+                  </p>
+                </div>
+              </div>
+
+              {favoriteWordsList.length > 0 && (
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full font-medium">
+                    语速: {currentSpeedLabel}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {favoriteWordsList.length === 0 ? (
+              <div className="bg-white rounded-3xl p-10 text-center border border-amber-100 shadow-sm max-w-lg mx-auto mt-6">
+                <div className="text-4xl mb-3">⭐</div>
+                <h4 className="text-lg font-bold text-amber-950 mb-1">重点生词本还是空的</h4>
+                <p className="text-sm text-gray-500 mb-5 leading-relaxed">
+                  在“按课文分课”或“全部词汇”中，点击任意单词卡片右上角的星星，把易混淆或难记的词收藏到这里，随时集中攻克！
+                </p>
+                <button
+                  onClick={() => setActiveTab('lessons')}
+                  className="bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-sm transition-all"
+                >
+                  去课文中挑选生词
+                </button>
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                {favoriteWordsList.map((wordObj) => (
+                  <div
+                    key={wordObj.word}
+                    data-sfx="none"
+                    onClick={() => void handlePlayWord(wordObj)}
+                    className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 relative group ${
+                      playingWord === wordObj.word
+                        ? 'border-amber-500 bg-amber-50 shadow-md ring-2 ring-amber-400/50 scale-[1.02]'
+                        : 'border-amber-200 bg-[#fffdfa] hover:border-amber-400'
+                    }`}
+                  >
+                    <div className="flex items-start justify-between">
+                      <span className="text-2xl">{wordObj.emoji}</span>
+                      <div className="flex items-center gap-1">
+                        <button
+                          data-sfx="none"
+                          onClick={(e) => void handleToggleFavorite(wordObj.word, e)}
+                          className="p-1 rounded-md text-amber-500 hover:text-amber-600 transition-colors"
+                          title="从生词本移出"
+                        >
+                          <Star className="w-4 h-4 fill-current" />
+                        </button>
+                        <button
+                          data-sfx="none"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            void handlePlayWord(wordObj, 0.52);
+                          }}
+                          className="p-1 rounded-md text-amber-600 hover:bg-amber-100 opacity-60 group-hover:opacity-100 transition-opacity"
+                          title="超慢速精听 (0.52x)"
+                        >
+                          <Turtle className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="my-2">
+                      <div className="font-bold text-lg text-gray-900 leading-tight">
+                        {wordObj.word}
+                      </div>
+                      <div className="text-xs text-amber-700/80 font-mono">
+                        {wordObj.ipa}
+                      </div>
+                      <div className="text-xs text-gray-700 font-medium mt-1">
+                        {wordObj.zh}
+                      </div>
+                      {wordObj.example && (
+                        <div className="text-[11px] text-gray-400 italic mt-1 line-clamp-1">
+                          “{wordObj.example}”
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="pt-2 border-t border-amber-50 flex items-center justify-between text-[11px] text-gray-400">
+                      <span>{wordObj.lessons.length} 课出现</span>
+                      {playingWord === wordObj.word ? (
+                        <span className="text-amber-600 font-bold text-[10px] animate-pulse">朗读中</span>
+                      ) : (
+                        <Volume2 className="w-3.5 h-3.5 text-amber-500" />
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
 
@@ -495,11 +977,11 @@ export function DianfanPage() {
             </div>
 
             <button
-              onClick={() => speakText(currentQuizItem.word)}
+              onClick={() => speakText(currentQuizItem.word, currentWordRate)}
               className="inline-flex items-center gap-2 bg-amber-100 hover:bg-amber-200 text-amber-800 text-xs font-semibold px-4 py-2 rounded-full mb-6 transition-all"
             >
               <Volume2 className="w-4 h-4" />
-              <span>听发音线索</span>
+              <span>听发音线索 ({speedMode === 'custom' ? `${customRate.toFixed(2)}x` : SPEED_CONFIG[speedMode].label})</span>
             </button>
 
             {/* 4 Options Grid */}

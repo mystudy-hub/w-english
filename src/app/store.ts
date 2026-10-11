@@ -16,6 +16,7 @@ interface AppState {
   progress: WordProgress[]; guide: GuideState; session?: SessionSnapshot;
   stickers: StickerReward[];
   usage: UsageState; interactionPaused: boolean;
+  viewportBypass: boolean;
   scenePage: number; error?: string; notice?: string; muted: boolean; updateWaiting: boolean;
   sceneThemeId: string; themePages: Record<string, number>; themeProgress: Record<string, PackProgress>;
   audioRevision: number; guidePulse: number;
@@ -28,6 +29,7 @@ export const useAppStore = create<AppState>(() => ({
   progress: [], stickers: [], guide: defaultGuide(), scenePage: 0, muted: false, updateWaiting: false, audioRevision: 0, guidePulse: 0,
   sceneThemeId: 'animal_home', themePages: {}, themeProgress: {},
   usage: defaultUsage(), interactionPaused: false,
+  viewportBypass: typeof window !== 'undefined' ? localStorage.getItem('viewport_bypass') === 'true' : false,
 }));
 export function applySettings(settings: Settings) {
   useInteractionStore.setState({ mode: settings.interactionMode });

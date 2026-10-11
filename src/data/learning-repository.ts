@@ -8,10 +8,13 @@ import { createSpellingSession, placeSpellingTile, spellingPartHeard, spellingRe
 import { missingStickers } from '../domain/stickers.ts';
 import { historyRetentionPlan } from '../domain/history-retention.ts';
 import { accumulateUsage, changeUsage, defaultUsage, type UsageAction, type UsageCheckpoint } from '../domain/usage.ts';
+import { DEFAULT_PROFILE_ID, defaultProfile } from '../domain/profiles.ts';
 import type { AttemptRecord, GuideStep, Question, SessionSnapshot, Settings, WordProgress } from '../domain/models.ts';
 
 const settingsSchema = z.strictObject({
   key: z.literal('local'), settingsVersion: z.literal(1), onboardingComplete: z.boolean(),
+  // 旧记录没有这个字段，默认值把档案定位到 p_default，不需要额外回写。
+  activeProfileId: z.string().min(1).default(DEFAULT_PROFILE_ID),
   interactionMode: z.enum(['tap', 'drag']), learningLevel: z.enum(['L1', 'L2', 'L3']),
   parentSettings: z.strictObject({
     volumeCap: z.number().min(0.4).max(1),
@@ -32,12 +35,14 @@ export class LearningRepository {
   constructor(db: LearningDatabase, write: <T>(work: () => Promise<T>) => Promise<T> = (work) => work()) { this.db = db; this.write = write; }
   async initialize(): Promise<Settings> {
     await this.db.open();
-    return this.db.transaction('rw', this.db.settings, this.db.guideState, this.db.activityState, async () => {
+    return this.db.transaction('rw', this.db.settings, this.db.guideState, this.db.activityState, this.db.profiles, async () => {
       const stored = await this.db.settings.get('local');
       const settings = stored ? settingsSchema.parse(stored) : defaultSettings();
       if (!stored) await this.db.settings.add(settings);
       if (!await this.db.guideState.get('local')) await this.db.guideState.add(defaultGuide());
       if (!await this.db.activityState.get('local')) await this.db.activityState.add(defaultUsage(settings.parentSettings.screenTimeMinutes));
+      // 新库不会跑 v3 的 upgrade，所以默认档案在这里补建。
+      if (!await this.db.profiles.get(settings.activeProfileId)) await this.db.profiles.add(defaultProfile(settings.activeProfileId));
       return settings;
     });
   }

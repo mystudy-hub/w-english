@@ -16,9 +16,25 @@ export interface ParentSettings {
   favoriteWords?: string[];
 }
 export interface Settings {
-  key: 'local'; settingsVersion: 1; onboardingComplete: boolean;
+  key: 'local'; settingsVersion: 1; onboardingComplete: boolean; activeProfileId: string;
   interactionMode: InteractionMode; learningLevel: LearningLevel; parentSettings: ParentSettings;
 }
+
+// 合并 memoryApp 的多档案：drill 轨道按孩子保存目标、金币与连续天数。
+export interface Profile {
+  id: string; name: string; avatar: string; createdAt: number;
+  dailyNewTarget: number; includeNonCore: boolean; ttsRate: number;
+  coins: number; streak: number; lastStudyDay: string | null; totalReviews: number;
+}
+
+// SM-2 卡片状态 + 档案归属，主键为 [profileId+wordId]。
+export interface SrsCardState {
+  profileId: string; wordId: string; repetitions: number; ease: number; interval: number;
+  due: number; lastReviewed: number | null; reviewCount: number; lapses: number; learned: boolean;
+}
+
+// 每日学习记录，主键为 [profileId+day]。
+export interface DailyLog { profileId: string; day: string; newLearned: number; reviews: number; correct: number }
 export interface UsageState {
   key: 'local'; usageVersion: 1; cycle: number; elapsedMs: number; limitMinutes: 0 | 8 | 12 | 18;
   phase: 'learning' | 'reminder' | 'resting'; pending: boolean; pendingQuestionId?: string;

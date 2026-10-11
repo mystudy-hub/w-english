@@ -9,8 +9,10 @@ export const LEVELS = {
   L2: { optionCount: 4, timeLimitMs: null, phonicsStage: 2, definition: 'en_young', label: '拼合' },
   L3: { optionCount: 4, timeLimitMs: 15_000, phonicsStage: 4, definition: 'en_older', label: '进阶' },
 } as const;
+import { DEFAULT_PROFILE_ID } from './profiles.ts';
+
 export function defaultSettings(): Settings {
-  return { key: 'local', settingsVersion: 1, onboardingComplete: false, interactionMode: 'tap', learningLevel: 'L1',
+  return { key: 'local', settingsVersion: 1, onboardingComplete: false, activeProfileId: DEFAULT_PROFILE_ID, interactionMode: 'tap', learningLevel: 'L1',
     parentSettings: { volumeCap: 0.7, playbackRate: 0.85, slowPlaybackRate: 0.60, reducedMotion: false, guideEnabled: null, screenTimeMinutes: 8, bedtimeMode: false, lockLevel: false, micEnabled: false, freePlayMode: false, favoriteWords: [] } };
 }
 export function configSnapshot(mode: InteractionMode, level: LearningLevel): ConfigSnapshot {

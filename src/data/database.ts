@@ -66,8 +66,8 @@ export class LearningDatabase extends Dexie {
   contentPacks!: EntityTable<ContentPackRecord, 'id'>;
   activityState!: EntityTable<UsageState, 'key'>;
   profiles!: EntityTable<Profile, 'id'>;
-  srsProgress!: EntityTable<SrsCardState, 'profileId'>;
-  dailyLogs!: EntityTable<DailyLog, 'profileId'>;
+  srsProgress!: Table<SrsCardState, [string, string]>;
+  dailyLogs!: Table<DailyLog, [string, string]>;
   constructor(name = 'w-english') {
     super(name, { autoOpen: false, indexedDB: guardedFactory(Dexie.dependencies.indexedDB) });
     this.version(1).stores(VERSION_ONE_STORES);

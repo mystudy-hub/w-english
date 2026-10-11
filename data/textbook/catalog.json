@@ -2,6 +2,15 @@
   "schemaVersion": 1,
   "bookId": "yilin-4a-2024",
   "units": [
-    { "unitId": "tb4a_u2", "config": "data/textbook/yilin4a_u2.json", "words": "data/textbook/yilin4a_u2_words.json" }
+    {
+      "unitId": "tb4a_u1",
+      "config": "data/textbook/yilin4a_u1.json",
+      "words": "data/textbook/yilin4a_u1_words.json"
+    },
+    {
+      "unitId": "tb4a_u2",
+      "config": "data/textbook/yilin4a_u2.json",
+      "words": "data/textbook/yilin4a_u2_words.json"
+    }
   ]
 }

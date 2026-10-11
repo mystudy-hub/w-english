@@ -1,0 +1,2282 @@
+[
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_101",
+    "kind": "word",
+    "word": "subject",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "u",
+      "b",
+      "j",
+      "e",
+      "c",
+      "t"
+    ],
+    "syllables": [
+      "subject"
+    ],
+    "ipa": "/ˈsʌbdʒɪkt/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u1#p_s"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u1#p_u"
+      },
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u1#p_b"
+      },
+      {
+        "letters": "j",
+        "phonemes": [
+          "dʒ"
+        ],
+        "audio": "tb4a_u1#p_j"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u1#p_e"
+      },
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u1#p_c"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u1#p_t"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "ʌ",
+      "b",
+      "dʒ",
+      "ɪ",
+      "k",
+      "t"
+    ],
+    "definition": {
+      "zh": "学科，科目"
+    },
+    "example": {
+      "en": "I like this subject.",
+      "zh": "我喜欢这门学科。",
+      "audio": "tb4a_u1#subject_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#subject",
+      "wordSlow": "tb4a_u1#subject_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📘"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_102",
+    "kind": "word",
+    "word": "Chinese",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "c",
+      "h",
+      "i",
+      "n",
+      "e",
+      "s",
+      "e"
+    ],
+    "syllables": [
+      "Chinese"
+    ],
+    "ipa": "/ˌtʃaɪˈniːz/",
+    "graphemes": [
+      {
+        "letters": "ch",
+        "phonemes": [
+          "tʃ"
+        ],
+        "audio": "tb4a_u1#p_ch"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "tb4a_u1#p_i"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u1#p_n"
+      },
+      {
+        "letters": "ese",
+        "phonemes": [
+          "iː",
+          "z"
+        ],
+        "audio": "tb4a_u1#p_ese"
+      }
+    ],
+    "phonemes": [
+      "tʃ",
+      "aɪ",
+      "n",
+      "iː",
+      "z"
+    ],
+    "definition": {
+      "zh": "语文（课）；中国的"
+    },
+    "example": {
+      "en": "We have Chinese on Monday.",
+      "zh": "我们周一有语文课。",
+      "audio": "tb4a_u1#chinese_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#chinese",
+      "wordSlow": "tb4a_u1#chinese_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📕"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_103",
+    "kind": "word",
+    "word": "English",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "e",
+      "n",
+      "g",
+      "l",
+      "i",
+      "s",
+      "h"
+    ],
+    "syllables": [
+      "English"
+    ],
+    "ipa": "/ˈɪŋɡlɪʃ/",
+    "graphemes": [
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u1#p_e"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u1#p_n"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "tb4a_u1#p_g"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u1#p_l"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u1#p_i"
+      },
+      {
+        "letters": "sh",
+        "phonemes": [
+          "ʃ"
+        ],
+        "audio": "tb4a_u1#p_sh"
+      }
+    ],
+    "phonemes": [
+      "ɪ",
+      "n",
+      "g",
+      "l",
+      "ɪ",
+      "ʃ"
+    ],
+    "definition": {
+      "zh": "英语（课）；英语的"
+    },
+    "example": {
+      "en": "I like English.",
+      "zh": "我喜欢英语。",
+      "audio": "tb4a_u1#english_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#english",
+      "wordSlow": "tb4a_u1#english_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔤"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_104",
+    "kind": "word",
+    "word": "Maths",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "m",
+      "a",
+      "t",
+      "h",
+      "s"
+    ],
+    "syllables": [
+      "Maths"
+    ],
+    "ipa": "/mæθs/",
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u1#p_m"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "tb4a_u1#p_a"
+      },
+      {
+        "letters": "th",
+        "phonemes": [
+          "θ"
+        ],
+        "audio": "tb4a_u1#p_th"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u1#p_s"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "æ",
+      "θ",
+      "s"
+    ],
+    "definition": {
+      "zh": "数学（课）"
+    },
+    "example": {
+      "en": "Maths is fun.",
+      "zh": "数学很有趣。",
+      "audio": "tb4a_u1#maths_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#maths",
+      "wordSlow": "tb4a_u1#maths_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "➗"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_105",
+    "kind": "word",
+    "word": "PE",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "p",
+      "e"
+    ],
+    "syllables": [
+      "PE"
+    ],
+    "ipa": "/ˌpiːˈiː/",
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u1#p_p"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "tb4a_u1#p_e"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "iː"
+    ],
+    "definition": {
+      "zh": "体育（课）"
+    },
+    "example": {
+      "en": "We have PE today.",
+      "zh": "我们今天有体育课。",
+      "audio": "tb4a_u1#pe_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#pe",
+      "wordSlow": "tb4a_u1#pe_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🤸"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_106",
+    "kind": "word",
+    "word": "Art",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "a",
+      "r",
+      "t"
+    ],
+    "syllables": [
+      "Art"
+    ],
+    "ipa": "/ɑːt/",
+    "graphemes": [
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɑː"
+        ],
+        "audio": "tb4a_u1#p_a"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u1#p_r"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u1#p_t"
+      }
+    ],
+    "phonemes": [
+      "ɑː",
+      "r",
+      "t"
+    ],
+    "definition": {
+      "zh": "美术（课）"
+    },
+    "example": {
+      "en": "I like Art.",
+      "zh": "我喜欢美术。",
+      "audio": "tb4a_u1#art_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#art",
+      "wordSlow": "tb4a_u1#art_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🎨"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_107",
+    "kind": "word",
+    "word": "Science",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "c",
+      "i",
+      "e",
+      "n",
+      "c",
+      "e"
+    ],
+    "syllables": [
+      "Science"
+    ],
+    "ipa": "/ˈsaɪəns/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u1#p_s"
+      },
+      {
+        "letters": "ci",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "tb4a_u1#p_ci"
+      },
+      {
+        "letters": "ence",
+        "phonemes": [
+          "ə",
+          "n",
+          "s"
+        ],
+        "audio": "tb4a_u1#p_ence"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "aɪ",
+      "ə",
+      "n",
+      "s"
+    ],
+    "definition": {
+      "zh": "科学（课）"
+    },
+    "example": {
+      "en": "Science is interesting.",
+      "zh": "科学很有趣。",
+      "audio": "tb4a_u1#science_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#science",
+      "wordSlow": "tb4a_u1#science_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔬"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_108",
+    "kind": "word",
+    "word": "IT",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": false
+    },
+    "spelling": [
+      "i",
+      "t"
+    ],
+    "syllables": [
+      "IT"
+    ],
+    "ipa": "/ˌaɪˈtiː/",
+    "graphemes": [
+      {
+        "letters": "i",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "tb4a_u1#p_i"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t",
+          "iː"
+        ],
+        "audio": "tb4a_u1#p_t"
+      }
+    ],
+    "phonemes": [
+      "aɪ",
+      "t",
+      "iː"
+    ],
+    "definition": {
+      "zh": "信息科技（课）"
+    },
+    "example": {
+      "en": "We have IT on Friday.",
+      "zh": "我们周五有信息科技课。",
+      "audio": "tb4a_u1#it_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#it",
+      "wordSlow": "tb4a_u1#it_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "💻"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_109",
+    "kind": "word",
+    "word": "Music",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "m",
+      "u",
+      "s",
+      "i",
+      "c"
+    ],
+    "syllables": [
+      "Music"
+    ],
+    "ipa": "/ˈmjuːzɪk/",
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u1#p_m"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "j",
+          "uː"
+        ],
+        "audio": "tb4a_u1#p_u"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "z"
+        ],
+        "audio": "tb4a_u1#p_s"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u1#p_i"
+      },
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u1#p_c"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "j",
+      "uː",
+      "z",
+      "ɪ",
+      "k"
+    ],
+    "definition": {
+      "zh": "音乐（课）"
+    },
+    "example": {
+      "en": "I like Music.",
+      "zh": "我喜欢音乐。",
+      "audio": "tb4a_u1#music_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#music",
+      "wordSlow": "tb4a_u1#music_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🎵"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_110",
+    "kind": "word",
+    "word": "best",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "b",
+      "e",
+      "s",
+      "t"
+    ],
+    "syllables": [
+      "best"
+    ],
+    "ipa": "/best/",
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u1#p_b"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u1#p_e"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u1#p_s"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u1#p_t"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɛ",
+      "s",
+      "t"
+    ],
+    "definition": {
+      "zh": "最，最高程度地"
+    },
+    "example": {
+      "en": "Football is the best.",
+      "zh": "足球是最棒的。",
+      "audio": "tb4a_u1#best_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#best",
+      "wordSlow": "tb4a_u1#best_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏆"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_111",
+    "kind": "word",
+    "word": "also",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "a",
+      "l",
+      "s",
+      "o"
+    ],
+    "syllables": [
+      "also"
+    ],
+    "ipa": "/ˈɔːlsəʊ/",
+    "graphemes": [
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɔː"
+        ],
+        "audio": "tb4a_u1#p_a"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u1#p_l"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u1#p_s"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "oʊ"
+        ],
+        "audio": "tb4a_u1#p_o"
+      }
+    ],
+    "phonemes": [
+      "ɔː",
+      "l",
+      "s",
+      "oʊ"
+    ],
+    "definition": {
+      "zh": "也"
+    },
+    "example": {
+      "en": "I also like Music.",
+      "zh": "我也喜欢音乐。",
+      "audio": "tb4a_u1#also_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#also",
+      "wordSlow": "tb4a_u1#also_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "➕"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_112",
+    "kind": "phrase",
+    "word": "It's time for ...",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "It's",
+      "time",
+      "for"
+    ],
+    "syllables": [
+      "It's",
+      "time",
+      "for"
+    ],
+    "ipa": "/ɪts taɪm fɔː/",
+    "graphemes": [
+      {
+        "letters": "its",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "time",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "for",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "是……的时候了。"
+    },
+    "example": {
+      "en": "It is time for English.",
+      "zh": "到上英语课的时间了。",
+      "audio": "tb4a_u1#it_s_time_for_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#it_s_time_for",
+      "wordSlow": "tb4a_u1#it_s_time_for_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⏰"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_113",
+    "kind": "word",
+    "word": "mouse",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "m",
+      "o",
+      "u",
+      "s",
+      "e"
+    ],
+    "syllables": [
+      "mouse"
+    ],
+    "ipa": "/maʊs/",
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u1#p_m"
+      },
+      {
+        "letters": "ou",
+        "phonemes": [
+          "aʊ"
+        ],
+        "audio": "tb4a_u1#p_ou"
+      },
+      {
+        "letters": "se",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u1#p_se"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "aʊ",
+      "s"
+    ],
+    "definition": {
+      "zh": "鼠标；老鼠"
+    },
+    "example": {
+      "en": "This is my mouse.",
+      "zh": "这是我的鼠标。",
+      "audio": "tb4a_u1#mouse_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#mouse",
+      "wordSlow": "tb4a_u1#mouse_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🖱️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_114",
+    "kind": "phrase",
+    "word": "Welcome back to ...",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "Welcome",
+      "back",
+      "to"
+    ],
+    "syllables": [
+      "Welcome",
+      "back",
+      "to"
+    ],
+    "ipa": "/ˈwelkəm bæk tə/",
+    "graphemes": [
+      {
+        "letters": "welcome",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "back",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "to",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "欢迎回到……"
+    },
+    "example": {
+      "en": "Welcome back to school!",
+      "zh": "欢迎回到学校！",
+      "audio": "tb4a_u1#welcome_back_to_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#welcome_back_to",
+      "wordSlow": "tb4a_u1#welcome_back_to_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏫"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_115",
+    "kind": "word",
+    "word": "new",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "n",
+      "e",
+      "w"
+    ],
+    "syllables": [
+      "new"
+    ],
+    "ipa": "/njuː/",
+    "graphemes": [
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u1#p_n"
+      },
+      {
+        "letters": "ew",
+        "phonemes": [
+          "j",
+          "uː"
+        ],
+        "audio": "tb4a_u1#p_ew"
+      }
+    ],
+    "phonemes": [
+      "n",
+      "j",
+      "uː"
+    ],
+    "definition": {
+      "zh": "新的"
+    },
+    "example": {
+      "en": "This is my new timetable.",
+      "zh": "这是我的新课程表。",
+      "audio": "tb4a_u1#new_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#new",
+      "wordSlow": "tb4a_u1#new_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "✨"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_116",
+    "kind": "word",
+    "word": "timetable",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": false
+    },
+    "spelling": [
+      "t",
+      "i",
+      "m",
+      "e",
+      "t",
+      "a",
+      "b",
+      "l",
+      "e"
+    ],
+    "syllables": [
+      "timetable"
+    ],
+    "ipa": "/ˈtaɪmteɪbl/",
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u1#p_t"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "tb4a_u1#p_i"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u1#p_m"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u1#p_t"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u1#p_a"
+      },
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u1#p_b"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u1#p_l"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [
+      "t",
+      "aɪ",
+      "m",
+      "t",
+      "eɪ",
+      "b",
+      "l"
+    ],
+    "definition": {
+      "zh": "课程表；时间表"
+    },
+    "example": {
+      "en": "This is my new timetable.",
+      "zh": "这是我的新课程表。",
+      "audio": "tb4a_u1#timetable_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#timetable",
+      "wordSlow": "tb4a_u1#timetable_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🗓️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_117",
+    "kind": "phrase",
+    "word": "be good at",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "be",
+      "good",
+      "at"
+    ],
+    "syllables": [
+      "be",
+      "good",
+      "at"
+    ],
+    "ipa": "/biː ɡʊd æt/",
+    "graphemes": [
+      {
+        "letters": "be",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "good",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "at",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "擅长"
+    },
+    "example": {
+      "en": "I am good at Maths.",
+      "zh": "我擅长数学。",
+      "audio": "tb4a_u1#be_good_at_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#be_good_at",
+      "wordSlow": "tb4a_u1#be_good_at_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌟"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_118",
+    "kind": "word",
+    "word": "number",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": false
+    },
+    "spelling": [
+      "n",
+      "u",
+      "m",
+      "b",
+      "e",
+      "r"
+    ],
+    "syllables": [
+      "number"
+    ],
+    "ipa": "/ˈnʌmbə(r)/",
+    "graphemes": [
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u1#p_n"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u1#p_u"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u1#p_m"
+      },
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u1#p_b"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u1#p_e"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u1#p_r"
+      }
+    ],
+    "phonemes": [
+      "n",
+      "ʌ",
+      "m",
+      "b",
+      "ə",
+      "r"
+    ],
+    "definition": {
+      "zh": "数字"
+    },
+    "example": {
+      "en": "Six is my favourite number.",
+      "zh": "六是我最喜欢的数字。",
+      "audio": "tb4a_u1#number_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#number",
+      "wordSlow": "tb4a_u1#number_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔢"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_119",
+    "kind": "word",
+    "word": "interesting",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "i",
+      "n",
+      "t",
+      "e",
+      "r",
+      "e",
+      "s",
+      "t",
+      "i",
+      "n",
+      "g"
+    ],
+    "syllables": [
+      "interesting"
+    ],
+    "ipa": "/ˈɪntrəstɪŋ/",
+    "graphemes": [
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u1#p_i"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u1#p_n"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u1#p_t"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u1#p_e"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u1#p_r"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u1#p_e"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u1#p_s"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u1#p_t"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u1#p_i"
+      },
+      {
+        "letters": "ng",
+        "phonemes": [
+          "ŋ"
+        ],
+        "audio": "tb4a_u1#p_ng"
+      }
+    ],
+    "phonemes": [
+      "ɪ",
+      "n",
+      "t",
+      "ə",
+      "r",
+      "ɪ",
+      "s",
+      "t",
+      "ɪ",
+      "ŋ"
+    ],
+    "definition": {
+      "zh": "有趣的，有吸引力的"
+    },
+    "example": {
+      "en": "This story is interesting.",
+      "zh": "这个故事很有趣。",
+      "audio": "tb4a_u1#interesting_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#interesting",
+      "wordSlow": "tb4a_u1#interesting_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🤩"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_120",
+    "kind": "phrase",
+    "word": "learn about",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "learn",
+      "about"
+    ],
+    "syllables": [
+      "learn",
+      "about"
+    ],
+    "ipa": "/lɜːn əˈbaʊt/",
+    "graphemes": [
+      {
+        "letters": "learn",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "about",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "了解"
+    },
+    "example": {
+      "en": "We learn about the UK.",
+      "zh": "我们了解英国。",
+      "audio": "tb4a_u1#learn_about_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#learn_about",
+      "wordSlow": "tb4a_u1#learn_about_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌍"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_121",
+    "kind": "word",
+    "word": "culture",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": false
+    },
+    "spelling": [
+      "c",
+      "u",
+      "l",
+      "t",
+      "u",
+      "r",
+      "e"
+    ],
+    "syllables": [
+      "culture"
+    ],
+    "ipa": "/ˈkʌltʃə(r)/",
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u1#p_c"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u1#p_u"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u1#p_l"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u1#p_t"
+      },
+      {
+        "letters": "ure",
+        "phonemes": [
+          "ʃ",
+          "ə"
+        ],
+        "audio": "tb4a_u1#p_ure"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "ʌ",
+      "l",
+      "t",
+      "ʃ",
+      "ə"
+    ],
+    "definition": {
+      "zh": "文化，文明"
+    },
+    "example": {
+      "en": "I learn about Chinese culture.",
+      "zh": "我了解中国文化。",
+      "audio": "tb4a_u1#culture_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#culture",
+      "wordSlow": "tb4a_u1#culture_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏛️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_122",
+    "kind": "word",
+    "word": "read",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "r",
+      "e",
+      "a",
+      "d"
+    ],
+    "syllables": [
+      "read"
+    ],
+    "ipa": "/riːd/",
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u1#p_r"
+      },
+      {
+        "letters": "ea",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "tb4a_u1#p_ea"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u1#p_d"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "iː",
+      "d"
+    ],
+    "definition": {
+      "zh": "阅读"
+    },
+    "example": {
+      "en": "I like to read stories.",
+      "zh": "我喜欢读故事。",
+      "audio": "tb4a_u1#read_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#read",
+      "wordSlow": "tb4a_u1#read_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📖"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_123",
+    "kind": "word",
+    "word": "story",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "t",
+      "o",
+      "r",
+      "y"
+    ],
+    "syllables": [
+      "story"
+    ],
+    "ipa": "/ˈstɔːri/",
+    "graphemes": [
+      {
+        "letters": "st",
+        "phonemes": [
+          "s",
+          "t"
+        ],
+        "audio": "tb4a_u1#p_st"
+      },
+      {
+        "letters": "or",
+        "phonemes": [
+          "ɔː"
+        ],
+        "audio": "tb4a_u1#p_or"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u1#p_y"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "t",
+      "ɔː",
+      "i"
+    ],
+    "definition": {
+      "zh": "故事"
+    },
+    "example": {
+      "en": "This story is fun.",
+      "zh": "这个故事很有趣。",
+      "audio": "tb4a_u1#story_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#story",
+      "wordSlow": "tb4a_u1#story_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📚"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_124",
+    "kind": "word",
+    "word": "all",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "pron.",
+      "core": true
+    },
+    "spelling": [
+      "a",
+      "l",
+      "l"
+    ],
+    "syllables": [
+      "all"
+    ],
+    "ipa": "/ɔːl/",
+    "graphemes": [
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɔː"
+        ],
+        "audio": "tb4a_u1#p_a"
+      },
+      {
+        "letters": "ll",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u1#p_ll"
+      }
+    ],
+    "phonemes": [
+      "ɔː",
+      "l"
+    ],
+    "definition": {
+      "zh": "全部，都"
+    },
+    "example": {
+      "en": "We all like sport.",
+      "zh": "我们都喜欢运动。",
+      "audio": "tb4a_u1#all_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#all",
+      "wordSlow": "tb4a_u1#all_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "👪"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_125",
+    "kind": "phrase",
+    "word": "sports ground",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "sports",
+      "ground"
+    ],
+    "syllables": [
+      "sports",
+      "ground"
+    ],
+    "ipa": "/spɔːts ɡraʊnd/",
+    "graphemes": [
+      {
+        "letters": "sports",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "ground",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "操场"
+    },
+    "example": {
+      "en": "We play on the sports ground.",
+      "zh": "我们在操场上玩。",
+      "audio": "tb4a_u1#sports_ground_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#sports_ground",
+      "wordSlow": "tb4a_u1#sports_ground_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏃"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_126",
+    "kind": "phrase",
+    "word": "Ethics and the Rule of Law",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "proper",
+      "core": false
+    },
+    "spelling": [
+      "Ethics",
+      "and",
+      "the",
+      "Rule",
+      "of",
+      "Law"
+    ],
+    "syllables": [
+      "Ethics",
+      "and",
+      "the",
+      "Rule",
+      "of",
+      "Law"
+    ],
+    "ipa": "/ˈeθɪks ənd ðə ruːl əv lɔː/",
+    "graphemes": [
+      {
+        "letters": "ethics",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "and",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "the",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "rule",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "of",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "law",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "道德与法治（课）"
+    },
+    "example": {
+      "en": "We like Ethics and the Rule of Law.",
+      "zh": "我们喜欢道德与法治课。",
+      "audio": "tb4a_u1#ethics_and_the_rule_of_law_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#ethics_and_the_rule_of_law",
+      "wordSlow": "tb4a_u1#ethics_and_the_rule_of_law_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⚖️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_127",
+    "kind": "word",
+    "word": "Labour",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "proper",
+      "core": false
+    },
+    "spelling": [
+      "l",
+      "a",
+      "b",
+      "o",
+      "u",
+      "r"
+    ],
+    "syllables": [
+      "Labour"
+    ],
+    "ipa": "/ˈleɪbə(r)/",
+    "graphemes": [
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u1#p_l"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u1#p_a"
+      },
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u1#p_b"
+      },
+      {
+        "letters": "our",
+        "phonemes": [
+          "ə",
+          "r"
+        ],
+        "audio": "tb4a_u1#p_our"
+      }
+    ],
+    "phonemes": [
+      "l",
+      "eɪ",
+      "b",
+      "ə",
+      "r"
+    ],
+    "definition": {
+      "zh": "劳动（课）"
+    },
+    "example": {
+      "en": "Labour is on Monday.",
+      "zh": "劳动课在周一。",
+      "audio": "tb4a_u1#labour_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#labour",
+      "wordSlow": "tb4a_u1#labour_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🧹"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_128",
+    "kind": "phrase",
+    "word": "the UK",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "proper",
+      "core": false
+    },
+    "spelling": [
+      "the",
+      "UK"
+    ],
+    "syllables": [
+      "the",
+      "UK"
+    ],
+    "ipa": "/ðə ˌjuːˈkeɪ/",
+    "graphemes": [
+      {
+        "letters": "the",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "uk",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "英国"
+    },
+    "example": {
+      "en": "I learn about the UK.",
+      "zh": "我了解英国。",
+      "audio": "tb4a_u1#the_uk_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#the_uk",
+      "wordSlow": "tb4a_u1#the_uk_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🇬🇧"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_129",
+    "kind": "word",
+    "word": "Daniel",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 1,
+      "pos": "proper",
+      "core": false
+    },
+    "spelling": [
+      "d",
+      "a",
+      "n",
+      "i",
+      "e",
+      "l"
+    ],
+    "syllables": [
+      "Daniel"
+    ],
+    "ipa": "/ˈdænjəl/",
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u1#p_d"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "tb4a_u1#p_a"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u1#p_n"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "j"
+        ],
+        "audio": "tb4a_u1#p_i"
+      },
+      {
+        "letters": "el",
+        "phonemes": [
+          "ə",
+          "l"
+        ],
+        "audio": "tb4a_u1#p_el"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "æ",
+      "n",
+      "j",
+      "ə",
+      "l"
+    ],
+    "definition": {
+      "zh": "丹尼尔（人名）"
+    },
+    "example": {
+      "en": "Daniel is my friend.",
+      "zh": "丹尼尔是我的朋友。",
+      "audio": "tb4a_u1#daniel_example"
+    },
+    "audio": {
+      "word": "tb4a_u1#daniel",
+      "wordSlow": "tb4a_u1#daniel_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "👦"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  }
+]

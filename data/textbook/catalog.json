@@ -11,6 +11,16 @@
       "unitId": "tb4a_u2",
       "config": "data/textbook/yilin4a_u2.json",
       "words": "data/textbook/yilin4a_u2_words.json"
+    },
+    {
+      "unitId": "tb4a_u3",
+      "config": "data/textbook/yilin4a_u3.json",
+      "words": "data/textbook/yilin4a_u3_words.json"
+    },
+    {
+      "unitId": "tb4a_u4",
+      "config": "data/textbook/yilin4a_u4.json",
+      "words": "data/textbook/yilin4a_u4_words.json"
     }
   ]
 }

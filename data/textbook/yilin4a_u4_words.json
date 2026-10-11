@@ -1,0 +1,1079 @@
+[
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_401",
+    "kind": "word",
+    "word": "play",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "p",
+      "l",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "play"
+    ],
+    "ipa": "/pleɪ/",
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u4#p_p"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u4#p_l"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u4#p_ay"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "l",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "打（球），踢（球）"
+    },
+    "example": {
+      "en": "I play football.",
+      "zh": "我踢足球。",
+      "audio": "tb4a_u4#play_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#play",
+      "wordSlow": "tb4a_u4#play_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⚽"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_402",
+    "kind": "word",
+    "word": "football",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "f",
+      "o",
+      "o",
+      "t",
+      "b",
+      "a",
+      "l",
+      "l"
+    ],
+    "syllables": [
+      "football"
+    ],
+    "ipa": "/ˈfʊtbɔːl/",
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "tb4a_u4#p_f"
+      },
+      {
+        "letters": "oo",
+        "phonemes": [
+          "ʊ"
+        ],
+        "audio": "tb4a_u4#p_oo"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u4#p_t"
+      },
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u4#p_b"
+      },
+      {
+        "letters": "all",
+        "phonemes": [
+          "ɔː",
+          "l"
+        ],
+        "audio": "tb4a_u4#p_all"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "ʊ",
+      "t",
+      "b",
+      "ɔː",
+      "l"
+    ],
+    "definition": {
+      "zh": "足球运动；足球"
+    },
+    "example": {
+      "en": "I like football.",
+      "zh": "我喜欢足球。",
+      "audio": "tb4a_u4#football_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#football",
+      "wordSlow": "tb4a_u4#football_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⚽"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_403",
+    "kind": "word",
+    "word": "ping-pong",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "p",
+      "i",
+      "n",
+      "g",
+      "p",
+      "o",
+      "n",
+      "g"
+    ],
+    "syllables": [
+      "ping-pong"
+    ],
+    "ipa": "/ˈpɪŋ pɒŋ/",
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u4#p_p"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u4#p_i"
+      },
+      {
+        "letters": "ng",
+        "phonemes": [
+          "ŋ"
+        ],
+        "audio": "tb4a_u4#p_ng"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u4#p_p"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɒ"
+        ],
+        "audio": "tb4a_u4#p_o"
+      },
+      {
+        "letters": "ng",
+        "phonemes": [
+          "ŋ"
+        ],
+        "audio": "tb4a_u4#p_ng"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɪ",
+      "ŋ",
+      "p",
+      "ɒ",
+      "ŋ"
+    ],
+    "definition": {
+      "zh": "乒乓球运动"
+    },
+    "example": {
+      "en": "I play ping-pong.",
+      "zh": "我打乒乓球。",
+      "audio": "tb4a_u4#ping_pong_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#ping_pong",
+      "wordSlow": "tb4a_u4#ping_pong_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏓"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_404",
+    "kind": "word",
+    "word": "basketball",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "b",
+      "a",
+      "s",
+      "k",
+      "e",
+      "t",
+      "b",
+      "a",
+      "l",
+      "l"
+    ],
+    "syllables": [
+      "basketball"
+    ],
+    "ipa": "/ˈbɑːskɪtbɔːl/",
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u4#p_b"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɑː"
+        ],
+        "audio": "tb4a_u4#p_a"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u4#p_s"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u4#p_k"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u4#p_e"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u4#p_t"
+      },
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u4#p_b"
+      },
+      {
+        "letters": "all",
+        "phonemes": [
+          "ɔː",
+          "l"
+        ],
+        "audio": "tb4a_u4#p_all"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɑː",
+      "s",
+      "k",
+      "ɪ",
+      "t",
+      "b",
+      "ɔː",
+      "l"
+    ],
+    "definition": {
+      "zh": "篮球运动；篮球"
+    },
+    "example": {
+      "en": "I play basketball after school.",
+      "zh": "我放学后打篮球。",
+      "audio": "tb4a_u4#basketball_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#basketball",
+      "wordSlow": "tb4a_u4#basketball_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏀"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_405",
+    "kind": "word",
+    "word": "great",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "g",
+      "r",
+      "e",
+      "a",
+      "t"
+    ],
+    "syllables": [
+      "great"
+    ],
+    "ipa": "/ɡreɪt/",
+    "graphemes": [
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "tb4a_u4#p_g"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u4#p_r"
+      },
+      {
+        "letters": "ea",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u4#p_ea"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u4#p_t"
+      }
+    ],
+    "phonemes": [
+      "g",
+      "r",
+      "eɪ",
+      "t"
+    ],
+    "definition": {
+      "zh": "非常的"
+    },
+    "example": {
+      "en": "You are great!",
+      "zh": "你太棒了！",
+      "audio": "tb4a_u4#great_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#great",
+      "wordSlow": "tb4a_u4#great_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🎉"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_406",
+    "kind": "word",
+    "word": "well",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "e",
+      "l",
+      "l"
+    ],
+    "syllables": [
+      "well"
+    ],
+    "ipa": "/wel/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u4#p_w"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u4#p_e"
+      },
+      {
+        "letters": "ll",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u4#p_ll"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɛ",
+      "l"
+    ],
+    "definition": {
+      "zh": "好"
+    },
+    "example": {
+      "en": "You swim well.",
+      "zh": "你游得很好。",
+      "audio": "tb4a_u4#well_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#well",
+      "wordSlow": "tb4a_u4#well_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "👍"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_407",
+    "kind": "word",
+    "word": "swimming",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "w",
+      "i",
+      "m",
+      "m",
+      "i",
+      "n",
+      "g"
+    ],
+    "syllables": [
+      "swimming"
+    ],
+    "ipa": "/ˈswɪmɪŋ/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u4#p_s"
+      },
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u4#p_w"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u4#p_i"
+      },
+      {
+        "letters": "mm",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u4#p_mm"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u4#p_i"
+      },
+      {
+        "letters": "ng",
+        "phonemes": [
+          "ŋ"
+        ],
+        "audio": "tb4a_u4#p_ng"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "w",
+      "ɪ",
+      "m",
+      "ɪ",
+      "ŋ"
+    ],
+    "definition": {
+      "zh": "游泳"
+    },
+    "example": {
+      "en": "I like swimming.",
+      "zh": "我喜欢游泳。",
+      "audio": "tb4a_u4#swimming_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#swimming",
+      "wordSlow": "tb4a_u4#swimming_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏊"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_408",
+    "kind": "word",
+    "word": "so",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "o"
+    ],
+    "syllables": [
+      "so"
+    ],
+    "ipa": "/səʊ/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u4#p_s"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "oʊ"
+        ],
+        "audio": "tb4a_u4#p_o"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "oʊ"
+    ],
+    "definition": {
+      "zh": "这么，那么"
+    },
+    "example": {
+      "en": "It is so big.",
+      "zh": "它这么大。",
+      "audio": "tb4a_u4#so_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#so",
+      "wordSlow": "tb4a_u4#so_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "❗"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_409",
+    "kind": "phrase",
+    "word": "Have a go!",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "Have",
+      "a",
+      "go"
+    ],
+    "syllables": [
+      "Have",
+      "a",
+      "go"
+    ],
+    "ipa": "/hæv ə ɡəʊ/",
+    "graphemes": [
+      {
+        "letters": "have",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "a",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "go",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "试一试！"
+    },
+    "example": {
+      "en": "Have a go at basketball!",
+      "zh": "试着打打篮球！",
+      "audio": "tb4a_u4#have_a_go_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#have_a_go",
+      "wordSlow": "tb4a_u4#have_a_go_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🙌"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_410",
+    "kind": "word",
+    "word": "hard",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "h",
+      "a",
+      "r",
+      "d"
+    ],
+    "syllables": [
+      "hard"
+    ],
+    "ipa": "/hɑːd/",
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "tb4a_u4#p_h"
+      },
+      {
+        "letters": "ar",
+        "phonemes": [
+          "ɑː"
+        ],
+        "audio": "tb4a_u4#p_ar"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u4#p_d"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "ɑː",
+      "d"
+    ],
+    "definition": {
+      "zh": "难做的"
+    },
+    "example": {
+      "en": "This is hard.",
+      "zh": "这很难。",
+      "audio": "tb4a_u4#hard_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#hard",
+      "wordSlow": "tb4a_u4#hard_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "😅"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_411",
+    "kind": "phrase",
+    "word": "It's OK.",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "It's",
+      "OK"
+    ],
+    "syllables": [
+      "It's",
+      "OK"
+    ],
+    "ipa": "/ɪts əʊˈkeɪ/",
+    "graphemes": [
+      {
+        "letters": "its",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "ok",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "没关系。"
+    },
+    "example": {
+      "en": "It is OK, try again.",
+      "zh": "没关系，再试一次。",
+      "audio": "tb4a_u4#it_s_ok_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#it_s_ok",
+      "wordSlow": "tb4a_u4#it_s_ok_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "👌"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_412",
+    "kind": "word",
+    "word": "oops",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "int.",
+      "core": false
+    },
+    "spelling": [
+      "o",
+      "o",
+      "p",
+      "s"
+    ],
+    "syllables": [
+      "oops"
+    ],
+    "ipa": "/ʊps/",
+    "graphemes": [
+      {
+        "letters": "oo",
+        "phonemes": [
+          "ʊ"
+        ],
+        "audio": "tb4a_u4#p_oo"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u4#p_p"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u4#p_s"
+      }
+    ],
+    "phonemes": [
+      "ʊ",
+      "p",
+      "s"
+    ],
+    "definition": {
+      "zh": "哎哟"
+    },
+    "example": {
+      "en": "Oops, sorry!",
+      "zh": "哎哟，对不起！",
+      "audio": "tb4a_u4#oops_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#oops",
+      "wordSlow": "tb4a_u4#oops_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "😮"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_413",
+    "kind": "word",
+    "word": "try",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "t",
+      "r",
+      "y"
+    ],
+    "syllables": [
+      "try"
+    ],
+    "ipa": "/traɪ/",
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u4#p_t"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u4#p_r"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "tb4a_u4#p_y"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "r",
+      "aɪ"
+    ],
+    "definition": {
+      "zh": "试"
+    },
+    "example": {
+      "en": "Let me try.",
+      "zh": "让我试试。",
+      "audio": "tb4a_u4#try_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#try",
+      "wordSlow": "tb4a_u4#try_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "💪"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_414",
+    "kind": "phrase",
+    "word": "Well played!",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 4,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "Well",
+      "played"
+    ],
+    "syllables": [
+      "Well",
+      "played"
+    ],
+    "ipa": "/wel pleɪd/",
+    "graphemes": [
+      {
+        "letters": "well",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "played",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "好球！"
+    },
+    "example": {
+      "en": "Well played, you are great!",
+      "zh": "好球，你真棒！",
+      "audio": "tb4a_u4#well_played_example"
+    },
+    "audio": {
+      "word": "tb4a_u4#well_played",
+      "wordSlow": "tb4a_u4#well_played_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏆"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  }
+]

@@ -1,0 +1,1999 @@
+[
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_301",
+    "kind": "word",
+    "word": "week",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "e",
+      "e",
+      "k"
+    ],
+    "syllables": [
+      "week"
+    ],
+    "ipa": "/wiːk/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u3#p_w"
+      },
+      {
+        "letters": "ee",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "tb4a_u3#p_ee"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u3#p_k"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "iː",
+      "k"
+    ],
+    "definition": {
+      "zh": "周，星期"
+    },
+    "example": {
+      "en": "There are seven days in a week.",
+      "zh": "一周有七天。",
+      "audio": "tb4a_u3#week_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#week",
+      "wordSlow": "tb4a_u3#week_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🗓️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_302",
+    "kind": "word",
+    "word": "Sunday",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "u",
+      "n",
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "Sunday"
+    ],
+    "ipa": "/ˈsʌndeɪ/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u3#p_s"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u3#p_u"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u3#p_n"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u3#p_ay"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "ʌ",
+      "n",
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "星期天"
+    },
+    "example": {
+      "en": "We play on Sunday.",
+      "zh": "我们周日玩耍。",
+      "audio": "tb4a_u3#sunday_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#sunday",
+      "wordSlow": "tb4a_u3#sunday_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "☀️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_303",
+    "kind": "word",
+    "word": "Monday",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "m",
+      "o",
+      "n",
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "Monday"
+    ],
+    "ipa": "/ˈmʌndeɪ/",
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u3#p_m"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u3#p_o"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u3#p_n"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u3#p_ay"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "ʌ",
+      "n",
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "星期一"
+    },
+    "example": {
+      "en": "Monday is the first day of school.",
+      "zh": "周一是上学的第一天。",
+      "audio": "tb4a_u3#monday_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#monday",
+      "wordSlow": "tb4a_u3#monday_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "1️⃣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_304",
+    "kind": "word",
+    "word": "Tuesday",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "t",
+      "u",
+      "e",
+      "s",
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "Tuesday"
+    ],
+    "ipa": "/ˈtjuːzdeɪ/",
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u3#p_t"
+      },
+      {
+        "letters": "ue",
+        "phonemes": [
+          "j",
+          "uː"
+        ],
+        "audio": "tb4a_u3#p_ue"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "z"
+        ],
+        "audio": "tb4a_u3#p_s"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u3#p_ay"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "j",
+      "uː",
+      "z",
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "星期二"
+    },
+    "example": {
+      "en": "We swim on Tuesday.",
+      "zh": "我们周二游泳。",
+      "audio": "tb4a_u3#tuesday_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#tuesday",
+      "wordSlow": "tb4a_u3#tuesday_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "2️⃣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_305",
+    "kind": "word",
+    "word": "Wednesday",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "e",
+      "d",
+      "n",
+      "e",
+      "s",
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "Wednesday"
+    ],
+    "ipa": "/ˈwenzdeɪ/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u3#p_w"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u3#p_e"
+      },
+      {
+        "letters": "d",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u3#p_n"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "z"
+        ],
+        "audio": "tb4a_u3#p_s"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u3#p_ay"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɛ",
+      "n",
+      "z",
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "星期三"
+    },
+    "example": {
+      "en": "Wednesday is fun.",
+      "zh": "周三很有趣。",
+      "audio": "tb4a_u3#wednesday_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#wednesday",
+      "wordSlow": "tb4a_u3#wednesday_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "3️⃣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_306",
+    "kind": "word",
+    "word": "Thursday",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "t",
+      "h",
+      "u",
+      "r",
+      "s",
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "Thursday"
+    ],
+    "ipa": "/ˈθɜːzdeɪ/",
+    "graphemes": [
+      {
+        "letters": "th",
+        "phonemes": [
+          "θ"
+        ],
+        "audio": "tb4a_u3#p_th"
+      },
+      {
+        "letters": "ur",
+        "phonemes": [
+          "ɜː"
+        ],
+        "audio": "tb4a_u3#p_ur"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "z"
+        ],
+        "audio": "tb4a_u3#p_s"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u3#p_ay"
+      }
+    ],
+    "phonemes": [
+      "θ",
+      "ɜː",
+      "z",
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "星期四"
+    },
+    "example": {
+      "en": "See you on Thursday.",
+      "zh": "周四见。",
+      "audio": "tb4a_u3#thursday_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#thursday",
+      "wordSlow": "tb4a_u3#thursday_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "4️⃣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_307",
+    "kind": "word",
+    "word": "Friday",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "f",
+      "r",
+      "i",
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "Friday"
+    ],
+    "ipa": "/ˈfraɪdeɪ/",
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "tb4a_u3#p_f"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u3#p_r"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "aɪ"
+        ],
+        "audio": "tb4a_u3#p_i"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u3#p_ay"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "r",
+      "aɪ",
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "星期五"
+    },
+    "example": {
+      "en": "Friday is my favourite day.",
+      "zh": "周五是我最喜欢的一天。",
+      "audio": "tb4a_u3#friday_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#friday",
+      "wordSlow": "tb4a_u3#friday_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "5️⃣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_308",
+    "kind": "word",
+    "word": "Saturday",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "a",
+      "t",
+      "u",
+      "r",
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "Saturday"
+    ],
+    "ipa": "/ˈsætədeɪ/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u3#p_s"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "tb4a_u3#p_a"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u3#p_t"
+      },
+      {
+        "letters": "ur",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u3#p_ur"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u3#p_ay"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "æ",
+      "t",
+      "ə",
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "星期六"
+    },
+    "example": {
+      "en": "I read on Saturday.",
+      "zh": "我周六看书。",
+      "audio": "tb4a_u3#saturday_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#saturday",
+      "wordSlow": "tb4a_u3#saturday_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "6️⃣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_309",
+    "kind": "word",
+    "word": "up",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "u",
+      "p"
+    ],
+    "syllables": [
+      "up"
+    ],
+    "ipa": "/ʌp/",
+    "graphemes": [
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u3#p_u"
+      },
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u3#p_p"
+      }
+    ],
+    "phonemes": [
+      "ʌ",
+      "p"
+    ],
+    "definition": {
+      "zh": "起床；向上"
+    },
+    "example": {
+      "en": "Get up now.",
+      "zh": "现在起床。",
+      "audio": "tb4a_u3#up_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#up",
+      "wordSlow": "tb4a_u3#up_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⬆️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_310",
+    "kind": "word",
+    "word": "so",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "o"
+    ],
+    "syllables": [
+      "so"
+    ],
+    "ipa": "/səʊ/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u3#p_s"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "oʊ"
+        ],
+        "audio": "tb4a_u3#p_o"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "oʊ"
+    ],
+    "definition": {
+      "zh": "（表示程度）这么，那么"
+    },
+    "example": {
+      "en": "It is so cold.",
+      "zh": "天气这么冷。",
+      "audio": "tb4a_u3#so_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#so",
+      "wordSlow": "tb4a_u3#so_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "❗"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_311",
+    "kind": "word",
+    "word": "when",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "h",
+      "e",
+      "n"
+    ],
+    "syllables": [
+      "when"
+    ],
+    "ipa": "/wen/",
+    "graphemes": [
+      {
+        "letters": "wh",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u3#p_wh"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u3#p_e"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u3#p_n"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɛ",
+      "n"
+    ],
+    "definition": {
+      "zh": "什么时候"
+    },
+    "example": {
+      "en": "When do you swim?",
+      "zh": "你什么时候游泳？",
+      "audio": "tb4a_u3#when_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#when",
+      "wordSlow": "tb4a_u3#when_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "❓"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_312",
+    "kind": "word",
+    "word": "every",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "e",
+      "v",
+      "e",
+      "r",
+      "y"
+    ],
+    "syllables": [
+      "every"
+    ],
+    "ipa": "/ˈevri/",
+    "graphemes": [
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u3#p_e"
+      },
+      {
+        "letters": "v",
+        "phonemes": [
+          "v"
+        ],
+        "audio": "tb4a_u3#p_v"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u3#p_r"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u3#p_y"
+      }
+    ],
+    "phonemes": [
+      "ɛ",
+      "v",
+      "r",
+      "i"
+    ],
+    "definition": {
+      "zh": "每一个，每个"
+    },
+    "example": {
+      "en": "I run every day.",
+      "zh": "我每天跑步。",
+      "audio": "tb4a_u3#every_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#every",
+      "wordSlow": "tb4a_u3#every_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔁"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_313",
+    "kind": "word",
+    "word": "at",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "prep.",
+      "core": true
+    },
+    "spelling": [
+      "a",
+      "t"
+    ],
+    "syllables": [
+      "at"
+    ],
+    "ipa": "/æt/",
+    "graphemes": [
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "tb4a_u3#p_a"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u3#p_t"
+      }
+    ],
+    "phonemes": [
+      "æ",
+      "t"
+    ],
+    "definition": {
+      "zh": "在（某时间）"
+    },
+    "example": {
+      "en": "I swim at four.",
+      "zh": "我四点游泳。",
+      "audio": "tb4a_u3#at_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#at",
+      "wordSlow": "tb4a_u3#at_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🕓"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_314",
+    "kind": "word",
+    "word": "today",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "t",
+      "o",
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "today"
+    ],
+    "ipa": "/təˈdeɪ/",
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u3#p_t"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u3#p_o"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u3#p_ay"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "ə",
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "在今天"
+    },
+    "example": {
+      "en": "What do we do today?",
+      "zh": "我们今天做什么？",
+      "audio": "tb4a_u3#today_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#today",
+      "wordSlow": "tb4a_u3#today_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📅"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_315",
+    "kind": "phrase",
+    "word": "What day is it today?",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "What",
+      "day",
+      "is",
+      "it",
+      "today"
+    ],
+    "syllables": [
+      "What",
+      "day",
+      "is",
+      "it",
+      "today"
+    ],
+    "ipa": "/wɒt deɪ ɪz ɪt təˈdeɪ/",
+    "graphemes": [
+      {
+        "letters": "what",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "day",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "is",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "it",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "today",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "今天星期几？"
+    },
+    "example": {
+      "en": "What day is it today?",
+      "zh": "今天星期几？",
+      "audio": "tb4a_u3#what_day_is_it_today_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#what_day_is_it_today",
+      "wordSlow": "tb4a_u3#what_day_is_it_today_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "❓"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_316",
+    "kind": "word",
+    "word": "cinema",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "c",
+      "i",
+      "n",
+      "e",
+      "m",
+      "a"
+    ],
+    "syllables": [
+      "cinema"
+    ],
+    "ipa": "/ˈsɪnəmə/",
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u3#p_c"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u3#p_i"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u3#p_n"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u3#p_e"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u3#p_m"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u3#p_a"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "ɪ",
+      "n",
+      "ə",
+      "m",
+      "ə"
+    ],
+    "definition": {
+      "zh": "电影院"
+    },
+    "example": {
+      "en": "We go to the cinema.",
+      "zh": "我们去电影院。",
+      "audio": "tb4a_u3#cinema_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#cinema",
+      "wordSlow": "tb4a_u3#cinema_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🎬"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_317",
+    "kind": "phrase",
+    "word": "after school",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "after",
+      "school"
+    ],
+    "syllables": [
+      "after",
+      "school"
+    ],
+    "ipa": "/ˈɑːftə skuːl/",
+    "graphemes": [
+      {
+        "letters": "after",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "school",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "放学后"
+    },
+    "example": {
+      "en": "I play ping-pong after school.",
+      "zh": "我放学后打乒乓球。",
+      "audio": "tb4a_u3#after_school_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#after_school",
+      "wordSlow": "tb4a_u3#after_school_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏫"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_318",
+    "kind": "word",
+    "word": "dancing",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "d",
+      "a",
+      "n",
+      "c",
+      "i",
+      "n",
+      "g"
+    ],
+    "syllables": [
+      "dancing"
+    ],
+    "ipa": "/ˈdɑːnsɪŋ/",
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɑː"
+        ],
+        "audio": "tb4a_u3#p_a"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u3#p_n"
+      },
+      {
+        "letters": "c",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u3#p_c"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u3#p_i"
+      },
+      {
+        "letters": "ng",
+        "phonemes": [
+          "ŋ"
+        ],
+        "audio": "tb4a_u3#p_ng"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "ɑː",
+      "n",
+      "s",
+      "ɪ",
+      "ŋ"
+    ],
+    "definition": {
+      "zh": "跳舞，舞蹈"
+    },
+    "example": {
+      "en": "I like dancing.",
+      "zh": "我喜欢跳舞。",
+      "audio": "tb4a_u3#dancing_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#dancing",
+      "wordSlow": "tb4a_u3#dancing_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "💃"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_319",
+    "kind": "word",
+    "word": "lesson",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "l",
+      "e",
+      "s",
+      "s",
+      "o",
+      "n"
+    ],
+    "syllables": [
+      "lesson"
+    ],
+    "ipa": "/ˈlesn/",
+    "graphemes": [
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u3#p_l"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u3#p_e"
+      },
+      {
+        "letters": "ss",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u3#p_ss"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u3#p_o"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u3#p_n"
+      }
+    ],
+    "phonemes": [
+      "l",
+      "ɛ",
+      "s",
+      "ə",
+      "n"
+    ],
+    "definition": {
+      "zh": "一节课，一课时"
+    },
+    "example": {
+      "en": "This lesson is fun.",
+      "zh": "这节课很有趣。",
+      "audio": "tb4a_u3#lesson_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#lesson",
+      "wordSlow": "tb4a_u3#lesson_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📚"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_320",
+    "kind": "word",
+    "word": "walk",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "a",
+      "l",
+      "k"
+    ],
+    "syllables": [
+      "walk"
+    ],
+    "ipa": "/wɔːk/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u3#p_w"
+      },
+      {
+        "letters": "al",
+        "phonemes": [
+          "ɔː"
+        ],
+        "audio": "tb4a_u3#p_al"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u3#p_k"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɔː",
+      "k"
+    ],
+    "definition": {
+      "zh": "牵着（动物）走，遛"
+    },
+    "example": {
+      "en": "I walk my dog.",
+      "zh": "我遛狗。",
+      "audio": "tb4a_u3#walk_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#walk",
+      "wordSlow": "tb4a_u3#walk_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🚶"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_321",
+    "kind": "word",
+    "word": "dog",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "d",
+      "o",
+      "g"
+    ],
+    "syllables": [
+      "dog"
+    ],
+    "ipa": "/dɒɡ/",
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u3#p_d"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɒ"
+        ],
+        "audio": "tb4a_u3#p_o"
+      },
+      {
+        "letters": "g",
+        "phonemes": [
+          "g"
+        ],
+        "audio": "tb4a_u3#p_g"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "ɒ",
+      "g"
+    ],
+    "definition": {
+      "zh": "狗"
+    },
+    "example": {
+      "en": "This is my dog.",
+      "zh": "这是我的狗。",
+      "audio": "tb4a_u3#dog_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#dog",
+      "wordSlow": "tb4a_u3#dog_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🐶"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_322",
+    "kind": "word",
+    "word": "tomorrow",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "t",
+      "o",
+      "m",
+      "o",
+      "r",
+      "r",
+      "o",
+      "w"
+    ],
+    "syllables": [
+      "tomorrow"
+    ],
+    "ipa": "/təˈmɒrəʊ/",
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u3#p_t"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u3#p_o"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u3#p_m"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɒ"
+        ],
+        "audio": "tb4a_u3#p_o"
+      },
+      {
+        "letters": "rr",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u3#p_rr"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "oʊ"
+        ],
+        "audio": "tb4a_u3#p_o"
+      },
+      {
+        "letters": "w",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [
+      "t",
+      "ə",
+      "m",
+      "ɒ",
+      "r",
+      "oʊ"
+    ],
+    "definition": {
+      "zh": "明天；在明天"
+    },
+    "example": {
+      "en": "See you tomorrow.",
+      "zh": "明天见。",
+      "audio": "tb4a_u3#tomorrow_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#tomorrow",
+      "wordSlow": "tb4a_u3#tomorrow_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⏭️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_323",
+    "kind": "word",
+    "word": "free",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "f",
+      "r",
+      "e",
+      "e"
+    ],
+    "syllables": [
+      "free"
+    ],
+    "ipa": "/friː/",
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "tb4a_u3#p_f"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u3#p_r"
+      },
+      {
+        "letters": "ee",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "tb4a_u3#p_ee"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "r",
+      "iː"
+    ],
+    "definition": {
+      "zh": "空闲的"
+    },
+    "example": {
+      "en": "I am free today.",
+      "zh": "我今天有空。",
+      "audio": "tb4a_u3#free_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#free",
+      "wordSlow": "tb4a_u3#free_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🕊️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_324",
+    "kind": "phrase",
+    "word": "See you tomorrow!",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "See",
+      "you",
+      "tomorrow"
+    ],
+    "syllables": [
+      "See",
+      "you",
+      "tomorrow"
+    ],
+    "ipa": "/siː juː təˈmɒrəʊ/",
+    "graphemes": [
+      {
+        "letters": "see",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "you",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "tomorrow",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "明天见！"
+    },
+    "example": {
+      "en": "See you tomorrow at school!",
+      "zh": "明天学校见！",
+      "audio": "tb4a_u3#see_you_tomorrow_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#see_you_tomorrow",
+      "wordSlow": "tb4a_u3#see_you_tomorrow_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "👋"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_325",
+    "kind": "phrase",
+    "word": "Mr Wilson",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 3,
+      "pos": "proper",
+      "core": false
+    },
+    "spelling": [
+      "Mr",
+      "Wilson"
+    ],
+    "syllables": [
+      "Mr",
+      "Wilson"
+    ],
+    "ipa": "/ˈmɪstə ˈwɪlsn/",
+    "graphemes": [
+      {
+        "letters": "mr",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "wilson",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "威尔逊先生"
+    },
+    "example": {
+      "en": "Mr Wilson is our English teacher.",
+      "zh": "威尔逊先生是我们的英语老师。",
+      "audio": "tb4a_u3#mr_wilson_example"
+    },
+    "audio": {
+      "word": "tb4a_u3#mr_wilson",
+      "wordSlow": "tb4a_u3#mr_wilson_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "👨‍🏫"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  }
+]

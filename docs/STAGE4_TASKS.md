@@ -141,13 +141,26 @@ Plan-Time Complexity Check:
 | S4-01 memoryApp 回滚快照 | ✅ 2026-10-11 | memoryApp@`b43afb31c9485256d2461948c8734b881d799537`（42 个文件，工作区干净） |
 | S4-02 抽出 `src/core/srs` | ✅ 2026-10-11 | commit `df48ee5`；`tests/core-srs.test.ts` 13 项通过 |
 | S4-03 Web Audio 音效合成 | ✅ 2026-10-11 | commit `a521afa`；`tests/core-sfx.test.ts` 7 项通过 |
-| S4-10… | 未开始 | — |
+| S4-10 内容契约 v4 | ✅ 2026-10-11 | commit `6719b8b`；`tests/content-textbook.test.ts` 11 项通过；现有 100 词源文件零修改 |
+| S4-11 课本源与加载器 | ✅ 2026-10-11 | commit `6bb2a77`；`validate:content` 报 100 个探索词 + 2 个课本词（1 个单元） |
+| S4-12 内容包与构建 | ✅ 2026-10-11 | commit `91a092d`；manifest `schemaVersion=4`、`appContract.max=3`、包含 `tb4a_u2`；`validate:assets -- --preview` 通过；release 仍拒绝草稿 |
+| S4-13… | 未开始 | — |
 
 S4-00 的两处必要修复（属于收敛范围）：
 
 - `src/domain/config.ts`：`defaultSettings()` 补齐 `freePlayMode` / `favoriteWords`，否则 `settingsSchema` 的 Zod 默认值会让「默认设置保存后读回」不相等（`tests/history-management.test.ts`）。
 - `tests/audio-production.test.mjs`、`tests/review-workflow.test.mjs`：三个真实子进程用例显式给 60 秒预算；全局 10 秒在双 worker 下不够（单跑均通过，属环境竞争而非逻辑错误）。
 - 工具链：本机无 nvm/fnm，Node 24.19.0 以绿色包放在 `C:/Users/maoju/.local/node-v24.19.0-win-x64`，用 `export PATH="/c/Users/maoju/.local/node-v24.19.0-win-x64:$PATH"` 生效；全局 Node 22.20.0 未动。
+
+### P1-a 实现定稿（S4-10~S4-12，需在复核时确认）
+
+1. **`kind` 缺省为 `word`**：入参可省略，解析结果总是有值。这样现有 135 条源词条无需回填；新写的课本词条仍应显式声明。
+2. **探索与课本拆成两份 schema，共用一个跨字段规则函数**：`exploreWordSchema` 仍是 `WordEntry` 与 `catalog.words` 的类型，探索代码、字段严格度与报错文案零改动；`textbookWordSchema` 只为课本轨道放宽 `parentTip` 与英文释义。
+3. **`parentTip`、`definition.en_young`/`en_older` 对课本词条可选**：drill 没有亲子提示界面，强制填写会产生无人消费的内容；`definition.zh`、`illustration`、`audio`、`review` 仍与探索轨道同规。
+4. **允许空 `assetIds` 的包**：单元媒体未产出时仍要在清单里声明该单元，否则 drill 无法发现它；release 仍会因 `missingAudio` 失败。
+5. **三处格式放宽**：词 ID 允许数字（`w_tb4a_001`）、精灵 ID 允许数字（`tb4a_u2`）、IPA 允许短语音节间空格。其余校验未放宽。
+6. **发布门禁分两处执行**：探索词条在 `validateCatalog`，课本词条在 `validateTextbook`；两边规则相同，但各自只看到自己那份词库。
+7. **尚未完成**：unit 包在运行时的下载/就绪与入口显示（原计划属 S4-15），P1-a 只保证包已进清单且能被校验；`npm run test:e2e` 未运行（本机未装 Playwright 浏览器，S4-15/S4-16 前补齐）。
 
 ### P0：回滚点与共享内核
 

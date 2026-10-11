@@ -522,11 +522,11 @@ Stage 2 必测中断下载、缓存缺失、空间不足、应用/内容版本�
 
 ### 13.2 内容契约 v4
 
-`schemaVersion` 3 → 4，新增 `track: 'textbook'` 与短语/专有名词表达（v3 的 `^[a-z]+$` 无法表达课本里的 `get up`、`Chinese`、`What time is it?`）：
+`schemaVersion` 3 → 4，新增 `track: 'textbook'` 与短语/专有名词表达（v3 的 `^[a-z]+$` 无法表达课本里的 `get up`、`Chinese`、`What time is it?`）。下表是在实现中定稿的字段：
 
 ```typescript
-kind: 'word' | 'phrase';        // 默认 word
-word: string;                   // 正则改为 ^[A-Za-z][A-Za-z'’ .\-]*$
+kind: 'word' | 'phrase';        // 缺省 word（现有源文件不必回填）
+word: string;                   // 正则改为 ^[A-Za-z][A-Za-z'’ .-]*$
 textbook?: {                    // 仅 track='textbook'
   bookId: 'yilin-4a-2024';
   unit: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -535,9 +535,12 @@ textbook?: {                    // 仅 track='textbook'
 };
 ```
 
-- `kind='phrase'` 时 `spelling`/`syllables` 允许整词单段，`graphemes` 按词内字母组合分段；CVC 强校验仍只对 `track='phonics'` 且 `phonicsStage=1` 生效（现有行为不变）。
-- textbook 词条与 explore 同等合规：必须提供 `definition.zh`、`illustration`、`audio`（`sprite#clip`）和 `review`；只有 `definition.en_young` 的 5 词上限对 `kind='phrase'` 放宽到 8 词。
-- 分组：explore 继续用 `themeSchema`；textbook 用新增 `textbookUnitSchema`（`unit` + 词序 + 每单元条数上限），一个 unit 对应一个内容包。
+- `kind='phrase'` 时 `spelling` 与 `syllables` 是词元数组，`graphemes` 按词内字母组合分段；三者与 `word` 的比对只比字母，忽略大小写、空格与句末标点，因此 `get up`、`Chinese`、`What time is it?` 可表达。`kind='word'` 保持原有的逐字母拼接、双写辅音合并与 CVC 阶段 1 强校验。
+- 字段放宽只在 textbook 轨道：`definition.zh`、`illustration`、`audio`（`sprite#clip`）与 `review` 仍必填，与 explore 同规；`parentTip` 与 `definition.en_young`/`en_older` 对 textbook 可选（drill 不展示亲子提示），`kind='word'` 的 `en_young` 仍不超过 5 个英文词。
+- 类型上分为两份：`exploreWordSchema`（`WordEntry` 仍是它，`catalog.words` 仍只含探索词条，探索代码与类型零改动）与 `textbookWordSchema`（含 `textbook` 块）；`validateTextbook` 另外校验单元覆盖、单元号与 `textbook.unit` 一致、精灵声明、与探索词库的 ID 冲突，以及课本词条的发布门禁（探索词条的发布门禁继续留在 `validateCatalog`）。
+- 格式放宽：词 ID 接受 `w_tb4a_001`，精灵 ID 接受数字（`tb4a_u2`），IPA 允许短语音节间的空格。
+- 分组：explore 继续用 `themeSchema`；textbook 用新增 `textbookUnitSchema`（`unitId` + `wordIds` + `spriteIds`），一个 unit 对应一个内容包（包 ID 与 `themeId` 都取 `unitId`）；单元内临时无媒体时允许空 `assetIds`，但未产出音频仍会在 release 被拒。
+- 构建产物里的课本块为 `{ bookId, units, words }`，需要时由 `textbookAssetSchema` 在运行时复核；旧内容包没有这个键，探索轨道照常加载。
 - `manifestSchema.schemaVersion` 接受 `3 | 4`（构建产出 4）；词条 `schemaVersion` 同样接受 `3 | 4`，现有 100 词源文件保持 3。
 - 应用能力契约与内容 schema 版本是两个独立编号：`appContract.max` 由 2 提到 3（新增 textbook 包读取能力），`SUPPORTED_CONTENT_CONTRACTS` 变为 `[1, 2, 3]`。运行时需同时读 v3 与 v4，但不得长期双契约并存——v3 只用于读取过渡期的旧内容包。
 - `scripts/validate-words.mjs`、`scripts/validate-assets.mjs`、`scripts/build-content.mjs` 与 `src/domain/content-scopes.ts` 必须在同一提交内支持 v4，否则构建先于运行时失效。

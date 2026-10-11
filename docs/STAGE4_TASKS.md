@@ -145,7 +145,8 @@ Plan-Time Complexity Check:
 | S4-11 课本源与加载器 | ✅ 2026-10-11 | commit `6bb2a77`；`validate:content` 报 100 个探索词 + 2 个课本词（1 个单元） |
 | S4-12 内容包与构建 | ✅ 2026-10-11 | commit `91a092d`；manifest `schemaVersion=4`、`appContract.max=3`、包含 `tb4a_u2`；`validate:assets -- --preview` 通过；release 仍拒绝草稿 |
 | S4-13 Dexie schema 3 + 多档案 + 迁移 | ✅ 2026-10-11 | commit `9b41ed0`；新增 `tests/database-migration.test.ts` 3 项（新库建默认档案、v2→v3 不重写旧记录、未知 v20 布局中止）；浏览器实测旧 v20 库升到 30 并出现三张新表与默认档案，欢迎页无控制台错误 |
-| S4-14… | 未开始 | — |
+| S4-14 drill 仓储与 SRS 接线 | ✅ 2026-10-11 | commit `efce1ba`；`tests/drill-repository.test.ts` 9 项通过；全库 211 项通过 |
+| S4-15… | 未开始 | — |
 
 #### P1-a 浏览器回归证据（2026-10-11）
 

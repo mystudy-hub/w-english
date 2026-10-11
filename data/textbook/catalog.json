@@ -21,6 +21,26 @@
       "unitId": "tb4a_u4",
       "config": "data/textbook/yilin4a_u4.json",
       "words": "data/textbook/yilin4a_u4_words.json"
+    },
+    {
+      "unitId": "tb4a_u5",
+      "config": "data/textbook/yilin4a_u5.json",
+      "words": "data/textbook/yilin4a_u5_words.json"
+    },
+    {
+      "unitId": "tb4a_u6",
+      "config": "data/textbook/yilin4a_u6.json",
+      "words": "data/textbook/yilin4a_u6_words.json"
+    },
+    {
+      "unitId": "tb4a_u7",
+      "config": "data/textbook/yilin4a_u7.json",
+      "words": "data/textbook/yilin4a_u7_words.json"
+    },
+    {
+      "unitId": "tb4a_u8",
+      "config": "data/textbook/yilin4a_u8.json",
+      "words": "data/textbook/yilin4a_u8_words.json"
     }
   ]
 }

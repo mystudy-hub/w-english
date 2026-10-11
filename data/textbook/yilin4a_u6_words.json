@@ -1,0 +1,1492 @@
+[
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_601",
+    "kind": "word",
+    "word": "weather",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "e",
+      "a",
+      "t",
+      "h",
+      "e",
+      "r"
+    ],
+    "syllables": [
+      "weather"
+    ],
+    "ipa": "/ˈweðə(r)/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u6#p_w"
+      },
+      {
+        "letters": "ea",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u6#p_ea"
+      },
+      {
+        "letters": "th",
+        "phonemes": [
+          "ð"
+        ],
+        "audio": "tb4a_u6#p_th"
+      },
+      {
+        "letters": "er",
+        "phonemes": [
+          "ə",
+          "r"
+        ],
+        "audio": "tb4a_u6#p_er"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɛ",
+      "ð",
+      "ə",
+      "r"
+    ],
+    "definition": {
+      "zh": "天气，气象"
+    },
+    "example": {
+      "en": "The weather is nice.",
+      "zh": "天气很好。",
+      "audio": "tb4a_u6#weather_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#weather",
+      "wordSlow": "tb4a_u6#weather_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌦️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_602",
+    "kind": "word",
+    "word": "cloudy",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "c",
+      "l",
+      "o",
+      "u",
+      "d",
+      "y"
+    ],
+    "syllables": [
+      "cloudy"
+    ],
+    "ipa": "/ˈklaʊdi/",
+    "graphemes": [
+      {
+        "letters": "cl",
+        "phonemes": [
+          "k",
+          "l"
+        ],
+        "audio": "tb4a_u6#p_cl"
+      },
+      {
+        "letters": "ou",
+        "phonemes": [
+          "aʊ"
+        ],
+        "audio": "tb4a_u6#p_ou"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u6#p_d"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u6#p_y"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "l",
+      "aʊ",
+      "d",
+      "i"
+    ],
+    "definition": {
+      "zh": "多云的，阴天的"
+    },
+    "example": {
+      "en": "It is cloudy today.",
+      "zh": "今天多云。",
+      "audio": "tb4a_u6#cloudy_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#cloudy",
+      "wordSlow": "tb4a_u6#cloudy_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "☁️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_603",
+    "kind": "word",
+    "word": "sunny",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "u",
+      "n",
+      "n",
+      "y"
+    ],
+    "syllables": [
+      "sunny"
+    ],
+    "ipa": "/ˈsʌni/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u6#p_s"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u6#p_u"
+      },
+      {
+        "letters": "nn",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u6#p_nn"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u6#p_y"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "ʌ",
+      "n",
+      "i"
+    ],
+    "definition": {
+      "zh": "晴朗的"
+    },
+    "example": {
+      "en": "It is sunny.",
+      "zh": "天气晴朗。",
+      "audio": "tb4a_u6#sunny_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#sunny",
+      "wordSlow": "tb4a_u6#sunny_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "☀️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_604",
+    "kind": "word",
+    "word": "cool",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "c",
+      "o",
+      "o",
+      "l"
+    ],
+    "syllables": [
+      "cool"
+    ],
+    "ipa": "/kuːl/",
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u6#p_c"
+      },
+      {
+        "letters": "oo",
+        "phonemes": [
+          "uː"
+        ],
+        "audio": "tb4a_u6#p_oo"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u6#p_l"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "uː",
+      "l"
+    ],
+    "definition": {
+      "zh": "凉的，凉爽的"
+    },
+    "example": {
+      "en": "It is cool today.",
+      "zh": "今天很凉爽。",
+      "audio": "tb4a_u6#cool_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#cool",
+      "wordSlow": "tb4a_u6#cool_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🧊"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_605",
+    "kind": "word",
+    "word": "rainy",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "r",
+      "a",
+      "i",
+      "n",
+      "y"
+    ],
+    "syllables": [
+      "rainy"
+    ],
+    "ipa": "/ˈreɪni/",
+    "graphemes": [
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u6#p_r"
+      },
+      {
+        "letters": "ai",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u6#p_ai"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u6#p_n"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u6#p_y"
+      }
+    ],
+    "phonemes": [
+      "r",
+      "eɪ",
+      "n",
+      "i"
+    ],
+    "definition": {
+      "zh": "阴雨的，多雨的"
+    },
+    "example": {
+      "en": "It is rainy.",
+      "zh": "正在下雨。",
+      "audio": "tb4a_u6#rainy_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#rainy",
+      "wordSlow": "tb4a_u6#rainy_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌧️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_606",
+    "kind": "word",
+    "word": "hot",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "h",
+      "o",
+      "t"
+    ],
+    "syllables": [
+      "hot"
+    ],
+    "ipa": "/hɒt/",
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "tb4a_u6#p_h"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɒ"
+        ],
+        "audio": "tb4a_u6#p_o"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u6#p_t"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "ɒ",
+      "t"
+    ],
+    "definition": {
+      "zh": "温度高的，热的"
+    },
+    "example": {
+      "en": "It is hot today.",
+      "zh": "今天很热。",
+      "audio": "tb4a_u6#hot_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#hot",
+      "wordSlow": "tb4a_u6#hot_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔥"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_607",
+    "kind": "word",
+    "word": "windy",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "i",
+      "n",
+      "d",
+      "y"
+    ],
+    "syllables": [
+      "windy"
+    ],
+    "ipa": "/ˈwɪndi/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u6#p_w"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u6#p_i"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u6#p_n"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u6#p_d"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u6#p_y"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɪ",
+      "n",
+      "d",
+      "i"
+    ],
+    "definition": {
+      "zh": "多风的，风大的"
+    },
+    "example": {
+      "en": "It is windy.",
+      "zh": "风很大。",
+      "audio": "tb4a_u6#windy_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#windy",
+      "wordSlow": "tb4a_u6#windy_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌬️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_608",
+    "kind": "word",
+    "word": "warm",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "a",
+      "r",
+      "m"
+    ],
+    "syllables": [
+      "warm"
+    ],
+    "ipa": "/wɔːm/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u6#p_w"
+      },
+      {
+        "letters": "ar",
+        "phonemes": [
+          "ɔː"
+        ],
+        "audio": "tb4a_u6#p_ar"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u6#p_m"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɔː",
+      "m"
+    ],
+    "definition": {
+      "zh": "温暖的，暖和的"
+    },
+    "example": {
+      "en": "It is warm today.",
+      "zh": "今天很暖和。",
+      "audio": "tb4a_u6#warm_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#warm",
+      "wordSlow": "tb4a_u6#warm_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌤️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_609",
+    "kind": "phrase",
+    "word": "save ... for a rainy day",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "phr.",
+      "core": false
+    },
+    "spelling": [
+      "save",
+      "for",
+      "a",
+      "rainy",
+      "day"
+    ],
+    "syllables": [
+      "save",
+      "for",
+      "a",
+      "rainy",
+      "day"
+    ],
+    "ipa": "/seɪv fɔːr ə ˈreɪni deɪ/",
+    "graphemes": [
+      {
+        "letters": "save",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "for",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "a",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "rainy",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "day",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "未雨绸缪"
+    },
+    "example": {
+      "en": "Save money for a rainy day.",
+      "zh": "存钱以备不时之需。",
+      "audio": "tb4a_u6#save_for_a_rainy_day_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#save_for_a_rainy_day",
+      "wordSlow": "tb4a_u6#save_for_a_rainy_day_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "💰"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_610",
+    "kind": "word",
+    "word": "money",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "m",
+      "o",
+      "n",
+      "e",
+      "y"
+    ],
+    "syllables": [
+      "money"
+    ],
+    "ipa": "/ˈmʌni/",
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u6#p_m"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u6#p_o"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u6#p_n"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u6#p_y"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "ʌ",
+      "n",
+      "i"
+    ],
+    "definition": {
+      "zh": "钱"
+    },
+    "example": {
+      "en": "This is my money.",
+      "zh": "这是我的钱。",
+      "audio": "tb4a_u6#money_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#money",
+      "wordSlow": "tb4a_u6#money_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "💵"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_611",
+    "kind": "phrase",
+    "word": "What's the weather like today?",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "What's",
+      "the",
+      "weather",
+      "like",
+      "today"
+    ],
+    "syllables": [
+      "What's",
+      "the",
+      "weather",
+      "like",
+      "today"
+    ],
+    "ipa": "/wɒts ðə ˈweðə laɪk təˈdeɪ/",
+    "graphemes": [
+      {
+        "letters": "whats",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "the",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "weather",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "like",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "today",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "今天天气怎么样？"
+    },
+    "example": {
+      "en": "What's the weather like today?",
+      "zh": "今天天气怎么样？",
+      "audio": "tb4a_u6#what_s_the_weather_like_today_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#what_s_the_weather_like_today",
+      "wordSlow": "tb4a_u6#what_s_the_weather_like_today_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌈"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_612",
+    "kind": "word",
+    "word": "park",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "p",
+      "a",
+      "r",
+      "k"
+    ],
+    "syllables": [
+      "park"
+    ],
+    "ipa": "/pɑːk/",
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u6#p_p"
+      },
+      {
+        "letters": "ar",
+        "phonemes": [
+          "ɑː"
+        ],
+        "audio": "tb4a_u6#p_ar"
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u6#p_k"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɑː",
+      "k"
+    ],
+    "definition": {
+      "zh": "公园"
+    },
+    "example": {
+      "en": "We play in the park.",
+      "zh": "我们在公园玩。",
+      "audio": "tb4a_u6#park_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#park",
+      "wordSlow": "tb4a_u6#park_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏞️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_613",
+    "kind": "word",
+    "word": "meet",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "m",
+      "e",
+      "e",
+      "t"
+    ],
+    "syllables": [
+      "meet"
+    ],
+    "ipa": "/miːt/",
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u6#p_m"
+      },
+      {
+        "letters": "ee",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "tb4a_u6#p_ee"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u6#p_t"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "iː",
+      "t"
+    ],
+    "definition": {
+      "zh": "（与……）会面，集合"
+    },
+    "example": {
+      "en": "Let us meet at nine.",
+      "zh": "我们九点见。",
+      "audio": "tb4a_u6#meet_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#meet",
+      "wordSlow": "tb4a_u6#meet_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🤝"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_614",
+    "kind": "phrase",
+    "word": "fly a kite",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "fly",
+      "a",
+      "kite"
+    ],
+    "syllables": [
+      "fly",
+      "a",
+      "kite"
+    ],
+    "ipa": "/flaɪ ə kaɪt/",
+    "graphemes": [
+      {
+        "letters": "fly",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "a",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "kite",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "放风筝"
+    },
+    "example": {
+      "en": "We fly a kite in the park.",
+      "zh": "我们在公园放风筝。",
+      "audio": "tb4a_u6#fly_a_kite_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#fly_a_kite",
+      "wordSlow": "tb4a_u6#fly_a_kite_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🪁"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_615",
+    "kind": "word",
+    "word": "worry",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "o",
+      "r",
+      "r",
+      "y"
+    ],
+    "syllables": [
+      "worry"
+    ],
+    "ipa": "/ˈwʌri/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u6#p_w"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u6#p_o"
+      },
+      {
+        "letters": "rr",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u6#p_rr"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u6#p_y"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ʌ",
+      "r",
+      "i"
+    ],
+    "definition": {
+      "zh": "担心，担忧"
+    },
+    "example": {
+      "en": "Do not worry.",
+      "zh": "别担心。",
+      "audio": "tb4a_u6#worry_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#worry",
+      "wordSlow": "tb4a_u6#worry_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "😟"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_616",
+    "kind": "word",
+    "word": "umbrella",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "u",
+      "m",
+      "b",
+      "r",
+      "e",
+      "l",
+      "l",
+      "a"
+    ],
+    "syllables": [
+      "umbrella"
+    ],
+    "ipa": "/ʌmˈbrelə/",
+    "graphemes": [
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u6#p_u"
+      },
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u6#p_m"
+      },
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u6#p_b"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u6#p_r"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u6#p_e"
+      },
+      {
+        "letters": "ll",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u6#p_ll"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u6#p_a"
+      }
+    ],
+    "phonemes": [
+      "ʌ",
+      "m",
+      "b",
+      "r",
+      "ɛ",
+      "l",
+      "ə"
+    ],
+    "definition": {
+      "zh": "伞，雨伞"
+    },
+    "example": {
+      "en": "Take your umbrella.",
+      "zh": "带上你的伞。",
+      "audio": "tb4a_u6#umbrella_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#umbrella",
+      "wordSlow": "tb4a_u6#umbrella_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "☂️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_617",
+    "kind": "word",
+    "word": "there",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "t",
+      "h",
+      "e",
+      "r",
+      "e"
+    ],
+    "syllables": [
+      "there"
+    ],
+    "ipa": "/ðeə(r)/",
+    "graphemes": [
+      {
+        "letters": "th",
+        "phonemes": [
+          "ð"
+        ],
+        "audio": "tb4a_u6#p_th"
+      },
+      {
+        "letters": "ere",
+        "phonemes": [
+          "eə",
+          "r"
+        ],
+        "audio": "tb4a_u6#p_ere"
+      }
+    ],
+    "phonemes": [
+      "ð",
+      "eə",
+      "r"
+    ],
+    "definition": {
+      "zh": "到那里，在那里"
+    },
+    "example": {
+      "en": "Put it there.",
+      "zh": "把它放那儿。",
+      "audio": "tb4a_u6#there_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#there",
+      "wordSlow": "tb4a_u6#there_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📍"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_618",
+    "kind": "word",
+    "word": "Harbin",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "proper",
+      "core": false
+    },
+    "spelling": [
+      "h",
+      "a",
+      "r",
+      "b",
+      "i",
+      "n"
+    ],
+    "syllables": [
+      "Harbin"
+    ],
+    "ipa": "/hɑːˈbiːn/",
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "tb4a_u6#p_h"
+      },
+      {
+        "letters": "ar",
+        "phonemes": [
+          "ɑː"
+        ],
+        "audio": "tb4a_u6#p_ar"
+      },
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u6#p_b"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "tb4a_u6#p_i"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u6#p_n"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "ɑː",
+      "b",
+      "iː",
+      "n"
+    ],
+    "definition": {
+      "zh": "哈尔滨"
+    },
+    "example": {
+      "en": "Harbin is cold in winter.",
+      "zh": "哈尔滨冬天很冷。",
+      "audio": "tb4a_u6#harbin_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#harbin",
+      "wordSlow": "tb4a_u6#harbin_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏙️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_619",
+    "kind": "word",
+    "word": "Macao",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 6,
+      "pos": "proper",
+      "core": false
+    },
+    "spelling": [
+      "m",
+      "a",
+      "c",
+      "a",
+      "o"
+    ],
+    "syllables": [
+      "Macao"
+    ],
+    "ipa": "/məˈkaʊ/",
+    "graphemes": [
+      {
+        "letters": "m",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u6#p_m"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u6#p_a"
+      },
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u6#p_c"
+      },
+      {
+        "letters": "ao",
+        "phonemes": [
+          "aʊ"
+        ],
+        "audio": "tb4a_u6#p_ao"
+      }
+    ],
+    "phonemes": [
+      "m",
+      "ə",
+      "k",
+      "aʊ"
+    ],
+    "definition": {
+      "zh": "澳门"
+    },
+    "example": {
+      "en": "Macao is warm in winter.",
+      "zh": "澳门冬天很暖和。",
+      "audio": "tb4a_u6#macao_example"
+    },
+    "audio": {
+      "word": "tb4a_u6#macao",
+      "wordSlow": "tb4a_u6#macao_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌉"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  }
+]

@@ -1,0 +1,1339 @@
+[
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_701",
+    "kind": "word",
+    "word": "season",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "e",
+      "a",
+      "s",
+      "o",
+      "n"
+    ],
+    "syllables": [
+      "season"
+    ],
+    "ipa": "/ˈsiːzn/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u7#p_s"
+      },
+      {
+        "letters": "ea",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "tb4a_u7#p_ea"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "z"
+        ],
+        "audio": "tb4a_u7#p_s"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u7#p_o"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u7#p_n"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "iː",
+      "z",
+      "ə",
+      "n"
+    ],
+    "definition": {
+      "zh": "季节"
+    },
+    "example": {
+      "en": "Spring is my favourite season.",
+      "zh": "春天是我最喜欢的季节。",
+      "audio": "tb4a_u7#season_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#season",
+      "wordSlow": "tb4a_u7#season_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🍂"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_702",
+    "kind": "word",
+    "word": "spring",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "p",
+      "r",
+      "i",
+      "n",
+      "g"
+    ],
+    "syllables": [
+      "spring"
+    ],
+    "ipa": "/sprɪŋ/",
+    "graphemes": [
+      {
+        "letters": "spr",
+        "phonemes": [
+          "s",
+          "p",
+          "r"
+        ],
+        "audio": "tb4a_u7#p_spr"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u7#p_i"
+      },
+      {
+        "letters": "ng",
+        "phonemes": [
+          "ŋ"
+        ],
+        "audio": "tb4a_u7#p_ng"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "p",
+      "r",
+      "ɪ",
+      "ŋ"
+    ],
+    "definition": {
+      "zh": "春天，春季"
+    },
+    "example": {
+      "en": "Spring is warm.",
+      "zh": "春天很温暖。",
+      "audio": "tb4a_u7#spring_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#spring",
+      "wordSlow": "tb4a_u7#spring_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌱"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_703",
+    "kind": "phrase",
+    "word": "go boating",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "go",
+      "boating"
+    ],
+    "syllables": [
+      "go",
+      "boating"
+    ],
+    "ipa": "/ɡəʊ ˈbəʊtɪŋ/",
+    "graphemes": [
+      {
+        "letters": "go",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "boating",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "去划船"
+    },
+    "example": {
+      "en": "We go boating in spring.",
+      "zh": "我们春天去划船。",
+      "audio": "tb4a_u7#go_boating_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#go_boating",
+      "wordSlow": "tb4a_u7#go_boating_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🚣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_704",
+    "kind": "word",
+    "word": "winter",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "i",
+      "n",
+      "t",
+      "e",
+      "r"
+    ],
+    "syllables": [
+      "winter"
+    ],
+    "ipa": "/ˈwɪntə(r)/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u7#p_w"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u7#p_i"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u7#p_n"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u7#p_t"
+      },
+      {
+        "letters": "er",
+        "phonemes": [
+          "ə",
+          "r"
+        ],
+        "audio": "tb4a_u7#p_er"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɪ",
+      "n",
+      "t",
+      "ə",
+      "r"
+    ],
+    "definition": {
+      "zh": "冬天，冬季"
+    },
+    "example": {
+      "en": "Winter is cold.",
+      "zh": "冬天很冷。",
+      "audio": "tb4a_u7#winter_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#winter",
+      "wordSlow": "tb4a_u7#winter_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "❄️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_705",
+    "kind": "phrase",
+    "word": "go skating",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "phr.",
+      "core": false
+    },
+    "spelling": [
+      "go",
+      "skating"
+    ],
+    "syllables": [
+      "go",
+      "skating"
+    ],
+    "ipa": "/ɡəʊ ˈskeɪtɪŋ/",
+    "graphemes": [
+      {
+        "letters": "go",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "skating",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "去溜冰，去滑冰"
+    },
+    "example": {
+      "en": "We go skating in winter.",
+      "zh": "我们冬天去溜冰。",
+      "audio": "tb4a_u7#go_skating_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#go_skating",
+      "wordSlow": "tb4a_u7#go_skating_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⛸️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_706",
+    "kind": "word",
+    "word": "summer",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "u",
+      "m",
+      "m",
+      "e",
+      "r"
+    ],
+    "syllables": [
+      "summer"
+    ],
+    "ipa": "/ˈsʌmə(r)/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u7#p_s"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u7#p_u"
+      },
+      {
+        "letters": "mm",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u7#p_mm"
+      },
+      {
+        "letters": "er",
+        "phonemes": [
+          "ə",
+          "r"
+        ],
+        "audio": "tb4a_u7#p_er"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "ʌ",
+      "m",
+      "ə",
+      "r"
+    ],
+    "definition": {
+      "zh": "夏天，夏季"
+    },
+    "example": {
+      "en": "Summer is hot.",
+      "zh": "夏天很热。",
+      "audio": "tb4a_u7#summer_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#summer",
+      "wordSlow": "tb4a_u7#summer_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌞"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_707",
+    "kind": "phrase",
+    "word": "ice cream",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "ice",
+      "cream"
+    ],
+    "syllables": [
+      "ice",
+      "cream"
+    ],
+    "ipa": "/ˌaɪs ˈkriːm/",
+    "graphemes": [
+      {
+        "letters": "ice",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "cream",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "冰淇淋"
+    },
+    "example": {
+      "en": "I like ice cream.",
+      "zh": "我喜欢冰淇淋。",
+      "audio": "tb4a_u7#ice_cream_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#ice_cream",
+      "wordSlow": "tb4a_u7#ice_cream_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🍦"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_708",
+    "kind": "phrase",
+    "word": "go swimming",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "go",
+      "swimming"
+    ],
+    "syllables": [
+      "go",
+      "swimming"
+    ],
+    "ipa": "/ɡəʊ ˈswɪmɪŋ/",
+    "graphemes": [
+      {
+        "letters": "go",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "swimming",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "去游泳"
+    },
+    "example": {
+      "en": "We go swimming in summer.",
+      "zh": "我们夏天去游泳。",
+      "audio": "tb4a_u7#go_swimming_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#go_swimming",
+      "wordSlow": "tb4a_u7#go_swimming_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏊"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_709",
+    "kind": "word",
+    "word": "autumn",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "a",
+      "u",
+      "t",
+      "u",
+      "m",
+      "n"
+    ],
+    "syllables": [
+      "autumn"
+    ],
+    "ipa": "/ˈɔːtəm/",
+    "graphemes": [
+      {
+        "letters": "au",
+        "phonemes": [
+          "ɔː"
+        ],
+        "audio": "tb4a_u7#p_au"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u7#p_t"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u7#p_u"
+      },
+      {
+        "letters": "mn",
+        "phonemes": [
+          "m"
+        ],
+        "audio": "tb4a_u7#p_mn"
+      }
+    ],
+    "phonemes": [
+      "ɔː",
+      "t",
+      "ə",
+      "m"
+    ],
+    "definition": {
+      "zh": "秋天，秋季"
+    },
+    "example": {
+      "en": "Autumn is cool.",
+      "zh": "秋天很凉爽。",
+      "audio": "tb4a_u7#autumn_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#autumn",
+      "wordSlow": "tb4a_u7#autumn_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🍁"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_710",
+    "kind": "phrase",
+    "word": "go climbing",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "phr.",
+      "core": false
+    },
+    "spelling": [
+      "go",
+      "climbing"
+    ],
+    "syllables": [
+      "go",
+      "climbing"
+    ],
+    "ipa": "/ɡəʊ ˈklaɪmɪŋ/",
+    "graphemes": [
+      {
+        "letters": "go",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "climbing",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "去爬山"
+    },
+    "example": {
+      "en": "We go climbing in autumn.",
+      "zh": "我们秋天去爬山。",
+      "audio": "tb4a_u7#go_climbing_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#go_climbing",
+      "wordSlow": "tb4a_u7#go_climbing_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🧗"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_711",
+    "kind": "word",
+    "word": "new",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "n",
+      "e",
+      "w"
+    ],
+    "syllables": [
+      "new"
+    ],
+    "ipa": "/njuː/",
+    "graphemes": [
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u7#p_n"
+      },
+      {
+        "letters": "ew",
+        "phonemes": [
+          "j",
+          "uː"
+        ],
+        "audio": "tb4a_u7#p_ew"
+      }
+    ],
+    "phonemes": [
+      "n",
+      "j",
+      "uː"
+    ],
+    "definition": {
+      "zh": "新的"
+    },
+    "example": {
+      "en": "This is a new book.",
+      "zh": "这是一本新书。",
+      "audio": "tb4a_u7#new_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#new",
+      "wordSlow": "tb4a_u7#new_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "✨"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_712",
+    "kind": "word",
+    "word": "cold",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "c",
+      "o",
+      "l",
+      "d"
+    ],
+    "syllables": [
+      "cold"
+    ],
+    "ipa": "/kəʊld/",
+    "graphemes": [
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u7#p_c"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "oʊ"
+        ],
+        "audio": "tb4a_u7#p_o"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u7#p_l"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u7#p_d"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "oʊ",
+      "l",
+      "d"
+    ],
+    "definition": {
+      "zh": "寒冷的，冷的"
+    },
+    "example": {
+      "en": "It is cold.",
+      "zh": "天气很冷。",
+      "audio": "tb4a_u7#cold_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#cold",
+      "wordSlow": "tb4a_u7#cold_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🥶"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_713",
+    "kind": "word",
+    "word": "bird",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "b",
+      "i",
+      "r",
+      "d"
+    ],
+    "syllables": [
+      "bird"
+    ],
+    "ipa": "/bɜːd/",
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u7#p_b"
+      },
+      {
+        "letters": "ir",
+        "phonemes": [
+          "ɜː"
+        ],
+        "audio": "tb4a_u7#p_ir"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u7#p_d"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɜː",
+      "d"
+    ],
+    "definition": {
+      "zh": "鸟"
+    },
+    "example": {
+      "en": "The bird can fly.",
+      "zh": "鸟会飞。",
+      "audio": "tb4a_u7#bird_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#bird",
+      "wordSlow": "tb4a_u7#bird_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🐦"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_714",
+    "kind": "word",
+    "word": "back",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "b",
+      "a",
+      "c",
+      "k"
+    ],
+    "syllables": [
+      "back"
+    ],
+    "ipa": "/bæk/",
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u7#p_b"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "tb4a_u7#p_a"
+      },
+      {
+        "letters": "ck",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u7#p_ck"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "æ",
+      "k"
+    ],
+    "definition": {
+      "zh": "回原处"
+    },
+    "example": {
+      "en": "Come back soon.",
+      "zh": "早点回来。",
+      "audio": "tb4a_u7#back_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#back",
+      "wordSlow": "tb4a_u7#back_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "↩️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_715",
+    "kind": "word",
+    "word": "in",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "prep.",
+      "core": true
+    },
+    "spelling": [
+      "i",
+      "n"
+    ],
+    "syllables": [
+      "in"
+    ],
+    "ipa": "/ɪn/",
+    "graphemes": [
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u7#p_i"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u7#p_n"
+      }
+    ],
+    "phonemes": [
+      "ɪ",
+      "n"
+    ],
+    "definition": {
+      "zh": "在（某段时间）内"
+    },
+    "example": {
+      "en": "I swim in summer.",
+      "zh": "我夏天游泳。",
+      "audio": "tb4a_u7#in_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#in",
+      "wordSlow": "tb4a_u7#in_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📥"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_716",
+    "kind": "word",
+    "word": "year",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "y",
+      "e",
+      "a",
+      "r"
+    ],
+    "syllables": [
+      "year"
+    ],
+    "ipa": "/jɪə(r)/",
+    "graphemes": [
+      {
+        "letters": "y",
+        "phonemes": [
+          "j"
+        ],
+        "audio": "tb4a_u7#p_y"
+      },
+      {
+        "letters": "ear",
+        "phonemes": [
+          "ɪə",
+          "r"
+        ],
+        "audio": "tb4a_u7#p_ear"
+      }
+    ],
+    "phonemes": [
+      "j",
+      "ɪə",
+      "r"
+    ],
+    "definition": {
+      "zh": "年"
+    },
+    "example": {
+      "en": "Happy New Year!",
+      "zh": "新年快乐！",
+      "audio": "tb4a_u7#year_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#year",
+      "wordSlow": "tb4a_u7#year_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🎊"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_717",
+    "kind": "word",
+    "word": "plant",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "p",
+      "l",
+      "a",
+      "n",
+      "t"
+    ],
+    "syllables": [
+      "plant"
+    ],
+    "ipa": "/plɑːnt/",
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u7#p_p"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u7#p_l"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɑː"
+        ],
+        "audio": "tb4a_u7#p_a"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u7#p_n"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u7#p_t"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "l",
+      "ɑː",
+      "n",
+      "t"
+    ],
+    "definition": {
+      "zh": "栽种，种植"
+    },
+    "example": {
+      "en": "Let us plant trees.",
+      "zh": "我们种树吧。",
+      "audio": "tb4a_u7#plant_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#plant",
+      "wordSlow": "tb4a_u7#plant_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌳"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_718",
+    "kind": "word",
+    "word": "pick",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "v.",
+      "core": false
+    },
+    "spelling": [
+      "p",
+      "i",
+      "c",
+      "k"
+    ],
+    "syllables": [
+      "pick"
+    ],
+    "ipa": "/pɪk/",
+    "graphemes": [
+      {
+        "letters": "p",
+        "phonemes": [
+          "p"
+        ],
+        "audio": "tb4a_u7#p_p"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u7#p_i"
+      },
+      {
+        "letters": "ck",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u7#p_ck"
+      }
+    ],
+    "phonemes": [
+      "p",
+      "ɪ",
+      "k"
+    ],
+    "definition": {
+      "zh": "采，摘"
+    },
+    "example": {
+      "en": "We pick apples in autumn.",
+      "zh": "我们秋天摘苹果。",
+      "audio": "tb4a_u7#pick_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#pick",
+      "wordSlow": "tb4a_u7#pick_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🍎"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_719",
+    "kind": "word",
+    "word": "snow",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 7,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "n",
+      "o",
+      "w"
+    ],
+    "syllables": [
+      "snow"
+    ],
+    "ipa": "/snəʊ/",
+    "graphemes": [
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u7#p_s"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u7#p_n"
+      },
+      {
+        "letters": "ow",
+        "phonemes": [
+          "oʊ"
+        ],
+        "audio": "tb4a_u7#p_ow"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "n",
+      "oʊ"
+    ],
+    "definition": {
+      "zh": "雪，积雪"
+    },
+    "example": {
+      "en": "I like snow.",
+      "zh": "我喜欢雪。",
+      "audio": "tb4a_u7#snow_example"
+    },
+    "audio": {
+      "word": "tb4a_u7#snow",
+      "wordSlow": "tb4a_u7#snow_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "☃️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  }
+]

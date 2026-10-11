@@ -20,6 +20,7 @@ interface AppState {
   viewportBypass: boolean;
   scenePage: number; error?: string; notice?: string; muted: boolean; updateWaiting: boolean;
   sceneThemeId: string; themePages: Record<string, number>; themeProgress: Record<string, PackProgress>;
+  drillUnitId: string; drillWordIds: string[];
   audioRevision: number; guidePulse: number;
   contentRecovery?: 'fallback' | 'repair' | 'app-update';
   storageIssue?: 'blocked' | 'changed' | 'newer' | 'unavailable';
@@ -29,6 +30,7 @@ export const useAppStore = create<AppState>(() => ({
   pack: { state: 'idle', completedBytes: 0, totalBytes: 0, percent: 0 },
   progress: [], stickers: [], guide: defaultGuide(), scenePage: 0, muted: false, updateWaiting: false, audioRevision: 0, guidePulse: 0,
   sceneThemeId: 'animal_home', themePages: {}, themeProgress: {},
+  drillUnitId: '', drillWordIds: [],
   usage: defaultUsage(), interactionPaused: false,
   viewportBypass: typeof window !== 'undefined' ? localStorage.getItem('viewport_bypass') === 'true' : false,
 }));

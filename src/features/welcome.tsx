@@ -1,6 +1,6 @@
-import { ArrowRight, Compass, Headphones, Leaf, MousePointer2, RefreshCw, Sparkles, Volume2 } from 'lucide-react';
+import { ArrowRight, BookOpen, Compass, Headphones, Leaf, MousePointer2, RefreshCw, Sparkles, Volume2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { audio, boot, enterExperience, explorationRoute, playGuide, sessionRoute } from '../app/runtime.ts';
+import { audio, boot, enterExperience, explorationRoute, playGuide, requestEntry, sessionRoute } from '../app/runtime.ts';
 import { navigate } from '../app/router.ts';
 import { useAppStore } from '../app/store.ts';
 import { Button, Header, Ollie } from '../components/ui.tsx';
@@ -32,6 +32,13 @@ export function Welcome({ requestedRoute }: { requestedRoute: string }) {
     else if (fresh.session) navigate(sessionRoute(fresh.session));
     else navigate(requestedRoute.startsWith('/word/') ? requestedRoute : explorationRoute());
   };
+  // 课本复习（drill）与探索轨道共用同一个入口流程，只是目的地不同。
+  const beginDrill = async () => {
+    void audio.unlock();
+    if (!await enterExperience()) return;
+    requestEntry('drill');
+    navigate(useAppStore.getState().onboardingComplete ? '/drill' : '/setup');
+  };
   return <div className="welcome-page"><Header />
     <main className="welcome-main">
       <section className="welcome-copy">
@@ -40,7 +47,7 @@ export function Welcome({ requestedRoute }: { requestedRoute: string }) {
         <p className="welcome-description">听一听，点一点。和 Ollie 一起，<br />走进英语里的小小世界。</p>
         <div className="welcome-steps"><span><Headphones />听一听</span><i /><span><MousePointer2 />点一点</span><i /><span><Sparkles />发现新朋友</span></div>
         {state.phase === 'failed' ? <div className="welcome-error" role="status"><p>{state.storage === 'pending' ? '学习记录暂时打不开。请家长帮忙再试一次，也可以先体验小小世界。' : offline ? '先连上网，把小伙伴们带来，再一起出发吧。' : '小小世界暂时打不开，请家长帮忙再试一次。'}</p><div className="button-row"><Button onClick={() => void boot(false, true)}><RefreshCw /> 再试一次</Button>{offlineGuide && <Button aria-label="听离线提示" onClick={() => void hearOfflineHelp()}><Volume2 /><span data-mode-label>听听提示</span></Button>}{state.storage === 'pending' && <Button onClick={() => void boot(true, true)}>临时体验</Button>}</div></div>
-          : <Button className="primary adventure-button" disabled={state.phase !== 'ready' || state.entering} onClick={() => void begin()}>{state.phase === 'loading' || state.entering ? '正在准备小小世界…' : '开始冒险'}<ArrowRight /></Button>}
+          : <><Button className="primary adventure-button" disabled={state.phase !== 'ready' || state.entering} onClick={() => void begin()}>{state.phase === 'loading' || state.entering ? '正在准备小小世界…' : '开始冒险'}<ArrowRight /></Button>{state.content?.catalog.textbook?.units.length ? <Button className="quiet" onClick={() => void beginDrill()}><BookOpen size={18} />课本复习</Button> : null}</>}
         <p className="small-note">按自己的节奏，每次一点点就很好。</p>
       </section>
       <section className="welcome-art" aria-label="Ollie 正在等你一起探索">

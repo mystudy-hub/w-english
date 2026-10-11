@@ -1,4 +1,5 @@
 import { database } from '../data/database.ts';
+import { DrillRepository } from '../data/drill-repository.ts';
 import { LearningRepository } from '../data/learning-repository.ts';
 import { defaultGuide, defaultSettings, guideEnabled } from '../domain/config.ts';
 import { firstTheme, themeAccess } from '../domain/themes.ts';
@@ -16,6 +17,8 @@ export const assetUrl = (url: string) => new URL(url, APP_BASE).href;
 export const audio = new AudioEngine(assetUrl);
 export const sessionLock = new SessionLock();
 export const repository = new LearningRepository(database, (work) => sessionLock.write(work));
+// drill 轨道只写自己的三张表，但共用同一把写锁，避免与探索轨道并发写。
+export const drillRepository = new DrillRepository(database, (work) => sessionLock.write(work));
 let manager: ContentPackManager | undefined;
 let bootTask: Promise<void> | undefined;
 let generation = 0;
@@ -249,6 +252,10 @@ export async function changeLearningRest(action: UsageAction) {
 export function sceneRoute(themeId = useAppStore.getState().sceneThemeId) { return `/scene/${themeId}`; }
 export function sessionRoute(session: SessionSnapshot) { return `/play/${session.activity === 'tapSpell' ? 'spell' : 'listen'}/${session.themeId}`; }
 export function explorationRoute() { return (useAppStore.getState().content?.catalog.themes.length ?? 0) > 1 ? '/themes' : sceneRoute(); }
+// 首次设置完成后回到哪个轨道：默认探索，从欢迎页点“课本复习”进来的回 drill。
+const ENTRY_KEY = 'w-english:entry';
+export function requestEntry(target: 'explore' | 'drill') { try { sessionStorage.setItem(ENTRY_KEY, target); } catch { /* 隐私模式忽略 */ } }
+export function takeEntry(): 'explore' | 'drill' { try { const value = sessionStorage.getItem(ENTRY_KEY); sessionStorage.removeItem(ENTRY_KEY); return value === 'drill' ? 'drill' : 'explore'; } catch { return 'explore'; } }
 export function selectScene(themeId: string) {
   const state = useAppStore.getState();
   const theme = state.content?.catalog.themes.find((entry) => entry.themeId === themeId);
@@ -351,7 +358,8 @@ export async function playWord(ref: string, wordId: string, owner: string, count
   if (audio.has(ref)) {
     result = await audio.play(ref, owner, rate);
   } else if (isSpeechSynthesisAvailable()) {
-    const targetWord = useAppStore.getState().content?.catalog.words.find((w) => w.wordId === wordId);
+    const current = useAppStore.getState().content;
+    const targetWord = current?.catalog.words.find((w) => w.wordId === wordId) ?? current?.catalog.textbook?.words.find((w) => w.wordId === wordId);
     const textToSpeak = targetWord?.word ?? wordId;
     const speechResult = await speakWithWebSpeech(textToSpeak, rate ?? audio.playbackRate);
     result = { status: speechResult.status, playbackId: speechResult.playbackId };

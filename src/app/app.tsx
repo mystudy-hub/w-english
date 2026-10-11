@@ -21,6 +21,8 @@ import { shouldShowRest } from '../domain/usage.ts';
 import { Button } from '../components/ui.tsx';
 import { OrientationDialog } from '../features/orientation.tsx';
 import { DianfanPage } from '../features/dianfan.tsx';
+import { DrillHome } from '../drill/drill-home.tsx';
+import { DrillSession } from '../drill/session.tsx';
 
 function App() {
   const route = useRoute(); const state = useAppStore(); const settings = useSettings();
@@ -85,6 +87,8 @@ function App() {
   if (!state.entered || (state.phase !== 'ready' && route !== '/parent')) page = <Welcome requestedRoute={route} />;
   else if (route === '/parent' && state.parentAuthorized) page = state.storage === 'pending' ? <StorageRecovery /> : <ParentPage />;
   else if (!state.onboardingComplete || route === '/setup') page = <Setup />;
+  else if (route === '/drill') page = <DrillHome />;
+  else if (route === '/drill/session') page = <DrillSession />;
   else if (route === '/stickers' && (state.content?.manifest.stage ?? 0) >= 2) page = <StickerBook />;
   else if (route.startsWith('/dianfan')) page = <DianfanPage />;
   else if (route.startsWith('/word/')) page = <WordCard key={route} wordId={route.slice('/word/'.length)} />;

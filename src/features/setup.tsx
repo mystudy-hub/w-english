@@ -1,7 +1,7 @@
 import { Check, Hand, Move, ShieldCheck, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 import { navigate } from '../app/router.ts';
-import { explorationRoute, saveSettings } from '../app/runtime.ts';
+import { explorationRoute, saveSettings, takeEntry } from '../app/runtime.ts';
 import { useSettings } from '../app/store.ts';
 import type { InteractionMode, LearningLevel } from '../domain/models.ts';
 import { Button, Header, Ollie } from '../components/ui.tsx';
@@ -13,7 +13,7 @@ export function Setup() {
   const [saving, setSaving] = useState(false); const [error, setError] = useState('');
   const save = async () => {
     setSaving(true); setError('');
-    try { await saveSettings({ ...current, interactionMode: mode, learningLevel: level, onboardingComplete: true }); navigate(explorationRoute()); }
+    try { await saveSettings({ ...current, interactionMode: mode, learningLevel: level, onboardingComplete: true }); navigate(takeEntry() === 'drill' ? '/drill' : explorationRoute()); }
     catch { setError('设置还没有保存成功，请再试一次。'); }
     finally { setSaving(false); }
   };

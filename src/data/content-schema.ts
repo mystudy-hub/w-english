@@ -42,6 +42,7 @@ const reviewSchema = z.strictObject({
 
 // 课本单元与句子的比对、拼接只按字母，忽略大小写、空格与句末标点。
 const lettersOf = (value: string) => value.toLowerCase().replace(/[^a-z]/g, '');
+const literalsOf = (graphemes: readonly { letters: string }[]) => graphemes.map((part) => part.letters).join('').toLowerCase();
 
 // 课本轨道的分组信息：一本书、一个单元、一个词性与是否核心词。
 export const textbookSchema = z.strictObject({
@@ -65,7 +66,7 @@ const wordBase = z.strictObject({
   schemaVersion: z.union([z.literal(3), z.literal(4)]),
   wordId,
   kind: z.enum(['word', 'phrase']).default('word'),
-  word: z.string().regex(/^[A-Za-z][A-Za-z'’ .-]*$/),
+  word: z.string().regex(/^[A-Za-z][A-Za-z'’ .!?…-]*$/),
   theme: z.enum(['animals', 'food', 'nature', 'colors', 'school', 'family', 'body']).optional(),
   textbook: textbookSchema.optional(),
   sightWordList: z.enum(['dolch_pre_primer', 'dolch_primer', 'dolch_first', 'dolch_nouns', 'fry_100', 'fry_300']).optional(),
@@ -104,9 +105,10 @@ function refineWord(word: WordShape, ctx: z.RefinementCtx) {
   }
   if (word.kind === 'word') {
     if (word.spelling.some((part) => !/^[a-z]$/.test(part))) issue('spelling', 'spelling 必须逐字母');
-    if (word.spelling.join('') !== word.word) issue('spelling', '逐字母拼接必须等于单词');
-    if (word.syllables.join('') !== word.word) issue('syllables', '音节拼接必须等于单词');
-    if (word.graphemes.map((part) => part.letters).join('') !== word.word) issue('graphemes', '字母组合拼接必须等于单词');
+    // 拼写、音节与字母组合与词形的比对只比字母，所以 o'clock 这类带撇号的单词也适用。
+    if (word.spelling.join('') !== lettersOf(word.word)) issue('spelling', '逐字母拼接必须等于单词');
+    if (lettersOf(word.syllables.join('')) !== lettersOf(word.word)) issue('syllables', '音节拼接必须等于单词');
+    if (literalsOf(word.graphemes) !== lettersOf(word.word)) issue('graphemes', '字母组合拼接必须等于单词');
     if (!word.phonemes.length) issue('phonemes', '单词必须提供音素');
     if (word.definition.en_young && countWords(word.definition.en_young) > 5) issue('definition', '单词的 en_young 不能超过 5 个英文词');
     if (JSON.stringify(word.graphemes.flatMap((part) => part.phonemes)) !== JSON.stringify(word.phonemes)) issue('phonemes', '音素顺序必须与字母组合一致');

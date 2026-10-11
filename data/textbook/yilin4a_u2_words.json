@@ -5,21 +5,61 @@
     "kind": "word",
     "word": "day",
     "track": "textbook",
-    "textbook": { "bookId": "yilin-4a-2024", "unit": 2, "pos": "n.", "core": true },
-    "spelling": ["d", "a", "y"],
-    "syllables": ["day"],
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "d",
+      "a",
+      "y"
+    ],
+    "syllables": [
+      "day"
+    ],
     "ipa": "/deɪ/",
     "graphemes": [
-      { "letters": "d", "phonemes": ["d"], "audio": "tb4a_u2#p_d" },
-      { "letters": "ay", "phonemes": ["eɪ"], "audio": "tb4a_u2#p_ay" }
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u2#p_d"
+      },
+      {
+        "letters": "ay",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u2#p_ay"
+      }
     ],
-    "phonemes": ["d", "eɪ"],
-    "definition": { "zh": "一天，一日" },
-    "example": { "en": "Have a nice day.", "zh": "祝你有愉快的一天！", "audio": "tb4a_u2#day_example" },
-    "audio": { "word": "tb4a_u2#day", "wordSlow": "tb4a_u2#day_slow" },
-    "illustration": { "type": "emoji", "value": "📅" },
-    "review": { "status": "draft" },
-    "contentVersion": "2026.10.1"
+    "phonemes": [
+      "d",
+      "eɪ"
+    ],
+    "definition": {
+      "zh": "一天，一日"
+    },
+    "example": {
+      "en": "Have a nice day!",
+      "zh": "祝你有愉快的一天！",
+      "audio": "tb4a_u2#day_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#day",
+      "wordSlow": "tb4a_u2#day_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📅"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
   },
   {
     "schemaVersion": 4,
@@ -27,21 +67,1861 @@
     "kind": "phrase",
     "word": "get up",
     "track": "textbook",
-    "textbook": { "bookId": "yilin-4a-2024", "unit": 2, "pos": "phr.", "core": true },
-    "spelling": ["get", "up"],
-    "syllables": ["get", "up"],
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "get",
+      "up"
+    ],
+    "syllables": [
+      "get",
+      "up"
+    ],
     "ipa": "/ɡet ʌp/",
     "graphemes": [
-      { "letters": "g", "phonemes": [], "audio": null },
-      { "letters": "et", "phonemes": [], "audio": null },
-      { "letters": "up", "phonemes": [], "audio": null }
+      {
+        "letters": "get",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "up",
+        "phonemes": [],
+        "audio": null
+      }
     ],
     "phonemes": [],
-    "definition": { "zh": "起床" },
-    "example": { "en": "I get up at six.", "zh": "我六点起床。", "audio": "tb4a_u2#get_up_example" },
-    "audio": { "word": "tb4a_u2#get_up", "wordSlow": "tb4a_u2#get_up_slow" },
-    "illustration": { "type": "emoji", "value": "🛏️" },
-    "review": { "status": "draft" },
-    "contentVersion": "2026.10.1"
+    "definition": {
+      "zh": "起床"
+    },
+    "example": {
+      "en": "I get up at six.",
+      "zh": "我六点起床。",
+      "audio": "tb4a_u2#get_up_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#get_up",
+      "wordSlow": "tb4a_u2#get_up_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🛏️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_003",
+    "kind": "word",
+    "word": "wash",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "w",
+      "a",
+      "s",
+      "h"
+    ],
+    "syllables": [
+      "wash"
+    ],
+    "ipa": "/wɒʃ/",
+    "graphemes": [
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u2#p_w"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɒ"
+        ],
+        "audio": "tb4a_u2#p_a"
+      },
+      {
+        "letters": "sh",
+        "phonemes": [
+          "ʃ"
+        ],
+        "audio": "tb4a_u2#p_sh"
+      }
+    ],
+    "phonemes": [
+      "w",
+      "ɒ",
+      "ʃ"
+    ],
+    "definition": {
+      "zh": "洗"
+    },
+    "example": {
+      "en": "I wash my face.",
+      "zh": "我洗脸。",
+      "audio": "tb4a_u2#wash_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#wash",
+      "wordSlow": "tb4a_u2#wash_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🧼"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_004",
+    "kind": "word",
+    "word": "face",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "f",
+      "a",
+      "c",
+      "e"
+    ],
+    "syllables": [
+      "face"
+    ],
+    "ipa": "/feɪs/",
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "tb4a_u2#p_f"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "eɪ"
+        ],
+        "audio": "tb4a_u2#p_a"
+      },
+      {
+        "letters": "ce",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u2#p_ce"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "eɪ",
+      "s"
+    ],
+    "definition": {
+      "zh": "脸，面孔"
+    },
+    "example": {
+      "en": "I wash my face.",
+      "zh": "我洗脸。",
+      "audio": "tb4a_u2#face_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#face",
+      "wordSlow": "tb4a_u2#face_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "😊"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_005",
+    "kind": "phrase",
+    "word": "have lessons",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "have",
+      "lessons"
+    ],
+    "syllables": [
+      "have",
+      "lessons"
+    ],
+    "ipa": "/hæv ˈlesnz/",
+    "graphemes": [
+      {
+        "letters": "have",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "lessons",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "上课"
+    },
+    "example": {
+      "en": "We have lessons in the morning.",
+      "zh": "我们上午上课。",
+      "audio": "tb4a_u2#have_lessons_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#have_lessons",
+      "wordSlow": "tb4a_u2#have_lessons_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📚"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_006",
+    "kind": "word",
+    "word": "have",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "v.",
+      "core": true
+    },
+    "spelling": [
+      "h",
+      "a",
+      "v",
+      "e"
+    ],
+    "syllables": [
+      "have"
+    ],
+    "ipa": "/hæv/",
+    "graphemes": [
+      {
+        "letters": "h",
+        "phonemes": [
+          "h"
+        ],
+        "audio": "tb4a_u2#p_h"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "æ"
+        ],
+        "audio": "tb4a_u2#p_a"
+      },
+      {
+        "letters": "ve",
+        "phonemes": [
+          "v"
+        ],
+        "audio": "tb4a_u2#p_ve"
+      }
+    ],
+    "phonemes": [
+      "h",
+      "æ",
+      "v"
+    ],
+    "definition": {
+      "zh": "吃，喝"
+    },
+    "example": {
+      "en": "I have lunch at school.",
+      "zh": "我在学校吃午饭。",
+      "audio": "tb4a_u2#have_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#have",
+      "wordSlow": "tb4a_u2#have_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🍽️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_007",
+    "kind": "word",
+    "word": "dinner",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "d",
+      "i",
+      "n",
+      "n",
+      "e",
+      "r"
+    ],
+    "syllables": [
+      "dinner"
+    ],
+    "ipa": "/ˈdɪnə(r)/",
+    "graphemes": [
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u2#p_d"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u2#p_i"
+      },
+      {
+        "letters": "nn",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u2#p_nn"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u2#p_e"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u2#p_r"
+      }
+    ],
+    "phonemes": [
+      "d",
+      "ɪ",
+      "n",
+      "ə",
+      "r"
+    ],
+    "definition": {
+      "zh": "正餐（常指晚餐）"
+    },
+    "example": {
+      "en": "We have dinner at six.",
+      "zh": "我们六点吃晚饭。",
+      "audio": "tb4a_u2#dinner_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#dinner",
+      "wordSlow": "tb4a_u2#dinner_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🍲"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_008",
+    "kind": "word",
+    "word": "breakfast",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "b",
+      "r",
+      "e",
+      "a",
+      "k",
+      "f",
+      "a",
+      "s",
+      "t"
+    ],
+    "syllables": [
+      "breakfast"
+    ],
+    "ipa": "/ˈbrekfəst/",
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u2#p_b"
+      },
+      {
+        "letters": "r",
+        "phonemes": [
+          "r"
+        ],
+        "audio": "tb4a_u2#p_r"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u2#p_e"
+      },
+      {
+        "letters": "a",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "k",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u2#p_k"
+      },
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "tb4a_u2#p_f"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u2#p_a"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u2#p_s"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u2#p_t"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "r",
+      "ɛ",
+      "k",
+      "f",
+      "ə",
+      "s",
+      "t"
+    ],
+    "definition": {
+      "zh": "早餐，早饭"
+    },
+    "example": {
+      "en": "I have breakfast at seven.",
+      "zh": "我七点吃早饭。",
+      "audio": "tb4a_u2#breakfast_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#breakfast",
+      "wordSlow": "tb4a_u2#breakfast_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🥣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_009",
+    "kind": "word",
+    "word": "lunch",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "l",
+      "u",
+      "n",
+      "c",
+      "h"
+    ],
+    "syllables": [
+      "lunch"
+    ],
+    "ipa": "/lʌntʃ/",
+    "graphemes": [
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u2#p_l"
+      },
+      {
+        "letters": "u",
+        "phonemes": [
+          "ʌ"
+        ],
+        "audio": "tb4a_u2#p_u"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u2#p_n"
+      },
+      {
+        "letters": "ch",
+        "phonemes": [
+          "tʃ"
+        ],
+        "audio": "tb4a_u2#p_ch"
+      }
+    ],
+    "phonemes": [
+      "l",
+      "ʌ",
+      "n",
+      "tʃ"
+    ],
+    "definition": {
+      "zh": "午餐，午饭"
+    },
+    "example": {
+      "en": "I have lunch at school.",
+      "zh": "我在学校吃午饭。",
+      "audio": "tb4a_u2#lunch_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#lunch",
+      "wordSlow": "tb4a_u2#lunch_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🍱"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_010",
+    "kind": "phrase",
+    "word": "go to bed",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "go",
+      "to",
+      "bed"
+    ],
+    "syllables": [
+      "go",
+      "to",
+      "bed"
+    ],
+    "ipa": "/ɡəʊ tə bed/",
+    "graphemes": [
+      {
+        "letters": "go",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "to",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "bed",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "上床睡觉"
+    },
+    "example": {
+      "en": "I go to bed at nine.",
+      "zh": "我九点上床睡觉。",
+      "audio": "tb4a_u2#go_to_bed_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#go_to_bed",
+      "wordSlow": "tb4a_u2#go_to_bed_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌜"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_011",
+    "kind": "word",
+    "word": "o'clock",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "o",
+      "c",
+      "l",
+      "o",
+      "c",
+      "k"
+    ],
+    "syllables": [
+      "o'clock"
+    ],
+    "ipa": "/əˈklɒk/",
+    "graphemes": [
+      {
+        "letters": "o",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u2#p_o"
+      },
+      {
+        "letters": "c",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u2#p_c"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u2#p_l"
+      },
+      {
+        "letters": "o",
+        "phonemes": [
+          "ɒ"
+        ],
+        "audio": "tb4a_u2#p_o"
+      },
+      {
+        "letters": "ck",
+        "phonemes": [
+          "k"
+        ],
+        "audio": "tb4a_u2#p_ck"
+      }
+    ],
+    "phonemes": [
+      "ə",
+      "k",
+      "l",
+      "ɒ",
+      "k"
+    ],
+    "definition": {
+      "zh": "（表示整点）……点钟"
+    },
+    "example": {
+      "en": "It is six o'clock.",
+      "zh": "现在六点钟。",
+      "audio": "tb4a_u2#o_clock_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#o_clock",
+      "wordSlow": "tb4a_u2#o_clock_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🕕"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_012",
+    "kind": "word",
+    "word": "early",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "adj.",
+      "core": true
+    },
+    "spelling": [
+      "e",
+      "a",
+      "r",
+      "l",
+      "y"
+    ],
+    "syllables": [
+      "early"
+    ],
+    "ipa": "/ˈɜːli/",
+    "graphemes": [
+      {
+        "letters": "ea",
+        "phonemes": [
+          "ɜː"
+        ],
+        "audio": "tb4a_u2#p_ea"
+      },
+      {
+        "letters": "r",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u2#p_l"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u2#p_y"
+      }
+    ],
+    "phonemes": [
+      "ɜː",
+      "l",
+      "i"
+    ],
+    "definition": {
+      "zh": "早的，早"
+    },
+    "example": {
+      "en": "I get up early.",
+      "zh": "我起得很早。",
+      "audio": "tb4a_u2#early_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#early",
+      "wordSlow": "tb4a_u2#early_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌅"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_013",
+    "kind": "word",
+    "word": "thirty",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "num.",
+      "core": true
+    },
+    "spelling": [
+      "t",
+      "h",
+      "i",
+      "r",
+      "t",
+      "y"
+    ],
+    "syllables": [
+      "thirty"
+    ],
+    "ipa": "/ˈθɜːti/",
+    "graphemes": [
+      {
+        "letters": "th",
+        "phonemes": [
+          "θ"
+        ],
+        "audio": "tb4a_u2#p_th"
+      },
+      {
+        "letters": "ir",
+        "phonemes": [
+          "ɜː"
+        ],
+        "audio": "tb4a_u2#p_ir"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u2#p_t"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u2#p_y"
+      }
+    ],
+    "phonemes": [
+      "θ",
+      "ɜː",
+      "t",
+      "i"
+    ],
+    "definition": {
+      "zh": "三十"
+    },
+    "example": {
+      "en": "Thirty plus ten is forty.",
+      "zh": "三十加十等于四十。",
+      "audio": "tb4a_u2#thirty_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#thirty",
+      "wordSlow": "tb4a_u2#thirty_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔢"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_014",
+    "kind": "word",
+    "word": "first",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "adv.",
+      "core": true
+    },
+    "spelling": [
+      "f",
+      "i",
+      "r",
+      "s",
+      "t"
+    ],
+    "syllables": [
+      "first"
+    ],
+    "ipa": "/fɜːst/",
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "tb4a_u2#p_f"
+      },
+      {
+        "letters": "ir",
+        "phonemes": [
+          "ɜː"
+        ],
+        "audio": "tb4a_u2#p_ir"
+      },
+      {
+        "letters": "s",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u2#p_s"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u2#p_t"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "ɜː",
+      "s",
+      "t"
+    ],
+    "definition": {
+      "zh": "首先，第一"
+    },
+    "example": {
+      "en": "First brush your teeth.",
+      "zh": "首先刷牙。",
+      "audio": "tb4a_u2#first_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#first",
+      "wordSlow": "tb4a_u2#first_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "1️⃣"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_015",
+    "kind": "phrase",
+    "word": "hurry up",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "hurry",
+      "up"
+    ],
+    "syllables": [
+      "hurry",
+      "up"
+    ],
+    "ipa": "/ˈhʌri ʌp/",
+    "graphemes": [
+      {
+        "letters": "hurry",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "up",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "快点"
+    },
+    "example": {
+      "en": "Hurry up, it is late.",
+      "zh": "快点，晚了。",
+      "audio": "tb4a_u2#hurry_up_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#hurry_up",
+      "wordSlow": "tb4a_u2#hurry_up_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⏰"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_016",
+    "kind": "phrase",
+    "word": "What time is it?",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "What",
+      "time",
+      "is",
+      "it"
+    ],
+    "syllables": [
+      "What",
+      "time",
+      "is",
+      "it"
+    ],
+    "ipa": "/wɒt taɪm ɪz ɪt/",
+    "graphemes": [
+      {
+        "letters": "what",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "time",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "is",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "it",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "几点了？"
+    },
+    "example": {
+      "en": "What time is it now?",
+      "zh": "现在几点了？",
+      "audio": "tb4a_u2#what_time_is_it_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#what_time_is_it",
+      "wordSlow": "tb4a_u2#what_time_is_it_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⏰"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_017",
+    "kind": "phrase",
+    "word": "I'm coming!",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "I'm",
+      "coming"
+    ],
+    "syllables": [
+      "I'm",
+      "coming"
+    ],
+    "ipa": "/aɪm ˈkʌmɪŋ/",
+    "graphemes": [
+      {
+        "letters": "im",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "coming",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "我来了！"
+    },
+    "example": {
+      "en": "I am coming now.",
+      "zh": "我现在就来。",
+      "audio": "tb4a_u2#i_m_coming_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#i_m_coming",
+      "wordSlow": "tb4a_u2#i_m_coming_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🏃"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_018",
+    "kind": "word",
+    "word": "twenty",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "num.",
+      "core": true
+    },
+    "spelling": [
+      "t",
+      "w",
+      "e",
+      "n",
+      "t",
+      "y"
+    ],
+    "syllables": [
+      "twenty"
+    ],
+    "ipa": "/ˈtwenti/",
+    "graphemes": [
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u2#p_t"
+      },
+      {
+        "letters": "w",
+        "phonemes": [
+          "w"
+        ],
+        "audio": "tb4a_u2#p_w"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u2#p_e"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u2#p_n"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u2#p_t"
+      },
+      {
+        "letters": "y",
+        "phonemes": [
+          "i"
+        ],
+        "audio": "tb4a_u2#p_y"
+      }
+    ],
+    "phonemes": [
+      "t",
+      "w",
+      "ɛ",
+      "n",
+      "t",
+      "i"
+    ],
+    "definition": {
+      "zh": "二十"
+    },
+    "example": {
+      "en": "I see twenty birds.",
+      "zh": "我看见二十只鸟。",
+      "audio": "tb4a_u2#twenty_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#twenty",
+      "wordSlow": "tb4a_u2#twenty_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔢"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_019",
+    "kind": "phrase",
+    "word": "Come on!",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "Come",
+      "on"
+    ],
+    "syllables": [
+      "Come",
+      "on"
+    ],
+    "ipa": "/kʌm ɒn/",
+    "graphemes": [
+      {
+        "letters": "come",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "on",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "赶快！加把劲！"
+    },
+    "example": {
+      "en": "Come on, you can do it!",
+      "zh": "加油，你能做到！",
+      "audio": "tb4a_u2#come_on_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#come_on",
+      "wordSlow": "tb4a_u2#come_on_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "💪"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_020",
+    "kind": "word",
+    "word": "class",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "c",
+      "l",
+      "a",
+      "s",
+      "s"
+    ],
+    "syllables": [
+      "class"
+    ],
+    "ipa": "/klɑːs/",
+    "graphemes": [
+      {
+        "letters": "cl",
+        "phonemes": [
+          "k",
+          "l"
+        ],
+        "audio": "tb4a_u2#p_cl"
+      },
+      {
+        "letters": "a",
+        "phonemes": [
+          "ɑː"
+        ],
+        "audio": "tb4a_u2#p_a"
+      },
+      {
+        "letters": "ss",
+        "phonemes": [
+          "s"
+        ],
+        "audio": "tb4a_u2#p_ss"
+      }
+    ],
+    "phonemes": [
+      "k",
+      "l",
+      "ɑː",
+      "s"
+    ],
+    "definition": {
+      "zh": "课，上课"
+    },
+    "example": {
+      "en": "We have English class today.",
+      "zh": "我们今天有英语课。",
+      "audio": "tb4a_u2#class_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#class",
+      "wordSlow": "tb4a_u2#class_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "📖"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_021",
+    "kind": "word",
+    "word": "eleven",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "num.",
+      "core": true
+    },
+    "spelling": [
+      "e",
+      "l",
+      "e",
+      "v",
+      "e",
+      "n"
+    ],
+    "syllables": [
+      "eleven"
+    ],
+    "ipa": "/ɪˈlevn/",
+    "graphemes": [
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u2#p_e"
+      },
+      {
+        "letters": "l",
+        "phonemes": [
+          "l"
+        ],
+        "audio": "tb4a_u2#p_l"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u2#p_e"
+      },
+      {
+        "letters": "v",
+        "phonemes": [
+          "v"
+        ],
+        "audio": "tb4a_u2#p_v"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ə"
+        ],
+        "audio": "tb4a_u2#p_e"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u2#p_n"
+      }
+    ],
+    "phonemes": [
+      "ɪ",
+      "l",
+      "ɛ",
+      "v",
+      "ə",
+      "n"
+    ],
+    "definition": {
+      "zh": "十一"
+    },
+    "example": {
+      "en": "It is eleven o'clock.",
+      "zh": "现在十一点。",
+      "audio": "tb4a_u2#eleven_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#eleven",
+      "wordSlow": "tb4a_u2#eleven_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔢"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_022",
+    "kind": "word",
+    "word": "sport",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "s",
+      "p",
+      "o",
+      "r",
+      "t"
+    ],
+    "syllables": [
+      "sport"
+    ],
+    "ipa": "/spɔːt/",
+    "graphemes": [
+      {
+        "letters": "sp",
+        "phonemes": [
+          "s",
+          "p"
+        ],
+        "audio": "tb4a_u2#p_sp"
+      },
+      {
+        "letters": "or",
+        "phonemes": [
+          "ɔː"
+        ],
+        "audio": "tb4a_u2#p_or"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u2#p_t"
+      }
+    ],
+    "phonemes": [
+      "s",
+      "p",
+      "ɔː",
+      "t"
+    ],
+    "definition": {
+      "zh": "体育运动"
+    },
+    "example": {
+      "en": "I like sport.",
+      "zh": "我喜欢运动。",
+      "audio": "tb4a_u2#sport_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#sport",
+      "wordSlow": "tb4a_u2#sport_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⚽"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_023",
+    "kind": "word",
+    "word": "fifteen",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "num.",
+      "core": true
+    },
+    "spelling": [
+      "f",
+      "i",
+      "f",
+      "t",
+      "e",
+      "e",
+      "n"
+    ],
+    "syllables": [
+      "fifteen"
+    ],
+    "ipa": "/ˌfɪfˈtiːn/",
+    "graphemes": [
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "tb4a_u2#p_f"
+      },
+      {
+        "letters": "i",
+        "phonemes": [
+          "ɪ"
+        ],
+        "audio": "tb4a_u2#p_i"
+      },
+      {
+        "letters": "f",
+        "phonemes": [
+          "f"
+        ],
+        "audio": "tb4a_u2#p_f"
+      },
+      {
+        "letters": "t",
+        "phonemes": [
+          "t"
+        ],
+        "audio": "tb4a_u2#p_t"
+      },
+      {
+        "letters": "ee",
+        "phonemes": [
+          "iː"
+        ],
+        "audio": "tb4a_u2#p_ee"
+      },
+      {
+        "letters": "n",
+        "phonemes": [
+          "n"
+        ],
+        "audio": "tb4a_u2#p_n"
+      }
+    ],
+    "phonemes": [
+      "f",
+      "ɪ",
+      "f",
+      "t",
+      "iː",
+      "n"
+    ],
+    "definition": {
+      "zh": "十五"
+    },
+    "example": {
+      "en": "It is fifteen past two.",
+      "zh": "现在两点十五分。",
+      "audio": "tb4a_u2#fifteen_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#fifteen",
+      "wordSlow": "tb4a_u2#fifteen_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🔢"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_024",
+    "kind": "phrase",
+    "word": "It's time to …",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "It's",
+      "time",
+      "to"
+    ],
+    "syllables": [
+      "It's",
+      "time",
+      "to"
+    ],
+    "ipa": "/ɪts taɪm tə/",
+    "graphemes": [
+      {
+        "letters": "its",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "time",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "to",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "到了……的时间了。"
+    },
+    "example": {
+      "en": "It is time to go to bed.",
+      "zh": "到了睡觉的时间了。",
+      "audio": "tb4a_u2#it_s_time_to_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#it_s_time_to",
+      "wordSlow": "tb4a_u2#it_s_time_to_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "⏰"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_025",
+    "kind": "word",
+    "word": "bed",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "n.",
+      "core": true
+    },
+    "spelling": [
+      "b",
+      "e",
+      "d"
+    ],
+    "syllables": [
+      "bed"
+    ],
+    "ipa": "/bed/",
+    "graphemes": [
+      {
+        "letters": "b",
+        "phonemes": [
+          "b"
+        ],
+        "audio": "tb4a_u2#p_b"
+      },
+      {
+        "letters": "e",
+        "phonemes": [
+          "ɛ"
+        ],
+        "audio": "tb4a_u2#p_e"
+      },
+      {
+        "letters": "d",
+        "phonemes": [
+          "d"
+        ],
+        "audio": "tb4a_u2#p_d"
+      }
+    ],
+    "phonemes": [
+      "b",
+      "ɛ",
+      "d"
+    ],
+    "definition": {
+      "zh": "床"
+    },
+    "example": {
+      "en": "Go to bed now.",
+      "zh": "现在去睡觉。",
+      "audio": "tb4a_u2#bed_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#bed",
+      "wordSlow": "tb4a_u2#bed_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🛏️"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
+  },
+  {
+    "schemaVersion": 4,
+    "wordId": "w_tb4a_026",
+    "kind": "phrase",
+    "word": "Good night!",
+    "track": "textbook",
+    "textbook": {
+      "bookId": "yilin-4a-2024",
+      "unit": 2,
+      "pos": "phr.",
+      "core": true
+    },
+    "spelling": [
+      "Good",
+      "night"
+    ],
+    "syllables": [
+      "Good",
+      "night"
+    ],
+    "ipa": "/ɡʊd naɪt/",
+    "graphemes": [
+      {
+        "letters": "good",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "night",
+        "phonemes": [],
+        "audio": null
+      }
+    ],
+    "phonemes": [],
+    "definition": {
+      "zh": "晚安！"
+    },
+    "example": {
+      "en": "Good night, Mum!",
+      "zh": "妈妈，晚安！",
+      "audio": "tb4a_u2#good_night_example"
+    },
+    "audio": {
+      "word": "tb4a_u2#good_night",
+      "wordSlow": "tb4a_u2#good_night_slow"
+    },
+    "illustration": {
+      "type": "emoji",
+      "value": "🌙"
+    },
+    "review": {
+      "status": "draft"
+    },
+    "contentVersion": "2026.10.2"
   }
 ]

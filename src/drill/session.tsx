@@ -37,8 +37,9 @@ export function DrillSession() {
       const profile = await drillRepository.profile(profileId) ?? defaultProfile(profileId);
       const mistakeRound = useAppStore.getState().drillWordIds;
       // 核心 SRS 只认识 { id, core, unit } 这个最小视图；词条适配放在这里，共享内核不需要知道课本契约。
+      // 只把本单元的词当词库传入；不传 unit 参数，每日新词上限才生效（规格 §13.4）。
       const plan = await drillRepository.plan({ profileId, words: unit.map((word) => ({ id: word.wordId, core: word.textbook.core, unit: word.textbook.unit })),
-        dailyNewTarget: profile.dailyNewTarget, includeNonCore: profile.includeNonCore, unit: Number(unitId.slice('tb4a_u'.length)),
+        dailyNewTarget: profile.dailyNewTarget, includeNonCore: profile.includeNonCore,
         ...(mistakeRound.length ? { wordIds: mistakeRound } : {}) });
       const byId = new Map(unit.map((word) => [word.wordId, word]));
       const items = plan.all.flatMap((entry) => { const word = byId.get(entry.id); return word ? [{ word, question: makeQuestion(word, unit, DEFAULT_MODES) }] : []; });

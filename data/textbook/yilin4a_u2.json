@@ -3,6 +3,35 @@
   "bookId": "yilin-4a-2024",
   "unitId": "tb4a_u2",
   "title": "Unit 2 My day",
-  "wordIds": ["w_tb4a_001", "w_tb4a_002"],
-  "spriteIds": ["tb4a_u2"]
+  "wordIds": [
+    "w_tb4a_001",
+    "w_tb4a_002",
+    "w_tb4a_003",
+    "w_tb4a_004",
+    "w_tb4a_005",
+    "w_tb4a_006",
+    "w_tb4a_007",
+    "w_tb4a_008",
+    "w_tb4a_009",
+    "w_tb4a_010",
+    "w_tb4a_011",
+    "w_tb4a_012",
+    "w_tb4a_013",
+    "w_tb4a_014",
+    "w_tb4a_015",
+    "w_tb4a_016",
+    "w_tb4a_017",
+    "w_tb4a_018",
+    "w_tb4a_019",
+    "w_tb4a_020",
+    "w_tb4a_021",
+    "w_tb4a_022",
+    "w_tb4a_023",
+    "w_tb4a_024",
+    "w_tb4a_025",
+    "w_tb4a_026"
+  ],
+  "spriteIds": [
+    "tb4a_u2"
+  ]
 }

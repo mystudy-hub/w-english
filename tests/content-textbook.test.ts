@@ -53,10 +53,10 @@ describe('textbook contract v4', () => {
   });
 
   it('rejects a phrase that forgot to declare itself', () => {
-    // 缺省 kind 是 word，于是“get up”会按逐字母规则被拒
+    // 缺省 kind 是 word，于是“get up”会先被逐字母规则拦住
     const result = textbookWordsSchema.safeParse([phrase({ kind: undefined })]);
     expect(result.success).toBe(false);
-    expect(result.error?.issues.some((issue) => String(issue.message).includes('拼接'))).toBe(true);
+    expect(result.error?.issues.some((issue) => /逐字母|拼接/.test(String(issue.message)))).toBe(true);
   });
 
   it('rejects a textbook word without the textbook block', () => {

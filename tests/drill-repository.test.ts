@@ -81,6 +81,13 @@ describe('drill planning', () => {
     expect(plan.all.map((entry) => entry.id)).toEqual(['w_tb4a_001', 'w_tb4a_002']);
   });
 
+  it("caps the day's new words at the target when a whole unit is handed in", async () => {
+    const unit = [word('w_tb4a_001'), word('w_tb4a_002'), word('w_tb4a_003')];
+    const plan = await drill.plan({ profileId: DEFAULT_PROFILE_ID, words: unit, dailyNewTarget: 2, includeNonCore: false, now: NOW });
+    expect(plan.newWords.map((entry) => entry.id)).toEqual(['w_tb4a_001', 'w_tb4a_002']);
+    expect(plan.all).toHaveLength(2);
+  });
+
   it('hands a mistake-book round straight to the requested words', async () => {
     const plan = await drill.plan({ profileId: DEFAULT_PROFILE_ID, words, dailyNewTarget: 10, includeNonCore: false, wordIds: ['w_tb4a_003'], now: NOW });
     expect(plan).toEqual({ dueReviews: [word('w_tb4a_003')], newWords: [], all: [word('w_tb4a_003')] });

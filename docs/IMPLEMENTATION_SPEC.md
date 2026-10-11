@@ -1,6 +1,6 @@
 # W-English 实施规格
 
-版本：1.3；日期：2026-09-12；对应 [PROJECT_PLAN.md v2.3.2](./PROJECT_PLAN.md)。本次同步儿童控件与可读性、安全区与横屏提示、PCM 中间文件、解码边界检查和核心资源缓存规则。工程状态与人工验收分别记录，逐项证据见 [规格核对记录](./qa/SPEC_AUDIT_2026-09-12.md)。
+版本：1.4；日期：2026-10-11；对应 [PROJECT_PLAN.md v2.4](./PROJECT_PLAN.md)。本次同步儿童控件与可读性、安全区与横屏提示、PCM 中间文件、解码边界检查和核心资源缓存规则，并新增第 13 节“双轨道与多档案”（合并 `memoryApp` 课本轨道的目标契约，尚未实现）。工程状态与人工验收分别记录，逐项证据见 [规格核对记录](./qa/SPEC_AUDIT_2026-09-12.md)。
 
 ## 1. 基线、交付与文档状态
 
@@ -496,5 +496,99 @@ Stage 2 必测中断下载、缓存缺失、空间不足、应用/内容版本�
 | 官方 TTS 整词 + 审核音素素材 | 避免把字母名当拼读音；保留生成接口替换能力 | 服务条款/预算不可用或听审失败 |
 | injectManifest + 等待激活 | 满足独立内容包、恢复与使用中不刷新 | 两平台生命周期测试不通过 |
 | Stage 1 提供音量/减少动态效果设置 | 与初次儿童试用一起验证基础体验 | 无，属于基础体验 |
+| 合并 `memoryApp` 为 drill 轨道而非独立应用 | 目标年龄与学习形态不同，但存储在 Dexie、SM-2、休息提醒和 PWA 壳上高度重复；自用场景单入口更省心 | 课本轨道内容长期无法合规，或单 PWA 的体积/性能不达标 |
+| 内容契约升 v4，支持短语与专有名词 | 译林 4A 172 条中有 56 条（38 条含大写、33 条含空格、16 条含句末标点）无法用 v3 的 `^[a-z]+$` 表达 | v4 校验分支的维护成本超过收益，或短语改为完全隔离存储 |
+| 儿童档案从单档案升为 `profiles` | 课本轨道按孩子需要每日新词目标、金币与连续天数，且两名孩子不能共用进度与休息额度 | 确认实际只有一名使用者且不再增加 |
+| drill 复用 explore 外壳、休息提醒与音频链 | 避免第二套触控/休息/音频实现，奖励语义不互相污染（drill 不发贴纸） | 课本轨道出现与儿童模式冲突的真实交互证据 |
 
 仍待负责人落实的外部条件：老师、语音服务账户和预算、素材授权、目标真机、HTTPS 预览域名、儿童试用安排。对应任务设明确门禁，开发可先做不依赖资源的脚手架和规则，但不能将缺少证据的审核/实机结果标为完成。
+
+## 13. 双轨道与多档案（计划中，尚未实现）
+
+本节定义把 `memoryApp`（译林版新编 4A 课本轨道）并入本应用后的目标契约，对应 [PROJECT_PLAN.md Stage 4](./PROJECT_PLAN.md)。**实现前第 5.2 节记录的 Dexie schema 2 仍是当前事实**；落地顺序见 13.7，任一步未完成都不得按本节描述对外说明能力。
+
+### 13.1 终态形态
+
+一个 PWA、一个 IndexedDB、多个孩子档案，两条学习轨道。
+
+| 轨道 | 学习对象 | 形态 | 内容源 | 奖励语义 |
+|---|---|---|---|---|
+| explore（现有） | 4~9 岁 | 主题地图、听音选图、拼读气球、拼字母、贴纸、学习向导 | Stage 2 100 词 + 典范英语 1A 专区 | 参与星 + 贴纸 |
+| drill（新增） | 9~10 岁 | 每日新词与到期复习、选择/拼写/听写、错词本、学习报告 | 译林 4A 172 条，逐单元 | 金币 + 连续天数（不发贴纸） |
+
+- 入口：`#/` 保持现有欢迎与向导，`#/drill` 为课本轨道入口；家长页可关闭任一轨道，关闭后该轨道入口不出现。
+- drill 复用现有外壳：横屏与安全区、儿童热区、休息提醒、音频解锁与静音策略、错误边界和存储恢复页。
+- 两条轨道进度互不换算：drill 不写贴纸、不解锁场景、不写 `heardCount`；explore 不写 SRS 状态。
+
+### 13.2 内容契约 v4
+
+`schemaVersion` 3 → 4，新增 `track: 'textbook'` 与短语/专有名词表达（v3 的 `^[a-z]+$` 无法表达课本里的 `get up`、`Chinese`、`What time is it?`）：
+
+```typescript
+kind: 'word' | 'phrase';        // 默认 word
+word: string;                   // 正则改为 ^[A-Za-z][A-Za-z'’ .\-]*$
+textbook?: {                    // 仅 track='textbook'
+  bookId: 'yilin-4a-2024';
+  unit: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+  pos: 'n.' | 'v.' | 'adj.' | 'adv.' | 'prep.' | 'pron.' | 'num.' | 'conj.' | 'int.' | 'phr.' | 'proper';
+  core: boolean;                // 教材标 * 的非核心词与专有名词为 false
+};
+```
+
+- `kind='phrase'` 时 `spelling`/`syllables` 允许整词单段，`graphemes` 按词内字母组合分段；CVC 强校验仍只对 `track='phonics'` 且 `phonicsStage=1` 生效（现有行为不变）。
+- textbook 词条与 explore 同等合规：必须提供 `definition.zh`、`illustration`、`audio`（`sprite#clip`）和 `review`；只有 `definition.en_young` 的 5 词上限对 `kind='phrase'` 放宽到 8 词。
+- 分组：explore 继续用 `themeSchema`；textbook 用新增 `textbookUnitSchema`（`unit` + 词序 + 每单元条数上限），一个 unit 对应一个内容包。
+- `manifestSchema.schemaVersion` 接受 `3 | 4`（构建产出 4）；词条 `schemaVersion` 同样接受 `3 | 4`，现有 100 词源文件保持 3。
+- 应用能力契约与内容 schema 版本是两个独立编号：`appContract.max` 由 2 提到 3（新增 textbook 包读取能力），`SUPPORTED_CONTENT_CONTRACTS` 变为 `[1, 2, 3]`。运行时需同时读 v3 与 v4，但不得长期双契约并存——v3 只用于读取过渡期的旧内容包。
+- `scripts/validate-words.mjs`、`scripts/validate-assets.mjs`、`scripts/build-content.mjs` 与 `src/domain/content-scopes.ts` 必须在同一提交内支持 v4，否则构建先于运行时失效。
+
+### 13.3 本地存储 v3 与多档案
+
+Dexie `DATABASE_SCHEMA_VERSION` 2 → 3（原生 IndexedDB version 30），新增三张表并把既有表挂到档案：
+
+| 表 | 主键/索引 | 职责 |
+|---|---|---|
+| profiles | id（默认 `p_default`） | 姓名、头像、每日新词目标、是否包含非核心词、TTS 语速、金币、连续天数、累计复习 |
+| srsProgress | `[profileId+wordId]`；索引 `[profileId+due]` | SM-2 卡片状态（repetitions、ease、interval、due、lastReviewed、reviewCount、lapses、learned） |
+| dailyLogs | `[profileId+day]` | 当日新学、复习次数、答对次数 |
+
+- `settings` 增加 `activeProfileId`；`wordProgress`、`rewards`、`activityState` 增加 `profileId`。既有记录一律归入 `p_default`，不丢进度。
+- 休息与使用时间按档案独立计（每个孩子各自的 `screenTimeMinutes`），两人不互相扣时。
+- 迁移顺序为 v10 → v20（现有）→ v30（新增三表并回写 `profileId='p_default'`）。`guardedFactory` 的放行集合由 `{10}` 扩为 `{10,20}`，对每个旧版本逐表核对已知结构；未知结构仍中止并停留家长恢复页。
+- 旧应用数据（`yilin-memory` 库）只读导入一次：`profiles`→`profiles`、`progress`→`srsProgress`、`dailyLogs`→`dailyLogs`；词 ID 经 `data/textbook/legacy-id-map.json` 映射（例如 `u2-get-up` → `w_tb4a_0xx`）。同一 `[profileId+wordId]` 冲突时保留 `lastReviewed` 较新的记录；导入后不删除旧库，便于回滚。
+
+### 13.4 drill 学习闭环
+
+沿用 `memoryApp` 已实现语义，写入本节后才算契约：
+
+- 新词按 unit 顺序取，每日上限 `dailyNewTarget`（默认 10）；到期复习取 `due <= now`，先复习后新词。
+- 题型：`choice_en2zh`、`choice_zh2en`、`listening`（先听 1.5 秒再显示选项）、`spelling`、`flip`；答错在本轮队列尾部重新入队。
+- 四档评分 `again`/`hard`/`good`/`easy` 映射 SM-2 质量分 2/3/4/5；答错间隔回到 10 分钟后重试；`hard` 额外按 0.7 收敛间隔。参数取 `intervalAfterFirst=1`、`intervalAfterSecond=3`、`minEase=1.3`，与 `memoryApp/src/srs/sm2.ts` 一致。
+- 自动朗读只出现在新词预览、`listening` 和 `spelling`；选择题与翻卡不自动播报，避免提前泄露答案。
+- 报告只读 `dailyLogs` 与 `srsProgress`，不新增统计表：今日新学/复习数、正确率、连续天数、单元掌握度。
+
+### 13.5 音源与素材合规
+
+- drill 与 explore 共用同一条精灵生产与审批链：`scripts/generate_audio.py` → `audio-source/` → `npm run audio:pack`；每单元一个精灵 `tb4a_u1`…`tb4a_u8`，审批写入同一 `data/audio-approvals.json`。
+- `window.speechSynthesis`（`src/services/speech-fallback.ts`）只作为离线与缺音兜底，不改变发音事实来源。
+- 172 条现状：34 条无量音标、49 条无例句、56 条不满足 v3 词形；合规工作按单元推进——补 `graphemes`/`phonemes`/`syllables`、SVG 插图（允许先用 `emoji` 占位，但不得进入 release）、插图许可台账、音频片段与真峰值检查、老师逐词批准。
+- 内容包粒度：explore 场景包 + `tb4a_u1`…`tb4a_u8`，复用现有 `packs`/`dependsOn`；核心预缓存不包含课本音频。
+
+### 13.6 与既有契约的一致性边界
+
+- 不新增第二套存储封装：drill 走 `src/data/` 的 Dexie 仓储，不引入 `idb` 直连。
+- 不新增第二套奖励或休息实现：drill 复用 `usage.ts` 与 `rest.tsx`，只替换选题与题目渲染。
+- 不新增第二套校验器：v4 在同一个 `content-schema.ts` 内以 discriminated union 扩展。
+- 目录按新增而不是重排：现有 `app/`、`features/`、`domain/`、`services/` 原地保留为 explore 轨道；新增 `src/core/`（srs、speech）与 `src/drill/`（quiz、session、words、report、ui），避免一次性大范围 import 重写。
+
+### 13.7 落地顺序与门禁
+
+| 阶段 | 内容 | 完成判据 |
+|---|---|---|
+| P0 | `memoryApp` 建 git 快照（当前无版本控制）；抽 `src/core/srs`（sm2、session、types）与 `src/core/speech`；两侧引用打通 | 两仓库测试全绿，SM-2 行为与 `memoryApp` 逐用例一致 |
+| P1 | 契约 v4 最小集与校验器分支；Dexie v3 + `profiles` + 迁移与守卫；`src/drill` 骨架与四题型；U2 试点 20 条 | `validate:content`、`typecheck`、`lint`、`test`、`build:preview` 通过；两档案进度隔离；U2 会话闭环可跑 |
+| P2 | U1 → U8 逐单元合规（词条、插图、音频、审批） | 每单元 `validate:assets -- --preview` 通过并完成听审批准 |
+| P3 | 报告页、错词本、家长档案管理、按档案限额、旧库导入开关 | 双轨道 e2e 回归通过；`memoryApp` 停止写入 |
+| P4 | 单部署与状态文档更新 | 单 PWA 真机验收 |
+
+前置条件：`english_app` 现有未提交改动先收敛提交；`memoryApp` 无版本控制，P0 必须先建快照，否则合并不可回滚。P0~P1 的逐任务拆解、文件地图与验收命令见 [Stage 4 任务清单](./STAGE4_TASKS.md)。

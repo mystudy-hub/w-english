@@ -135,8 +135,9 @@ export class ContentPackManager {
     const input = JSON.parse(new TextDecoder().decode(bytes)) as { words: unknown; themes: unknown; textbook?: unknown };
     const catalog = validateCatalog(input.words, input.themes, manifest.mode === 'release');
     // 课本块是可选的：旧内容包没有它，探索轨道照常工作。
+    // 清单的 contentVersion 属于探索词库；课本词条自身版本一致即可（构建时由 validateTextbook 把守）。
     const textbook = input.textbook === undefined ? undefined : textbookAssetSchema.parse(input.textbook);
-    if (textbook?.words.some((word) => word.contentVersion !== manifest.contentVersion)) throw new Error('课本词条和内容包版本不一致');
+    if (textbook && new Set(textbook.words.map((word) => word.contentVersion)).size > 1) throw new Error('课本词条版本不一致');
     const loadedCatalog: ContentCatalog = textbook ? { ...catalog, textbook } : catalog;
     if (catalog.themes.some((theme) => theme.contentVersion !== manifest.contentVersion)) throw new Error('目录和内容包版本不一致');
     for (const theme of catalog.themes) themeAssetIds(manifest, [theme.themeId]);

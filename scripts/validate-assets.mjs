@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { audioReferences, manifestSchema, spriteSchema, validateCatalog } from '../src/data/content-schema.ts';
+import { audioReferences, manifestSchema, spriteSchema, validateCatalog, validateTextbook } from '../src/data/content-schema.ts';
 import { readJson, sha256, within } from './lib/files.mjs';
 import { audioBuildSchema, verifyClipApprovals } from './lib/audio-audit.mjs';
 import { audioInventory } from './lib/audio-inventory.mjs';
@@ -23,8 +23,13 @@ try {
   }
   const catalog = await readJson(within(root, manifest.assets[manifest.catalogAssetId].url));
   const { words } = validateCatalog(catalog.words, catalog.themes, !allowPending);
+  // 课本词条与探索词条各自校验，但共用同一份素材、音频与审批链。
+  const textbook = catalog.textbook
+    ? validateTextbook(catalog.textbook.words, catalog.textbook.units, { themeWordIds: catalog.themes.flatMap((theme) => theme.wordIds), release: !allowPending })
+    : { words: [] };
+  const allWords = [...words, ...textbook.words];
   if (!manifest.assets.licenses) throw new Error('缺少素材许可清单');
-  verifyIllustrationLicenses(words, manifest.assets, await readJson(within(root, manifest.assets.licenses.url)), allowPending);
+  verifyIllustrationLicenses(allWords, manifest.assets, await readJson(within(root, manifest.assets.licenses.url)), allowPending);
   const sprites = {};
   for (const [id, assetId] of Object.entries(manifest.sprites)) {
     sprites[id] = spriteSchema.parse(await readJson(within(root, manifest.assets[assetId].url)));
@@ -37,18 +42,18 @@ try {
     if (!Number.isFinite(peak) || peak > -1) throw new Error(`${id}: 编码产物真峰值超限`);
     verifyDecodedAudio(audioFile, sprites[id]);
   }
-  for (const word of words) for (const ref of audioReferences(word)) {
+  for (const word of allWords) for (const ref of audioReferences(word)) {
     const [spriteId, clip] = ref.split('#');
     if (!sprites[spriteId]?.sprite[clip] && !(allowPending && manifest.missingAudio.includes(ref))) throw new Error(`缺少音频片段 ${ref}`);
   }
   if (!allowPending && manifest.missingAudio.length) throw new Error('正式校验不能有待提供音频');
   if (!allowPending) {
     if (!manifest.assets['content-audit']) throw new Error('缺少文本与配图审批记录');
-    verifyContentApprovals(words, manifest.assets, await readJson(within(root, manifest.assets['content-audit'].url)));
+    verifyContentApprovals(allWords, manifest.assets, await readJson(within(root, manifest.assets['content-audit'].url)));
     if (!manifest.assets['audio-audit']) throw new Error('缺少音频审批记录');
     const audit = await readJson(within(root, manifest.assets['audio-audit'].url));
     const production = audioBuildSchema.parse(audit.production);
-    verifyClipApprovals(production, audit.approvals, audioInventory(words, manifest.stage ?? 1));
+    verifyClipApprovals(production, audit.approvals, audioInventory(allWords, manifest.stage ?? 1));
     for (const [id, sprite] of Object.entries(sprites)) {
       if (id === 'sfx' && manifest.builtinSprites?.includes('sfx')) {
         const builtIn = builtinSfx();

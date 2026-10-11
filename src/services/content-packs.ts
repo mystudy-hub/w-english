@@ -1,4 +1,4 @@
-import { manifestSchema, spriteSchema, validateCatalog, type AssetRecord, type ContentManifest, type SpriteManifest, type ThemeConfig, type WordEntry } from '../data/content-schema.ts';
+import { manifestSchema, spriteSchema, textbookAssetSchema, validateCatalog, type AssetRecord, type ContentManifest, type SpriteManifest, type TextbookCatalog, type ThemeConfig, type WordEntry } from '../data/content-schema.ts';
 import type { ContentPackRecord } from '../domain/models.ts';
 import { SUPPORTED_CONTENT_CONTRACTS, themeAssetIds, themeAudioRefs } from '../domain/content-scopes.ts';
 import { firstTheme } from '../domain/themes.ts';
@@ -6,7 +6,7 @@ import { withRequestDeadline } from './request-deadline.ts';
 import { isSpeechSynthesisAvailable } from './speech-fallback.ts';
 
 export const CONTENT_CACHE = 'w-english-content-v1';
-export interface ContentCatalog { words: WordEntry[]; themes: ThemeConfig[] }
+export interface ContentCatalog { words: WordEntry[]; themes: ThemeConfig[]; textbook?: TextbookCatalog }
 export interface PackMetadata {
   all(): Promise<ContentPackRecord[]>;
   put(record: ContentPackRecord): Promise<unknown>;
@@ -132,15 +132,19 @@ export class ContentPackManager {
     this.transient.set(id, manifest);
     const bytes = cachedOnly ? await this.checkedBytes(manifest.assets[manifest.catalogAssetId]!) : await this.retrieve(manifest.assets[manifest.catalogAssetId]!);
     if (!bytes) { await this.degrade(id); throw new Error('本地词库需要重新准备'); }
-    const input = JSON.parse(new TextDecoder().decode(bytes)) as { words: unknown; themes: unknown };
+    const input = JSON.parse(new TextDecoder().decode(bytes)) as { words: unknown; themes: unknown; textbook?: unknown };
     const catalog = validateCatalog(input.words, input.themes, manifest.mode === 'release');
+    // 课本块是可选的：旧内容包没有它，探索轨道照常工作。
+    const textbook = input.textbook === undefined ? undefined : textbookAssetSchema.parse(input.textbook);
+    if (textbook?.words.some((word) => word.contentVersion !== manifest.contentVersion)) throw new Error('课本词条和内容包版本不一致');
+    const loadedCatalog: ContentCatalog = textbook ? { ...catalog, textbook } : catalog;
     if (catalog.themes.some((theme) => theme.contentVersion !== manifest.contentVersion)) throw new Error('目录和内容包版本不一致');
     for (const theme of catalog.themes) themeAssetIds(manifest, [theme.themeId]);
     const record = (await this.metadata.all()).find((entry) => entry.id === id);
     const availableThemes = new Set(catalog.themes.map((theme) => theme.themeId));
     const activeThemeId = [record?.activeThemeId, ...(record?.readyThemeIds ?? []), firstTheme(catalog.themes).themeId]
       .find((theme): theme is string => Boolean(theme && availableThemes.has(theme)))!;
-    const content: LoadedContent = { id, manifest, catalog, sprites: {}, verifiedIds: new Set<string>(), activeThemeId,
+    const content: LoadedContent = { id, manifest, catalog: loadedCatalog, sprites: {}, verifiedIds: new Set<string>(), activeThemeId,
       committedThemeIds: new Set(record?.readyThemeIds ?? (record?.state === 'active' || record?.state === 'ready' ? [activeThemeId] : [])),
       requestedThemeIds: new Set((record?.requestedThemeIds ?? [activeThemeId]).filter((theme) => availableThemes.has(theme))) };
     await this.inspect(content);

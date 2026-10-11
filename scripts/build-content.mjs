@@ -8,6 +8,7 @@ import { audioBuildSchema, verifyClipApprovals } from './lib/audio-audit.mjs';
 import { probeAudio, truePeak, verifyDecodedAudio } from './lib/audio-production.mjs';
 import { verifyContentApprovals } from './lib/content-audit.mjs';
 import { loadActiveCatalog } from './lib/catalog-source.mjs';
+import { loadTextbookCatalog } from './lib/textbook-source.mjs';
 import { builtinSfx } from './lib/builtin-sfx.mjs';
 import { makeContentPacks } from '../src/domain/content-scopes.ts';
 import { readIllustration } from './lib/illustrations.mjs';
@@ -16,7 +17,10 @@ import { CORE_GUIDE_SPRITE } from '../src/domain/guide-content.ts';
 const release = process.argv.includes('--release');
 try {
   const { words, themes, source } = await loadActiveCatalog(release);
-  const expectedAudio = audioInventory(words, source.stage);
+  const textbook = await loadTextbookCatalog(release, themes.flatMap((theme) => theme.wordIds));
+  // 课本词条与探索词条共用一个素材、音频与审批链，只在分组上分开。
+  const allWords = [...words, ...textbook.words];
+  const expectedAudio = audioInventory(allWords, source.stage);
   const publicRoot = resolve('public');
   const assets = {}; const sprites = {}; const spriteManifests = {};
   const licenses = [];
@@ -25,7 +29,7 @@ try {
     const [key, record] = await writeAsset(publicRoot, id, bytes, prefix, extension, mime);
     assets[key] = record; return key;
   };
-  for (const word of words) {
+  for (const word of allWords) {
     if (word.illustration.type !== 'image') {
       if (release) throw new Error(`${word.wordId}: 缺少本地图片`);
       continue;
@@ -45,8 +49,8 @@ try {
   let audioBuild = { schemaVersion: 1, reviewStatus: 'pending', sprites: {}, clips: [] };
   try { audioBuild = audioBuildSchema.parse(await readJson('artifacts/audio/index.json')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
   const approvals = await readJson('data/audio-approvals.json');
-  if (release) verifyContentApprovals(words, assets, contentApprovals);
-  for (const id of new Set([...themes.flatMap((theme) => theme.spriteIds), CORE_GUIDE_SPRITE])) {
+  if (release) verifyContentApprovals(allWords, assets, contentApprovals);
+  for (const id of new Set([...themes.flatMap((theme) => theme.spriteIds), ...textbook.units.flatMap((unit) => unit.spriteIds), CORE_GUIDE_SPRITE])) {
     if (id === 'sfx') continue;
     const artifact = audioBuild.sprites[id];
     if (!artifact) continue;
@@ -77,17 +81,17 @@ try {
   const coreAssets = Object.fromEntries(Object.entries(assets).filter(([, asset]) => asset.url.startsWith('core/')));
   await mkdir(resolve('public/core'), { recursive: true });
   await writeFile('public/core/index.json', JSON.stringify({ coreVersion: 1, assets: coreAssets, sprites: coreSprites }, null, 2) + '\n');
-  const missingAudio = [...new Set([...words.flatMap(audioReferences), ...audioInventory(words, source.stage).filter((clip) => clip.kind === 'guide').map((clip) => clip.ref)])]
+  const missingAudio = [...new Set([...allWords.flatMap(audioReferences), ...audioInventory(allWords, source.stage).filter((clip) => clip.kind === 'guide').map((clip) => clip.ref)])]
     .filter((ref) => { const [id, clip] = ref.split('#'); return !spriteManifests[id]?.sprite[clip]; });
   if (release && missingAudio.length) throw new Error(`正式包缺少 ${missingAudio.length} 个音频片段`);
   if (release) verifyClipApprovals(audioBuild, approvals, expectedAudio);
-  const catalogAssetId = await addAsset('catalog', Buffer.from(JSON.stringify({ words, themes })), 'content/catalog', 'json', 'application/json');
+  const catalogAssetId = await addAsset('catalog', Buffer.from(JSON.stringify({ words, themes, textbook: { bookId: textbook.bookId, units: textbook.units, words: textbook.words } })), 'content/catalog', 'json', 'application/json');
   await addAsset('licenses', Buffer.from(JSON.stringify(licenses, null, 2)), 'content/licenses', 'json', 'application/json');
   await addAsset('audio-audit', Buffer.from(JSON.stringify({ production: audioBuild, approvals }, null, 2)), 'content/audio-audit', 'json', 'application/json');
   await addAsset('content-audit', Buffer.from(JSON.stringify(contentApprovals, null, 2)), 'content/content-audit', 'json', 'application/json');
-  const manifest = manifestSchema.parse({ manifestVersion: 1, schemaVersion: 3, contentVersion: themes[0].contentVersion,
-    stage: source.stage, appContract: { min: source.stage === 2 ? 2 : 1, max: 2 }, assets, sprites,
-    packs: makeContentPacks({ assets, sprites, words, themes }),
+  const manifest = manifestSchema.parse({ manifestVersion: 1, schemaVersion: 4, contentVersion: themes[0].contentVersion,
+    stage: source.stage, appContract: { min: source.stage === 2 ? 2 : 1, max: 3 }, assets, sprites,
+    packs: makeContentPacks({ assets, sprites, words: allWords, themes, units: textbook.units }),
     catalogAssetId, mode: release ? 'release' : 'preview', missingAudio, builtinSprites: ['sfx'] });
   const manifestBytes = Buffer.from(JSON.stringify(manifest, null, 2));
   const [, manifestAsset] = await writeAsset(publicRoot, 'manifest', manifestBytes, 'content/manifest', 'json', 'application/json');
@@ -97,7 +101,7 @@ try {
   await mkdir('public/licenses', { recursive: true });
   await writeFile('public/licenses/project.txt', await readFile('LICENSE'));
   await writeFile('public/licenses/nunito.txt', await readFile('node_modules/@fontsource/nunito/LICENSE'));
-  console.log(`✓ Stage ${source.stage} ${manifest.mode}: ${words.length} 词，${Object.keys(assets).length} 个文件；${missingAudio.length} 个语音片段待提供。`);
+  console.log(`✓ Stage ${source.stage} ${manifest.mode}: ${words.length} 个探索词 + ${textbook.words.length} 个课本词（${textbook.units.length} 个单元），${Object.keys(assets).length} 个文件；${missingAudio.length} 个语音片段待提供。`);
 } catch (error) {
   console.error(`内容打包失败：${error instanceof Error ? error.message : String(error)}`);
   process.exitCode = 1;

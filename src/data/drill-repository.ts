@@ -2,7 +2,7 @@ import Dexie from 'dexie';
 import type { LearningDatabase } from './database.ts';
 import { buildSession, masteryStats, sm2, type MasteryStats, type ReviewGrade, type SessionPlan, type SrsWord } from '../core/srs/index.ts';
 import { applyStudyResult, coinsFor, localDay } from '../domain/day.ts';
-import { defaultProfile } from '../domain/profiles.ts';
+import { createProfile, defaultProfile } from '../domain/profiles.ts';
 import type { DailyLog, Profile, SrsCardState } from '../domain/models.ts';
 
 // drill 轨道只写自己这三张表（profiles / srsProgress / dailyLogs），
@@ -30,6 +30,31 @@ export class DrillRepository {
 
   saveProfile(profile: Profile) {
     return this.write(async () => { await this.db.profiles.put(profile); return profile; });
+  }
+
+  // 新增一个孩子档案；至少保留一个档案，家长不能把最后一个删掉。
+  createProfile(input: { name: string; avatar?: string; dailyNewTarget?: number }): Promise<Profile> {
+    const profile = createProfile(input);
+    return this.write(async () => { await this.db.profiles.add(profile); return profile; });
+  }
+
+  updateProfile(id: string, patch: Partial<Omit<Profile, 'id' | 'createdAt'>>): Promise<Profile | undefined> {
+    return this.write(async () => {
+      const current = await this.db.profiles.get(id);
+      if (!current) return undefined;
+      const next: Profile = { ...current, ...patch, id: current.id, createdAt: current.createdAt };
+      await this.db.profiles.put(next);
+      return next;
+    });
+  }
+
+  // 删除档案连同它的复习进度与每日记录；调用方负责确认不会删掉活动档案。
+  async deleteProfile(id: string) {
+    await this.write(() => this.db.transaction('rw', this.db.profiles, this.db.srsProgress, this.db.dailyLogs, async () => {
+      await this.db.profiles.delete(id);
+      await this.db.srsProgress.where('[profileId+wordId]').between([id, Dexie.minKey], [id, Dexie.maxKey]).delete();
+      await this.db.dailyLogs.where('[profileId+day]').between([id, Dexie.minKey], [id, Dexie.maxKey]).delete();
+    }));
   }
 
   // 复合主键 [profileId+wordId] 只能按前缀区间查询；Dexie 的 min/maxKey 就是这种前缀边界。

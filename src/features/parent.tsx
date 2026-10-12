@@ -11,6 +11,7 @@ import { downloadJson, exportLocalBackup, importLocalBackup, readJsonFile } from
 import { themeAccess } from '../domain/themes.ts';
 import { ClearRecordsDialog } from './clear-records.tsx';
 import { LegacyImportPanel } from './legacy-import.tsx';
+import { ProfilePanel } from './profiles.tsx';
 
 export function ParentPage() {
   const original = useSettings(); const state = useAppStore();
@@ -172,6 +173,7 @@ export function ParentPage() {
         {recordMessage && <p className="setting-message" role="status">{recordMessage}</p>}
       </section>
       <LegacyImportPanel />
+      <ProfilePanel />
       <section className="offline-panel"><div className="offline-heading"><CloudDownload /><div><h2>把小小世界带在身边</h2><p>{packText}</p></div></div><div className="download-track"><span style={{ width: `${state.pack.percent}%` }} /></div>
         {state.pack.state === 'incomplete' && <p className="offline-detail">当前可以浏览图片和卡片。语音素材就绪后，将开放听音选图及完整离线学习。</p>}
         {state.pendingContent && <p className="offline-detail">新内容已准备好，将在下一轮开始时使用。</p>}

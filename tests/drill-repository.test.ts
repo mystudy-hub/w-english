@@ -94,6 +94,36 @@ describe('drill progress', () => {
   });
 });
 
+describe('profile management', () => {
+  it('creates a profile with its own target and identity', async () => {
+    const created = await drill.createProfile({ name: '  妹妹  ', avatar: '🐼', dailyNewTarget: 20 });
+    expect(created).toMatchObject({ name: '妹妹', avatar: '🐼', dailyNewTarget: 20, coins: 0, streak: 0, totalReviews: 0 });
+    expect(created.id).not.toBe(DEFAULT_PROFILE_ID);
+    expect((await drill.profiles()).map((profile) => profile.id).sort()).toEqual([DEFAULT_PROFILE_ID, created.id].sort());
+  });
+
+  it('updates name, target and identity without changing the profile key', async () => {
+    const created = await drill.createProfile({ name: '妹妹' });
+    const updated = await drill.updateProfile(created.id, { name: '妹妹妹', dailyNewTarget: 6, includeNonCore: true });
+    expect(updated).toMatchObject({ id: created.id, name: '妹妹妹', dailyNewTarget: 6, includeNonCore: true, createdAt: created.createdAt });
+    expect(await drill.updateProfile('p_missing', { name: '无人' })).toBeUndefined();
+  });
+
+  it('deletes a profile together with its own cards and logs only', async () => {
+    const created = await drill.createProfile({ name: '妹妹' });
+    await drill.review({ profileId: created.id, wordId: 'w_tb4a_001', grade: 'good', now: NOW });
+    await drill.review({ profileId: DEFAULT_PROFILE_ID, wordId: 'w_tb4a_001', grade: 'good', now: NOW });
+    expect(await drill.progress(created.id)).toHaveLength(1);
+
+    await drill.deleteProfile(created.id);
+    expect(await drill.profile(created.id)).toBeUndefined();
+    expect(await drill.progress(created.id)).toHaveLength(0);
+    expect(await drill.dailyLogs(created.id)).toHaveLength(0);
+    expect(await drill.progress(DEFAULT_PROFILE_ID)).toHaveLength(1);
+    expect(await drill.dailyLogs(DEFAULT_PROFILE_ID)).toHaveLength(1);
+  });
+});
+
 describe('drill planning', () => {
   const words = [word('w_tb4a_001'), word('w_tb4a_002'), word('w_tb4a_003')];
 

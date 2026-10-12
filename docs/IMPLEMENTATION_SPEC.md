@@ -574,7 +574,8 @@ Dexie `DATABASE_SCHEMA_VERSION` 2 → 3（原生 IndexedDB version 30），新�
 
 - drill 与 explore 共用同一条精灵生产与审批链：`scripts/generate_audio.py` → `audio-source/` → `npm run audio:pack`；每单元一个精灵 `tb4a_u1`…`tb4a_u8`，审批写入同一 `data/audio-approvals.json`。
 - `window.speechSynthesis`（`src/services/speech-fallback.ts`）只作为离线与缺音兜底，不改变发音事实来源。
-- 172 条现状：34 条无量音标、49 条无例句、56 条不满足 v3 词形；合规工作按单元推进——补 `graphemes`/`phonemes`/`syllables`、SVG 插图（允许先用 `emoji` 占位，但不得进入 release）、插图许可台账、音频片段与真峰值检查、老师逐词批准。
+- 172 条现状：34 条无量音标、49 条无例句、56 条不满足 v3 词形；合规工作按单元推进——补 `graphemes`/`phonemes`/`syllables`、SVG 插图（允许先用 `emoji` 占位，但不得进入 release）、插图许可台账、音频片段与真峰值检查。
+- **文本审校的替代方案（2026-10-12 决定）**：自用场景下用大模型逐词复核替代老师听审。`npm run content:ai-review` 先按键道生成提示与批文件（含契约规则与严格输出结构），把提示交给任意模型后 `--apply` 应用修补、`--record` 写入 `data/content-approvals.json`。约束：只允许修补白名单字段；修补后必须重新通过 v4 契约校验，否则整文件回滚；审批记录 `reviewer` 写 `model:<名字>` 并绑定文本与图片指纹；家长保留抽检与推翻的权利。图片侧仍需真实 SVG（emoji 无法进入审批），音频侧建议改用 ASR 回读替代人工听审（待实现）。
 - 内容包粒度：explore 场景包 + `tb4a_u1`…`tb4a_u8`，复用现有 `packs`/`dependsOn`；核心预缓存不包含课本音频。
 
 ### 13.6 与既有契约的一致性边界

@@ -52,6 +52,7 @@ npm run browsers:install && npm run test:e2e   # 见第 6 节的既有失败
 | 旧应用导入 | 只读读 `yilin-memory`，按 `data/textbook/legacy-id-map.json`（172 条）映射并入；幂等；档案合并策略保守 | `src/data/legacy-import.ts`、`src/features/legacy-import.tsx` |
 | 多档案 | 家长页可增删改、换头像、改每日新词目标；正在使用的档案拒绝删除；drill 首页切换档案并写回设置 | `src/features/profiles.tsx`、`src/domain/profiles.ts` |
 | 音效与语音 | drill 用 Web Audio 合成音效（零素材依赖）；缺录音时用浏览器 TTS 兜底（探索与课本共用） | `src/core/sfx.ts`、`src/services/speech-fallback.ts` |
+| 模型复核（替代老师听审的文本侧） | `npm run content:ai-review`：生成逐单元复核提示 → 任意模型给出裁决 JSON → `--apply` 修补源词条（白名单字段 + 修补后重跑契约校验，失败则回滚）→ `--record` 写入与指纹绑定的审批记录（`reviewer: model:<名字>`）。已对 U2 26 条跑通一轮（独立模型给 20 ok / 6 fix，修补后仍全量通过校验） | `scripts/ai-review.mjs`、`data/content-approvals.json`（含 `policy: model-assisted`）、`artifacts/ai-review/*` |
 
 ## 4. 验证证据
 
@@ -68,7 +69,7 @@ npm run browsers:install && npm run test:e2e   # 见第 6 节的既有失败
 
 ## 5. 尚未完成
 
-1. **课本素材层**：172 张 SVG 插图（现为 `emoji` 占位）、逐词录音（含音素片段）、插图许可台账、老师逐词听审与审批导入。`release` 门禁按设计拒绝。
+1. **课本素材层**：172 张 SVG 插图（现为 `emoji` 占位，因此图片侧审批仍无法记录）、逐词录音（含音素片段）、插图许可台账、音频的 ASR 回读校验。文本侧的模型复核已可用（第 3 节），`release` 门禁按设计依旧拒绝。
 2. **报告页**：只有首页的今日数字与 `mastery()` 接口，没有周统计 / 掌握度曲线 / 单独的错词本页。
 3. **按档案的探索轨道限额**：`wordProgress`/`rewards`/`activityState` 未加 `profileId`（§13.3 记录为触发条件：第二个孩子开始用探索轨道时再升 schema）。
 4. **P4 单部署**：单 PWA 部署、旧应用归档说明、真机验收（iPad/Android 各一台）。

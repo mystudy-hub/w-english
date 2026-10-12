@@ -28,7 +28,8 @@
     "audio:generate": "python scripts/generate_audio.py",
     "audio:pack": "node scripts/pack-audio.mjs",
     "content:review": "node scripts/review-inventory.mjs",
-    "review:import": "node scripts/import-review.mjs"
+    "review:import": "node scripts/import-review.mjs",
+    "content:ai-review": "node scripts/ai-review.mjs"
   },
   "dependencies": {
     "@fontsource/nunito": "5.3.0",

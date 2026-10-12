@@ -225,11 +225,16 @@
         "audio": "tb4a_u2#p_a"
       },
       {
-        "letters": "ce",
+        "letters": "c",
         "phonemes": [
           "s"
         ],
         "audio": "tb4a_u2#p_ce"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
       }
     ],
     "phonemes": [
@@ -351,11 +356,16 @@
         "audio": "tb4a_u2#p_a"
       },
       {
-        "letters": "ve",
+        "letters": "v",
         "phonemes": [
           "v"
         ],
-        "audio": "tb4a_u2#p_ve"
+        "audio": "tb4a_u2#p_v"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
       }
     ],
     "phonemes": [
@@ -696,7 +706,7 @@
       "to",
       "bed"
     ],
-    "ipa": "/ɡəʊ tə bed/",
+    "ipa": "/ɡoʊ tə bed/",
     "graphemes": [
       {
         "letters": "go",
@@ -1225,8 +1235,8 @@
       "zh": "我来了！"
     },
     "example": {
-      "en": "I am coming now.",
-      "zh": "我现在就来。",
+      "en": "I'm coming now!",
+      "zh": "我现在就来！",
       "audio": "tb4a_u2#i_m_coming_example"
     },
     "audio": {
@@ -1491,7 +1501,7 @@
     "syllables": [
       "eleven"
     ],
-    "ipa": "/ɪˈlevn/",
+    "ipa": "/ɪˈlɛvən/",
     "graphemes": [
       {
         "letters": "e",
@@ -1782,7 +1792,7 @@
       "zh": "到了……的时间了。"
     },
     "example": {
-      "en": "It is time to go to bed.",
+      "en": "It's time to go to bed.",
       "zh": "到了睡觉的时间了。",
       "audio": "tb4a_u2#it_s_time_to_example"
     },

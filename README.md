@@ -42,10 +42,10 @@ w-english/
 │   ├── stage1_theme.json        # 四页场景和易混淆图片排除表
 │   ├── stage2_words.json        # 当前活动目录的 100 个草稿词
 │   ├── stage2_*.json            # 三场景，分别 34 / 33 / 33 词
-│   └── textbook/                # 课本轨道：catalog.json、8 个单元的词条与单元配置、旧 id 映射
 │   ├── illustration-licenses.json # 图形来源、许可、文件指纹
 │   ├── content-approvals.json   # 文本/图片审批，当前为空
-│   └── audio-approvals.json     # 最终音频审批，当前为空
+│   ├── audio-approvals.json     # 最终音频审批，当前为空
+│   └── textbook/                # 课本轨道：catalog.json、8 个单元的词条与单元配置、旧 id 映射
 ├── scripts/
 │   ├── validate-words.mjs        # 共用 Zod 契约与场景检查
 │   ├── build-content.mjs         # 哈希清单、预览/发布内容包

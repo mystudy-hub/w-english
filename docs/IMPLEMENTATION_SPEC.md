@@ -558,7 +558,7 @@ Dexie `DATABASE_SCHEMA_VERSION` 2 → 3（原生 IndexedDB version 30），新�
 - `settings` 增加 `activeProfileId`（缺省 `p_default`）。探索轨道的 `wordProgress`、`rewards`、`activityState` 在本阶段**不改主键也不加 `profileId`**：它们只服务一个孩子，而重写主键（`activityState.key='local'`）是破坏性迁移。多档案当前只作用于 drill 的 `srsProgress` / `dailyLogs`；第二个孩子开始用探索轨道时，再按新 schema 版本给这三张表加 `profileId`（触发条件）—— 该边界与 `implementation_spec §13.3` 同步。
 - drill 的休息与使用时间按档案独立计；探索轨道的使用计时仍为单份（同上触发条件）。
 - 迁移顺序为 v10 → v20 → v30（新增三表，并创建默认档案）。`guardedFactory` 的放行集合由 `{10}` 扩为 `{10,20}`，对每个旧版本逐表核对已知结构；未知结构仍中止并停留家长恢复页。旧记录一字不改，`activeProfileId` 由 `settingsSchema` 的默认值补齐。
-- 旧应用数据（`yilin-memory` 库）只读导入一次：`profiles`→`profiles`、`progress`→`srsProgress`、`dailyLogs`→`dailyLogs`；词 ID 经 `data/textbook/legacy-id-map.json` 映射（例如 `u2-get-up` → `w_tb4a_0xx`）。同一 `[profileId+wordId]` 冲突时保留 `lastReviewed` 较新的记录；导入后不删除旧库，便于回滚。
+- 旧应用数据（`yilin-memory` 库）只读导入一次：`profiles`→`profiles`、`progress`→`srsProgress`、`dailyLogs`→`dailyLogs`；词 ID 经 `data/textbook/legacy-id-map.json` 映射（例如 `u2-get-up` → `w_tb4a_0xx`）。导入后不删除旧库，便于回滚。**已实现（2026-10-11）**：入口在家长页（检查旧记录 / 导入到本应用），导入幂等——卡片保留 `lastReviewed` 较新的，日报逐字段取较大值，档案合并：还处于默认状态的本地档案接受旧库的姓名/头像/偏好，已经在用的档案只取较大的计数；旧库里映射不到当前词库的词只计数并跳过。
 
 ### 13.4 drill 学习闭环
 
@@ -568,7 +568,7 @@ Dexie `DATABASE_SCHEMA_VERSION` 2 → 3（原生 IndexedDB version 30），新�
 - 题型：`choice_en2zh`、`choice_zh2en`、`listening`（先听 1.5 秒再显示选项）、`spelling`、`flip`；答错在本轮队列尾部重新入队。
 - 四档评分 `again`/`hard`/`good`/`easy` 映射 SM-2 质量分 2/3/4/5；答错间隔回到 10 分钟后重试；`hard` 额外按 0.7 收敛间隔。参数取 `intervalAfterFirst=1`、`intervalAfterSecond=3`、`minEase=1.3`，与 `memoryApp/src/srs/sm2.ts` 一致。
 - 自动朗读只出现在新词预览、`listening` 和 `spelling`；选择题与翻卡不自动播报，避免提前泄露答案。
-- 报告只读 `dailyLogs` 与 `srsProgress`，不新增统计表：今日新学/复习数、正确率、连续天数、单元掌握度。
+- 报告只读 `dailyLogs` 与 `srsProgress`，不新增统计表：今日新学/复习数、正确率、连续天数、单元掌握度。**金币与连击已实现（2026-10-11）**：答对 2 枚、轻松答对 3 枚、重做答对 1 枚、答错 0 枚（`src/domain/day.ts`）；连击在跨日首次学习时 +1，超过一天未学则展示为 0，写入与卡片、日报同一事务。
 
 ### 13.5 音源与素材合规
 

@@ -63,6 +63,28 @@ describe('drill progress', () => {
     expect((await drill.profile('p_second'))?.dailyNewTarget).toBe(20);
   });
 
+  it('awards coins and extends the streak once per day', async () => {
+    const first = await drill.review({ profileId: DEFAULT_PROFILE_ID, wordId: 'w_tb4a_001', grade: 'easy', now: NOW });
+    expect(first.coins).toBe(3);
+    expect(await drill.profile(DEFAULT_PROFILE_ID)).toMatchObject({ coins: 3, totalReviews: 1, streak: 1, lastStudyDay: localDay(NOW) });
+
+    // 同一天再答对：金币累加，连击不变
+    await drill.review({ profileId: DEFAULT_PROFILE_ID, wordId: 'w_tb4a_002', grade: 'good', now: NOW + 3600_000 });
+    expect(await drill.profile(DEFAULT_PROFILE_ID)).toMatchObject({ coins: 5, totalReviews: 2, streak: 1, lastStudyDay: localDay(NOW) });
+
+    // 第二天：连击 +1
+    await drill.review({ profileId: DEFAULT_PROFILE_ID, wordId: 'w_tb4a_003', grade: 'good', now: NOW + DAY });
+    expect(await drill.profile(DEFAULT_PROFILE_ID)).toMatchObject({ coins: 7, totalReviews: 3, streak: 2, lastStudyDay: localDay(NOW + DAY) });
+  });
+
+  it('a wrong answer earns nothing and a retried one earns a single coin', async () => {
+    const wrong = await drill.review({ profileId: DEFAULT_PROFILE_ID, wordId: 'w_tb4a_001', grade: 'again', now: NOW });
+    expect(wrong.coins).toBe(0);
+    const retried = await drill.review({ profileId: DEFAULT_PROFILE_ID, wordId: 'w_tb4a_001', grade: 'good', retried: true, now: NOW + 600_000 });
+    expect(retried.coins).toBe(1);
+    expect(await drill.profile(DEFAULT_PROFILE_ID)).toMatchObject({ coins: 1, totalReviews: 2 });
+  });
+
   it('lists due cards in due order and only up to now', async () => {
     await drill.review({ profileId: DEFAULT_PROFILE_ID, wordId: 'w_tb4a_001', grade: 'good', now: NOW - 3 * DAY });
     await drill.review({ profileId: DEFAULT_PROFILE_ID, wordId: 'w_tb4a_002', grade: 'good', now: NOW - 2 * DAY });

@@ -10,7 +10,7 @@ import { Button, Header } from '../components/ui.tsx';
 import { DEFAULT_MODES, checkSpelling, makeQuestion, type Question } from './quiz.ts';
 import { ChoiceCard, FlipCard, ListenButton, PromptPanel, PromptText, SessionResult, SpellingCard } from './ui.tsx';
 
-interface Item { word: TextbookWordEntry; question: Question }
+interface Item { word: TextbookWordEntry; question: Question; retried?: boolean }
 
 // 课本轨道的一轮练习：先到期复习再新词，答错的词在本轮队列尾部再来一次。
 export function DrillSession() {
@@ -23,6 +23,7 @@ export function DrillSession() {
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(0);
   const [correct, setCorrect] = useState(0);
+  const [coins, setCoins] = useState(0);
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
   const [chosen, setChosen] = useState<string | null>(null);
   const [optionsVisible, setOptionsVisible] = useState(true);
@@ -77,11 +78,12 @@ export function DrillSession() {
     setFeedback(wasCorrect ? 'correct' : 'wrong');
     playSfx(wasCorrect ? 'correct' : 'wrong');
     try {
-      await drillRepository.review({ profileId, wordId: item.word.wordId, grade: wasCorrect ? (flipGrade ?? 'good') : 'again', now: Date.now() });
+      const outcome = await drillRepository.review({ profileId, wordId: item.word.wordId, grade: wasCorrect ? (flipGrade ?? 'good') : 'again', retried: item.retried, now: Date.now() });
+      setCoins((total) => total + outcome.coins);
     } catch {
       useAppStore.setState({ notice: '这次练习的记录暂时没能保存。' });
     }
-    if (!wasCorrect) setQueue((current) => [...current, { word: item.word, question: makeQuestion(item.word, pool, DEFAULT_MODES) }]);
+    if (!wasCorrect) setQueue((current) => [...current, { word: item.word, question: makeQuestion(item.word, pool, DEFAULT_MODES), retried: true }]);
     setAnswered((total) => total + 1);
     if (wasCorrect) setCorrect((total) => total + 1);
     setTimeout(() => { setFeedback(null); setChosen(null); setIndex((current) => current + 1); busy.current = false; }, 900);
@@ -93,7 +95,7 @@ export function DrillSession() {
   if (status === 'failed') return <div className="app-page">{header}<main className="empty-page"><h1>这个单元还没有准备好</h1>
     <p>课本内容尚未下载完整，先回到复习首页看看。</p><Button onClick={() => navigate('/drill')}><ArrowLeft size={18} />返回</Button></main></div>;
   if (!queue.length || finished) return <div className="app-page">{header}<main className="empty-page">
-    {queue.length ? <SessionResult answered={answered} correct={correct} onDone={() => navigate('/drill')} />
+    {queue.length ? <SessionResult answered={answered} correct={correct} coins={coins} onDone={() => navigate('/drill')} />
       : <><h1>今天没有到期的词</h1><p>明天再来，或者挑一个单元练一练。</p><Button onClick={() => navigate('/drill')}><ArrowLeft size={18} />返回</Button></>}
   </main></div>;
 
@@ -106,7 +108,7 @@ export function DrillSession() {
 
   return <div className="app-page">{header}
     <main className="mx-auto flex w-full max-w-3xl flex-col gap-4 px-4 pb-10">
-      <p className="text-sm text-stone-500">第 {Math.min(index + 1, queue.length)} / {queue.length} 题 · 已答对 {correct} 次</p>
+      <p className="text-sm text-stone-500">第 {Math.min(index + 1, queue.length)} / {queue.length} 题 · 已答对 {correct} 次 · 本轮金币 {coins}</p>
       {question.mode === 'flip'
         ? <FlipCard word={item!.word} onPlay={() => void playWord(item!.word.audio.word, item!.word.wordId, 'drill', false)} onGrade={(grade) => void answer(grade, grade)} />
         : <>

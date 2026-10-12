@@ -5,7 +5,7 @@ import { drillRepository, saveSettings } from '../app/runtime.ts';
 import { readSettings, useAppStore } from '../app/store.ts';
 import type { DailyLog, Profile } from '../domain/models.ts';
 import { defaultProfile } from '../domain/profiles.ts';
-import { localDay } from '../data/drill-repository.ts';
+import { effectiveStreak, localDay } from '../domain/day.ts';
 import { Button, Header } from '../components/ui.tsx';
 
 // 课本轨道首页：选档案、看今天要练什么、进入单元或错词本。
@@ -55,6 +55,7 @@ export function DrillHome() {
           <div><p className="text-sm text-stone-500">今天要练</p>
             <p className="text-3xl font-bold text-stone-800">{due} 个复习词</p></div>
           <div className="text-right text-sm text-stone-500">
+            <p className="text-base text-amber-700">🪙 {profile?.coins ?? 0} · 🔥 连续 {profile ? effectiveStreak(profile, Date.now()) : 0} 天</p>
             <p>新词目标 {profile?.dailyNewTarget ?? 10} 个</p>
             <p>已学 {log?.newLearned ?? 0} · 复习 {log?.reviews ?? 0}</p>
             <p>答对 {log?.correct ?? 0} 次</p>

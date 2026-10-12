@@ -1,22 +1,20 @@
 import Dexie from 'dexie';
 import type { LearningDatabase } from './database.ts';
 import { buildSession, masteryStats, sm2, type MasteryStats, type ReviewGrade, type SessionPlan, type SrsWord } from '../core/srs/index.ts';
+import { applyStudyResult, coinsFor, localDay } from '../domain/day.ts';
+import { defaultProfile } from '../domain/profiles.ts';
 import type { DailyLog, Profile, SrsCardState } from '../domain/models.ts';
 
 // drill 轨道只写自己这三张表（profiles / srsProgress / dailyLogs），
 // 探索轨道的 sessions、attempts、rewards、wordProgress 一律不碰。
-export function localDay(now: number): string {
-  const date = new Date(now);
-  const month = `${date.getMonth() + 1}`.padStart(2, '0');
-  const day = `${date.getDate()}`.padStart(2, '0');
-  return `${date.getFullYear()}-${month}-${day}`;
-}
+export { localDay };
 
 export interface ReviewOutcome {
   card: SrsCardState;
   wasCorrect: boolean;
   day: string;
   repeated: boolean;
+  coins: number;
 }
 
 export class DrillRepository {
@@ -51,14 +49,14 @@ export class DrillRepository {
     return this.db.dailyLogs.where('[profileId+day]').between([profileId, Dexie.minKey], [profileId, Dexie.maxKey]).toArray();
   }
 
-  // 一次复习在一个事务里同时写 SRS 状态与当日记录；同一毫秒的重复提交只计一次。
-  review(input: { profileId: string; wordId: string; grade: ReviewGrade; now?: number }): Promise<ReviewOutcome> {
+  // 一次复习在一个事务里同时写 SRS 状态、当日记录与档案计分；同一毫秒的重复提交只计一次。
+  review(input: { profileId: string; wordId: string; grade: ReviewGrade; retried?: boolean; now?: number }): Promise<ReviewOutcome> {
     const now = input.now ?? Date.now();
     const day = localDay(now);
-    return this.write(() => this.db.transaction('rw', this.db.srsProgress, this.db.dailyLogs, async () => {
+    return this.write(() => this.db.transaction('rw', this.db.profiles, this.db.srsProgress, this.db.dailyLogs, async () => {
       const existing = await this.db.srsProgress.get([input.profileId, input.wordId]);
       if (existing && existing.lastReviewed === now) {
-        return { card: existing, wasCorrect: input.grade !== 'again', day, repeated: true };
+        return { card: existing, wasCorrect: input.grade !== 'again', day, repeated: true, coins: 0 };
       }
       const card: SrsCardState = existing ?? { ...sm2.init(input.wordId), profileId: input.profileId };
       const { next, wasCorrect } = sm2.review(card, input.grade, now);
@@ -70,7 +68,10 @@ export class DrillRepository {
         newLearned: log.newLearned + (card.learned ? 0 : 1),
         reviews: log.reviews + 1,
         correct: log.correct + (wasCorrect ? 1 : 0) });
-      return { card: stored, wasCorrect, day, repeated: false };
+      const coins = coinsFor(input.grade, Boolean(input.retried));
+      const profile = await this.db.profiles.get(input.profileId) ?? defaultProfile(input.profileId);
+      await this.db.profiles.put(applyStudyResult(profile, { coins, reviews: 1, now }));
+      return { card: stored, wasCorrect, day, repeated: false, coins };
     }));
   }
 

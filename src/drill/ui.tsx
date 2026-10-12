@@ -68,12 +68,13 @@ export function FlipCard({ word, onPlay, onGrade }: { word: TextbookWordEntry; o
   </div>;
 }
 
-export function SessionResult({ answered, correct, onDone }: { answered: number; correct: number; onDone: () => void }) {
+export function SessionResult({ answered, correct, coins, onDone }: { answered: number; correct: number; coins: number; onDone: () => void }) {
   const percent = answered ? Math.round(correct / answered * 100) : 0;
   return <div className={`${panel} flex flex-col items-center gap-4 py-10 text-center`}>
     <div className="text-5xl" aria-hidden="true">{percent >= 80 ? '🌟' : '💪'}</div>
     <h1 className="text-3xl font-bold text-stone-800">这一轮练完了</h1>
     <p className="text-lg text-stone-600">答对 {correct} / {answered} 个，正确率 {percent}%。</p>
+    <p className="text-lg text-amber-700">🪙 本轮赚到 {coins} 枚金币</p>
     <p className="text-base text-stone-500">明天到期的词会再来找你。</p>
     <Button className="primary" onClick={onDone}>回到课本复习</Button>
   </div>;

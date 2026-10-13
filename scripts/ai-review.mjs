@@ -131,7 +131,13 @@ async function applyVerdict(track, file) {
     const keys = Object.keys(patch).filter((key) => PATCHABLE.includes(key));
     const ignored = Object.keys(patch).filter((key) => !PATCHABLE.includes(key));
     if (ignored.length) notes.push(`${entry.wordId}: 忽略不可修补字段 ${ignored.join('、')}`);
-    for (const key of keys) target[key] = patch[key];
+    for (const key of keys) {
+      const next = patch[key];
+      const current = target[key];
+      // 对象字段（textbook / definition / example）按字段合并，避免模型只给部分字段时把其余字段丢掉。
+      const mergeable = next && typeof next === 'object' && !Array.isArray(next) && current && typeof current === 'object' && !Array.isArray(current);
+      target[key] = mergeable ? { ...current, ...next } : next;
+    }
     fixed += 1;
   }
   // 修补后必须整体重新通过 v4 契约；任何一条不合规都不写入文件，避免把坏数据写进源文件。

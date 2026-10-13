@@ -809,7 +809,7 @@
     "syllables": [
       "so"
     ],
-    "ipa": "/səʊ/",
+    "ipa": "/soʊ/",
     "graphemes": [
       {
         "letters": "s",
@@ -1729,7 +1729,7 @@
     "syllables": [
       "tomorrow"
     ],
-    "ipa": "/təˈmɒrəʊ/",
+    "ipa": "/təˈmɔːroʊ/",
     "graphemes": [
       {
         "letters": "t",
@@ -1755,7 +1755,7 @@
       {
         "letters": "o",
         "phonemes": [
-          "ɒ"
+          "ɔː"
         ],
         "audio": "tb4a_u3#p_o"
       },
@@ -1783,7 +1783,7 @@
       "t",
       "ə",
       "m",
-      "ɒ",
+      "ɔː",
       "r",
       "oʊ"
     ],
@@ -1901,7 +1901,7 @@
       "you",
       "tomorrow"
     ],
-    "ipa": "/siː juː təˈmɒrəʊ/",
+    "ipa": "/siː juː təˈmɔːroʊ/",
     "graphemes": [
       {
         "letters": "see",

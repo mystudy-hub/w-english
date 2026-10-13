@@ -121,7 +121,7 @@
     "syllables": [
       "clothes"
     ],
-    "ipa": "/kləʊðz/",
+    "ipa": "/kloʊðz/",
     "graphemes": [
       {
         "letters": "cl",
@@ -272,7 +272,7 @@
     "syllables": [
       "coat"
     ],
-    "ipa": "/kəʊt/",
+    "ipa": "/koʊt/",
     "graphemes": [
       {
         "letters": "c",
@@ -597,7 +597,7 @@
     "syllables": [
       "dress"
     ],
-    "ipa": "/dres/",
+    "ipa": "/drɛs/",
     "graphemes": [
       {
         "letters": "d",
@@ -1135,7 +1135,7 @@
     "syllables": [
       "because"
     ],
-    "ipa": "/bɪˈkɒz/",
+    "ipa": "/bɪˈkɔːz/",
     "graphemes": [
       {
         "letters": "b",
@@ -1312,11 +1312,16 @@
     "ipa": "/huːz/",
     "graphemes": [
       {
-        "letters": "wh",
+        "letters": "w",
+        "phonemes": [],
+        "audio": null
+      },
+      {
+        "letters": "h",
         "phonemes": [
           "h"
         ],
-        "audio": "tb4a_u8#p_wh"
+        "audio": "tb4a_u8#p_h"
       },
       {
         "letters": "o",

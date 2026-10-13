@@ -22,7 +22,7 @@
     "syllables": [
       "season"
     ],
-    "ipa": "/ˈsiːzn/",
+    "ipa": "/ˈsiːzən/",
     "graphemes": [
       {
         "letters": "s",
@@ -185,7 +185,7 @@
       "go",
       "boating"
     ],
-    "ipa": "/ɡəʊ ˈbəʊtɪŋ/",
+    "ipa": "/ɡoʊ ˈboʊtɪŋ/",
     "graphemes": [
       {
         "letters": "go",
@@ -331,7 +331,7 @@
       "go",
       "skating"
     ],
-    "ipa": "/ɡəʊ ˈskeɪtɪŋ/",
+    "ipa": "/ɡoʊ ˈskeɪtɪŋ/",
     "graphemes": [
       {
         "letters": "go",
@@ -458,7 +458,7 @@
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 7,
-      "pos": "n.",
+      "pos": "phr.",
       "core": true
     },
     "spelling": [
@@ -524,7 +524,7 @@
       "go",
       "swimming"
     ],
-    "ipa": "/ɡəʊ ˈswɪmɪŋ/",
+    "ipa": "/ɡoʊ ˈswɪmɪŋ/",
     "graphemes": [
       {
         "letters": "go",
@@ -606,11 +606,16 @@
         "audio": "tb4a_u7#p_u"
       },
       {
-        "letters": "mn",
+        "letters": "m",
         "phonemes": [
           "m"
         ],
-        "audio": "tb4a_u7#p_mn"
+        "audio": "tb4a_u7#p_m"
+      },
+      {
+        "letters": "n",
+        "phonemes": [],
+        "audio": null
       }
     ],
     "phonemes": [
@@ -660,7 +665,7 @@
       "go",
       "climbing"
     ],
-    "ipa": "/ɡəʊ ˈklaɪmɪŋ/",
+    "ipa": "/ɡoʊ ˈklaɪmɪŋ/",
     "graphemes": [
       {
         "letters": "go",
@@ -780,7 +785,7 @@
     "syllables": [
       "cold"
     ],
-    "ipa": "/kəʊld/",
+    "ipa": "/koʊld/",
     "graphemes": [
       {
         "letters": "c",
@@ -1286,7 +1291,7 @@
     "syllables": [
       "snow"
     ],
-    "ipa": "/snəʊ/",
+    "ipa": "/snoʊ/",
     "graphemes": [
       {
         "letters": "s",

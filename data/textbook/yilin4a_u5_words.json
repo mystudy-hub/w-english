@@ -153,11 +153,16 @@
         "audio": "tb4a_u5#p_a"
       },
       {
-        "letters": "me",
+        "letters": "m",
         "phonemes": [
           "m"
         ],
-        "audio": "tb4a_u5#p_me"
+        "audio": "tb4a_u5#p_m"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
       }
     ],
     "phonemes": [
@@ -207,7 +212,7 @@
     "syllables": [
       "hair"
     ],
-    "ipa": "/heə(r)/",
+    "ipa": "/hɛr/",
     "graphemes": [
       {
         "letters": "h",
@@ -219,7 +224,7 @@
       {
         "letters": "ai",
         "phonemes": [
-          "eə"
+          "ɛ"
         ],
         "audio": "tb4a_u5#p_ai"
       },
@@ -233,7 +238,7 @@
     ],
     "phonemes": [
       "h",
-      "eə",
+      "ɛ",
       "r"
     ],
     "definition": {
@@ -341,19 +346,19 @@
     "syllables": [
       "ear"
     ],
-    "ipa": "/ɪə(r)/",
+    "ipa": "/ɪr/",
     "graphemes": [
       {
         "letters": "ear",
         "phonemes": [
-          "ɪə",
+          "ɪ",
           "r"
         ],
         "audio": "tb4a_u5#p_ear"
       }
     ],
     "phonemes": [
-      "ɪə",
+      "ɪ",
       "r"
     ],
     "definition": {
@@ -398,7 +403,7 @@
     "syllables": [
       "nose"
     ],
-    "ipa": "/nəʊz/",
+    "ipa": "/noʊz/",
     "graphemes": [
       {
         "letters": "n",
@@ -540,12 +545,13 @@
     "syllables": [
       "arm"
     ],
-    "ipa": "/ɑːm/",
+    "ipa": "/ɑrm/",
     "graphemes": [
       {
         "letters": "ar",
         "phonemes": [
-          "ɑː"
+          "ɑ",
+          "r"
         ],
         "audio": "tb4a_u5#p_ar"
       },
@@ -558,7 +564,8 @@
       }
     ],
     "phonemes": [
-      "ɑː",
+      "ɑ",
+      "r",
       "m"
     ],
     "definition": {
@@ -674,7 +681,7 @@
     "syllables": [
       "robot"
     ],
-    "ipa": "/ˈrəʊbɒt/",
+    "ipa": "/ˈroʊbɑt/",
     "graphemes": [
       {
         "letters": "r",
@@ -700,7 +707,7 @@
       {
         "letters": "o",
         "phonemes": [
-          "ɒ"
+          "ɑ"
         ],
         "audio": "tb4a_u5#p_o"
       },
@@ -716,7 +723,7 @@
       "r",
       "oʊ",
       "b",
-      "ɒ",
+      "ɑ",
       "t"
     ],
     "definition": {
@@ -831,7 +838,7 @@
     "syllables": [
       "tall"
     ],
-    "ipa": "/tɔːl/",
+    "ipa": "/tɔl/",
     "graphemes": [
       {
         "letters": "t",
@@ -903,7 +910,7 @@
     "syllables": [
       "short"
     ],
-    "ipa": "/ʃɔːt/",
+    "ipa": "/ʃɔrt/",
     "graphemes": [
       {
         "letters": "sh",
@@ -915,7 +922,8 @@
       {
         "letters": "or",
         "phonemes": [
-          "ɔː"
+          "ɔː",
+          "r"
         ],
         "audio": "tb4a_u5#p_or"
       },
@@ -930,6 +938,7 @@
     "phonemes": [
       "ʃ",
       "ɔː",
+      "r",
       "t"
     ],
     "definition": {
@@ -974,7 +983,7 @@
     "syllables": [
       "doll"
     ],
-    "ipa": "/dɒl/",
+    "ipa": "/dɑl/",
     "graphemes": [
       {
         "letters": "d",
@@ -986,7 +995,7 @@
       {
         "letters": "o",
         "phonemes": [
-          "ɒ"
+          "ɑ"
         ],
         "audio": "tb4a_u5#p_o"
       },
@@ -1000,7 +1009,7 @@
     ],
     "phonemes": [
       "d",
-      "ɒ",
+      "ɑ",
       "l"
     ],
     "definition": {
@@ -1044,7 +1053,7 @@
     "syllables": [
       "her"
     ],
-    "ipa": "/hɜː(r)/",
+    "ipa": "/hɝ/",
     "graphemes": [
       {
         "letters": "h",
@@ -1056,16 +1065,14 @@
       {
         "letters": "er",
         "phonemes": [
-          "ɜː",
-          "r"
+          "ɝ"
         ],
         "audio": "tb4a_u5#p_er"
       }
     ],
     "phonemes": [
       "h",
-      "ɜː",
-      "r"
+      "ɝ"
     ],
     "definition": {
       "zh": "她的"
@@ -1110,7 +1117,7 @@
     "syllables": [
       "small"
     ],
-    "ipa": "/smɔːl/",
+    "ipa": "/smɔl/",
     "graphemes": [
       {
         "letters": "sm",
@@ -1256,7 +1263,7 @@
       "lots",
       "of"
     ],
-    "ipa": "/lɒts əv/",
+    "ipa": "/lɑts əv/",
     "graphemes": [
       {
         "letters": "lots",
@@ -1401,7 +1408,7 @@
     "syllables": [
       "show"
     ],
-    "ipa": "/ʃəʊ/",
+    "ipa": "/ʃoʊ/",
     "graphemes": [
       {
         "letters": "sh",

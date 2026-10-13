@@ -223,18 +223,12 @@
         "audio": "tb4a_u1#p_e"
       },
       {
-        "letters": "n",
+        "letters": "ng",
         "phonemes": [
-          "n"
-        ],
-        "audio": "tb4a_u1#p_n"
-      },
-      {
-        "letters": "g",
-        "phonemes": [
+          "ŋ",
           "g"
         ],
-        "audio": "tb4a_u1#p_g"
+        "audio": "tb4a_u1#p_ng"
       },
       {
         "letters": "l",
@@ -260,7 +254,7 @@
     ],
     "phonemes": [
       "ɪ",
-      "n",
+      "ŋ",
       "g",
       "l",
       "ɪ",
@@ -391,7 +385,8 @@
       {
         "letters": "p",
         "phonemes": [
-          "p"
+          "p",
+          "iː"
         ],
         "audio": "tb4a_u1#p_p"
       },
@@ -405,6 +400,7 @@
     ],
     "phonemes": [
       "p",
+      "iː",
       "iː"
     ],
     "definition": {
@@ -448,12 +444,12 @@
     "syllables": [
       "Art"
     ],
-    "ipa": "/ɑːt/",
+    "ipa": "/ɑrt/",
     "graphemes": [
       {
         "letters": "a",
         "phonemes": [
-          "ɑː"
+          "ɑ"
         ],
         "audio": "tb4a_u1#p_a"
       },
@@ -473,7 +469,7 @@
       }
     ],
     "phonemes": [
-      "ɑː",
+      "ɑ",
       "r",
       "t"
     ],
@@ -791,8 +787,8 @@
       "zh": "最，最高程度地"
     },
     "example": {
-      "en": "Football is the best.",
-      "zh": "足球是最棒的。",
+      "en": "I like Maths best.",
+      "zh": "我最喜欢数学。",
       "audio": "tb4a_u1#best_example"
     },
     "audio": {
@@ -829,7 +825,7 @@
     "syllables": [
       "also"
     ],
-    "ipa": "/ˈɔːlsəʊ/",
+    "ipa": "/ˈɔːlsoʊ/",
     "graphemes": [
       {
         "letters": "a",
@@ -988,11 +984,16 @@
         "audio": "tb4a_u1#p_ou"
       },
       {
-        "letters": "se",
+        "letters": "s",
         "phonemes": [
           "s"
         ],
-        "audio": "tb4a_u1#p_se"
+        "audio": "tb4a_u1#p_s"
+      },
+      {
+        "letters": "e",
+        "phonemes": [],
+        "audio": null
       }
     ],
     "phonemes": [
@@ -1477,10 +1478,8 @@
       },
       {
         "letters": "e",
-        "phonemes": [
-          "ə"
-        ],
-        "audio": "tb4a_u1#p_e"
+        "phonemes": [],
+        "audio": null
       },
       {
         "letters": "r",
@@ -1492,7 +1491,7 @@
       {
         "letters": "e",
         "phonemes": [
-          "ɪ"
+          "ə"
         ],
         "audio": "tb4a_u1#p_e"
       },
@@ -1529,9 +1528,8 @@
       "ɪ",
       "n",
       "t",
-      "ə",
       "r",
-      "ɪ",
+      "ə",
       "s",
       "t",
       "ɪ",
@@ -1637,7 +1635,7 @@
     "syllables": [
       "culture"
     ],
-    "ipa": "/ˈkʌltʃə(r)/",
+    "ipa": "/ˈkʌltʃɚ/",
     "graphemes": [
       {
         "letters": "c",
@@ -1671,7 +1669,7 @@
         "letters": "ure",
         "phonemes": [
           "ʃ",
-          "ə"
+          "ɚ"
         ],
         "audio": "tb4a_u1#p_ure"
       }
@@ -1682,7 +1680,7 @@
       "l",
       "t",
       "ʃ",
-      "ə"
+      "ɚ"
     ],
     "definition": {
       "zh": "文化，文明"
@@ -1811,7 +1809,8 @@
       {
         "letters": "or",
         "phonemes": [
-          "ɔː"
+          "ɔː",
+          "r"
         ],
         "audio": "tb4a_u1#p_or"
       },
@@ -1827,6 +1826,7 @@
       "s",
       "t",
       "ɔː",
+      "r",
       "i"
     ],
     "definition": {
@@ -1921,7 +1921,7 @@
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 1,
-      "pos": "n.",
+      "pos": "phr.",
       "core": true
     },
     "spelling": [

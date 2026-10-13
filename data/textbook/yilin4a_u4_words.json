@@ -188,7 +188,7 @@
     "syllables": [
       "ping-pong"
     ],
-    "ipa": "/ˈpɪŋ pɒŋ/",
+    "ipa": "/ˈpɪŋˌpɒŋ/",
     "graphemes": [
       {
         "letters": "p",
@@ -289,7 +289,7 @@
     "syllables": [
       "basketball"
     ],
-    "ipa": "/ˈbɑːskɪtbɔːl/",
+    "ipa": "/ˈbæskɪtbɔːl/",
     "graphemes": [
       {
         "letters": "b",
@@ -301,7 +301,7 @@
       {
         "letters": "a",
         "phonemes": [
-          "ɑː"
+          "æ"
         ],
         "audio": "tb4a_u4#p_a"
       },
@@ -351,7 +351,7 @@
     ],
     "phonemes": [
       "b",
-      "ɑː",
+      "æ",
       "s",
       "k",
       "ɪ",
@@ -441,7 +441,7 @@
       "t"
     ],
     "definition": {
-      "zh": "非常的"
+      "zh": "棒的；很好的"
     },
     "example": {
       "en": "You are great!",
@@ -650,7 +650,7 @@
     "syllables": [
       "so"
     ],
-    "ipa": "/səʊ/",
+    "ipa": "/soʊ/",
     "graphemes": [
       {
         "letters": "s",
@@ -714,7 +714,7 @@
       "a",
       "go"
     ],
-    "ipa": "/hæv ə ɡəʊ/",
+    "ipa": "/hæv ə ɡoʊ/",
     "graphemes": [
       {
         "letters": "have",
@@ -845,7 +845,7 @@
       "It's",
       "OK"
     ],
-    "ipa": "/ɪts əʊˈkeɪ/",
+    "ipa": "/ɪts oʊˈkeɪ/",
     "graphemes": [
       {
         "letters": "its",
@@ -863,7 +863,7 @@
       "zh": "没关系。"
     },
     "example": {
-      "en": "It is OK, try again.",
+      "en": "It's OK, try again.",
       "zh": "没关系，再试一次。",
       "audio": "tb4a_u4#it_s_ok_example"
     },

@@ -52,7 +52,7 @@ npm run browsers:install && npm run test:e2e   # 见第 6 节的既有失败
 | 旧应用导入 | 只读读 `yilin-memory`，按 `data/textbook/legacy-id-map.json`（172 条）映射并入；幂等；档案合并策略保守 | `src/data/legacy-import.ts`、`src/features/legacy-import.tsx` |
 | 多档案 | 家长页可增删改、换头像、改每日新词目标；正在使用的档案拒绝删除；drill 首页切换档案并写回设置 | `src/features/profiles.tsx`、`src/domain/profiles.ts` |
 | 音效与语音 | drill 用 Web Audio 合成音效（零素材依赖）；缺录音时用浏览器 TTS 兜底（探索与课本共用） | `src/core/sfx.ts`、`src/services/speech-fallback.ts` |
-| 模型复核（替代老师听审的文本侧） | `npm run content:ai-review`：生成逐单元复核提示 → 任意模型给出裁决 JSON → `--apply` 修补源词条（白名单字段 + 修补后重跑契约校验，失败则回滚）→ `--record` 写入与指纹绑定的审批记录（`reviewer: model:<名字>`）。已对 U2 26 条跑通一轮（独立模型给 20 ok / 6 fix，修补后仍全量通过校验） | `scripts/ai-review.mjs`、`data/content-approvals.json`（含 `policy: model-assisted`）、`artifacts/ai-review/*` |
+| 模型复核（替代老师听审的文本侧） | `npm run content:ai-review`：生成逐单元复核提示 → 任意模型给出裁决 JSON → `--apply` 修补源词条（白名单字段 + 嵌套对象合并 + 修补后重跑契约校验，失败则整文件回滚）→ `--record` 写入与指纹绑定的审批记录（`reviewer: model:<名字>`）。**8 个单元 172 条已全部复核完**，7 个单元并行复核后共修补 53 条（U1 10 / U2 6 / U3 3 / U4 6 / U5 13 / U6 1 / U7 9 / U8 5），无剔除；命中最多的是英式音标落在允许表外（əʊ→oʊ、ɒ→ɑ、ə(r)→ər）、不发音字母未拆出、例句没用词条本形。审批记录仍为 0 条：172 条都还是 emoji 占位图，图片侧无法审批 | `scripts/ai-review.mjs`、`data/content-approvals.json`（含 `policy: model-assisted`）、`artifacts/ai-review/*` |
 
 ## 4. 验证证据
 

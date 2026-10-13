@@ -1,0 +1,2935 @@
+{
+  "1A-01": {
+    "lessonId": "1A-01",
+    "title": "Who is it",
+    "repeatAudioUrl": "content/dianfan/1a/01.mp3",
+    "repeatDuration": 43.68,
+    "fluentAudioUrl": "content/dianfan/1a/01_fluent.mp3",
+    "fluentDuration": 14.05,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Who Is It?",
+        "start": 1.05,
+        "end": 4.05,
+        "pauseAfter": 3.23
+      },
+      {
+        "index": 1,
+        "text": "Who is it?",
+        "start": 7.28,
+        "end": 8.36,
+        "pauseAfter": 4.8
+      },
+      {
+        "index": 2,
+        "text": "Biff",
+        "start": 13.16,
+        "end": 16.04,
+        "pauseAfter": 4.79
+      },
+      {
+        "index": 3,
+        "text": "and Chip.",
+        "start": 20.83,
+        "end": 23.92,
+        "pauseAfter": 4.95
+      },
+      {
+        "index": 4,
+        "text": "Mum",
+        "start": 28.87,
+        "end": 33.05,
+        "pauseAfter": 4.99
+      },
+      {
+        "index": 5,
+        "text": "and Kipper.",
+        "start": 38.04,
+        "end": 40.51,
+        "pauseAfter": 3.17
+      },
+      {
+        "index": 6,
+        "text": "Floppy",
+        "start": 40.51,
+        "end": 43.68,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 7,
+        "text": "and a spaceman.",
+        "start": 40.51,
+        "end": 43.68,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "No, it's Dad.",
+        "start": 40.51,
+        "end": 43.68,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-02": {
+    "lessonId": "1A-02",
+    "title": "Six in a Bed",
+    "repeatAudioUrl": "content/dianfan/1a/02.mp3",
+    "repeatDuration": 43.08,
+    "fluentAudioUrl": "content/dianfan/1a/02_fluent.mp3",
+    "fluentDuration": 17.16,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Six in a Bed",
+        "start": 1.37,
+        "end": 4.19,
+        "pauseAfter": 3.26
+      },
+      {
+        "index": 1,
+        "text": "Mum and Dad.",
+        "start": 7.45,
+        "end": 8.85,
+        "pauseAfter": 4.89
+      },
+      {
+        "index": 2,
+        "text": "Mum, Kipper and Dad.",
+        "start": 13.74,
+        "end": 16.1,
+        "pauseAfter": 4.78
+      },
+      {
+        "index": 3,
+        "text": "Mum, Kipper, Dad and Chip.",
+        "start": 20.88,
+        "end": 24.5,
+        "pauseAfter": 4.75
+      },
+      {
+        "index": 4,
+        "text": "Biff, Mum, Kipper, Dad, Chip,",
+        "start": 29.25,
+        "end": 33.77,
+        "pauseAfter": 4.67
+      },
+      {
+        "index": 5,
+        "text": "and Floppy.",
+        "start": 38.44,
+        "end": 39.86,
+        "pauseAfter": 3.22
+      }
+    ]
+  },
+  "1A-03": {
+    "lessonId": "1A-03",
+    "title": "Fun at the Beach",
+    "repeatAudioUrl": "content/dianfan/1a/03.mp3",
+    "repeatDuration": 38.45,
+    "fluentAudioUrl": "content/dianfan/1a/03_fluent.mp3",
+    "fluentDuration": 8.54,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Fun at the Beach",
+        "start": 6.78,
+        "end": 7.64,
+        "pauseAfter": 4.71
+      },
+      {
+        "index": 1,
+        "text": "Dad and Mum.",
+        "start": 12.35,
+        "end": 15.32,
+        "pauseAfter": 4.89
+      },
+      {
+        "index": 2,
+        "text": "Mum and Dad.",
+        "start": 20.21,
+        "end": 22.98,
+        "pauseAfter": 4.98
+      },
+      {
+        "index": 3,
+        "text": "Kipper, Chip and Biff.",
+        "start": 27.96,
+        "end": 28.85,
+        "pauseAfter": 5.11
+      },
+      {
+        "index": 4,
+        "text": "Kipper, Biff and Dad.",
+        "start": 33.96,
+        "end": 35.31,
+        "pauseAfter": 3.14
+      },
+      {
+        "index": 5,
+        "text": "Mum, Chip and Floppy.",
+        "start": 35.31,
+        "end": 38.45,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 6,
+        "text": "Chip, Biff and Kipper.",
+        "start": 35.31,
+        "end": 38.45,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 7,
+        "text": "Dad and Floppy.",
+        "start": 35.31,
+        "end": 38.45,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "Oh Floppy",
+        "start": 35.31,
+        "end": 38.45,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-04": {
+    "lessonId": "1A-04",
+    "title": "Floppy Floppy",
+    "repeatAudioUrl": "content/dianfan/1a/04.mp3",
+    "repeatDuration": 54.88,
+    "fluentAudioUrl": "content/dianfan/1a/04_fluent.mp3",
+    "fluentDuration": 20.48,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Floppy Floppy",
+        "start": 1.3,
+        "end": 3.75,
+        "pauseAfter": 3.28
+      },
+      {
+        "index": 1,
+        "text": "Oh, Floppy!",
+        "start": 7.03,
+        "end": 8.82,
+        "pauseAfter": 4.65
+      },
+      {
+        "index": 2,
+        "text": "No, Floppy!",
+        "start": 13.47,
+        "end": 19.34,
+        "pauseAfter": 4.76
+      },
+      {
+        "index": 3,
+        "text": "Oh, Floppy!",
+        "start": 24.1,
+        "end": 27.07,
+        "pauseAfter": 2.81
+      },
+      {
+        "index": 4,
+        "text": "No, Floppy!",
+        "start": 29.88,
+        "end": 32.9,
+        "pauseAfter": 4.76
+      },
+      {
+        "index": 5,
+        "text": "Floppy Floppy.",
+        "start": 37.66,
+        "end": 40.96,
+        "pauseAfter": 2.05
+      }
+    ]
+  },
+  "1A-05": {
+    "lessonId": "1A-05",
+    "title": "A Good Trick",
+    "repeatAudioUrl": "content/dianfan/1a/05.mp3",
+    "repeatDuration": 37.75,
+    "fluentAudioUrl": "content/dianfan/1a/05_fluent.mp3",
+    "fluentDuration": 8.91,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "A Good Trick",
+        "start": 1.04,
+        "end": 3.58,
+        "pauseAfter": 3.28
+      },
+      {
+        "index": 1,
+        "text": "A rug,",
+        "start": 6.86,
+        "end": 7.7,
+        "pauseAfter": 5.64
+      },
+      {
+        "index": 2,
+        "text": "a sheet,",
+        "start": 13.34,
+        "end": 14.2,
+        "pauseAfter": 5.59
+      },
+      {
+        "index": 3,
+        "text": "a big box,",
+        "start": 19.79,
+        "end": 21.28,
+        "pauseAfter": 5.6
+      },
+      {
+        "index": 4,
+        "text": "a little box,",
+        "start": 26.88,
+        "end": 28.12,
+        "pauseAfter": 5.69
+      },
+      {
+        "index": 5,
+        "text": "Kipper.",
+        "start": 33.81,
+        "end": 34.49,
+        "pauseAfter": 3.26
+      }
+    ]
+  },
+  "1A-06": {
+    "lessonId": "1A-06",
+    "title": "The Pancake",
+    "repeatAudioUrl": "content/dianfan/1a/06.mp3",
+    "repeatDuration": 38.71,
+    "fluentAudioUrl": "content/dianfan/1a/06_fluent.mp3",
+    "fluentDuration": 13.71,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "The Pancake",
+        "start": 1.11,
+        "end": 4.16,
+        "pauseAfter": 3.13
+      },
+      {
+        "index": 1,
+        "text": "The frying pan,",
+        "start": 7.29,
+        "end": 9.41,
+        "pauseAfter": 4.7
+      },
+      {
+        "index": 2,
+        "text": "the flour,",
+        "start": 14.11,
+        "end": 15.72,
+        "pauseAfter": 4.86
+      },
+      {
+        "index": 3,
+        "text": "the eggs,",
+        "start": 20.58,
+        "end": 22.5,
+        "pauseAfter": 4.88
+      },
+      {
+        "index": 4,
+        "text": "the milk,",
+        "start": 27.38,
+        "end": 29.1,
+        "pauseAfter": 4.84
+      },
+      {
+        "index": 5,
+        "text": "the butter,",
+        "start": 33.94,
+        "end": 35.55,
+        "pauseAfter": 3.16
+      },
+      {
+        "index": 6,
+        "text": "the pancake,",
+        "start": 35.55,
+        "end": 38.71,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 7,
+        "text": "the pancake race.",
+        "start": 35.55,
+        "end": 38.71,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-07": {
+    "lessonId": "1A-07",
+    "title": "Is It",
+    "repeatAudioUrl": "content/dianfan/1a/07.mp3",
+    "repeatDuration": 47.44,
+    "fluentAudioUrl": "content/dianfan/1a/07_fluent.mp3",
+    "fluentDuration": 14.52,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Is It?",
+        "start": 1.21,
+        "end": 4.32,
+        "pauseAfter": 2.99
+      },
+      {
+        "index": 1,
+        "text": "Is it Kipper?",
+        "start": 7.31,
+        "end": 8.33,
+        "pauseAfter": 4.72
+      },
+      {
+        "index": 2,
+        "text": "It is Kipper.",
+        "start": 13.05,
+        "end": 14.31,
+        "pauseAfter": 1.98
+      },
+      {
+        "index": 3,
+        "text": "Is it Biff?",
+        "start": 16.29,
+        "end": 17.33,
+        "pauseAfter": 4.68
+      },
+      {
+        "index": 4,
+        "text": "It is Biff.",
+        "start": 22.01,
+        "end": 23.08,
+        "pauseAfter": 2.48
+      },
+      {
+        "index": 5,
+        "text": "Is it Chip?",
+        "start": 25.56,
+        "end": 27.16,
+        "pauseAfter": 4.6
+      },
+      {
+        "index": 6,
+        "text": "It is Chip.",
+        "start": 31.76,
+        "end": 33.09,
+        "pauseAfter": 2.6
+      },
+      {
+        "index": 7,
+        "text": "Is it Floppy?",
+        "start": 35.69,
+        "end": 36.83,
+        "pauseAfter": 4.86
+      },
+      {
+        "index": 8,
+        "text": "Yes. It is Floppy.",
+        "start": 41.69,
+        "end": 44.31,
+        "pauseAfter": 3.13
+      }
+    ]
+  },
+  "1A-08": {
+    "lessonId": "1A-08",
+    "title": "Get On",
+    "repeatAudioUrl": "content/dianfan/1a/08.mp3",
+    "repeatDuration": 44.17,
+    "fluentAudioUrl": "content/dianfan/1a/08_fluent.mp3",
+    "fluentDuration": 13.98,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Get On",
+        "start": 1.87,
+        "end": 4.17,
+        "pauseAfter": 3.15
+      },
+      {
+        "index": 1,
+        "text": "Get on.",
+        "start": 7.32,
+        "end": 8.05,
+        "pauseAfter": 4.8
+      },
+      {
+        "index": 2,
+        "text": "Get on, Biff.",
+        "start": 12.85,
+        "end": 16.8,
+        "pauseAfter": 5.03
+      },
+      {
+        "index": 3,
+        "text": "Biff got on.",
+        "start": 21.83,
+        "end": 25.78,
+        "pauseAfter": 4.94
+      },
+      {
+        "index": 4,
+        "text": "Get on, Chip.",
+        "start": 30.72,
+        "end": 34.64,
+        "pauseAfter": 4.7
+      },
+      {
+        "index": 5,
+        "text": "Chip got on.",
+        "start": 39.34,
+        "end": 40.93,
+        "pauseAfter": 3.24
+      },
+      {
+        "index": 6,
+        "text": "Get on, Kipper.",
+        "start": 40.93,
+        "end": 44.17,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 7,
+        "text": "Kipper got on.",
+        "start": 40.93,
+        "end": 44.17,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "Oh, no!",
+        "start": 40.93,
+        "end": 44.17,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-09": {
+    "lessonId": "1A-09",
+    "title": "Floppy Did This",
+    "repeatAudioUrl": "content/dianfan/1a/09.mp3",
+    "repeatDuration": 44.54,
+    "fluentAudioUrl": "content/dianfan/1a/09_fluent.mp3",
+    "fluentDuration": 12.96,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Floppy Did This",
+        "start": 1.31,
+        "end": 4.14,
+        "pauseAfter": 3.36
+      },
+      {
+        "index": 1,
+        "text": "Chip did this.",
+        "start": 7.5,
+        "end": 8.47,
+        "pauseAfter": 4.57
+      },
+      {
+        "index": 2,
+        "text": "It is Biff.",
+        "start": 13.04,
+        "end": 13.86,
+        "pauseAfter": 1.93
+      },
+      {
+        "index": 3,
+        "text": "Biff did this.",
+        "start": 15.79,
+        "end": 17.05,
+        "pauseAfter": 4.8
+      },
+      {
+        "index": 4,
+        "text": "It is Kipper.",
+        "start": 21.85,
+        "end": 22.64,
+        "pauseAfter": 1.84
+      },
+      {
+        "index": 5,
+        "text": "Kipper did this.",
+        "start": 24.48,
+        "end": 26.01,
+        "pauseAfter": 5
+      },
+      {
+        "index": 6,
+        "text": "It is Mum.",
+        "start": 31.01,
+        "end": 34.66,
+        "pauseAfter": 5.17
+      },
+      {
+        "index": 7,
+        "text": "Oh, no!",
+        "start": 39.83,
+        "end": 41.42,
+        "pauseAfter": 3.12
+      },
+      {
+        "index": 8,
+        "text": "Floppy did this.",
+        "start": 41.42,
+        "end": 44.54,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-10": {
+    "lessonId": "1A-10",
+    "title": "Get Dad",
+    "repeatAudioUrl": "content/dianfan/1a/10.mp3",
+    "repeatDuration": 43.7,
+    "fluentAudioUrl": "content/dianfan/1a/10_fluent.mp3",
+    "fluentDuration": 12.38,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Get Dad",
+        "start": 1.51,
+        "end": 4.02,
+        "pauseAfter": 3.59
+      },
+      {
+        "index": 1,
+        "text": "Go on, Dad!",
+        "start": 7.61,
+        "end": 8.45,
+        "pauseAfter": 4.87
+      },
+      {
+        "index": 2,
+        "text": "Get Biff.",
+        "start": 13.32,
+        "end": 14.08,
+        "pauseAfter": 2.03
+      },
+      {
+        "index": 3,
+        "text": "Go on, Dad!",
+        "start": 16.11,
+        "end": 16.98,
+        "pauseAfter": 5.35
+      },
+      {
+        "index": 4,
+        "text": "Get Chip.",
+        "start": 22.33,
+        "end": 22.57,
+        "pauseAfter": 2.14
+      },
+      {
+        "index": 5,
+        "text": "Go on, Dad!",
+        "start": 24.71,
+        "end": 25.59,
+        "pauseAfter": 4.84
+      },
+      {
+        "index": 6,
+        "text": "Get Kipper.",
+        "start": 30.43,
+        "end": 31.25,
+        "pauseAfter": 2.17
+      },
+      {
+        "index": 7,
+        "text": "Go on, Mum!",
+        "start": 33.42,
+        "end": 34.48,
+        "pauseAfter": 5.19
+      },
+      {
+        "index": 8,
+        "text": "Get Dad.",
+        "start": 39.67,
+        "end": 40.52,
+        "pauseAfter": 3.18
+      }
+    ]
+  },
+  "1A-11": {
+    "lessonId": "1A-11",
+    "title": "Up You Go",
+    "repeatAudioUrl": "content/dianfan/1a/11.mp3",
+    "repeatDuration": 49.66,
+    "fluentAudioUrl": "content/dianfan/1a/11_fluent.mp3",
+    "fluentDuration": 17.16,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Up You Go",
+        "start": 1.44,
+        "end": 4.06,
+        "pauseAfter": 4.59
+      },
+      {
+        "index": 1,
+        "text": "Up you go, Kipper.",
+        "start": 8.65,
+        "end": 9.89,
+        "pauseAfter": 5.17
+      },
+      {
+        "index": 2,
+        "text": "Go!",
+        "start": 15.06,
+        "end": 18.46,
+        "pauseAfter": 5.24
+      },
+      {
+        "index": 3,
+        "text": "Up you go, Biff.",
+        "start": 23.7,
+        "end": 25.35,
+        "pauseAfter": 2.21
+      },
+      {
+        "index": 4,
+        "text": "Go, go!",
+        "start": 27.56,
+        "end": 29.76,
+        "pauseAfter": 5.03
+      },
+      {
+        "index": 5,
+        "text": "Chip, up you go.",
+        "start": 34.79,
+        "end": 36.17,
+        "pauseAfter": 2.48
+      },
+      {
+        "index": 6,
+        "text": "Go, go, go!",
+        "start": 38.65,
+        "end": 39.75,
+        "pauseAfter": 4.98
+      },
+      {
+        "index": 7,
+        "text": "No, Dad.",
+        "start": 44.73,
+        "end": 46.54,
+        "pauseAfter": 3.12
+      },
+      {
+        "index": 8,
+        "text": "No, no, no!",
+        "start": 46.54,
+        "end": 49.66,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-12": {
+    "lessonId": "1A-12",
+    "title": "I See",
+    "repeatAudioUrl": "content/dianfan/1a/12.mp3",
+    "repeatDuration": 62.77,
+    "fluentAudioUrl": "content/dianfan/1a/12_fluent.mp3",
+    "fluentDuration": 24.42,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "I See",
+        "start": 1.12,
+        "end": 4.29,
+        "pauseAfter": 3.21
+      },
+      {
+        "index": 1,
+        "text": "I see Biff.",
+        "start": 7.5,
+        "end": 9.2,
+        "pauseAfter": 4.99
+      },
+      {
+        "index": 2,
+        "text": "I see Chip.",
+        "start": 14.19,
+        "end": 20.47,
+        "pauseAfter": 4.71
+      },
+      {
+        "index": 3,
+        "text": "I see Mum and Dad.",
+        "start": 25.18,
+        "end": 27.16,
+        "pauseAfter": 1.86
+      },
+      {
+        "index": 4,
+        "text": "We see Kipper.",
+        "start": 29.02,
+        "end": 31.06,
+        "pauseAfter": 4.65
+      },
+      {
+        "index": 5,
+        "text": "We see Floppy.",
+        "start": 35.71,
+        "end": 38.33,
+        "pauseAfter": 1.84
+      },
+      {
+        "index": 6,
+        "text": "I see Biff and Chip.",
+        "start": 40.17,
+        "end": 41.45,
+        "pauseAfter": 4.78
+      },
+      {
+        "index": 7,
+        "text": "I see me.",
+        "start": 46.23,
+        "end": 46.65,
+        "pauseAfter": 1.8
+      },
+      {
+        "index": 8,
+        "text": "Biff",
+        "start": 48.45,
+        "end": 48.87,
+        "pauseAfter": 1.91
+      },
+      {
+        "index": 9,
+        "text": "Chip",
+        "start": 50.78,
+        "end": 59.61,
+        "pauseAfter": 3.16
+      },
+      {
+        "index": 10,
+        "text": "Mum and Dad",
+        "start": 59.61,
+        "end": 62.77,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 11,
+        "text": "Kipper",
+        "start": 59.61,
+        "end": 62.77,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 12,
+        "text": "Floppy",
+        "start": 59.61,
+        "end": 62.77,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 13,
+        "text": "Biff and Chip",
+        "start": 59.61,
+        "end": 62.77,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-13": {
+    "lessonId": "1A-13",
+    "title": "At the Park",
+    "repeatAudioUrl": "content/dianfan/1a/13.mp3",
+    "repeatDuration": 43.31,
+    "fluentAudioUrl": "content/dianfan/1a/13_fluent.mp3",
+    "fluentDuration": 15.8,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "At the Park",
+        "start": 1.32,
+        "end": 4.35,
+        "pauseAfter": 3.13
+      },
+      {
+        "index": 1,
+        "text": "Everyone went to the park.",
+        "start": 7.48,
+        "end": 9.06,
+        "pauseAfter": 4.85
+      },
+      {
+        "index": 2,
+        "text": "Chip went on the slide.",
+        "start": 13.91,
+        "end": 15.76,
+        "pauseAfter": 4.77
+      },
+      {
+        "index": 3,
+        "text": "Biff went on the horse.",
+        "start": 20.53,
+        "end": 22.23,
+        "pauseAfter": 4.72
+      },
+      {
+        "index": 4,
+        "text": "Kipper went on the swing.",
+        "start": 26.95,
+        "end": 28.86,
+        "pauseAfter": 2.11
+      },
+      {
+        "index": 5,
+        "text": "Mum went on the see-saw.",
+        "start": 30.97,
+        "end": 32.96,
+        "pauseAfter": 4.88
+      },
+      {
+        "index": 6,
+        "text": "Floppy went to sleep.",
+        "start": 37.84,
+        "end": 40.17,
+        "pauseAfter": 3.14
+      }
+    ]
+  },
+  "1A-14": {
+    "lessonId": "1A-14",
+    "title": "Fancy Dress",
+    "repeatAudioUrl": "content/dianfan/1a/14.mp3",
+    "repeatDuration": 42.08,
+    "fluentAudioUrl": "content/dianfan/1a/14_fluent.mp3",
+    "fluentDuration": 17.29,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Fancy Dress",
+        "start": 1.04,
+        "end": 4.22,
+        "pauseAfter": 3.21
+      },
+      {
+        "index": 1,
+        "text": "Mum was a scarecrow.",
+        "start": 7.43,
+        "end": 9.64,
+        "pauseAfter": 3.54
+      },
+      {
+        "index": 2,
+        "text": "Biff was a pirate.",
+        "start": 13.18,
+        "end": 15.07,
+        "pauseAfter": 3.42
+      },
+      {
+        "index": 3,
+        "text": "Chip was a pirate.",
+        "start": 18.49,
+        "end": 19.98,
+        "pauseAfter": 5.24
+      },
+      {
+        "index": 4,
+        "text": "Kipper was an angle.",
+        "start": 25.22,
+        "end": 27.32,
+        "pauseAfter": 3.93
+      },
+      {
+        "index": 5,
+        "text": "Dad was a chicken.",
+        "start": 31.25,
+        "end": 32.98,
+        "pauseAfter": 4.36
+      },
+      {
+        "index": 6,
+        "text": "Everyone was happy.",
+        "start": 37.34,
+        "end": 39.09,
+        "pauseAfter": 2.99
+      }
+    ]
+  },
+  "1A-15": {
+    "lessonId": "1A-15",
+    "title": "Good Old Mum",
+    "repeatAudioUrl": "content/dianfan/1a/15.mp3",
+    "repeatDuration": 50.44,
+    "fluentAudioUrl": "content/dianfan/1a/15_fluent.mp3",
+    "fluentDuration": 23.25,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Good Old Mum",
+        "start": 1.4,
+        "end": 4.71,
+        "pauseAfter": 3.34
+      },
+      {
+        "index": 1,
+        "text": "Mum put on a big red nose.",
+        "start": 8.05,
+        "end": 10.91,
+        "pauseAfter": 4.87
+      },
+      {
+        "index": 2,
+        "text": "Mum put on a big pillow.",
+        "start": 15.78,
+        "end": 18.22,
+        "pauseAfter": 4.89
+      },
+      {
+        "index": 3,
+        "text": "Mum put on big boots.",
+        "start": 23.11,
+        "end": 26.17,
+        "pauseAfter": 5.13
+      },
+      {
+        "index": 4,
+        "text": "Mum put on big eyebrows.",
+        "start": 31.3,
+        "end": 34.71,
+        "pauseAfter": 2.18
+      },
+      {
+        "index": 5,
+        "text": "She put on a big beard.",
+        "start": 36.89,
+        "end": 39.53,
+        "pauseAfter": 4.89
+      },
+      {
+        "index": 6,
+        "text": "\" Ho! Ho! Ho! \" said Mum.",
+        "start": 44.42,
+        "end": 47.31,
+        "pauseAfter": 3.13
+      }
+    ]
+  },
+  "1A-16": {
+    "lessonId": "1A-16",
+    "title": "The Headache",
+    "repeatAudioUrl": "content/dianfan/1a/16.mp3",
+    "repeatDuration": 46.34,
+    "fluentAudioUrl": "content/dianfan/1a/16_fluent.mp3",
+    "fluentDuration": 20.11,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "The Headache",
+        "start": 0.89,
+        "end": 4.05,
+        "pauseAfter": 3.1
+      },
+      {
+        "index": 1,
+        "text": "Dad had a trumpet.",
+        "start": 7.15,
+        "end": 10.17,
+        "pauseAfter": 6.17
+      },
+      {
+        "index": 2,
+        "text": "Chip had a drum.",
+        "start": 16.34,
+        "end": 19.23,
+        "pauseAfter": 5.31
+      },
+      {
+        "index": 3,
+        "text": "Biff had a recorder.",
+        "start": 24.54,
+        "end": 27.06,
+        "pauseAfter": 5.5
+      },
+      {
+        "index": 4,
+        "text": "Kipper had a guitar.",
+        "start": 32.56,
+        "end": 35.52,
+        "pauseAfter": 4.76
+      },
+      {
+        "index": 5,
+        "text": "Mum had a headache.",
+        "start": 40.28,
+        "end": 42.95,
+        "pauseAfter": 3.39
+      }
+    ]
+  },
+  "1A-17": {
+    "lessonId": "1A-17",
+    "title": "The Pet Shop",
+    "repeatAudioUrl": "content/dianfan/1a/17.mp3",
+    "repeatDuration": 71.63,
+    "fluentAudioUrl": "content/dianfan/1a/17_fluent.mp3",
+    "fluentDuration": 27.14,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "The Pet Shop",
+        "start": 0.84,
+        "end": 3.89,
+        "pauseAfter": 3.21
+      },
+      {
+        "index": 1,
+        "text": "Everyone wanted a pet.",
+        "start": 7.1,
+        "end": 9.39,
+        "pauseAfter": 6.41
+      },
+      {
+        "index": 2,
+        "text": "Chip wanted a rat.",
+        "start": 15.8,
+        "end": 18.11,
+        "pauseAfter": 6.21
+      },
+      {
+        "index": 3,
+        "text": "\" Oh no! \" said everyone.",
+        "start": 24.32,
+        "end": 27.06,
+        "pauseAfter": 6.47
+      },
+      {
+        "index": 4,
+        "text": "Biff wanted a spider.",
+        "start": 33.53,
+        "end": 35.74,
+        "pauseAfter": 6.19
+      },
+      {
+        "index": 5,
+        "text": "\" Oh no! \" said everyone.",
+        "start": 41.93,
+        "end": 44.72,
+        "pauseAfter": 7.82
+      },
+      {
+        "index": 6,
+        "text": "Kipper wanted a snake.",
+        "start": 52.54,
+        "end": 54.85,
+        "pauseAfter": 2.9
+      },
+      {
+        "index": 7,
+        "text": "\" Oh no! \" said everyone.",
+        "start": 57.75,
+        "end": 60.41,
+        "pauseAfter": 4.77
+      },
+      {
+        "index": 8,
+        "text": "Everyone wanted a goldfish.",
+        "start": 65.18,
+        "end": 68.38,
+        "pauseAfter": 3.25
+      }
+    ]
+  },
+  "1A-18": {
+    "lessonId": "1A-18",
+    "title": "Push!",
+    "repeatAudioUrl": "content/dianfan/1a/18.mp3",
+    "repeatDuration": 38.03,
+    "fluentAudioUrl": "content/dianfan/1a/18_fluent.mp3",
+    "fluentDuration": 16.85,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Push!",
+        "start": 0.85,
+        "end": 3.58,
+        "pauseAfter": 2.26
+      },
+      {
+        "index": 1,
+        "text": "The car was stuck.",
+        "start": 5.84,
+        "end": 7.62,
+        "pauseAfter": 4.19
+      },
+      {
+        "index": 2,
+        "text": "Mum pushed it.",
+        "start": 11.81,
+        "end": 13.29,
+        "pauseAfter": 4.14
+      },
+      {
+        "index": 3,
+        "text": "Biff and Chip pushed it.",
+        "start": 17.43,
+        "end": 22.92,
+        "pauseAfter": 4.84
+      },
+      {
+        "index": 4,
+        "text": "Mum pulled it.",
+        "start": 27.76,
+        "end": 29.77,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 5,
+        "text": "The tractor pulled it.",
+        "start": 33.27,
+        "end": 34.82,
+        "pauseAfter": 3.21
+      },
+      {
+        "index": 6,
+        "text": "Oh no!",
+        "start": 34.82,
+        "end": 38.03,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-19": {
+    "lessonId": "1A-19",
+    "title": "Making Faces",
+    "repeatAudioUrl": "content/dianfan/1a/19.mp3",
+    "repeatDuration": 39.76,
+    "fluentAudioUrl": "content/dianfan/1a/19_fluent.mp3",
+    "fluentDuration": 16.07,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Making Faces",
+        "start": 1.22,
+        "end": 4.57,
+        "pauseAfter": 2.45
+      },
+      {
+        "index": 1,
+        "text": "Dad was fierce.",
+        "start": 7.02,
+        "end": 9.07,
+        "pauseAfter": 5.26
+      },
+      {
+        "index": 2,
+        "text": "Chip was sad.",
+        "start": 14.33,
+        "end": 16.37,
+        "pauseAfter": 4.12
+      },
+      {
+        "index": 3,
+        "text": "Biff was good.",
+        "start": 20.49,
+        "end": 22.63,
+        "pauseAfter": 5.92
+      },
+      {
+        "index": 4,
+        "text": "Mum was frightened.",
+        "start": 28.55,
+        "end": 31.16,
+        "pauseAfter": 3.31
+      },
+      {
+        "index": 5,
+        "text": "Kipper was hungry.",
+        "start": 34.47,
+        "end": 36.55,
+        "pauseAfter": 3.21
+      }
+    ]
+  },
+  "1A-20": {
+    "lessonId": "1A-20",
+    "title": "Goal!",
+    "repeatAudioUrl": "content/dianfan/1a/20.mp3",
+    "repeatDuration": 44.51,
+    "fluentAudioUrl": "content/dianfan/1a/20_fluent.mp3",
+    "fluentDuration": 21.97,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Goal!",
+        "start": 1.13,
+        "end": 3.98,
+        "pauseAfter": 2.3
+      },
+      {
+        "index": 1,
+        "text": "It was a cold day.",
+        "start": 6.28,
+        "end": 7.97,
+        "pauseAfter": 4.3
+      },
+      {
+        "index": 2,
+        "text": "Everyone got wet.",
+        "start": 12.27,
+        "end": 14,
+        "pauseAfter": 2.76
+      },
+      {
+        "index": 3,
+        "text": "Everyone got cold.",
+        "start": 16.76,
+        "end": 18.91,
+        "pauseAfter": 3.45
+      },
+      {
+        "index": 4,
+        "text": "Floppy got tired.",
+        "start": 22.36,
+        "end": 24.34,
+        "pauseAfter": 2.62
+      },
+      {
+        "index": 5,
+        "text": "Kipper got miserable.",
+        "start": 26.96,
+        "end": 29.04,
+        "pauseAfter": 3.78
+      },
+      {
+        "index": 6,
+        "text": "Mum got cross.",
+        "start": 32.82,
+        "end": 34.85,
+        "pauseAfter": 4.47
+      },
+      {
+        "index": 7,
+        "text": "Dad got a goal.",
+        "start": 39.32,
+        "end": 41.25,
+        "pauseAfter": 3.26
+      }
+    ]
+  },
+  "1A-21": {
+    "lessonId": "1A-21",
+    "title": "The Journey",
+    "repeatAudioUrl": "content/dianfan/1a/21.mp3",
+    "repeatDuration": 53.81,
+    "fluentAudioUrl": "content/dianfan/1a/21_fluent.mp3",
+    "fluentDuration": 24.14,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "The Journey",
+        "start": 1.03,
+        "end": 3.73,
+        "pauseAfter": 3.41
+      },
+      {
+        "index": 1,
+        "text": "\" I'm bored, \" said Kipper.",
+        "start": 7.14,
+        "end": 10.15,
+        "pauseAfter": 4.79
+      },
+      {
+        "index": 2,
+        "text": "\" I'm hungry, \" said Biff.",
+        "start": 14.94,
+        "end": 17.67,
+        "pauseAfter": 4.08
+      },
+      {
+        "index": 3,
+        "text": "\" I'm thirsty, \" said Chip.",
+        "start": 21.75,
+        "end": 24.53,
+        "pauseAfter": 5.58
+      },
+      {
+        "index": 4,
+        "text": "\" I'm cross, \" said Dad.",
+        "start": 30.11,
+        "end": 33.2,
+        "pauseAfter": 5.97
+      },
+      {
+        "index": 5,
+        "text": "\" I'm lost, \" said Mum.",
+        "start": 39.17,
+        "end": 42.31,
+        "pauseAfter": 5.61
+      },
+      {
+        "index": 6,
+        "text": "\" Hooray! \" said everyone.",
+        "start": 47.92,
+        "end": 50.6,
+        "pauseAfter": 3.21
+      }
+    ]
+  },
+  "1A-22": {
+    "lessonId": "1A-22",
+    "title": "Shopping",
+    "repeatAudioUrl": "content/dianfan/1a/22.mp3",
+    "repeatDuration": 53.03,
+    "fluentAudioUrl": "content/dianfan/1a/22_fluent.mp3",
+    "fluentDuration": 17.37,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Shopping",
+        "start": 1.16,
+        "end": 4.37,
+        "pauseAfter": 3.16
+      },
+      {
+        "index": 1,
+        "text": "Chip wanted some sugar.",
+        "start": 7.53,
+        "end": 9.2,
+        "pauseAfter": 4.74
+      },
+      {
+        "index": 2,
+        "text": "He went to the supermarket.",
+        "start": 13.94,
+        "end": 15.93,
+        "pauseAfter": 3.72
+      },
+      {
+        "index": 3,
+        "text": "He got some crisps.",
+        "start": 19.65,
+        "end": 21.17,
+        "pauseAfter": 4.26
+      },
+      {
+        "index": 4,
+        "text": "He went to the shop.",
+        "start": 25.43,
+        "end": 26.67,
+        "pauseAfter": 3.87
+      },
+      {
+        "index": 5,
+        "text": "He got a comic.",
+        "start": 30.54,
+        "end": 31.66,
+        "pauseAfter": 4.8
+      },
+      {
+        "index": 6,
+        "text": "He went to the market.",
+        "start": 36.46,
+        "end": 37.85,
+        "pauseAfter": 3.95
+      },
+      {
+        "index": 7,
+        "text": "He got a ball.",
+        "start": 41.8,
+        "end": 43.17,
+        "pauseAfter": 5.01
+      },
+      {
+        "index": 8,
+        "text": "He forgot the sugar.",
+        "start": 48.18,
+        "end": 49.81,
+        "pauseAfter": 3.22
+      }
+    ]
+  },
+  "1A-23": {
+    "lessonId": "1A-23",
+    "title": "Who Did That",
+    "repeatAudioUrl": "content/dianfan/1a/23.mp3",
+    "repeatDuration": 50.86,
+    "fluentAudioUrl": "content/dianfan/1a/23_fluent.mp3",
+    "fluentDuration": 20.38,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Who Did That?",
+        "start": 1.28,
+        "end": 4.3,
+        "pauseAfter": 3.56
+      },
+      {
+        "index": 1,
+        "text": "Mum was cross.",
+        "start": 7.86,
+        "end": 9.42,
+        "pauseAfter": 4.79
+      },
+      {
+        "index": 2,
+        "text": "\" Who did that? \" she said.",
+        "start": 14.21,
+        "end": 19.79,
+        "pauseAfter": 4.65
+      },
+      {
+        "index": 3,
+        "text": "\" It was Chip, \" said Biff.",
+        "start": 24.44,
+        "end": 30.71,
+        "pauseAfter": 4.62
+      },
+      {
+        "index": 4,
+        "text": "\" It was Kipper, \" said Chip.",
+        "start": 35.33,
+        "end": 41.89,
+        "pauseAfter": 4.87
+      },
+      {
+        "index": 5,
+        "text": "\" It was Floppy, \" said Kipper.",
+        "start": 46.76,
+        "end": 47.79,
+        "pauseAfter": 3.07
+      },
+      {
+        "index": 6,
+        "text": "\" It was Floppy, \" said Biff.",
+        "start": 47.79,
+        "end": 50.86,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 7,
+        "text": "\" It wasn't Floppy, \" said Dad.",
+        "start": 47.79,
+        "end": 50.86,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "\" It was me. \"",
+        "start": 47.79,
+        "end": 50.86,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-24": {
+    "lessonId": "1A-24",
+    "title": "What a Mess!",
+    "repeatAudioUrl": "content/dianfan/1a/24.mp3",
+    "repeatDuration": 48.98,
+    "fluentAudioUrl": "content/dianfan/1a/24_fluent.mp3",
+    "fluentDuration": 20.66,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "What a Mess!",
+        "start": 0.96,
+        "end": 4.37,
+        "pauseAfter": 3.08
+      },
+      {
+        "index": 1,
+        "text": "Mum made a dress.",
+        "start": 7.45,
+        "end": 9.23,
+        "pauseAfter": 5.52
+      },
+      {
+        "index": 2,
+        "text": "Dad made some jam.",
+        "start": 14.75,
+        "end": 16.97,
+        "pauseAfter": 5.63
+      },
+      {
+        "index": 3,
+        "text": "Chip made a scarf.",
+        "start": 22.6,
+        "end": 24.45,
+        "pauseAfter": 3.67
+      },
+      {
+        "index": 4,
+        "text": "Biff made a lorry.",
+        "start": 28.12,
+        "end": 30.09,
+        "pauseAfter": 4.93
+      },
+      {
+        "index": 5,
+        "text": "Kipper made a birthday card.",
+        "start": 35.02,
+        "end": 37.63,
+        "pauseAfter": 5.56
+      },
+      {
+        "index": 6,
+        "text": "Everyone made a mess.",
+        "start": 43.19,
+        "end": 45.84,
+        "pauseAfter": 3.14
+      }
+    ]
+  },
+  "1A-25": {
+    "lessonId": "1A-25",
+    "title": "Hide and Seek",
+    "repeatAudioUrl": "content/dianfan/1a/25.mp3",
+    "repeatDuration": 48.38,
+    "fluentAudioUrl": "content/dianfan/1a/25_fluent.mp3",
+    "fluentDuration": 19.07,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Hide and Seek",
+        "start": 1.7,
+        "end": 4.57,
+        "pauseAfter": 3.03
+      },
+      {
+        "index": 1,
+        "text": "Can you see us?",
+        "start": 7.6,
+        "end": 12.2,
+        "pauseAfter": 5.06
+      },
+      {
+        "index": 2,
+        "text": "Can you see me?",
+        "start": 17.26,
+        "end": 20.72,
+        "pauseAfter": 4.97
+      },
+      {
+        "index": 3,
+        "text": "Yes, I can see you.",
+        "start": 25.69,
+        "end": 30.26,
+        "pauseAfter": 5.03
+      },
+      {
+        "index": 4,
+        "text": "Can you see me?",
+        "start": 35.29,
+        "end": 36.34,
+        "pauseAfter": 2.34
+      },
+      {
+        "index": 5,
+        "text": "Yes, we can see you.",
+        "start": 38.68,
+        "end": 39.59,
+        "pauseAfter": 4.64
+      },
+      {
+        "index": 6,
+        "text": "Can you see me?",
+        "start": 44.23,
+        "end": 45.25,
+        "pauseAfter": 3.13
+      },
+      {
+        "index": 7,
+        "text": "Yes, we can see you.",
+        "start": 45.25,
+        "end": 48.38,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "We can all see Dad.",
+        "start": 45.25,
+        "end": 48.38,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-26": {
+    "lessonId": "1A-26",
+    "title": "Reds and Blues",
+    "repeatAudioUrl": "content/dianfan/1a/26.mp3",
+    "repeatDuration": 49.92,
+    "fluentAudioUrl": "content/dianfan/1a/26_fluent.mp3",
+    "fluentDuration": 16.43,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Reds and Blues",
+        "start": 1.56,
+        "end": 4.66,
+        "pauseAfter": 3.79
+      },
+      {
+        "index": 1,
+        "text": "We are all in red.",
+        "start": 8.45,
+        "end": 9.98,
+        "pauseAfter": 5.25
+      },
+      {
+        "index": 2,
+        "text": "We are all in blue.",
+        "start": 15.23,
+        "end": 16.62,
+        "pauseAfter": 6
+      },
+      {
+        "index": 3,
+        "text": "Come on the reds!",
+        "start": 22.62,
+        "end": 25.36,
+        "pauseAfter": 6.44
+      },
+      {
+        "index": 4,
+        "text": "Come on the blues!",
+        "start": 31.8,
+        "end": 34.75,
+        "pauseAfter": 3.43
+      },
+      {
+        "index": 5,
+        "text": "Who is in red?",
+        "start": 38.18,
+        "end": 39.44,
+        "pauseAfter": 6.01
+      },
+      {
+        "index": 6,
+        "text": "Who is in blue?",
+        "start": 45.45,
+        "end": 46.76,
+        "pauseAfter": 3.16
+      },
+      {
+        "index": 7,
+        "text": "We are all muddy.",
+        "start": 46.76,
+        "end": 49.92,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-27": {
+    "lessonId": "1A-27",
+    "title": "Big Feet",
+    "repeatAudioUrl": "content/dianfan/1a/27.mp3",
+    "repeatDuration": 57.21,
+    "fluentAudioUrl": "content/dianfan/1a/27_fluent.mp3",
+    "fluentDuration": 28.63,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Big Feet",
+        "start": 1.65,
+        "end": 5.18,
+        "pauseAfter": 3.57
+      },
+      {
+        "index": 1,
+        "text": "Come and look at this.",
+        "start": 8.75,
+        "end": 12.97,
+        "pauseAfter": 4.69
+      },
+      {
+        "index": 2,
+        "text": "Come and look at this.",
+        "start": 17.66,
+        "end": 21.92,
+        "pauseAfter": 4.96
+      },
+      {
+        "index": 3,
+        "text": "Is it a big monster?",
+        "start": 26.88,
+        "end": 31.79,
+        "pauseAfter": 2.18
+      },
+      {
+        "index": 4,
+        "text": "Come and look at this.",
+        "start": 33.97,
+        "end": 37.64,
+        "pauseAfter": 4.93
+      },
+      {
+        "index": 5,
+        "text": "Is it a big dinosaur?",
+        "start": 42.57,
+        "end": 48.35,
+        "pauseAfter": 4.67
+      },
+      {
+        "index": 6,
+        "text": "Come and look at this.",
+        "start": 53.02,
+        "end": 56.02,
+        "pauseAfter": 1.19
+      },
+      {
+        "index": 7,
+        "text": "Is it a big giant?",
+        "start": 56.02,
+        "end": 57.21,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "No. It is Dad.",
+        "start": 56.02,
+        "end": 57.21,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-28": {
+    "lessonId": "1A-28",
+    "title": "Look at Me",
+    "repeatAudioUrl": "content/dianfan/1a/28.mp3",
+    "repeatDuration": 49.48,
+    "fluentAudioUrl": "content/dianfan/1a/28_fluent.mp3",
+    "fluentDuration": 19.93,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Look at Me",
+        "start": 1.23,
+        "end": 5.01,
+        "pauseAfter": 3.03
+      },
+      {
+        "index": 1,
+        "text": "Look at me, Mum.",
+        "start": 8.04,
+        "end": 11.04,
+        "pauseAfter": 5.01
+      },
+      {
+        "index": 2,
+        "text": "Look at me, Mum.",
+        "start": 16.05,
+        "end": 20.38,
+        "pauseAfter": 4.89
+      },
+      {
+        "index": 3,
+        "text": "Look at me on my bike.",
+        "start": 25.27,
+        "end": 26.96,
+        "pauseAfter": 1.97
+      },
+      {
+        "index": 4,
+        "text": "Look at me, Mum.",
+        "start": 28.93,
+        "end": 30.31,
+        "pauseAfter": 4.86
+      },
+      {
+        "index": 5,
+        "text": "Look at me on my bike.",
+        "start": 35.17,
+        "end": 39.9,
+        "pauseAfter": 4.9
+      },
+      {
+        "index": 6,
+        "text": "Look at me, Mum.",
+        "start": 44.8,
+        "end": 46.29,
+        "pauseAfter": 3.19
+      },
+      {
+        "index": 7,
+        "text": "Oh, no!",
+        "start": 46.29,
+        "end": 49.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "Look at me!",
+        "start": 46.29,
+        "end": 49.48,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-29": {
+    "lessonId": "1A-29",
+    "title": "Go Away, Floppy",
+    "repeatAudioUrl": "content/dianfan/1a/29.mp3",
+    "repeatDuration": 56.22,
+    "fluentAudioUrl": "content/dianfan/1a/29_fluent.mp3",
+    "fluentDuration": 26.12,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Go Away, Floppy",
+        "start": 1.46,
+        "end": 4.66,
+        "pauseAfter": 3.15
+      },
+      {
+        "index": 1,
+        "text": "Go away, Floppy.",
+        "start": 7.81,
+        "end": 9.18,
+        "pauseAfter": 4.93
+      },
+      {
+        "index": 2,
+        "text": "Go away, Floppy.",
+        "start": 14.11,
+        "end": 15.09,
+        "pauseAfter": 1.92
+      },
+      {
+        "index": 3,
+        "text": "We are skipping.",
+        "start": 17.01,
+        "end": 19.44,
+        "pauseAfter": 4.91
+      },
+      {
+        "index": 4,
+        "text": "Go away, Floppy.",
+        "start": 24.35,
+        "end": 32.85,
+        "pauseAfter": 5.18
+      },
+      {
+        "index": 5,
+        "text": "We are painting.",
+        "start": 38.03,
+        "end": 44.63,
+        "pauseAfter": 4.82
+      },
+      {
+        "index": 6,
+        "text": "Come back, Floppy.",
+        "start": 49.45,
+        "end": 53.16,
+        "pauseAfter": 3.06
+      },
+      {
+        "index": 7,
+        "text": "Floppy, come back.",
+        "start": 53.16,
+        "end": 56.22,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "We are sorry.",
+        "start": 53.16,
+        "end": 56.22,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-30": {
+    "lessonId": "1A-30",
+    "title": "Kipper's Diary",
+    "repeatAudioUrl": "content/dianfan/1a/30.mp3",
+    "repeatDuration": 41.48,
+    "fluentAudioUrl": "content/dianfan/1a/30_fluent.mp3",
+    "fluentDuration": 13.45,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Kipper's Diary",
+        "start": 6.54,
+        "end": 8.82,
+        "pauseAfter": 4.76
+      },
+      {
+        "index": 1,
+        "text": "Monday",
+        "start": 13.58,
+        "end": 17.35,
+        "pauseAfter": 5.08
+      },
+      {
+        "index": 2,
+        "text": "It was a wet day.",
+        "start": 22.43,
+        "end": 25.7,
+        "pauseAfter": 4.67
+      },
+      {
+        "index": 3,
+        "text": "Tuesday",
+        "start": 30.37,
+        "end": 32.5,
+        "pauseAfter": 4.96
+      },
+      {
+        "index": 4,
+        "text": "It was a windy day.",
+        "start": 37.46,
+        "end": 38.42,
+        "pauseAfter": 3.06
+      },
+      {
+        "index": 5,
+        "text": "I went to the shops.",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 6,
+        "text": "Wednesday",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 7,
+        "text": "It was a sunny day.",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "I went to the pool.",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 9,
+        "text": "Thursday",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 10,
+        "text": "It was a hot day.",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 11,
+        "text": "I went to the park.",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 12,
+        "text": "Friday",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 13,
+        "text": "It was a fun day.",
+        "start": 38.42,
+        "end": 41.48,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-31": {
+    "lessonId": "1A-31",
+    "title": "What Dogs Like",
+    "repeatAudioUrl": "content/dianfan/1a/31.mp3",
+    "repeatDuration": 48.38,
+    "fluentAudioUrl": "content/dianfan/1a/31_fluent.mp3",
+    "fluentDuration": 19.33,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "What Dogs Like",
+        "start": 0.98,
+        "end": 4.15,
+        "pauseAfter": 3.46
+      },
+      {
+        "index": 1,
+        "text": "Dogs like to play.",
+        "start": 7.61,
+        "end": 8.56,
+        "pauseAfter": 4.91
+      },
+      {
+        "index": 2,
+        "text": "They like to walk.",
+        "start": 13.47,
+        "end": 14.43,
+        "pauseAfter": 2.05
+      },
+      {
+        "index": 3,
+        "text": "Floppy likes to walk.",
+        "start": 16.48,
+        "end": 18.57,
+        "pauseAfter": 4.72
+      },
+      {
+        "index": 4,
+        "text": "They like to sleep.",
+        "start": 23.29,
+        "end": 28.19,
+        "pauseAfter": 5.01
+      },
+      {
+        "index": 5,
+        "text": "Floppy likes to sleep.",
+        "start": 33.2,
+        "end": 34.14,
+        "pauseAfter": 1.87
+      },
+      {
+        "index": 6,
+        "text": "They like to run.",
+        "start": 36.01,
+        "end": 38.32,
+        "pauseAfter": 5.22
+      },
+      {
+        "index": 7,
+        "text": "Floppy likes to run.",
+        "start": 43.54,
+        "end": 45.2,
+        "pauseAfter": 3.18
+      },
+      {
+        "index": 8,
+        "text": "Floppy hates this.",
+        "start": 45.2,
+        "end": 48.38,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-32": {
+    "lessonId": "1A-32",
+    "title": "Go Away, Cat",
+    "repeatAudioUrl": "content/dianfan/1a/32.mp3",
+    "repeatDuration": 49.66,
+    "fluentAudioUrl": "content/dianfan/1a/32_fluent.mp3",
+    "fluentDuration": 16.77,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Go Away, Cat",
+        "start": 1.09,
+        "end": 4.38,
+        "pauseAfter": 4.75
+      },
+      {
+        "index": 1,
+        "text": "Go away, little cat.",
+        "start": 9.13,
+        "end": 10.97,
+        "pauseAfter": 5.82
+      },
+      {
+        "index": 2,
+        "text": "Go away, little cat.",
+        "start": 16.79,
+        "end": 18.48,
+        "pauseAfter": 5.51
+      },
+      {
+        "index": 3,
+        "text": "A dog is coming.",
+        "start": 23.99,
+        "end": 25.23,
+        "pauseAfter": 2.32
+      },
+      {
+        "index": 4,
+        "text": "Go away, little cat.",
+        "start": 27.55,
+        "end": 28.8,
+        "pauseAfter": 5.19
+      },
+      {
+        "index": 5,
+        "text": "A big dog is coming.",
+        "start": 33.99,
+        "end": 35.59,
+        "pauseAfter": 2.53
+      },
+      {
+        "index": 6,
+        "text": "Go away, little cat.",
+        "start": 38.12,
+        "end": 39.61,
+        "pauseAfter": 5.16
+      },
+      {
+        "index": 7,
+        "text": "Floppy is coming.",
+        "start": 44.77,
+        "end": 46.52,
+        "pauseAfter": 3.14
+      },
+      {
+        "index": 8,
+        "text": "Oh, no!",
+        "start": 46.52,
+        "end": 49.66,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-33": {
+    "lessonId": "1A-33",
+    "title": "Go On, Mum!",
+    "repeatAudioUrl": "content/dianfan/1a/33.mp3",
+    "repeatDuration": 51.93,
+    "fluentAudioUrl": "content/dianfan/1a/33_fluent.mp3",
+    "fluentDuration": 21.26,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Go On, Mum!",
+        "start": 1.24,
+        "end": 5.21,
+        "pauseAfter": 3.09
+      },
+      {
+        "index": 1,
+        "text": "\" Go on, Mum, \" said Chip.",
+        "start": 8.3,
+        "end": 10.15,
+        "pauseAfter": 4.72
+      },
+      {
+        "index": 2,
+        "text": "\" Go on, Mum, \" said Biff.",
+        "start": 14.87,
+        "end": 16.75,
+        "pauseAfter": 1.91
+      },
+      {
+        "index": 3,
+        "text": "\" I am going, \" said Mum.",
+        "start": 18.66,
+        "end": 20.53,
+        "pauseAfter": 4.73
+      },
+      {
+        "index": 4,
+        "text": "\" Go on, Mum, \" said Kipper.",
+        "start": 25.26,
+        "end": 30.88,
+        "pauseAfter": 4.78
+      },
+      {
+        "index": 5,
+        "text": "\" I am going, \" she said.",
+        "start": 35.66,
+        "end": 41.22,
+        "pauseAfter": 4.73
+      },
+      {
+        "index": 6,
+        "text": "\" Go on, go on, \" said Dad.",
+        "start": 45.95,
+        "end": 48.84,
+        "pauseAfter": 3.09
+      },
+      {
+        "index": 7,
+        "text": "\" I am going, \" said Mum.",
+        "start": 48.84,
+        "end": 51.93,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "\" I am not going again. \"",
+        "start": 48.84,
+        "end": 51.93,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-34": {
+    "lessonId": "1A-34",
+    "title": "Look After Me",
+    "repeatAudioUrl": "content/dianfan/1a/34.mp3",
+    "repeatDuration": 50.57,
+    "fluentAudioUrl": "content/dianfan/1a/34_fluent.mp3",
+    "fluentDuration": 18.1,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Look After Me",
+        "start": 1.32,
+        "end": 4.61,
+        "pauseAfter": 3.18
+      },
+      {
+        "index": 1,
+        "text": "This is Kate.",
+        "start": 7.79,
+        "end": 9.33,
+        "pauseAfter": 4.52
+      },
+      {
+        "index": 2,
+        "text": "She went up the net.",
+        "start": 13.85,
+        "end": 15.72,
+        "pauseAfter": 2.08
+      },
+      {
+        "index": 3,
+        "text": "\" I like this, \" she said.",
+        "start": 17.8,
+        "end": 19.97,
+        "pauseAfter": 4.61
+      },
+      {
+        "index": 4,
+        "text": "She went on the slide.",
+        "start": 24.58,
+        "end": 26.21,
+        "pauseAfter": 3.32
+      },
+      {
+        "index": 5,
+        "text": "\" I like this, \" she said.",
+        "start": 29.53,
+        "end": 31.82,
+        "pauseAfter": 4.94
+      },
+      {
+        "index": 6,
+        "text": "She went up the ladder.",
+        "start": 36.76,
+        "end": 41.5,
+        "pauseAfter": 4.84
+      },
+      {
+        "index": 7,
+        "text": "\" I like this, \" she said.",
+        "start": 46.34,
+        "end": 47.54,
+        "pauseAfter": 3.03
+      },
+      {
+        "index": 8,
+        "text": "\" We like this, \" said Biff.",
+        "start": 47.54,
+        "end": 50.57,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-35": {
+    "lessonId": "1A-35",
+    "title": "Presents for Dad",
+    "repeatAudioUrl": "content/dianfan/1a/35.mp3",
+    "repeatDuration": 50.65,
+    "fluentAudioUrl": "content/dianfan/1a/35_fluent.mp3",
+    "fluentDuration": 20.11,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Presents for Dad",
+        "start": 1.21,
+        "end": 5.06,
+        "pauseAfter": 3.43
+      },
+      {
+        "index": 1,
+        "text": "This is for Dad.",
+        "start": 8.49,
+        "end": 10.44,
+        "pauseAfter": 4.79
+      },
+      {
+        "index": 2,
+        "text": "This is for you, Dad.",
+        "start": 15.23,
+        "end": 17.28,
+        "pauseAfter": 2.31
+      },
+      {
+        "index": 3,
+        "text": "It is a bunch of flowers.",
+        "start": 19.59,
+        "end": 21.22,
+        "pauseAfter": 4.77
+      },
+      {
+        "index": 4,
+        "text": "This is for you, Dad.",
+        "start": 25.99,
+        "end": 27.92,
+        "pauseAfter": 1.81
+      },
+      {
+        "index": 5,
+        "text": "It is a box of chocolates.",
+        "start": 29.73,
+        "end": 31.62,
+        "pauseAfter": 4.7
+      },
+      {
+        "index": 6,
+        "text": "This is for you, Dad.",
+        "start": 36.32,
+        "end": 41.76,
+        "pauseAfter": 4.81
+      },
+      {
+        "index": 7,
+        "text": "It is a bunch of grapes.",
+        "start": 46.57,
+        "end": 47.55,
+        "pauseAfter": 3.1
+      },
+      {
+        "index": 8,
+        "text": "This is for the best Dad of all.",
+        "start": 47.55,
+        "end": 50.65,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-36": {
+    "lessonId": "1A-36",
+    "title": "Top Dog",
+    "repeatAudioUrl": "content/dianfan/1a/36.mp3",
+    "repeatDuration": 51.98,
+    "fluentAudioUrl": "content/dianfan/1a/36_fluent.mp3",
+    "fluentDuration": 21.6,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Top Dog",
+        "start": 1.31,
+        "end": 4.33,
+        "pauseAfter": 3.2
+      },
+      {
+        "index": 1,
+        "text": "Look at all the dogs.",
+        "start": 7.53,
+        "end": 10.62,
+        "pauseAfter": 4.84
+      },
+      {
+        "index": 2,
+        "text": "We like this dog.",
+        "start": 15.46,
+        "end": 18.31,
+        "pauseAfter": 1.84
+      },
+      {
+        "index": 3,
+        "text": "This is a little dog.",
+        "start": 20.15,
+        "end": 21.38,
+        "pauseAfter": 4.68
+      },
+      {
+        "index": 4,
+        "text": "We like this dog.",
+        "start": 26.06,
+        "end": 31.47,
+        "pauseAfter": 4.6
+      },
+      {
+        "index": 5,
+        "text": "This is a big dog.",
+        "start": 36.07,
+        "end": 41.02,
+        "pauseAfter": 4.68
+      },
+      {
+        "index": 6,
+        "text": "We all like this dog.",
+        "start": 45.7,
+        "end": 48.78,
+        "pauseAfter": 3.2
+      },
+      {
+        "index": 7,
+        "text": "This is the top dog.",
+        "start": 48.78,
+        "end": 51.98,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "We like Floppy best of all.",
+        "start": 48.78,
+        "end": 51.98,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-37": {
+    "lessonId": "1A-37",
+    "title": "The Ice Cream",
+    "repeatAudioUrl": "content/dianfan/1a/37.mp3",
+    "repeatDuration": 51.44,
+    "fluentAudioUrl": "content/dianfan/1a/37_fluent.mp3",
+    "fluentDuration": 17.37,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "The Ice Cream",
+        "start": 1.25,
+        "end": 4.51,
+        "pauseAfter": 3.61
+      },
+      {
+        "index": 1,
+        "text": "Can I get an ice cream?",
+        "start": 8.12,
+        "end": 9.83,
+        "pauseAfter": 5.05
+      },
+      {
+        "index": 2,
+        "text": "Yes, I can.",
+        "start": 14.88,
+        "end": 16.09,
+        "pauseAfter": 2.27
+      },
+      {
+        "index": 3,
+        "text": "Come on, run to the ice cream van.",
+        "start": 18.36,
+        "end": 20.53,
+        "pauseAfter": 4.87
+      },
+      {
+        "index": 4,
+        "text": "I want the big one.",
+        "start": 25.4,
+        "end": 26.57,
+        "pauseAfter": 2.08
+      },
+      {
+        "index": 5,
+        "text": "Look at that!",
+        "start": 28.65,
+        "end": 30.58,
+        "pauseAfter": 5.01
+      },
+      {
+        "index": 6,
+        "text": "Look out, Kipper!",
+        "start": 35.59,
+        "end": 36.96,
+        "pauseAfter": 2.29
+      },
+      {
+        "index": 7,
+        "text": "Oh no!",
+        "start": 39.25,
+        "end": 41.22,
+        "pauseAfter": 5.12
+      },
+      {
+        "index": 8,
+        "text": "Splat!",
+        "start": 46.34,
+        "end": 48.27,
+        "pauseAfter": 3.17
+      }
+    ]
+  },
+  "1A-38": {
+    "lessonId": "1A-38",
+    "title": "Can You See Me",
+    "repeatAudioUrl": "content/dianfan/1a/38.mp3",
+    "repeatDuration": 58.1,
+    "fluentAudioUrl": "content/dianfan/1a/38_fluent.mp3",
+    "fluentDuration": 19.33,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Can You See Me?",
+        "start": 1.1,
+        "end": 4.32,
+        "pauseAfter": 6.41
+      },
+      {
+        "index": 1,
+        "text": "Can you see my teddy bear?",
+        "start": 10.73,
+        "end": 12.6,
+        "pauseAfter": 5.79
+      },
+      {
+        "index": 2,
+        "text": "Can you see my dog?",
+        "start": 18.39,
+        "end": 20.4,
+        "pauseAfter": 2.87
+      },
+      {
+        "index": 3,
+        "text": "Can you see my picture of a big, red frog?",
+        "start": 23.27,
+        "end": 24.63,
+        "pauseAfter": 6.02
+      },
+      {
+        "index": 4,
+        "text": "You can see my tiger, if you look in the tree.",
+        "start": 30.65,
+        "end": 32.64,
+        "pauseAfter": 2.57
+      },
+      {
+        "index": 5,
+        "text": "Are you looking?",
+        "start": 35.21,
+        "end": 36.8,
+        "pauseAfter": 5.72
+      },
+      {
+        "index": 6,
+        "text": "Can you see me?",
+        "start": 42.52,
+        "end": 44.4,
+        "pauseAfter": 2.21
+      }
+    ]
+  },
+  "1A-39": {
+    "lessonId": "1A-39",
+    "title": "Good Dog",
+    "repeatAudioUrl": "content/dianfan/1a/39.mp3",
+    "repeatDuration": 59.01,
+    "fluentAudioUrl": "content/dianfan/1a/39_fluent.mp3",
+    "fluentDuration": 29.54,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "Good Dog",
+        "start": 1.03,
+        "end": 5.02,
+        "pauseAfter": 3.71
+      },
+      {
+        "index": 1,
+        "text": "I'm a good dog.",
+        "start": 8.73,
+        "end": 11.21,
+        "pauseAfter": 4.82
+      },
+      {
+        "index": 2,
+        "text": "Look at me.",
+        "start": 16.03,
+        "end": 22.95,
+        "pauseAfter": 5.15
+      },
+      {
+        "index": 3,
+        "text": "I'm very good, as you can see.",
+        "start": 28.1,
+        "end": 35.52,
+        "pauseAfter": 4.99
+      },
+      {
+        "index": 4,
+        "text": "You say \" sit, \" I sit.",
+        "start": 40.51,
+        "end": 48.59,
+        "pauseAfter": 4.78
+      },
+      {
+        "index": 5,
+        "text": "That's it.",
+        "start": 53.37,
+        "end": 55.9,
+        "pauseAfter": 3.11
+      },
+      {
+        "index": 6,
+        "text": "If you call, I get the ball.",
+        "start": 55.9,
+        "end": 59.01,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 7,
+        "text": "You say \" stay, \" I stay.",
+        "start": 55.9,
+        "end": 59.01,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "That's that.",
+        "start": 55.9,
+        "end": 59.01,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 9,
+        "text": "But not if I can see a cat.",
+        "start": 55.9,
+        "end": 59.01,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-40": {
+    "lessonId": "1A-40",
+    "title": "What a DIN!",
+    "repeatAudioUrl": "content/dianfan/1a/40.mp3",
+    "repeatDuration": 50.78,
+    "fluentAudioUrl": "content/dianfan/1a/40_fluent.mp3",
+    "fluentDuration": 20.53,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "What a DIN!",
+        "start": 1.11,
+        "end": 4.43,
+        "pauseAfter": 3.23
+      },
+      {
+        "index": 1,
+        "text": "Biff has a pan and a big, red pot.",
+        "start": 7.66,
+        "end": 8.86,
+        "pauseAfter": 4.95
+      },
+      {
+        "index": 2,
+        "text": "Chip has a tin.",
+        "start": 13.81,
+        "end": 15.26,
+        "pauseAfter": 1.9
+      },
+      {
+        "index": 3,
+        "text": "What has Kipper got?",
+        "start": 17.16,
+        "end": 19.58,
+        "pauseAfter": 4.82
+      },
+      {
+        "index": 4,
+        "text": "Kipper has a can.",
+        "start": 24.4,
+        "end": 29.91,
+        "pauseAfter": 4.69
+      },
+      {
+        "index": 5,
+        "text": "Dad has a bin.",
+        "start": 34.6,
+        "end": 40.36,
+        "pauseAfter": 4.75
+      },
+      {
+        "index": 6,
+        "text": "Bang, crash, bang!",
+        "start": 45.11,
+        "end": 47.66,
+        "pauseAfter": 3.12
+      },
+      {
+        "index": 7,
+        "text": "What a din!",
+        "start": 47.66,
+        "end": 50.78,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "What a din!",
+        "start": 47.66,
+        "end": 50.78,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-41": {
+    "lessonId": "1A-41",
+    "title": "See Me Skip",
+    "repeatAudioUrl": "content/dianfan/1a/41.mp3",
+    "repeatDuration": 52.43,
+    "fluentAudioUrl": "content/dianfan/1a/41_fluent.mp3",
+    "fluentDuration": 21.05,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "See Me Skip",
+        "start": 1.41,
+        "end": 5.03,
+        "pauseAfter": 3.19
+      },
+      {
+        "index": 1,
+        "text": "See me skip.",
+        "start": 8.22,
+        "end": 9.63,
+        "pauseAfter": 4.92
+      },
+      {
+        "index": 2,
+        "text": "This is the way.",
+        "start": 14.55,
+        "end": 20.01,
+        "pauseAfter": 4.9
+      },
+      {
+        "index": 3,
+        "text": "I like to do this every day.",
+        "start": 24.91,
+        "end": 30.63,
+        "pauseAfter": 5.01
+      },
+      {
+        "index": 4,
+        "text": "\" Come on, Dad.",
+        "start": 35.64,
+        "end": 37.46,
+        "pauseAfter": 1.87
+      },
+      {
+        "index": 5,
+        "text": "Can you skip too? \"",
+        "start": 39.33,
+        "end": 41.47,
+        "pauseAfter": 4.81
+      },
+      {
+        "index": 6,
+        "text": "\" Yes, I can.",
+        "start": 46.28,
+        "end": 49.26,
+        "pauseAfter": 3.17
+      },
+      {
+        "index": 7,
+        "text": "I skip like you. \"",
+        "start": 49.26,
+        "end": 52.43,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 8,
+        "text": "\" Look at me.",
+        "start": 49.26,
+        "end": 52.43,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 9,
+        "text": "Look at me go! \"",
+        "start": 49.26,
+        "end": 52.43,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 10,
+        "text": "\" Look out, Dad! \"",
+        "start": 49.26,
+        "end": 52.43,
+        "pauseAfter": 3.5
+      },
+      {
+        "index": 11,
+        "text": "Oh no! Oh no!",
+        "start": 49.26,
+        "end": 52.43,
+        "pauseAfter": 3.5
+      }
+    ]
+  },
+  "1A-42": {
+    "lessonId": "1A-42",
+    "title": "The Mud Pie",
+    "repeatAudioUrl": "content/dianfan/1a/42.mp3",
+    "repeatDuration": 48.43,
+    "fluentAudioUrl": "content/dianfan/1a/42_fluent.mp3",
+    "fluentDuration": 18.76,
+    "sentences": [
+      {
+        "index": 0,
+        "text": "The Mud Pie",
+        "start": 1.28,
+        "end": 3.96,
+        "pauseAfter": 3.13
+      },
+      {
+        "index": 1,
+        "text": "This is mud in my hand.",
+        "start": 7.09,
+        "end": 8.79,
+        "pauseAfter": 4.75
+      },
+      {
+        "index": 2,
+        "text": "Put in water.",
+        "start": 13.54,
+        "end": 14.79,
+        "pauseAfter": 1.99
+      },
+      {
+        "index": 3,
+        "text": "Mix in sand.",
+        "start": 16.78,
+        "end": 18.36,
+        "pauseAfter": 4.9
+      },
+      {
+        "index": 4,
+        "text": "Tip it out.",
+        "start": 23.26,
+        "end": 27.84,
+        "pauseAfter": 4.96
+      },
+      {
+        "index": 5,
+        "text": "Pat it flat.",
+        "start": 32.8,
+        "end": 38.06,
+        "pauseAfter": 4.91
+      },
+      {
+        "index": 6,
+        "text": "This is a mud pie...",
+        "start": 42.97,
+        "end": 45.24,
+        "pauseAfter": 3.19
+      },
+      {
+        "index": 7,
+        "text": "...not a hat.",
+        "start": 45.24,
+        "end": 48.43,
+        "pauseAfter": 3.5
+      }
+    ]
+  }
+}

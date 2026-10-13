@@ -41,6 +41,7 @@ npm run browsers:install && npm run test:e2e   # 见第 6 节的既有失败
 | 范围 | 产物 | 关键位置 |
 |---|---|---|
 | 探索轨道（Stage 2） | 100 词 / 三场景 / 拼读与拼字母 / 解锁与贴纸 / 休息提醒 / 家长统计 / 离线内容包与更新回退 | `src/features/*`、`src/domain/*`、`src/services/*` |
+| 典范英语 1A 深度优化 | 集成 Downloads 本机原版牛津戏剧化录音（42 课官方 320kbps MP3）、42 张 PDF 绘本高清封面、全课智能时间戳切片、双模式（原声带跟读留白 / 连贯磨耳朵）、点句即播与单句循环精听、原生变速不变调，降级 TTS 兜底 | `src/features/dianfan.tsx`、`src/data/dianfan-audio.ts`、`public/content/dianfan/1a/*`、`scripts/align-dianfan-audio.mjs` |
 | 课本轨道数据 | 8 个单元 172 条（U1 29 / U2 26 / U3 25 / U4 14 / U5 21 / U6 19 / U7 19 / U8 19），与 memoryApp 逐条对应；含 `ipa`、`graphemes`、`phonemes`、`syllables`、整句例句、`textbook{bookId,unit,pos,core}` | `data/textbook/*`、`docs` 中的契约说明 |
 | 内容契约 v4 | `kind: word|phrase`、`track: textbook`、短语/专有名词按字母比对、探索与课本拆成两份 schema 但共用一个跨字段规则函数 | `src/data/content-schema.ts` |
 | 内容包与构建 | 场景包与单元包同一套打包逻辑（`unitId` 即 pack id）、清单 `schemaVersion: 4`、`appContract.max: 3`、缺音清单与 release 门禁 | `src/domain/content-scopes.ts`、`scripts/build-content.mjs`、`scripts/validate-assets.mjs`、`scripts/lib/textbook-source.mjs` |

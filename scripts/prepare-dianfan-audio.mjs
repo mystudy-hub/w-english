@@ -23,7 +23,7 @@ function getAudioDuration(file) {
 }
 
 // 检测原版音频（带跟读停顿）中的语句与停顿切片
-function analyzeOriginalAudio(file, expectedSentenceCount) {
+function analyzeOriginalAudio(file) {
   const dur = getAudioDuration(file);
   const out = execSync(`"${ffmpeg.path}" -i "${file}" -af silencedetect=noise=-28dB:d=0.25 -f null - 2>&1`).toString();
   const starts = [];
@@ -94,7 +94,7 @@ for (let i = 1; i <= lessons.length; i++) {
   }
 
   const fluentDuration = getAudioDuration(fluentDst);
-  const analysis = analyzeOriginalAudio(src, lesson.sentences.length);
+  const analysis = analyzeOriginalAudio(src);
 
   // 2. 为每句话计算在原声音频和连贯音频中的合理起止时间
   const sentenceTimings = [];

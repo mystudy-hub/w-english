@@ -2,7 +2,6 @@ import { execSync } from 'node:child_process';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import ffmpeg from '@ffmpeg-installer/ffmpeg';
-import ffprobe from '@ffprobe-installer/ffprobe';
 
 const lessons = JSON.parse(readFileSync('data/dianfan_1a_lessons.json', 'utf8'));
 const audioDir = resolve('public/content/dianfan/1a');
@@ -84,7 +83,6 @@ for (let idx = 1; idx <= lessons.length; idx++) {
     }
   } else if (chunks.length < totalSentences) {
     // 切片少于句子（通常是有两三个短句在一个气口内读完）：按句子字数比例分配时间
-    let cIdx = 0;
     const wordsPerSentence = l.sentences.map((s) => s.split(/\s+/).length);
     const totalWords = wordsPerSentence.reduce((a, b) => a + b, 0);
 

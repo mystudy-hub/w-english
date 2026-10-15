@@ -4,7 +4,6 @@
     "wordId": "w_tb4a_501",
     "kind": "word",
     "word": "different",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -22,66 +21,62 @@
       "n",
       "t"
     ],
-    "syllables": [
-      "different"
-    ],
-    "ipa": "/ˈdɪfrənt/",
     "graphemes": [
       {
         "letters": "d",
         "phonemes": [
           "d"
         ],
-        "audio": "tb4a_u5#p_d"
+        "audio": "tb4a_u5_p#tb4a_501_1"
       },
       {
         "letters": "i",
         "phonemes": [
           "ɪ"
         ],
-        "audio": "tb4a_u5#p_i"
+        "audio": "tb4a_u5_p#tb4a_501_2"
       },
       {
         "letters": "ff",
         "phonemes": [
           "f"
         ],
-        "audio": "tb4a_u5#p_ff"
+        "audio": "tb4a_u5_p#tb4a_501_3"
       },
       {
         "letters": "e",
         "phonemes": [
           "ə"
         ],
-        "audio": "tb4a_u5#p_e"
+        "audio": "tb4a_u5_p#tb4a_501_4"
       },
       {
         "letters": "r",
         "phonemes": [
           "r"
         ],
-        "audio": "tb4a_u5#p_r"
+        "audio": "tb4a_u5_p#tb4a_501_5"
       },
       {
         "letters": "e",
         "phonemes": [
           "ə"
         ],
-        "audio": "tb4a_u5#p_e"
+        "audio": "tb4a_u5_p#tb4a_501_6"
       },
       {
         "letters": "n",
         "phonemes": [
           "n"
         ],
-        "audio": "tb4a_u5#p_n"
+        "audio": "tb4a_u5_p#tb4a_501_7"
       },
       {
         "letters": "t",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u5#p_t"
+        "audio": "tb4a_u5_p#tb4a_501_8"
       }
     ],
     "phonemes": [
@@ -94,33 +89,40 @@
       "n",
       "t"
     ],
+    "syllables": [
+      "different"
+    ],
+    "ipa": "/ˈdɪfrənt/",
     "definition": {
       "zh": "不同的，有区别的"
     },
     "example": {
       "en": "We have different toys.",
       "zh": "我们有不同的玩具。",
-      "audio": "tb4a_u5#different_example"
+      "audio": "tb4a_u5_s#different_example"
     },
     "audio": {
       "word": "tb4a_u5#different",
       "wordSlow": "tb4a_u5#different_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🔀"
+      "type": "image",
+      "src": "/images/words/tb4a_different.svg",
+      "alt": "不同的，有区别的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_502",
     "kind": "word",
     "word": "same",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -133,31 +135,27 @@
       "m",
       "e"
     ],
-    "syllables": [
-      "same"
-    ],
-    "ipa": "/seɪm/",
     "graphemes": [
       {
         "letters": "s",
         "phonemes": [
           "s"
         ],
-        "audio": "tb4a_u5#p_s"
+        "audio": "tb4a_u5_p#tb4a_502_1"
       },
       {
         "letters": "a",
         "phonemes": [
           "eɪ"
         ],
-        "audio": "tb4a_u5#p_a"
+        "audio": "tb4a_u5_p#tb4a_502_2"
       },
       {
         "letters": "m",
         "phonemes": [
           "m"
         ],
-        "audio": "tb4a_u5#p_m"
+        "audio": "tb4a_u5_p#tb4a_502_3"
       },
       {
         "letters": "e",
@@ -170,33 +168,40 @@
       "eɪ",
       "m"
     ],
+    "syllables": [
+      "same"
+    ],
+    "ipa": "/seɪm/",
     "definition": {
       "zh": "相同的，同一的"
     },
     "example": {
       "en": "We like the same game.",
       "zh": "我们喜欢同一个游戏。",
-      "audio": "tb4a_u5#same_example"
+      "audio": "tb4a_u5_s#same_example"
     },
     "audio": {
       "word": "tb4a_u5#same",
       "wordSlow": "tb4a_u5#same_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🟰"
+      "type": "image",
+      "src": "/images/words/tb4a_same.svg",
+      "alt": "相同的，同一的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_503",
     "kind": "word",
     "word": "hair",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -209,31 +214,27 @@
       "i",
       "r"
     ],
-    "syllables": [
-      "hair"
-    ],
-    "ipa": "/hɛr/",
     "graphemes": [
       {
         "letters": "h",
         "phonemes": [
           "h"
         ],
-        "audio": "tb4a_u5#p_h"
+        "audio": "tb4a_u5_p#tb4a_503_1"
       },
       {
         "letters": "ai",
         "phonemes": [
           "ɛ"
         ],
-        "audio": "tb4a_u5#p_ai"
+        "audio": "tb4a_u5_p#tb4a_503_2"
       },
       {
         "letters": "r",
         "phonemes": [
           "r"
         ],
-        "audio": "tb4a_u5#p_r"
+        "audio": "tb4a_u5_p#tb4a_503_3"
       }
     ],
     "phonemes": [
@@ -241,33 +242,40 @@
       "ɛ",
       "r"
     ],
+    "syllables": [
+      "hair"
+    ],
+    "ipa": "/hɛr/",
     "definition": {
       "zh": "头发"
     },
     "example": {
       "en": "My hair is short.",
       "zh": "我的头发很短。",
-      "audio": "tb4a_u5#hair_example"
+      "audio": "tb4a_u5_s#hair_example"
     },
     "audio": {
       "word": "tb4a_u5#hair",
       "wordSlow": "tb4a_u5#hair_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "💇"
+      "type": "image",
+      "src": "/images/words/tb4a_hair.svg",
+      "alt": "头发"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_504",
     "kind": "word",
     "word": "eye",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -279,10 +287,6 @@
       "y",
       "e"
     ],
-    "syllables": [
-      "eye"
-    ],
-    "ipa": "/aɪ/",
     "graphemes": [
       {
         "letters": "e",
@@ -294,7 +298,7 @@
         "phonemes": [
           "aɪ"
         ],
-        "audio": "tb4a_u5#p_y"
+        "audio": "tb4a_u5_p#tb4a_504_2"
       },
       {
         "letters": "e",
@@ -305,33 +309,40 @@
     "phonemes": [
       "aɪ"
     ],
+    "syllables": [
+      "eye"
+    ],
+    "ipa": "/aɪ/",
     "definition": {
       "zh": "眼睛"
     },
     "example": {
       "en": "I have two big eyes.",
       "zh": "我有两只大眼睛。",
-      "audio": "tb4a_u5#eye_example"
+      "audio": "tb4a_u5_s#eye_example"
     },
     "audio": {
       "word": "tb4a_u5#eye",
       "wordSlow": "tb4a_u5#eye_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👁️"
+      "type": "image",
+      "src": "/images/words/tb4a_eye.svg",
+      "alt": "眼睛"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_505",
     "kind": "word",
     "word": "ear",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -343,10 +354,6 @@
       "a",
       "r"
     ],
-    "syllables": [
-      "ear"
-    ],
-    "ipa": "/ɪr/",
     "graphemes": [
       {
         "letters": "ear",
@@ -354,40 +361,47 @@
           "ɪ",
           "r"
         ],
-        "audio": "tb4a_u5#p_ear"
+        "audio": "tb4a_u5_p#tb4a_505_1"
       }
     ],
     "phonemes": [
       "ɪ",
       "r"
     ],
+    "syllables": [
+      "ear"
+    ],
+    "ipa": "/ɪr/",
     "definition": {
       "zh": "耳朵"
     },
     "example": {
       "en": "This is my ear.",
       "zh": "这是我的耳朵。",
-      "audio": "tb4a_u5#ear_example"
+      "audio": "tb4a_u5_s#ear_example"
     },
     "audio": {
       "word": "tb4a_u5#ear",
       "wordSlow": "tb4a_u5#ear_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👂"
+      "type": "image",
+      "src": "/images/words/tb4a_ear.svg",
+      "alt": "耳朵"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_506",
     "kind": "word",
     "word": "nose",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -400,31 +414,27 @@
       "s",
       "e"
     ],
-    "syllables": [
-      "nose"
-    ],
-    "ipa": "/noʊz/",
     "graphemes": [
       {
         "letters": "n",
         "phonemes": [
           "n"
         ],
-        "audio": "tb4a_u5#p_n"
+        "audio": "tb4a_u5_p#tb4a_506_1"
       },
       {
         "letters": "o",
         "phonemes": [
           "oʊ"
         ],
-        "audio": "tb4a_u5#p_o"
+        "audio": "tb4a_u5_p#tb4a_506_2"
       },
       {
         "letters": "se",
         "phonemes": [
           "z"
         ],
-        "audio": "tb4a_u5#p_se"
+        "audio": "tb4a_u5_p#tb4a_506_3"
       }
     ],
     "phonemes": [
@@ -432,33 +442,40 @@
       "oʊ",
       "z"
     ],
+    "syllables": [
+      "nose"
+    ],
+    "ipa": "/noʊz/",
     "definition": {
       "zh": "鼻子"
     },
     "example": {
       "en": "This is my nose.",
       "zh": "这是我的鼻子。",
-      "audio": "tb4a_u5#nose_example"
+      "audio": "tb4a_u5_s#nose_example"
     },
     "audio": {
       "word": "tb4a_u5#nose",
       "wordSlow": "tb4a_u5#nose_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👃"
+      "type": "image",
+      "src": "/images/words/tb4a_nose.svg",
+      "alt": "鼻子"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_507",
     "kind": "word",
     "word": "mouth",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -472,31 +489,27 @@
       "t",
       "h"
     ],
-    "syllables": [
-      "mouth"
-    ],
-    "ipa": "/maʊθ/",
     "graphemes": [
       {
         "letters": "m",
         "phonemes": [
           "m"
         ],
-        "audio": "tb4a_u5#p_m"
+        "audio": "tb4a_u5_p#tb4a_507_1"
       },
       {
         "letters": "ou",
         "phonemes": [
           "aʊ"
         ],
-        "audio": "tb4a_u5#p_ou"
+        "audio": "tb4a_u5_p#tb4a_507_2"
       },
       {
         "letters": "th",
         "phonemes": [
           "θ"
         ],
-        "audio": "tb4a_u5#p_th"
+        "audio": "tb4a_u5_p#tb4a_507_3"
       }
     ],
     "phonemes": [
@@ -504,33 +517,40 @@
       "aʊ",
       "θ"
     ],
+    "syllables": [
+      "mouth"
+    ],
+    "ipa": "/maʊθ/",
     "definition": {
       "zh": "嘴，口"
     },
     "example": {
       "en": "Open your mouth.",
       "zh": "张开你的嘴。",
-      "audio": "tb4a_u5#mouth_example"
+      "audio": "tb4a_u5_s#mouth_example"
     },
     "audio": {
       "word": "tb4a_u5#mouth",
       "wordSlow": "tb4a_u5#mouth_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👄"
+      "type": "image",
+      "src": "/images/words/tb4a_mouth.svg",
+      "alt": "嘴，口"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_508",
     "kind": "word",
     "word": "arm",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -542,10 +562,6 @@
       "r",
       "m"
     ],
-    "syllables": [
-      "arm"
-    ],
-    "ipa": "/ɑrm/",
     "graphemes": [
       {
         "letters": "ar",
@@ -553,14 +569,14 @@
           "ɑ",
           "r"
         ],
-        "audio": "tb4a_u5#p_ar"
+        "audio": "tb4a_u5_p#tb4a_508_1"
       },
       {
         "letters": "m",
         "phonemes": [
           "m"
         ],
-        "audio": "tb4a_u5#p_m"
+        "audio": "tb4a_u5_p#tb4a_508_2"
       }
     ],
     "phonemes": [
@@ -568,33 +584,40 @@
       "r",
       "m"
     ],
+    "syllables": [
+      "arm"
+    ],
+    "ipa": "/ɑrm/",
     "definition": {
       "zh": "手臂"
     },
     "example": {
       "en": "Raise your arm.",
       "zh": "举起你的手臂。",
-      "audio": "tb4a_u5#arm_example"
+      "audio": "tb4a_u5_s#arm_example"
     },
     "audio": {
       "word": "tb4a_u5#arm",
       "wordSlow": "tb4a_u5#arm_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "💪"
+      "type": "image",
+      "src": "/images/words/tb4a_arm.svg",
+      "alt": "手臂"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_509",
     "kind": "word",
     "word": "leg",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -606,31 +629,27 @@
       "e",
       "g"
     ],
-    "syllables": [
-      "leg"
-    ],
-    "ipa": "/leɡ/",
     "graphemes": [
       {
         "letters": "l",
         "phonemes": [
           "l"
         ],
-        "audio": "tb4a_u5#p_l"
+        "audio": "tb4a_u5_p#tb4a_509_1"
       },
       {
         "letters": "e",
         "phonemes": [
           "ɛ"
         ],
-        "audio": "tb4a_u5#p_e"
+        "audio": "tb4a_u5_p#tb4a_509_2"
       },
       {
         "letters": "g",
         "phonemes": [
           "g"
         ],
-        "audio": "tb4a_u5#p_g"
+        "audio": "tb4a_u5_p#tb4a_509_3"
       }
     ],
     "phonemes": [
@@ -638,33 +657,40 @@
       "ɛ",
       "g"
     ],
+    "syllables": [
+      "leg"
+    ],
+    "ipa": "/leɡ/",
     "definition": {
       "zh": "腿"
     },
     "example": {
       "en": "My leg hurts.",
       "zh": "我的腿疼。",
-      "audio": "tb4a_u5#leg_example"
+      "audio": "tb4a_u5_s#leg_example"
     },
     "audio": {
       "word": "tb4a_u5#leg",
       "wordSlow": "tb4a_u5#leg_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🦵"
+      "type": "image",
+      "src": "/images/words/tb4a_leg.svg",
+      "alt": "腿"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_510",
     "kind": "word",
     "word": "robot",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -678,45 +704,41 @@
       "o",
       "t"
     ],
-    "syllables": [
-      "robot"
-    ],
-    "ipa": "/ˈroʊbɑt/",
     "graphemes": [
       {
         "letters": "r",
         "phonemes": [
           "r"
         ],
-        "audio": "tb4a_u5#p_r"
+        "audio": "tb4a_u5_p#tb4a_510_1"
       },
       {
         "letters": "o",
         "phonemes": [
           "oʊ"
         ],
-        "audio": "tb4a_u5#p_o"
+        "audio": "tb4a_u5_p#tb4a_510_2"
       },
       {
         "letters": "b",
         "phonemes": [
           "b"
         ],
-        "audio": "tb4a_u5#p_b"
+        "audio": "tb4a_u5_p#tb4a_510_3"
       },
       {
         "letters": "o",
         "phonemes": [
           "ɑ"
         ],
-        "audio": "tb4a_u5#p_o"
+        "audio": "tb4a_u5_p#tb4a_510_4"
       },
       {
         "letters": "t",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u5#p_t"
+        "audio": "tb4a_u5_p#tb4a_510_5"
       }
     ],
     "phonemes": [
@@ -726,33 +748,40 @@
       "ɑ",
       "t"
     ],
+    "syllables": [
+      "robot"
+    ],
+    "ipa": "/ˈroʊbɑt/",
     "definition": {
       "zh": "机器人"
     },
     "example": {
       "en": "This robot can walk.",
       "zh": "这个机器人会走路。",
-      "audio": "tb4a_u5#robot_example"
+      "audio": "tb4a_u5_s#robot_example"
     },
     "audio": {
       "word": "tb4a_u5#robot",
       "wordSlow": "tb4a_u5#robot_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🤖"
+      "type": "image",
+      "src": "/images/words/tb4a_robot.svg",
+      "alt": "机器人"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_511",
     "kind": "word",
     "word": "his",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -764,31 +793,27 @@
       "i",
       "s"
     ],
-    "syllables": [
-      "his"
-    ],
-    "ipa": "/hɪz/",
     "graphemes": [
       {
         "letters": "h",
         "phonemes": [
           "h"
         ],
-        "audio": "tb4a_u5#p_h"
+        "audio": "tb4a_u5_p#tb4a_511_1"
       },
       {
         "letters": "i",
         "phonemes": [
           "ɪ"
         ],
-        "audio": "tb4a_u5#p_i"
+        "audio": "tb4a_u5_p#tb4a_511_2"
       },
       {
         "letters": "s",
         "phonemes": [
           "z"
         ],
-        "audio": "tb4a_u5#p_s"
+        "audio": "tb4a_u5_p#tb4a_511_3"
       }
     ],
     "phonemes": [
@@ -796,33 +821,40 @@
       "ɪ",
       "z"
     ],
+    "syllables": [
+      "his"
+    ],
+    "ipa": "/hɪz/",
     "definition": {
       "zh": "他的"
     },
     "example": {
       "en": "This is his book.",
       "zh": "这是他的书。",
-      "audio": "tb4a_u5#his_example"
+      "audio": "tb4a_u5_s#his_example"
     },
     "audio": {
       "word": "tb4a_u5#his",
       "wordSlow": "tb4a_u5#his_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👦"
+      "type": "image",
+      "src": "/images/words/tb4a_his.svg",
+      "alt": "他的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_512",
     "kind": "word",
     "word": "tall",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -835,31 +867,27 @@
       "l",
       "l"
     ],
-    "syllables": [
-      "tall"
-    ],
-    "ipa": "/tɔl/",
     "graphemes": [
       {
         "letters": "t",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u5#p_t"
+        "audio": "tb4a_u5_p2#tb4a_512_1"
       },
       {
         "letters": "a",
         "phonemes": [
           "ɔː"
         ],
-        "audio": "tb4a_u5#p_a"
+        "audio": "tb4a_u5_p2#tb4a_512_2"
       },
       {
         "letters": "ll",
         "phonemes": [
           "l"
         ],
-        "audio": "tb4a_u5#p_ll"
+        "audio": "tb4a_u5_p2#tb4a_512_3"
       }
     ],
     "phonemes": [
@@ -867,33 +895,40 @@
       "ɔː",
       "l"
     ],
+    "syllables": [
+      "tall"
+    ],
+    "ipa": "/tɔl/",
     "definition": {
       "zh": "高的"
     },
     "example": {
       "en": "He is tall.",
       "zh": "他很高。",
-      "audio": "tb4a_u5#tall_example"
+      "audio": "tb4a_u5_s#tall_example"
     },
     "audio": {
       "word": "tb4a_u5#tall",
       "wordSlow": "tb4a_u5#tall_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🦒"
+      "type": "image",
+      "src": "/images/words/tb4a_tall.svg",
+      "alt": "高的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_513",
     "kind": "word",
     "word": "short",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -907,17 +942,13 @@
       "r",
       "t"
     ],
-    "syllables": [
-      "short"
-    ],
-    "ipa": "/ʃɔrt/",
     "graphemes": [
       {
         "letters": "sh",
         "phonemes": [
           "ʃ"
         ],
-        "audio": "tb4a_u5#p_sh"
+        "audio": "tb4a_u5_p2#tb4a_513_1"
       },
       {
         "letters": "or",
@@ -925,14 +956,14 @@
           "ɔː",
           "r"
         ],
-        "audio": "tb4a_u5#p_or"
+        "audio": "tb4a_u5_p2#tb4a_513_2"
       },
       {
         "letters": "t",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u5#p_t"
+        "audio": "tb4a_u5_p2#tb4a_513_3"
       }
     ],
     "phonemes": [
@@ -941,33 +972,40 @@
       "r",
       "t"
     ],
+    "syllables": [
+      "short"
+    ],
+    "ipa": "/ʃɔrt/",
     "definition": {
       "zh": "短的；矮的"
     },
     "example": {
       "en": "My hair is short.",
       "zh": "我的头发很短。",
-      "audio": "tb4a_u5#short_example"
+      "audio": "tb4a_u5_s#short_example"
     },
     "audio": {
       "word": "tb4a_u5#short",
       "wordSlow": "tb4a_u5#short_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "📏"
+      "type": "image",
+      "src": "/images/words/tb4a_short.svg",
+      "alt": "短的；矮的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_514",
     "kind": "word",
     "word": "doll",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -980,31 +1018,27 @@
       "l",
       "l"
     ],
-    "syllables": [
-      "doll"
-    ],
-    "ipa": "/dɑl/",
     "graphemes": [
       {
         "letters": "d",
         "phonemes": [
           "d"
         ],
-        "audio": "tb4a_u5#p_d"
+        "audio": "tb4a_u5_p2#tb4a_514_1"
       },
       {
         "letters": "o",
         "phonemes": [
           "ɑ"
         ],
-        "audio": "tb4a_u5#p_o"
+        "audio": "tb4a_u5_p2#tb4a_514_2"
       },
       {
         "letters": "ll",
         "phonemes": [
           "l"
         ],
-        "audio": "tb4a_u5#p_ll"
+        "audio": "tb4a_u5_p2#tb4a_514_3"
       }
     ],
     "phonemes": [
@@ -1012,33 +1046,40 @@
       "ɑ",
       "l"
     ],
+    "syllables": [
+      "doll"
+    ],
+    "ipa": "/dɑl/",
     "definition": {
       "zh": "玩具娃娃"
     },
     "example": {
       "en": "This doll is cute.",
       "zh": "这个娃娃很可爱。",
-      "audio": "tb4a_u5#doll_example"
+      "audio": "tb4a_u5_s#doll_example"
     },
     "audio": {
       "word": "tb4a_u5#doll",
       "wordSlow": "tb4a_u5#doll_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🪆"
+      "type": "image",
+      "src": "/images/words/tb4a_doll.svg",
+      "alt": "玩具娃娃"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_515",
     "kind": "word",
     "word": "her",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -1050,57 +1091,60 @@
       "e",
       "r"
     ],
-    "syllables": [
-      "her"
-    ],
-    "ipa": "/hɝ/",
     "graphemes": [
       {
         "letters": "h",
         "phonemes": [
           "h"
         ],
-        "audio": "tb4a_u5#p_h"
+        "audio": "tb4a_u5_p2#tb4a_515_1"
       },
       {
         "letters": "er",
         "phonemes": [
           "ɝ"
         ],
-        "audio": "tb4a_u5#p_er"
+        "audio": "tb4a_u5_p2#tb4a_515_2"
       }
     ],
     "phonemes": [
       "h",
       "ɝ"
     ],
+    "syllables": [
+      "her"
+    ],
+    "ipa": "/hɝ/",
     "definition": {
       "zh": "她的"
     },
     "example": {
       "en": "This is her bag.",
       "zh": "这是她的包。",
-      "audio": "tb4a_u5#her_example"
+      "audio": "tb4a_u5_s#her_example"
     },
     "audio": {
       "word": "tb4a_u5#her",
       "wordSlow": "tb4a_u5#her_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👧"
+      "type": "image",
+      "src": "/images/words/tb4a_her.svg",
+      "alt": "她的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_516",
     "kind": "word",
     "word": "small",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -1114,10 +1158,6 @@
       "l",
       "l"
     ],
-    "syllables": [
-      "small"
-    ],
-    "ipa": "/smɔl/",
     "graphemes": [
       {
         "letters": "sm",
@@ -1125,7 +1165,7 @@
           "s",
           "m"
         ],
-        "audio": "tb4a_u5#p_sm"
+        "audio": "tb4a_u5_p2#tb4a_516_1"
       },
       {
         "letters": "all",
@@ -1133,7 +1173,7 @@
           "ɔː",
           "l"
         ],
-        "audio": "tb4a_u5#p_all"
+        "audio": "tb4a_u5_p2#tb4a_516_2"
       }
     ],
     "phonemes": [
@@ -1142,33 +1182,40 @@
       "ɔː",
       "l"
     ],
+    "syllables": [
+      "small"
+    ],
+    "ipa": "/smɔl/",
     "definition": {
       "zh": "小的"
     },
     "example": {
       "en": "It is small.",
       "zh": "它很小。",
-      "audio": "tb4a_u5#small_example"
+      "audio": "tb4a_u5_s#small_example"
     },
     "audio": {
       "word": "tb4a_u5#small",
       "wordSlow": "tb4a_u5#small_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🐭"
+      "type": "image",
+      "src": "/images/words/tb4a_small.svg",
+      "alt": "小的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_517",
     "kind": "word",
     "word": "bring",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -1182,38 +1229,34 @@
       "n",
       "g"
     ],
-    "syllables": [
-      "bring"
-    ],
-    "ipa": "/brɪŋ/",
     "graphemes": [
       {
         "letters": "b",
         "phonemes": [
           "b"
         ],
-        "audio": "tb4a_u5#p_b"
+        "audio": "tb4a_u5_p2#tb4a_517_1"
       },
       {
         "letters": "r",
         "phonemes": [
           "r"
         ],
-        "audio": "tb4a_u5#p_r"
+        "audio": "tb4a_u5_p2#tb4a_517_2"
       },
       {
         "letters": "i",
         "phonemes": [
           "ɪ"
         ],
-        "audio": "tb4a_u5#p_i"
+        "audio": "tb4a_u5_p2#tb4a_517_3"
       },
       {
         "letters": "ng",
         "phonemes": [
           "ŋ"
         ],
-        "audio": "tb4a_u5#p_ng"
+        "audio": "tb4a_u5_p2#tb4a_517_4"
       }
     ],
     "phonemes": [
@@ -1222,33 +1265,40 @@
       "ɪ",
       "ŋ"
     ],
+    "syllables": [
+      "bring"
+    ],
+    "ipa": "/brɪŋ/",
     "definition": {
       "zh": "带来"
     },
     "example": {
       "en": "Bring your book.",
       "zh": "带来你的书。",
-      "audio": "tb4a_u5#bring_example"
+      "audio": "tb4a_u5_s#bring_example"
     },
     "audio": {
       "word": "tb4a_u5#bring",
       "wordSlow": "tb4a_u5#bring_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🎒"
+      "type": "image",
+      "src": "/images/words/tb4a_bring.svg",
+      "alt": "带来"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_518",
     "kind": "phrase",
     "word": "lots of",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -1259,11 +1309,6 @@
       "lots",
       "of"
     ],
-    "syllables": [
-      "lots",
-      "of"
-    ],
-    "ipa": "/lɑts əv/",
     "graphemes": [
       {
         "letters": "lots",
@@ -1277,33 +1322,41 @@
       }
     ],
     "phonemes": [],
+    "syllables": [
+      "lots",
+      "of"
+    ],
+    "ipa": "/lɑts əv/",
     "definition": {
       "zh": "大量，许多"
     },
     "example": {
       "en": "We have lots of toys.",
       "zh": "我们有很多玩具。",
-      "audio": "tb4a_u5#lots_of_example"
+      "audio": "tb4a_u5_s#lots_of_example"
     },
     "audio": {
       "word": "tb4a_u5#lots_of",
       "wordSlow": "tb4a_u5#lots_of_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🧺"
+      "type": "image",
+      "src": "/images/words/tb4a_lots_of.svg",
+      "alt": "大量，许多"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_519",
     "kind": "word",
     "word": "puppet",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -1318,45 +1371,41 @@
       "e",
       "t"
     ],
-    "syllables": [
-      "puppet"
-    ],
-    "ipa": "/ˈpʌpɪt/",
     "graphemes": [
       {
         "letters": "p",
         "phonemes": [
           "p"
         ],
-        "audio": "tb4a_u5#p_p"
+        "audio": "tb4a_u5_p2#tb4a_519_1"
       },
       {
         "letters": "u",
         "phonemes": [
           "ʌ"
         ],
-        "audio": "tb4a_u5#p_u"
+        "audio": "tb4a_u5_p2#tb4a_519_2"
       },
       {
         "letters": "pp",
         "phonemes": [
           "p"
         ],
-        "audio": "tb4a_u5#p_pp"
+        "audio": "tb4a_u5_p2#tb4a_519_3"
       },
       {
         "letters": "e",
         "phonemes": [
           "ɪ"
         ],
-        "audio": "tb4a_u5#p_e"
+        "audio": "tb4a_u5_p2#tb4a_519_4"
       },
       {
         "letters": "t",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u5#p_t"
+        "audio": "tb4a_u5_p2#tb4a_519_5"
       }
     ],
     "phonemes": [
@@ -1366,33 +1415,40 @@
       "ɪ",
       "t"
     ],
+    "syllables": [
+      "puppet"
+    ],
+    "ipa": "/ˈpʌpɪt/",
     "definition": {
       "zh": "玩偶，木偶"
     },
     "example": {
       "en": "I like this puppet.",
       "zh": "我喜欢这个玩偶。",
-      "audio": "tb4a_u5#puppet_example"
+      "audio": "tb4a_u5_s#puppet_example"
     },
     "audio": {
       "word": "tb4a_u5#puppet",
       "wordSlow": "tb4a_u5#puppet_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🎭"
+      "type": "image",
+      "src": "/images/words/tb4a_puppet.svg",
+      "alt": "玩偶，木偶"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_520",
     "kind": "word",
     "word": "show",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -1405,57 +1461,60 @@
       "o",
       "w"
     ],
-    "syllables": [
-      "show"
-    ],
-    "ipa": "/ʃoʊ/",
     "graphemes": [
       {
         "letters": "sh",
         "phonemes": [
           "ʃ"
         ],
-        "audio": "tb4a_u5#p_sh"
+        "audio": "tb4a_u5_p2#tb4a_520_1"
       },
       {
         "letters": "ow",
         "phonemes": [
           "oʊ"
         ],
-        "audio": "tb4a_u5#p_ow"
+        "audio": "tb4a_u5_p2#tb4a_520_2"
       }
     ],
     "phonemes": [
       "ʃ",
       "oʊ"
     ],
+    "syllables": [
+      "show"
+    ],
+    "ipa": "/ʃoʊ/",
     "definition": {
       "zh": "表演，演出"
     },
     "example": {
       "en": "I like this show.",
       "zh": "我喜欢这场表演。",
-      "audio": "tb4a_u5#show_example"
+      "audio": "tb4a_u5_s#show_example"
     },
     "audio": {
       "word": "tb4a_u5#show",
       "wordSlow": "tb4a_u5#show_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🎪"
+      "type": "image",
+      "src": "/images/words/tb4a_show.svg",
+      "alt": "表演，演出"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_521",
     "kind": "word",
     "word": "Grace",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 5,
@@ -1469,38 +1528,34 @@
       "c",
       "e"
     ],
-    "syllables": [
-      "Grace"
-    ],
-    "ipa": "/ɡreɪs/",
     "graphemes": [
       {
         "letters": "g",
         "phonemes": [
           "g"
         ],
-        "audio": "tb4a_u5#p_g"
+        "audio": "tb4a_u5_p2#tb4a_521_1"
       },
       {
         "letters": "r",
         "phonemes": [
           "r"
         ],
-        "audio": "tb4a_u5#p_r"
+        "audio": "tb4a_u5_p2#tb4a_521_2"
       },
       {
         "letters": "a",
         "phonemes": [
           "eɪ"
         ],
-        "audio": "tb4a_u5#p_a"
+        "audio": "tb4a_u5_p2#tb4a_521_3"
       },
       {
         "letters": "ce",
         "phonemes": [
           "s"
         ],
-        "audio": "tb4a_u5#p_ce"
+        "audio": "tb4a_u5_p2#tb4a_521_4"
       }
     ],
     "phonemes": [
@@ -1509,25 +1564,33 @@
       "eɪ",
       "s"
     ],
+    "syllables": [
+      "Grace"
+    ],
+    "ipa": "/ɡreɪs/",
     "definition": {
       "zh": "格雷丝（人名）"
     },
     "example": {
       "en": "Grace is my friend.",
       "zh": "格雷丝是我的朋友。",
-      "audio": "tb4a_u5#grace_example"
+      "audio": "tb4a_u5_s#grace_example"
     },
     "audio": {
       "word": "tb4a_u5#grace",
       "wordSlow": "tb4a_u5#grace_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👧"
+      "type": "image",
+      "src": "/images/words/tb4a_grace.svg",
+      "alt": "格雷丝（人名）"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   }
 ]

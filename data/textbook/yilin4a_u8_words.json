@@ -4,7 +4,6 @@
     "wordId": "w_tb4a_801",
     "kind": "word",
     "word": "holiday",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -20,52 +19,48 @@
       "a",
       "y"
     ],
-    "syllables": [
-      "holiday"
-    ],
-    "ipa": "/ˈhɒlədeɪ/",
     "graphemes": [
       {
         "letters": "h",
         "phonemes": [
           "h"
         ],
-        "audio": "tb4a_u8#p_h"
+        "audio": "tb4a_u8_p#tb4a_801_1"
       },
       {
         "letters": "o",
         "phonemes": [
           "ɒ"
         ],
-        "audio": "tb4a_u8#p_o"
+        "audio": "tb4a_u8_p#tb4a_801_2"
       },
       {
         "letters": "l",
         "phonemes": [
           "l"
         ],
-        "audio": "tb4a_u8#p_l"
+        "audio": "tb4a_u8_p#tb4a_801_3"
       },
       {
         "letters": "i",
         "phonemes": [
           "ə"
         ],
-        "audio": "tb4a_u8#p_i"
+        "audio": "tb4a_u8_p#tb4a_801_4"
       },
       {
         "letters": "d",
         "phonemes": [
           "d"
         ],
-        "audio": "tb4a_u8#p_d"
+        "audio": "tb4a_u8_p#tb4a_801_5"
       },
       {
         "letters": "ay",
         "phonemes": [
           "eɪ"
         ],
-        "audio": "tb4a_u8#p_ay"
+        "audio": "tb4a_u8_p#tb4a_801_6"
       }
     ],
     "phonemes": [
@@ -76,33 +71,40 @@
       "d",
       "eɪ"
     ],
+    "syllables": [
+      "holiday"
+    ],
+    "ipa": "/ˈhɒlədeɪ/",
     "definition": {
       "zh": "假日，假期"
     },
     "example": {
       "en": "Happy holiday!",
       "zh": "假期快乐！",
-      "audio": "tb4a_u8#holiday_example"
+      "audio": "tb4a_u8_s#holiday_example"
     },
     "audio": {
       "word": "tb4a_u8#holiday",
       "wordSlow": "tb4a_u8#holiday_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🏖️"
+      "type": "image",
+      "src": "/images/words/tb4a_holiday.svg",
+      "alt": "假日，假期"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_802",
     "kind": "word",
     "word": "clothes",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -118,10 +120,6 @@
       "e",
       "s"
     ],
-    "syllables": [
-      "clothes"
-    ],
-    "ipa": "/kloʊðz/",
     "graphemes": [
       {
         "letters": "cl",
@@ -129,28 +127,28 @@
           "k",
           "l"
         ],
-        "audio": "tb4a_u8#p_cl"
+        "audio": "tb4a_u8_p#tb4a_802_1"
       },
       {
         "letters": "o",
         "phonemes": [
           "oʊ"
         ],
-        "audio": "tb4a_u8#p_o"
+        "audio": "tb4a_u8_p#tb4a_802_2"
       },
       {
         "letters": "th",
         "phonemes": [
           "ð"
         ],
-        "audio": "tb4a_u8#p_th"
+        "audio": "tb4a_u8_p#tb4a_802_3"
       },
       {
         "letters": "es",
         "phonemes": [
           "z"
         ],
-        "audio": "tb4a_u8#p_es"
+        "audio": "tb4a_u8_p#tb4a_802_4"
       }
     ],
     "phonemes": [
@@ -160,33 +158,40 @@
       "ð",
       "z"
     ],
+    "syllables": [
+      "clothes"
+    ],
+    "ipa": "/kloʊðz/",
     "definition": {
       "zh": "衣服"
     },
     "example": {
       "en": "These clothes are new.",
       "zh": "这些衣服是新的。",
-      "audio": "tb4a_u8#clothes_example"
+      "audio": "tb4a_u8_s#clothes_example"
     },
     "audio": {
       "word": "tb4a_u8#clothes",
       "wordSlow": "tb4a_u8#clothes_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👕"
+      "type": "image",
+      "src": "/images/words/tb4a_clothes.svg",
+      "alt": "衣服"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_803",
     "kind": "word",
     "word": "cap",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -198,31 +203,27 @@
       "a",
       "p"
     ],
-    "syllables": [
-      "cap"
-    ],
-    "ipa": "/kæp/",
     "graphemes": [
       {
         "letters": "c",
         "phonemes": [
           "k"
         ],
-        "audio": "tb4a_u8#p_c"
+        "audio": "tb4a_u8_p#tb4a_803_1"
       },
       {
         "letters": "a",
         "phonemes": [
           "æ"
         ],
-        "audio": "tb4a_u8#p_a"
+        "audio": "tb4a_u8_p#tb4a_803_2"
       },
       {
         "letters": "p",
         "phonemes": [
           "p"
         ],
-        "audio": "tb4a_u8#p_p"
+        "audio": "tb4a_u8_p#tb4a_803_3"
       }
     ],
     "phonemes": [
@@ -230,33 +231,40 @@
       "æ",
       "p"
     ],
+    "syllables": [
+      "cap"
+    ],
+    "ipa": "/kæp/",
     "definition": {
       "zh": "（尤指有帽舌的）便帽"
     },
     "example": {
       "en": "This cap is red.",
       "zh": "这顶帽子是红色的。",
-      "audio": "tb4a_u8#cap_example"
+      "audio": "tb4a_u8_s#cap_example"
     },
     "audio": {
       "word": "tb4a_u8#cap",
       "wordSlow": "tb4a_u8#cap_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🧢"
+      "type": "image",
+      "src": "/images/words/tb4a_cap.svg",
+      "alt": "（尤指有帽舌的）便帽"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_804",
     "kind": "word",
     "word": "coat",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -269,24 +277,20 @@
       "a",
       "t"
     ],
-    "syllables": [
-      "coat"
-    ],
-    "ipa": "/koʊt/",
     "graphemes": [
       {
         "letters": "c",
         "phonemes": [
           "k"
         ],
-        "audio": "tb4a_u8#p_c"
+        "audio": "tb4a_u8_p#tb4a_804_1"
       },
       {
         "letters": "o",
         "phonemes": [
           "oʊ"
         ],
-        "audio": "tb4a_u8#p_o"
+        "audio": "tb4a_u8_p#tb4a_804_2"
       },
       {
         "letters": "a",
@@ -298,7 +302,7 @@
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u8#p_t"
+        "audio": "tb4a_u8_p#tb4a_804_4"
       }
     ],
     "phonemes": [
@@ -306,33 +310,40 @@
       "oʊ",
       "t"
     ],
+    "syllables": [
+      "coat"
+    ],
+    "ipa": "/koʊt/",
     "definition": {
       "zh": "外套，外衣"
     },
     "example": {
       "en": "My coat is warm.",
       "zh": "我的外套很暖和。",
-      "audio": "tb4a_u8#coat_example"
+      "audio": "tb4a_u8_s#coat_example"
     },
     "audio": {
       "word": "tb4a_u8#coat",
       "wordSlow": "tb4a_u8#coat_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🧥"
+      "type": "image",
+      "src": "/images/words/tb4a_coat.svg",
+      "alt": "外套，外衣"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_805",
     "kind": "word",
     "word": "skirt",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -346,10 +357,6 @@
       "r",
       "t"
     ],
-    "syllables": [
-      "skirt"
-    ],
-    "ipa": "/skɜːt/",
     "graphemes": [
       {
         "letters": "sk",
@@ -357,21 +364,21 @@
           "s",
           "k"
         ],
-        "audio": "tb4a_u8#p_sk"
+        "audio": "tb4a_u8_p#tb4a_805_1"
       },
       {
         "letters": "ir",
         "phonemes": [
           "ɜː"
         ],
-        "audio": "tb4a_u8#p_ir"
+        "audio": "tb4a_u8_p#tb4a_805_2"
       },
       {
         "letters": "t",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u8#p_t"
+        "audio": "tb4a_u8_p#tb4a_805_3"
       }
     ],
     "phonemes": [
@@ -380,33 +387,40 @@
       "ɜː",
       "t"
     ],
+    "syllables": [
+      "skirt"
+    ],
+    "ipa": "/skɜːt/",
     "definition": {
       "zh": "半身裙"
     },
     "example": {
       "en": "Her skirt is blue.",
       "zh": "她的裙子是蓝色的。",
-      "audio": "tb4a_u8#skirt_example"
+      "audio": "tb4a_u8_s#skirt_example"
     },
     "audio": {
       "word": "tb4a_u8#skirt",
       "wordSlow": "tb4a_u8#skirt_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👗"
+      "type": "image",
+      "src": "/images/words/tb4a_skirt.svg",
+      "alt": "半身裙"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_806",
     "kind": "word",
     "word": "trousers",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -423,52 +437,48 @@
       "r",
       "s"
     ],
-    "syllables": [
-      "trousers"
-    ],
-    "ipa": "/ˈtraʊzəz/",
     "graphemes": [
       {
         "letters": "t",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u8#p_t"
+        "audio": "tb4a_u8_p#tb4a_806_1"
       },
       {
         "letters": "r",
         "phonemes": [
           "r"
         ],
-        "audio": "tb4a_u8#p_r"
+        "audio": "tb4a_u8_p#tb4a_806_2"
       },
       {
         "letters": "ou",
         "phonemes": [
           "aʊ"
         ],
-        "audio": "tb4a_u8#p_ou"
+        "audio": "tb4a_u8_p#tb4a_806_3"
       },
       {
         "letters": "s",
         "phonemes": [
           "z"
         ],
-        "audio": "tb4a_u8#p_s"
+        "audio": "tb4a_u8_p#tb4a_806_4"
       },
       {
         "letters": "er",
         "phonemes": [
           "ə"
         ],
-        "audio": "tb4a_u8#p_er"
+        "audio": "tb4a_u8_p#tb4a_806_5"
       },
       {
         "letters": "s",
         "phonemes": [
           "z"
         ],
-        "audio": "tb4a_u8#p_s"
+        "audio": "tb4a_u8_p#tb4a_806_6"
       }
     ],
     "phonemes": [
@@ -479,33 +489,40 @@
       "ə",
       "z"
     ],
+    "syllables": [
+      "trousers"
+    ],
+    "ipa": "/ˈtraʊzəz/",
     "definition": {
       "zh": "裤子"
     },
     "example": {
       "en": "My trousers are new.",
       "zh": "我的裤子是新的。",
-      "audio": "tb4a_u8#trousers_example"
+      "audio": "tb4a_u8_s#trousers_example"
     },
     "audio": {
       "word": "tb4a_u8#trousers",
       "wordSlow": "tb4a_u8#trousers_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👖"
+      "type": "image",
+      "src": "/images/words/tb4a_trousers.svg",
+      "alt": "裤子"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_807",
     "kind": "word",
     "word": "shorts",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -520,24 +537,20 @@
       "t",
       "s"
     ],
-    "syllables": [
-      "shorts"
-    ],
-    "ipa": "/ʃɔːts/",
     "graphemes": [
       {
         "letters": "sh",
         "phonemes": [
           "ʃ"
         ],
-        "audio": "tb4a_u8#p_sh"
+        "audio": "tb4a_u8_p#tb4a_807_1"
       },
       {
         "letters": "or",
         "phonemes": [
           "ɔː"
         ],
-        "audio": "tb4a_u8#p_or"
+        "audio": "tb4a_u8_p#tb4a_807_2"
       },
       {
         "letters": "ts",
@@ -545,7 +558,7 @@
           "t",
           "s"
         ],
-        "audio": "tb4a_u8#p_ts"
+        "audio": "tb4a_u8_p#tb4a_807_3"
       }
     ],
     "phonemes": [
@@ -554,33 +567,40 @@
       "t",
       "s"
     ],
+    "syllables": [
+      "shorts"
+    ],
+    "ipa": "/ʃɔːts/",
     "definition": {
       "zh": "短裤"
     },
     "example": {
       "en": "I like these shorts.",
       "zh": "我喜欢这条短裤。",
-      "audio": "tb4a_u8#shorts_example"
+      "audio": "tb4a_u8_s#shorts_example"
     },
     "audio": {
       "word": "tb4a_u8#shorts",
       "wordSlow": "tb4a_u8#shorts_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🩳"
+      "type": "image",
+      "src": "/images/words/tb4a_shorts.svg",
+      "alt": "短裤"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_808",
     "kind": "word",
     "word": "dress",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -594,38 +614,34 @@
       "s",
       "s"
     ],
-    "syllables": [
-      "dress"
-    ],
-    "ipa": "/drɛs/",
     "graphemes": [
       {
         "letters": "d",
         "phonemes": [
           "d"
         ],
-        "audio": "tb4a_u8#p_d"
+        "audio": "tb4a_u8_p#tb4a_808_1"
       },
       {
         "letters": "r",
         "phonemes": [
           "r"
         ],
-        "audio": "tb4a_u8#p_r"
+        "audio": "tb4a_u8_p#tb4a_808_2"
       },
       {
         "letters": "e",
         "phonemes": [
           "ɛ"
         ],
-        "audio": "tb4a_u8#p_e"
+        "audio": "tb4a_u8_p#tb4a_808_3"
       },
       {
         "letters": "ss",
         "phonemes": [
           "s"
         ],
-        "audio": "tb4a_u8#p_ss"
+        "audio": "tb4a_u8_p#tb4a_808_4"
       }
     ],
     "phonemes": [
@@ -634,33 +650,40 @@
       "ɛ",
       "s"
     ],
+    "syllables": [
+      "dress"
+    ],
+    "ipa": "/drɛs/",
     "definition": {
       "zh": "连衣裙"
     },
     "example": {
       "en": "Her dress is nice.",
       "zh": "她的连衣裙很好看。",
-      "audio": "tb4a_u8#dress_example"
+      "audio": "tb4a_u8_s#dress_example"
     },
     "audio": {
       "word": "tb4a_u8#dress",
       "wordSlow": "tb4a_u8#dress_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👚"
+      "type": "image",
+      "src": "/images/words/tb4a_dress.svg",
+      "alt": "连衣裙"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_809",
     "kind": "word",
     "word": "shirt",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -674,31 +697,27 @@
       "r",
       "t"
     ],
-    "syllables": [
-      "shirt"
-    ],
-    "ipa": "/ʃɜːt/",
     "graphemes": [
       {
         "letters": "sh",
         "phonemes": [
           "ʃ"
         ],
-        "audio": "tb4a_u8#p_sh"
+        "audio": "tb4a_u8_p#tb4a_809_1"
       },
       {
         "letters": "ir",
         "phonemes": [
           "ɜː"
         ],
-        "audio": "tb4a_u8#p_ir"
+        "audio": "tb4a_u8_p#tb4a_809_2"
       },
       {
         "letters": "t",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u8#p_t"
+        "audio": "tb4a_u8_p#tb4a_809_3"
       }
     ],
     "phonemes": [
@@ -706,33 +725,40 @@
       "ɜː",
       "t"
     ],
+    "syllables": [
+      "shirt"
+    ],
+    "ipa": "/ʃɜːt/",
     "definition": {
       "zh": "（男式）衬衫"
     },
     "example": {
       "en": "His shirt is white.",
       "zh": "他的衬衫是白色的。",
-      "audio": "tb4a_u8#shirt_example"
+      "audio": "tb4a_u8_s#shirt_example"
     },
     "audio": {
       "word": "tb4a_u8#shirt",
       "wordSlow": "tb4a_u8#shirt_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👔"
+      "type": "image",
+      "src": "/images/words/tb4a_shirt.svg",
+      "alt": "（男式）衬衫"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_810",
     "kind": "word",
     "word": "look",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -745,31 +771,27 @@
       "o",
       "k"
     ],
-    "syllables": [
-      "look"
-    ],
-    "ipa": "/lʊk/",
     "graphemes": [
       {
         "letters": "l",
         "phonemes": [
           "l"
         ],
-        "audio": "tb4a_u8#p_l"
+        "audio": "tb4a_u8_p#tb4a_810_1"
       },
       {
         "letters": "oo",
         "phonemes": [
           "ʊ"
         ],
-        "audio": "tb4a_u8#p_oo"
+        "audio": "tb4a_u8_p#tb4a_810_2"
       },
       {
         "letters": "k",
         "phonemes": [
           "k"
         ],
-        "audio": "tb4a_u8#p_k"
+        "audio": "tb4a_u8_p#tb4a_810_3"
       }
     ],
     "phonemes": [
@@ -777,33 +799,40 @@
       "ʊ",
       "k"
     ],
+    "syllables": [
+      "look"
+    ],
+    "ipa": "/lʊk/",
     "definition": {
       "zh": "看来好像，显得"
     },
     "example": {
       "en": "You look cool.",
       "zh": "你看起来很酷。",
-      "audio": "tb4a_u8#look_example"
+      "audio": "tb4a_u8_s#look_example"
     },
     "audio": {
       "word": "tb4a_u8#look",
       "wordSlow": "tb4a_u8#look_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👀"
+      "type": "image",
+      "src": "/images/words/tb4a_look.svg",
+      "alt": "看来好像，显得"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_811",
     "kind": "word",
     "word": "in",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -814,57 +843,60 @@
       "i",
       "n"
     ],
-    "syllables": [
-      "in"
-    ],
-    "ipa": "/ɪn/",
     "graphemes": [
       {
         "letters": "i",
         "phonemes": [
           "ɪ"
         ],
-        "audio": "tb4a_u8#p_i"
+        "audio": "tb4a_u8_p2#tb4a_811_1"
       },
       {
         "letters": "n",
         "phonemes": [
           "n"
         ],
-        "audio": "tb4a_u8#p_n"
+        "audio": "tb4a_u8_p2#tb4a_811_2"
       }
     ],
     "phonemes": [
       "ɪ",
       "n"
     ],
+    "syllables": [
+      "in"
+    ],
+    "ipa": "/ɪn/",
     "definition": {
       "zh": "穿着，戴着"
     },
     "example": {
       "en": "She is in red.",
       "zh": "她穿着红色衣服。",
-      "audio": "tb4a_u8#in_example"
+      "audio": "tb4a_u8_s#in_example"
     },
     "audio": {
       "word": "tb4a_u8#in",
       "wordSlow": "tb4a_u8#in_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🎽"
+      "type": "image",
+      "src": "/images/words/tb4a_in.svg",
+      "alt": "穿着，戴着"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_812",
     "kind": "word",
     "word": "sunglasses",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -883,73 +915,69 @@
       "e",
       "s"
     ],
-    "syllables": [
-      "sunglasses"
-    ],
-    "ipa": "/ˈsʌnɡlɑːsɪz/",
     "graphemes": [
       {
         "letters": "s",
         "phonemes": [
           "s"
         ],
-        "audio": "tb4a_u8#p_s"
+        "audio": "tb4a_u8_p2#tb4a_812_1"
       },
       {
         "letters": "u",
         "phonemes": [
           "ʌ"
         ],
-        "audio": "tb4a_u8#p_u"
+        "audio": "tb4a_u8_p2#tb4a_812_2"
       },
       {
         "letters": "n",
         "phonemes": [
           "n"
         ],
-        "audio": "tb4a_u8#p_n"
+        "audio": "tb4a_u8_p2#tb4a_812_3"
       },
       {
         "letters": "g",
         "phonemes": [
           "g"
         ],
-        "audio": "tb4a_u8#p_g"
+        "audio": "tb4a_u8_p2#tb4a_812_4"
       },
       {
         "letters": "l",
         "phonemes": [
           "l"
         ],
-        "audio": "tb4a_u8#p_l"
+        "audio": "tb4a_u8_p2#tb4a_812_5"
       },
       {
         "letters": "a",
         "phonemes": [
           "ɑː"
         ],
-        "audio": "tb4a_u8#p_a"
+        "audio": "tb4a_u8_p2#tb4a_812_6"
       },
       {
         "letters": "ss",
         "phonemes": [
           "s"
         ],
-        "audio": "tb4a_u8#p_ss"
+        "audio": "tb4a_u8_p2#tb4a_812_7"
       },
       {
         "letters": "e",
         "phonemes": [
           "ɪ"
         ],
-        "audio": "tb4a_u8#p_e"
+        "audio": "tb4a_u8_p2#tb4a_812_8"
       },
       {
         "letters": "s",
         "phonemes": [
           "z"
         ],
-        "audio": "tb4a_u8#p_s"
+        "audio": "tb4a_u8_p2#tb4a_812_9"
       }
     ],
     "phonemes": [
@@ -963,33 +991,40 @@
       "ɪ",
       "z"
     ],
+    "syllables": [
+      "sunglasses"
+    ],
+    "ipa": "/ˈsʌnɡlɑːsɪz/",
     "definition": {
       "zh": "太阳镜，墨镜"
     },
     "example": {
       "en": "I wear sunglasses in summer.",
       "zh": "我夏天戴墨镜。",
-      "audio": "tb4a_u8#sunglasses_example"
+      "audio": "tb4a_u8_s#sunglasses_example"
     },
     "audio": {
       "word": "tb4a_u8#sunglasses",
       "wordSlow": "tb4a_u8#sunglasses_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🕶️"
+      "type": "image",
+      "src": "/images/words/tb4a_sunglasses.svg",
+      "alt": "太阳镜，墨镜"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_813",
     "kind": "word",
     "word": "why",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -1001,57 +1036,60 @@
       "h",
       "y"
     ],
-    "syllables": [
-      "why"
-    ],
-    "ipa": "/waɪ/",
     "graphemes": [
       {
         "letters": "wh",
         "phonemes": [
           "w"
         ],
-        "audio": "tb4a_u8#p_wh"
+        "audio": "tb4a_u8_p2#tb4a_813_1"
       },
       {
         "letters": "y",
         "phonemes": [
           "aɪ"
         ],
-        "audio": "tb4a_u8#p_y"
+        "audio": "tb4a_u8_p2#tb4a_813_2"
       }
     ],
     "phonemes": [
       "w",
       "aɪ"
     ],
+    "syllables": [
+      "why"
+    ],
+    "ipa": "/waɪ/",
     "definition": {
       "zh": "为什么"
     },
     "example": {
       "en": "Why do you run?",
       "zh": "你为什么跑？",
-      "audio": "tb4a_u8#why_example"
+      "audio": "tb4a_u8_s#why_example"
     },
     "audio": {
       "word": "tb4a_u8#why",
       "wordSlow": "tb4a_u8#why_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "❔"
+      "type": "image",
+      "src": "/images/words/tb4a_why.svg",
+      "alt": "为什么"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_814",
     "kind": "word",
     "word": "wear",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -1064,17 +1102,13 @@
       "a",
       "r"
     ],
-    "syllables": [
-      "wear"
-    ],
-    "ipa": "/weə(r)/",
     "graphemes": [
       {
         "letters": "w",
         "phonemes": [
           "w"
         ],
-        "audio": "tb4a_u8#p_w"
+        "audio": "tb4a_u8_p2#tb4a_814_1"
       },
       {
         "letters": "ear",
@@ -1082,7 +1116,7 @@
           "eə",
           "r"
         ],
-        "audio": "tb4a_u8#p_ear"
+        "audio": "tb4a_u8_p2#tb4a_814_2"
       }
     ],
     "phonemes": [
@@ -1090,33 +1124,40 @@
       "eə",
       "r"
     ],
+    "syllables": [
+      "wear"
+    ],
+    "ipa": "/weə(r)/",
     "definition": {
       "zh": "穿，戴"
     },
     "example": {
       "en": "I wear a coat.",
       "zh": "我穿一件外套。",
-      "audio": "tb4a_u8#wear_example"
+      "audio": "tb4a_u8_s#wear_example"
     },
     "audio": {
       "word": "tb4a_u8#wear",
       "wordSlow": "tb4a_u8#wear_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🧣"
+      "type": "image",
+      "src": "/images/words/tb4a_wear.svg",
+      "alt": "穿，戴"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_815",
     "kind": "word",
     "word": "because",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -1132,45 +1173,41 @@
       "s",
       "e"
     ],
-    "syllables": [
-      "because"
-    ],
-    "ipa": "/bɪˈkɔːz/",
     "graphemes": [
       {
         "letters": "b",
         "phonemes": [
           "b"
         ],
-        "audio": "tb4a_u8#p_b"
+        "audio": "tb4a_u8_p2#tb4a_815_1"
       },
       {
         "letters": "e",
         "phonemes": [
           "ɪ"
         ],
-        "audio": "tb4a_u8#p_e"
+        "audio": "tb4a_u8_p2#tb4a_815_2"
       },
       {
         "letters": "c",
         "phonemes": [
           "k"
         ],
-        "audio": "tb4a_u8#p_c"
+        "audio": "tb4a_u8_p2#tb4a_815_3"
       },
       {
         "letters": "au",
         "phonemes": [
           "ɔː"
         ],
-        "audio": "tb4a_u8#p_au"
+        "audio": "tb4a_u8_p2#tb4a_815_4"
       },
       {
         "letters": "se",
         "phonemes": [
           "z"
         ],
-        "audio": "tb4a_u8#p_se"
+        "audio": "tb4a_u8_p2#tb4a_815_5"
       }
     ],
     "phonemes": [
@@ -1180,33 +1217,40 @@
       "ɔː",
       "z"
     ],
+    "syllables": [
+      "because"
+    ],
+    "ipa": "/bɪˈkɔːz/",
     "definition": {
       "zh": "因为"
     },
     "example": {
       "en": "I run because I am late.",
       "zh": "我跑因为我迟到了。",
-      "audio": "tb4a_u8#because_example"
+      "audio": "tb4a_u8_s#because_example"
     },
     "audio": {
       "word": "tb4a_u8#because",
       "wordSlow": "tb4a_u8#because_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🔗"
+      "type": "image",
+      "src": "/images/words/tb4a_because.svg",
+      "alt": "因为"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_816",
     "kind": "word",
     "word": "bright",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -1221,31 +1265,27 @@
       "h",
       "t"
     ],
-    "syllables": [
-      "bright"
-    ],
-    "ipa": "/braɪt/",
     "graphemes": [
       {
         "letters": "b",
         "phonemes": [
           "b"
         ],
-        "audio": "tb4a_u8#p_b"
+        "audio": "tb4a_u8_p2#tb4a_816_1"
       },
       {
         "letters": "r",
         "phonemes": [
           "r"
         ],
-        "audio": "tb4a_u8#p_r"
+        "audio": "tb4a_u8_p2#tb4a_816_2"
       },
       {
         "letters": "i",
         "phonemes": [
           "aɪ"
         ],
-        "audio": "tb4a_u8#p_i"
+        "audio": "tb4a_u8_p2#tb4a_816_3"
       },
       {
         "letters": "gh",
@@ -1257,7 +1297,7 @@
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u8#p_t"
+        "audio": "tb4a_u8_p2#tb4a_816_5"
       }
     ],
     "phonemes": [
@@ -1266,33 +1306,40 @@
       "aɪ",
       "t"
     ],
+    "syllables": [
+      "bright"
+    ],
+    "ipa": "/braɪt/",
     "definition": {
       "zh": "聪明的；明亮的"
     },
     "example": {
       "en": "You are bright.",
       "zh": "你很聪明。",
-      "audio": "tb4a_u8#bright_example"
+      "audio": "tb4a_u8_s#bright_example"
     },
     "audio": {
       "word": "tb4a_u8#bright",
       "wordSlow": "tb4a_u8#bright_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "💡"
+      "type": "image",
+      "src": "/images/words/tb4a_bright.svg",
+      "alt": "聪明的；明亮的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_817",
     "kind": "word",
     "word": "whose",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -1306,10 +1353,6 @@
       "s",
       "e"
     ],
-    "syllables": [
-      "whose"
-    ],
-    "ipa": "/huːz/",
     "graphemes": [
       {
         "letters": "w",
@@ -1321,21 +1364,21 @@
         "phonemes": [
           "h"
         ],
-        "audio": "tb4a_u8#p_h"
+        "audio": "tb4a_u8_p2#tb4a_817_2"
       },
       {
         "letters": "o",
         "phonemes": [
           "uː"
         ],
-        "audio": "tb4a_u8#p_o"
+        "audio": "tb4a_u8_p2#tb4a_817_3"
       },
       {
         "letters": "se",
         "phonemes": [
           "z"
         ],
-        "audio": "tb4a_u8#p_se"
+        "audio": "tb4a_u8_p2#tb4a_817_4"
       }
     ],
     "phonemes": [
@@ -1343,33 +1386,40 @@
       "uː",
       "z"
     ],
+    "syllables": [
+      "whose"
+    ],
+    "ipa": "/huːz/",
     "definition": {
       "zh": "谁的"
     },
     "example": {
       "en": "Whose bag is this?",
       "zh": "这是谁的包？",
-      "audio": "tb4a_u8#whose_example"
+      "audio": "tb4a_u8_s#whose_example"
     },
     "audio": {
       "word": "tb4a_u8#whose",
       "wordSlow": "tb4a_u8#whose_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🎒"
+      "type": "image",
+      "src": "/images/words/tb4a_whose.svg",
+      "alt": "谁的"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_818",
     "kind": "phrase",
     "word": "Chinese New Year",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -1381,12 +1431,6 @@
       "New",
       "Year"
     ],
-    "syllables": [
-      "Chinese",
-      "New",
-      "Year"
-    ],
-    "ipa": "/ˌtʃaɪˈniːz njuː jɪə/",
     "graphemes": [
       {
         "letters": "chinese",
@@ -1405,33 +1449,42 @@
       }
     ],
     "phonemes": [],
+    "syllables": [
+      "Chinese",
+      "New",
+      "Year"
+    ],
+    "ipa": "/ˌtʃaɪˈniːz njuː jɪə/",
     "definition": {
       "zh": "中国农历新年，春节"
     },
     "example": {
       "en": "We wear new clothes at Chinese New Year.",
       "zh": "春节我们穿新衣服。",
-      "audio": "tb4a_u8#chinese_new_year_example"
+      "audio": "tb4a_u8_s#chinese_new_year_example"
     },
     "audio": {
       "word": "tb4a_u8#chinese_new_year",
       "wordSlow": "tb4a_u8#chinese_new_year_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "🧧"
+      "type": "image",
+      "src": "/images/words/tb4a_chinese_new_year.svg",
+      "alt": "中国农历新年，春节"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   },
   {
     "schemaVersion": 4,
     "wordId": "w_tb4a_819",
     "kind": "word",
     "word": "Kitty",
-    "track": "textbook",
     "textbook": {
       "bookId": "yilin-4a-2024",
       "unit": 8,
@@ -1445,38 +1498,34 @@
       "t",
       "y"
     ],
-    "syllables": [
-      "Kitty"
-    ],
-    "ipa": "/ˈkɪti/",
     "graphemes": [
       {
         "letters": "k",
         "phonemes": [
           "k"
         ],
-        "audio": "tb4a_u8#p_k"
+        "audio": "tb4a_u8_p2#tb4a_819_1"
       },
       {
         "letters": "i",
         "phonemes": [
           "ɪ"
         ],
-        "audio": "tb4a_u8#p_i"
+        "audio": "tb4a_u8_p2#tb4a_819_2"
       },
       {
         "letters": "tt",
         "phonemes": [
           "t"
         ],
-        "audio": "tb4a_u8#p_tt"
+        "audio": "tb4a_u8_p2#tb4a_819_3"
       },
       {
         "letters": "y",
         "phonemes": [
           "i"
         ],
-        "audio": "tb4a_u8#p_y"
+        "audio": "tb4a_u8_p2#tb4a_819_4"
       }
     ],
     "phonemes": [
@@ -1485,25 +1534,33 @@
       "t",
       "i"
     ],
+    "syllables": [
+      "Kitty"
+    ],
+    "ipa": "/ˈkɪti/",
     "definition": {
       "zh": "姬蒂（人名）"
     },
     "example": {
       "en": "Kitty is my friend.",
       "zh": "姬蒂是我的朋友。",
-      "audio": "tb4a_u8#kitty_example"
+      "audio": "tb4a_u8_s#kitty_example"
     },
     "audio": {
       "word": "tb4a_u8#kitty",
       "wordSlow": "tb4a_u8#kitty_slow"
     },
     "illustration": {
-      "type": "emoji",
-      "value": "👧"
+      "type": "image",
+      "src": "/images/words/tb4a_kitty.svg",
+      "alt": "姬蒂（人名）"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
-    "contentVersion": "2026.10.2"
+    "contentVersion": "2026.10.2",
+    "track": "textbook"
   }
 ]

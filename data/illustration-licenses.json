@@ -1264,6 +1264,2034 @@
       "sha256": "7c4849af22484e47852ea0a8fd007c49558ee2875c3d77d658e9c2a48608efd8",
       "reviewer": null,
       "reviewedAt": null
+    },
+    "/images/words/tb4a_subject.svg": {
+      "source": "assets/illustrations/tb4a_subject.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "c51a512f2e342703095c73973269e22aa0a11f3ab51a0620433cf6fd4444ea8a",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_chinese.svg": {
+      "source": "assets/illustrations/tb4a_chinese.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "80ea9af2ff7bbd7beedb4cd3181b7245371013d26c7b18e22547fe5acc9c2e9d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_english.svg": {
+      "source": "assets/illustrations/tb4a_english.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "01b4adc4f86b248399858c347084154897107723dcf942fe68e347ad390d4ab3",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_maths.svg": {
+      "source": "assets/illustrations/tb4a_maths.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "5e27f2ca40f8270f87c81912b35fadcd3231c8212b8c3c3e8c2e47d32235dafa",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_pe.svg": {
+      "source": "assets/illustrations/tb4a_pe.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "607bcab7b87c4f05a1e7dd848d2cdb5ec43588e6e70b2556b314ef3b003f22ca",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_art.svg": {
+      "source": "assets/illustrations/tb4a_art.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "192d0662f81b1444214af66d65cd2f1cc376648059e7d73186b1fce35fe2fb1d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_science.svg": {
+      "source": "assets/illustrations/tb4a_science.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d7e76457b6e79d3af17ecda590190ef10632d3197e911f8db62ee1506b6ece3a",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_it.svg": {
+      "source": "assets/illustrations/tb4a_it.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "840dc0386df6e6166417b0a86c08292dbc35b7a7b41d49041f18ed62a70b9f8f",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_music.svg": {
+      "source": "assets/illustrations/tb4a_music.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "90e47fa151e106457bc4eb5379a60035ac2cff45fabddda5e64dad3692c7836e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_best.svg": {
+      "source": "assets/illustrations/tb4a_best.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "09b89faca02a758228c036268cbb58f66939d4ff40f09c07a3f98cfb33eeb820",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_also.svg": {
+      "source": "assets/illustrations/tb4a_also.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "4dc1eb323128de1def2897d5f8c1b54ec03c71ab9e71ee40e8b735a92062f8d4",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_it_s_time_for.svg": {
+      "source": "assets/illustrations/tb4a_it_s_time_for.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "3fd0a144ca901e5432733f5cae261915fc9a2bac695da8f2d91ece2429f2bb09",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_mouse.svg": {
+      "source": "assets/illustrations/tb4a_mouse.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "2e696f0a0251b6e7b449ea92f580df10b5d7b5a51b9e1871eead8e584c9acebb",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_welcome_back_to.svg": {
+      "source": "assets/illustrations/tb4a_welcome_back_to.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "95e96d624ce0eba81add6241cfec4f89faa0825a61df8978968a1fffc5c0ffd1",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_new.svg": {
+      "source": "assets/illustrations/tb4a_new.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "964235281819a220bba841f6b53f9845574dba48ecae447cb9c386adcafb662d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_timetable.svg": {
+      "source": "assets/illustrations/tb4a_timetable.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d78159f81b7ca71dd73273a579fc46903de057a2fc9bf8a3f00c461b20dc525b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_be_good_at.svg": {
+      "source": "assets/illustrations/tb4a_be_good_at.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "9ebbdcfd7e654f9a12e2acce995b6a247181308c2f7f164a3f366af537ec812e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_number.svg": {
+      "source": "assets/illustrations/tb4a_number.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "a478781314cbd20563250cef22dc3f9c695a91c8644519fbe056314a5a94148e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_interesting.svg": {
+      "source": "assets/illustrations/tb4a_interesting.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "89028baedf890241157219b71f1189ddb70b982d5693d9d5bf657907f028624b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_learn_about.svg": {
+      "source": "assets/illustrations/tb4a_learn_about.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "bd2fa4f7b7ddbd29feb233d02f8012ee13c865f047396fbeccc8586240f84026",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_culture.svg": {
+      "source": "assets/illustrations/tb4a_culture.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "a289ecd70cc695612e2a7af2cef9ccdf3997e9d2a33dcd89f54b12694d94f3a9",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_read.svg": {
+      "source": "assets/illustrations/tb4a_read.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "ad50d3967fe59a1f3334abb0104e5d2927d31f53ae8e87dadf8cb859ca3d884d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_story.svg": {
+      "source": "assets/illustrations/tb4a_story.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "fa99e4f351836f4905b2b2af3b26e4bf20356aaf0c4493a26080ecc1e14b1b3e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_all.svg": {
+      "source": "assets/illustrations/tb4a_all.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "fa73f6fec8073167d60d577d1e899a6ef12999ba5f091582742734702788832d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_sports_ground.svg": {
+      "source": "assets/illustrations/tb4a_sports_ground.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "24ef88e506718d28cce6750dd176ca3d5ac491bebc7342057aa96a794c116972",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_ethics_and_the_rule_of_law.svg": {
+      "source": "assets/illustrations/tb4a_ethics_and_the_rule_of_law.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d61074d1ba9450de65660cfdf17e072ca30136c498c0e5e86e7aa28db54f88d2",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_labour.svg": {
+      "source": "assets/illustrations/tb4a_labour.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "cfbafab70958aa8792ea33e4e83b2e258bb1ee073b1a21798c1f6b571ce3bd06",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_the_uk.svg": {
+      "source": "assets/illustrations/tb4a_the_uk.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "525eb4fb515228f10aa52ab9fceecc48c196e5b79716be8d87bb84b4640cdebb",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_daniel.svg": {
+      "source": "assets/illustrations/tb4a_daniel.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "58b30279b0d1f8c045f69712b8447c886e5e48be9e283bf14542e7e7722861a2",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_day.svg": {
+      "source": "assets/illustrations/tb4a_day.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "743e84960def640aa94896c8fffda5c51178b5f1269266671ab68bde343691aa",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_get_up.svg": {
+      "source": "assets/illustrations/tb4a_get_up.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "0ffea4736beaba3eee8670ce97ca1336bbc30fb9bf46780c26d00c3f7bf7c5c1",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_wash.svg": {
+      "source": "assets/illustrations/tb4a_wash.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "7e6cc455b41a0baa062b80fb59adfd4141c6e7333e17fe0403661e0a24a9d4af",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_face.svg": {
+      "source": "assets/illustrations/tb4a_face.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "4087e66d17d00f2965d0cfcbc2f2382b86d3a020e303307b789f1b2306df88ca",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_have_lessons.svg": {
+      "source": "assets/illustrations/tb4a_have_lessons.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e4e93cced655aaa03cd51bc79dbf3eb24bccc8a826f42b34775e45a3e434537d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_have.svg": {
+      "source": "assets/illustrations/tb4a_have.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "fbc4d1b5a17a8bc238e2f55b101fb754e9b865f1e00295a5bebf7eade00fa26e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_dinner.svg": {
+      "source": "assets/illustrations/tb4a_dinner.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "625b971ec51d14b95e38f05a1c21ee758e07160d1f3945d462c932d71141368c",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_breakfast.svg": {
+      "source": "assets/illustrations/tb4a_breakfast.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "55f91b4bd1a698a460b7517f90054dc1a08ad431df5f7ddcdbbdd8ac7fe7fa63",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_lunch.svg": {
+      "source": "assets/illustrations/tb4a_lunch.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "7755d3b09ad0a3703790d02b4e0f8724c773e7e3465a21646cec409b3c93927f",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_go_to_bed.svg": {
+      "source": "assets/illustrations/tb4a_go_to_bed.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "7e361fc5d1ba1294ea27c501b1ee02fc76df67decad4c99cf4f3e1a0fc4dcd6b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_o_clock.svg": {
+      "source": "assets/illustrations/tb4a_o_clock.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "1d889460c1bf752d10420699fa7544e29cf5b8dc256267c5e06f4d4584f77745",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_early.svg": {
+      "source": "assets/illustrations/tb4a_early.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "132e5937aff8676ec2697439296d0e27d3b52eddcf8a505225fef3377e0e86eb",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_thirty.svg": {
+      "source": "assets/illustrations/tb4a_thirty.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "3ff8b640c27ab8ccb43c52922633b43bd2b6d686661560438d3607be50b4a694",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_first.svg": {
+      "source": "assets/illustrations/tb4a_first.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "96c325b9c37110598c03604187a6b80cfb3351cc01e9e1c954f19121c44ada2e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_hurry_up.svg": {
+      "source": "assets/illustrations/tb4a_hurry_up.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "26f607bcfbf76d6690f1c8f7a1aafb87b0a2ebd4e976b70eb0d2de6efef86b58",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_what_time_is_it.svg": {
+      "source": "assets/illustrations/tb4a_what_time_is_it.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "76dfe721878de12ef5bfd0c7cebe62f958f54d37d1076aca3c4f044aee8131a3",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_i_m_coming.svg": {
+      "source": "assets/illustrations/tb4a_i_m_coming.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "f0ae17b22c70c21943421aada1384ef92d2d2ed08a3ff121a5098d1b2d269dc2",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_twenty.svg": {
+      "source": "assets/illustrations/tb4a_twenty.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "3c1365594e627693f4ae68ab3c9e04b780ae1029ac88a25723ceafa8766808da",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_come_on.svg": {
+      "source": "assets/illustrations/tb4a_come_on.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "b1a8f1e8d03dddc3e980461905171bbfa02efe5bea7331dfbb95d3ccd5f520ff",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_class.svg": {
+      "source": "assets/illustrations/tb4a_class.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "9ddb90738941bd4b02031309e1632ace635136a6813f3afb9ad97b1f659a8f61",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_eleven.svg": {
+      "source": "assets/illustrations/tb4a_eleven.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "205b6e074493a717c149c8a1e0e9fcb841d92c1dc95c76b421782b3eeb0710cd",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_sport.svg": {
+      "source": "assets/illustrations/tb4a_sport.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "ccfc4cf33f6bc9ccc6fbc2aab39417bccf801f916d9fbd6f639847d3a8486530",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_fifteen.svg": {
+      "source": "assets/illustrations/tb4a_fifteen.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e59f5503ae1d3a1ee11d77bcf5f7b6d64c1b52aa2274446dce75f0d0d9dea4ef",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_it_s_time_to.svg": {
+      "source": "assets/illustrations/tb4a_it_s_time_to.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "befaafb22a731bafdd6ec9476eec6b0a545db28672c5224e455e0735d12cbf2c",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_bed.svg": {
+      "source": "assets/illustrations/tb4a_bed.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "13f33ca326b7add89b077bf21e9827aa4f285965fbcc479a79c2958888e38140",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_good_night.svg": {
+      "source": "assets/illustrations/tb4a_good_night.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "a736464c945881aff66ea8cf0d29414083e67b7359c3ef47273841c532ed06bf",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_week.svg": {
+      "source": "assets/illustrations/tb4a_week.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "f2b017ef925269e9aa3259a59069c622b7f1abf5e2543acf390529af630d0244",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_sunday.svg": {
+      "source": "assets/illustrations/tb4a_sunday.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "ca846c5b9de9272082a99a8524a4573223ba03e018fa05fc526dbe90289c50dd",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_monday.svg": {
+      "source": "assets/illustrations/tb4a_monday.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "aa765d6d1ecb39122e599e123fb88dc1ec60fd0f56079ec5fb0ad0d336cd35f5",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_tuesday.svg": {
+      "source": "assets/illustrations/tb4a_tuesday.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "0775385abcd589228c7304ff957c46ae63542062d23bddd3c10de9f5f72d5334",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_wednesday.svg": {
+      "source": "assets/illustrations/tb4a_wednesday.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "966996eaa126c210893517c5917049744ceab5fd82a8d1bdedd88dbd27f0c29b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_thursday.svg": {
+      "source": "assets/illustrations/tb4a_thursday.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "7052fe8bf41cb411662820951d0480960317130a6f2aead03d6f1276c29d6db6",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_friday.svg": {
+      "source": "assets/illustrations/tb4a_friday.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "8d77a18836c2c8de7619ff8214f25148f84d87a33e94cb01bca456cc05e12fb5",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_saturday.svg": {
+      "source": "assets/illustrations/tb4a_saturday.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d547179ea82165fd74ad1338792a89b0482fb721d816157ed1482e4037a729ee",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_up.svg": {
+      "source": "assets/illustrations/tb4a_up.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "9c29695bdf46bca0adc4c01b342526cadbe714766696729e2b6b82d135687512",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_so.svg": {
+      "source": "assets/illustrations/tb4a_so.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "923d5762e6fd9451f6588ffa9df424b8a158b76b9d9a0fca2bf714759a87b249",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_when.svg": {
+      "source": "assets/illustrations/tb4a_when.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "bd09cd09dc154e52ba08fcca62b3bbaf5b03afb1ac6146827efe4a6b2fbbb9f6",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_every.svg": {
+      "source": "assets/illustrations/tb4a_every.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "3e69b40f21f827e6b230d90d0d5463f62b7d9c61bc7540f7793ff63a3a6257db",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_at.svg": {
+      "source": "assets/illustrations/tb4a_at.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "162a6b812ed52b5239784e6961a2ccfb17bd0a9ec6c8bfbfdd5feef6e697fa81",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_today.svg": {
+      "source": "assets/illustrations/tb4a_today.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "98df902f69ca918aa827e9bc2871ee2aee53f242f5d1497c38c97daf923b9186",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_what_day_is_it_today.svg": {
+      "source": "assets/illustrations/tb4a_what_day_is_it_today.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "510b77dc3341f8b00bece6843f258a58a22503c93cfecc6ee3f5f5a7d17e5a7c",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_cinema.svg": {
+      "source": "assets/illustrations/tb4a_cinema.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "66c351f6e7ee7f6389f0439f2644590ce98ebbdf31314fc68869a93dea40d0a9",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_after_school.svg": {
+      "source": "assets/illustrations/tb4a_after_school.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "09bba6ad4749058d47c14f5b4ddafe1ccccfffb1f06d1781b076a767d83df99d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_dancing.svg": {
+      "source": "assets/illustrations/tb4a_dancing.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "ea181737b81a06594d21e3cea52e024037990d468d43ebcaf196aaf4e5177571",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_lesson.svg": {
+      "source": "assets/illustrations/tb4a_lesson.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "5e552324c91b3768cddf25ccccfb27fa32298147fa14500d9a0de7ac972c7fd9",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_walk.svg": {
+      "source": "assets/illustrations/tb4a_walk.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "14218ee0e78651feef8e9f6659cdb564564eb19d821917f8dcfff263fe1d62b7",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_dog.svg": {
+      "source": "assets/illustrations/tb4a_dog.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "fb241e442bf311679cf992d27de865cdd85617cacc7aad2d5399f50dda6da9a4",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_tomorrow.svg": {
+      "source": "assets/illustrations/tb4a_tomorrow.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "6667757e42617c8dba887c9225504b1642f019bc0ca9c0c47cfa3e295272dde8",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_free.svg": {
+      "source": "assets/illustrations/tb4a_free.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "6bdde7bee3a59bd69f7d7181689eab4834a891b673b3e2f144cc6db22bda48dc",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_see_you_tomorrow.svg": {
+      "source": "assets/illustrations/tb4a_see_you_tomorrow.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "18d231000499d4e6467c45511c0a78ddc4b8c7effbdc1fc98af5a48cb7bb2b5d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_mr_wilson.svg": {
+      "source": "assets/illustrations/tb4a_mr_wilson.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "656486c19fc2f1a46295c8add8b70f8dabbaca0cd536d1de0aeb82e8dbce510b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_play.svg": {
+      "source": "assets/illustrations/tb4a_play.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "9c234df442cde96578e38bb161362a94b5d153cf612e54967dfbee47e039d8eb",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_football.svg": {
+      "source": "assets/illustrations/tb4a_football.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "5612530932b7cec81e37dfb22894053c792f79177bef513729a1ffa72615aadf",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_ping_pong.svg": {
+      "source": "assets/illustrations/tb4a_ping_pong.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "792f1d01368bda061932c8ac8b955b057af6ff64fbf59bd1c8b4be54d7109b2b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_basketball.svg": {
+      "source": "assets/illustrations/tb4a_basketball.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "163a7643a997e1af7c07ef85506551170ccc4454661a90397b48823e7d7d2f69",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_great.svg": {
+      "source": "assets/illustrations/tb4a_great.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "5db3f2c504f8dd0f399365ae97c86840cdc6afead6efa3f76e070b86cdbe2ab8",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_well.svg": {
+      "source": "assets/illustrations/tb4a_well.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "994fa4ffad913d33a3579cf80312bc3b98f529e702c463f857fa7ce377cc5267",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_swimming.svg": {
+      "source": "assets/illustrations/tb4a_swimming.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "661c84280d0fb8b33168fded86dab05ef34810a5223dfa37d2650433d0c2e962",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_have_a_go.svg": {
+      "source": "assets/illustrations/tb4a_have_a_go.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "735ca195d09f2801437548c4eaedae4a648145a34577af349e920131b2ea4736",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_hard.svg": {
+      "source": "assets/illustrations/tb4a_hard.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "168a7c1bfb271e17008a090c61189ec168956065fbdab39a23241078b1258da8",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_it_s_ok.svg": {
+      "source": "assets/illustrations/tb4a_it_s_ok.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e2856090378f1be7a5612b1511ad8328be8bc71ab4aa75c4f3853dedc0076a68",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_oops.svg": {
+      "source": "assets/illustrations/tb4a_oops.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "58391330e349bd1f2ca7599a614e14f479abf41a7380bbd548701225e096ee8e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_try.svg": {
+      "source": "assets/illustrations/tb4a_try.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "21b515248abbf7dfb888fb62bf2164c8c3a0dd8bcff433c91a06d228d8c73b84",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_well_played.svg": {
+      "source": "assets/illustrations/tb4a_well_played.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "4b9a8991b287a5ce2942da3df59f61fd90997a590524cb762b22a10da344a97d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_different.svg": {
+      "source": "assets/illustrations/tb4a_different.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "2732c0b2c95b78d51b91f52aaab45ce7ae890c4b10dc8b909f558745dc3f5882",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_same.svg": {
+      "source": "assets/illustrations/tb4a_same.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e35d931882753d7a871d8d558e341da53f98a4f065401b5cfb5115918b5df72a",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_hair.svg": {
+      "source": "assets/illustrations/tb4a_hair.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "75f45cec274a15b9587f02410df7e070c111e7f2764913128dfa319682035bcb",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_eye.svg": {
+      "source": "assets/illustrations/tb4a_eye.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "494a734921f55df59bb794c5a94fc954a6c3cf27ce0fb07b76e0bb1a18c042c8",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_ear.svg": {
+      "source": "assets/illustrations/tb4a_ear.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "c16102b9dfd5c07dc7343ace64a5fab7f546e7c7149ae41f3e86f4497984db3b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_nose.svg": {
+      "source": "assets/illustrations/tb4a_nose.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "181698a2ed8aa535a64df8e8b42c7dc770cb43fe4923fc177c57396ed2d35188",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_mouth.svg": {
+      "source": "assets/illustrations/tb4a_mouth.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "b038112fa78a785483d2321b2744b47e8727560c3e04d0e98c303c5b8f61f048",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_arm.svg": {
+      "source": "assets/illustrations/tb4a_arm.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "3b3e387c911846fe466c8ce061933b687dc2bc4746e1643c5f930ba0f063ab0b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_leg.svg": {
+      "source": "assets/illustrations/tb4a_leg.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "5e0aae8a6b8355e1947215e6067cefdc9c3d917371c1e37ddf97d2fa15704780",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_robot.svg": {
+      "source": "assets/illustrations/tb4a_robot.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "11445383c2dc619dc9809259c702eb5d1328e8de32c19cabca308f67a6212c55",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_his.svg": {
+      "source": "assets/illustrations/tb4a_his.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "b699ef99b85aedfb9fcef08188d3b2f1e378366d098e8f4d15aa33d26a5f4d1f",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_tall.svg": {
+      "source": "assets/illustrations/tb4a_tall.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "9f3e062de5e0369f07d7dd64bca465c94212b8880b673b5fcd97bfc113a87d7e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_short.svg": {
+      "source": "assets/illustrations/tb4a_short.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "38ceea1e485658dc6f1ea4a9bb76dcb208dd043ed4077cdff5f1b502687154e7",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_doll.svg": {
+      "source": "assets/illustrations/tb4a_doll.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e4d79d64521786eb9da4ae90f9440308bcb4594bdbc484cbf9ef6bf184aa4588",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_her.svg": {
+      "source": "assets/illustrations/tb4a_her.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "0d464643e2f4c30c8c74e572eaf9499c28d03d36bdcd42554274194fb6118403",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_small.svg": {
+      "source": "assets/illustrations/tb4a_small.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "4286381dbd74c1a97fe1577512c97bfc89a6afa9fb8a8aefe39c8a03167e230b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_bring.svg": {
+      "source": "assets/illustrations/tb4a_bring.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "8eee231f5e39e53537d09a75b07e2b87769b7f7e56935b47c20e6e457520b5af",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_lots_of.svg": {
+      "source": "assets/illustrations/tb4a_lots_of.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "f7bc1d8a3f18142c3c8f1d07b8cd1ee9e612c164ce28fdadd8205f05fe65e7ce",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_puppet.svg": {
+      "source": "assets/illustrations/tb4a_puppet.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "f2654434efc002e8bc610eda3b34414606162fe2946c0aa82fc539d3a44b8fd9",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_show.svg": {
+      "source": "assets/illustrations/tb4a_show.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d6a8ce6bf71ce6fd705e76da70d8543117cdd9f79dbccaaba76137da08e85ccd",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_grace.svg": {
+      "source": "assets/illustrations/tb4a_grace.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "72ce9ce78df2541ddb8288a45f0b692cafed17f6b71e84e4f86b4a9ade8bc7eb",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_weather.svg": {
+      "source": "assets/illustrations/tb4a_weather.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "cf718857c6685d8b2f482a166f3040aef42fe10e0ac9da0b8fdb260b705aabb6",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_cloudy.svg": {
+      "source": "assets/illustrations/tb4a_cloudy.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "8947d3198437d0008333ac6fbdbfd0503a8a82d671d74b799d835b59c9ffd0c1",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_sunny.svg": {
+      "source": "assets/illustrations/tb4a_sunny.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "469dad52c5a205720f6e450463c10df87203559cb168b699a0c6ff60c9bb16dd",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_cool.svg": {
+      "source": "assets/illustrations/tb4a_cool.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "396cc3e661c561d077f496ee5699f72b20f85d81c8c70c8bcd2158d555b15ed4",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_rainy.svg": {
+      "source": "assets/illustrations/tb4a_rainy.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e23b53a224d588ada90a8224319ee2be0005ec0bc0ad730711c765b631cb9432",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_hot.svg": {
+      "source": "assets/illustrations/tb4a_hot.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "852c494975574cf2bba36b7b6ae71b083c2d9db30425d5de5f92c6b047cad26a",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_windy.svg": {
+      "source": "assets/illustrations/tb4a_windy.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "496d0fff0d651735f7ecbb5b4ad174e8ab874abe4b22ba88fdf359ad727d8e45",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_warm.svg": {
+      "source": "assets/illustrations/tb4a_warm.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "0913595312f80865b45da9aa80bec4f084f21715305c85eb3f20b834bd5365fa",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_save_for_a_rainy_day.svg": {
+      "source": "assets/illustrations/tb4a_save_for_a_rainy_day.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "911488c018a03ccd331cb28988f82b0b4c64b3f079d16a74534a4117ee44c8bb",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_money.svg": {
+      "source": "assets/illustrations/tb4a_money.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "0e24efc49b33747f7189b7123b3ce78bc05abdbddb5b9c7659c967f5e9acb39e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_what_s_the_weather_like_today.svg": {
+      "source": "assets/illustrations/tb4a_what_s_the_weather_like_today.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "442c2baa817c59afc9df4e59b95280aa68e65ca133c7645fa4412a66d02c5edc",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_park.svg": {
+      "source": "assets/illustrations/tb4a_park.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "05f358baf1638327937e5b27d04401312c69959421e1622fce02d12db4082993",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_meet.svg": {
+      "source": "assets/illustrations/tb4a_meet.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "bd73047c622019895f03c7055dd3f9e3fd0f8a9f1f6a30f6db4dbbc66432752b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_fly_a_kite.svg": {
+      "source": "assets/illustrations/tb4a_fly_a_kite.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "889049b41a9888dc5639873cf8f906cdf33016ace4b2de3d873d4292b9fbe8b9",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_worry.svg": {
+      "source": "assets/illustrations/tb4a_worry.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "05001b78ce0dbf8af8dbcfe8e29826d4aea09f5a60f460981ccfa6084fea0efd",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_umbrella.svg": {
+      "source": "assets/illustrations/tb4a_umbrella.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "fadeab70663bc006686e2ac95573374b45308018396fcc85e6a999dbd3445d50",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_there.svg": {
+      "source": "assets/illustrations/tb4a_there.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "cac82fed9bc57bd59ce47a456147c46ae5feba98cc15b3d11c931943013af134",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_harbin.svg": {
+      "source": "assets/illustrations/tb4a_harbin.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "c1b8dcedec62369997a92949f844794974c02d7364306822c440cb79212eb79c",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_macao.svg": {
+      "source": "assets/illustrations/tb4a_macao.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "dd214abfe9a216c5f0a64483626c3e66443455e394d404310c39259bd6eacff8",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_season.svg": {
+      "source": "assets/illustrations/tb4a_season.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "82a61328fbd6fefa53d928b668dcb698cea67f2d985b558ad32bf21a46ca647d",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_spring.svg": {
+      "source": "assets/illustrations/tb4a_spring.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "53991f0a780014accd6d3f25b7cc7cbe60dac736a4cedf148ea1f4d2e59e6dc2",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_go_boating.svg": {
+      "source": "assets/illustrations/tb4a_go_boating.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "bd545b704c5f8cd71a357b8f100a01e3e1eb53cc27a47cc1cde92a5a201b6d2f",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_winter.svg": {
+      "source": "assets/illustrations/tb4a_winter.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "189019a969e3a88196b9e3abd1e8b9fe83a160821c8e8c8d6048fad8e629aaaf",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_go_skating.svg": {
+      "source": "assets/illustrations/tb4a_go_skating.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "2df63ade5c907840bbd6c32492693d7c0a907beeff6a0d3aac53e019d0f16154",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_summer.svg": {
+      "source": "assets/illustrations/tb4a_summer.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "7e7f0b6e2a5a0e7d61a03e731404de2362f051ce1e332d4ba99823167aa0e175",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_ice_cream.svg": {
+      "source": "assets/illustrations/tb4a_ice_cream.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "05fc84e027a1331eb086b348cd7987062dd25681d77d11aabc67139eae3810a9",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_go_swimming.svg": {
+      "source": "assets/illustrations/tb4a_go_swimming.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "128a3c9a067353c1d79ba5f5218323297352e5465ed2827a24677589c1ca349a",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_autumn.svg": {
+      "source": "assets/illustrations/tb4a_autumn.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "cfbfde69f95a451237743c14b80cf4fda237d6e1e51feac804a809c8ead12596",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_go_climbing.svg": {
+      "source": "assets/illustrations/tb4a_go_climbing.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "ac20bd3129b052f769a82da8024f8f56a50b1b2d089a83a1bf1aee950280e5fc",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_cold.svg": {
+      "source": "assets/illustrations/tb4a_cold.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d72287b9faeb9d410d8dc805ec943d63a78fe5f02205bd7edc5ae9115bffd41b",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_bird.svg": {
+      "source": "assets/illustrations/tb4a_bird.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "bb13efd44cbbab0c0f78da1b3cae19d309b5340217d9d70de7c488ec8e7d7983",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_back.svg": {
+      "source": "assets/illustrations/tb4a_back.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "3908e025c53831095f2cfdc01bc059ac97a106f1ddfb0665bfe60495f140fe77",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_in.svg": {
+      "source": "assets/illustrations/tb4a_in.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "7611612407cd5bc78002c0ec1ed20afc0c129f931f97655aac81ddecb2c7fc5c",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_year.svg": {
+      "source": "assets/illustrations/tb4a_year.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "10925da483b25c4d62ce1d0fa2d3bc726ac6614f9dda2af092b7b330cd4e22aa",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_plant.svg": {
+      "source": "assets/illustrations/tb4a_plant.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "73bba3eff92dbe301a2264203d0bcf4c137b14b2f6bbf9bb61f36c45ed5b548e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_pick.svg": {
+      "source": "assets/illustrations/tb4a_pick.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "29e71042a6465ff508f6d34cbb4dfb324022d8fa777198cd011d55cdbcdc21ce",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_snow.svg": {
+      "source": "assets/illustrations/tb4a_snow.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "236a936c9dee68a1adcf24325fa306dc2674e7d58a6a000a1b540486c6f62e5a",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_holiday.svg": {
+      "source": "assets/illustrations/tb4a_holiday.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "5425366c3cfd492c3509247c309afc24d2db79d7483277654a079abed29f9e79",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_clothes.svg": {
+      "source": "assets/illustrations/tb4a_clothes.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "2ea0d95e65dbcd7f7896c4eddbdab6143b60d2dbf0c8d4bb6706829c5245a019",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_cap.svg": {
+      "source": "assets/illustrations/tb4a_cap.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "e9373a61c84ee1b2cb5e243ddea0931604d40c24b8f9173d62f496bb5fc635c0",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_coat.svg": {
+      "source": "assets/illustrations/tb4a_coat.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "febc6a6376fb4e8fca6d202f8f00f9dc1fddc81ff5a9d9458c5332a767b42137",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_skirt.svg": {
+      "source": "assets/illustrations/tb4a_skirt.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "523335b06734330dcc92dd03471ba3fdc46e242315911e046d76065f9603f0c6",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_trousers.svg": {
+      "source": "assets/illustrations/tb4a_trousers.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "564ef8d566ed84ff4649254ffbe97a8af2fca3ff52e3d6223eb55dad5160d97f",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_shorts.svg": {
+      "source": "assets/illustrations/tb4a_shorts.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "14b6f2a5e081c03230ba97c14715fb508896dc1bd82a16ec3d3a0940e1f0e2db",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_dress.svg": {
+      "source": "assets/illustrations/tb4a_dress.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "ac8a99b073c9260000a49957dc1df805690a7d22e9f71b4eee2eadf236a8da9c",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_shirt.svg": {
+      "source": "assets/illustrations/tb4a_shirt.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "d2bbbb1699307d8d9d2b8ee5de8a41efdc0f2fce540796b881a251cca29b79aa",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_look.svg": {
+      "source": "assets/illustrations/tb4a_look.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "1319a4a018cec7313fc79d22c5a0ca7ddcdce5e9bf6be723112de4005d9913de",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_sunglasses.svg": {
+      "source": "assets/illustrations/tb4a_sunglasses.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "a5eef732b34d4876686a3206d797fe18efea06fd4138467adbbc1d91d253f395",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_why.svg": {
+      "source": "assets/illustrations/tb4a_why.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "0356f45f46d97ce422dd880614e6f5df37561519ae07e667d7e3c74eb0b55535",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_wear.svg": {
+      "source": "assets/illustrations/tb4a_wear.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "611ec3bc8f9f3099422b3f20f2fa080c3c60e81f7d113d6b95ce35847263c24e",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_because.svg": {
+      "source": "assets/illustrations/tb4a_because.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "2b2f7cd562edde0d87ad77a273a3c62a2330660e21fd283b54c58af47ecea075",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_bright.svg": {
+      "source": "assets/illustrations/tb4a_bright.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "b8ea5264139f84e409bc0f1d1404f3ca68a56fa344b66a5f2582b683c2facd4a",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_whose.svg": {
+      "source": "assets/illustrations/tb4a_whose.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "0309f25608631b4123961b09d6f01780ba0bb4ff7b51b1aa601d1738243f8bfa",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_chinese_new_year.svg": {
+      "source": "assets/illustrations/tb4a_chinese_new_year.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "de0e5d7fe4a6d7b1f36efb1f8a7ef0a9b29e5b5af2ac8c4f34733fa3e646e205",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
+    },
+    "/images/words/tb4a_kitty.svg": {
+      "source": "assets/illustrations/tb4a_kitty.svg",
+      "creator": "W-English contributors（AI 生成：cpa/gpt-5.6-sol）",
+      "license": "MIT",
+      "permissionEvidence": "LICENSE",
+      "evidenceFiles": [
+        "LICENSE"
+      ],
+      "sha256": "245246a24598abbd486677b786f0429dc94bc8a58f91db8dd95a5716cc166ea2",
+      "reviewer": "model:gpt-5.6-sol",
+      "reviewedAt": "2026-10-14T23:37:22.289Z"
     }
   }
 }

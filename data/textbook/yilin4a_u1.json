@@ -35,6 +35,9 @@
     "w_tb4a_129"
   ],
   "spriteIds": [
-    "tb4a_u1"
+    "tb4a_u1",
+    "tb4a_u1_p",
+    "tb4a_u1_s",
+    "tb4a_u1_p2"
   ]
 }

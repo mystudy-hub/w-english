@@ -2,9 +2,8 @@
   {
     "schemaVersion": 3,
     "wordId": "w_cat_001",
+    "kind": "word",
     "word": "cat",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "animals",
     "spelling": [
       "c",
@@ -70,14 +69,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_dog_006",
+    "kind": "word",
     "word": "dog",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "animals",
     "spelling": [
       "d",
@@ -143,14 +143,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_pig_007",
+    "kind": "word",
     "word": "pig",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "animals",
     "spelling": [
       "p",
@@ -216,14 +217,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_hen_008",
+    "kind": "word",
     "word": "hen",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "animals",
     "spelling": [
       "h",
@@ -289,14 +291,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_sun_002",
+    "kind": "word",
     "word": "sun",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "nature",
     "spelling": [
       "s",
@@ -362,14 +365,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_bed_009",
+    "kind": "word",
     "word": "bed",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "family",
     "spelling": [
       "b",
@@ -435,14 +439,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_bag_010",
+    "kind": "word",
     "word": "bag",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "school",
     "spelling": [
       "b",
@@ -508,14 +513,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_cup_011",
+    "kind": "word",
     "word": "cup",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "family",
     "spelling": [
       "c",
@@ -581,14 +587,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_hat_012",
+    "kind": "word",
     "word": "hat",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "family",
     "spelling": [
       "h",
@@ -654,14 +661,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_pen_013",
+    "kind": "word",
     "word": "pen",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "school",
     "spelling": [
       "p",
@@ -727,14 +735,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_rat_014",
+    "kind": "word",
     "word": "rat",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "animals",
     "spelling": [
       "r",
@@ -800,14 +809,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_bat_015",
+    "kind": "word",
     "word": "bat",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "animals",
     "spelling": [
       "b",
@@ -873,14 +883,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_ram_016",
+    "kind": "word",
     "word": "ram",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "animals",
     "spelling": [
       "r",
@@ -946,14 +957,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_bug_017",
+    "kind": "word",
     "word": "bug",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "animals",
     "spelling": [
       "b",
@@ -1019,14 +1031,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_map_018",
+    "kind": "word",
     "word": "map",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "school",
     "spelling": [
       "m",
@@ -1092,14 +1105,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_cap_019",
+    "kind": "word",
     "word": "cap",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "family",
     "spelling": [
       "c",
@@ -1165,14 +1179,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_pan_020",
+    "kind": "word",
     "word": "pan",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "family",
     "spelling": [
       "p",
@@ -1238,14 +1253,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_net_021",
+    "kind": "word",
     "word": "net",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "family",
     "spelling": [
       "n",
@@ -1311,14 +1327,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_log_022",
+    "kind": "word",
     "word": "log",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "nature",
     "spelling": [
       "l",
@@ -1384,14 +1401,15 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_pot_023",
+    "kind": "word",
     "word": "pot",
-    "track": "phonics",
-    "phonicsStage": 1,
     "theme": "family",
     "spelling": [
       "p",
@@ -1457,11 +1475,14 @@
     "review": {
       "status": "draft"
     },
-    "contentVersion": "2026.09.3"
+    "contentVersion": "2026.09.3",
+    "track": "phonics",
+    "phonicsStage": 1
   },
   {
     "schemaVersion": 3,
     "wordId": "w_fish_024",
+    "kind": "word",
     "word": "fish",
     "theme": "animals",
     "spelling": [
@@ -1537,6 +1558,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_bird_025",
+    "kind": "word",
     "word": "bird",
     "theme": "animals",
     "spelling": [
@@ -1612,6 +1634,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_rabbit_026",
+    "kind": "word",
     "word": "rabbit",
     "theme": "animals",
     "spelling": [
@@ -1706,6 +1729,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_turtle_027",
+    "kind": "word",
     "word": "turtle",
     "theme": "animals",
     "spelling": [
@@ -1795,6 +1819,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_snail_028",
+    "kind": "word",
     "word": "snail",
     "theme": "animals",
     "spelling": [
@@ -1879,6 +1904,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_worm_029",
+    "kind": "word",
     "word": "worm",
     "theme": "animals",
     "spelling": [
@@ -1954,6 +1980,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_egg_030",
+    "kind": "word",
     "word": "egg",
     "theme": "food",
     "spelling": [
@@ -2020,6 +2047,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_bone_031",
+    "kind": "word",
     "word": "bone",
     "theme": "body",
     "spelling": [
@@ -2100,6 +2128,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_box_032",
+    "kind": "word",
     "word": "box",
     "theme": "school",
     "spelling": [
@@ -2175,6 +2204,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_key_033",
+    "kind": "word",
     "word": "key",
     "theme": "family",
     "spelling": [
@@ -2241,6 +2271,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_lock_034",
+    "kind": "word",
     "word": "lock",
     "theme": "family",
     "spelling": [
@@ -2316,6 +2347,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_gift_035",
+    "kind": "word",
     "word": "gift",
     "theme": "family",
     "spelling": [
@@ -2398,6 +2430,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_house_036",
+    "kind": "word",
     "word": "house",
     "theme": "family",
     "spelling": [
@@ -2480,6 +2513,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_door_037",
+    "kind": "word",
     "word": "door",
     "theme": "family",
     "spelling": [
@@ -2549,6 +2583,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_apple_005",
+    "kind": "word",
     "word": "apple",
     "theme": "food",
     "spelling": [
@@ -2629,6 +2664,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_banana_039",
+    "kind": "word",
     "word": "banana",
     "theme": "food",
     "spelling": [
@@ -2731,6 +2767,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_cherry_040",
+    "kind": "word",
     "word": "cherry",
     "theme": "food",
     "spelling": [
@@ -2818,6 +2855,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_grape_041",
+    "kind": "word",
     "word": "grape",
     "theme": "food",
     "spelling": [
@@ -2907,6 +2945,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_carrot_042",
+    "kind": "word",
     "word": "carrot",
     "theme": "food",
     "spelling": [
@@ -3001,6 +3040,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_nut_043",
+    "kind": "word",
     "word": "nut",
     "theme": "food",
     "spelling": [
@@ -3074,6 +3114,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_bean_044",
+    "kind": "word",
     "word": "bean",
     "theme": "food",
     "spelling": [
@@ -3149,6 +3190,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_milk_045",
+    "kind": "word",
     "word": "milk",
     "theme": "food",
     "spelling": [
@@ -3231,6 +3273,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_soup_046",
+    "kind": "word",
     "word": "soup",
     "theme": "food",
     "spelling": [
@@ -3306,6 +3349,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_bread_047",
+    "kind": "word",
     "word": "bread",
     "theme": "food",
     "sightWordList": "dolch_nouns",
@@ -3390,6 +3434,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_cake_048",
+    "kind": "word",
     "word": "cake",
     "theme": "food",
     "spelling": [
@@ -3470,6 +3515,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_cookie_049",
+    "kind": "word",
     "word": "cookie",
     "theme": "food",
     "spelling": [
@@ -3557,6 +3603,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_candy_050",
+    "kind": "word",
     "word": "candy",
     "theme": "food",
     "spelling": [
@@ -3649,6 +3696,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_corn_051",
+    "kind": "word",
     "word": "corn",
     "theme": "food",
     "spelling": [
@@ -3726,6 +3774,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_leaf_052",
+    "kind": "word",
     "word": "leaf",
     "theme": "nature",
     "spelling": [
@@ -3801,6 +3850,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_tree_053",
+    "kind": "word",
     "word": "tree",
     "theme": "nature",
     "spelling": [
@@ -3876,6 +3926,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_flower_054",
+    "kind": "word",
     "word": "flower",
     "theme": "nature",
     "spelling": [
@@ -3963,6 +4014,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_grass_055",
+    "kind": "word",
     "word": "grass",
     "theme": "nature",
     "spelling": [
@@ -4047,6 +4099,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_rain_056",
+    "kind": "word",
     "word": "rain",
     "theme": "nature",
     "spelling": [
@@ -4122,6 +4175,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_cloud_057",
+    "kind": "word",
     "word": "cloud",
     "theme": "nature",
     "spelling": [
@@ -4206,6 +4260,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_snow_058",
+    "kind": "word",
     "word": "snow",
     "theme": "nature",
     "spelling": [
@@ -4281,6 +4336,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_moon_059",
+    "kind": "word",
     "word": "moon",
     "theme": "nature",
     "spelling": [
@@ -4356,6 +4412,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_star_060",
+    "kind": "word",
     "word": "star",
     "theme": "nature",
     "spelling": [
@@ -4433,6 +4490,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_wind_061",
+    "kind": "word",
     "word": "wind",
     "theme": "nature",
     "spelling": [
@@ -4515,6 +4573,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_pond_062",
+    "kind": "word",
     "word": "pond",
     "theme": "nature",
     "spelling": [
@@ -4597,6 +4656,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_rock_063",
+    "kind": "word",
     "word": "rock",
     "theme": "nature",
     "spelling": [
@@ -4672,6 +4732,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_seed_064",
+    "kind": "word",
     "word": "seed",
     "theme": "nature",
     "spelling": [
@@ -4747,6 +4808,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_red_065",
+    "kind": "word",
     "word": "red",
     "theme": "colors",
     "spelling": [
@@ -4820,6 +4882,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_green_066",
+    "kind": "word",
     "word": "green",
     "theme": "colors",
     "spelling": [
@@ -4904,6 +4967,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_blue_004",
+    "kind": "word",
     "word": "blue",
     "theme": "colors",
     "spelling": [
@@ -4979,6 +5043,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_the_068",
+    "kind": "word",
     "word": "the",
     "theme": "school",
     "sightWordList": "dolch_pre_primer",
@@ -5045,6 +5110,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_a_069",
+    "kind": "word",
     "word": "a",
     "theme": "school",
     "sightWordList": "dolch_pre_primer",
@@ -5100,6 +5166,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_you_070",
+    "kind": "word",
     "word": "you",
     "theme": "family",
     "sightWordList": "dolch_pre_primer",
@@ -5166,6 +5233,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_book_003",
+    "kind": "word",
     "word": "book",
     "theme": "school",
     "spelling": [
@@ -5241,6 +5309,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_pencil_072",
+    "kind": "word",
     "word": "pencil",
     "theme": "school",
     "spelling": [
@@ -5342,6 +5411,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_ruler_073",
+    "kind": "word",
     "word": "ruler",
     "theme": "school",
     "spelling": [
@@ -5427,6 +5497,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_brush_074",
+    "kind": "word",
     "word": "brush",
     "theme": "school",
     "spelling": [
@@ -5511,6 +5582,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_bell_075",
+    "kind": "word",
     "word": "bell",
     "theme": "school",
     "spelling": [
@@ -5586,6 +5658,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_clock_076",
+    "kind": "word",
     "word": "clock",
     "theme": "school",
     "spelling": [
@@ -5670,6 +5743,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_desk_077",
+    "kind": "word",
     "word": "desk",
     "theme": "school",
     "spelling": [
@@ -5752,6 +5826,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_chair_078",
+    "kind": "word",
     "word": "chair",
     "theme": "school",
     "spelling": [
@@ -5823,6 +5898,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_hand_079",
+    "kind": "word",
     "word": "hand",
     "theme": "body",
     "spelling": [
@@ -5905,6 +5981,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_ear_080",
+    "kind": "word",
     "word": "ear",
     "theme": "body",
     "spelling": [
@@ -5965,6 +6042,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_eye_081",
+    "kind": "word",
     "word": "eye",
     "theme": "body",
     "sightWordList": "dolch_nouns",
@@ -6023,6 +6101,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_foot_082",
+    "kind": "word",
     "word": "foot",
     "theme": "body",
     "spelling": [
@@ -6098,6 +6177,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_ball_083",
+    "kind": "word",
     "word": "ball",
     "theme": "school",
     "spelling": [
@@ -6173,6 +6253,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_doll_084",
+    "kind": "word",
     "word": "doll",
     "theme": "school",
     "spelling": [
@@ -6248,6 +6329,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_kite_085",
+    "kind": "word",
     "word": "kite",
     "theme": "school",
     "spelling": [
@@ -6328,6 +6410,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_bike_086",
+    "kind": "word",
     "word": "bike",
     "theme": "school",
     "spelling": [
@@ -6408,6 +6491,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_car_087",
+    "kind": "word",
     "word": "car",
     "theme": "school",
     "spelling": [
@@ -6476,6 +6560,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_bus_088",
+    "kind": "word",
     "word": "bus",
     "theme": "school",
     "spelling": [
@@ -6549,6 +6634,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_truck_089",
+    "kind": "word",
     "word": "truck",
     "theme": "school",
     "spelling": [
@@ -6633,6 +6719,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_train_090",
+    "kind": "word",
     "word": "train",
     "theme": "school",
     "spelling": [
@@ -6717,6 +6804,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_ship_091",
+    "kind": "word",
     "word": "ship",
     "theme": "school",
     "spelling": [
@@ -6792,6 +6880,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_flag_092",
+    "kind": "word",
     "word": "flag",
     "theme": "school",
     "spelling": [
@@ -6874,6 +6963,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_tent_093",
+    "kind": "word",
     "word": "tent",
     "theme": "school",
     "spelling": [
@@ -6956,6 +7046,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_drum_094",
+    "kind": "word",
     "word": "drum",
     "theme": "school",
     "spelling": [
@@ -7038,6 +7129,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_ring_095",
+    "kind": "word",
     "word": "ring",
     "theme": "family",
     "spelling": [
@@ -7113,6 +7205,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_glue_096",
+    "kind": "word",
     "word": "glue",
     "theme": "school",
     "spelling": [
@@ -7188,6 +7281,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_pin_097",
+    "kind": "word",
     "word": "pin",
     "theme": "school",
     "spelling": [
@@ -7261,6 +7355,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_we_098",
+    "kind": "word",
     "word": "we",
     "theme": "family",
     "sightWordList": "dolch_pre_primer",
@@ -7325,6 +7420,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_is_099",
+    "kind": "word",
     "word": "is",
     "theme": "school",
     "sightWordList": "dolch_pre_primer",
@@ -7389,6 +7485,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_was_100",
+    "kind": "word",
     "word": "was",
     "theme": "school",
     "sightWordList": "dolch_primer",
@@ -7462,6 +7559,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_said_101",
+    "kind": "word",
     "word": "said",
     "theme": "school",
     "sightWordList": "dolch_pre_primer",
@@ -7537,6 +7635,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_one_102",
+    "kind": "word",
     "word": "one",
     "theme": "school",
     "sightWordList": "dolch_pre_primer",
@@ -7610,6 +7709,7 @@
   {
     "schemaVersion": 3,
     "wordId": "w_to_103",
+    "kind": "word",
     "word": "to",
     "theme": "school",
     "sightWordList": "dolch_pre_primer",

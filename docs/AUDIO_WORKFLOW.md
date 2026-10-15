@@ -120,3 +120,22 @@ npm run audio:pack -- --sprite animal_home,animal_home_extra
 导入会重新核对整批身份、词义/图片及发音要求指纹、源音频、最终精灵和切片区间；批次过期或素材变化时拒绝应用。原始审核结果及被替换源文件备份到 `artifacts/review/backups/<时间>/`。词条只在当前文本和对应全部语音审批齐全时达到 `audio_approved`；向导片段还需通过发布包的独立检查。
 
 本机草稿保存依赖浏览器，审核结束应导出结果。网页/脚本通过不代替老师在目标设备试听，工程不会填写真实审核人或自动批准缺失素材。
+
+
+## 6. 自用模式辅助生产链（2026-10-15 实际采用）
+
+上面 1~5 节描述正式的「老师听审」标准流程。自用场景下，本轮按 `policy: model-assisted`（见 `data/audio-approvals.json` 与 `data/content-approvals.json`）用机器替代了听审环节，链路如下：
+
+```bash
+npm run audio:generate          # edge-tts 生成 audio-source/（词/例句/向导；音素近似由 IPA 符号映射）
+npm run audio:pack              # 打包全部精灵（课本每单元拆 4 个：词/例句/音素前半/后半，单个 ≤180 秒）
+npm run audio:asr               # faster-whisper 回读全部语言片段（word/slow/sentence/guide，共 829 个）
+npm run audio:approve           # ASR 结果 + 生产指纹 → data/audio-approvals.json（reviewer=model:asr-…）
+```
+
+- **学科缩写**：`PE`/`IT` 会被 edge-tts 念成单词音，生成脚本按 `P. E.`/`I. T.` 逐字母合成，与词条 IPA（/ˌpiːˈiː/、/ˌaɪˈtiː/）一致。
+- **ASR 比对归一**：阿拉伯数字归一成英文词（`30`→`thirty`）；英文同音词组视为等价（`eye`↔`I`、`wear`↔`where`）；中文按无声调拼音比对（繁简与同音字不误报）。未过的片段用更强模型重试（`--model small/medium --retry artifacts/asr-report.json`），本轮 base→small→medium 三级全部通过（829/829）。
+- **音素片段**不做 ASR（孤立音素无法识别），由打包管线的参考增益与解码校验覆盖，审批记 `reviewer: model:pack-calibration`。
+- **审批指纹**逐片绑定：`spriteSha256`/`sourceSha256`/`promptSha256` 与切片区间来自 `artifacts/audio/index.json`，任何源文案或重新打包都会让旧审批失效（发布校验会拒绝）。
+- **边界**：该政策只授权到课本 172 词；探索 100 词的文本/图片审批仍未记录，`build:release` 继续拒绝（正确行为）。
+- **重打包注意**：改动个别源 WAV 后只重打对应精灵（`npm run audio:pack -- --sprite tb4a_u1,tb4a_u1_s`），再对该精灵重跑 `audio:asr --sprite …` 与 `audio:approve`。

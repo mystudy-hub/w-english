@@ -27,6 +27,8 @@
     "audio:inventory": "node scripts/audio-inventory.mjs",
     "audio:generate": "python scripts/generate_audio.py",
     "audio:pack": "node scripts/pack-audio.mjs",
+    "audio:asr": "python scripts/asr_verify.py",
+    "audio:approve": "node scripts/record-audio-approvals.mjs",
     "content:review": "node scripts/review-inventory.mjs",
     "review:import": "node scripts/import-review.mjs",
     "content:ai-review": "node scripts/ai-review.mjs"

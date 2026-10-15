@@ -23,6 +23,7 @@ import { OrientationDialog } from '../features/orientation.tsx';
 import { DianfanPage } from '../features/dianfan.tsx';
 import { DrillHome } from '../drill/drill-home.tsx';
 import { DrillSession } from '../drill/session.tsx';
+import { DrillReport } from '../drill/report.tsx';
 
 function App() {
   const route = useRoute(); const state = useAppStore(); const settings = useSettings();
@@ -89,6 +90,7 @@ function App() {
   else if (!state.onboardingComplete || route === '/setup') page = <Setup />;
   else if (route === '/drill') page = <DrillHome />;
   else if (route === '/drill/session') page = <DrillSession />;
+  else if (route === '/drill/report') page = <DrillReport />;
   else if (route === '/stickers' && (state.content?.manifest.stage ?? 0) >= 2) page = <StickerBook />;
   else if (route.startsWith('/dianfan')) page = <DianfanPage />;
   else if (route.startsWith('/word/')) page = <WordCard key={route} wordId={route.slice('/word/'.length)} />;

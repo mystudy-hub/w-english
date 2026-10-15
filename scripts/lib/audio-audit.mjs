@@ -5,13 +5,13 @@ import { clipPromptFingerprint } from './audio-inventory.mjs';
 const hash = z.string().regex(/^[a-f0-9]{64}$/);
 const text = z.string().trim().min(1);
 const pcmAsset = z.strictObject({
-  file: z.string().regex(/^pcm\/[a-z_]+(?:\.[a-z0-9_]+)?\.[a-f0-9]{16}\.wav$/), sha256: hash,
+  file: z.string().regex(/^pcm\/[a-z0-9_]+(?:\.[a-z0-9_]+)?\.[a-f0-9]{16}\.wav$/), sha256: hash,
   sampleRate: z.literal(24000), channels: z.literal(1), bitsPerSample: z.literal(16),
 });
 export const audioBuildSchema = z.strictObject({
   schemaVersion: z.literal(1), reviewStatus: z.literal('pending'),
-  sprites: z.record(z.string().regex(/^[a-z_]+$/), z.strictObject({
-    file: z.string().regex(/^[a-z_]+\.[a-f0-9]{16}\.mp3$/), sha256: hash,
+  sprites: z.record(z.string().regex(/^[a-z0-9_]+$/), z.strictObject({
+    file: z.string().regex(/^[a-z0-9_]+\.[a-f0-9]{16}\.mp3$/), sha256: hash,
     truePeakDb: z.number().max(-1), postGainDb: z.number().max(0), sprite: spriteSchema, pcm: pcmAsset.optional(),
     decoded: z.strictObject({ durationMs: z.number().positive(), sampleRate: z.number().int().positive(), checkedClips: z.number().int().positive() }).optional(),
   })),

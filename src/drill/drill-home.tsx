@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { ArrowLeft, BookOpen, CalendarCheck, Target } from 'lucide-react';
+import { ArrowLeft, BarChart3, BookOpen, CalendarCheck, Target } from 'lucide-react';
 import { navigate } from '../app/router.ts';
 import { drillRepository, saveSettings } from '../app/runtime.ts';
 import { readSettings, useAppStore } from '../app/store.ts';
@@ -69,6 +69,9 @@ export function DrillHome() {
         {mistakes.length > 0 && <div className="mt-4">
           <Button onClick={() => start(units[0]!.unitId, mistakes)}><Target size={18} />只练错词（{mistakes.length}）</Button>
         </div>}
+        <div className="mt-2 flex flex-wrap gap-2">
+          <Button onClick={() => navigate('/drill/report')}><BarChart3 size={18} />看学习报告</Button>
+        </div>
       </section>
 
       <section className="flex flex-col gap-3">

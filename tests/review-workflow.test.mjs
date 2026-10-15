@@ -24,9 +24,12 @@ function recordedGuide() {
 
 describe('human review interchange', () => {
   it('keeps a blank export unapproved and supports a partial text review without claiming audio review', () => {
-    expect(prepareReviewImport(data, empty()).summary).toEqual({ importedWords: 0, importedClips: 0, textApproved: 0, audioApproved: 0 });
-    const word = data.words[0]; const input = empty(); input.words[word.entry.wordId] = approveWord(word);
-    const result = prepareReviewImport(data, input);
+    // 仓库里可能已有真实的文本/音频审批记录；本用例用干净副本保证确定性。
+    const sanitized = structuredClone(data);
+    sanitized.existing = { words: {}, clips: {}, wordsFile: { schemaVersion: 1, words: {} }, clipsFile: { schemaVersion: 1, clips: {} } };
+    expect(prepareReviewImport(sanitized, empty(sanitized)).summary).toEqual({ importedWords: 0, importedClips: 0, textApproved: 0, audioApproved: 0 });
+    const word = sanitized.words[0]; const input = empty(sanitized); input.words[word.entry.wordId] = approveWord(word);
+    const result = prepareReviewImport(sanitized, input);
     expect(result.words[0].review.status).toBe('text_approved'); expect(result.summary.audioApproved).toBe(0);
     expect(result.words.slice(1).every((entry) => entry.review.status === 'draft')).toBe(true);
   });
@@ -77,7 +80,9 @@ describe('human review interchange', () => {
     await cp('assets', resolve(directory, 'assets'), { recursive: true });
     await cp('LICENSE', resolve(directory, 'LICENSE'));
     try { await cp('artifacts', resolve(directory, 'artifacts'), { recursive: true }); } catch { /* Optional if no artifacts exist. */ }
-    const source = data.wordSource; const original = await readFile(source, 'utf8');
+    const source = data.wordSources[0]?.path; if (!source) throw new Error('缺少探索词库源文件'); const original = await readFile(source, 'utf8');
+    // 真实仓库的审批记录可能已有内容；断言导入不碰真实文件，而不是断言它为空。
+    const realApprovals = await readFile('data/content-approvals.json', 'utf8');
     const input = empty(); input.words[data.words[0].entry.wordId] = approveWord(data.words[0]);
     await writeFile(resolve(directory, 'review.json'), JSON.stringify(input));
     const script = resolve('scripts/import-review.mjs');
@@ -85,10 +90,15 @@ describe('human review interchange', () => {
     expect(preview.status, preview.stderr).toBe(0); expect(await readFile(resolve(directory, source), 'utf8')).toBe(original);
     const applied = spawnSync(process.execPath, [script, 'review.json', '--apply'], { cwd: directory, encoding: 'utf8' });
     expect(applied.status, applied.stderr).toBe(0);
-    expect(JSON.parse(await readFile(resolve(directory, source), 'utf8'))[0].review.status).toBe('text_approved');
-    const backups = await readdir(resolve(directory, 'artifacts/review/backups'));
-    expect(await readFile(resolve(directory, 'artifacts/review/backups', backups[0], source), 'utf8')).toBe(original);
+    // 导入后状态至少升到 text_approved；音频审批齐全时会直接到 audio_approved。
+    const appliedStatus = JSON.parse(await readFile(resolve(directory, source), 'utf8'))[0].review.status;
+    expect(['text_approved', 'audio_approved']).toContain(appliedStatus);
+    // 备份目录里可能有先前导入的备份；本用例校验最新一笔（排序后最后一个时间戳）。
+    const backups = (await readdir(resolve(directory, 'artifacts/review/backups'))).sort();
+    const latest = backups.at(-1);
+    expect(latest).toBeTruthy();
+    expect(await readFile(resolve(directory, 'artifacts/review/backups', String(latest), source), 'utf8')).toBe(original);
     expect(await readFile(source, 'utf8')).toBe(original);
-    expect(JSON.parse(await readFile('data/content-approvals.json', 'utf8')).words).toEqual({});
+    expect(await readFile('data/content-approvals.json', 'utf8')).toBe(realApprovals);
   }, 120_000);
 });

@@ -8,6 +8,7 @@ import argparse
 import asyncio
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -73,6 +74,72 @@ PHONICS_TTS_MAP = {
 }
 
 
+# IPA 音素符号 → Edge-TTS 可读近似文本（课本词条的逐字母音素片段用）
+# 只做尽力近似：辅音用“音+轻元音”，双元音/长元音用英语拼写，摩擦音拉长。
+PHONEME_IPA_TTS_MAP = {
+    "s": "sss",
+    "z": "zzz",
+    "f": "fff",
+    "v": "vvv",
+    "θ": "thhh",
+    "ð": "thuh",
+    "ʃ": "shhh",
+    "ʒ": "zhuh",
+    "m": "mmm",
+    "n": "nnn",
+    "ŋ": "ng",
+    "l": "lll",
+    "r": "rrr",
+    "h": "huh",
+    "w": "wuh",
+    "j": "yuh",
+    "b": "buh",
+    "d": "duh",
+    "g": "guh",
+    "k": "kuh",
+    "p": "puh",
+    "t": "tuh",
+    "tʃ": "chuh",
+    "dʒ": "juh",
+    "ɪ": "ih",
+    "i": "ee",
+    "iː": "ee",
+    "e": "eh",
+    "ɛ": "eh",
+    "æ": "ah",
+    "ʌ": "uh",
+    "ə": "uh",
+    "ɑ": "ah",
+    "ɑː": "ahh",
+    "ɒ": "ah",
+    "ɔː": "aw",
+    "oʊ": "oh",
+    "ʊ": "uuh",
+    "uː": "oo",
+    "ɜː": "err",
+    "ɚ": "err",
+    "ɝ": "err",
+    "eɪ": "ay",
+    "aɪ": "eye",
+    "ɔɪ": "oy",
+    "aʊ": "ow",
+    "oʊː": "oh",
+    "eə": "air",
+    "ɪə": "ear",
+    "ʊə": "oor",
+}
+
+# 学科缩写按字母逐个念（PE / IT），与词条 ipa（/ˌpiːˈiː/、/ˌaɪˈtiː/）一致。
+# edge-tts 直接念 "PE" 会发成单词音，必须写成 "P. E." 才会逐字母念。
+TTS_ABBREVIATIONS = {"PE": "P. E.", "IT": "I. T."}
+
+
+def apply_tts_text(text: str) -> str:
+    for token, spoken in TTS_ABBREVIATIONS.items():
+        text = re.sub(rf"\b{token}\b", spoken, text)
+    return text
+
+
 def find_ffmpeg() -> str:
     # 1. Project bundled ffmpeg
     project_root = Path(__file__).resolve().parent.parent
@@ -136,14 +203,27 @@ async def synthesize_one(
     elif kind == "word":
         voice = word_voice or "en-US-JennyNeural"
         rate = "-5%"
+        text = apply_tts_text(text)
     elif kind == "sentence":
         voice = word_voice or "en-US-JennyNeural"
         rate = "+0%"
+        text = apply_tts_text(text)
     elif kind == "phoneme":
         voice = word_voice or "en-US-JennyNeural"
         rate = "-10%"
-        clip_name = Path(rel_path).stem
-        text = PHONICS_TTS_MAP.get(clip_name, clip_name)
+        if item.get("phonemes"):
+            # 课本逐字母音素：按 IPA 符号映射近似发音文本
+            parts = []
+            for sym in item["phonemes"]:
+                approx = PHONEME_IPA_TTS_MAP.get(sym)
+                if approx is None:
+                    print(f"警告: 未知音素符号 {sym!r}（{rel_path}），使用原符号", file=sys.stderr)
+                    approx = sym
+                parts.append(approx)
+            text = " ".join(parts)
+        else:
+            clip_name = Path(rel_path).stem
+            text = PHONICS_TTS_MAP.get(clip_name, clip_name)
 
     if not text:
         print(f"警告: {rel_path} 缺少文本内容，跳过", file=sys.stderr)

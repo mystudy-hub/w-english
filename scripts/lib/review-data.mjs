@@ -6,6 +6,7 @@ import { audioInventory, clipPromptFingerprint } from './audio-inventory.mjs';
 import { audioBuildSchema, verifyClipApprovals } from './audio-audit.mjs';
 import { contentFingerprint, verifyContentApprovals } from './content-audit.mjs';
 import { loadActiveCatalog } from './catalog-source.mjs';
+import { loadTextbookCatalog } from './textbook-source.mjs';
 import { readJson, sha256, within } from './files.mjs';
 import { readIllustration } from './illustrations.mjs';
 
@@ -17,8 +18,8 @@ const clipApproval = z.strictObject({ ref: label, reviewer: label, reviewedAt: z
   permissionEvidence: label, calibrationApproved: z.boolean() });
 export const reviewExportSchema = z.strictObject({
   reviewVersion: z.literal(1), datasetSha256: hash, contentVersion: label, exportedAt: z.iso.datetime({ offset: true }),
-  words: z.record(z.string().regex(/^w_[a-z]+_\d{3}$/), wordApproval),
-  clips: z.record(z.string().regex(/^[a-z_]+#[a-z0-9_]+$/), clipApproval),
+  words: z.record(z.string().regex(/^w_[a-z0-9]+_\d{3}$/), wordApproval),
+  clips: z.record(z.string().regex(/^[a-z0-9_]+#[a-z0-9_]+$/), clipApproval),
   notes: z.record(z.string(), z.string()).default({}),
   rejections: z.record(z.string(), z.strictObject({ reviewer: label, reviewedAt: z.iso.datetime({ offset: true }), note: label })).default({}),
 });
@@ -37,8 +38,8 @@ export function prepareReviewImport(data, input) {
     if (!word) throw new Error(`未知词条 ${id}`);
     if (approval.contentSha256 !== word.contentSha256 || approval.imageSha256 !== word.imageSha256) throw new Error(`${id}: 文本或图片已变化`);
   }
-  const words = { ...data.existing.words, ...value.words };
-  const clips = { ...data.existing.clips, ...value.clips };
+  const words = { ...data.existing.wordsFile.words, ...value.words };
+  const clips = { ...data.existing.clipsFile.clips, ...value.clips };
   for (const id of Object.keys(value.rejections)) {
     if (value.words[id] || value.clips[id]) throw new Error(`${id}: 不能同时批准和标记需修改`);
     if (data.words.some((word) => word.entry.wordId === id)) delete words[id];
@@ -65,42 +66,58 @@ export function prepareReviewImport(data, input) {
       reviewedAt: latest.reviewedAt } : { status: 'draft' };
     return { ...entry, review };
   });
-  return { contentApprovals: { schemaVersion: 1, words }, audioApprovals: { schemaVersion: 1, clips }, words: entries,
+  // 按源文件分组（探索一个文件，课本每单元一个文件），导入端逐文件落盘。
+  const wordsBySource = data.wordSources.map(({ path, wordIds }) => ({
+    path, words: entries.filter((entry) => wordIds.includes(entry.wordId)),
+  }));
+  return {
+    contentApprovals: { ...data.existing.wordsFile, words }, audioApprovals: { ...data.existing.clipsFile, clips },
+    wordsBySource, words: entries, entries,
     summary: { importedWords: Object.keys(value.words).length, importedClips: Object.keys(value.clips).length,
       textApproved: entries.filter((entry) => entry.review.status === 'text_approved').length,
-      audioApproved: entries.filter((entry) => entry.review.status === 'audio_approved').length }, notes: value.notes, rejections: value.rejections };
+      audioApproved: entries.filter((entry) => entry.review.status === 'audio_approved').length }, notes: value.notes, rejections: value.rejections,
+  };
 }
 
 export async function loadReviewData() {
   const catalog = await loadActiveCatalog();
+  const textbook = await loadTextbookCatalog(false, catalog.themes.flatMap((theme) => theme.wordIds));
+  const allWords = [...catalog.words, ...textbook.words];
   let production = { schemaVersion: 1, reviewStatus: 'pending', sprites: {}, clips: [] };
   try { production = audioBuildSchema.parse(await readJson('artifacts/audio/index.json')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
-  const existing = { words: (await readJson('data/content-approvals.json')).words ?? {}, clips: (await readJson('data/audio-approvals.json')).clips ?? {} };
+  const wordsFile = await readJson('data/content-approvals.json');
+  const clipsFile = await readJson('data/audio-approvals.json');
+  const existing = { wordsFile, clipsFile,
+    words: wordsFile.words ?? {}, clips: clipsFile.clips ?? {} };
   const words = []; const assets = {};
-  for (const entry of catalog.words) {
+  for (const entry of allWords) {
     if (entry.illustration.type !== 'image') throw new Error(`${entry.wordId}: 审核页需要实际配图`);
     const resource = await readIllustration(entry); const image = resource.bytes;
     const imageSha256 = sha256(image);
+    const sourcePath = entry.track === 'textbook' ? `data/textbook/yilin4a_u${entry.textbook.unit}_words.json` : catalog.source.words;
     assets[entry.illustration.src] = { sha256: imageSha256 };
-    words.push({ entry, contentSha256: contentFingerprint(entry), imageSha256, image: `data:${resource.mime};base64,${image.toString('base64')}`, imageLicense: resource.license });
+    words.push({ entry, sourcePath, contentSha256: contentFingerprint(entry), imageSha256, image: `data:${resource.mime};base64,${image.toString('base64')}`, imageLicense: resource.license });
   }
+  const wordSources = [...new Map(words.map((word) => [word.sourcePath, word.sourcePath]))].map(([path]) => ({
+    path, wordIds: words.filter((word) => word.sourcePath === path).map((word) => word.entry.wordId),
+  }));
   const audio = {};
   for (const [id, artifact] of Object.entries(production.sprites)) {
     const bytes = await readFile(within(resolve('artifacts/audio'), artifact.file));
     if (sha256(bytes) !== artifact.sha256) throw new Error(`${id}: 最终音频哈希不匹配，不能生成试听页`);
     audio[id] = `data:audio/mpeg;base64,${bytes.toString('base64')}`;
   }
-  const clips = audioInventory(catalog.words, catalog.source.stage).map((clip) => {
+  const clips = audioInventory(allWords, catalog.source.stage).map((clip) => {
     const [spriteId, name] = clip.ref.split('#'); const artifact = production.sprites[spriteId];
     const report = production.clips.find((entry) => entry.ref === clip.ref); const interval = artifact?.sprite.sprite[name];
     const promptSha256 = clipPromptFingerprint(clip);
     return { ...clip, promptSha256, available: Boolean(artifact && report?.promptSha256 === promptSha256 && interval), spriteId, interval,
       spriteSha256: artifact?.sha256, sourceSha256: report?.sourceSha256, calibrationRequired: report?.calibrationRequired ?? false,
-      wordIds: catalog.words.filter((word) => audioReferences(word).includes(clip.ref)).map((word) => word.wordId),
+      wordIds: allWords.filter((word) => audioReferences(word).includes(clip.ref)).map((word) => word.wordId),
     };
   });
   const data = { schemaVersion: 1, stage: catalog.source.stage, contentVersion: catalog.themes[0].contentVersion,
-    words, clips, audio, assets, production, existing, wordSource: catalog.source.words };
+    words, wordSources, clips, audio, assets, production, existing };
   data.datasetSha256 = reviewIdentity(data);
   // Only valid, current approvals are shown as completed in the review page.
   data.approved = { words: {}, clips: {} };

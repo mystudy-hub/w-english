@@ -13,7 +13,7 @@ try {
     const stamp = new Date().toISOString().replace(/[:.]/g, '-');
     const backup = resolve('artifacts/review/backups', stamp); await mkdir(backup, { recursive: true });
     await writeFile(resolve(backup, 'review-result.json'), JSON.stringify(input, null, 2) + '\n');
-    const changes = [[data.wordSource, imported.words], ['data/content-approvals.json', imported.contentApprovals], ['data/audio-approvals.json', imported.audioApprovals]];
+    const changes = [...imported.wordsBySource.map(({ path, words }) => [path, words]), ['data/content-approvals.json', imported.contentApprovals], ['data/audio-approvals.json', imported.audioApprovals]];
     const pending = [];
     for (const [relative, value] of changes) {
       const target = within(resolve('.'), relative); const original = await readFile(target);

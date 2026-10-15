@@ -103,7 +103,7 @@ function normalizeClip(source, clip, gainDb) {
 async function produceLockedSprites(clips, { sourceDirectory, outputDirectory, gains = {}, retainExisting = false }) {
   const output = within(process.cwd(), outputDirectory);
   const byRef = new Map(clips.map((clip) => [clip.ref, clip]));
-  if (!clips.length || byRef.size !== clips.length || clips.some((clip) => !/^[a-z_]+#[a-z0-9_]+$/.test(clip.ref))) throw new Error('音频清单为空、引用重复或格式错误');
+  if (!clips.length || byRef.size !== clips.length || clips.some((clip) => !/^[a-z0-9_]+#[a-z0-9_]+$/.test(clip.ref))) throw new Error('音频清单为空、引用重复或格式错误');
   const replaced = new Set(clips.map((clip) => clip.ref.split('#')[0]));
   let retained = { sprites: {}, clips: [] };
   if (retainExisting) {
@@ -139,7 +139,7 @@ async function produceLockedSprites(clips, { sourceDirectory, outputDirectory, g
   const report = [];
   await mkdir(within(output, 'pcm'), { recursive: true });
   for (const clip of clips) {
-    if (!/^[a-z_]+#[a-z0-9_]+$/.test(clip.ref)) throw new Error('音频引用格式错误');
+    if (!/^[a-z0-9_]+#[a-z0-9_]+$/.test(clip.ref)) throw new Error('音频引用格式错误');
     const [spriteId, clipId] = clip.ref.split('#');
     const input = clip.input || byRef.get(clip.derivedFrom).input;
     const normalized = normalizeClip(sourceBytes.get(input), clip, gains[clip.ref]);

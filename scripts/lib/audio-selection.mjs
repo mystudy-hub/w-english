@@ -1,6 +1,15 @@
 import { parseArgs } from 'node:util';
 import { audioInventory } from './audio-inventory.mjs';
+import { loadActiveCatalog } from './catalog-source.mjs';
+import { loadTextbookCatalog } from './textbook-source.mjs';
 import { CORE_GUIDE_SPRITE } from '../../src/domain/guide-content.ts';
+
+// 音频生产用的完整词条集：探索词 + 课本词（排除与探索重复的 wordId）。
+export async function loadAudioCatalog() {
+  const catalog = await loadActiveCatalog();
+  const textbook = await loadTextbookCatalog(false, catalog.themes.flatMap((theme) => theme.wordIds));
+  return { words: [...catalog.words, ...textbook.words], themes: catalog.themes, source: catalog.source };
+}
 
 export function parseAudioOptions(args) {
   const { values } = parseArgs({ args, options: { theme: { type: 'string' }, sprite: { type: 'string' }, help: { type: 'boolean' } }, strict: true, allowPositionals: false });
@@ -13,7 +22,7 @@ export function selectAudioClips({ words, themes, source }, options = {}) {
   const partial = options.theme !== undefined || options.sprite !== undefined;
   const identifiers = (input) => {
     const ids = [...new Set(input.split(',').map((value) => value.trim()))];
-    if (ids.some((id) => !/^[a-z_]+$/.test(id))) throw new Error('场景或精灵名称无效');
+    if (ids.some((id) => !/^[a-z0-9_]+$/.test(id))) throw new Error('场景或精灵名称无效');
     return ids;
   };
   let selected = available; let name = 'all';

@@ -6,6 +6,7 @@
 //   node scripts/ai-review.mjs --track textbook --batch tb4a_u2 --out artifacts/ai-review
 //   node scripts/ai-review.mjs --track textbook --apply artifacts/ai-review/tb4a_u2.verdict.json
 //   node scripts/ai-review.mjs --track textbook --record artifacts/ai-review/tb4a_u2.verdict.json --model gpt-5.6-sol
+//   探索轨道同理：--track explore --batch animal_home（batchId = 主题 ID）
 //
 // 设计约束：
 // - 裁决文件是唯一输入，脚本本身不调用任何模型；谁来复核（Codex / Gemini / 任意模型）由使用者决定。
@@ -15,7 +16,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { z } from 'zod';
-import { validateTextbook } from '../src/data/content-schema.ts';
+import { validateCatalog, validateTextbook } from '../src/data/content-schema.ts';
 import { readJson, within } from './lib/files.mjs';
 import { loadTextbookCatalog } from './lib/textbook-source.mjs';
 import { contentFingerprint } from './lib/content-audit.mjs';
@@ -48,10 +49,14 @@ const RULES = `复核规则（违反即为 error；不确定写 warn 并在 rati
 7. textbook.pos 必须与词性一致（词组用 phr.，人名地名用 proper）；textbook.core=false 表示教材标 * 的非核心词或专有名词，不得随意改动。
 8. 名词单复数的例句必须与释义一致；不要发明教材里没有的用法。`;
 
-function batchPrompt(unit, words) {
-  return `你在复核一份儿童英语学习应用的词条数据（译林版新编英语 4A，${unit.title}）。逐条判断是否可以放行，能修的直接给出修补值。
+function batchPrompt(unit, words, track) {
+  const context = track === 'textbook'
+    ? `译林版新编英语 4A，${unit.title}`
+    : `探索轨道（Stage 2，4~9 岁场景词汇，主题 ${unit.title || unit.unitId}）`;
+  return `你在复核一份儿童英语学习应用的词条数据（${context}）。逐条判断是否可以放行，能修的直接给出修补值。
 
 ${RULES}
+${track === 'explore' ? '\n注意：本批次是探索轨道词条（无 textbook 块、无 kind:phrase），规则 7 的 textbook.* 不适用；spelling 为逐字母、phonemes 用同一套符号。' : ''}
 
 只输出一个 JSON 对象，不要任何解释文字或 Markdown 代码块，结构如下：
 {
@@ -100,11 +105,23 @@ async function loadWords(track) {
 
 async function writeBatch(track, batchId, outDir) {
   const { units, words } = await loadWords(track);
-  const targets = batchId ? words.filter((word) => track === 'textbook' ? `tb4a_u${word.textbook.unit}` === batchId : word.theme === batchId) : words;
+  let targets; let unit;
+  if (track === 'textbook') {
+    targets = batchId ? words.filter((word) => `tb4a_u${word.textbook.unit}` === batchId) : words;
+    unit = units.find((entry) => entry.unitId === batchId) ?? { unitId: batchId, title: batchId };
+  } else {
+    // 探索轨道：batchId = 主题 ID，词条按主题配置的 wordIds 圈选。
+    const catalog = await readJson('data/catalog.json');
+    const themes = [];
+    for (const themePath of catalog.themes) themes.push(await readJson(within(resolve('.'), themePath)));
+    const theme = themes.find((entry) => entry.themeId === batchId);
+    const idSet = new Set(theme?.wordIds ?? []);
+    targets = batchId ? words.filter((word) => idSet.has(word.wordId)) : words;
+    unit = { unitId: batchId, title: theme ? `${theme.title.zh}（${theme.title.en}）` : batchId };
+  }
   if (!targets.length) throw new Error(`没有找到 ${batchId} 的词条`);
-  const unit = units.find((entry) => entry.unitId === batchId) ?? { unitId: batchId, title: batchId };
   await mkdir(outDir, { recursive: true });
-  const prompt = batchPrompt(unit, targets);
+  const prompt = batchPrompt(unit, targets, track);
   await writeFile(resolve(outDir, `${batchId}.prompt.md`), prompt);
   await writeFile(resolve(outDir, `${batchId}.words.json`), JSON.stringify({ track, batchId, words: targets }, null, 2) + '\n');
   console.log(`✓ ${batchId}: ${targets.length} 条 → ${outDir}/${batchId}.prompt.md`);
@@ -112,7 +129,8 @@ async function writeBatch(track, batchId, outDir) {
 }
 
 async function applyVerdict(track, file) {
-  if (track !== 'textbook') throw new Error('目前只支持修补课本词库');
+  if (track !== 'textbook' && track !== 'explore') throw new Error('未知的 track');
+  if (track === 'explore') return applyExploreVerdict(file);
   const verdict = verdictSchema.parse(await readJson(file));
   const source = await loadRawUnits();
   const original = new Map();
@@ -162,8 +180,51 @@ async function applyVerdict(track, file) {
   for (const note of notes) console.log(`  · ${note}`);
 }
 
+async function applyExploreVerdict(file) {
+  const verdict = verdictSchema.parse(await readJson(file));
+  const catalog = await readJson('data/catalog.json');
+  const path = within(resolve('.'), catalog.words);
+  const words = JSON.parse(await readFile(path, 'utf8'));
+  const original = JSON.stringify(words);
+  const index = new Map(words.map((word) => [word.wordId, word]));
+  let fixed = 0; let rejected = 0; let unchanged = 0; const notes = [];
+  for (const entry of verdict.words) {
+    const target = index.get(entry.wordId);
+    if (!target) { notes.push(`${entry.wordId}: 不在当前词库，跳过`); continue; }
+    if (entry.verdict === 'ok') { unchanged += 1; continue; }
+    if (entry.verdict === 'reject') { rejected += 1; notes.push(`${entry.wordId}: 模型建议剔除 —— ${entry.rationale}`); continue; }
+    const patch = entry.patch ?? {};
+    const keys = Object.keys(patch).filter((key) => PATCHABLE.includes(key) && key !== 'textbook' && key !== 'sightWordList');
+    const ignored = Object.keys(patch).filter((key) => !PATCHABLE.includes(key) || key === 'textbook' || key === 'sightWordList');
+    if (ignored.length) notes.push(`${entry.wordId}: 忽略不可修补字段 ${ignored.join('、')}`);
+    for (const key of keys) {
+      const next = patch[key];
+      const current = target[key];
+      const mergeable = next && typeof next === 'object' && !Array.isArray(next) && current && typeof current === 'object' && !Array.isArray(current);
+      target[key] = mergeable ? { ...current, ...next } : next;
+    }
+    fixed += 1;
+  }
+  // 修补后必须整体重新通过探索契约；不合规就不写文件。
+  const themes = [];
+  for (const themePath of catalog.themes) themes.push(await readJson(within(resolve('.'), themePath)));
+  try {
+    validateCatalog(words, themes);
+  } catch (error) {
+    throw new Error(`修补后的词库未通过契约校验，未写入任何文件：\n${error instanceof Error ? error.message : String(error)}`);
+  }
+  const changed = JSON.stringify(words) !== original;
+  if (changed) await writeFile(path, JSON.stringify(words, null, 2) + '\n');
+  const logDir = resolve('artifacts/ai-review');
+  await mkdir(logDir, { recursive: true });
+  const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+  await writeFile(resolve(logDir, `applied-explore-${stamp}.json`), JSON.stringify({ model: verdict.model, reviewedAt: verdict.reviewedAt, fixed, rejected, unchanged, changedUnits: changed ? ['explore'] : [], notes, verdict }, null, 2) + '\n');
+  console.log(`✓ 应用完成：修补 ${fixed} 条、无需改动 ${unchanged} 条、建议剔除 ${rejected} 条；${changed ? '已改写探索词库' : '无需改写'}；日志 artifacts/ai-review/applied-explore-${stamp}.json`);
+  for (const note of notes) console.log(`  · ${note}`);
+}
+
 async function recordApprovals(track, file, reviewerName) {
-  if (track !== 'textbook') throw new Error('目前只支持为课本词库记录审批');
+  if (track !== 'textbook' && track !== 'explore') throw new Error('未知的 track');
   const verdict = verdictSchema.parse(await readJson(file));
   const reviewer = `model:${reviewerName ?? verdict.model}`;
   const reviewedAt = verdict.reviewedAt;

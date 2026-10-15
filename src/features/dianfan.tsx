@@ -11,16 +11,12 @@ import { navigate } from '../app/router.ts';
 import { audio, playEffect, toggleFavorite } from '../app/runtime.ts';
 import { useAppStore, useParentStore } from '../app/store.ts';
 
-// Web Speech 备用发音引擎池
+// Web Speech 备用发音引擎池；全局 voices 监听归 speech-fallback 所有，这里只懒加载。
 const activeUtterances = new Set<SpeechSynthesisUtterance>();
-let voicesCache: SpeechSynthesisVoice[] = [];
 
-if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  const updateVoices = () => {
-    voicesCache = window.speechSynthesis.getVoices();
-  };
-  updateVoices();
-  window.speechSynthesis.onvoiceschanged = updateVoices;
+function currentVoices(): SpeechSynthesisVoice[] {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return [];
+  return window.speechSynthesis.getVoices();
 }
 
 export type SpeedMode = 'slow' | 'medium' | 'normal' | 'custom';
@@ -67,7 +63,7 @@ function speakFallback(text: string, rate = 0.8) {
     utterance.rate = Math.max(0.5, Math.min(1.5, rate));
     utterance.pitch = 1.02;
 
-    const voices = voicesCache.length ? voicesCache : window.speechSynthesis.getVoices();
+    const voices = currentVoices();
     const preferredVoice = voices.find((v) => 
       v.lang.startsWith('en') && (
         v.name.includes('Jenny') || v.name.includes('Natural') || v.name.includes('Aria') || 

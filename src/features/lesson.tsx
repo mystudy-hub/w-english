@@ -37,7 +37,9 @@ export function Lesson({ viewportReady }: { viewportReady: boolean }) {
       if (generation !== promptGeneration.current || learningPaused() || document.hidden) return;
       if (cue) {
         const narration = await playGuide(cue, questionId);
-        if (generation !== promptGeneration.current || narration?.status === 'cancelled' || learningPaused() || document.hidden) return;
+        // 旁白被占用队列挤掉（比如欢迎引导还在播）时不中止整次题解：学习音频照常播放；
+        // 用户主动取消由 generation/learningPaused/hidden 守卫接管。
+        if (generation !== promptGeneration.current || learningPaused() || document.hidden) return;
         if (cue === 'guide#listen_choose' && narration?.status === 'ended') await repository.markSessionNarration(sessionId, 'intro');
       }
       if (learningPaused() || document.hidden) return;

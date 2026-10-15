@@ -24,10 +24,11 @@ test('welcome, setup, illustrated cards and real exploration persistence', async
   await page.screenshot({ path: 'artifacts/screenshots/welcome.png', fullPage: true });
   await enter(page);
   await page.screenshot({ path: 'artifacts/screenshots/scene.png', fullPage: true });
-  await expect(page.getByRole('button', { name: '听音选图', exact: true })).toBeDisabled();
+  // 语音已随包提供：听音活动现在可用（旧世界是待提供时禁用）。
+  await expect(page.getByRole('button', { name: '听音选图', exact: true })).toBeEnabled();
   await page.getByRole('button', { name: '认识猫', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'cat', exact: true })).toBeVisible();
-  await expect(page.getByRole('button', { name: '听单词', exact: true })).toBeDisabled();
+  await expect(page.getByRole('button', { name: '听单词', exact: true })).toBeEnabled();
   await page.getByRole('button', { name: /和家人一起读/ }).click();
   await expect(page.getByText('问孩子小猫怎么叫', { exact: false })).toBeVisible();
   await page.screenshot({ path: 'artifacts/screenshots/card.png', fullPage: true });
@@ -63,9 +64,10 @@ test('parent gate requires the complete hold; settings survive reload', async ({
   await expect(page.locator('.app')).toHaveClass(/motion-reduced/);
 });
 
-test('cached preview reopens offline without pretending that missing audio is ready', async ({ page, context }) => {
+test('cached preview reopens offline with the fully provisioned audio pack', async ({ page, context }) => {
   await enter(page); await openParent(page);
-  await expect(page.locator('.offline-heading').getByText('图片已保存，语音待准备', { exact: true })).toBeVisible();
+  // 语音已随包提供：离线包完整就绪，不再停在「图片已保存，语音待准备」。
+  await expect(page.locator('.offline-heading').getByText('已就绪，可离线使用', { exact: true })).toBeVisible();
   await page.evaluate(async () => { await navigator.serviceWorker.ready; });
   await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
   await context.setOffline(true);
@@ -75,7 +77,7 @@ test('cached preview reopens offline without pretending that missing audio is re
   await page.getByRole('button', { name: '认识猫', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'cat', exact: true })).toBeVisible();
   await expect(page.getByRole('img', { name: '猫', exact: true })).toBeVisible();
-  await expect(page.getByRole('button', { name: '听单词', exact: true })).toBeDisabled();
+  await expect(page.getByRole('button', { name: '听单词', exact: true })).toBeEnabled();
 });
 
 test('storage failure offers an explicit temporary experience', async ({ page }) => {
@@ -127,5 +129,5 @@ test('content preparation works without the newer static AbortSignal helpers', a
     Object.defineProperty(AbortSignal, 'timeout', { value: undefined });
   });
   await enter(page); await openParent(page);
-  await expect(page.locator('.offline-heading').getByText('图片已保存，语音待准备', { exact: true })).toBeVisible();
+  await expect(page.locator('.offline-heading').getByText('已就绪，可离线使用', { exact: true })).toBeVisible();
 });

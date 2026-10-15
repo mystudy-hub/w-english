@@ -29,8 +29,9 @@ export function Phonics({ wordId }: { wordId: string }) {
     try {
       if (!await unlock || !current()) return;
       if (partIndex === undefined) {
-        const guide = await playGuide('guide#blend', owner);
-        if (!current() || guide?.status === 'cancelled') return;
+        await playGuide('guide#blend', owner);
+        // 旁白被占用队列挤掉时不中止整次拼读；用户主动取消由 current() 守卫接管。
+        if (!current()) return;
       }
       const parts = partIndex === undefined ? word.graphemes.map((_, index) => index) : [partIndex];
       for (const index of parts) {

@@ -25,18 +25,22 @@ test('review page starts pending, exports only explicit approval, and records a 
   await expect(page.getByRole('heading', { name: '素材审核工作台' })).toBeVisible();
   await expect(page.getByRole('img', { name: '猫', exact: true })).toBeVisible();
   await page.screenshot({ path: 'artifacts/screenshots/review.png', fullPage: true });
-  expect((await exported(page)).words).toEqual({});
+  // 世界已带已记录的模型审批：导出的基线就是当前已批准集合，未做新动作前不增不减。
+  const baseline = await exported(page);
+  expect(Object.keys(baseline.words).sort()).toEqual(Object.keys(data.approved.words).sort());
   await page.getByRole('textbox', { name: '审核人', exact: true }).fill('Browser fixture; not a teacher approval');
   await expect(page.getByRole('button', { name: '批准文字与配图', exact: true })).toBeDisabled();
   await page.getByRole('checkbox', { name: '已核对词义、例句、拆分、教学提示与配图表达' }).check();
   await page.getByRole('button', { name: '批准文字与配图', exact: true }).click();
   const review = await exported(page);
-  expect(Object.keys(review.words)).toEqual(['w_cat_001']); expect(review.clips).toEqual({});
-  expect(review.words.w_cat_001.contentSha256).toBe(data.words[0].contentSha256);
+  expect(review.words['w_cat_001']!.reviewer).toBe('Browser fixture; not a teacher approval');
+  expect(review.words['w_cat_001']!.contentSha256).toBe(data.words[0].contentSha256);
+  expect(Object.keys(review.words).length).toBe(Object.keys(baseline.words).length);
   await page.getByRole('textbox', { name: '修改意见 / 备注' }).fill('Test fixture withdrawal');
   await page.getByRole('button', { name: '标记需修改 / 撤回批准', exact: true }).click();
   const rejected = await exported(page);
-  expect(rejected.words).toEqual({}); expect(rejected.rejections.w_cat_001.note).toBe('Test fixture withdrawal');
+  expect(rejected.words['w_cat_001']).toBeUndefined();
+  expect(rejected.rejections['w_cat_001']!.note).toBe('Test fixture withdrawal');
   await page.getByRole('combobox', { name: '审核类别' }).selectOption('clips');
   await expect(page.getByText(/尚未提供最终语音/)).toBeVisible();
   await expect(page.getByRole('button', { name: '批准此语音片段', exact: true })).toHaveCount(0);
@@ -66,5 +70,8 @@ test('clip approval requires natural playback, review confirmation and source ri
   expect(result.clips['guide#welcome'].clip).toEqual([150, 200]);
   expect(result.clips['guide#welcome'].spriteSha256).toBe(asset.sha256);
   expect(result.clips['guide#welcome'].promptSha256).toBe(clip.promptSha256);
-  expect(Object.keys(result.clips)).toHaveLength(1);
+  // 世界已带已记录的模型审批：本次显式听审只替换 guide#welcome 这一条，其余片段与基线一致。
+  expect(result.clips['guide#welcome']!.reviewer).toBe('Browser fixture; not a teacher approval');
+  const changed = Object.keys(result.clips).filter((ref: string) => JSON.stringify(result.clips[ref]) !== JSON.stringify((data.approved.clips as Record<string, unknown>)[ref] ?? null));
+  expect(changed).toEqual(['guide#welcome']);
 });

@@ -90,7 +90,8 @@ export function Spelling({ viewportReady }: { viewportReady: boolean }) {
       publish(prepared);
       if (prepared.currentQuestionIndex === 0 && !prepared.guideIntroPlayed && !prepared.questions[0]!.spelling!.placed.length) {
         const guide = await playGuide('guide#spell', questionId);
-        if (!valid(run) || guide?.status === 'cancelled') return;
+        // 旁白被占用队列挤掉时不中止整次题解；用户主动取消由 valid(run) 守卫接管。
+        if (!valid(run)) return;
         if (guide?.status === 'ended') await repository.markSessionNarration(sessionId, 'intro');
       }
       if (!valid(run)) return;

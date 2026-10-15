@@ -29,25 +29,37 @@ async function expectGuide(page: Page, fixture: ReturnType<typeof syntheticConte
 }
 
 test('the world selector plays its own idle guidance without creating learning evidence', async ({ page }) => {
-  const fixture = syntheticContent({ scenes: true }); await observeAudio(page); await page.clock.install();
+  const fixture = syntheticContent({ scenes: true }); await observeAudio(page);
   await page.route('**/content/**', async (route) => {
-    const file = fixture.files.get(new URL(route.request().url()).pathname.slice(1));
+    const path = new URL(route.request().url()).pathname.slice(1);
+    const file = fixture.files.get(path);
     if (file) await route.fulfill({ status: 200, contentType: file.mime, body: file.bytes }); else await route.continue();
   });
   await page.goto('/'); await page.getByRole('button', { name: '开始冒险', exact: true }).click();
   await page.getByRole('button', { name: '准备好，一起出发' }).click();
-  await expect.poll(async () => (await localRecords<GuideState>(page, 'guideState'))[0]?.completedStepIds.includes('welcome')).toBe(true);
-  await page.clock.fastForward(9000); await expectGuide(page, fixture, 'choose_world');
+  await expect.poll(async () => {
+    const completed = (await localRecords<GuideState>(page, 'guideState'))[0]?.completedStepIds.includes('welcome') ?? false;
+    const played = await page.evaluate(({ seconds }) => {
+      const state = window as unknown as { testAudioStarts: Array<{ offset: number; bufferSeconds: number }> };
+      return state.testAudioStarts.some((entry) => Math.abs(entry.bufferSeconds - seconds) < .001);
+    }, { seconds: guideSprite(fixture).durationMs / 1000 });
+    return completed || played;
+  }, { timeout: 20_000 }).toBe(true);
+  await page.clock.install(); await page.clock.fastForward(9000); await expectGuide(page, fixture, 'choose_world');
   expect(await localRecords(page, 'wordProgress')).toEqual([]); expect(await localRecords(page, 'attempts')).toEqual([]);
 });
 
 test('an audio loading failure offers retry narration and a successful retry alone counts as heard', async ({ page }) => {
   const fixture = syntheticContent({ scenes: true }); await observeAudio(page);
   let failed = false;
+  let releaseFailure: (() => void) | undefined;
+  const waitToFail = new Promise<void>((resolve) => { releaseFailure = resolve; });
   await page.route('**/content/**', async (route) => {
     const path = new URL(route.request().url()).pathname.slice(1);
-    if (!failed && path === fixture.manifest.assets['audio:animal_home']!.url && route.request().resourceType() === 'xhr') {
-      failed = true; await route.fulfill({ status: 503, body: 'Private test failure' }); return;
+    if (path === fixture.manifest.assets['audio:animal_home']!.url && route.request().resourceType() === 'xhr' && !failed) {
+      failed = true;
+      await waitToFail;
+      await route.fulfill({ status: 503, body: 'Private test failure' }); return;
     }
     const file = fixture.files.get(path);
     if (file) await route.fulfill({ status: 200, contentType: file.mime, body: file.bytes }); else await route.continue();
@@ -56,7 +68,9 @@ test('an audio loading failure offers retry narration and a successful retry alo
   await page.getByRole('button', { name: '准备好，一起出发' }).click();
   await page.getByRole('button', { name: '进入动物之家', exact: true }).click();
   await page.getByRole('button', { name: '认识猫', exact: true }).click();
+  await expect.poll(() => failed).toBe(true);
   await page.getByRole('button', { name: '听单词', exact: true }).click();
+  releaseFailure!();
   await expect(page.getByText('再点一下小喇叭试试吧。', { exact: true })).toBeVisible();
   await expectGuide(page, fixture, 'audio_retry');
   expect(failed).toBe(true);

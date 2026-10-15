@@ -35,7 +35,9 @@ test('parent export, cancel and clear preserve settings, rest timing and downloa
   await page.getByRole('button', { name: '导出本机学习记录' }).click();
   const download = await downloadEvent;
   const exported = JSON.parse(await readFile((await download.path())!, 'utf8'));
-  expect(exported.attempts).toHaveLength(5); expect(exported.rewards.filter((reward: { kind: string }) => reward.kind === 'sticker')).toHaveLength(1);
+  // 导出现在优先走完整备份（tables 包一层），fallback 才是扁平的 progress 导出；两者都要能读。
+  const rows = (table: string) => (exported.tables?.[table] ?? exported[table] ?? []) as { kind?: string }[];
+  expect(rows('attempts')).toHaveLength(5); expect(rows('rewards').filter((reward) => reward.kind === 'sticker')).toHaveLength(1);
   await page.getByRole('button', { name: '清除本机学习记录', exact: true }).click();
   const dialog = page.getByRole('dialog', { name: '清除本机学习记录？' });
   await expect(dialog).toBeVisible(); await dialog.getByRole('button', { name: '保留记录' }).click();

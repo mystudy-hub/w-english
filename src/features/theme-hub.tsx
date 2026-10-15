@@ -58,7 +58,7 @@ export function ThemeHub() {
             <p style={{ margin: '0.25rem 0 0', color: '#92400e', fontSize: '0.875rem' }}>牛津阅读树原版 42 篇小故事，245 个分课核心词汇、例句与闯关小练习</p>
           </div>
         </div>
-        <Button className="primary" onClick={() => navigate('/dianfan')}>
+        <Button className="primary" aria-label="进入典范英语专区" onClick={() => navigate('/dianfan')}>
           <ArrowRight />
           <span data-mode-label>进入专区</span>
         </Button>

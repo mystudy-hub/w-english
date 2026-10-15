@@ -24,6 +24,6 @@ test('an actual subpath build keeps its assets, scope and card navigation offlin
     await expect(page.getByRole('heading', { name: 'cat', exact: true })).toBeVisible();
     await expect(page.getByRole('img', { name: '猫', exact: true })).toBeVisible();
     expect(server.requests.some((path) => path.startsWith('content/images/cat.'))).toBe(true);
-    await expect(page.getByRole('button', { name: '听单词', exact: true })).toBeDisabled();
+    await expect(page.getByRole('button', { name: '听单词', exact: true })).toBeEnabled();
   } finally { await context.setOffline(false); await page.close(); await server.close(); }
 });

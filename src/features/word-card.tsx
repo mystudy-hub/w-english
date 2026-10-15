@@ -100,7 +100,7 @@ export function WordCard({ wordId }: { wordId: string }) {
             style={{
               background: isFav ? '#fef3c7' : '#f8fafc',
               border: isFav ? '1px solid #f59e0b' : '1px solid #e2e8f0',
-              color: isFav ? '#d97706' : '#94a3b8',
+              color: isFav ? '#d97706' : '#5b6b7c',
               borderRadius: '9999px',
               padding: '4px 10px',
               display: 'inline-flex',

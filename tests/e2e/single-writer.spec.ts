@@ -88,7 +88,10 @@ test('round completion keeps ownership until the child returns to welcome', asyn
   }
   await expect(page.getByRole('heading', { name: '小小的你，发现了大大的世界。' })).toBeVisible();
   const second = await context.newPage(); await second.goto('/'); await blocked(second);
+  await page.locator('a.brand').click();
+  await expect(page.getByRole('heading', { name: /每一个新词/ })).toBeVisible();
   await page.close();
+  await second.reload();
   await second.getByRole('button', { name: '开始冒险', exact: true }).click();
   await expect(second.getByRole('heading', { name: '动物之家' })).toBeVisible();
   expect((await table(second, 'rewards')).length).toBe(5);

@@ -67,7 +67,9 @@
       "zh": "问孩子小猫怎么叫，再示范 cat 的第一个音 /k/，注意不是字母名称。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -141,7 +143,9 @@
       "zh": "指着小狗说 dog，再慢慢拼合三个音。具体美音变体须与最终录音一致。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -215,7 +219,9 @@
       "zh": "指指小猪的鼻子，一起说 pig。示范短促的 /p/，不要加上额外的元音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -289,7 +295,9 @@
       "zh": "告诉孩子 hen 指母鸡，再一起听三个音。配图需由老师确认能表达母鸡。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -363,7 +371,9 @@
       "zh": "一起看图说 sun，再拉长开头的 /s/，随后连到另外两个音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -437,7 +447,9 @@
       "zh": "指一指家里的床或图片，说 bed，再一起拼合三个音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -511,7 +523,9 @@
       "zh": "拿一个包，把东西放进去，一起说 bag。背包可以作草稿图，最终图义需审核。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -585,7 +599,9 @@
       "zh": "指着空杯子说 cup，留意末尾的 /p/。草稿图中应识别容器，不把咖啡作为学习对象。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -659,7 +675,9 @@
       "zh": "做戴帽子的动作，说 hat，再拼合三个音。与 cap 同题出现前须审核图片区别。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -733,7 +751,9 @@
       "zh": "在成人陪同下看钢笔或圆珠笔，指出 pen。不要把铅笔图片标成 pen。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -807,7 +827,9 @@
       "zh": "指一指长尾巴，说 rat，再拼合三个音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -881,7 +903,9 @@
       "zh": "像翅膀一样展开双臂，一起说 bat；这里学习的是动物，不是球棒。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -955,7 +979,9 @@
       "zh": "指一指弯弯的角，一起拼合 ram 的三个音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1029,7 +1055,9 @@
       "zh": "看看图片里小小的腿，一起说 bug。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1103,7 +1131,9 @@
       "zh": "用手指沿着地图上的路线走一走，一起说 map。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1177,7 +1207,9 @@
       "zh": "指一指前面的帽檐，说明 cap 是 hat 的一种；两者不同时作为同题选项。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1251,7 +1283,9 @@
       "zh": "看看图里的平底锅，留意长柄；与深锅 pot 的图片区分须经审校。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1325,7 +1359,9 @@
       "zh": "指一指网上的小网格，一起拼合三个音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1399,7 +1435,9 @@
       "zh": "指一指木段切面上的圈圈，一起说 log，元音须与最终美音录音一致。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1473,7 +1511,9 @@
       "zh": "留意深深的锅身，一起说 pot，听听结尾的声音；不与 pan 或 cup 同题配图。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1527,7 +1567,7 @@
     "definition": {
       "en_young": "An animal that swims.",
       "en_older": "A water animal that swims with fins.",
-      "zh": "鱼"
+      "zh": "鱼是一种生活在水中、用鳍游泳的动物。"
     },
     "example": {
       "en": "The fish can swim.",
@@ -1549,7 +1589,9 @@
       "zh": "指着图片认识「鱼」，先听完整的 fish，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1603,7 +1645,7 @@
     "definition": {
       "en_young": "An animal with feathers.",
       "en_older": "An animal with feathers, wings, and a beak.",
-      "zh": "鸟"
+      "zh": "鸟是一种有羽毛、翅膀和喙的动物。"
     },
     "example": {
       "en": "The bird is in the tree.",
@@ -1625,7 +1667,9 @@
       "zh": "指着图片认识「鸟」，先听完整的 bird，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1698,7 +1742,7 @@
     "definition": {
       "en_young": "An animal with long ears.",
       "en_older": "A small animal with long ears that can hop.",
-      "zh": "兔子"
+      "zh": "兔子是一种长着长耳朵、会蹦跳的小动物。"
     },
     "example": {
       "en": "The rabbit can hop.",
@@ -1720,7 +1764,9 @@
       "zh": "指着图片认识「兔子」，先听完整的 rabbit，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1788,7 +1834,7 @@
     "definition": {
       "en_young": "An animal with a shell.",
       "en_older": "An animal with a hard shell on its back.",
-      "zh": "乌龟"
+      "zh": "乌龟是一种背上有硬壳的动物。"
     },
     "example": {
       "en": "The turtle walks slowly.",
@@ -1810,7 +1856,9 @@
       "zh": "指着图片认识「乌龟」，先听完整的 turtle，再按字母组合听声音。le 保持为一个声音组合。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1873,7 +1921,7 @@
     "definition": {
       "en_young": "An animal that slides slowly.",
       "en_older": "A small slow animal with a round shell.",
-      "zh": "蜗牛"
+      "zh": "蜗牛是一种行动缓慢、背着圆壳的小动物。"
     },
     "example": {
       "en": "The snail is on a leaf.",
@@ -1895,7 +1943,9 @@
       "zh": "指着图片认识「蜗牛」，先听完整的 snail，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -1949,7 +1999,7 @@
     "definition": {
       "en_young": "A long animal without legs.",
       "en_older": "A small long animal that has no legs.",
-      "zh": "蠕虫"
+      "zh": "蠕虫是一种细长、没有腿的小动物。"
     },
     "example": {
       "en": "The worm lives in the soil.",
@@ -1971,7 +2021,9 @@
       "zh": "指着图片认识「蠕虫」，先听完整的 worm，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2016,7 +2068,7 @@
     "definition": {
       "en_young": "A food with a shell.",
       "en_older": "A food from a hen, covered by a shell.",
-      "zh": "鸡蛋"
+      "zh": "鸡蛋是母鸡产的、外面有蛋壳的食物。"
     },
     "example": {
       "en": "The egg is in the cup.",
@@ -2038,7 +2090,9 @@
       "zh": "指着图片认识「鸡蛋」，先听完整的 egg，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2097,7 +2151,7 @@
     "definition": {
       "en_young": "A hard part inside you.",
       "en_older": "A hard part inside a body that gives support.",
-      "zh": "骨头"
+      "zh": "骨头是身体里面坚硬、能支撑身体的部分。"
     },
     "example": {
       "en": "The dog has a bone.",
@@ -2119,7 +2173,9 @@
       "zh": "指着图片认识「骨头」，先听完整的 bone，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2173,7 +2229,7 @@
     "definition": {
       "en_young": "A thing to keep toys.",
       "en_older": "A container that keeps things together.",
-      "zh": "盒子"
+      "zh": "盒子是用来把东西装在一起的容器。"
     },
     "example": {
       "en": "The ball is in the box.",
@@ -2195,7 +2251,9 @@
       "zh": "指着图片认识「盒子」，先听完整的 box，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2240,7 +2298,7 @@
     "definition": {
       "en_young": "It can open a lock.",
       "en_older": "A small object used to open a lock.",
-      "zh": "钥匙"
+      "zh": "钥匙是用来打开锁的小物件。"
     },
     "example": {
       "en": "This key opens the door.",
@@ -2262,7 +2320,9 @@
       "zh": "指着图片认识「钥匙」，先听完整的 key，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2316,7 +2376,7 @@
     "definition": {
       "en_young": "It keeps a door shut.",
       "en_older": "A thing that keeps something closed until you unlock it.",
-      "zh": "锁"
+      "zh": "锁是让东西保持关闭、需要解锁才能打开的装置。"
     },
     "example": {
       "en": "The lock is on the box.",
@@ -2338,7 +2398,9 @@
       "zh": "指着图片认识「锁」，先听完整的 lock，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2399,7 +2461,7 @@
     "definition": {
       "en_young": "Something you give someone.",
       "en_older": "Something you give to another person to make them happy.",
-      "zh": "礼物"
+      "zh": "礼物是送给别人、让别人开心的东西。"
     },
     "example": {
       "en": "This gift is for you.",
@@ -2421,7 +2483,9 @@
       "zh": "指着图片认识「礼物」，先听完整的 gift，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2482,7 +2546,7 @@
     "definition": {
       "en_young": "A place where people live.",
       "en_older": "A building where a person or family lives.",
-      "zh": "房子"
+      "zh": "房子是人或一家人居住的建筑。"
     },
     "example": {
       "en": "This house has a red door.",
@@ -2504,7 +2568,9 @@
       "zh": "指着图片认识「房子」，先听完整的 house，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2552,7 +2618,7 @@
     "definition": {
       "en_young": "You open it to enter.",
       "en_older": "A part you open to go into a room.",
-      "zh": "门"
+      "zh": "门是打开后可以进入房间的一部分。"
     },
     "example": {
       "en": "Please open the door.",
@@ -2574,7 +2640,9 @@
       "zh": "指着图片认识「门」，先听完整的 door，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2655,7 +2723,9 @@
       "zh": "指着图片认识「苹果」，先听完整的 apple，再按字母组合听声音。le 保持为一个声音组合。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2758,7 +2828,9 @@
       "zh": "指着图片认识「香蕉」，先听完整的 banana，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2846,7 +2918,9 @@
       "zh": "指着图片认识「樱桃」，先听完整的 cherry，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -2936,7 +3010,9 @@
       "zh": "指着图片认识「葡萄」，先听完整的 grape，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3031,7 +3107,9 @@
       "zh": "指着图片认识「胡萝卜」，先听完整的 carrot，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3105,7 +3183,9 @@
       "zh": "指着图片认识「坚果」，先听完整的 nut，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3181,7 +3261,9 @@
       "zh": "指着图片认识「豆子」，先听完整的 bean，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3264,7 +3346,9 @@
       "zh": "指着图片认识「牛奶」，先听完整的 milk，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3340,7 +3424,9 @@
       "zh": "指着图片认识「汤」，先听完整的 soup，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3426,7 +3512,9 @@
       "zh": "把 bread 作为整词听读，再一起读例句，指出句子里高亮的 bread；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -3506,7 +3594,9 @@
       "zh": "指着图片认识「蛋糕」，先听完整的 cake，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3594,7 +3684,9 @@
       "zh": "指着图片认识「曲奇饼干」，先听完整的 cookie，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3687,7 +3779,9 @@
       "zh": "指着图片认识「糖果」，先听完整的 candy，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3765,7 +3859,9 @@
       "zh": "指着图片认识「玉米」，先听完整的 corn，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3841,7 +3937,9 @@
       "zh": "指着图片认识「叶子」，先听完整的 leaf，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -3917,7 +4015,9 @@
       "zh": "指着图片认识「树」，先听完整的 tree，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4005,7 +4105,9 @@
       "zh": "指着图片认识「花」，先听完整的 flower，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4090,7 +4192,9 @@
       "zh": "指着图片认识「草」，先听完整的 grass，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4166,7 +4270,9 @@
       "zh": "指着图片认识「雨」，先听完整的 rain，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4251,7 +4357,9 @@
       "zh": "指着图片认识「云」，先听完整的 cloud，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4327,7 +4435,9 @@
       "zh": "指着图片认识「雪」，先听完整的 snow，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4403,7 +4513,9 @@
       "zh": "指着图片认识「月亮」，先听完整的 moon，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4481,7 +4593,9 @@
       "zh": "指着图片认识「星星」，先听完整的 star，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4564,7 +4678,9 @@
       "zh": "指着图片认识「风」，先听完整的 wind，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4647,7 +4763,9 @@
       "zh": "指着图片认识「池塘」，先听完整的 pond，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4723,7 +4841,9 @@
       "zh": "指着图片认识「石头」，先听完整的 rock，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4799,7 +4919,9 @@
       "zh": "指着图片认识「种子」，先听完整的 seed，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4873,7 +4995,9 @@
       "zh": "指着图片认识「红色」，先听完整的 red，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -4958,7 +5082,9 @@
       "zh": "指着图片认识「绿色」，先听完整的 green，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5034,7 +5160,9 @@
       "zh": "指着图片认识「蓝色」，先听完整的 blue，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5102,7 +5230,9 @@
       "zh": "把 the 作为整词听读，再一起读例句，指出句子里高亮的 the；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -5158,7 +5288,9 @@
       "zh": "把 a 作为整词听读，再一起读例句，指出句子里高亮的 a；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -5225,7 +5357,9 @@
       "zh": "把 you 作为整词听读，再一起读例句，指出句子里高亮的 you；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -5300,7 +5434,9 @@
       "zh": "指着图片认识「书」，先听完整的 book，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5402,7 +5538,9 @@
       "zh": "指着图片认识「铅笔」，先听完整的 pencil，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5488,7 +5626,9 @@
       "zh": "指着图片认识「尺子」，先听完整的 ruler，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5573,7 +5713,9 @@
       "zh": "指着图片认识「画笔」，先听完整的 brush，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5649,7 +5791,9 @@
       "zh": "指着图片认识「铃铛」，先听完整的 bell，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5734,7 +5878,9 @@
       "zh": "指着图片认识「时钟」，先听完整的 clock，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5817,7 +5963,9 @@
       "zh": "指着图片认识「书桌」，先听完整的 desk，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5889,7 +6037,9 @@
       "zh": "指着图片认识「椅子」，先听完整的 chair，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -5972,7 +6122,9 @@
       "zh": "指着图片认识「手」，先听完整的 hand，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6033,7 +6185,9 @@
       "zh": "指着图片认识「耳朵」，先听完整的 ear，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6093,7 +6247,9 @@
       "zh": "把 eye 作为整词听读，再一起读例句，指出句子里高亮的 eye；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -6168,7 +6324,9 @@
       "zh": "指着图片认识「脚」，先听完整的 foot，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6244,7 +6402,9 @@
       "zh": "指着图片认识「球」，先听完整的 ball，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6320,7 +6480,9 @@
       "zh": "指着图片认识「玩偶」，先听完整的 doll，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6401,7 +6563,9 @@
       "zh": "指着图片认识「风筝」，先听完整的 kite，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6482,7 +6646,9 @@
       "zh": "指着图片认识「自行车」，先听完整的 bike，再按字母组合听声音。灰色的不发音字母只看形状，不单独配音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6551,7 +6717,9 @@
       "zh": "指着图片认识「小汽车」，先听完整的 car，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6625,7 +6793,9 @@
       "zh": "指着图片认识「公交车」，先听完整的 bus，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6710,7 +6880,9 @@
       "zh": "指着图片认识「卡车」，先听完整的 truck，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6795,7 +6967,9 @@
       "zh": "指着图片认识「火车」，先听完整的 train，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6871,7 +7045,9 @@
       "zh": "指着图片认识「轮船」，先听完整的 ship，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -6954,7 +7130,9 @@
       "zh": "指着图片认识「旗子」，先听完整的 flag，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -7037,7 +7215,9 @@
       "zh": "指着图片认识「帐篷」，先听完整的 tent，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -7120,7 +7300,9 @@
       "zh": "指着图片认识「鼓」，先听完整的 drum，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -7196,7 +7378,9 @@
       "zh": "指着图片认识「戒指」，先听完整的 ring，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -7272,7 +7456,9 @@
       "zh": "指着图片认识「胶水」，先听完整的 glue，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -7346,7 +7532,9 @@
       "zh": "指着图片认识「图钉」，先听完整的 pin，再按字母组合听声音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "phonics",
@@ -7412,7 +7600,9 @@
       "zh": "把 we 作为整词听读，再一起读例句，指出句子里高亮的 we；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -7477,7 +7667,9 @@
       "zh": "把 is 作为整词听读，再一起读例句，指出句子里高亮的 is；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -7551,7 +7743,9 @@
       "zh": "把 was 作为整词听读，再一起读例句，指出句子里高亮的 was；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -7627,7 +7821,9 @@
       "zh": "把 said 作为整词听读，再一起读例句，指出句子里高亮的 said；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -7701,7 +7897,9 @@
       "zh": "把 one 作为整词听读，再一起读例句，指出句子里高亮的 one；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"
@@ -7766,7 +7964,9 @@
       "zh": "把 to 作为整词听读，再一起读例句，指出句子里高亮的 to；不要求按字母拼音。"
     },
     "review": {
-      "status": "draft"
+      "status": "audio_approved",
+      "reviewer": "model:faster-whisper-base+base+small+small+small+medium",
+      "reviewedAt": "2026-10-15T01:38:40.930792+00:00"
     },
     "contentVersion": "2026.09.3",
     "track": "sight"

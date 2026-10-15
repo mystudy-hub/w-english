@@ -1032,11 +1032,611 @@
       "imageSha256": "245246a24598abbd486677b786f0429dc94bc8a58f91db8dd95a5716cc166ea2",
       "reviewer": "model:GPT-5.4",
       "reviewedAt": "2026-10-13T20:17:14+08:00"
+    },
+    "w_cat_001": {
+      "contentSha256": "85d4d3360bb01936c424ad4ad713a09bce716f9dc3edfb1f55e6087ebe9fa682",
+      "imageSha256": "ad63cc7c2b14c094b54eb7e08884b9d6b17096c4b0b686753e89194e83bc2569",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_dog_006": {
+      "contentSha256": "7b6df8401a06c3648010102b342107b251de569668900282f201f476df076959",
+      "imageSha256": "fdaa8362fe716280e78a946e89e41da1a411d9456d33aa8e2aae48359119ed07",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_pig_007": {
+      "contentSha256": "5662759c71d365b9b823b0c590bf3385c17a27fbaba55ee3c9cf9492dbae4c90",
+      "imageSha256": "f202937e605e41da3e87a4d4ef3a8b6cbbcba59760ebd81e586ece9a9b854277",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_hen_008": {
+      "contentSha256": "f1d5e347377714a16f7e13237d1c2ba2221fa3fde5b3e3509d1c4fbc5cbafd9b",
+      "imageSha256": "84039869feff93195fc7eb03d571a386d0dc5e97e7171e5211b8be76687fced2",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_sun_002": {
+      "contentSha256": "5b3f44cb54b144aab08be422eeaa98a6e6274f1a6ab1f3bc61967cf252406152",
+      "imageSha256": "7d6ec0ed7557dc00fa11b6c9b0ef0407b7a8863eeb04176afb8633c32e20c55e",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_bed_009": {
+      "contentSha256": "365af8ebdafe9b2ba2abc725a57bb0ad95169dc7c517a2dfdb8ad2d952a24e4d",
+      "imageSha256": "abdfb74f226c62d3bdb807368a77cdd5bec3a59df894d3ac921731f7121ebfa8",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_bag_010": {
+      "contentSha256": "06fb94e9781d431138c25e8f567e0886a4e0fff647addae23de9f214e51a5c66",
+      "imageSha256": "bf73f80a7c8b7172f9a025a43b6ff85818035427d5f1c4d64f057336f4506859",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_cup_011": {
+      "contentSha256": "b03ab1e8d211ce60bc81682d87882acd7be917042788e27c86ebd1f3e9fdfe45",
+      "imageSha256": "ffb861c1b1857ac2c45814bc8188d82a7c28dd92a56783900561df1dba3a9433",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_hat_012": {
+      "contentSha256": "3bfd8790db091ca5cb329d276a16b81c69ce24ecaf498c5efb6181ba918d42ce",
+      "imageSha256": "9497bfd14b485f66e7288160502f1072749b15667d894f23b392e34ef7987e35",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_pen_013": {
+      "contentSha256": "cb96fc3c48eb196196caca7599b98f58f57071f88db8eeb8594841280427464a",
+      "imageSha256": "77cefec0ed824e7a66a24b26ce05a8e5b69bdd4abb5ec570437c73181a44a7f1",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_rat_014": {
+      "contentSha256": "f2791a51ee2710f9fbf52e6414b301a0d3bd4cd98ea521639b3f78edc8bc4149",
+      "imageSha256": "3cbd25553940e7031be0419def33fa4d7b1d6ffc59279347c8321cd9a0dee61f",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_bat_015": {
+      "contentSha256": "51071db17cebb66f45d7253babc44d9c9bcd9a66af5cb7b5a701f4397d4e5e20",
+      "imageSha256": "3a95077b05fd36f36b25cc651f720ad88fcc12188c32b10e78edf479f4e6c8c4",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_ram_016": {
+      "contentSha256": "e6eeb1dbf4c087831fbaab6ea450e792ab3bc596747a85e13fdf599b2e08abc7",
+      "imageSha256": "d0472555a066d181480fbcafd3eade91a63a67ee510c3f543c6dd3c487b1f7a0",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_bug_017": {
+      "contentSha256": "7825117deaaefa5451b5116d336d41e06110c98188b07230999b15ba1ffd8f3a",
+      "imageSha256": "9fa0c89105b05361dd695ec1843074456b8476072c78fc6a1fe8df129a29f1db",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_map_018": {
+      "contentSha256": "9af2dba4dfd656206000bee18acef2c5b6aa4d755ec8e710b4c69ea32dff5bcd",
+      "imageSha256": "d910ebe3ab96d051d90a86a7bd860dfd9ef1f8f70775c6ececf3ccaffc83dec5",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_cap_019": {
+      "contentSha256": "3bc7e1e417e3f2118e8743ef125cfd7d33fda1c6403de7a2de56d737fa4aa32d",
+      "imageSha256": "c0c292955f1ab77ef328b60d01eb3c7763c7a3e0c0ae93db962b0029a4a27952",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_pan_020": {
+      "contentSha256": "498fd00a630f30459562ae2062a95f741ea25d04387b60e036475667835a000d",
+      "imageSha256": "66141726680cbc77e9496ca98f692d70747f43f0f1cc549834c01fb327368d0d",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_net_021": {
+      "contentSha256": "719136bc214b18a142736302cd2ddc584c85c6f82aec961237178720d992a4d7",
+      "imageSha256": "2ce51cebd86212b716e34ac1b6a46840933d7c5f0abb1ec117d062f1054248c8",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_log_022": {
+      "contentSha256": "9150afed941fc33cde4cda47f450b77cfc948d314ff4beca4114b05be9884527",
+      "imageSha256": "e3a343adb943655f4c31a45e92849b7b7033b10daab2a1c30b3035be2f920fab",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_pot_023": {
+      "contentSha256": "76f898439cb202539d6d3d8b6fbb6aeadfd2e1c086b7b34116e6101c1cb0ec84",
+      "imageSha256": "d6a6ffbe86b6718abd58f25d0fbab6bed2dcb4e4231cc5f7febf9ef81675e317",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_fish_024": {
+      "contentSha256": "ee374fcd263c32e5bebf871242811400ed3bb863478b51877e6be00964c16f7b",
+      "imageSha256": "4042b312412c7b3146f67079ba70653d3202ea80f6c44e9ee4ad4698b8524cd1",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_bird_025": {
+      "contentSha256": "39bd01ab5d08c30ff5d913027e358636c33c2d4ec9fc18a566cb2e48efdd04e7",
+      "imageSha256": "d5b889f5f9d662d04e9e2251cfd301c9f4a5512216061a72aa03030fba52346c",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_rabbit_026": {
+      "contentSha256": "afa39216d2ffa7f2aa0d55f32493d2d8de766422142bd02815d1e8474257f779",
+      "imageSha256": "9722cf763e8a690353f53d94ae444caca5984b8865387761743b3d512e1a909e",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_turtle_027": {
+      "contentSha256": "419eb806b4a500163b4d09d0a3078eb3e969253176b02542741539fbfbc51dd3",
+      "imageSha256": "d2e6b749d1c21d5a1c078058fa946d370ff3be27a6a8add1195346a68418856a",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_snail_028": {
+      "contentSha256": "1663fd36569c068aaf9916bbf2e69e6d9a0406ac72810ffd3d5d7494338a0614",
+      "imageSha256": "0872d16176776ce629cfe51ecdeab1ca0b29b4c0280f89008fbfc8133d4b9a93",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_worm_029": {
+      "contentSha256": "56955aebec8b79e068f7d17145fffdbe9785c9f5955cc46bef881bf03c64d7c3",
+      "imageSha256": "fbae212594e3d3947c2c2b9889683105cc2676b38717e658fbce848da2ade04e",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_egg_030": {
+      "contentSha256": "75432c5d4054f04da13e5c6dc3df7e3d29944a5593f55593d0d038ceb5d3fea1",
+      "imageSha256": "3b21f232098a89e92770e3bbb223a1e16af9320e4ce44685e198d402f96e05e7",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_bone_031": {
+      "contentSha256": "84516dd5213ad5369cbaeead9d3a8ad19482bbcec0e18e0b63767025234bb902",
+      "imageSha256": "7614dfbc00294013ab64f0cb355983778e3ce20d28f0886487bda0e711554e36",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_box_032": {
+      "contentSha256": "5c7b961cc73126e15279c91725ab5f2e27e434a8516ab1d8434920461bdbbf0d",
+      "imageSha256": "d28b5f9b1d6f4e9135bf28494115b4095d24acd16308659ee4776897c364477d",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_key_033": {
+      "contentSha256": "06b03bb0ba57acf345c84ef75995b6cfb14a4c64f2060b4ed392889fbe9f3fc7",
+      "imageSha256": "8650532397fc4798112007a09566d6566dfe751b5afe1ce694776769b43ab1e1",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_lock_034": {
+      "contentSha256": "0024c496bae45a6bb1588b6669fe6346e89467f4d84c256357feaf362eacdca2",
+      "imageSha256": "1b9d9b12327878169027d56668fb75e9724557aece8b83dfae307372bc3163b3",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_gift_035": {
+      "contentSha256": "7aa40825f7bbf3ae0cd3901718e96705a641a58ba6ac41768c61da9608d9eb2c",
+      "imageSha256": "a30d44bde2b4c5f107c3a8396bbc8667b2717913dcccf6fef784f874c6282efc",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_house_036": {
+      "contentSha256": "855ea40ba4fc6eca5b95d8bf1bcf75f77c7d3da5feef3849abf1d7859b23a71e",
+      "imageSha256": "015c265b8986de7b95289f6c38709dbd539c00f1606ab504175a16a6966fc1af",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_door_037": {
+      "contentSha256": "bfc82cd6d0112e6790f1bfb9818ff5c1e66f57de96081be6b833d142d6996366",
+      "imageSha256": "8f8f4d61a1e655b0b18277b3c7cc733253cf4eebccd61abce1e90e8bfc9d0f70",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:28:52.244+08:00"
+    },
+    "w_apple_005": {
+      "contentSha256": "3730e516a49d73183cc70412ff81e7b29dbb2f9af1dfc7e10ff0a5eb99ec5fa0",
+      "imageSha256": "3c37cd09368008b3e1c12fe1927e6800648cd7a022f8c9f4cf35ef3062c99e68",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_banana_039": {
+      "contentSha256": "836e4171dfe04cff76df8835a2dcdcd7f360143921774cb7c37cfb346d877cb3",
+      "imageSha256": "0f2da023ff53abc1a411d71b5ff4f64198c0267970a560a95a8a32fa959bd171",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_cherry_040": {
+      "contentSha256": "e947c904cf2668c86cf4d0524e90bc557032f69c299a770021953f964c0003b3",
+      "imageSha256": "485379ad8549de2e5fbe1fcd294922d8e048ed68001dc1efd1221d3e9a20d9a0",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_grape_041": {
+      "contentSha256": "14b843d310f311b0c3fcf947907dc2cf9f77cc22e7d4fa9aa72004adc2a7c646",
+      "imageSha256": "d4cfa6eb8fdd61c2fe7986e07cca2346905f2a963c9d9af1dd8ed57dd8579174",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_carrot_042": {
+      "contentSha256": "6ed7d188484757426220f7af1219495e08be110171998385a97b216da3eabf02",
+      "imageSha256": "6b663db5947f8f721e2ed5a1b0d1d666a9a20e6764bcae8d2dea27f279803e82",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_nut_043": {
+      "contentSha256": "d1d99c0efd5b8f1064a8793965915133dd1ebdd6989966003be4c8b0690c61b7",
+      "imageSha256": "1409b6b0699ff49408a4e6a9cf984e1f51707121a4bbd113b60861a37cb38e75",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_bean_044": {
+      "contentSha256": "5d4fc759588e2ae49ea08980c08ae344d7dcd4d795e16537f8715ee2ed4815b3",
+      "imageSha256": "5c017b79835381335931758f51f0da85119cd83448f1efa9abd1cef60db6a41f",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_milk_045": {
+      "contentSha256": "fabb3bd6549e5bb0db003fad817a7f7a522aa69993b67fba1682b7199a4798c7",
+      "imageSha256": "df707d239e6bccf400bb6e0a48de9670dba6bfa68f6be5e86a8e42cc33ab9637",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_soup_046": {
+      "contentSha256": "0796fdb73b941f89fed24d7613990fbbcf06e985520299d3746dc0c5abc2c296",
+      "imageSha256": "b5f1aa9523b6f3298b442431ded79ae441ba2727026226bbfbd06d8c8985f03e",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_bread_047": {
+      "contentSha256": "c4af36341430f5fc67053fe602db52a5b5fbe33d74a8c9a6202d7e0422254e8c",
+      "imageSha256": "b130c887d86e6984692f944fc408e8272bb1623e37067e4258464e59a40ce451",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_cake_048": {
+      "contentSha256": "76444e4907da03bb0d0332e85c8f037183e44ccb25dabc4c2f0911112e4f8cb6",
+      "imageSha256": "d2ce4ba9fa059679c77fa14fdf3e08230440a3f8265d90bea8af00d85469791b",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_cookie_049": {
+      "contentSha256": "8f598c4d44543b79ae2c52cf2e6ee67de7963a4e804d5434f528f769465d1188",
+      "imageSha256": "5ec056a6218c0a59457970f334903683cbf94d19b7f99d19429dbf5967bd32ae",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_candy_050": {
+      "contentSha256": "0c1195a032850950c9b87fb8620e14208a699d8740efe56ba0b7fa1df19478d7",
+      "imageSha256": "0651c592c6fc5a6089dd43975e59ea8dd359641f5d8a030276cab6e303efd66f",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_corn_051": {
+      "contentSha256": "020ced81197b119052ba27bcdf41343ec068653bb70680c67ea4f2e1e4afcfbf",
+      "imageSha256": "1a9c455fffc0265e70eb178973df299bb4f8a8f71bfc14d179abd4ad85830b0a",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_leaf_052": {
+      "contentSha256": "cea16c8470d63d2b702f69f832e62cb8ef245b5ef34c2c1a3f96ae7fdac06edf",
+      "imageSha256": "f06414c38e5bba6542c0fd57afdb4fb0d7824eae712499ae30c5307099d2f588",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_tree_053": {
+      "contentSha256": "4e2dc508fad608d0cd6df86ebf51e819ccdd3eba2b3fafe948eb113fcebe880c",
+      "imageSha256": "85373f5dfca070bafadfc56443ebb109fb4f045f5c26ce4698c946d53d1fb00c",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_flower_054": {
+      "contentSha256": "7b67403d2631738390ad4e9cda1de76f6c5aefb3c003582927d522e0aa8b0c88",
+      "imageSha256": "20804e53d89429e95092d4dd19483071a2c7d4b8cbc1cfdcfb63e549df5c37dc",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_grass_055": {
+      "contentSha256": "ebed08dcc24e8ad0237b413f62c47e39901c82472e1a738124bdd7c661007dba",
+      "imageSha256": "32f6232323bef3854178a6a9ec3549d5da2acce51c583d54f9bd9c13c59fda89",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_rain_056": {
+      "contentSha256": "66382a97432077a130917c3ba4b3d9beeaf932b79962ce9676d2970e39378759",
+      "imageSha256": "886bae26439382f4fd269e72c0984d296f68ffd70ac3563308dbabc5cc542576",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_cloud_057": {
+      "contentSha256": "ab8e521fdbff33d81fae417edd2c4ec59b892befaa3d94df2322d85f513513db",
+      "imageSha256": "be5a8d2a41727ab65ad14b7dbefefa1c6d360d9d2c1f488092ca186e1ab6d75c",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_snow_058": {
+      "contentSha256": "b0fcaf5ca06ae6143f4b46a2930f704f8cd942f53e004dbf1cada6b1fa4dcff1",
+      "imageSha256": "fd236ebd868686c9b6f99e0d55ae6174748eff20d9f6bbe308035fd0fa53224e",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_moon_059": {
+      "contentSha256": "2045e336c33691f4dae2a170e6606062132f36ce77501ee619c7334de66e9a08",
+      "imageSha256": "66464d4876d894d30dfc5eb88692d2bf5d09596268608c824cabcc2499808652",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_star_060": {
+      "contentSha256": "46a709def7858125c2afbad9a75229f65ef248f72ad412cb558bdf43320e0ea4",
+      "imageSha256": "f9c45149a1fc7447f91ea580d72796c7d67b53d3ab739f953f2c85a3fde5c721",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_wind_061": {
+      "contentSha256": "fc1560e2e28bac8e4e25f8f473bbe0f08276266b0cf479fddb9d18c959551de6",
+      "imageSha256": "90c3395f64c5cdc19800d25bf307bf56c1222f27a9e242f354a07f67cb63cd84",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_pond_062": {
+      "contentSha256": "576095819a7ad7320bd3457093386a13d9d7ed402f981506be478dcea642bc47",
+      "imageSha256": "65b328bdfa4c00b780b30a8eef78d4f40fdba1bf5f7fb38c6a2060e071b67831",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_rock_063": {
+      "contentSha256": "19f70321e8eee4361e8a9794975e67b1fb08b074de364892be6194cc3a6a56e2",
+      "imageSha256": "e05e13bff49dbe10d3e01030fb899cc3d216f168a4feae20245978450948049f",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_seed_064": {
+      "contentSha256": "42c946414f224ad8e4e3f08c16971f834cf7fd3c14cdd2e034df7fe3c70267b2",
+      "imageSha256": "93d089f3b09c118b37bb866b7ee7f1fd57811b094871eb684d7eb15c69ccfbc6",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_red_065": {
+      "contentSha256": "1cebb2ad919cff6d2a08dfa76028eaca75a4d7ac243f5a14393fec7ba8509238",
+      "imageSha256": "25983bcb7cf3f512432093bbfefad764979c1708ab62c97a08a07e62dde77f7a",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_green_066": {
+      "contentSha256": "26f8d2da6a3608d312d2f6eb265f99e4b7723924ed7b6462428cac9db365108c",
+      "imageSha256": "e98eed3f4249f5f5a724c2de0c6bd797dc27e9aa1cb41180f3a412d41f72aeb4",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_blue_004": {
+      "contentSha256": "8097657696c9149b0422aaac398f4b8afd5fbc562a72296b8acf4e11328e5a9d",
+      "imageSha256": "90d098a43b86af6ec7a5650d45e8b47e743e6c2f9e9198bbd35c641e05c1387e",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_the_068": {
+      "contentSha256": "262f6d016e17ba280598a5dda891eed635c5df4f7e2aea336a1df4a2f0efec7b",
+      "imageSha256": "153fb1ca3c646ec836fd07d7e1a7e6fa951d05b6a94cdad3c8867c8b8f6e7bbd",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_a_069": {
+      "contentSha256": "e34065316158168c5128de61d5e025b429def5eda2113073ae4594da76c5ae48",
+      "imageSha256": "158e1ca92cfa9950acb17ec5107391d214cc4286cb9c70944655c6405a2654a0",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_you_070": {
+      "contentSha256": "f407949b9b8cdb9e8c4f707cfdfaea5512a4b4d90c6b473c320d3ade21017606",
+      "imageSha256": "2eba21805bbd17fa6fe876f8a01c9cec8838b90702fbcc1f33bef954c35dcb68",
+      "reviewer": "model:gpt-5.4",
+      "reviewedAt": "2026-10-15T21:29:05+08:00"
+    },
+    "w_book_003": {
+      "contentSha256": "e67159d41593ed0129605ff5820464491de2da168fe90fd37104b2ad7bb8466d",
+      "imageSha256": "193494d0fc4993cc5976e61c5e621ec6a8b3f979d31e562a11b160088be3f116",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_pencil_072": {
+      "contentSha256": "41b325205254b7199bbb8468f86202830e2cf80bea5fa75205382201539232d7",
+      "imageSha256": "d21e1ca14341cbefff42962d7128d4821547140878d8d28433e00115470ed4de",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_ruler_073": {
+      "contentSha256": "f529db9a47b3ed07ed03f6fbb937c0e6870ee16d73f09d1a7afe0c9204fb59e1",
+      "imageSha256": "c0167b656390dbf8f52a01ffb7e609032cf9c3b259bc865fb60b2da03ff72a16",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_brush_074": {
+      "contentSha256": "b59c2fd592f40dd2ca304e1c33ea70154060afdb13a70719d56a4bf0bce529e0",
+      "imageSha256": "9c343918a383b63c7f4da9d6d821db9f5b553a097964c2075231093265292548",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_bell_075": {
+      "contentSha256": "b5defc650332e95ec7b5713829392b087f0e518e5ce29e845e49368d562ba9af",
+      "imageSha256": "ee927ae603bca29835ba088518a968a8128e48edf5b5821c79994b7052bb326e",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_clock_076": {
+      "contentSha256": "628b59c40fc5866bdb08949917e4670f3e5c2ac28a13a16fb31af96f89726be8",
+      "imageSha256": "dcc5129bbe2c75078933c9c0f376b2be4706610da55e393bf5dba04a40e6a48d",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_desk_077": {
+      "contentSha256": "e5975972a169dee1f5e258fb784393396c4cbb19c7ae92938e35345a5028eae5",
+      "imageSha256": "4f2f8c09fd782838f9bbfb522ead001eeb8a4e5601b1fd5d60b83f26ddff1153",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_chair_078": {
+      "contentSha256": "47cf28c4c8d4be062e7bece4183593c017253ce3139edc69f26e06a65548153d",
+      "imageSha256": "acb1ed26c76d0730f010e115afbdf3f691d1ddf30a917ddd4aa9cd26e4446cb8",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_hand_079": {
+      "contentSha256": "2dd56b7e5b153e644c1ea969c9a04988f518d81f50939f681439b0e8d5a48ef9",
+      "imageSha256": "faec4b295169e38dd08d984caf4eec4f8c892894bd4ec41128f7ae6cfdd05015",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_ear_080": {
+      "contentSha256": "092f54be0b00a64ab3719511f638485d053bc0a46f3b20135ba06eae280605ec",
+      "imageSha256": "72744bd98a1f0a33c8c8e3a56cdcbec8d1d5f4996e0c115f46d91352eed144ec",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_eye_081": {
+      "contentSha256": "7c68012ab9daf85f0fc940f83bf88834b339c23fa418ae18652a584dcc183f5d",
+      "imageSha256": "7fabcad3eb96ffc42b01009d52930bf5a1abb41224cd9a0e772a4d2f2f3a841b",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_foot_082": {
+      "contentSha256": "8e3bb3a644a03a98189515e10d14164816b9a00cc1145bf5af00148d4bb4799d",
+      "imageSha256": "14f3d1a1682d4cd2d4c9fa4f04dfef148a457081d2c059935cfb6ba04b388981",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_ball_083": {
+      "contentSha256": "18f87886f9a2fd3b6ae506b8011537964be5beeb68d332b10b047d9e9511e982",
+      "imageSha256": "d45d23f43f15a31e75322c9c2c26d75b236a9b1ef28e94f2df57f2db8461bb84",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_doll_084": {
+      "contentSha256": "570692eade77460b672e75c9249fe22f4402a8a21d905cb919b2accf0e94c01e",
+      "imageSha256": "4ddb19d974c1a21bc6d6369af2b6e5b6cfe52145dd2fd700f9d3593b1636bacc",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_kite_085": {
+      "contentSha256": "fa2476d4fc9cc5eb383fed03a07b7e52d5dc174f73682687f9c9c61ff2e0fc6b",
+      "imageSha256": "cdbdce84783235a14f7efac097fb4ee6f3de73695fb9b1535b1cca6f17fe06fb",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_bike_086": {
+      "contentSha256": "57b1d3cb514fe975223a4df64acb3d9cabfef40c2a797ecbc8af0b7c4cb4c4e9",
+      "imageSha256": "dc06d452e669d116cbf65c2d39d79b795df726fe50938581bb0081f016887de8",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_car_087": {
+      "contentSha256": "1b015d7bc46eabfe9a4e888ba8ad27163bd5881d3e73d2a8f4875c45403d4ff9",
+      "imageSha256": "1c21c4a967656870fb632fefbd41b0f6191ef2d06d925664bd90d9b6cdf5e75b",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_bus_088": {
+      "contentSha256": "60061820f3852e85b6cceff78e81954d252117dc1b19f9a85d21564d3ac0191c",
+      "imageSha256": "94d067841474112d9f74513a6634d2738aed5d24723ba096e7c3a8cabedcd0af",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_truck_089": {
+      "contentSha256": "54be8572180a1b26ef9509392c6e56ce31e9b3e0983cd818bf6e8cedf5e423c7",
+      "imageSha256": "1fdc691fec9063f6913287997286a4dd38247774ddb13149734124e00f5f4bd5",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_train_090": {
+      "contentSha256": "6693c7a7ea6d935a47d2f7e0364d4e1739dd8d8a7096ebb370e24c8330b6dd6e",
+      "imageSha256": "aa316f51879023c0662e41e93a65208b00daca9a357c6453cc385e650b1f0eb5",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_ship_091": {
+      "contentSha256": "ce855405a0abeb05670d7d47106c39c7381fefeead6d4e0ef1efb02f5283b94e",
+      "imageSha256": "e68352961aef0115643e532ecc918c0c243c3fab9f43f91113353143a0184c9e",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_flag_092": {
+      "contentSha256": "68e0a966013d7413c0216c11807a38b322efab0e6d7a8860ed2805929f8e1432",
+      "imageSha256": "4fb1b9621ed92c4760180ece73446082b95eae3d50d04b221fc6cc6353e6692c",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_tent_093": {
+      "contentSha256": "b2f8e42422681e091dcfefe02d4e801219a48fb1f12e92b86d318e4ca4dcf6fd",
+      "imageSha256": "5e80b11a9489ad2e9b06790554bfeaa056215cc6e11da19be340f1a8dde0c955",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_drum_094": {
+      "contentSha256": "74c2aca1fbf06593b2ba19b5c08f9abae436dcc47995acb2c60f9bf26aba7916",
+      "imageSha256": "e4f03e7fed6d21edae61cdad0eb2aa8d50c188fa1f5a6557c130be2f616052e9",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_ring_095": {
+      "contentSha256": "7095c2acd3819917cb151a0aaa9668ad09b98e336abba4f286e36769dd33c36d",
+      "imageSha256": "66d11bc6656cb8b8feae9d346ced34141584e4f20452bf151be365fea3b9cea8",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_glue_096": {
+      "contentSha256": "ff0dfddaf59895ce19ed53a1c8e3d003a029fe14a447f6bebd2eb4eadd73b025",
+      "imageSha256": "fdc3a51cd9c76fafd55a8cc1441955282231857c4997a3a2b56dd94f89c48935",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_pin_097": {
+      "contentSha256": "d79bf3038a81531d959e0a3c8623981c2a2813f6bc966b1f39076d436ce0ca72",
+      "imageSha256": "f997e6f92a572117649b16b26cfafc6ca24742829ab8a0b8e73ad19e5e60c326",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_we_098": {
+      "contentSha256": "278aff04a3b1a3cc3ea956f95ee32563cfcc40fde63424511f9244ad4222ee86",
+      "imageSha256": "da3e0fc9d1e73ca853513adcc7f9f7aa237824f59d2767d640434f25e5d68114",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_is_099": {
+      "contentSha256": "2fd24f7c114503c4bfb06d758e8a74f87030909e58e2528dbf905646ea15ade1",
+      "imageSha256": "b26c9ed21b71a16e0091965226d0a7d9b3a9a89d9afc1acda5b56ede83559b9a",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_was_100": {
+      "contentSha256": "dddd91eb6a3ed3eeea3298d55d1540553229b4765dc73a5446158b7154b5a88d",
+      "imageSha256": "27b0fbeeb0d0f579963bcf7042e4b6f255800edbdfa5b7a831d2f72d2a495186",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_said_101": {
+      "contentSha256": "8e832462f756888cac20804d6902aee86846a81b970a95d70f37f254950593af",
+      "imageSha256": "b8433704cd37abaa3db7039519177baefa35d311e2851e29c35fefe209ea6d37",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_one_102": {
+      "contentSha256": "59bc025f247ef9ad9bf8ae72869549748bfb604559f9a9e69a307c12df17a9db",
+      "imageSha256": "a27426fb04b27b68c3be76a930b82106f4caab8b7b99fa58d4313444f2fdda25",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
+    },
+    "w_to_103": {
+      "contentSha256": "4b4beb0b528feb6e77688cb88957383d2f9db6a3b41703a50a0c1c5404a09453",
+      "imageSha256": "7c4849af22484e47852ea0a8fd007c49558ee2875c3d77d658e9c2a48608efd8",
+      "reviewer": "model:GPT-5.4",
+      "reviewedAt": "2026-10-15T21:31:58+08:00"
     }
   },
   "policy": {
     "reviewer": "model-assisted",
     "note": "自用场景下由大模型逐词复核替代老师听审；人工抽检保留。音频侧仍需听审或 ASR 复核。",
-    "updatedAt": "2026-10-13T20:17:14+08:00"
+    "updatedAt": "2026-10-15T21:31:58+08:00"
   }
 }

@@ -10,14 +10,8 @@ import { IconButton } from '../components/ui.tsx';
 import { navigate } from '../app/router.ts';
 import { audio, playEffect, toggleFavorite } from '../app/runtime.ts';
 import { useAppStore, useParentStore } from '../app/store.ts';
-
-// Web Speech 备用发音引擎池；全局 voices 监听归 speech-fallback 所有，这里只懒加载。
-const activeUtterances = new Set<SpeechSynthesisUtterance>();
-
-function currentVoices(): SpeechSynthesisVoice[] {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return [];
-  return window.speechSynthesis.getVoices();
-}
+// 语音兜底的唯一所有者是 speech-fallback：这里只调用，不再自带一份 Web Speech 实现。
+import { cancelWebSpeech, isSpeechSynthesisAvailable, speakWithWebSpeech } from '../services/speech-fallback.ts';
 
 export type SpeedMode = 'slow' | 'medium' | 'normal' | 'custom';
 
@@ -50,40 +44,6 @@ export const SPEED_CONFIG: Record<
     desc: '官方正版流利语速',
   },
 };
-
-// 备用兜底朗读
-function speakFallback(text: string, rate = 0.8) {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
-  try {
-    if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-    window.speechSynthesis.cancel();
-
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    utterance.rate = Math.max(0.5, Math.min(1.5, rate));
-    utterance.pitch = 1.02;
-
-    const voices = currentVoices();
-    const preferredVoice = voices.find((v) => 
-      v.lang.startsWith('en') && (
-        v.name.includes('Jenny') || v.name.includes('Natural') || v.name.includes('Aria') || 
-        v.name.includes('Google US') || v.name.includes('Guy') || v.name.includes('Samantha')
-      )
-    ) || voices.find((v) => v.lang.startsWith('en-US')) || voices.find((v) => v.lang.startsWith('en'));
-
-    if (preferredVoice) utterance.voice = preferredVoice;
-
-    activeUtterances.add(utterance);
-    const release = () => { activeUtterances.delete(utterance); };
-    utterance.onend = release;
-    utterance.onerror = release;
-
-    window.speechSynthesis.resume();
-    window.speechSynthesis.speak(utterance);
-  } catch (err) {
-    console.warn('Speech synthesis error:', err);
-  }
-}
 
 export function DianfanPage() {
   const [activeTab, setActiveTab] = useState<'lessons' | 'words' | 'favorites' | 'quiz'>('lessons');
@@ -170,6 +130,7 @@ export function DianfanPage() {
     if (nativeAudioRef.current) {
       nativeAudioRef.current.pause();
     }
+    cancelWebSpeech();
     setIsAudioPlaying(false);
     setCurrentTime(0);
     setActiveSentenceIdx(null);
@@ -272,6 +233,7 @@ export function DianfanPage() {
     } else {
       singleSentenceBoundaryRef.current = null;
       setLoopSentenceIdx(null);
+      cancelWebSpeech();
       audioEl.playbackRate = currentPlaybackRate;
       try {
         await audioEl.play();
@@ -288,9 +250,9 @@ export function DianfanPage() {
   const handlePlaySingleSentence = async (idx: number, isLoop = false) => {
     const audioEl = nativeAudioRef.current;
     if (!audioEl || !currentLessonAudio) {
-      // 降级为语音合成
+      // 降级为语音合成（共享 owner，见 speech-fallback.ts）
       const text = selectedLesson.sentences[idx];
-      if (text) speakFallback(text, currentPlaybackRate);
+      if (text && isSpeechSynthesisAvailable()) void speakWithWebSpeech(text, currentPlaybackRate);
       return;
     }
 
@@ -306,6 +268,7 @@ export function DianfanPage() {
       return;
     }
 
+    cancelWebSpeech();
     singleSentenceBoundaryRef.current = {
       index: idx,
       stopTime: sent.end,
@@ -323,7 +286,7 @@ export function DianfanPage() {
       void playEffect('sfx#pop');
     } catch {
       setAudioLoadError(true);
-      speakFallback(sent.text, currentPlaybackRate);
+      if (isSpeechSynthesisAvailable()) void speakWithWebSpeech(sent.text, currentPlaybackRate);
     }
   };
 
@@ -341,10 +304,8 @@ export function DianfanPage() {
         return;
       }
 
-      // 2. 使用清晰语音朗读
-      speakFallback(wordObj.word, currentPlaybackRate);
-      const delay = Math.round(900 / currentPlaybackRate);
-      await new Promise((r) => setTimeout(r, delay));
+      // 2. 没有系统片段时用共享的兜底朗读，并等它真正结束（不再用固定延时猜测）
+      await speakWithWebSpeech(wordObj.word, currentPlaybackRate);
     } finally {
       setPlayingWord(null);
     }
@@ -429,7 +390,7 @@ export function DianfanPage() {
     } else {
       void playEffect('sfx#pop');
       setTimeout(() => {
-        speakFallback(currentQuizItem.word, currentPlaybackRate);
+        if (isSpeechSynthesisAvailable()) void speakWithWebSpeech(currentQuizItem.word, currentPlaybackRate);
       }, 500);
     }
   };

@@ -10,6 +10,15 @@ async function enter(page: Page) {
   await expect(page.getByRole('heading', { name: '动物之家', level: 1 })).toBeVisible();
   await expect(page.getByRole('img', { name: '猫', exact: true })).toBeVisible();
 }
+// 内容包是否带齐语音取决于构建环境（本机有 audio-source，CI 没有）；
+// 断言必须跟着真实的 missingAudio 走，不能硬编码“已就绪”。
+async function audioProvisioned(page: Page) {
+  return page.evaluate(async () => {
+    const index = await (await fetch('content/index.json')).json();
+    const manifest = await (await fetch(index.manifestUrl)).json();
+    return (manifest.missingAudio as string[]).length === 0;
+  });
+}
 async function openParent(page: Page) {
   const gate = page.getByRole('button', { name: '家长设置，按住三秒' });
   await gate.hover(); await page.mouse.down(); await page.waitForTimeout(3200); await page.mouse.up();
@@ -24,7 +33,10 @@ test('welcome, setup, illustrated cards and real exploration persistence', async
   await page.screenshot({ path: 'artifacts/screenshots/welcome.png', fullPage: true });
   await enter(page);
   await page.screenshot({ path: 'artifacts/screenshots/scene.png', fullPage: true });
-  // 语音已随包提供：听音活动现在可用（旧世界是待提供时禁用）。
+  // 听音活动在真实语音缺失时会回退到浏览器语音合成（src/services/speech-fallback.ts），
+  // 因此在 Chromium 里始终可点；「不假装语音就绪」由家长页的待提供文案负责（见离线用例）。
+  const provisioned = await audioProvisioned(page);
+  expect(typeof provisioned).toBe('boolean');
   await expect(page.getByRole('button', { name: '听音选图', exact: true })).toBeEnabled();
   await page.getByRole('button', { name: '认识猫', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'cat', exact: true })).toBeVisible();
@@ -64,10 +76,11 @@ test('parent gate requires the complete hold; settings survive reload', async ({
   await expect(page.locator('.app')).toHaveClass(/motion-reduced/);
 });
 
-test('cached preview reopens offline with the fully provisioned audio pack', async ({ page, context }) => {
+test('cached preview reopens offline and its readiness matches the provisioned audio', async ({ page, context }) => {
+  const provisioned = await (async () => { await page.goto('/'); return audioProvisioned(page); })();
   await enter(page); await openParent(page);
-  // 语音已随包提供：离线包完整就绪，不再停在「图片已保存，语音待准备」。
-  await expect(page.locator('.offline-heading').getByText('已就绪，可离线使用', { exact: true })).toBeVisible();
+  // 内容包完整时显示“已就绪”，缺语音时如实显示“图片已保存，语音待准备”。
+  await expect(page.locator('.offline-heading').getByText(provisioned ? '已就绪，可离线使用' : '图片已保存，语音待准备', { exact: true })).toBeVisible();
   await page.evaluate(async () => { await navigator.serviceWorker.ready; });
   await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
   await context.setOffline(true);
@@ -128,6 +141,7 @@ test('content preparation works without the newer static AbortSignal helpers', a
     Object.defineProperty(AbortSignal, 'any', { value: undefined });
     Object.defineProperty(AbortSignal, 'timeout', { value: undefined });
   });
+  const provisioned = await (async () => { await page.goto('/'); return audioProvisioned(page); })();
   await enter(page); await openParent(page);
-  await expect(page.locator('.offline-heading').getByText('已就绪，可离线使用', { exact: true })).toBeVisible();
+  await expect(page.locator('.offline-heading').getByText(provisioned ? '已就绪，可离线使用' : '图片已保存，语音待准备', { exact: true })).toBeVisible();
 });

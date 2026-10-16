@@ -22,16 +22,15 @@ for (const mode of ['tap', 'drag'] as const) {
       await writeFile(`artifacts/accessibility/${mode}.json`, JSON.stringify({ mode, samples }, null, 2));
       expect.soft(result.controls, name).toBeGreaterThan(0);
       const knownBaseline = result.issues.filter((issue) =>
-        (name === 'themes' && issue.rule === 'name' && issue.label === 'BUTTON')
-        || (['card', 'co-reading', 'longer-word'].includes(name) && issue.label === '加入生词本'
-          && (issue.rule === 'icon-contrast' || issue.rule === 'text-contrast')));
+        ['card', 'co-reading', 'longer-word'].includes(name) && issue.label === '加入生词本'
+        && (issue.rule === 'icon-contrast' || issue.rule === 'text-contrast'));
       // These are current app baselines; keep the audit strict for every other issue.
       expect.soft(result.issues.filter((issue) => !knownBaseline.includes(issue)), name).toEqual([]);
       if (mode === 'tap') expect.soft(await page.locator('.app [data-mode-label]').evaluateAll((elements) => elements.every((element) => !element.getClientRects().length)), `${name}: tap labels are hidden`).toBe(true);
       if (name === 'rest') expect.soft(await page.getByRole('dialog').evaluate((node) => {
         const box = node.getBoundingClientRect(); return box.top >= 0 && box.bottom <= innerHeight && node.scrollHeight <= node.clientHeight + 2;
       }), 'rest dialog fits minimum landscape').toBe(true);
-      else if (name !== 'stickers' && name !== 'themes') expect.soft(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight + 2), `${name}: fits minimum landscape`).toBe(true);
+      else if (name !== 'stickers') expect.soft(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight + 2), `${name}: fits minimum landscape`).toBe(true);
       if (name === 'co-reading') await page.screenshot({ path: `artifacts/screenshots/accessibility-${mode}.png`, fullPage: true });
     };
     await page.goto('/'); await expect(page.getByRole('button', { name: '开始冒险', exact: true })).toBeEnabled();
@@ -91,7 +90,9 @@ test('safe insets determine usable space; orientation guidance traps focus and p
   expect(await page.evaluate(() => [...document.querySelectorAll('.app button, .app a.brand')].filter((element) => element.getClientRects().length).every((element) => {
     const box = element.getBoundingClientRect(); return box.left >= 36 && box.right <= innerWidth - 28 && box.top >= 12 && box.bottom <= innerHeight - 20;
   }))).toBe(true);
-  await page.setViewportSize({ width: 960, height: 650 });
+  // 竖屏，或可用区域小于「横屏可缩放下限」（640×320）时才提示横过来。
+  // 这里用 700×340 + 安全区留白：可用 636×308，仍在下限之内。
+  await page.setViewportSize({ width: 700, height: 340 });
   const dialog = page.getByRole('dialog', { name: '把小小世界横过来' }); await expect(dialog).toBeVisible();
   expect((await auditChildPage(page, 'tap')).issues).toEqual([]);
   for (let index = 0; index < 4; index++) {

@@ -6,7 +6,10 @@ async function enter(page: Page) {
   const setup = page.getByRole('button', { name: '准备好，一起出发' });
   await expect(setup).toBeVisible();
   await setup.click();
-  await page.getByRole('button', { name: '进入动物之家', exact: true }).click();
+  const enterScene = page.getByRole('button', { name: '进入动物之家', exact: true });
+  // 重载（含离线重载）后内容与语音就绪是异步的，给足预算再点，避免点在被禁用的按钮上。
+  await expect(enterScene).toBeEnabled({ timeout: 25_000 });
+  await enterScene.click();
   await expect(page.getByRole('heading', { name: '动物之家', level: 1 })).toBeVisible();
   await expect(page.getByRole('img', { name: '猫', exact: true })).toBeVisible();
 }
@@ -52,7 +55,9 @@ test('welcome, setup, illustrated cards and real exploration persistence', async
   await page.screenshot({ path: 'artifacts/screenshots/parent.png', fullPage: true });
   await page.reload();
   await page.getByRole('button', { name: '开始冒险', exact: true }).click();
-  await page.getByRole('button', { name: '进入动物之家', exact: true }).click();
+  const afterReload = page.getByRole('button', { name: '进入动物之家', exact: true });
+  await expect(afterReload).toBeEnabled({ timeout: 25_000 });
+  await afterReload.click();
   await expect(page.getByRole('heading', { name: '动物之家', level: 1 })).toBeVisible();
   expect(errors).toEqual([]);
 });
@@ -111,6 +116,24 @@ test('portrait guidance preserves access to parent settings', async ({ page }) =
   await page.setViewportSize({ width: 1024, height: 768 });
   await expect(page.getByRole('heading', { name: /每一个新词/ })).toBeVisible();
   await expect(page.locator('.orientation-overlay')).toHaveCount(0);
+});
+
+test('phone landscape scales the design box instead of demanding rotation', async ({ page }) => {
+  // 手机横屏（如 844×390）可用区域小于设计基准 960×600：不再弹「把小小世界横过来」，
+  // 而是整体等比缩小到刚好放下，且触控目标仍然够大。
+  await page.setViewportSize({ width: 844, height: 390 });
+  await enter(page);
+  await expect(page.locator('.orientation-overlay')).toHaveCount(0);
+  const scale = await page.evaluate(() => Number(getComputedStyle(document.querySelector('.app')!).zoom));
+  expect(scale).toBeLessThan(1); expect(scale).toBeGreaterThan(.5);
+  expect(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight + 2)).toBe(true);
+  const card = await page.getByRole('button', { name: '认识猫', exact: true }).boundingBox();
+  expect(card!.height).toBeGreaterThanOrEqual(40); expect(card!.width).toBeGreaterThanOrEqual(40);
+  const next = await page.getByRole('button', { name: '下一页', exact: true }).boundingBox();
+  expect(next!.x).toBeGreaterThanOrEqual(0); expect(next!.x + next!.width).toBeLessThanOrEqual(844);
+  // 竖屏仍然提示横过来（这个版式天生是横屏的）。
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(page.getByRole('heading', { name: '把小小世界横过来' })).toBeVisible();
 });
 
 test('minimum landscape keeps child controls usable at the configured touch size', async ({ page }) => {

@@ -59,13 +59,16 @@ npm run browsers:install && npm run test:e2e   # 见第 6 节的既有失败
 | 模型复核（替代老师听审的文本侧） | `npm run content:ai-review`：生成逐单元复核提示 → 任意模型给出裁决 JSON → `--apply` 修补源词条（白名单字段 + 嵌套对象合并 + 修补后重跑契约校验，失败则整文件回滚）→ `--record` 写入与指纹绑定的审批记录（`reviewer: model:<名字>`）。**8 个单元 172 条已全部复核完**，7 个单元并行复核后共修补 53 条（U1 10 / U2 6 / U3 3 / U4 6 / U5 13 / U6 1 / U7 9 / U8 5），无剔除；命中最多的是英式音标落在允许表外（əʊ→oʊ、ɒ→ɑ、ə(r)→ər）、不发音字母未拆出、例句没用词条本形。172 条文本+图片审批已随插图落盘，课本词全部 `audio_approved` | `scripts/ai-review.mjs`、`data/content-approvals.json`（含 `policy: model-assisted`）、`artifacts/ai-review/*` |
 | 素材生产（音频） | 1409 个片段全部生产：`audio:generate`（edge-tts，en-US-JennyNeural / zh-CN-XiaoxiaoNeural，学科缩写 PE/IT 按字母逐个念）→ `audio:pack`（单元拆 4 个精灵：词/例句/音素前半/后半，单个不超 180 秒）→ `audio:asr`（faster-whisper base→small→medium 回读，829 个语言片段全部通过：数字归一、同音词组、拼音比对）→ `audio:approve`（逐片绑定精灵/源/文字指纹写入台账，reviewer 如实标注 `model:asr-…` / `model:pack-calibration`） | `scripts/generate_audio.py`、`scripts/asr_verify.py`、`scripts/record-audio-approvals.mjs`、`artifacts/asr-report.json` |
 | 素材生产（插图） | 172 张课本词 SVG（子代理工作流 cpa/gpt-5.6-sol 按探索轨道扁平卡通风格生成），程序化校验（根元素/viewBox/禁用元素/大小/哈希）后落盘；台账补 169 条（3 个重复拼写共用图片） | `assets/illustrations/tb4a_*.svg`、`data/illustration-licenses.json` |
+| 小屏适配（手机横屏） | 设计基准仍是平板横屏 960×600：可用区域小于它时不再弹「把小小世界横过来」，而是把整个界面按 `--fit-scale` 等比缩小到刚好放下（手机横屏常见 844×390 → 0.65 倍，触控目标仍约 52px，不滚动不裁切）；竖屏或小于 640×320 的窗口才提示横过来。典范专区/学习报告/家长页是长列表与长表单，保持真实尺寸照常滚动 | `src/app/app.tsx`、`src/styles.css` |
+| 应用壳优化 | 典范专区（含 42 课时间轴约 160 KB 生成数据）与课本轨道改为按路由懒加载，主包 708 KB → 566 KB（gzip 208 → 177 KB），拆分出的 chunk 仍进 Service Worker 预缓存；典范专区的语音兜底改为复用 `speech-fallback`（不再自带第二份 Web Speech 实现）；移除未使用的 `framer-motion` 依赖 | `src/app/app.tsx`、`src/features/dianfan.tsx`、`package.json` |
 | 学习报告页（P3） | `#/drill/report`：掌握度（已学/已掌握/待复习+进度条）、最近 7 天柱状统计（新学/复习/答对）、错词本（按答错次数排序+单词发音+一键只练错词），按档案切换 | `src/drill/report.tsx`、`src/drill/drill-home.tsx` |
 
 ## 4. 验证证据
 
 - **239 项单元测试 / 32 个文件**通过（`npm test`，本机 Node 24.19.0）；`typecheck`、`lint` 干净。
 - `validate:content`：100 个探索词 + 172 个课本词（8 个单元）结构、语义与场景/单元引用全部通过。
-- `validate:assets -- --preview`：360 个文件哈希/许可通过；**0 个音频片段待提供**（探索 353 + 课本 1056 全部打包）。
+- `validate:assets -- --preview`：360 个文件哈希/许可通过；**0 个音频片段待提供**（探索 353 + 课本 1056 全部打包）；`validate:assets`（正式）与 `build:release` 同样通过。
+- **浏览器测试 45/45 全绿**，且两种内容包环境都是全绿：本机带语音的包（360 文件 / 0 待提供）与模拟 CI 的无语音包（278 文件 / 1409 待提供）。
 - **浏览器实测**（Playwright，`127.0.0.1:4173` 的 preview 构建）：
   - 欢迎页 →「课本复习」→ 首次设置 → 自动进入 `#/drill`；
   - 首页显示 8 个单元（29/26/25/14/21/19/19/19）与今日数字；
@@ -85,7 +88,8 @@ npm run browsers:install && npm run test:e2e   # 见第 6 节的既有失败
 
 ## 6. 已知问题与风险
 
-- **本机 e2e：44/44 全绿**（2026-10-15 实测，逐个 spec 适配真实音频世界后）。适配要点：音频就绪断言翻转（听音按钮启用、离线包完整就绪）、审批导出按基线快照比较、欢迎引导与课程旁白的音频队列竞态在应用层修复（lesson/spelling/phonics 旁白被挤掉不再中止题解）、家长导出按完整备份格式（tables 包裹）断言、`playwright.config` 本机改为串行 + 90 秒超时（并行在这台机器上会拖出超时）。已知残留：`theme-hub` 在 960×600 下完整主题目录会溢出（无障碍基线已记录，未修布局）；`theme-hub` 典范入口按钮与生词本星标的对比度问题已顺手修复。
+- **无障碍**：主题地图在 960×600 的溢出已通过短屏紧凑样式修掉，原来为它保留的两处基线豁免（未命名按钮、豁免溢出检查）已删除；tap/drag 两种操作方式的审计对全部页面严格生效，仅剩生词本星标的对比度一项基线（属设计取舍）。
+- **浏览器测试**：本机 45 项全绿（`npm run test:e2e`，`playwright.config.ts` 本机串行 + 90 秒超时；Service Worker 生命周期用例单独放宽到 180 秒）。为消除环境依赖与偶发竞态做过三处测试修正：内容包是否带语音由 `manifest.missingAudio` 动态判断、重载后就绪改为显式等待入场按钮可用、替换版 Service Worker 的接管改为有界重试（先开页不导航、给生命周期一个节拍）。
 - **Node 版本**：全局 Node 是 22.20.0，项目要求 24.x（`engines`）。不要用全局 Node 跑迁移类验证；用第 2 节的绿色包。
 - **测试超时预算**：`vitest.config.ts` 的 30 秒与子进程用例的 120 秒是按本机（Windows + 30 个 jsdom 环境并行）定的；单跑都远低于预算。
 - **写锁**：drill 与 explore 共用同一把会话写锁；drill 只写自己的三张表，回归测试覆盖到该边界。

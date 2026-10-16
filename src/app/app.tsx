@@ -1,4 +1,4 @@
-import { Component, useEffect, useLayoutEffect, useRef, useState, type ErrorInfo, type ReactNode } from 'react';
+import { Component, lazy, Suspense, useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ErrorInfo, type ReactNode } from 'react';
 import { RotateCcw, X } from 'lucide-react';
 import { boot, audio, leaveExperience, playEffect } from './runtime.ts';
 import { useRoute } from './router.ts';
@@ -20,16 +20,24 @@ import { RestDialog, UsageLifecycle } from '../features/rest.tsx';
 import { shouldShowRest } from '../domain/usage.ts';
 import { Button } from '../components/ui.tsx';
 import { OrientationDialog } from '../features/orientation.tsx';
-import { DianfanPage } from '../features/dianfan.tsx';
-import { DrillHome } from '../drill/drill-home.tsx';
-import { DrillSession } from '../drill/session.tsx';
-import { DrillReport } from '../drill/report.tsx';
+
+// 典范专区（含 42 课时间轴，约 160 KB 生成数据）与课本轨道按路由懒加载：
+// 只玩 explore 的孩子不必为它们付费。这些 chunk 仍进 Service Worker 预缓存（globPatterns 含 **/*.js），离线可用。
+const DianfanPage = lazy(() => import('../features/dianfan.tsx'));
+const DrillHome = lazy(() => import('../drill/drill-home.tsx').then((module) => ({ default: module.DrillHome })));
+const DrillSession = lazy(() => import('../drill/session.tsx').then((module) => ({ default: module.DrillSession })));
+const DrillReport = lazy(() => import('../drill/report.tsx').then((module) => ({ default: module.DrillReport })));
+
+// 设计基准：平板横屏 960×600。可用区域小于它时不再要求旋转，而是整体等比缩小
+// （手机横屏常见 844×390 / 740×360）；小于下面的下限才继续提示横过来。
+const DESIGN_WIDTH = 960; const DESIGN_HEIGHT = 600;
+const MIN_WIDTH = 640; const MIN_HEIGHT = 320;
 
 function App() {
   const route = useRoute(); const state = useAppStore(); const settings = useSettings();
   const surface = useRef<HTMLDivElement>(null);
   const [systemMotion, setSystemMotion] = useState(() => matchMedia('(prefers-reduced-motion: reduce)').matches);
-  const [viewportReady, setViewportReady] = useState(() => innerWidth >= 960 && innerHeight >= 600 && innerWidth > innerHeight);
+  const [usable, setUsable] = useState(() => ({ width: innerWidth, height: innerHeight }));
   useEffect(() => { void boot(); }, []);
   useEffect(() => {
     const query = matchMedia('(prefers-reduced-motion: reduce)'); const changed = () => setSystemMotion(query.matches);
@@ -38,9 +46,10 @@ function App() {
   useLayoutEffect(() => {
     const resize = () => {
       const style = surface.current ? getComputedStyle(surface.current) : undefined;
-      const width = innerWidth - parseFloat(style?.paddingLeft ?? '0') - parseFloat(style?.paddingRight ?? '0');
-      const height = innerHeight - parseFloat(style?.paddingTop ?? '0') - parseFloat(style?.paddingBottom ?? '0');
-      setViewportReady(width >= 960 && height >= 600 && width > height);
+      setUsable({
+        width: innerWidth - parseFloat(style?.paddingLeft ?? '0') - parseFloat(style?.paddingRight ?? '0'),
+        height: innerHeight - parseFloat(style?.paddingTop ?? '0') - parseFloat(style?.paddingBottom ?? '0'),
+      });
     };
     resize();
     addEventListener('resize', resize); return () => removeEventListener('resize', resize);
@@ -70,6 +79,15 @@ function App() {
   }, []);
   const motion = reducedMotion(settings, systemMotion);
   const isFreePlay = Boolean(settings.parentSettings.freePlayMode);
+  // 竖屏（高度大于宽度）提示横过来；横屏但小到连缩放都不够也提示。
+  const viewportReady = usable.width > usable.height && usable.width >= MIN_WIDTH && usable.height >= MIN_HEIGHT;
+  // 等比缩放到设计基准内：只在需要时缩小，从不放大。
+  // 这些是「长列表/长表单 + 滚动」的浏览页（典范专区还用 Tailwind 响应式分栏）：缩放会让它们
+  // 变成窄栏堆叠或过小的表单文字，所以保持真实尺寸、照常滚动。
+  const scrollingPage = route.startsWith('/dianfan') || route === '/drill/report' || route === '/parent';
+  const fitScale = viewportReady && !scrollingPage
+    ? Math.min(1, Math.round(Math.min(usable.width / DESIGN_WIDTH, usable.height / DESIGN_HEIGHT) * 1000) / 1000)
+    : 1;
   const effectiveViewportReady = isFreePlay || state.viewportBypass || viewportReady;
   const mode = route.startsWith('/play/') && state.session?.status === 'active'
     ? state.session.configSnapshot.interactionMode : settings.interactionMode;
@@ -100,8 +118,9 @@ function App() {
   else if (/^\/session\/.+\/end$/.test(route)) page = <RoundEnd sessionId={route.split('/')[2]!} paused={restVisible || !effectiveViewportReady} />;
   else if (route === '/themes' || (!route.startsWith('/scene/') && (state.content?.catalog.themes.length ?? 0) > 1)) page = <ThemeHub />;
   else page = <Scene key={route} themeId={route.startsWith('/scene/') ? route.split('/')[2]! : state.sceneThemeId} />;
-  return <div ref={surface} className={`app mode-${mode} ${motion ? 'motion-reduced' : ''}`} data-audience={parentPage ? 'parent' : 'child'}>
-    {page}
+  return <div ref={surface} className={`app mode-${mode} ${motion ? 'motion-reduced' : ''}`} data-audience={parentPage ? 'parent' : 'child'}
+    style={{ '--fit-scale': String(fitScale) } as CSSProperties}>
+    <Suspense fallback={<main className="empty-page" role="status"><h1>正在打开，请稍等…</h1></main>}>{page}</Suspense>
     <UsageLifecycle enabled={!isFreePlay && settings.parentSettings.screenTimeMinutes !== 0 && stage2 && state.entered} active={childPage && effectiveViewportReady && !restVisible} questionId={questionId} limitMinutes={settings.parentSettings.screenTimeMinutes} />
     {restVisible && <RestDialog />}
     <GuideLifecycle route={route} />

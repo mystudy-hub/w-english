@@ -79,6 +79,11 @@ except ImportError:
     lazy_pinyin = None
 
 
+def merge_model_chain(existing: list[str] | None, added: str) -> list[str]:
+    """按出现顺序去重：重试多次时模型链只保留每个模型一次。"""
+    return list(dict.fromkeys([*(existing or []), added]))
+
+
 def normalize(text: str) -> str:
     # 去标点（中英文）、去空白、转小写，并把阿拉伯数字归一成英文词
     stripped = re.sub(r"[，。！？、；：“”‘’（）\[\]<>.,!?;:'\"()\u2026-]+", " ", text)
@@ -194,10 +199,16 @@ def main() -> None:
         merged = {item["ref"]: item for item in prior.get("results", [])}
         for item in results:
             old = merged.get(item["ref"])
-            item["models"] = [*(old.get("models", []) if old else []), args.model]
+            item["models"] = merge_model_chain(old.get("models") if old else None, args.model)
             merged[item["ref"]] = item
         results = list(merged.values())
-        model_chain = f"{prior.get('model', 'unknown')}+{args.model}"
+        # 报告里的模型链同样去重（此前多次 --retry 会写成 base+base+small+small+small+medium）
+        chain: list[str] = []
+        for item in results:
+            for name in item.get("models", []):
+                if name not in chain:
+                    chain.append(name)
+        model_chain = "+".join(chain) or args.model
     else:
         model_chain = args.model
     failed = [item for item in results if not item["pass"]]

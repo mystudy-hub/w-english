@@ -12,6 +12,8 @@ export interface DianfanLessonAudio {
   title: string;
   audioUrl: string;
   duration: number;
+  /** measured：逐句都有实测切片边界；interpolated：切片不足，时间轴按字数比例插值（点句定位会略偏） */
+  alignment: 'measured' | 'interpolated';
   sentences: DianfanSentenceTiming[];
 }
 
@@ -21,6 +23,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Who is it",
     "audioUrl": "content/dianfan/1a/01.mp3",
     "duration": 43.68,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -92,6 +95,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Six in a Bed",
     "audioUrl": "content/dianfan/1a/02.mp3",
     "duration": 43.08,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -142,6 +146,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Fun at the Beach",
     "audioUrl": "content/dianfan/1a/03.mp3",
     "duration": 38.45,
+    "alignment": "interpolated",
     "sentences": [
       {
         "index": 0,
@@ -213,6 +218,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Floppy Floppy",
     "audioUrl": "content/dianfan/1a/04.mp3",
     "duration": 54.88,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -263,6 +269,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "A Good Trick",
     "audioUrl": "content/dianfan/1a/05.mp3",
     "duration": 37.75,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -313,6 +320,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "The Pancake",
     "audioUrl": "content/dianfan/1a/06.mp3",
     "duration": 38.71,
+    "alignment": "interpolated",
     "sentences": [
       {
         "index": 0,
@@ -377,6 +385,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Is It",
     "audioUrl": "content/dianfan/1a/07.mp3",
     "duration": 47.44,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -448,6 +457,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Get On",
     "audioUrl": "content/dianfan/1a/08.mp3",
     "duration": 44.17,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -519,6 +529,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Floppy Did This",
     "audioUrl": "content/dianfan/1a/09.mp3",
     "duration": 44.54,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -590,6 +601,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Get Dad",
     "audioUrl": "content/dianfan/1a/10.mp3",
     "duration": 43.7,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -661,6 +673,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Up You Go",
     "audioUrl": "content/dianfan/1a/11.mp3",
     "duration": 49.66,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -732,6 +745,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "I See",
     "audioUrl": "content/dianfan/1a/12.mp3",
     "duration": 62.77,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -838,6 +852,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "At the Park",
     "audioUrl": "content/dianfan/1a/13.mp3",
     "duration": 43.31,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -895,6 +910,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Fancy Dress",
     "audioUrl": "content/dianfan/1a/14.mp3",
     "duration": 42.08,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -952,6 +968,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Good Old Mum",
     "audioUrl": "content/dianfan/1a/15.mp3",
     "duration": 50.44,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1009,6 +1026,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "The Headache",
     "audioUrl": "content/dianfan/1a/16.mp3",
     "duration": 46.34,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1059,6 +1077,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "The Pet Shop",
     "audioUrl": "content/dianfan/1a/17.mp3",
     "duration": 71.63,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1130,6 +1149,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Push!",
     "audioUrl": "content/dianfan/1a/18.mp3",
     "duration": 38.03,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1187,6 +1207,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Making Faces",
     "audioUrl": "content/dianfan/1a/19.mp3",
     "duration": 39.76,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1237,6 +1258,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Goal!",
     "audioUrl": "content/dianfan/1a/20.mp3",
     "duration": 44.51,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1301,6 +1323,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "The Journey",
     "audioUrl": "content/dianfan/1a/21.mp3",
     "duration": 53.81,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1358,6 +1381,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Shopping",
     "audioUrl": "content/dianfan/1a/22.mp3",
     "duration": 53.03,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1429,6 +1453,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Who Did That",
     "audioUrl": "content/dianfan/1a/23.mp3",
     "duration": 50.86,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1500,6 +1525,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "What a Mess!",
     "audioUrl": "content/dianfan/1a/24.mp3",
     "duration": 48.98,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1557,6 +1583,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Hide and Seek",
     "audioUrl": "content/dianfan/1a/25.mp3",
     "duration": 48.38,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1628,6 +1655,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Reds and Blues",
     "audioUrl": "content/dianfan/1a/26.mp3",
     "duration": 49.92,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1692,6 +1720,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Big Feet",
     "audioUrl": "content/dianfan/1a/27.mp3",
     "duration": 57.21,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1763,6 +1792,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Look at Me",
     "audioUrl": "content/dianfan/1a/28.mp3",
     "duration": 49.48,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1834,6 +1864,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Go Away, Floppy",
     "audioUrl": "content/dianfan/1a/29.mp3",
     "duration": 56.22,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -1905,6 +1936,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Kipper's Diary",
     "audioUrl": "content/dianfan/1a/30.mp3",
     "duration": 41.48,
+    "alignment": "interpolated",
     "sentences": [
       {
         "index": 0,
@@ -2011,6 +2043,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "What Dogs Like",
     "audioUrl": "content/dianfan/1a/31.mp3",
     "duration": 48.38,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2082,6 +2115,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Go Away, Cat",
     "audioUrl": "content/dianfan/1a/32.mp3",
     "duration": 49.66,
+    "alignment": "interpolated",
     "sentences": [
       {
         "index": 0,
@@ -2153,6 +2187,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Go On, Mum!",
     "audioUrl": "content/dianfan/1a/33.mp3",
     "duration": 51.93,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2224,6 +2259,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Look After Me",
     "audioUrl": "content/dianfan/1a/34.mp3",
     "duration": 50.57,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2295,6 +2331,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Presents for Dad",
     "audioUrl": "content/dianfan/1a/35.mp3",
     "duration": 50.65,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2366,6 +2403,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Top Dog",
     "audioUrl": "content/dianfan/1a/36.mp3",
     "duration": 51.98,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2437,6 +2475,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "The Ice Cream",
     "audioUrl": "content/dianfan/1a/37.mp3",
     "duration": 51.44,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2508,6 +2547,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Can You See Me",
     "audioUrl": "content/dianfan/1a/38.mp3",
     "duration": 58.1,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2565,6 +2605,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "Good Dog",
     "audioUrl": "content/dianfan/1a/39.mp3",
     "duration": 59.01,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2643,6 +2684,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "What a DIN!",
     "audioUrl": "content/dianfan/1a/40.mp3",
     "duration": 50.78,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,
@@ -2714,6 +2756,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "See Me Skip",
     "audioUrl": "content/dianfan/1a/41.mp3",
     "duration": 52.43,
+    "alignment": "interpolated",
     "sentences": [
       {
         "index": 0,
@@ -2806,6 +2849,7 @@ export const DIANFAN_AUDIO_MAP: Record<string, DianfanLessonAudio> = {
     "title": "The Mud Pie",
     "audioUrl": "content/dianfan/1a/42.mp3",
     "duration": 48.43,
+    "alignment": "measured",
     "sentences": [
       {
         "index": 0,

@@ -67,6 +67,8 @@ for (let idx = 1; idx <= lessons.length; idx++) {
   // 2. 将切片智能平滑对齐到课文句子
   const sentenceTimings = [];
   const totalSentences = l.sentences.length;
+  // 记录这套时间轴的来源：measured=每个句子都有实测切片边界；interpolated=切片不足，按字数比例插值
+  let alignment = 'measured';
 
   if (chunks.length === totalSentences) {
     // 完美的 1-对-1 对应！
@@ -83,6 +85,7 @@ for (let idx = 1; idx <= lessons.length; idx++) {
     }
   } else if (chunks.length < totalSentences) {
     // 切片少于句子（通常是有两三个短句在一个气口内读完）：按句子字数比例分配时间
+    alignment = 'interpolated';
     const wordsPerSentence = l.sentences.map((s) => s.split(/\s+/).length);
     const totalWords = wordsPerSentence.reduce((a, b) => a + b, 0);
 
@@ -142,6 +145,7 @@ for (let idx = 1; idx <= lessons.length; idx++) {
     title: l.title,
     audioUrl: `content/dianfan/1a/${pad}.mp3`,
     duration: dur,
+    alignment,
     sentences: sentenceTimings,
   };
 }
@@ -160,6 +164,8 @@ export interface DianfanLessonAudio {
   title: string;
   audioUrl: string;
   duration: number;
+  /** measured：逐句都有实测切片边界；interpolated：切片不足，时间轴按字数比例插值（点句定位会略偏） */
+  alignment: 'measured' | 'interpolated';
   sentences: DianfanSentenceTiming[];
 }
 
